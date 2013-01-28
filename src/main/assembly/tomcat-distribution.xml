@@ -414,6 +414,15 @@
     <dependencySet>
       <outputDirectory>webapps</outputDirectory>
       <includes>
+        <include>org.exoplatform.platform:platform-extension-portlets-homepage:war</include>
+      </includes>
+      <outputFileNameMapping>homepage-portlets.war</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+      <useProjectAttachments>false</useProjectAttachments>
+    </dependencySet>
+    <dependencySet>
+      <outputDirectory>webapps</outputDirectory>
+      <includes>
         <include>org.exoplatform.platform:platform-extension-resources:war</include>
       </includes>
       <outputFileNameMapping>eXoPlatformResources.war</outputFileNameMapping>
