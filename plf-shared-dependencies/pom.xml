@@ -255,16 +255,6 @@
       <artifactId>forum-poll-webapp</artifactId>
       <type>pom</type>
     </dependency>
-    <dependency>
-      <groupId>org.exoplatform.gwt</groupId>
-      <artifactId>exo-gwtframework-smartgwt</artifactId>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ide</groupId>
-      <artifactId>exo-ide-client-gadget</artifactId>
-      <type>war</type>
-    </dependency>
     <!-- used by org.gatein.portal:exo.portal.web.portal and org.gatein.portal:exo.portal.web.rest but not declared -->
     <dependency>
       <groupId>org.exoplatform.jcr</groupId>
