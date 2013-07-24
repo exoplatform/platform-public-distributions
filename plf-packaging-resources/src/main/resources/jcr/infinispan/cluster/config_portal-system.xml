@@ -18,17 +18,17 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<jbosscache xmlns="urn:jboss:jbosscache-core:config:3.1">
+<infinispan xmlns="urn:infinispan:config:5.1">
 
-  <jmxStatistics enabled="${gatein.jgroups.jmxstatistics.enable:true}" />
+   <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
 
-  <locking useLockStriping="false" concurrencyLevel="64" lockParentForChildInsertRemove="false" lockAcquisitionTimeout="40000" />
 
-  <!-- Configure the TransactionManager -->
-  <transaction transactionManagerLookupClass="org.jboss.cache.transaction.JBossStandaloneJTAManagerLookup" />
+   <clustering mode="replication">
+      <stateTransfer timeout="20000" fetchInMemoryState="false" />
+      <sync replTimeout="20000"/>
+   </clustering>
 
-  <clustering mode="replication" clusterName="${jboss.partition.name:DefaultPartition}-${jbosscache-cluster-name}">
-    <stateRetrieval timeout="20000" fetchInMemoryState="false" />
-    <sync />
-  </clustering>
-</jbosscache>
+
+   <!-- Eviction configuration -->
+   <eviction strategy="LIRS" threadPolicy="DEFAULT" maxEntries="1000000"/>
+</infinispan>

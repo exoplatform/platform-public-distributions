@@ -61,6 +61,16 @@
             <artifactId>plf-assemblies</artifactId>
             <version>${project.version}</version>
           </dependency>
+           <dependency>
+              <groupId>org.exoplatform.jcr</groupId>
+              <artifactId>exo.jcr.component.core.impl.infinispan.v5</artifactId>
+              <version>1.15.4-GA</version>
+           </dependency>
+           <dependency>
+              <groupId>org.exoplatform.kernel</groupId>
+              <artifactId>exo.kernel.component.ext.cache.impl.infinispan.v5</artifactId>
+              <version>2.4.4-GA</version>
+           </dependency>
         </dependencies>
       </plugin>
     </plugins>
