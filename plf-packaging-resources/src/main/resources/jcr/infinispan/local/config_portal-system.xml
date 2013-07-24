@@ -18,14 +18,13 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<jbosscache xmlns="urn:jboss:jbosscache-core:config:3.1">
+<infinispan xmlns="urn:infinispan:config:5.1">
 
-  <jmxStatistics enabled="${gatein.jgroups.jmxstatistics.enable:true}" />
+   <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
 
-  <clustering mode="replication" clusterName="exo-cache-cluster">
-    <stateRetrieval timeout="20000" fetchInMemoryState="false" />
-    <sync replTimeout="60000" />
-    <jgroupsConfig configFile="${gatein.jgroups.config}" />
-  </clustering>
+   <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
 
-</jbosscache>
+
+   <!-- Eviction configuration -->
+   <eviction strategy="LIRS" threadPolicy="DEFAULT" maxEntries="1000000"/>
+</infinispan>

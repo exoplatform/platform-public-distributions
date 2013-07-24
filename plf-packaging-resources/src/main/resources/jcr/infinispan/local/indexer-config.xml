@@ -18,13 +18,14 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<jbosscache xmlns="urn:jboss:jbosscache-core:config:3.1">
+<infinispan xmlns="urn:infinispan:config:5.1">
 
   <jmxStatistics enabled="${gatein.jgroups.jmxstatistics.enable:true}" />
 
-  <locking useLockStriping="false" concurrencyLevel="64" lockParentForChildInsertRemove="false" lockAcquisitionTimeout="20000" />
+   <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
 
-  <!-- Configure the TransactionManager -->
-  <transaction transactionManagerLookupClass="org.jboss.cache.transaction.JBossStandaloneJTAManagerLookup" />
 
-</jbosscache>
+   <!-- Configure the TransactionManager -->
+   <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
+
+</infinispan>
