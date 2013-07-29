@@ -18,22 +18,8 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<jbosscache xmlns="urn:jboss:jbosscache-core:config:3.1">
+<infinispan xmlns="urn:infinispan:config:5.1">
 
   <jmxStatistics enabled="${gatein.jgroups.jmxstatistics.enable:true}" />
 
-  <locking useLockStriping="false" concurrencyLevel="64" lockParentForChildInsertRemove="false" lockAcquisitionTimeout="20000" />
-
-  <clustering mode="replication" clusterName="${jboss.partition.name:DefaultPartition}-${jbosscache-cluster-name}">
-    <stateRetrieval timeout="20000" fetchInMemoryState="false" />
-    <sync />
-  </clustering>
-
-  <!-- Eviction configuration -->
-  <eviction wakeUpInterval="5000">
-    <default algorithmClass="org.jboss.cache.eviction.FIFOAlgorithm" actionPolicyClass="org.exoplatform.services.jcr.impl.dataflow.persistent.jbosscache.ParentNodeEvictionActionPolicy" eventQueueSize="1000000">
-      <property name="maxNodes" value="${gatein.jcr.cache.size:500000}" />
-      <property name="minTimeToLive" value="0" />
-    </default>
-  </eviction>
-</jbosscache>
+</infinispan>
