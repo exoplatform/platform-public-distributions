@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     Copyright (C) 2003-2013 eXo Platform SAS.
@@ -18,14 +19,38 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<infinispan xmlns="urn:infinispan:config:5.1">
+<infinispan
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="urn:infinispan:config:5.1 http://www.infinispan.org/schemas/infinispan-config-5.1.xsd"
+      xmlns="urn:infinispan:config:5.1">
 
-  <jmxStatistics enabled="${gatein.jgroups.jmxstatistics.enable:true}" />
+   <global>
+      <evictionScheduledExecutor factory="org.infinispan.executors.DefaultScheduledExecutorFactory">
+         <properties>
+            <property name="threadNamePrefix" value="EvictionThread"/>
+         </properties>
+      </evictionScheduledExecutor>
 
-   <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
+      <globalJmxStatistics jmxDomain="exo" enabled="true" allowDuplicateDomains="true"/>
 
+      <transport transportClass="org.infinispan.remoting.transport.jgroups.JGroupsTransport" clusterName="${infinispan-cluster-name}" distributedSyncTimeout="20000">
+         <properties>
+            <property name="configurationFile" value="${jgroups-configuration}"/>
+         </properties>
+      </transport>
+   </global>
 
-   <!-- Configure the TransactionManager -->
-   <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
-
+   <default>
+      <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
+      <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
+      <jmxStatistics enabled="true"/>
+      <eviction strategy="NONE"/>
+      <!--
+            <loaders passivation="false" shared="false" preload="false">
+              <loader class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
+                <async enabled="false"/>
+              </loader>
+            </loaders>
+      -->
+   </default>
 </infinispan>
