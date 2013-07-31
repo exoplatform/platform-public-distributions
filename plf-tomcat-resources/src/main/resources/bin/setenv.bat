@@ -179,20 +179,6 @@ SET CATALINA_OPTS=%CATALINA_OPTS% -Dgatein.jcr.storage.data.dir="%EXO_DATA_DIR%\
 REM # JCR indexes
 SET CATALINA_OPTS=%CATALINA_OPTS% -Dgatein.jcr.index.data.dir="%EXO_DATA_DIR%\jcr\index"
 
-REM # JAVA_HOME is computed by setclasspath.bat if required
-IF NOT EXIST "%JAVA_HOME%\bin\javac.exe" GOTO JavaHomeIsJRE
-
-REM # We have a JDK
-SET CATALINA_OPTS=%CATALINA_OPTS% -Djre.lib="%JAVA_HOME%\jre\lib"
-SET CATALINA_OPTS=%CATALINA_OPTS% -Djavasrc="%JAVA_HOME%\src.zip"
-GOTO okLibAndSrcPaths
-:JavaHomeIsJRE
-REM # We have a JRE
-SET CATALINA_OPTS=%CATALINA_OPTS% -Djre.lib="%JAVA_HOME%\lib"
-IF NOT EXIST "%JAVA_HOME%\..\src.zip" GOTO okLibAndSrcPaths
-REM # This is a JRE inside a JDK
-SET CATALINA_OPTS="%CATALINA_OPTS%" -Djavasrc="%JAVA_HOME%\..\src.zip"
-:okLibAndSrcPaths
 
 REM # Assets version
 SET CATALINA_OPTS=%CATALINA_OPTS% -Dgatein.assets.version=%EXO_ASSETS_VERSION%
