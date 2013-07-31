@@ -175,20 +175,6 @@ CATALINA_OPTS="$CATALINA_OPTS -Dgatein.jcr.storage.data.dir=\"${EXO_DATA_DIR}/jc
 # JCR indexes
 CATALINA_OPTS="$CATALINA_OPTS -Dgatein.jcr.index.data.dir=\"${EXO_DATA_DIR}/jcr/index\""
 
-# JAVA_HOME is computed by setclasspath.sh if required
-if [ -d "$JAVA_HOME/jre" ]; then
-  # This is a JDK
-  CATALINA_OPTS="$CATALINA_OPTS -Djre.lib=\"${JAVA_HOME}/jre/lib\""
-  CATALINA_OPTS="$CATALINA_OPTS -Djavasrc=\"${JAVA_HOME}/src.zip\""
-else
-  # This is a JRE
-  CATALINA_OPTS="$CATALINA_OPTS -Djre.lib=\"${JAVA_HOME}/lib\""
-  if [ -f "$JAVA_HOME"/../src.zip ]; then
-    # This is a JRE in a JDK
-    CATALINA_OPTS="$CATALINA_OPTS -Djavasrc=\"${JAVA_HOME}/../src.zip\""
-  fi
-fi
-
 # Assets version
 CATALINA_OPTS="$CATALINA_OPTS -Dgatein.assets.version=${EXO_ASSETS_VERSION}"
 
