@@ -199,6 +199,11 @@
           <artifactId>exo.kernel.component.ext.cache.impl.jboss.v3</artifactId>
           <groupId>org.exoplatform.kernel</groupId>
         </exclusion>
+        <!-- Coming by transitivity from org.exoplatform.core:exo.core.component.database -->
+        <exclusion>
+          <artifactId>ow2-jta-1.1-spec</artifactId>
+          <groupId>org.ow2.spec.ee</groupId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -464,6 +469,13 @@
     <dependency>
       <groupId>org.exoplatform.jcr</groupId>
       <artifactId>exo.jcr.component.core.impl.infinispan.v5</artifactId>
+      <exclusions>
+        <!-- Coming by transitivity from org.exoplatform.core:exo.core.component.database -->
+        <exclusion>
+          <artifactId>ow2-jta-1.1-spec</artifactId>
+          <groupId>org.ow2.spec.ee</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <!-- used by org.gatein.portal:exo.portal.web.portal and org.gatein.portal:exo.portal.web.rest but not declared -->
     <dependency>
