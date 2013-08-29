@@ -35,7 +35,7 @@
 
       <transport transportClass="org.infinispan.remoting.transport.jgroups.JGroupsTransport" clusterName="${infinispan-cluster-name}" distributedSyncTimeout="20000">
          <properties>
-            <property name="configurationFile" value="${jgroups-configuration}"/>
+            <property name="configurationFile" value="${gatein.jcr.jgroups.config}"/>
          </properties>
       </transport>
    </global>
