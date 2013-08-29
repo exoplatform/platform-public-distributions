@@ -30,19 +30,16 @@
 		Please, bear in mind that setting it to 0 will work only if we use MPING or TCPGOSSIP as discovery protocol
 		because TCCPING requires listing the nodes and their corresponding ports. -->
 	<TCP singleton_name="exo-transport-tcp"
-		start_port="${jgroups.tcp.start_port:7800}"
+        bind_port="7800"
         loopback="true"
         recv_buf_size="${tcp.recv_buf_size:20M}"
         send_buf_size="${tcp.send_buf_size:640K}"
         discard_incompatible_packets="true"
         max_bundle_size="64K"
         max_bundle_timeout="30"
-		use_incoming_packet_handler="true"
         enable_bundling="false"
         use_send_queues="false"
         sock_conn_timeout="300"
-		skip_suspected_members="true"
-		use_concurrent_stack="true"
         timer_type="new"
         timer.min_threads="4"
         timer.max_threads="25"
@@ -72,18 +69,16 @@
 	<MERGE2 max_interval="100000"
             min_interval="20000"/>
    <FD_SOCK/>
-	<FD timeout="10000" max_tries="5" shun="true"/>
+	<FD timeout="10000" max_tries="5"/>
    <VERIFY_SUSPECT timeout="1500"  />
    <BARRIER />
-	<pbcast.NAKACK use_mcast_xmit="false" gc_lag="0"
+	<pbcast.NAKACK use_mcast_xmit="false"
 				retransmit_timeout="300,600,1200,2400,4800"
                   discard_delivered_msgs="true"/>
 	<UNICAST timeout="300,600,1200"/>
    <pbcast.STABLE stability_delay="1000" desired_avg_gossip="50000"
                  max_bytes="400000"/>
-	<VIEW_SYNC avg_send_interval="60000"/>
    <pbcast.GMS print_local_addr="true" join_timeout="3000"
-              shun="true"
                view_bundling="true"/>
    <UFC max_credits="2M"
         min_threshold="0.10"/>
