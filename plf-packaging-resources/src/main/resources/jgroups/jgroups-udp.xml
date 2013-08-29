@@ -77,7 +77,6 @@
 	<UNICAST timeout="300,600,1200" />
    <pbcast.STABLE stability_delay="1000" desired_avg_gossip="50000"
                   max_bytes="4M"/>
-	<VIEW_SYNC avg_send_interval="60000" />
 	<pbcast.GMS print_local_addr="true" 
 				join_timeout="3000"
 				shun="false"
