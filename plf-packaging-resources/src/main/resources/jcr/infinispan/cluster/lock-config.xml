@@ -50,28 +50,24 @@
       <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
       <jmxStatistics enabled="true"/>
       <eviction strategy="NONE"/>
-
-      <!--
-
        <loaders passivation="false" shared="true" preload="true">
-         <loader class="org.infinispan.loaders.jdbc.stringbased.JdbcStringBasedCacheStore" fetchPersistentState="true" ignoreModifications="false" purgeOnStartup="false">
-           <properties>
-              <property name="stringsTableNamePrefix" value="${infinispan-cl-cache.jdbc.table.name}"/>
-              <property name="idColumnName" value="${infinispan-cl-cache.jdbc.id.column}"/>
-              <property name="dataColumnName" value="${infinispan-cl-cache.jdbc.data.column}"/>
-              <property name="timestampColumnName" value="${infinispan-cl-cache.jdbc.timestamp.column}"/>
-              <property name="idColumnType" value="${infinispan-cl-cache.jdbc.id.type}"/>
-              <property name="dataColumnType" value="${infinispan-cl-cache.jdbc.data.type}"/>
-              <property name="timestampColumnType" value="${infinispan-cl-cache.jdbc.timestamp.type}"/>
-              <property name="dropTableOnExit" value="${infinispan-cl-cache.jdbc.table.drop}"/>
-              <property name="createTableOnStart" value="${infinispan-cl-cache.jdbc.table.create}"/>
-              <property name="connectionFactoryClass" value="${infinispan-cl-cache.jdbc.connectionFactory}"/>
-              <property name="datasourceJndiLocation" value="${infinispan-cl-cache.jdbc.datasource}"/>
-           </properties>
-           <async enabled="false"/>
-         </loader>
+           <loader class="org.infinispan.loaders.jdbc.stringbased.JdbcStringBasedCacheStore" fetchPersistentState="true" ignoreModifications="false" purgeOnStartup="false">
+               <properties>
+                   <property name="stringsTableNamePrefix" value="${infinispan-cl-cache.jdbc.table.name}"/>
+                   <property name="idColumnName" value="${infinispan-cl-cache.jdbc.id.column}"/>
+                   <property name="dataColumnName" value="${infinispan-cl-cache.jdbc.data.column}"/>
+                   <property name="timestampColumnName" value="${infinispan-cl-cache.jdbc.timestamp.column}"/>
+                   <property name="idColumnType" value="${infinispan-cl-cache.jdbc.id.type}"/>
+                   <property name="dataColumnType" value="${infinispan-cl-cache.jdbc.data.type}"/>
+                   <property name="timestampColumnType" value="${infinispan-cl-cache.jdbc.timestamp.type}"/>
+                   <property name="dropTableOnExit" value="${infinispan-cl-cache.jdbc.table.drop}"/>
+                   <property name="createTableOnStart" value="${infinispan-cl-cache.jdbc.table.create}"/>
+                   <property name="connectionFactoryClass" value="${infinispan-cl-cache.jdbc.connectionFactory}"/>
+                   <property name="datasourceJndiLocation" value="${infinispan-cl-cache.jdbc.datasource}"/>
+               </properties>
+               <async enabled="false"/>
+           </loader>
        </loaders>
-      -->
    </default>
 
 </infinispan>
