@@ -29,8 +29,11 @@
 		The default is 7800. If set to 0, then the operating system will pick a port.
 		Please, bear in mind that setting it to 0 will work only if we use MPING or TCPGOSSIP as discovery protocol
 		because TCCPING requires listing the nodes and their corresponding ports. -->
+    <!--
+        According to the JGroups XSD3.0.x, the property start_port is no longer supported, it's deprecated by bind_port
+    -->
 	<TCP singleton_name="exo-transport-tcp"
-        bind_port="7800"
+        bind_port="${jgroups.tcp.bind_port:7800}"
         loopback="true"
         recv_buf_size="${tcp.recv_buf_size:20M}"
         send_buf_size="${tcp.send_buf_size:640K}"
