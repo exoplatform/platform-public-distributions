@@ -1,4 +1,5 @@
 package org.exoplatform.platform.distributions
+import groovy.io.FileType
 
 /**
  * Copyright (C) 2003-2013 eXo Platform SAS.
@@ -18,12 +19,9 @@ package org.exoplatform.platform.distributions
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-
-import groovy.io.FileType
 import groovy.util.slurpersupport.GPathResult
 import groovy.xml.StreamingMarkupBuilder
 import groovy.xml.XmlUtil
-
 /**
  * Command line utility to manage Platform extensions in a standalone Apache Tomcat based distribution.
  */
@@ -43,6 +41,12 @@ if (System.properties['os.name'].toLowerCase().contains('windows')) {
   scriptName = "${scriptBaseName}.bat"
 }
 
+def extensionRepositories = [
+  new LocalExplodedExtensionRepository(),
+  new LocalZipExtensionRepository(),
+  new GithubAddonsExtensionRepository()
+]
+
 def cli = new CliBuilder(
     posix: false,
     stopAtNonOption: true,
@@ -61,7 +65,7 @@ Use the extension "all" to install or uninstall all available extensions
 // Create the list of options.
 cli.with {
   h longOpt: 'help', 'Show usage information'
-  l longOpt: 'list', 'List all available extensions'
+  l longOpt: 'list', 'List all available local extensions'
   i longOpt: 'install', args: 1, argName: 'extension', 'Install an extension'
   u longOpt: 'uninstall', args: 1, argName: 'extension', 'Uninstall an extension'
 }
@@ -137,7 +141,7 @@ def listExtensions() {
 To install an extension use:
   ${scriptName} --install <extension>
 
-To install all avalaible extensions use:
+To install all avalaible local extensions use:
   ${scriptName} --install all
 """
 }
@@ -153,62 +157,103 @@ def processFileInplace(file, Closure processText) {
   file.write(processText(text))
 }
 
-def installExtension(String extensionName) {
-  def extensionDirectory = new File(extensionsDirectory, extensionName);
-  def extensionLibDirectory = new File(extensionDirectory, "lib");
-  def extensionWebappDirectory = new File(extensionDirectory, "webapps");
-  if (!extensionDirectory.isDirectory()) {
-    println "error: Extension \"${extensionName}\" doesn't exist."
-    listExtensions()
-    System.exit 1
-  }
-  println "Installing ${extensionName} extension ..."
-  if (extensionLibDirectory.isDirectory()) {
-    ant.copy(todir: "${librariesDir}",
-        preservelastmodified: true,
-        verbose: true) {
-      fileset(dir: "${extensionLibDirectory}") {
-        include(name: "*.jar")
-      }
-    }
-  }
-  if (extensionWebappDirectory.isDirectory()) {
-    ant.copy(todir: "${webappsDir}",
-        preservelastmodified: true,
-        verbose: true) {
-      fileset(dir: "${extensionWebappDirectory}") {
-        include(name: "*.war")
-      }
-    }
-    // Update application.xml if it exists
-    def applicationDescriptor = new File(webappsDir, "META-INF/application.xml")
-    if (applicationDescriptor.exists()) {
-      processFileInplace(applicationDescriptor) { text ->
-        application = new XmlSlurper(false, false).parseText(text)
-        extensionWebappDirectory.eachFileRecurse(FileType.FILES) { file ->
-          def webArchive = file.name
-          def webContext = file.name.substring(0, file.name.length() - 4)
-          print "Adding/Updating context declaration /${webContext} for ${webArchive} in application.xml ... "
-          application.depthFirst().findAll { (it.name() == 'module') && (it.'web'.'web-uri'.text() == webArchive) }.each { node ->
-            // remove existing node
-            node.replaceNode {}
+def installExtension(String extensionName, List extensionRepositories) {
+
+  println "Looking for extension ${extensionName} in repositories"
+
+  extensionRepositories.find({ repository ->
+
+    println "  Trying repository '" + repository.description + "' ..."
+
+    def extensionLocation = repository.getExtensionLocation(extensionName)
+    if(extensionLocation != null) {
+      println "    -> found !"
+
+      println "\nInstalling ${extensionName} extension ..."
+
+      if(repository.type.equals(ExtensionRepository.Type.ZIP)) {
+
+        def zipLocalLocation = null
+        if(new File(extensionLocation).exists()) {
+          // zip file on local file system
+          zipLocalLocation = extensionLocation
+        } else {
+          ant.get(src:extensionLocation, dest:"/tmp", skipexisting:true)
+          zipLocalLocation = "/tmp/" + extensionLocation.substring(extensionLocation.lastIndexOf('/'))
+        }
+        ant.unzip(src:zipLocalLocation, dest:librariesDir, overwrite:true) {
+          patternset() {
+            include(name: "lib/*.jar")
           }
-          application."initialize-in-order" + {
-            module {
-              web {
-                'web-uri'(webArchive)
-                'context-root'(webContext)
-              }
+          cutdirsmapper (dirs:1)
+        }
+        ant.unzip(src:zipLocalLocation, dest:webappsDir, overwrite:true) {
+          patternset() {
+            include(name: "webapps/*.war")
+          }
+          cutdirsmapper (dirs:1)
+        }
+      } else if(repository.type.equals(ExtensionRepository.Type.EXPLODED)) {
+        def extensionLibDirectory = new File(extensionLocation, "lib");
+        if (extensionLibDirectory.isDirectory()) {
+          ant.copy(todir: "${librariesDir}",
+                  preservelastmodified: true,
+                  verbose: true) {
+            fileset(dir: extensionLibDirectory) {
+              include(name: "*.jar")
             }
           }
-          println "OK"
         }
-        serializeXml(application)
+
+        def extensionWebappDirectory = new File(extensionLocation, "webapps");
+        if (extensionWebappDirectory.isDirectory()) {
+          ant.copy(todir: "${webappsDir}",
+                  preservelastmodified: true,
+                  verbose: true) {
+            fileset(dir: extensionWebappDirectory) {
+              include(name: "*.war")
+            }
+          }
+        }
       }
+
+      println "Done."
+
+      // we found the plugin, stop searching in repositories
+      return true
+    } else {
+      println "    -> not found"
+    }
+  })
+
+  // Update application.xml if it exists
+  def applicationDescriptor = new File(webappsDir, "META-INF/application.xml")
+  if (applicationDescriptor.exists()) {
+    processFileInplace(applicationDescriptor) { text ->
+      application = new XmlSlurper(false, false).parseText(text)
+      extensionWebappDirectory.eachFileRecurse(FileType.FILES) { file ->
+        def webArchive = file.name
+        def webContext = file.name.substring(0, file.name.length() - 4)
+        print "Adding/Updating context declaration /${webContext} for ${webArchive} in application.xml ... "
+        application.depthFirst().findAll { (it.name() == 'module') && (it.'web'.'web-uri'.text() == webArchive) }.each { node ->
+          // remove existing node
+          node.replaceNode {}
+        }
+        application."initialize-in-order" + {
+          module {
+            web {
+              'web-uri'(webArchive)
+              'context-root'(webContext)
+            }
+          }
+        }
+        println "OK"
+      }
+      serializeXml(application)
     }
   }
-  println "Done."
 }
+
 
 def uninstallExtension(String extensionName) {
   def extensionDirectory = new File(extensionsDirectory, extensionName);
@@ -267,7 +312,7 @@ if (options.i) {
  # ===============================
 """
   } else {
-    installExtension(options.i)
+    installExtension(options.i, extensionRepositories)
     println """
  # ===============================
  # Extension ${options.i} installed.
