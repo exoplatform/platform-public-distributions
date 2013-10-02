@@ -31,7 +31,7 @@
          </properties>
       </evictionScheduledExecutor>
 
-      <globalJmxStatistics jmxDomain="exo" enabled="true" allowDuplicateDomains="true"/>
+      <globalJmxStatistics jmxDomain="platform.insp.cache.portal-system" enabled="true" allowDuplicateDomains="true"/>
    </global>
 
    <default>
