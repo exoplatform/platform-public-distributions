@@ -42,6 +42,7 @@ if (System.properties['os.name'].toLowerCase().contains('windows')) {
 }
 
 def extensionRepositories = [
+  new DirectURLExtensionRepository(),
   new LocalExplodedExtensionRepository(),
   new LocalZipExtensionRepository(),
   new GithubAddonsExtensionRepository()
