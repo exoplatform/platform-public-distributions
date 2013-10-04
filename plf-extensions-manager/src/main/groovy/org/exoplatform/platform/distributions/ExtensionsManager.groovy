@@ -51,6 +51,7 @@ def extensionRepositories = [
 def cli = new CliBuilder(
     posix: false,
     stopAtNonOption: true,
+    width: 200,
     usage: """
 ${scriptName} --list
 ${scriptName} --install <extension>
@@ -59,7 +60,11 @@ ${scriptName} --uninstall <extension>
     header: "Options :",
     footer: """
 
-Use the extension "all" to install or uninstall all available extensions
+[*] Plugin name could be:
+- an url pointing to the extension artifact
+- the name of the plugin (local extension or download from github exo-addons)
+
+Use the extension "all" to install or uninstall all local available extensions
 
 """)
 
@@ -67,7 +72,7 @@ Use the extension "all" to install or uninstall all available extensions
 cli.with {
   h longOpt: 'help', 'Show usage information'
   l longOpt: 'list', 'List all available local extensions'
-  i longOpt: 'install', args: 1, argName: 'extension', 'Install an extension'
+  i longOpt: 'install', args: 1, argName: 'extension', 'Install an extension [*]'
   u longOpt: 'uninstall', args: 1, argName: 'extension', 'Uninstall an extension'
 }
 
