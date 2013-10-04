@@ -174,12 +174,18 @@ def installExtension(String extensionName, List extensionRepositories) {
       if(repository.type.equals(ExtensionRepository.Type.ZIP)) {
 
         def zipLocalLocation = null
-        if(new File(extensionLocation).exists()) {
+        def isLocalFile = new File(extensionLocation).exists()
+        if(isLocalFile) {
           // zip file on local file system
           zipLocalLocation = extensionLocation
         } else {
-          ant.get(src:extensionLocation, dest:"/tmp", skipexisting:true)
-          zipLocalLocation = "/tmp/" + extensionLocation.substring(extensionLocation.lastIndexOf('/'))
+          def tmpDir = System.getProperty("java.io.tmpdir")
+          if(!tmpDir.endsWith(File.separator)) {
+            tmpDir += File.separator
+          }
+
+          ant.get(src:extensionLocation, dest:tmpDir, skipexisting:false)
+          zipLocalLocation = tmpDir + extensionLocation.substring(extensionLocation.lastIndexOf(File.separator))
         }
         ant.unzip(src:zipLocalLocation, dest:librariesDir, overwrite:true) {
           patternset() {
@@ -192,6 +198,9 @@ def installExtension(String extensionName, List extensionRepositories) {
             include(name: "webapps/*.war")
           }
           cutdirsmapper (dirs:1)
+        }
+        if(!isLocalFile) {
+          ant.delete(file:zipLocalLocation)
         }
       } else if(repository.type.equals(ExtensionRepository.Type.EXPLODED)) {
         def extensionLibDirectory = new File(extensionLocation, "lib");
