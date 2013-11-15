@@ -53,6 +53,10 @@
           <artifactId>common-logging</artifactId>
           <groupId>org.gatein.common</groupId>
         </exclusion>
+          <exclusion>
+              <artifactId>javax.servlet</artifactId>
+              <groupId>javax.servlet-api</groupId>
+          </exclusion>
       </exclusions>
     </dependency>
   </dependencies>
