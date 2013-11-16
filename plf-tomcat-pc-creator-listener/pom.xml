@@ -32,12 +32,6 @@
   <description>This module defines a LifecycleListener to attach to a Tomcat host to create all portal containers.</description>
   <dependencies>
     <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat-catalina</artifactId>
-      <!-- Provided by Apache Tomcat -->
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.kernel</groupId>
       <artifactId>exo.kernel.commons</artifactId>
     </dependency>
@@ -53,11 +47,17 @@
           <artifactId>common-logging</artifactId>
           <groupId>org.gatein.common</groupId>
         </exclusion>
-          <exclusion>
-              <groupId>javax.servlet</groupId>
-              <artifactId>javax.servlet-api</artifactId>
-          </exclusion>
+        <exclusion>
+          <artifactId>javax.servlet-api</artifactId>
+          <groupId>javax.servlet</groupId>
+        </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-catalina</artifactId>
+      <!-- Provided by Apache Tomcat -->
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <profiles>
