@@ -170,22 +170,22 @@
           <groupId>com.sun.xml.bind</groupId>
         </exclusion>
         <!-- Coming by transitivity from org.gatein.portal:exo.portal.webui.portal -->
-        <exclusion>          
-          <groupId>commons-logging</groupId>
+        <exclusion>
           <artifactId>commons-logging</artifactId>
+          <groupId>commons-logging</groupId>
         </exclusion>
-        <exclusion>          
-          <groupId>javax.servlet</groupId>
+        <exclusion>
           <artifactId>javax.servlet-api</artifactId>
+          <groupId>javax.servlet</groupId>
         </exclusion>
         <!-- Coming by transitivity from org.exoplatform.social:social-component-core -->
-        <exclusion>          
-          <groupId>xerces</groupId>
+        <exclusion>
           <artifactId>xmlParserAPIs</artifactId>
+          <groupId>xerces</groupId>
         </exclusion>
-        <exclusion>          
-          <groupId>rome</groupId>
+        <exclusion>
           <artifactId>modules</artifactId>
+          <groupId>rome</groupId>
         </exclusion>
         <!-- Coming by transitivity from org.exoplatform.kernel:exo.kernel.container -->
         <exclusion>
@@ -213,7 +213,7 @@
       <groupId>org.exoplatform.commons</groupId>
       <artifactId>commons-extension-webapp</artifactId>
       <type>pom</type>
-    </dependency>   
+    </dependency>
     <dependency>
       <groupId>org.exoplatform.commons</groupId>
       <artifactId>commons-webui-resources</artifactId>
