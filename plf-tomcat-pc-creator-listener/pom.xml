@@ -54,8 +54,8 @@
           <groupId>org.gatein.common</groupId>
         </exclusion>
           <exclusion>
-              <artifactId>javax.servlet</artifactId>
-              <groupId>javax.servlet-api</groupId>
+              <groupId>javax.servlet</groupId>
+              <artifactId>javax.servlet-api</artifactId>
           </exclusion>
       </exclusions>
     </dependency>
