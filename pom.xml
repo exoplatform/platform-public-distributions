@@ -152,6 +152,12 @@
         <version>${project.version}</version>
         <type>zip</type>
       </dependency>
+      <!-- Extensions Manager -->
+      <dependency>
+        <groupId>org.exoplatform.platform.distributions</groupId>
+        <artifactId>plf-extensions-manager</artifactId>
+        <version>${project.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.exoplatform.platform.distributions</groupId>
         <artifactId>plf-packaging-resources</artifactId>
@@ -175,12 +181,6 @@
         <artifactId>plf-root-webapp</artifactId>
         <version>${project.version}</version>
         <type>war</type>
-      </dependency>
-      <!-- Extensions Manager -->
-      <dependency>
-        <groupId>org.exoplatform.platform.distributions</groupId>
-        <artifactId>plf-extensions-manager</artifactId>
-        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.exoplatform.platform.distributions</groupId>
