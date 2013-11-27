@@ -818,6 +818,34 @@
     <dependency>
         <groupId>org.gatein.portal</groupId>
         <artifactId>exo.portal.component.web.oauth-web</artifactId>
+        <exclusions>
+            <exclusion>
+                <artifactId>sso-integration</artifactId>
+                <groupId>org.gatein.sso</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <!-- Mobile site redirection -->
+    <!-- org.gatein.web.redirect.implementation.RedirectHandlerImpl used but not declared in GateIn ? -->
+    <dependency>
+        <groupId>org.gatein.web</groupId>
+        <artifactId>redirect</artifactId>
+        <exclusions>
+            <exclusion>
+                <artifactId>javax.servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+            </exclusion>
+            <!-- Coming by transitivity from org.gatein.portal:exo.portal.webui.portal -->
+            <exclusion>
+                <artifactId>exo.portal.webui.core</artifactId>
+                <groupId>org.gatein.portal</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <!-- org.gatein.security.oauth.webapi.OAuthDelegateFilter used but not declared in GateIn ? -->
+    <dependency>
+        <groupId>org.gatein.cdi</groupId>
+        <artifactId>gatein-cdi-injection</artifactId>
     </dependency>
     <dependency>
       <groupId>org.gatein.portal</groupId>
