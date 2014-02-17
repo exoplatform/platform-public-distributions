@@ -96,9 +96,6 @@
         <exclude>*:jaxb*:*</exclude>
         <!-- Don't package any XML APIs dep to avoid conflicts the JVM -->
         <exclude>*:xmlParserAPIs:*</exclude>
-        <!-- Remove JBC artifacts from the packaging, loaded as TD from org.gatein.portal:exo.portal.component.common-->
-        <!-- To be removed after migration to JCR-1.16.x-->
-        <exclude>*:exo.kernel.component.ext.cache.impl.jboss.v3:*</exclude>
       </excludes>
       <outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}.${artifact.extension}</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
