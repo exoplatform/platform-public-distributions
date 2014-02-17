@@ -192,13 +192,6 @@
           <artifactId>servlet-api</artifactId>
           <groupId>javax.servlet</groupId>
         </exclusion>
-        <!-- Coming by transitivity from org.gatein.portal:exo.portal.component.common:jar -->
-        <!-- PLF-5361 - Remove JBC artifacts from the packaging, we are using infinispan -->
-        <!-- To be removed after migration to JCR-1.16.x-->
-        <exclusion>
-          <artifactId>exo.kernel.component.ext.cache.impl.jboss.v3</artifactId>
-          <groupId>org.exoplatform.kernel</groupId>
-        </exclusion>
         <!-- Coming by transitivity from org.exoplatform.core:exo.core.component.database -->
         <exclusion>
           <artifactId>ow2-jta-1.1-spec</artifactId>
@@ -462,18 +455,6 @@
         <exclusion>
           <artifactId>javax.servlet-api</artifactId>
           <groupId>javax.servlet</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <!-- PLF-5361 - Add infinispan artifacts -->
-    <dependency>
-      <groupId>org.exoplatform.jcr</groupId>
-      <artifactId>exo.jcr.component.core.impl.infinispan.v5</artifactId>
-      <exclusions>
-        <!-- Coming by transitivity from org.exoplatform.core:exo.core.component.database -->
-        <exclusion>
-          <artifactId>ow2-jta-1.1-spec</artifactId>
-          <groupId>org.ow2.spec.ee</groupId>
         </exclusion>
       </exclusions>
     </dependency>
