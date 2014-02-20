@@ -46,9 +46,9 @@
       <jmxStatistics enabled="true"/>
       <eviction strategy="NONE"/>
        <loaders passivation="false" shared="false" preload="false">
-           <loader class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
+           <store class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
                <async enabled="false"/>
-           </loader>
+           </store>
        </loaders>
    </default>
 </infinispan>
