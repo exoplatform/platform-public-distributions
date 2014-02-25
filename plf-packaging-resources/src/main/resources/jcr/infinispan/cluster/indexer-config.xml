@@ -30,8 +30,10 @@
                 <property name="threadNamePrefix" value="EvictionThread"/>
             </properties>
         </evictionScheduledExecutor>
-
-        <globalJmxStatistics jmxDomain="platform.insp.cache.indexer" enabled="true" allowDuplicateDomains="true"/>
+        <!--
+                <globalJmxStatistics jmxDomain="platform.insp.cache.indexer" enabled="true" allowDuplicateDomains="true"/>
+        -->
+        <globalJmxStatistics enabled="true" cacheManagerName="indexer" jmxDomain="platform.insp.cache" mBeanServerLookup="org.infinispan.jmx.PlatformMBeanServerLookup"/>
 
         <transport transportClass="org.infinispan.remoting.transport.jgroups.JGroupsTransport" clusterName="${infinispan-cluster-name}" distributedSyncTimeout="20000">
             <properties>
@@ -50,7 +52,7 @@
         <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
         <jmxStatistics enabled="true"/>
         <eviction strategy="NONE"/>
-        <loaders passivation="false" shared="false" preload="false">
+        <loaders passivation="false" shared="true" preload="false">
             <store class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
                 <async enabled="false"/>
             </store >

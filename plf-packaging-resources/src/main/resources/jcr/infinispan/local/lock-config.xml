@@ -30,8 +30,10 @@
                 <property name="threadNamePrefix" value="EvictionThread"/>
             </properties>
         </evictionScheduledExecutor>
-
-        <globalJmxStatistics jmxDomain="platform.insp.cache.lock" enabled="true" allowDuplicateDomains="true"/>
+        <!--
+                <globalJmxStatistics jmxDomain="platform.insp.cache.lock" enabled="true" allowDuplicateDomains="true"/>
+        -->
+        <globalJmxStatistics enabled="true" cacheManagerName="lock-manager" jmxDomain="platform.insp.cache" mBeanServerLookup="org.infinispan.jmx.PlatformMBeanServerLookup"/>
     </global>
 
     <default>
@@ -39,7 +41,7 @@
         <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
         <jmxStatistics enabled="true"/>
         <eviction strategy="NONE"/>
-        <loaders passivation="false" shared="true" preload="true">
+        <loaders passivation="false" shared="false" preload="true">
             <store class="org.exoplatform.services.jcr.infinispan.JdbcStringBasedCacheStore" fetchPersistentState="true" ignoreModifications="false" purgeOnStartup="false">
                 <properties>
                     <property name="stringsTableNamePrefix" value="${infinispan-cl-cache.jdbc.table.name}"/>
