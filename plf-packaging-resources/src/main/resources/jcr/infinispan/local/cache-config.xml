@@ -30,8 +30,10 @@
                 <property name="threadNamePrefix" value="EvictionThread"/>
             </properties>
         </evictionScheduledExecutor>
-
-        <globalJmxStatistics jmxDomain="platform.insp.cache.jcr" enabled="true" allowDuplicateDomains="true"/>
+        <!--
+                <globalJmxStatistics jmxDomain="platform.insp.cache.jcr" enabled="true" allowDuplicateDomains="true"/>
+        -->
+        <globalJmxStatistics enabled="true" cacheManagerName="jcr" jmxDomain="platform.insp.cache" mBeanServerLookup="org.infinispan.jmx.PlatformMBeanServerLookup"/>
     </global>
 
     <default>

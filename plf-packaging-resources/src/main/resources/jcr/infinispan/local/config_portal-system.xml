@@ -30,14 +30,16 @@
                 <property name="threadNamePrefix" value="EvictionThread"/>
             </properties>
         </evictionScheduledExecutor>
-
-        <globalJmxStatistics jmxDomain="platform.insp.cache.portal-system" enabled="true" allowDuplicateDomains="true"/>
+        <!--
+                <globalJmxStatistics jmxDomain="platform.insp.cache.portal-system" enabled="true" allowDuplicateDomains="true"/>
+        -->
+        <globalJmxStatistics enabled="true" cacheManagerName="portal-system" jmxDomain="platform.insp.cache" mBeanServerLookup="org.infinispan.jmx.PlatformMBeanServerLookup"/>
     </global>
 
     <default>
         <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
         <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
-        <jmxStatistics enabled="true"/>
+        <jmxStatistics enabled="false"/>
         <eviction strategy="LRU" threadPolicy="DEFAULT" maxEntries="1000000"/>
         <expiration wakeUpInterval="5000"/>
     </default>

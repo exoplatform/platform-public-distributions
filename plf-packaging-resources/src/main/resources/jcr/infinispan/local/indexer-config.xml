@@ -20,35 +20,31 @@
 
 -->
 <infinispan
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="urn:infinispan:config:5.2 http://www.infinispan.org/schemas/infinispan-config-5.2.xsd"
-      xmlns="urn:infinispan:config:5.2">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:infinispan:config:5.2 http://www.infinispan.org/schemas/infinispan-config-5.2.xsd"
+        xmlns="urn:infinispan:config:5.2">
 
-   <global>
-      <evictionScheduledExecutor factory="org.infinispan.executors.DefaultScheduledExecutorFactory">
-         <properties>
-            <property name="threadNamePrefix" value="EvictionThread"/>
-         </properties>
-      </evictionScheduledExecutor>
+    <global>
+        <evictionScheduledExecutor factory="org.infinispan.executors.DefaultScheduledExecutorFactory">
+            <properties>
+                <property name="threadNamePrefix" value="EvictionThread"/>
+            </properties>
+        </evictionScheduledExecutor>
+        <!--
+              <globalJmxStatistics jmxDomain="platform.insp.cache.indexer" enabled="true" allowDuplicateDomains="true"/>
+        -->
+        <globalJmxStatistics enabled="true" cacheManagerName="indexer" jmxDomain="platform.insp.cache" mBeanServerLookup="org.infinispan.jmx.PlatformMBeanServerLookup"/>
+    </global>
 
-      <globalJmxStatistics jmxDomain="platform.insp.cache.indexer" enabled="true" allowDuplicateDomains="true"/>
-
-      <transport transportClass="org.infinispan.remoting.transport.jgroups.JGroupsTransport" clusterName="${infinispan-cluster-name}" distributedSyncTimeout="20000">
-         <properties>
-            <property name="configurationFile" value="${gatein.jcr.jgroups.config}"/>
-         </properties>
-      </transport>
-   </global>
-
-   <default>
-      <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
-      <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
-      <jmxStatistics enabled="true"/>
-      <eviction strategy="NONE"/>
-       <loaders passivation="false" shared="false" preload="false">
-           <store class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
-               <async enabled="false"/>
-           </store>
-       </loaders>
-   </default>
+    <default>
+        <locking isolationLevel="READ_COMMITTED" lockAcquisitionTimeout="20000" writeSkewCheck="false" concurrencyLevel="500" useLockStriping="false"/>
+        <transaction transactionManagerLookupClass="org.exoplatform.services.transaction.infinispan.JBossStandaloneJTAManagerLookup" syncRollbackPhase="true" syncCommitPhase="true" transactionMode="TRANSACTIONAL"/>
+        <jmxStatistics enabled="true"/>
+        <eviction strategy="NONE"/>
+        <loaders passivation="false" shared="false" preload="false">
+            <store class="${infinispan-cachestore-classname}" fetchPersistentState="false" ignoreModifications="false" purgeOnStartup="false">
+                <async enabled="false"/>
+            </store>
+        </loaders>
+    </default>
 </infinispan>
