@@ -60,7 +60,7 @@ Several extensions are not installed by default in the Express and Enterprise ve
     * crash	: Common Reusable SHell to interact with the JVM
     * acme (*)	: A demo website built with eXo Platform 4 (cf. next section for its usage)
     * cmis (*)	: Content Management Interoperability Services 
-    * ide (*)	: Integrated development environment to develop applications online 
+    * ide (*)	: Integrated development environment to develop applications online (cf. next section for its usage)
     * wai (*)	: A demo website following Accessibility standards 
 
 On Windows, Open a DOS prompt command, go to PLF_HOME directory and type the command:
@@ -76,13 +76,13 @@ On Linux: Open a terminal, go to PLF_HOME directory and type the command :
 (*) only on Express and Enterprise editions
 
 -----------------------------
-Deployment of acme website
+Deployment of acme website, ide extension
 -----------------------------
 
-When eXo Platform server is already started and you would like to install acme extension, you need to follow the steps below:
+When eXo Platform server is already started and you would like to install acme/ide extension, you need to follow the steps below:
 * Stop eXo Platform server
-* Install acme extension with the extension script
-* Set the variable "acme.portalConfig.metadata.override" as true. This can be done by one of the two ways:
+* Install acme/ide extension with the extension script
+* Set the variable "acme.portalConfig.metadata.override"/"ide.portalConfig.metadata.override" as true while deploying acme/ide extension respectively. This can be done by one of the two ways:
 ** Use configuration.properties:
   In this file, you uncomment the line of this parameter
 ** Use customization configuration script:
@@ -90,7 +90,7 @@ When eXo Platform server is already started and you would like to install acme e
   Please refer to "Customizing environment variables in Tomcat" or "Installing JBoss EAP" in Platform 4.0 Administration guide for more details of these scripts.
 * Restart eXo Platform server.
 * Stop eXo Platform server.
-* Set the variable "acme.portalConfig.metadata.override" as false or comment again the corresponding line of this variable.
+* Set the variable "acme.portalConfig.metadata.override"/"ide.portalConfig.metadata.override" as false or comment again the corresponding line of this variable while deploying acme/ide extension respectively.
 * Start eXo Platform server again to continue using it.
 
 ------------------
