@@ -191,4 +191,4 @@
 #CATALINA_OPTS="${CATALINA_OPTS} -Dacme.portalConfig.metadata.override=true"
 
 # IDE extension (override default ide extension)
-#CATALINA_OPTS="${CATALINA_OPTS} -Dide.portalConfig.metadata.override=true"
+#CATALINA_OPTS="${CATALINA_OPTS} -Dide.portalConfig.metadata.override=false"

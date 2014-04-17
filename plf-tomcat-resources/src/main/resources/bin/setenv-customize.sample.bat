@@ -186,4 +186,4 @@ REM # ACME extension (override default acme site data)
 REM SET "CATALINA_OPTS=%CATALINA_OPTS% -Dacme.portalConfig.metadata.override=true"
 
 REM # IDE extension (override default ide extension data)
-REM SET "CATALINA_OPTS=%CATALINA_OPTS% -Dide.portalConfig.metadata.override=true"
+REM SET "CATALINA_OPTS=%CATALINA_OPTS% -Dide.portalConfig.metadata.override=false"
