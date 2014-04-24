@@ -60,7 +60,7 @@ Several extensions are not installed by default in the Express and Enterprise ve
     * crash	: Common Reusable SHell to interact with the JVM
     * acme (*)	: A demo website built with eXo Platform 4 (cf. next section for its usage)
     * cmis (*)	: Content Management Interoperability Services 
-    * ide (*)	: Integrated development environment to develop applications online (cf. next section for its usage)
+    * ide (*)	: Integrated online environment to develop applications (cf. next section for its usage)
     * wai (*)	: A demo website following Accessibility standards 
 
 On Windows, Open a DOS prompt command, go to PLF_HOME directory and type the command:
@@ -79,9 +79,9 @@ On Linux: Open a terminal, go to PLF_HOME directory and type the command :
 Deployment of acme website
 -----------------------------
 
-When eXo Platform server is already started and you would like to install acme/ide extension, you need to follow the steps below:
+When eXo Platform server is already started and you would like to install acme extension, you need to follow the steps below:
 * Stop eXo Platform server
-* Install acme/ide extension with the extension script
+* Install acme extension with the extension script
 * Set the variable "acme.portalConfig.metadata.override" as true while deploying acme extension. This can be done by one of the two ways:
 ** Use configuration.properties:
   In this file, you uncomment the line of this parameter
@@ -94,10 +94,10 @@ When eXo Platform server is already started and you would like to install acme/i
 * Start eXo Platform server again to continue using it.
 
 -----------------------------
-Customization of ide extension
+Integration of ide extension
 -----------------------------
 
-When eXo Platform server is already started and you would like to customize ide extension, you need to follow the steps below:
+When eXo Platform server is already started and you would like to integrate IDE extension and add the IDE item in Administration drop-down menu, you need to follow the steps below:
 * Stop eXo Platform server
 * Set the variable "ide.portalConfig.metadata.override" as false . This can be done by one of the two ways:
 ** Use configuration.properties:
