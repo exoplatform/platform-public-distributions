@@ -94,10 +94,10 @@ When eXo Platform server is already started and you would like to install acme e
 * Start eXo Platform server again to continue using it.
 
 -----------------------------
-Integration of ide extension
+Exclude of the IDE item from Administration drop-down menu
 -----------------------------
 
-When eXo Platform server is already started and you would like to integrate IDE extension and add the IDE item in Administration drop-down menu, you need to follow the steps below:
+When eXo Platform server integrates the ide extension and you would like to exclude the IDE item from Administration drop-down menu, follow the steps below:
 * Stop eXo Platform server
 * Set the variable "ide.portalConfig.metadata.override" as false . This can be done by one of the two ways:
 ** Use configuration.properties:
