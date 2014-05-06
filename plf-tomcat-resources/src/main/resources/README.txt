@@ -82,7 +82,7 @@ Deployment of acme website
 When eXo Platform server is already started and you would like to install acme extension, you need to follow the steps below:
 * Stop eXo Platform server
 * Install acme extension with the extension script
-* Set the variable "acme.portalConfig.metadata.override" as true while deploying acme extension. This can be done by one of the two ways:
+* Set the variable "acme.portalConfig.metadata.override" as true. This can be done by one of the two ways:
 ** Use configuration.properties:
   In this file, you uncomment the line of this parameter
 ** Use customization configuration script:
@@ -90,11 +90,11 @@ When eXo Platform server is already started and you would like to install acme e
   Please refer to "Customizing environment variables in Tomcat" or "Installing JBoss EAP" in Platform 4.0 Administration guide for more details of these scripts.
 * Restart eXo Platform server.
 * Stop eXo Platform server.
-* Set the variable "acme.portalConfig.metadata.override" as false or comment again the corresponding line of this variable while deploying acme extension respectively.
+* Set the variable "acme.portalConfig.metadata.override" as false or comment again the corresponding line of this variable.
 * Start eXo Platform server again to continue using it.
 
 -----------------------------
-Exclude of the IDE item from Administration drop-down menu
+Exclusion of the IDE item from Administration drop-down menu
 -----------------------------
 
 When eXo Platform server integrates the ide extension and you would like to exclude the IDE item from Administration drop-down menu, follow the steps below:
