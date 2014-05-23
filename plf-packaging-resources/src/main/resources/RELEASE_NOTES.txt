@@ -35,7 +35,7 @@ II. STARTUP INSTRUCTIONS
 =========================
  
  
-The file readme.txt contains information on how to start the product.
+The file README.txt contains information on how to start the product.
  
  
 ===================
@@ -68,16 +68,20 @@ commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
 # PLF-5820: Update gadgets
 commons.upgrade.Upgrade-Gadgets.enable=true
 
+# Remove public read permission from ProductInfo node
+commons.upgrade.UpgradeProductInfoNodePlugin.enable=true
+ 
 # ECMS-4199: Update translation link for websites using Sample Accessible Website Template (a.k.a WAI)
 # only necessary when *WAI extension* was installed in the old server
 commons.upgrade.WaiportalTranslationsUpgradePlugin.enable=true
- 
+
 * Start server. The upgrade will be run automatically
 * Stop server and deactivate the above upgrade configurations:
  
 commons.upgrade.WCMTemplateUpgradePlugin.enable=false
 commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=false
 commons.upgrade.Upgrade-Gadgets.enable=false
+commons.upgrade.UpgradeProductInfoNodePlugin.enable=false
 commons.upgrade.WaiportalTranslationsUpgradePlugin.enable=false
 
 * Restart the server. The upgrade process is done.
@@ -85,6 +89,7 @@ commons.upgrade.WaiportalTranslationsUpgradePlugin.enable=false
 Description of new upgrade plugin
 ***********************************
 * WaiportalTranslationsUpgradePlugin: This plugin is introduced by ECMS-4199 to update the translation links on sites using Sample Accessible Website Template (a.k.a WAI).
+* UpgradeProductInfoNodePlugin: This plugin is to remove public access to the node containing product information.
 
 
 ---------------------------------------------
