@@ -56,6 +56,7 @@
         <exclude>**/NOTICE*</exclude>
         <exclude>**/RELEASE-NOTES*</exclude>
         <exclude>**/RUNNING*</exclude>
+        <exclude>**/conf/context.xml</exclude>
       </excludes>
     </fileSet>
     <!-- Unix shell scripts with exec rights -->
