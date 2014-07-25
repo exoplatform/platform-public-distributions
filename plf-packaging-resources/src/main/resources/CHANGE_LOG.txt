@@ -1,4 +1,107 @@
 =========================
+Changelog Platform 4.0.7
+=========================
+
+ 
+Platform 4.0.7
+*****************
+** Bug
+    * [PLF-5917] - [OrganizationIntegrationService] Ensure that all the endRequest methods will be called whatever happens
+
+ 
+eXo GateIn 3.5.11-PLF  
+************************
+** Bug
+    * [EXOGTN-1256] - Applications are public after being imported
+    * [EXOGTN-1539] - Cannot upload filename contains % character
+    * [EXOGTN-1717] - Exception swallow in UserDaoImpl.persistUserInfo()
+    * [EXOGTN-1746] - [IE8] [Page Creation Wizard] UI glitch in Time box
+    * [EXOGTN-1792] - Impossible to upload file in Content Explorer when tmpdir does not exist
+    * [EXOGTN-1812] - Backport GTNPORTAL-3489 [MembershipDAOImpl]ORA-00001: unique constraint (IDM.SYS_C0015551) violated
+    * [EXOGTN-1823] - Backport gatein-3.6.x commits of Picketlink and Hibernate transaction issues
+    * [EXOGTN-1853] -  Cannot delete user with Oracle database
+
+
+** Improvement
+    * [EXOGTN-1801] - Improve skin service API to support multi-tenant
+    * [EXOGTN-1826] - [Cluster] Should refresh data in Membership management form without relogin
+
+ 
+Integration 4.0.7  
+********************
+** Bug
+    * [INTEG-306] - [integ-forum] Wrong activity after merging topics
+    * [INTEG-307] - [integ-ecms] Status of document is not updated in the Activity when passing it manually to "Draft" in publication lifecycle
+    * [INTEG-309] - [integ-wiki] TemplateRuntimeException when commenting on the Wiki activity
+    * [INTEG-317] - Incorrect number of likers on an activity
+    * [INTEG-334] - [Unified Search] Search Result Settings aren't shown properly
+
+** Improvement
+    * [INTEG-250] - [Unified Search] Hard-coded search settings
+
+ 
+eXo Social 4.0.7
+*******************
+** Bug
+    * [SOC-3247] - Unknown error when changing current position
+    * [SOC-3371] - Incorrect number of likers on an activity
+    * [SOC-4072] - Missing attribute of Company in user's profile
+    * [SOC-4166] - [IE8] User popup doesn't disappear when the mouse no longer focuses on user name
+    * [SOC-4186] - HTML encoding in activity with shared link when like it
+    * [SOC-4219] - [User Search] Wrong result when Organization has digits
+    * [SOC-4224] - [Connection] Impossible to search users having Display Name
+    * [SOC-4228] - Missing refresh button in Spaces activity stream
+    * [SOC-4242] - Connect button in the generic user popup does not work
+    * [SOC-4317] - [IE8] Javascript error when deleting letters inside Activity Composer
+
+
+** Feedback
+    * [SOC-4173] - [Space-Add Application] Mouse Icon is not changed to Hand icon when moving over "Add" button
+
+** Improvement
+    * [SOC-2014] - Change user list filtering and sorting policy for both connections and people pages
+
+ 
+eXo ECMS 4.0.7
+*****************
+** Bug
+    * [ECMS-4880] - Cannot go directly to a user folder with username as email address
+    * [ECMS-5395] - Renaming content in Webdav does not change its publication state
+    * [ECMS-5998] - Error when deleting a node having action after deleting node "exo:actions"
+    * [ECMS-6047] - [IE] Can't drag and drop node with Icons mode
+    * [ECMS-6095] - Comments are not displayed on SCV in live mode
+    * [ECMS-6204] - [IE8] Cannot add tag to web content
+    * [ECMS-6209] - Incorrect description of Pending status in Publication History
+    * [ECMS-6219] - Unable to put > in css file
+    * [ECMS-6221] - Missing exo:titlePublished with fastPublish
+    * [ECMS-6229] - ItemNotFoundException when opening Content Explorer after deleting a content with symlink in CLV
+    * [ECMS-6231] - Wrong Comparison method in PropertyValueComparator
+    * [ECMS-6238] - Cannot upload file whose name contains [ character in Activity Composer
+    * [ECMS-6256] - Incorrect sort by title using categoryList template in content list portlet
+    * [ECMS-6265] - SitesExplorer Tree disappears when switching drives
+    * [ECMS-6312] - [Product] Redundant bullets in Document View
+
+
+** Feedback
+    * [ECMS-6183] - [CLV] Deleted content appears in CLV setting
+
+
+eXo JCR 1.15.10
+******************
+** Bug
+    * [JCR-2307] - ConstraintViolationException expected when a mandatory property is missing and a node with the same name exists
+    * [JCR-2312] - Cannot start eXo JCR with MySQL in UTF-8
+    * [JCR-2288] - [Cluster] Adding nodes to the same parent node causes TimeoutException
+
+
+eXo Core 2.5.10
+******************
+** Bug
+    * [COR-323] - Mock class LazyListImpl failed to load item
+
+
+
+=========================
 Changelog Platform 4.0.6
 =========================
 
