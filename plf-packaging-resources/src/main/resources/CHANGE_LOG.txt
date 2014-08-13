@@ -50,7 +50,6 @@ eXo Social 4.0.7
     * [SOC-4186] - HTML encoding in activity with shared link when like it
     * [SOC-4219] - [User Search] Wrong result when Organization has digits
     * [SOC-4224] - [Connection] Impossible to search users having Display Name
-    * [SOC-4228] - Missing refresh button in Spaces activity stream
     * [SOC-4242] - Connect button in the generic user popup does not work
     * [SOC-4317] - [IE8] Javascript error when deleting letters inside Activity Composer
 
