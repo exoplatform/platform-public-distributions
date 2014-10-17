@@ -20,7 +20,7 @@ I. MAIN CHANGES
 ================
  
  
-Main changes since Platform 4.0.7-CP01:
+Main changes since Platform 4.0.7:
 * Bug fixes
  
  
@@ -63,7 +63,7 @@ commons.upgrade.SiteDataUpgradePlugin.enable=false
 
 Description of new upgrade plugin
 ***********************************
-* SiteDataUpgradePlugin: This plugin is introduced by ECMS-6394 to add properties 'exo:name' and 'exo:lastModifiedDate' to site node's child nodes
+* SiteDataUpgradePlugin: This plugin is introduced by ECMS-6394 to add properties 'exo:name' and 'exo:lastModifiedDate' to site node's child nodes for sorting purpose
 
 ---------------------------------------------
 Upgrading from Platform 4.0.6 to 4.0.7
