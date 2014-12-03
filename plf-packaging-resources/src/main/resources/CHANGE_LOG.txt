@@ -2,6 +2,532 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
+eXo Commons 4.1.0  
+*************************
+
+    * [COMMONS-343] - CKEditor doesn't appear in French or Vietnamese
+    * [COMMONS-359] - [Answer][CKEditor][IE9] The content of CKEditor could not be focused by mouse click.
+    * [COMMONS-362] - [UserStateRestService ] Ping is not sent on IE
+    * [COMMONS-365] - CLONE - [Answer][CKEditor][IE10] The content of CKEditor could not be focused by mouse click.
+    * [COMMONS-367] - [Answer][CKEditor][Chrome] The content of CKEditor could not be focused by mouse click only after title input
+    * [COMMONS-342] - Admin can change the status of the other users from RESTUserService
+    * [COMMONS-354] - [CKEditor] Remove SCAYT add-on
+    * [COMMONS-356] - [CKEditor] Clean-up i18n files
+    * [COMMONS-368] - Typo in the console message of active notification plugins
+    * [COMMONS-369] - Review the usage of OrganizationService
+
+eXo Integration 4.1.0  
+*************************
+
+    * [INTEG-348] - Unified Search: Loading pop up is not good
+    * [INTEG-350] - [XSS] FORUM - Edit topic
+    * [INTEG-351] - [XSS] FORUM - Space > Answer > Edit question
+    * [INTEG-352] - Wrong avatar displayed in comments on user activity stream
+    * [INTEG-369] - [UnifiedSearch] quick search portlet settings affect the search page
+    * [INTEG-370] - [Unified Search] Cannot search with text containing dot character
+    * [INTEG-376] - CLONE - [Unified search] Cannot search Event/Task with special characters
+
+eXo Platform 4.1.0 
+*************************
+
+    * [PLF-5212] - [Unified search] Cannot search Event/Task with special characters
+    * [PLF-5926] - [TC_PLF_406][JBoss EAP 6.1.1.GA + MySQL] : ResourceException : IJ000453: Unable to get managed connection
+    * [PLF-6007] - Site template "empty" contains removed portlet ParameterizedContentViewerPortlet
+    * [PLF-6055] - [PLF-jboss] Sometimes, show page empty after login
+    * [PLF-6069] - [Cluster]: Error log when starting nodes in cluster
+    * [PLF-6074] - NPE when running PCVPortletUpgradePlugin
+    * [PLF-6076] - [Ubuntu] Office MIME type isn't recognized when uploading via WebDAV 
+    * [PLF-6084] - [acme] PageNotFound 404 displays in acme page
+    * [PLF-6093] - [Unified Search] Cannot search with text containing dot character
+    * [PLF-5959] - Platform 4.1.x requires Java 7
+    * [PLF-6082] - Upgrade version of maven-parent-pom to 14-SNAPSHOT
+    * [PLF-5829] - Add configuration parameters for ECMS & WIKI cache into configuration.properties
+    * [PLF-6049] - Missing property keys are not internalized in configuration.properties and not exposed in exo-sample.properties
+    * [PLF-6065] - Add XMLParserConfiguration into CATALINA_OPTS
+    * [PLF-6102] - Platform user don't have setProperty permission while has add node permission
+    * [PLF-6112] - Release Platform 4.1.0-RC2
+    * [PLF-6115] - CLONE - Review the usage of OrganizationService
+    * [PLF-6123] - [Watch ECMS document] Missing email content with externalized property
+    * [PLF-6105] - Wrong value of Markup cache configured in configuration.properties
+
+eXo ECMS 4.1.0  
+*************************
+
+    * [ECMS-5919] - [acme] No way to edit ACME search portlet in inline editing mode 
+    * [ECMS-6092] - [Cluster]: SEO information are not edited
+    * [ECMS-6144] - [CKEditor] Bugs when switching between List View and Thumbnail View
+    * [ECMS-6248] - [Navigation by Content] Don't have any action when select page for list/detail 
+    * [ECMS-6267] - [CLV] No icon to select page in Show in Page
+    * [ECMS-6277] - [Cluster] Do not refresh data in SEO at node2 after had deleted SEO at node1
+    * [ECMS-6280] - [Cluster]: Problem while deleting permission of node
+    * [ECMS-6284] - [Cluster]: New document template is not updated on node 2 after creating on node 1 successfully
+    * [ECMS-6285] - [Cluster]: NPE when create new content on one node after removing a template from other node
+    * [ECMS-6314] - [Content Explorer] Missing some icons (LoadingProgress.gif, ArrowSideBar.gif)
+    * [ECMS-6327] - Too many invocations of DocumentReader when uploading an Office file
+    * [ECMS-6366] - The error message "SyntaxError: missing" will be displayed when clicking on Refresh button
+    * [ECMS-6391] - CLV page: Edit icon is not displayed in the contents following the first content
+    * [ECMS-6414] - [IE][ACME][Edit] The content of republished document is not updated, even users refresh many times
+    * [ECMS-6417] - [IE][ACME]CLV can not display contents in a restricted access folder
+    * [ECMS-6418] - [Content List View] User can view an unpublished web content
+    * [ECMS-6419] - [CLV] URL parameters are lost after returning from in-context editing
+    * [ECMS-6420] - CKEditor doesn't appear in French or Vietnamese
+    * [ECMS-6428] - CLONE - [Cluster]: Error log when starting nodes in cluster
+    * [ECMS-6429] - [ACME] the content is published when the time set on "From" field is not reached
+    * [ECMS-6435] - [IE8] No tooltip for icons in CLV and SCV
+    * [ECMS-6439] - [CKEditor] Shift Enter and Enter do the same thing
+    * [ECMS-6440] - [CKEditor] NotFoundError when Insert Portal links in Spanish or Swedish
+    * [ECMS-6448] - [Office tests] Cannot edit content of uploaded file
+    * [ECMS-6471] - Wrong warning message displays with special characters
+    * [ECMS-6472] - Window.require displays after Contributor creates content
+    * [ECMS-6473] - [Unified Search] Cannot search with text containing dot character
+    * [ECMS-6481] - [Unified search] events and tasks are not searchable 
+    * [ECMS-6483] - Characters are removed from file name after uploading.
+    * [ECMS-6497] - [CKEditor] [Insert Image] Missing "Upload file" button in Content Selector form
+    * [ECMS-6501] - [Advanced Search] Unknown error when using 'Created' filed
+    * [ECMS-6135] - Missing configuration for ECMS caches in cluster mode
+    * [ECMS-6438] - [CKEditor] Update the i18n variable for eXoPlugins
+    * [ECMS-6488] - Review the usage of OrganizationService
+
+eXo WIKI 4.1.0 
+*************************
+
+    * [WIKI-486] - Wrong behavior when opening a new draft page in other wikis
+    * [WIKI-629] - Weird display of Title in Code macro
+    * [WIKI-868] - Missing configuration for WIKI caches in cluster mode
+    * [WIKI-929] - Cannot show left navigation in Personal Wiki
+    * [WIKI-939] - Wiki application is not stable on IE11
+    * [WIKI-947] - [IE 10] Cannot attach image, an error occures while uploading your file
+    * [WIKI-953] - Incorrect link in wiki home
+    * [WIKI-957] - Syntax error displays when navigating from a blank title wiki page
+    * [WIKI-959] - CLONE - [Unified search] Cannot search Event/Task with special characters
+    * [WIKI-973] - Duplicated Comment shown when moving a wiki page
+    * [WIKI-969] - CLONE - Review the usage of OrganizationService
+
+eXo Social 4.1.0  
+*************************
+
+    * [SOC-4128] - Email Notification - Incorrect UI of New User
+    * [SOC-4277] - [Generic user popup] Not update connection status after click Connect on IE
+    * [SOC-4362] - Show wrong information when update user info
+    * [SOC-4376] - Wrong avatar displayed in comments on user activity stream
+    * [SOC-4404] - [Unified Search]: Hidden space is still displayed in search result
+    * [SOC-4414] - [space] invitation space shows blank page when site is public
+    * [SOC-4415] - [space] space access doesn't recognize user permission
+    * [SOC-4416] - [Cluster]: Unknown error when accessing a new space from node 2
+    * [SOC-4456] - [Unified search] Cannot search with special characters
+    * [SOC-4473] - Displays incorrectly other user's profile information during edit his/her own profile
+    * [SOC-4478] - CLONE - UnifiedSearch - Problem when search with special characters
+    * [SOC-4493] - Click on document in activity stream
+    * [SOC-4494] - Activities show in Activity Stream without connections
+    * [SOC-4385] - Need flexible display for Space Name and Description
+    * [SOC-4486] - Review the usage of OrganizationService
+    * [SOC-4491] - Spelling mistakes in class name of Relationship notification plugin
+
+eXo Forum 4.1.0 
+*************************
+
+    * [FORUM-655] - CLONE - [Unified Search] Search connectors don't work properly with Japanese data
+    * [FORUM-716] - [IE]Overlap of Checkbox and Help icon in Add BBCode form
+    * [FORUM-748] - Wrong constructor key for LIST_BBCODE_DATA contant in CacheType enum class
+    * [FORUM-884] - [IE]Show <p> tag in comment's content when add comment in Activity stream
+    * [FORUM-890] -  [IE] Icon is changed when move mouse over Submit Question button 
+    * [FORUM-944] - [Forum] Wrong information of pruned topics
+    * [FORUM-958] - Email notification is not sent to defined "Email addresses to notify when there is a new post"
+    * [FORUM-959] - [FORUM] [Private message] "null" value displays in "Message" field in "Compose New Message" form
+    * [FORUM-960] - [TC-PLF-4.1-RC1] [Forum Read Topics] Slowness in (UITopicDetail.run & TemplateService.getTemplate)
+    * [FORUM-970] - Forum posts are always marked as unread posts
+    * [FORUM-972] - [Answer][Edit Portlet]Show "The field "Email Template" is required. " warning when user selects a other tab in Answer portlet setting
+    * [FORUM-976] - [Category][BBCode]No keep new statuses of Active column in BBcode manager when add or delete a new BBcode
+    * [FORUM-980] - [Answer] Question author information still is shown when a category is not set "View Question Authors"
+    * [FORUM-984] - Icon legend always appear in Topic List
+    * [FORUM-993] - [IE9] [Add topic] Cannot add more than one topic continuously
+    * [FORUM-1000] - [Cluster]: Error when create a topic with attach file
+    * [FORUM-1001] - [Cluster]: Error when post reply with attach file
+    * [FORUM-1003] - Forum unified search too slow with too many low level methods invocations
+    * [FORUM-1008] - Answers of a question is shown incorrectly on Activity Stream
+    * [FORUM-1017] - [TC-PLF-4.1-RC2][Forum Write Posts] Slowness in forum.ext.activity.ActivityExecutor.execute
+    * [FORUM-1037] - [Answer][Simple Search]Cannot search questions when user is normal user
+    * [FORUM-1002] - [CKEditor] Update i18n variable of helpBBCode plugin
+
+eXo Calendar 4.1.0  
+*************************
+
+    * [CAL-649] - Participants should be at pending status when sending invitation email
+    * [CAL-998] - [PLF41-Migration]Missing color of calendars created in Platform 3.5
+    * [CAL-1023] - [Unified Search]: readonly calendar and private event should be  not searchable
+    * [CAL-1026] - Instances have different hours when repeat on Tuesday 14/10/2014
+    * [CAL-1030] - CLONE - [Unified search] Cannot search Event/Task with special characters
+    * [CAL-1039] - [Task][Reminder Email] Reminder mails are sent continuously
+    * [CAL-1042] - Potential IDM hibernate session leak
+
+
+eXo GateIn 4.1.0  
+*************************
+
+    * [EXOGTN-1310] - User's search box takes long time to display
+    * [EXOGTN-1888] - Hibernate session leak with idm
+    * [EXOGTN-1893] - Config session cookie path to "/" for running in JBoss
+
+eXo Platform UI 4.1.0  
+*************************
+
+    * [UI-3221] - [GateIn] Alignment Bugs on Add user, Group vs Page managenent
+    * [UI-3231] - [Answers] Alignment Bugs on some screens
+    * [UI-3312] - UI Bug in answer after change to Ελληνικά language
+    * [UI-3330] - Similar CSS style in each portlet but the style is duplicated
+    * [UI-3334] - [acme] No way to edit ACME search portlet in inline editing mode 
+    * [UI-3335] - [CLV] No icon to select page in Show in Page
+    * [UI-3336] - UI - [Content Explorer] Missing some icons (LoadingProgress.gif, ArrowSideBar.gif)
+    * [UI-3337] - [acme] Missing fast-content-creator-lt.css in Contact us page
+    * [UI-3338] - Unified Search: Loading pop up is not good
+    * [UI-3340] - Incorrect notification icon in Forum
+    * [UI-3356] - Incorrect UI of Image Activity Sharing
+    * [UI-3357] - Wrong UI on New User on eXo
+    * [UI-3359] - [IE]Overlap of Checkbox and Help icon in Add BBCode form
+    * [UI-3363] - Incorrect UI of some portlets 
+    * [UI-3364] - [ECMAdmin] Weird display of label "Root Path" when adding a new category tree
+    * [UI-3366] - Lack of empty table data style inside a new folder
+    * [UI-3375] - Bad UI icon in "Search Result" page [CLV setting]
+    * [UI-3399] - Wrong GUI in space 
+    * [UI-3353] - Define common ui component for badges
+    * [UI-3354] - Define common ui component for loading
+
+
+============================
+Changelog Platform 4.1.0-RC1
+============================
+
+
+eXo Platform 4.1.0-RC1  
+*************************
+
+
+** Bug
+    * [PLF-5278] - CLONE - [PLF-Jboss] Lack of minetype icon with file, Lack of location with file and document in unified search result
+    * [PLF-5525] - UISetupPlatformToolBarPortlet check permissions on pages wrongly
+    * [PLF-5851] - Could not use data of 4.1.x master in 4.1.x master + infinispan
+    * [PLF-5872] - Closed getting started gadget is back after re-login
+    * [PLF-5933] - Not show scrollbar in "And forum" field when creating poll/Topic from top navigation
+    * [PLF-5950] - [Invitation portlet] User is added to pending list of space when accept to join this space via invitation porltet
+    * [PLF-5978] - Missing class PropertyValueComparator in Product view template
+    * [PLF-6008] - Can't create wiki page from top navigation with location = "intranet"
+    * [PLF-6013] - GettingStarted Portlet : Can not load properties
+    * [PLF-6019] - Dev mode isn't working correctly on windows 
+    * [PLF-6058] - Top navigation bar doesn't work in Catalan language
+
+** Improvement
+    * [PLF-5994] - Improve Blog extension
+
+** New Feature
+    * [PLF-5980] - Display more than one portlet in sharedlayout.xml
+
+** Task
+    * [PLF-4261] - Set ignore.unregistered.webapp to false in dev mode
+    * [PLF-4469] - Simply external configuration
+    * [PLF-5203] - [IDM fwk]Remove JBC configuration related to IDM services and externalize IDM infinispan config
+    * [PLF-5338] - Platform 4 tomcat doesn't start if it is extracted in a path with two consecutive spaces
+    * [PLF-5500] - Simplify quartz cluster configuration when starting eXo in cluster
+    * [PLF-5684] - Redo platform community source distribution
+    * [PLF-5885] - Externalize infinispan config in order to reuse in eXo Platform
+    * [PLF-5894] - Upgrade packaged Apache Tomcat 7.0.42 -> 7.0.54
+    * [PLF-5898] - Bundle Add-on Manager 1.0 and remove extensions manager
+    * [PLF-5900] - Use EXOGTN for eXo Platform Community
+    * [PLF-5911] - Remove mobile redirection feature from platform community
+    * [PLF-5915] - Upgrade logging libraries
+    * [PLF-5976] - Backport fixes from PLF 4.0.7
+    * [PLF-5990] - rename default wiki app in space to 'wiki' instead of 'Wiki'
+    * [PLF-5993] - Upgrade bundled Apache Tomcat 7.0.54 -> 7.0.55
+    * [PLF-6012] - [PLF41-Migration] Upgrade plugin to use dynamic containers in legacy pages
+    * [PLF-6020] - CATALINA_OPTS isn't used/visible by Tomcat (Regression introduced by PLF-6019 Fix)
+    * [PLF-6032] - Activate Romanian translations
+    * [PLF-6040] - Data upgrade in Platform 4.1-RC1
+    * [PLF-6047] - Release Platform 4.1.0-RC1
+    * [PLF-6053] - Activate Catalan translations
+    
+    
+eXo ECMS 4.1.0-RC1 
+*************************
+
+** Bug
+    * [ECMS-6016] - [Cloud] css leak across tenants
+    * [ECMS-6157] - [Save as PDF File] does not work
+    * [ECMS-6177] - [Upload file] Not have message when uploading a file has same name with existing file
+    * [ECMS-6217] - CLONE - [Quick Creation Menu] Upload file popup is displayed again after clicking button "Close"
+    * [ECMS-6237] - Inconsistent behavior of Delete action in Personal drive (only with root)
+    * [ECMS-6254] - Missing 'Remove Item' label on IE10
+    * [ECMS-6276] - site explorer Short by name in Intranet drive is not run
+    * [ECMS-6297] - Impossible to open uploaded file with file name not in Latin1 character set from Upload Status box
+    * [ECMS-6313] - [PDF Viewer] Weird toolbar due to missing icons
+    * [ECMS-6320] - CLONE - Missing template app:application after creating new tenant
+    * [ECMS-6329] - Failed to view big MS Office files with PDFViewer
+    * [ECMS-6334] - Unpublished nodes are counted but invisible in CLV 
+    * [ECMS-6336] - Error when start tomcat package with mysql (upgrade data from plf 4.0.7)
+    * [ECMS-6361] - [Upload File] Cannot upload file including "colon" character in filename
+    * [ECMS-6377] - [Unified search] Cannot open document from unified search result
+    * [ECMS-6386] - [Site Explorer][CKEditor]Not show content and Summary of Accessible Navigation file
+
+** Feedback
+    * [ECMS-6128] - Use getNode instead of getNodes to retrieve the node exo:actions
+
+
+** Task
+    * [ECMS-6271] - [CLV] Message in delete confirmation pop-up isn't translated
+    * [ECMS-6322] - WARN Can't find resource for key PublicationStates.draft when creating web content
+    * [ECMS-6362] - InternalLinkUpgradePlugin does not upgrade all links
+    
+eXo Commons 4.1.0-RC1  
+*************************
+
+** Bug
+    * [COMMONS-339] - [UserStateService]: getUserState() failed when checking user status
+    * [COMMONS-344] - [UserStateService] ping REST service returns 403 error in public mode
+    * [COMMONS-351] - [Social Notification] Still send mail to user who has been deactivated.
+
+** Feedback
+    * [COMMONS-319] - [Document Selector] Missing tooltip of root folder when sharing document in Activity Composer
+    * [COMMONS-320] - [SpaceSwitcher] In spaceSwitcher, it would be better to display portalLabel instead of portal name
+
+** Improvement
+    * [COMMONS-348] - [Social Notification] Improves perf when clean up the message after daily and weekly job completion
+
+** New Feature
+    * [COMMONS-341] - Support PLF to display more than one portlet in layout
+
+** Task
+    * [COMMONS-332] - [Social notification] Re-check Logic of sending daily digest emails
+    * [COMMONS-336] - Clean up to ignore copying simple property key [gatein.email.domain.url] in various project
+    * [COMMONS-338] - Incorrect log messages for email notifications
+
+eXo Social 4.1.0-RC1  
+*************************
+
+** Bug
+    * [SOC-3700] - Generic User popup is not shown when hover user's avatar in connection application
+    * [SOC-3725] - Error when accept an invitation to connect
+    * [SOC-3761] - [Suggestions] Wrong list for the user created from Account Setup
+    * [SOC-3841] - [Profile] User's full name isn't updated correctly
+    * [SOC-3886] - Cannot acces to the new space from node2.
+    * [SOC-4000] - Account name is still displayed instead of "Deleted user" after account is deleted
+    * [SOC-4011] - Error at space creation : space menu now incomplete
+    * [SOC-4035] - Bug on connect page
+    * [SOC-4041] - Bugs with My Activities filter when adding status into the Activity Composer of a connected user
+    * [SOC-4048] - Include 2 Like Activity in the digest whereas I disliked one
+    * [SOC-4052] - Last activity title not correct
+    * [SOC-4058] - Email Notification - Incorrect UI of Mention of You
+    * [SOC-4085] - [performance] [soc-notification] Comment and like others' activities slow because of [post a new activity] and [load the activities stream]
+    * [SOC-4107] - UI issues in Space List, People List, Member List
+    * [SOC-4180] - Can not remove application from space when WebuiRequestContext is null
+    * [SOC-4181] - User AS crashes after removing any space having a post.
+    * [SOC-4197] - Space activity is shown incorrectly in user activities stream
+    * [SOC-4202] - Email notification - thumbnail of sharing link is too big
+    * [SOC-4210] - "Watch the video" link is bad displayed
+    * [SOC-4212] - Mention Email Notif is not sent when an image is linked to activity 
+    * [SOC-4247] - UndeclaredThrowableException of UIActivitiesLoader while posting on stream or creating new wiki page
+    * [SOC-4256] - Space filter can't find out more than one Japanese character
+    * [SOC-4278] - Cannot search spaces when keyword contains space character
+    * [SOC-4284] - [performance] [soc-notification] Post on stream process is slow 
+    * [SOC-4285] - org.chromattic.api.UndeclaredRepositoryException when inject spaces
+    * [SOC-4290] - Problem with space navigation when the name space contains the words "forum, wiki, document..."
+    * [SOC-4293] - [Social notification] wrong image link in activity email
+    * [SOC-4297] - [People rest service] Returned wrong last activity in case of space activity 
+    * [SOC-4303] -  Not show warning message when input space in Address field 
+    * [SOC-4305] - [performance] [soc-notification] Mention on stream-half delete is slow 
+    * [SOC-4312] - [Activity type] Resource bundle doesn't work
+    * [SOC-4316] - Space menu disappears when updating navigation of space
+    * [SOC-4319] - Reply from notification mail sometimes get the error "Activity not found"
+    * [SOC-4332] - Broken default activity of renamed space
+    * [SOC-4333] - SOC - Email Notification sender does not accept + character
+    * [SOC-4340] - Node Name is displayed incorrectly in Space Navigation Bar
+    * [SOC-4345] - Social Notification doesn't work on Cloud
+    * [SOC-4346] - [REST API] Space activities service should destroy the specified identity like and not activity owner like
+    * [SOC-4348] - [integ-social] English text when sharing a file without message
+    * [SOC-4354] - Can not rename application title display on space navigation 
+    * [SOC-4356] - [TC-PLF-4.1-RC1]  UndeclaredThrowableException
+    * [SOC-4357] - Cannot get identity information from REST service when username contains a dot
+    * [SOC-4359] - Display technical name of application after added
+    * [SOC-4363] - Incorrect the number of spaces on tab "My Spaces" with supper user.
+    * [SOC-4369] - [Social Notifications] Resource bundle doesn't support file with extension pt_BR
+    * [SOC-4371] - Error when edit title or description of share link with special characters 
+    * [SOC-4377] - Mention from comment on Home/user activity stream should push activity in "My Activities" of the mentioned user.
+    * [SOC-4378] - Mention a member/non member in a comment from a space should push the activity in "My Activities" of the mentioned user
+    * [SOC-4384] - "Activity not found" after posting a comment or like in activity viewer
+    * [SOC-4394] - [Email notification] Not show "Activity not found" when user access to an activity by a ID not existed
+    * [SOC-4400] - Social Navigation is not updated when removing an application from Applications Tab
+    * [SOC-4406] - [User Popup] Confirm connection request from user popup does not work
+
+** Documentation
+    * [SOC-3765] - [Notification] Writes the document how to extend the notification plugin.
+
+** Improvement
+    * [SOC-3456] - Make it easier to override the user profile template
+    * [SOC-3967] - Display featured content in notification emails
+
+
+** Task
+    * [SOC-4208] - [Space notification] Remove space character before question mark in email
+    * [SOC-4310] - Improve social injector objects' suffix format
+    * [SOC-4320] - Remove unused resource bundle when access space setting
+    * [SOC-4335] - social-extension-config.jar in Platform distribution
+
+** Sub-task
+    * [SOC-3968] - Step 1: Study new spec for activity notification message + review BD design
+    * [SOC-3969] - Step 2: NOTIFICATIONS_04a For a link activity + apply Design
+    * [SOC-3970] - Step 4: NOTIFICATIONS_04b For an image activity
+    * [SOC-3971] - Step 5: NOTIFICATIONS_04c For another file activity + Apply UI
+    * [SOC-3972] - Step 6: Implement: NOTIFICATIONS_04d For activities that has an embed + apply UI
+    * [SOC-4028] - [Notification Template] Implement multi templates mechanism per plugin.
+    * [SOC-4286] - [performance] [soc-notification] Load activities stream shows social.webui.activity.BaseUIActivity.getAllComments slowness
+    * [SOC-4298] - Slowness when get comment's size but loading all of comments data
+    * [SOC-4302] - Display only activities posted on a stream of an user when view his stream
+
+eXo WIKI 4.1.0-RC1  
+*************************
+
+** Bug
+    * [WIKI-493] - Do not delete draft after save page in edit mode
+    * [WIKI-655] - Full pages' URL are stored and prevent from changing the wiki URL
+    * [WIKI-670] - Wrong content in notification about comment in an activity
+    * [WIKI-672] - Cannot access Space wiki pages
+    * [WIKI-708] - CLONE - [Cluster] Wiki data is not synchronized between node1 & node2
+    * [WIKI-709] - Loss of the page's content after validation of the warning message
+    * [WIKI-877] - Missing space context when selecting a renamed space from Space switcher
+    * [WIKI-912] - Doesn't delete the draft after cancelling the page updates
+    * [WIKI-913] - Error while uploading a file via wiki Link popup
+    * [WIKI-917] - Tests failures using JDK 7 to build (but with compiler source and target = 6)
+    * [WIKI-923] - CLONE - Wiki images are not displayed [Cloud environment]
+    * [WIKI-926] - Can not access public wiki attached files without login
+    * [WIKI-927] - Cannot access wiki space in space whose name contains special characters (Turkish, Scandinavian, Polish)
+    * [WIKI-930] - Links generated by toc tag don't work
+    * [WIKI-931] - User with space characters in username can not access his personal wiki
+    * [WIKI-936] - Watch on wiki page doesn't work
+    * [WIKI-940] - Blank page and IllegalArgumentException when creating a space wiki page with accent characters in the page title
+    * [WIKI-949] - WARN  | Failed to link incoming pages when opening Wiki help page
+
+eXo Forum 4.1.0-RC1  
+*************************
+
+** Bug
+    * [FORUM-175] - Remove all portlets not use on FORUM4 run on PLF4.
+    * [FORUM-218] - [Forum] Pending value always equals 0
+    * [FORUM-238] - Add TopicLink in Rest service response
+    * [FORUM-549] - ForumService.getOnlineUsers() returns empty list in eXo Cloud
+    * [FORUM-562] - IndexOutOfBoundsException when move a space's forum to another category
+    * [FORUM-588] - [Cluster] Issues with displaying in Forum
+    * [FORUM-619] - [Advanced Search] Reset slider bar of Topics/Posts/Views after selecting users
+    * [FORUM-687] - Exception occur while going to topic then posting reply quickly
+    * [FORUM-699] - ActivityStorageException: [UID] doesn't exist to record Comment when adding a post
+    * [FORUM-703] - Wrong MBeans
+    * [FORUM-718] - BACKPORT - ForumService.getOnlineUsers() returns empty list in eXo Cloud
+    * [FORUM-725] - [Ispn][cluster]Topic isn't displayed in Node1.
+    * [FORUM-742] - [Poll] NumberFormatException when click on vote without selecting an answer
+    * [FORUM-753] - [integ-forum] No information update of Forum activity after moving replies
+    * [FORUM-768] - [TC-4.0.4] [Forum write Posts] Slowness in forum.ext.impl.ForumSpaceActivityPublisher.addPost invocation
+    * [FORUM-773] - [Unified Search] Only search on questions in English
+    * [FORUM-893] - [FORUM] Exception while comment a post
+    * [FORUM-906] - ConcurrentModificationException - Failed to load posts page when goto forum topic
+    * [FORUM-911] - problem with spaces that have the name which contains the word "forum"
+    * [FORUM-919] - [integ-forum]Broken Answer activity after renaming space
+    * [FORUM-923] - [Quick TC-4.1.x][JBoss EAP-6.1][Forum Write Posts]:Many exceptions related to the notification service.
+    * [FORUM-926] - [Answer] update author after editing a comment
+    * [FORUM-933] - Advanced search by user doesn't work in case username is an email
+    * [FORUM-937] - [Forum] Wrong icon to Activate topic
+    * [FORUM-943] - Member informations are not correct in forum portlet
+    * [FORUM-945] - [Forum] Wrong Last Post per Forum
+    * [FORUM-946] - The total post of the topic does not update when post new in space context
+    * [FORUM-950] - [Forum] Added tags disappear when coming back to the topic again
+    * [FORUM-951] - Don't have any mail sending when moves the question to the other category.
+    * [FORUM-953] - Cannot cancel creating answer and comment for a question
+    * [FORUM-965] - Topic content disappeared when choose XML type with Collapse option in CK Editor
+    * [FORUM-969] - [UT Failed] Fix Unit Test Failed problem caused by not good in using multi threading.
+
+
+** Improvement
+    * [FORUM-606] - [Forum] Slow first loading of Users
+    * [FORUM-848] - Improve performance  when open form UserSelector.
+
+
+** Task
+    * [FORUM-498] - [PLF-4.0] Review resource keys
+    * [FORUM-922] - Remove " WARN  | Can not find resource bundle for key" display on console create by UIFormSelectBoxForum
+
+
+eXo Calendar 4.1.0-RC1  
+*************************
+
+** Bug
+    * [CAL-356] - working time selector in calendar setting does not work
+    * [CAL-694] - Show event/ task when uncheck a calendar in List view
+    * [CAL-884] - 24-color palette: plum color becomes white
+    * [CAL-894] - [IE8] Time box is loaded many times when tick on it
+    * [CAL-906] - Show Delete recurring event popup when delete recuring event of 2 different series 
+    * [CAL-909] - Time Suggestion is wrong when input times on tab Schedule
+    * [CAL-911] - Recuring event repeat weekly on working day is shown on Sunday, Saturday
+    * [CAL-912] - There is no Delete recurring event popup when delete recurring event on Search result
+    * [CAL-915] - Activity of exception event is deleted after delete recurring events
+    * [CAL-916] - Add more instances after edit following recurring event
+    * [CAL-936] - Calendar unified search got ineffectively memory usage cause OOME
+    * [CAL-945] - Display bad label in the Preferences tab of Calendar portlet
+    * [CAL-946] - Bad label in the Calendar form
+    * [CAL-947] - [Calendar] Show email of participants in name field 
+    * [CAL-956] - Choose date in minimal calendar does not work on list view
+    * [CAL-960] - Incorrect confirmation message when edit recurring event
+    * [CAL-961] - Incorrect confirmation message when delete recurring event
+    * [CAL-966] - Can't create or update event categories
+    * [CAL-974] - Many js error popup when drag/drop a recuring event in weekview
+    * [CAL-976] - 'NaN/NaN/NaN' is displayed in ToDate field when delete data in FromDate field
+    * [CAL-977] - Calendar is blank when change default view to List
+    * [CAL-978] - Incorrect confirmation message when delete recurring event
+    * [CAL-980] - Wrong tooltips when drag and drop an event from recurring event
+    * [CAL-987] - Titles incorrect when editing/deleting a recurring event
+    * [CAL-990] - [CALENDAR] Unknow error happens when attaching image
+    * [CAL-996] - [Calendar] SyntaxError messages happens when removing date into blank (creation/modification mode)
+    * [CAL-999] - Event search works incorrectly
+
+** Feedback
+    * [CAL-948] - Bad labels for Recurring events
+
+** Improvement
+    * [CAL-773] - Cannot select time by using up/down key
+    * [CAL-937] - Response of the invitation webservice is always in English
+    * [CAL-954] - Improve UIDateTimePicker.js for i18n purpose
+
+
+** Task
+    * [CAL-923] - [crowdin 4.1] Update properties/xml files on Platform 4.1
+    * [CAL-982] - Incorrect text of comment about the event title edited.
+
+eXo Intergration 4.1.0-RC1  
+**************************
+
+** Bug
+    * [INTEG-274] - [integ-forum] No information update of Forum activity after moving replies
+    * [INTEG-278] - ActivityStorageException: [UID] doesn't exist to record Comment when adding a post
+    * [INTEG-281] - [integ-forum] Weird encoding in Comments after splitting topic
+    * [INTEG-296] - [integ-forum] Weird display of URL BBCode in Activity's comment
+    * [INTEG-318] - Comment added to content from Content Explorer is not shown on the activity stream
+    * [INTEG-320] - [Security] Detail of question in FORUM has XSS vulnerability
+    * [INTEG-321] - [Unified Search] Incorrect Document icons in Floating result
+    * [INTEG-328] - [integ-ecms] Incorrect File/Content activity of renamed space
+    * [INTEG-329] - [integ-calendar] Broken event activity of renamed space
+    * [INTEG-330] - [integ-forum] Rendering error of Forum activity after renaming a space
+    * [INTEG-331] - [integ-wiki] Error of rendering Wiki activity after rename a space
+    * [INTEG-337] - [File Notification] Incorrect notification for files uploaded to space's Document
+    * [INTEG-342] - Home and User AS crashes after removing a space having question and answer
+    * [INTEG-343] - [integ-ecms] No comment in the activity stream with comments added in Content Explorer
+    * [INTEG-345] - [integ-forum] 2 buttons: Reply & View Latest Reply disappear from Homepage AS
+
+** Feedback
+    * [INTEG-251] - [Unified Search][UXP] Position of message about the result number
+    * [INTEG-339] - notification displays null instead of comment on wiki edit
+
+
+** Task
+    * [INTEG-340] - Provide more memory for surefire JVM maven Unit test
+    * [INTEG-341] - [integ-wiki] INFO "cannot get page url" when Activity Stream has wiki activity
+
+=========================
+Changelog Platform 4.1-M2
+=========================
  
 eXo Platform 4.1-M2  
 *************************
@@ -269,7 +795,687 @@ eXo Kernel 2.4.9
     * [KER-280] - Cannot getConfigurationXML of Portal Container via jconsole after doing something in eXo Platform
 
 
+=========================
+Changelog Platform 4.1-M1
+=========================
+
+Platform 4.1-M1
+*****************
+
+** Bug
+    * [PLF-4324] - Ordering of new seen spaces
+    * [PLF-4372] - Getting started Gadget works wrong when upload a document
+    * [PLF-4517] - [PLF] Direct to wrong page if clicking on Help icon when users is on My Connection page
+    * [PLF-4646] - Cannot select membership role
+    * [PLF-4902] - [PLF 4] Incorrect UI of Calendar Gadget - View Mode
+    * [PLF-4906] - [PLF 4] Incorrect UI of Memory, Cache, Apps Statistic Gadgets
+    * [PLF-5129] - Lack of press status of Remove this banner button
+    * [PLF-5130] - Incorrect UI of Unlock evaluation
+    * [PLF-5236] - "Who Is Online" portlet took a lot of time when user login
+    * [PLF-5247] - Slowness in intranet home page juzu portlet
+    * [PLF-5269] - CLONE - Incorrect UI of Search Result Suggestion
+    * [PLF-5292] - CLONE - Featured Poll - Incorrect UI and behavior
+    * [PLF-5322] - CLONE - Incorrect UI of Search Preference tab
+    * [PLF-5341] - CLONE - Unified Search - Incorrect icon at Search Result
+    * [PLF-5350] - CLONE - Searching icon is not displayed
+    * [PLF-5364] - Unlock even with invalid information in license.xml
+    * [PLF-5386] - Many exceptions while running PLF41x infinispan-full-integ cluster mode
+    * [PLF-5388] - CLONE - Favorite Documents - Incorrect UI and behavior
+    * [PLF-5392] - CLONE - [PLF 4] Incorrect UI of Invitation Gadget
+    * [PLF-5413] - Show more button is still seen when we do a search in My Space and the search result has not more than 10 spaces
+    * [PLF-5417] - [CLU] Many exceptions when starting jboss & tomcat pkg 4.1.x
+    * [PLF-5464] - Incorrect position of SEO icon, incorrect tooltip of help icon in top menu
+    * [PLF-5466] - Incorrect and inconsistent UI of Left Navigation
+    * [PLF-5470] - NullPointerException when view profile of a deleted user
+    * [PLF-5473] - CLONE - Wrong behavior when adding Poll from Top Navigation
+    * [PLF-5476] - CLONE - NPE error while getting dashboards information in DashboardInformationRESTService
+    * [PLF-5477] - [acme] Missing style of Product template
+    * [PLF-5548] - [UISPaceNAvigationPortlet] Space Not Found : No space is available at this URL.
+    * [PLF-5551] - [Gatein-3.7-x] ClassNotFound exception when starting platform server
+    * [PLF-5557] - Add configurations to migrate from PLF-4.0.x to PLF-4.1
+    * [PLF-5586] - wrong user's avatar when click on username from the activity stream
+    * [PLF-5614] - [IE] Show "fakepath" in document path when sharing a file from Activity Composer or Top Navigation bar
+    * [PLF-5617] - Left menu - need cut off for long group site title
+    * [PLF-5625] - [JBoss Bundle][IDM]Exception when starting platform-4.1.x
+    * [PLF-5659] - [IE8 and IE9] Impossible to upload file, exception thrown
+    * [PLF-5824] - [PLF4.1-M1] Cannot install Acme extension when upgrade PLF4.0.4 to PLF 4.1
+    * [PLF-5841] - CLONE - The scroll bar isn't displayed for more than 10 spaces
+
+** Feedback
+    * [PLF-5054] - Invitations - can not click on user name to view personal profile
+    * [PLF-5230] - CLONE - Cannot perform unified search when standing at acme site
+    * [PLF-5391] - Config of Personal drive does not match with spec
+
+** Improvement
+    * [PLF-5246] - Add an external component plugin to MenuConfigurator Service
+    * [PLF-5480] - Improve cleanupPublication option to publish a first version
+    * [PLF-5556] - Can not configure import mode for portal-data upgrade plugin
+
+
+** New Feature
+    * [PLF-5218] - [PLF] Notifications Setting Management
+
+ 
+Integration 4.1-M1  
+*******************
+
+** Bug
+    * [INTEG-203] - CLONE - Incorrect UI of Search Result Suggestion
+    * [INTEG-212] - CLONE - [integ-forum-social] Incorrect links in Poll activity of another user's stream
+    * [INTEG-232] - Wiki activity content is not updated after moving wiki a page from portal to space
+    * [INTEG-233] - [Calendar] activity incorrect with reoccurrence event 
+    * [INTEG-283] - Issues with Comment of content/file activity
+
+ 
+eXo Calendar 4.1-M1
+**********************
+
+** Bug
+    * [CAL-403] - Hover on ICAL icon is not correct
+    * [CAL-455] - Activity - Incorrect info of Calendar - Event Sharing
+    * [CAL-466] - Month View - Incorrect UI of a long event
+    * [CAL-471] - List View - Incorrect UI and function
+    * [CAL-473] - Incorrect UI and behavior of Event/Task Popover 
+    * [CAL-474] - Incorrect UI of Search
+    * [CAL-478] - Incorrect UI of Settings
+    * [CAL-480] - Incorrect UI of Add Calendar
+    * [CAL-481] - Incorrect UI of Paticipants Tab of Add event
+    * [CAL-489] - Incorrect UI of Subcribe Calendar pop up
+    * [CAL-497] - Incorrect UI of Sharing Calendar notification
+    * [CAL-500] - Long events in week view are not well displayed
+    * [CAL-541] - Empty space at the bottom of the screen on Firefox
+    * [CAL-609] - Not show warning message, or show event on working pane if event is repeated by past time
+    * [CAL-611] - Missing labels on Task Preview popup
+    * [CAL-618] - User cannot see new color of shared calendar after changing color
+    * [CAL-625] - Incorrect color of the selected view label
+    * [CAL-629] - Wrong highlight of selected cells in MonthView
+    * [CAL-630] - Weird behavior of tooltip and double click for multiple weeks event in Month view
+    * [CAL-634] - Take into account the case of repetitive events when sending request to view event's details
+    * [CAL-635] - Calendar is broken in japanese
+    * [CAL-638] - Event detail pop up is not shown in month view for the 4th event
+    * [CAL-640] - Can set a user that doesn't exist in group calendar edit permissions
+    * [CAL-642] - Still show deleted events/ tasks from search result when navigating page
+    * [CAL-643] - IE9/FF could not select time when time after click to scroll bar
+    * [CAL-644] - Add/Edit task in detail,  time list is not hidden after select value 
+    * [CAL-645] - Problem with all-day check box with full day(s) events 
+    * [CAL-652] - Attach ics file with size of 0 in invitation email 
+    * [CAL-653] - Could not add event in several day in week view  or work week view
+    * [CAL-659] - Redundant tootip of Share Calendar
+    * [CAL-663] - All words are not matched for events, tasks
+    * [CAL-667] - [Group calendar] JS error when adding a non-existent user in French
+    * [CAL-668] - Test failure for "testGetLocationDisplayString" method of "TestCalendarUtils"
+    * [CAL-711] - CalendarService: slowness in getting events from JCR
+    * [CAL-718] - CLONE - Wrong starting day of monthly event by day of week
+    * [CAL-729] - No icons on recurring events
+    * [CAL-730] - Incorrect popup title
+    * [CAL-731] - Changes made to exception events are lost after editing all the events
+    * [CAL-732] - Wrong comments on the activity of a series with deleted events
+    * [CAL-733] - Bad UI of the Edit Recurring Event popup
+    * [CAL-734] - Resize event doesn't work
+    * [CAL-735] - Edit Recurring Popup is displayed when user edits an event by DnD
+    * [CAL-741] - Wrong time in mail reminder
+    * [CAL-755] - Replace browser popup to use platform popup
+    * [CAL-760] - By default repeat is on the current day but it should be the selected day
+    * [CAL-769] - Wrong tooltip position on day events in day view
+    * [CAL-771] - Time is duplicated in the header of the event
+    * [CAL-772] - Incorrect position of calendar popup
+    * [CAL-776] - fields of days in "Repeat on" are not translated
+    * [CAL-779] - Display Pop up Edit recurring event after changing duration in recurring event
+    * [CAL-780] - Delete only a current recurring event
+    * [CAL-781] - Delete following events
+    * [CAL-782] - Delete all events
+    * [CAL-789] - Wrong comment in activity
+    * [CAL-790] - Wrong display of message and language in the Edit recurring event pop up
+    * [CAL-796] - Could not edit reoccurrence event by edit action or double click after drag and drop 
+    * [CAL-797] - Could not drag and drop event in month view 
+    * [CAL-798] - Could not delete repetitive event in list view
+    * [CAL-799] - InvalidItemStateException when drag & drop an instance of repeated event
+    * [CAL-811] - After delete repetitive event double click to other events see unknown error message box in month view
+    * [CAL-819] - Backport - Text in Event/Task detail views needs more space
+    * [CAL-821] - Error with labels in Delete Recurring Popup
+    * [CAL-822] - Does not show confirmation when resize repetitive event in UIDayview
+    * [CAL-825] - Right click on a task or event is not working well
+    * [CAL-837] - Lost event/task title when time is smaller 30 min
+    * [CAL-852] - Critical and blocker violations in Sonar
+    * [CAL-870] - Escape special characters in JCR query parameters
+    * [CAL-885] - Incorrect confirmation message when adding participants for an event
+    * [CAL-914] - Calendar activity is broken and not show comments
+
+** Feedback
+    * [CAL-468] - Day View - Inconvenient display of all day events
+    * [CAL-623] - Incorrect UI of attach file
+    * [CAL-844] - Don't have confirmation msg when delete Event/Task
+
+** Improvement
+    * [CAL-491] - Incorrect UI of Export Calendars
+    * [CAL-595] - Improve the format of some labels for better translations
+    * [CAL-626] - Automatically select the 1st text field when a form is opened
+    * [CAL-670] - CLONE - [CALENDAR] - Clean up OLD resources
+    * [CAL-806] - Delete recurring events in month view
+
+** New Feature
+    * [CAL-624] - End of date suggestion
+    * [CAL-684] - Edit repetitive events
+ 
+eXo Wiki 4.1-M1
+*****************
+
+** Bug
+    * [WIKI-263] - Wrong style for page permission tooltip
+    * [WIKI-294] - Check no space and no input text are displayed when user is member of 0 Space
+    * [WIKI-340] - remove wiki\'s activity after delete of wiki page
+    * [WIKI-363] - A page creator still change permissions set for the space manager role
+    * [WIKI-364] - All Pages tab in Link popup when add rich text wiki page displays wrong
+    * [WIKI-390] - Autosave draft doesn't work in Rich Text mode
+    * [WIKI-397] - NullPointerException when add Table of content macro with invalid data
+    * [WIKI-409] - UI bugs of wiki
+    * [WIKI-411] - Incorrect UI of Page Infos - Add related page Popup 
+    * [WIKI-416] - Incorrect UI of Manage Permission
+    * [WIKI-420] - Incorrect behavior of Search Completion
+    * [WIKI-422] - Incorrect UI of Search Result page
+    * [WIKI-435] - Wrong position for Restricted tooltip
+    * [WIKI-483] - Incorrect UI of Search Completion
+    * [WIKI-497] - All wiki pages are displayed twice after creating page with specific content
+    * [WIKI-503] - Problem with pagination of search result 
+    * [WIKI-510] - StackTrace within the wiki page when macros are empty
+    * [WIKI-516] - Page Not Found when saving a page with special characters on title
+    * [WIKI-531] - UI glitch in Insert Macro form
+    * [WIKI-563] - CLONE - Can not attach file when add link for wiki page
+    * [WIKI-577] - Wrong autosaving after previewing
+    * [WIKI-581] - Cannot public Wiki for Not Logged-In users
+    * [WIKI-588] - [PLF-Jboss] [Wiki] Impossible to Insert Macro/Image/Wiki Page Link
+    * [WIKI-590] - Error after view content of a version of wiki page from Revision link
+    * [WIKI-602] - Error on resize
+    * [WIKI-603] - UI Error on Wiki
+    * [WIKI-605] - Wiki service return Null page in WikiRestServiceImpl
+    * [WIKI-607] - Autosave didn't start when attaching files only
+    * [WIKI-616] - NullPointerException while update title of wiki page to same title with a removed page
+    * [WIKI-621] - Display * character beside user fullname in warning message when editing a page
+    * [WIKI-623] - Don't show Section and Column macro in list 
+    * [WIKI-627] - Can not attach file while add new page
+    * [WIKI-628] - Creating an UI Extension (action) is not possible
+    * [WIKI-632] - Have problem with wiki porlet in public mode
+    * [WIKI-635] - Wiki home - the tooltip on  Restricted  is hiden a part
+    * [WIKI-639] - NPE but no warning message when 2 users edit the same page
+    * [WIKI-641] - Handle Exception and Log in WikiImpl.getWikiHome()
+    * [WIKI-646] - Wiki Switcher - the thumbnail of space avatar is incorrect
+    * [WIKI-648] - [FF21] Preview new-created template
+    * [WIKI-649] - [My recent change] tab is missing in add link wiki page popup
+    * [WIKI-653] - UI error on Edit image form
+    * [WIKI-659] - WikiAdvanceSearchForm: Slowness in getUserWikiOptions
+    * [WIKI-660] - Slowness in WikiService Methods
+    * [WIKI-661] - Slowness in PageImpl.getAttachmentsExcludeContent
+    * [WIKI-666] - No update activity stream when moving page
+    * [WIKI-677] - Incorrect draft time in Wiki Edit notification
+    * [WIKI-687] - CLONE - Open link in a new window doesn't work
+    * [WIKI-697] - The WIKI freezes while editing during the autosave.
+    * [WIKI-704] - Missing Icons in some macros (Warning, Info, Tip)
+    * [WIKI-707] - Lack of tooltip if mouse over the [Rename] button of "Move wiki page" action's popup
+    * [WIKI-721] - Blank content of new page with existing template
+    * [WIKI-737] - Image URL broken if hostname contains the word portal
+    * [WIKI-800] - CLONE - Error when selecting Link, Image, Macro in add wiki at rich text mode
+    * [WIKI-843] - Hidden icons after hover when open wiki after upgrading to twitter bootstrap 2.3.2
+
+** Feedback
+    * [WIKI-322] - UX: use WYSIWYG by default when editing a wiki page
+    * [WIKI-591] - Should remove old data in textbox after setting permission 
+    * [WIKI-656] - Pages tree loading message is ugly
+    * [WIKI-663] - Not show history when edit inline title of wiki
+    * [WIKI-665] - Wrong message displays when insert an image file with its name has colons
+
+** Improvement
+    * [WIKI-156] - Upgrade to XWiki 5.0.2
+    * [WIKI-650] - Add a mechanism for wiki to disable cache for some macroes
+    * [WIKI-845] - Wiki connector for staging extension
+
+** New Feature
+    * [WIKI-512] - Wiki : need a "recently updated" macro
+
+
+  
+eXo Forum 4.1-M1
+**********************
+** Bug
+    * [FORUM-232] - [Unified Search] Forum excerpt is not displayed properly
+    * [FORUM-290] - Activity - Incorrect UI and behavior of Forum
+    * [FORUM-291] - Activity - Incorrect UI and behavior of Answer
+    * [FORUM-324] - Incorrect UI of Forum Home
+    * [FORUM-360] - Incorrect UI of topic/post with attachments
+    * [FORUM-406] - FAQ - Incorrect UI of FAQ
+    * [FORUM-442] - Incorrect UI and behavior of rating an already rated topic
+    * [FORUM-469] - Incorrect behavior of Select Forum/Topic/Post popup when add moderators and move forums, topics, posts
+    * [FORUM-483] - Answers - Incorrect UI of Action button bar
+    * [FORUM-515] - [Answer] It's hard to drag and drop category
+    * [FORUM-517] - Incorrect display when searching Ban IP
+    * [FORUM-518] - [Forum] Auto-fill the moderator's email alway active when adding/editing a forum although it is not ticked
+    * [FORUM-521] - Show private post between 2 users in activities
+    * [FORUM-522] - [Forum] Display a wrong notify when compose a private message
+    * [FORUM-526] - Normal user can see all spaces in list when access FAQ portlet on space
+    * [FORUM-528] - XSS - Answer- Category- Manage Questions- Edit- Field Author
+    * [FORUM-530] - HTML tags in comments of forums activities
+    * [FORUM-532] - Long content notification alert display
+    * [FORUM-564] - NoSuchElementException when move a topic that has been moved before in another browser
+    * [FORUM-574] - [Migration] Can not create new category affter migrated from PLF-3.5 to PLF-4
+    * [FORUM-587] - [Forum] - The moderators of Forum can add/edit moderators of forum
+    * [FORUM-598] - [CKEditor]: Block Quote is not applied correctly in answer
+    * [FORUM-600] - [CKEditor] Wrong tool tip for Help icon on CKEditor
+    * [FORUM-605] - [FAQ] XML validator has error on gate-resources.xml file on stabilization branch.
+    * [FORUM-613] - Some syntax in Help BBCode is not apply for Answer and Forum
+    * [FORUM-615] - [Advanced Search] Wrong mini-calendar and action "Clear Fields" run not OK
+    * [FORUM-616] - CLONE - [Forum] Bug when moving posts
+    * [FORUM-618] - Backport - Cannot uncheck some forums while checking other forums in the same category
+    * [FORUM-620] - The sender also receives a notification when sending a private post to another user
+    * [FORUM-632] - Error when displaying a topic created by a deleted user
+    * [FORUM-638] - The title of status "Online user" not multi-language.
+    * [FORUM-643] - [CKEditor] Bullet and numbering list are not applied correctly
+    * [FORUM-645] - NullPointerExeption when view post of a deleted user in a topic
+    * [FORUM-655] - CLONE - [Unified Search] Search connectors don't work properly with Japanese data
+    * [FORUM-666] - [Cluster] Issues with creating and displaying space in tomcat
+    * [FORUM-683] - BACKPORT 4.1.x - [FORUM-669][FORUM-670][FORUM-671][FORUM-672] Slowness to getPosts, savePost and getTopics.
+    * [FORUM-690] -  [PLF40-Migration] Cannot select forum when quick create topic/poll from Top menu
+    * [FORUM-694] - BACKPORT 4.1.x - TC-4.0.3 [Unified Search] Slowness in DiscussionSearchConnector.search
+    * [FORUM-696] - [Ispn][cluster]Exception when click on question in Answer portlet.
+    * [FORUM-698] - BACKPORT - [Unified Search] DiscussionSearchConnector doesn't show result after INTEG-249
+    * [FORUM-700] - [Amswer] Optimized NodeEventListener keep only one instance of listener.
+    * [FORUM-704] - [Ispn][cluster]Exception when create a new topic in the forum application.
+    * [FORUM-706] - BACKPORT 4.1.x - Not show tag immediately after add tag for topic
+    * [FORUM-720] - [Ispn][cluster]Exception when create a category in the forum application.
+    * [FORUM-722] - Backport - Cannot hide some forums in a category
+    * [FORUM-749] - Can't Split a topic 
+    * [FORUM-767] - Cannot watch topic 
+    * [FORUM-769] - Error when click on Forum or Topic link
+    * [FORUM-790] - Cannot view topics and posts in FORUM after injection
+    * [FORUM-794] - Error when load CSS/JavaScript of syntaxhighlighter.
+    * [FORUM-827] - Cannot show forum in Discussion of Answer portlet setting
+    * [FORUM-846] - Cannot create topic and poll via top navigation bar
+    * [FORUM-847] - Answer Activity is broken
+    * [FORUM-849] - Not show post on User management
+    * [FORUM-856] - [Topic] All topics are hidden after click on 'Topic', 'Last Posts' and 'Rating' 
+    * [FORUM-863] - [FAQ] The FAQ page isn't shown properly
+
+** Feedback
+    * [FORUM-482] - Display correct file type icon in attachment list and preview post/topic with attachment
+    * [FORUM-516] - [FAQ] Display for category with long name
+    * [FORUM-523] - [Answer] All activities related to questions of the removed categories should be deleted
+    * [FORUM-524] - [Forum] About updating activity stream when moving a topic from a space to intranet
+    * [FORUM-663] - [FAQ] Weird layout when a question has several answers
+
+** Improvement
+    * [FORUM-547] - Replying to private post
+ 
+eXo Social 4.1-M1
+**********************
+
+** Bug
+    * [SOC-3097] - [Space Configuration- Access] Form is missing ":"
+    * [SOC-3355] - Both 2 agenda gadgets in space application are removed after removing one of 2 gadgets
+    * [SOC-3385] - Incorrect UI of Attach File - Select/Upload file in intranet home
+    * [SOC-3387] - Incorrect UI of Add Space
+    * [SOC-3389] - Incorrect UI when mouse on phone icon 
+    * [SOC-3422] - Error when search by directory on connections page
+    * [SOC-3440] - UnifiedSearch - Problem when search with special characters.
+    * [SOC-3448] - Incorrect Icon file-type on Activities stream
+    * [SOC-3455] - CLONE - Wrong last updated time in Rest response for user activity stream
+    * [SOC-3458] - TemplateRuntimeException  when edit name of a space
+    * [SOC-3460] - Wrong activity is displayed on stream after deleting a space
+    * [SOC-3463] - Not auto add Root in member list of the space when creating space
+    * [SOC-3466] - [Space Activity] Some redundant activities occurred when users leave and re-join
+    * [SOC-3469] - CLONE - show all comment on stream what has UILinkActivity threw exception as screenshot
+    * [SOC-3470] - Social Status Message : Special characters encoding problem 
+    * [SOC-3475] - Error in Suggestion Portlet due to [o.e.p.c.r.s.S.PeopleRestServices]
+    * [SOC-3476] - Activity liked but not displayed in "All Activities" when 2 users are not connected
+    * [SOC-3507] - All words are not matched for spaces
+    * [SOC-3509] - NPE in space ActivityStorageImpl for a number of user comments
+    * [SOC-3540] - CLONE - Filter All (Space, People) is broken in French
+    * [SOC-3586] - CLONE - Incorrect space activity title in rest response
+    * [SOC-3602] - With Instantly notification, wrong to send mail to list users
+    * [SOC-3603] - [Conding Standard] Fix blocker and critical issues on sonar.
+    * [SOC-3604] - CLONE - [Cloud migration] ModelOverriderUpdaterPlugin doesn't work in eXo cloud environment
+    * [SOC-3607] - BACKPORT - Forget close chromattic context in AbstractStorage.getRoot()
+    * [SOC-3611] - CLONE - [Migration] Failed to create portal container when migrating from Platform 4.0.1
+    * [SOC-3612] - CLONE - [Upgrade] User Activity Stream crashes after upgrading from Platform 4.0.1
+    * [SOC-3619] - Cannot close confirmation popup when click x icon
+    * [SOC-3620] - [FF21] "liked" old activity is pushed to top of Activity Stream
+    * [SOC-3623] - ActivityStorageException when delete a deleted comment in a space
+    * [SOC-3624] - Wrong tooltip - "No thumbnail" of Share link icon on activity
+    * [SOC-3629] - No content displays on My Space Gadget
+    * [SOC-3631] - URL in mention notif is incorrect
+    * [SOC-3632] - Incorrect name in space invitation notification
+    * [SOC-3636] - Not show Connection in Requests Pending after send request
+    * [SOC-3643] - Can not add comment after clicks on Refresh button on Activity Stream
+    * [SOC-3660] - Wrong content in notification about post in one's activity stream
+    * [SOC-3661] - Wrong content in notification about comment in an activity
+    * [SOC-3662] - Wrong content in daily digest email
+    * [SOC-3666] - [Social Notifications] Link to setting portlet doesn't work in digest email
+    * [SOC-3674] - Categories do not appear on the settings and admin pages
+    * [SOC-3678] - Cannot reactivate the notifications in user settings
+    * [SOC-3684] - CLONE - [CLoud] There is not any Users in All Connections page
+    * [SOC-3685] - [Social Notifications] - Duplicated digest mail with New User Plugin
+    * [SOC-3686] - [Social Notifications] - Exception thrown when inject new users
+    * [SOC-3688] - Status in generic user popup is not updated after adding new activity
+    * [SOC-3690] - Activity Stream order are not correct after "Load More"
+    * [SOC-3692] - Encoded text is shown on generic user popup when position is in Vietnamese
+    * [SOC-3695] - [Notification] Post Activity on Space Stream validates wrong condition
+    * [SOC-3696] - Notification - Wrong Mail's subject with </br> tag
+    * [SOC-3700] - Generic User popup is not shown when hover user's avatar in connection application
+    * [SOC-3705] - [Space] Mention and generic user popup is not shown when mention + share file at the same time
+    * [SOC-3706] - [Social Notifications] Format of digest email is not good
+    * [SOC-3708] - [Social Notifications] Don't send notification to space when post activity or comment in space
+    * [SOC-3713] - CLONE - Loop of Lazy Upgrade Activity Stream after upgrading to Platform 4.0.2
+    * [SOC-3727] - Label errors
+    * [SOC-3728] - Missing variables in the configuration
+    * [SOC-3729] - New user notification is sent with incorrect sender email
+    * [SOC-3730] - No link on portal names in the notifications
+    * [SOC-3731] - Link to connections page in digest email is null
+    * [SOC-3732] - Missing feedback messages after an action is made from the notification emails
+    * [SOC-3733] - Incorrect navigation to the admin page
+    * [SOC-3734] - Incorrect sender email in digests
+    * [SOC-3735] - Useless error message when sender email is not correct
+    * [SOC-3737] - [Performances] Use ConversationState instead of OrganizationService to load membership info
+    * [SOC-3740] - CLONE - Empty display name of an application category impacts space creation (NPE, corrupted database)
+    * [SOC-3743] - Space injection failed because of JCRItemExistsException: [social] ADD PROPERTY. Item already exists in storage
+    * [SOC-3744] - Cannot comment until I like an activity
+    * [SOC-3745] - Permission Violation on the Activity Viewer page
+    * [SOC-3746] - Wrong UI when id query-param is not passed to the Activity Viewer page
+    * [SOC-3747] - Missing activity title in the Activity Viewer page
+    * [SOC-3748] - [Cluster] "NullNodeData"  & "NullPointerException" exception - App list is displayed incorrectly after adding new app
+    * [SOC-3751] - Slowness in displaying Space activities
+    * [SOC-3753] - [Cluster] See comment/activity posted from one node at the other node only after adding comment/activity for that node
+    * [SOC-3754] - [Cluster] Order of activities in AS/My AS are not well displayed
+    * [SOC-3755] - [Cluster] User experience update in node 1 can not be seen in node 2
+    * [SOC-3756] - CLONE - UISpaceNavigationPortlet: Slowness in getLastAccessedSpace
+    * [SOC-3759] - Notifications are always sent in English
+    * [SOC-3764] - [Social Notifications] Wrong link in email when rename space
+    * [SOC-3769] - Only show mention on Generic user popup in case activity including mention and long text
+    * [SOC-3770] - [Social Notification] Missing label of name and address field on Notification Administration page
+    * [SOC-3773] - [Social Notification] There's a problem with comment notification mail content when activity has feature content
+    * [SOC-3774] - [Social Notification] Some problems when click [Reply] or [View the full discussion] link
+    * [SOC-3777] - Mention suggestion does not work on comment box
+    * [SOC-3778] - [Social Notification] Comment box is not opened when click [Reply] link in Mention notification mail (in case mention user in activity)
+    * [SOC-3787] - [Social Notification] Save button is not disable when nothing is changed
+    * [SOC-3788] - [Social Notification] Wrong button on confirmation message when clicking on Reset button
+    * [SOC-3797] - [Social Notification] Encoded special characters in notification/digest mail subject
+    * [SOC-3798] - [Activity Viewer] The URL does not contain comment anchor
+    * [SOC-3800] - [Connections] Nothing happens when click user's avatar
+    * [SOC-3803] - Incorrect UI of Liker list
+    * [SOC-3808] - Connect function should not be possible with a deleted user
+    * [SOC-3812] - [Social Notifications] Wrong email content when mention in a comment
+    * [SOC-3813] - Broken layout on Space invitation page
+    * [SOC-3822] - Space settings - Select User button effect is not good
+    * [SOC-3825] - Activity - Some file types do not show, the other display incorrectly
+    * [SOC-3827] - [Social Notifications] Javascript error when like activity
+    * [SOC-3828] - Some UI problems in the notification emails
+    * [SOC-3831] - Wrong labels since spec update
+    * [SOC-3832] - Cannot view an activity if the user is signed out
+    * [SOC-3833] - CLONE - [Migration] Space activities are not correctly migrated from Platform 3.5
+    * [SOC-3860] - Notifications Admin page doesn't work well
+    * [SOC-3861] - It doesn't scroll to the specified comment in the activity viewer page
+    * [SOC-3862] - Incorrect Portal name in notifications
+    * [SOC-3864] - CLONE - UIActivityContainer: Slowness in checking activities
+    * [SOC-3865] - CLONE - UISpaceNavigationPortlet: Slowness in getLastAccessedSpace
+    * [SOC-3866] - CLONE - Slowness in displaying Space activities
+    * [SOC-3867] - CLONE - [Feature Unified Search] Search connector doesn't work properly with japanese data
+    * [SOC-3870] - CLONE - Duplicate activity when add user into space group
+    * [SOC-3873] - Tabs in the user profile page don't work well
+    * [SOC-3876] - Cannot create a new group of notification plugin with a specific id
+    * [SOC-3877] - Exception: java.lang.ClassNotFoundException: org.exoplatform.social.extras.injection.UserStreamMigrationInjector while using social injector
+    * [SOC-3879] - CLONE - User Popup doesn't allow httpS
+    * [SOC-3883] - CLONE - Display activity for space when the space is hidden
+    * [SOC-3885] - Error when view activity stream
+    * [SOC-3894] - [Cluster] From 2nd post, User activity of node 1 is not shown  in node 2
+    * [SOC-3899] - [Activity Viewer] More icon is displayed on Liker part after comment on activity
+    * [SOC-3903] - [Social Notification] Error when click [Reply] or [View the full discussion] in mention notification mail
+    * [SOC-3907] - BACKPORT - [Forum] Post injection failed because of javax.jcr.PathNotFoundException
+    * [SOC-3908] - [Social Notification] Error in digest message when user post more than 1 time on other user's activity stream
+    * [SOC-3912] - [Social Notification] Error in notification mail when mention an user in space activity
+    * [SOC-3924] -  The tooltip when mouse on the file uploaded is default style, need to apply tooltip style for it.
+    * [SOC-3930] - Exception when users accept connection request 
+    * [SOC-3931] - [Notifications] Cache configurations on social-extension is wrong due to merge process
+    * [SOC-3933] - BACKPORT - Empty Activity stream to PLF 4.1
+    * [SOC-3936] - [Activity Viewer] Activity viewer page is wrong displayed when activity contain an attached image
+    * [SOC-3937] - A block ID is displayed after activity share in My activity
+    * [SOC-3943] - BACKPORT PLF 4.1.x Feedmash job do not execute correctly
+    * [SOC-3944] - BACKPORT PLF 4.1.x  Slowness at Connection page for the first loading or at cache update
+    * [SOC-3946] - Exception when inviting users to join spaces
+    * [SOC-3953] - Exception when users post comments
+    * [SOC-3964] - User can't access directly to the space from the Left Nav 
+    * [SOC-3981] - BACKPORT - My activity stream is broken
+    * [SOC-3988] - Check notification mail subject
+    * [SOC-4029] - Too many notifications for 50 comments
+    * [SOC-4033] - [Performances] Overuse of social threads cause OOME
+    * [SOC-4043] - Emails are not sent
+    * [SOC-4047] - Post on my stream - Error in the email subject
+    * [SOC-4053] - Email notification - Incorrect UI of Space Join Request
+    * [SOC-4054] - Email Notification - Incorrect UI of Notification Settings
+    * [SOC-4055] - Email Notification - Incorrect UI of New Connection Request
+    * [SOC-4056] - Email notification - Incorrect UI of New Space Invitation
+    * [SOC-4061] - Email Notification - Incorrect UI of New Comment on your activities
+    * [SOC-4062] - Email Notification - Incorrect UI of Digest Email
+    * [SOC-4066] - Too many exceptions occur when post on space
+    * [SOC-4067] - Too many exceptions occur when mention on stream
+    * [SOC-4071] - Wrong mail message when post comment contains mentioner
+    * [SOC-4083] - [performance] [soc-notification] Post on space home too slow cause by sending instant email and display activities
+    * [SOC-4088] - [Social Notifications] Some bugs occur on acceptance.
+    * [SOC-4089] - [performance] [soc-notification] Create new user got seriously impacted by notification service
+    * [SOC-4090] - [performance] [soc-notification] infinitive loop with scenario LIKE/COMMENT an activitity
+    * [SOC-4091] - Exceptions occur when injecting posts into topic
+    * [SOC-4093] - [soc-notification] [performance] ActivityStorageException occurred while creating comments
+    * [SOC-4096] - [performance] social ActivityStorage could lock the application
+    * [SOC-4122] - [performance] social ActivityStorage could lock the application
+    * [SOC-4125] - [soc-notification] [performance] ActivityStorageException occurred while creating comments
+    * [SOC-4141] - InvalidItemStateException due to session closed
+    * [SOC-4149] - wrong Notif message in the Digest mail 
+    * [SOC-4150] - Wrong color of notif message in Digest mail
+    * [SOC-4154] - HTML encoding in title and description of shared links
+    * [SOC-4175] - [Unified Search] Cannot search spaces
+    * [SOC-4188] - [Email notifications] Always return intranet homepage when access notification page
+    * [SOC-4190] - Cannot delete an activity from Activity Stream by owner
+    * [SOC-4191] - The delete icon of comment is not shown
+    * [SOC-4195] - Can't click icon "comment" on activity
+    * [SOC-4203] - The "View previous comments" link not displayed
+    * [SOC-4235] - [Activity Stream] Load More button not displayed in case of the number of page greater than 2
+
+** Feedback
+    * [SOC-3618] - Content of warning message when delete a deleted activity by admin should be updated
+    * [SOC-3680] - Improve display of disabled notifications on the settings screen
+    * [SOC-3707] - Should show activities posted by user in [My activity stream]
+    * [SOC-3771] - [Social Notification] Navigation should be focus on Notifications when access Notification settings page
+    * [SOC-3783] - [Social Notification] Tool tip of [Refuse] link in notification mail is "Ignore"
+    * [SOC-3786] - [Social Notification] Missing colon character in Post on my spaces notification mail
+    * [SOC-3792] - [Social Notification] Should put "s" into () character in digest mail
+    * [SOC-3793] - [Social Notification] The message in digest mail does not match between spec and application
+    * [SOC-3795] - [Social Notification] Wrong $PERIOD value in mail title of Weeky digest mail
+    * [SOC-3796] - [Social Notification] On Notification Administration page, feedback message after clicking [Save] is dispayed in a pop up 
+    * [SOC-3823] - [Space] Can not create a space with FR name "l'space"
+    * [SOC-3824] - Activity - Display icon type for the shared attachment
+    * [SOC-3859] - Feedback messages should be inline, not in popups
+    * [SOC-3892] - Few exceptions from JCR Session Tracker
+    * [SOC-3997] - Capital letter for columns name 
+    * [SOC-4004] - [Social Notifications] It is not easy to distinguish the activity of comment
+    * [SOC-4050] - ERROR: Failed to save the NotificationMessage
+
+** Improvement
+    * [SOC-3526] - CLONE - [SOCIAL] - Clean up OLD resources
+    * [SOC-3551] - The operation is forbidden when SocialChromatticLifecycle tries to use the session.logout
+    * [SOC-3557] - Social Unit Testing is slowness with lack of heap memory
+    * [SOC-3683] - Social-Notification - An html template for the email and customize via shadowing
+    * [SOC-3762] - Provide a way to configure the digest job in an external conf file
+    * [SOC-3767] - Move Embedder service in Commons
+    * [SOC-3897] - Updates Notification Technical Specification
+    * [SOC-3938] - [Social Notification] Title of mail is wrong displayed when the content of activity is too long
+    * [SOC-3977] - Email notification subject should be limited to the first 50 characters
+
+** New Feature
+    * [SOC-2819] - Social Notifications
+    * [SOC-3535] - Implements the plugin mechanism for Notification Feature
+    * [SOC-3558] - Migration for Stream new feature
+    * [SOC-3571] - Provides the way to configure time and day for Daily and Weekly job
+    * [SOC-3572] - Implements User Setting portlet base on Juzu Framework
+    * [SOC-3583] - [Notification-Feature Switch] Implements Feature Switch for Notification feature
+    * [SOC-3605] - [Notification] Implements the Digest and Instantly mail generate from template.
+    * [SOC-3843] - Validates performance of the Notification feature - Add a mock mail service
+    * [SOC-3844] - Validates performance of the Notification feature - Add monitoring features for queues
+    * [SOC-3845] - Validates performance of the Notification feature - Add features for scheduled jobs
+
+ 
+eXo ECMS 4.1-M1
+********************
+
+** Bug
+    * [ECMS-4217] - Interceptor not updated after edit in IDE
+    * [ECMS-4495] - Copy URL to clipboard doesn't work on Content Explorer
+    * [ECMS-4706] - UI and effect mistakes on Add/Edit Template form
+    * [ECMS-4857] - Incorrect UI of SEO Management
+    * [ECMS-4920] - NullPointerException and no error message in case of network outage when upload in Site Explorer
+    * [ECMS-4973] - Do not display javascript in FCK editor when edit a document
+    * [ECMS-5022] - The rename miniform doesn't disappear when clicking outside it
+    * [ECMS-5087] - Activity - Incorrect file information 
+    * [ECMS-5138] - Incorrect UI of MultiUpload 
+    * [ECMS-5153] - Incorrect UI of Front Edition - Content Details - Content list reference
+    * [ECMS-5163] - Content Administration - Incorrect UI of Add/Edit drive - Select Node Types
+    * [ECMS-5166] - Content Administration - Incorrect UI of Query
+    * [ECMS-5168] - Content Administration - Add/Edit Script
+    * [ECMS-5177] - [Add Drive] Lack label Allow Folder Creation
+    * [ECMS-5238] - Incorrect UI of Navigation Selector
+    * [ECMS-5245] - Incorrect UI of some acme portlet in edit mode
+    * [ECMS-5282] - [IE10] Cannot enter to go to new line when creating/ editing a new document
+    * [ECMS-5286] - [IE9, IE10] [Advanced search] search result of a saved query is shown in scroll 
+    * [ECMS-5294] - TemplateRuntimeException and show empty intranet homepage after moving an upload file
+    * [ECMS-5307] - Manage Category dialog disappears after selecting any category except root node
+    * [ECMS-5324] - Inconsistent of select field in Import Node
+    * [ECMS-5329] - [FF] Cannot drag and drop from left to right panel
+    * [ECMS-5335] - Do not update version of content activity after checkin/checkout
+    * [ECMS-5336] - Can not execute any action in context menu when standing at Product content
+    * [ECMS-5337] - WEBDAV Remove symlink or favorited file also remove original file 
+    * [ECMS-5339] - IE8: Show wrong when view page with by mode "By Folder" in CLV page
+    * [ECMS-5351] - New action can not execute
+    * [ECMS-5352] - [XSS] ECMS - File Title - Search
+    * [ECMS-5362] - UnsupportedRepositoryOperationException when publish a web content under a web content
+    * [ECMS-5370] - Error when create HTML file with name is "HTML"
+    * [ECMS-5372] - RepositoryException when creating new folder with special characters in name
+    * [ECMS-5383] - Cannot search page by display name
+    * [ECMS-5392] - Exception when change status for node after check-in 
+    * [ECMS-5397] - File Explorer crashes when I open a web-content in List View 
+    * [ECMS-5398] - Drag and drop does not work in icon view
+    * [ECMS-5401] - Error when perform processUpload
+    * [ECMS-5402] - Documents explorer doesn't show file name in national encoding properly
+    * [ECMS-5403] - Wrong sitemap content after changing the frequency of SEO
+    * [ECMS-5407] - Hard-coded Permission values
+    * [ECMS-5410] - Drag&Drop UI looks not beautiful
+    * [ECMS-5411] - [Jboss] PCLV portlet: Check permission to view document is not true
+    * [ECMS-5417] - CLONE - XSS - executing script when edit a web content containing a link with hexa characters
+    * [ECMS-5418] - [Unified search] No File icon in search result
+    * [ECMS-5425] - CLONE -  JS error on IE when creating content and insert image
+    * [ECMS-5426] - CLONE - Impossible to create nodetype with child node name *
+    * [ECMS-5472] - CLONE - [IE8] CK editor doesn't load after opening WCMInsertContent 
+    * [ECMS-5484] - ConstraintViolationException when adding category tree with life cycle is "Property Addition" or "Property Modification"
+    * [ECMS-5491] - Resize side bar doesn't work on Site Explorer
+    * [ECMS-5492] - Multi upload - The uploaded file does not appear
+    * [ECMS-5495] - User who has been deleted unlock permission still unlock a node
+    * [ECMS-5498] - CLONE  - Weird display of folder title (CLV by folder, Add Symlink)
+    * [ECMS-5500] - CLONE - [Navigation by Content] Impossible to select page for list/detail
+    * [ECMS-5502] - CLONE - CalendarField value problem with sub node in dialog
+    * [ECMS-5503] - CLONE -  The accented characters are not properly saved in Template Management in Windows Server
+    * [ECMS-5504] - Inability to remove unlinked links when in trash
+    * [ECMS-5507] - Weird CKEditor form when editing acme search box inline
+    * [ECMS-5511] - Tags are not well ordered
+    * [ECMS-5512] - [UXP] Back link from a search result content always goes to the first result page (Chrome, IE)
+    * [ECMS-5513] - Impossible to display RSS feed with webcontent having apostrophe and double quote
+    * [ECMS-5515] - Problem when search with hyphen or accent character
+    * [ECMS-5516] - Webdav rename does not work correctly and causes a failure to preview
+    * [ECMS-5517] - "Page not found" displayed when click on node which has not page
+    * [ECMS-5520] -  Order of content in Content List View is not correct with Symlinks content
+    * [ECMS-5535] - Wrong warning message when cut parent node then paste into child node
+    * [ECMS-5541] - Can upload by drag drop in locked node by user is not locker
+    * [ECMS-5542] - Can upload file sized more than 200MB from Intranet Homepage's Activity Stream
+    * [ECMS-5543] - The drop down menu on action bar doesn't work well
+    * [ECMS-5544] - Normal user cannot search published documents
+    * [ECMS-5549] - Cannot access Trash drive after deleting a folder which contains a symlink 
+    * [ECMS-5553] - ConstraintViolationException when opening acme/events folder after adding a File
+    * [ECMS-5560] - [Cloud migration] Exceptions about File activities in log
+    * [ECMS-5562] - After removing a css file, this css file still affect
+    * [ECMS-5568] - Not show previous content in public mode after edit CLV/SCV
+    * [ECMS-5582] - [CKEditor] Bullet and numbering list are not applied correctly
+    * [ECMS-5584] - [CKEditor]: Show loading when add more content in Accessible Media
+    * [ECMS-5585] - [CKEditor] Image URL is not generated when browse image from local
+    * [ECMS-5589] - Data initialization policies are not consistent among services
+    * [ECMS-5593] - Error when adding comment for Product document
+    * [ECMS-5594] - Content of Accessible navigation is not shown in Document view Tab
+    * [ECMS-5602] - Add new properties - unexpected tab changed in case message alert
+    * [ECMS-5603] - Nothing happen when add tag for document in content explorer with name includes special chars
+    * [ECMS-5609] - CLONE - Slow to load Content List view of symlinks
+    * [ECMS-5611] - RepositoryException when input a white space before "template name" field
+    * [ECMS-5613] - Missing resource bundle on the warning popup which appear when user doesn't has permission in views
+    * [ECMS-5614] - An empty box appear when no action available on the context menu in several views template of Site Explorer
+    * [ECMS-5615] - CLONE - Add To Favorite failed when adding new users
+    * [ECMS-5617] - JCR session leak in CLV
+    * [ECMS-5626] - After switch to edit mode the textarea always displayed
+    * [ECMS-5628] - The popup jumping when switch tab in SCV & CLV preferences
+    * [ECMS-5629] - [CKEditor]: Show CKEditor when comment to question from the activity stream
+    * [ECMS-5638] - Unknown error when add "Name" script is blank
+    * [ECMS-5646] - HTTP Status 404 when click Insert Content Link in document
+    * [ECMS-5650] - Content label of content field when creating a file is centered
+    * [ECMS-5652] - Select File fields of accessible media is centered
+    * [ECMS-5653] - [CKEditor]: Block Quote is not applied correctly in answer
+    * [ECMS-5654] - Status of a published js/ css file is Published after editing 
+    * [ECMS-5664] - Friend URL does not work without sevlet config in portal.war
+    * [ECMS-5688] - XSS vulnerability in Metadata title field
+    * [ECMS-5712] - Symlinks will be removed when move a node to Trash
+    * [ECMS-5722] - CLONE - Content of anonymous users are automatically visible
+    * [ECMS-5728] - CLONE  - impossible to create subcontent with same type as current node
+    * [ECMS-5747] - CLONE - "Unknown error" popup displays when user deletes a file in Personal document 
+    * [ECMS-5752] - CLONE - [Performance][Content Explorer] Slowness in showDocument 
+    * [ECMS-5766] - [CKEDITOR] Uncaught ReferenceError: CKEDITOR is not defined
+    * [ECMS-5771] - Incorrect icons of some folder type
+    * [ECMS-5777] - CLONE - Override parameter does not work in LinkDeploymentPlugin
+    * [ECMS-5791] - CLONE - CLONE - [SECURITY-Access] All folders of collaboration workspace are public by default
+    * [ECMS-5794] - error add new language in SEO Manager 
+    * [ECMS-5799] - CLONE - [PLF 4.0]: Update Search style after ECMS-5675
+    * [ECMS-5810] - Internal search wiki can not search documents containing '-' character
+    * [ECMS-5817] - CLONE - Incorrect UI of View & Edit Tempate
+    * [ECMS-5830] - [ECMAdmin]Weird form of Exporting Node Type 
+    * [ECMS-5908] - [CE][Advanced Search Tab] - Scroll bar displays incorrectly
+    * [ECMS-5915] - FCK Content selector does not work 
+    * [ECMS-5959] - [IE9] Syntax error shown when clicking on page number
+    * [ECMS-5981] - Issues with Comment of content/file activity
+    * [ECMS-6045] - [Gatein 3.7.x] ECM templates not registered in TemplatCacheService during the server startup
+    * [ECMS-6160] - Page with clv portlet is blank
+    * [ECMS-6163] - Content By Query does not work
+
+** Feedback
+    * [ECMS-4947] - Do not prevent some special character input query name in advanced search
+    * [ECMS-5158] - Improve the UI in case many tabs
+    * [ECMS-5380] - Required field icon should be placed beside content of File
+    * [ECMS-5388] - [Content Search Form] Search icon is not shown properly
+    * [ECMS-5396] - Should prevent when updating template type of a template list to same type of existing template list that has same template name
+    * [ECMS-5399] - Thumbnail is not shown after drag and drop a node that has been overloaded thumbnail
+    * [ECMS-5530] - WARN log repeated many times when starting PLF
+    * [ECMS-5536] - Show sidebar is uncheck after changing drive then coming back
+    * [ECMS-5567] - Tooltip is available when double click on text of content in "edit mode"
+    * [ECMS-5569] - Config of Personal drive does not match with the specs
+    * [ECMS-5610] - Can't delete an action type (Admin-Advanced-Actions) if it is used before
+
+** Improvement
+    * [ECMS-3854] - Customize the sizing of Flash preview
+    * [ECMS-5323] - ckeditor upgrade 4.1.x
+    * [ECMS-5406] - add new thumbnailRESTService function to get local image
+    * [ECMS-5451] - CLONE - [ECMS] - Clean up OLD resource
+    * [ECMS-5642] - Improve cleanupPublication option to publish a first version
+    * [ECMS-5655] - Study and research about the integration with PDF JS
+    * [ECMS-5723] - CLONE - [Templates WCM Deployment] Improve InlineEditingField method to parametrize the deployment of artifacts 
+    * [ECMS-5951] - Ability to copy a doc from one space to another
 
 
 
+eXo Commons 4.1-M1
+********************
+
+** Bug
+    * [COMMONS-282] - [CKeditor] "Strike Through" is not applied correctly after saved
+    * [COMMONS-289] - [CKEditor] Bullet and numbering list are not applied correctly
+    * [COMMONS-298] - CLONE - Wrong url encoding in UISpaceSwitcher.gtmpl
+
+
+** Improvement
+    * [COMMONS-290] - Improve cleanupPublication option to publish a first version
 
