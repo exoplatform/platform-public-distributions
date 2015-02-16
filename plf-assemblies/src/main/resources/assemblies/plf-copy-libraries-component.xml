@@ -96,6 +96,7 @@
         <exclude>*:xmlParserAPIs:*</exclude>
         <!-- PLF-6122: Exclude icepdf older than 5.1.0. The groupId for Open Source bundles is now org.icepdf.os -->
         <exclude>org.icepdf:icepdf-core:*</exclude>
+	<exclude>org.xwiki.platform:xwiki-platform-cache-infinispan</exclude>
       </excludes>
       <outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}.${artifact.extension}</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
