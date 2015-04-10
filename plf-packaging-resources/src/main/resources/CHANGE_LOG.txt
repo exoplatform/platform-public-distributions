@@ -117,7 +117,6 @@ eXo Forum 4.1.1
 ** Bug
     * [FORUM-792] - "The target of this link cannot be found" when adding Forum into a page
     * [FORUM-947] - Cannot access forum of space  whose name contains special characters (Turkish, Scandinavian, Polish)
-    * [FORUM-997] - [Search] Cannot search topic include character "?"
     * [FORUM-1056] - [Forum] Sort Forum by Last Post does not work
     * [FORUM-1069] - [User Profile] Wrong time zone of "Join Date"
 
