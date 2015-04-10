@@ -2,6 +2,176 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
+
+eXo Commons 4.1.1
+*************************
+
+** Bug
+    * [COMMONS-371] - [CKEditor] 'null' inside text area when there isn't default value
+    * [COMMONS-385] - [Social-Notification]: Customizing resource bundle in weekly/daily digests doesn't work
+    * [COMMONS-394] - NotificationService throws an error for not synchronized users
+
+
+eXo Integration 4.1.1
+*************************
+
+** Bug
+    * [INTEG-269] - [Answer] Answer displays on activity stream with unapproved content
+    * [INTEG-344] - [Forum] NPE in Poll activity of deleted space
+    * [INTEG-347] - [Answer] Question title disappears on Intranet Home page activity stream after deleting a space
+    * [INTEG-378] - [Activity Composer] When click twice on the share button, the uploaded file disappears
+    * [INTEG-384] - [Answers] Activities posted in a Space's sub-category are leaked to connections
+
+
+eXo Platform 4.1.1
+*************************
+
+** Bug
+    * [PLF-5903] - Incorrect response when accessing the dashboards Rest Service
+    * [PLF-6066] - [acme, wai] Missing Remove icon of Illustration Image when edit Product content and some WAI's templates
+    * [PLF-6175] - Cache level gadget is broken
+    * [PLF-6209] - Regression: Remove hardcoded 'http' in gadget's code
+
+
+eXo ECMS 4.1.1  
+*************************
+
+** Bug
+    * [ECMS-6170] - Dear null is shown in notification mail when watching a document
+    * [ECMS-6210] - Wrong information of a symlink folder
+    * [ECMS-6272] - [Simple Search] Duplicate results when keyword matches file content
+    * [ECMS-6316] - Can't unlock many nodes at the same time
+    * [ECMS-6321] - [Insert Portal Link] TypeError in Inline edit mode
+    * [ECMS-6344] - Unexpected error when deleting files
+    * [ECMS-6348] - Can't restore file when undo delete file in Collaboration drive
+    * [ECMS-6358] - Documents - Wrong action of checkbox 
+    * [ECMS-6400] - UI Broken and Exception when upload a file to category of a site as super user 
+    * [ECMS-6401] - Cursor not displayed as hand when try to choose folder path or content in CLV
+    * [ECMS-6413] - [ECMAdmin] Missing Remove icon when add and edit node type
+    * [ECMS-6415] - [Content Selector] "Web Content" document in the left tree for browsing
+    * [ECMS-6421] - null value displays in Manage Publication 
+    * [ECMS-6432] - Lack of icons in Content Selector/ Folder Browser
+    * [ECMS-6436] - Wrong date value displays in Properties Management
+    * [ECMS-6437] - Icons in webdav view are not displayed 
+    * [ECMS-6444] - [Unified Search] Duplication of result pages when there are more than 100 results
+    * [ECMS-6445] - [File Search] Display document of frozenNode in search results
+    * [ECMS-6459] - [Unified Search] Deleted files (in Trash) are displayed in search result
+    * [ECMS-6460] - Files inside a web content should not be enrolled automatically to Publication Lifecycle
+    * [ECMS-6462] - [Content Administrator] [Add Drive] Failed to select Node Types
+    * [ECMS-6464] - [Add/Edit View][Add Tab] Message of invalid tab name is not correct
+    * [ECMS-6470] - [Views] Do not have "Restore" function for Views
+    * [ECMS-6474] - [Webdav - Windows] NPE and redundant comment when uploading a file via webdav of windows
+    * [ECMS-6495] - [Unified Search] Not show icon page in search result
+    * [ECMS-6509] - [IE] Failed to back from Content Explorer after opening WCM Content Selector
+    * [ECMS-6558] - [PDFViewer] No preview of Powerpoint (PPT) or Excel (XLS) files
+    * [ECMS-6590] - [LDAP] Node not found at AddToFavoriteScript when LDAP user signs in the first time
+    * [ECMS-6658] - Wrong path of exo:symlink node created under Personal drive 
+    * [ECMS-6681] - CLONE - [Advanced Search] New Query - Incomprehensible message when Name field is blank
+    * [ECMS-6744] - WCMAdvancedSearch doesn't work correctly
+    * [ECMS-6762] - Unknown error when opening big size image with pagination in site explorer
+    * [ECMS-6763] - [WCMAdvancedSearch] Missing items in comparison with Platform 4.0.7
+
+** Feedback
+    * [ECMS-6423] - [PDFViewer] Information when there isn't preview
+    * [ECMS-6697] - No preview of CSV files  
+    * [ECMS-6597] - [Import] Improve message when file contains invalid characters
+
+
+eXo Wiki 4.1.1
+*************************
+
+** Bug
+    * [WIKI-941] - Wiki adds a "lastUpdated" param to the url that breaks balsamiq mockups
+    * [WIKI-960] - [RSS macro] Missing RSS icon
+    * [WIKI-976] - Wrong link in wiki watch email
+
+
+eXo Social 4.1.1  
+*************************
+
+** Bug
+    * [SOC-4105] - Wrong Filter in "All Spaces" page
+    * [SOC-4158] - Social expose private data publically
+    * [SOC-4328] - When click twice on the share button, the uploaded file disappears 
+    * [SOC-4342] - [Generic user popup] Can send a connection request to deleted user
+    * [SOC-4388] - [Space Navigation] Unknow error when copy again a node
+    * [SOC-4413] - Space's member cannot click on Space's avatar
+    * [SOC-4418] - [Search Space] Search function does not work correctly with japanese data
+    * [SOC-4484] - Cached User Profile is not updated after changing basic user information 
+    * [SOC-4513] - [Activity viewer]: Activity composer is displayed on Activity Viewer page
+    * [SOC-4525] - Leak of Space activities
+    * [SOC-4554] - Members and managers are removed with createSpace(Space,creator,invitedGroup)
+    * [SOC-4563] - [User suggestion] No auto suggestion when searching in multiple spaces 
+    * [SOC-4609] - Can't create new user with user Identity
+    * [SOC-4670] - [My Notification] Notification settings are in English after reset
+    * [SOC-4718] - [People Search] Failed to render the user name containing apostrophe
+
+** Feedback
+    * [SOC-4228] - The refresh button does not exist in Spaces activity stream
+    * [SOC-4295] - When user has not sufficient permission to access a navigation node of space, it should not be rendered at space menu of this user.
+
+
+eXo Forum 4.1.1
+*************************
+
+** Bug
+    * [FORUM-792] - "The target of this link cannot be found" when adding Forum into a page
+    * [FORUM-947] - Cannot access forum of space  whose name contains special characters (Turkish, Scandinavian, Polish)
+    * [FORUM-997] - [Search] Cannot search topic include character "?"
+    * [FORUM-1056] - [Forum] Sort Forum by Last Post does not work
+    * [FORUM-1069] - [User Profile] Wrong time zone of "Join Date"
+
+
+eXo Calendar 4.1.1
+*************************
+
+** Bug
+    * [CAL-905] - End date of event is updated wrongly on 31/03 when update start time
+    * [CAL-986] - Unable to deactivate calendar generation for all groups with wildcard
+    * [CAL-1071] - Encoding problem when accepting calendar invitation in French
+
+
+eXo GateIn 3.5.14-PLF
+*************************
+
+** Bug
+    * [EXOGTN-1316] - Login URL can be used to redirect to external sites
+    * [EXOGTN-1904] - [Platform-ui] Almost template icons are missing in Content Administrator
+    * [EXOGTN-1942] - IDM Pool becomes full due to hibernate session leak  
+    * [EXOGTN-1952] - [Content Explorer] Incorrect icons for MS Office 2003 Spreadsheets (.xls) and Presentations (.ppt)
+    * [EXOGTN-1960] - Regression: Gadgets don't work when accessed via https
+    * [EXOGTN-1967] - [Chrome] Checkbox display is not aligned with the check box click zone
+
+** Improvement
+    * [EXOGTN-1886] - Backport GTNPORTAL-3108: LastLoginTime should be configurable
+
+
+eXo JCR 1.15.12-GA
+*************************
+
+** Bug
+    * [JCR-2255] - Inconsistence JCR cache after OrderBefore operation
+    * [JCR-2333] - [Cluster] New registered namespaces aren't synchronized between two nodes
+    * [JCR-2335] - DB2 and XA Datasource on JBoss EAP
+    * [JCR-2343] - Parsing error appeared when export PDF file
+    * [JCR-2345] - Simultaneous startup of the nodes results in failure of initialization of almost all nodes
+    * [JCR-2362] - Slowness when creating a new page
+    * [KER-299] - Incorrect MIME type of .ppt and .xls files
+    * [COR-333] - TikaDocumentReader causes "Unparseable date"
+
+** Feedback
+    * [JCR-2324] - RepositoryCheckController mbean writes log in / when starting as Linux Service
+
+** Improvement
+    * [JCR-2325] - Allow to set permission for users that has a space in their login
+
+
+
+=========================
+Changelog Platform 4.1.0
+=========================
+
+
 eXo Commons 4.1.0  
 *************************
 
@@ -221,29 +391,6 @@ eXo Platform 4.1.0-RC1
 ** New Feature
     * [PLF-5980] - Display more than one portlet in sharedlayout.xml
 
-** Task
-    * [PLF-4261] - Set ignore.unregistered.webapp to false in dev mode
-    * [PLF-4469] - Simply external configuration
-    * [PLF-5203] - [IDM fwk]Remove JBC configuration related to IDM services and externalize IDM infinispan config
-    * [PLF-5338] - Platform 4 tomcat doesn't start if it is extracted in a path with two consecutive spaces
-    * [PLF-5500] - Simplify quartz cluster configuration when starting eXo in cluster
-    * [PLF-5684] - Redo platform community source distribution
-    * [PLF-5885] - Externalize infinispan config in order to reuse in eXo Platform
-    * [PLF-5894] - Upgrade packaged Apache Tomcat 7.0.42 -> 7.0.54
-    * [PLF-5898] - Bundle Add-on Manager 1.0 and remove extensions manager
-    * [PLF-5900] - Use EXOGTN for eXo Platform Community
-    * [PLF-5911] - Remove mobile redirection feature from platform community
-    * [PLF-5915] - Upgrade logging libraries
-    * [PLF-5976] - Backport fixes from PLF 4.0.7
-    * [PLF-5990] - rename default wiki app in space to 'wiki' instead of 'Wiki'
-    * [PLF-5993] - Upgrade bundled Apache Tomcat 7.0.54 -> 7.0.55
-    * [PLF-6012] - [PLF41-Migration] Upgrade plugin to use dynamic containers in legacy pages
-    * [PLF-6020] - CATALINA_OPTS isn't used/visible by Tomcat (Regression introduced by PLF-6019 Fix)
-    * [PLF-6032] - Activate Romanian translations
-    * [PLF-6040] - Data upgrade in Platform 4.1-RC1
-    * [PLF-6047] - Release Platform 4.1.0-RC1
-    * [PLF-6053] - Activate Catalan translations
-    
     
 eXo ECMS 4.1.0-RC1 
 *************************
@@ -270,11 +417,6 @@ eXo ECMS 4.1.0-RC1
     * [ECMS-6128] - Use getNode instead of getNodes to retrieve the node exo:actions
 
 
-** Task
-    * [ECMS-6271] - [CLV] Message in delete confirmation pop-up isn't translated
-    * [ECMS-6322] - WARN Can't find resource for key PublicationStates.draft when creating web content
-    * [ECMS-6362] - InternalLinkUpgradePlugin does not upgrade all links
-    
 eXo Commons 4.1.0-RC1  
 *************************
 
@@ -293,10 +435,6 @@ eXo Commons 4.1.0-RC1
 ** New Feature
     * [COMMONS-341] - Support PLF to display more than one portlet in layout
 
-** Task
-    * [COMMONS-332] - [Social notification] Re-check Logic of sending daily digest emails
-    * [COMMONS-336] - Clean up to ignore copying simple property key [gatein.email.domain.url] in various project
-    * [COMMONS-338] - Incorrect log messages for email notifications
 
 eXo Social 4.1.0-RC1  
 *************************
@@ -355,30 +493,10 @@ eXo Social 4.1.0-RC1
     * [SOC-4400] - Social Navigation is not updated when removing an application from Applications Tab
     * [SOC-4406] - [User Popup] Confirm connection request from user popup does not work
 
-** Documentation
-    * [SOC-3765] - [Notification] Writes the document how to extend the notification plugin.
-
 ** Improvement
     * [SOC-3456] - Make it easier to override the user profile template
     * [SOC-3967] - Display featured content in notification emails
 
-
-** Task
-    * [SOC-4208] - [Space notification] Remove space character before question mark in email
-    * [SOC-4310] - Improve social injector objects' suffix format
-    * [SOC-4320] - Remove unused resource bundle when access space setting
-    * [SOC-4335] - social-extension-config.jar in Platform distribution
-
-** Sub-task
-    * [SOC-3968] - Step 1: Study new spec for activity notification message + review BD design
-    * [SOC-3969] - Step 2: NOTIFICATIONS_04a For a link activity + apply Design
-    * [SOC-3970] - Step 4: NOTIFICATIONS_04b For an image activity
-    * [SOC-3971] - Step 5: NOTIFICATIONS_04c For another file activity + Apply UI
-    * [SOC-3972] - Step 6: Implement: NOTIFICATIONS_04d For activities that has an embed + apply UI
-    * [SOC-4028] - [Notification Template] Implement multi templates mechanism per plugin.
-    * [SOC-4286] - [performance] [soc-notification] Load activities stream shows social.webui.activity.BaseUIActivity.getAllComments slowness
-    * [SOC-4298] - Slowness when get comment's size but loading all of comments data
-    * [SOC-4302] - Display only activities posted on a stream of an user when view his stream
 
 eXo WIKI 4.1.0-RC1  
 *************************
@@ -446,11 +564,6 @@ eXo Forum 4.1.0-RC1
     * [FORUM-848] - Improve performance  when open form UserSelector.
 
 
-** Task
-    * [FORUM-498] - [PLF-4.0] Review resource keys
-    * [FORUM-922] - Remove " WARN  | Can not find resource bundle for key" display on console create by UIFormSelectBoxForum
-
-
 eXo Calendar 4.1.0-RC1  
 *************************
 
@@ -492,10 +605,6 @@ eXo Calendar 4.1.0-RC1
     * [CAL-954] - Improve UIDateTimePicker.js for i18n purpose
 
 
-** Task
-    * [CAL-923] - [crowdin 4.1] Update properties/xml files on Platform 4.1
-    * [CAL-982] - Incorrect text of comment about the event title edited.
-
 eXo Intergration 4.1.0-RC1  
 **************************
 
@@ -520,10 +629,6 @@ eXo Intergration 4.1.0-RC1
     * [INTEG-251] - [Unified Search][UXP] Position of message about the result number
     * [INTEG-339] - notification displays null instead of comment on wiki edit
 
-
-** Task
-    * [INTEG-340] - Provide more memory for surefire JVM maven Unit test
-    * [INTEG-341] - [integ-wiki] INFO "cannot get page url" when Activity Stream has wiki activity
 
 =========================
 Changelog Platform 4.1-M2
@@ -585,14 +690,6 @@ eXo Platform 4.1-M2
 ** Improvement
     * [PLF-5682] - User Status rest service on Who's online portlet
 
-** Task
-    * [PLF-5836] - Documentation - Update links of the Help feature 4.1
-    * [PLF-5856] - [crowdin 4.1] Update properties/xml files on Platform 4.1
-    * [PLF-5867] - Use Jboss EAP 6.1.1 for Platform 4.0.6 (internal usage)
-    * [PLF-5892] - Data upgrade in Platform 4.1-M2
-    * [PLF-5951] - Update credentials and urls which given by weemo
-    * [PLF-5960] - Release PLF 4.1-M2
-
 
 eXo ECMS 4.1-M2  
 *************************
@@ -620,9 +717,6 @@ eXo ECMS 4.1-M2
 ** New Feature
     * [ECMS-5822] - Video Calls Addon
 
-** Task
-    * [ECMS-6161] - [crowdin 4.1] Update properties/xml files on Platform 4.1
-    * [ECMS-6201] - Backport fix from 4.0.6 to 4.1.x
 
 eXo Commons 4.1-M2  
 *************************
@@ -630,10 +724,6 @@ eXo Commons 4.1-M2
 ** Bug
     * [COMMONS-309] - [Activity Composer] Problems when sharing a file
     * [COMMONS-334] - Big font size are cut in Font size list
-
-** Task
-    * [COMMONS-316] - [crowdin 4.1] Update properties/xml files on Platform 4.1
-    * [COMMONS-318] - Add JUnit test for some services are using for weemo
 
 
 eXo WIKI 4.1-M2  
@@ -647,9 +737,6 @@ eXo WIKI 4.1-M2
 
 ** Feedback
     * [WIKI-907] - CLONE - border of tables missing in wiki
-
-** Task
-    * [WIKI-881] - [crowdin 4.1] Update properties/xml files on Platform 4.1
 
 
 eXo Social 4.1-M2  
@@ -685,9 +772,6 @@ eXo Social 4.1-M2
     * [SOC-4292] - [XSRF] UIBasicInfoSection Form need to be configured to prevent the change of user profile
     * [SOC-4300] - UndeclaredThrowableException of UIActivitiesLoader by NullPointerException while posting on stream
 
-** Documentation
-    * [SOC-4164] - Improve Social Caches documentation
-
 ** Feedback
     * [SOC-4111] - [User profile] The field "position" isn't very clear
     * [SOC-4114] - [Space Member Management] Auto-complete should contain the full name when inviting users into space
@@ -701,10 +785,6 @@ eXo Social 4.1-M2
     * [SOC-4118] - Slowness in suggestion portlet
     * [SOC-4217] - [Notification] Improves computing way to build receiver for Activity notification with HashSet
 
-** Task
-    * [SOC-4135] - [Contact Information] Hard-coded values of Gender, Telephone, SMS
-    * [SOC-4223] - [crowdin 4.1] Update properties/xml files on Platform 4.1
-    * [SOC-4275] - Sonar build failed due to empty class
 
 eXo Calendar 4.1-M2  
 *************************
@@ -743,9 +823,6 @@ eXo Forum 4.1-M2
     * [FORUM-900] - FAQ is empty with renamed spaces
     * [FORUM-908] - Cannot save category scoping if click Save on other tab
 
-** Documentation
-    * [FORUM-841] - Create Forum / FAQ/ Answers Caches documentation
-
 ** Feedback
     * [FORUM-855] - [Topic] Should be show only one wanrning message when add blank Tag by pressing Enter key to Submit
 
@@ -758,9 +835,6 @@ eXo Integration 4.1-M2
 
 ** Bug
     * [INTEG-316] - Exception on broadcasting events occurs when manage publication
-
-** Task
-    * [INTEG-300] - [crowdin 4.1] Update properties/xml files on Platform 4.1
 
  
 eXo GateIn 3.5.10-PLF  
@@ -1027,10 +1101,6 @@ eXo Wiki 4.1-M1
     * [WIKI-156] - Upgrade to XWiki 5.0.2
     * [WIKI-650] - Add a mechanism for wiki to disable cache for some macroes
     * [WIKI-845] - Wiki connector for staging extension
-
-** New Feature
-    * [WIKI-512] - Wiki : need a "recently updated" macro
-
 
   
 eXo Forum 4.1-M1
