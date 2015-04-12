@@ -128,5 +128,5 @@ commons.upgrade.PCVPortletUpgradePlugin.enable=true
 IV. KNOWN ISSUES
 ===================
 
-* PLF-6122 [PDFViewer] Failed to view files due to missing com.sun.image.codec.jpeg.JPEGImageDecoder in Open JDK 1.7
+* INTEG-403 [Unified Search] Customized Search Result Settings aren't considered for all users
 * COMMONS-372 [IE11] [CKEditor] Cursor not shown immediately from the second creation
