@@ -804,6 +804,10 @@
             </exclusion>
         </exclusions>
     </dependency>
+    <dependency>
+      <groupId>org.gatein.portal</groupId>
+      <artifactId>exo.portal.component.web.oauth-plf</artifactId>
+    </dependency>
     <!-- org.gatein.security.oauth.webapi.OAuthDelegateFilter used but not declared in GateIn ? -->
     <dependency>
         <groupId>org.gatein.cdi</groupId>
