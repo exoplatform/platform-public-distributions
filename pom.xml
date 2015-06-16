@@ -28,6 +28,7 @@
     <relativePath />
   </parent>
   <groupId>org.exoplatform.platform.distributions</groupId>
+  <artifactId>plf-public-distributions</artifactId>
   <version>4.2.x-pkgpub-share-content-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo Platform Public Distributions</name>

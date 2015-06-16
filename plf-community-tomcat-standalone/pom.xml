@@ -26,7 +26,6 @@
     <groupId>org.exoplatform.platform.distributions</groupId>
     <version>4.2.x-pkgpub-share-content-SNAPSHOT</version>
   </parent>
-  </parent>
   <artifactId>plf-community-tomcat-standalone</artifactId>
   <packaging>pom</packaging>
   <name>eXo Platform Public Distributions - Community Tomcat Standalone</name>
