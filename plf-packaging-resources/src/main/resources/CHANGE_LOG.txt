@@ -3,324 +3,153 @@ Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
  
-eXo Platform 4.2.0-RC1
+eXo Platform 4.2.0  
 *************************
 
 ** Bug
-    * [PLF-5846] - "Date" Label of Calendar gadget on Homepage is not correct
-    * [PLF-6015] - Login page in English when browser's language contains country value
-    * [PLF-6056] - Wrong default space avatar in Invitation and Suggestion gadget
+    * [PLF-6142] - common.module.ModuleRegistry.isPortletActive causes infinite loop
     * [PLF-6154] - Intensive usage of OrgSrv
-    * [PLF-6215] - Configuration buttons of CLV not shown in ACME home page with Announcement Template
-    * [PLF-6230] - Preview document does not work on Mac with LibreOffice 4
-    * [PLF-6232] - [Juzu Portlets] Loss of accented characters in Getting Started, Calendar and Chat
-    * [PLF-6245] - [Jboss]: Exception when start Jboss
-    * [PLF-6248] - [Jboss]: Can not start Jboss with mysql
-    * [PLF-6251] - [ACME] portlet content of acme are not displayed
-    * [PLF-6261] - Quick search does not work exactly
-
-** Improvement
-    * [PLF-6061] - Slowness in GettingStarted portlet
-
-eXo ECMS 4.2.0-RC1 
-*************************
-** Bug
-    * [ECMS-4895] - Adding @import in Site CSS crash the server
-    * [ECMS-5801] - Problem when search content in content search form
-    * [ECMS-5862] - [TC-4.0.4] [Intranet Home Page] Slowness in clv.UICLVPortlet invocation
-    * [ECMS-5870] - Menu Edit did not close when SEO Management form opens
-    * [ECMS-5936] - [Content Explorer] File name (with File template) displayed incorrect when it contains accent characters
-    * [ECMS-5947] - CLONE - [XSS] ECMS - Trash - View information
-    * [ECMS-6039] - [Content List Preferences] Display Settings tab: Checkboxes and labels are overlapped in IE10
-    * [ECMS-6052] - Impossible to Insert Content Link with a content name including "%" character
-    * [ECMS-6154] - Added categories of intranet category tree is not displayed in advanced search
-    * [ECMS-6160] - Page with clv portlet is blank
-    * [ECMS-6226] - Cannot zoom in after document file is zoomed out to 300%
-    * [ECMS-6288] - [Cluster]: New group permission (in Administration/Repository/ Locks ) added on one node is not displayed on other node
-    * [ECMS-6293] - [Cluster][ECMAdmin] New Tag Permission Manager added on one node is not displayed on other node
-    * [ECMS-6315] - Upload: Not show message about same files that contain uppercase or special characters
-    * [ECMS-6357] - Manage publication: Invalid date 
-    * [ECMS-6393] - [Document Selector] Can't browse symlink folder 
-    * [ECMS-6407] - [integ-ecms] NPE and redundant comment after adding 1 webcontent in CLV
-    * [ECMS-6431] - [ACME] Published contents is not listed all in Search page
-    * [ECMS-6433] - [Site Explorer]Add sub dialog - Date isn't shown after edited a file at second timt
-    * [ECMS-6480] - Wrong result of simple and advanced search when the search returns more than 101 items
-    * [ECMS-6482] - [IE][Publish] show empty page when user log out
-    * [ECMS-6533] - [Document Preview] Cannot close Preview mode
-    * [ECMS-6534] - [Document Preview] Loading forever when no search results are found
-    * [ECMS-6536] - [Document Preview] Previous and Next icon is not disabled when stay at first page and last page
-    * [ECMS-6538] - [Document Preview] Print incorrect content of the document
-    * [ECMS-6547] - [Document Preview] Display area - Incorrect margin
-    * [ECMS-6552] - [Document Preview] Cannot view content of ODF file
-    * [ECMS-6554] - [Document preview] New reader - "Switch to presentation mode" doesn't work
-    * [ECMS-6555] - [Document preview] Comment area - User cannot delete their comments from Comment area on Preview mode
-    * [ECMS-6556] - [Document preview] Comment area - Show html format of a comment that is added from Site Explorer
-    * [ECMS-6559] - [Document Preview] Comment area - Go to new line after pressed Enter key
-    * [ECMS-6565] - [Document Preview] Slider bar of FLV/F4V files is broken on Activity stream
-    * [ECMS-6566] - [Document Preview] Image's thumbnail is not aligned on activity stream
-    * [ECMS-6567] - [Document preview] Image - Download link is not aligned when hided comment area
-    * [ECMS-6568] - [Document preview]Image doesn't fit display area
-    * [ECMS-6569] - [Document preview]External Embedded Video - Lack of Preview mode
-    * [ECMS-6570] - [Document Preview] Not show thumbnail video when shared a youtube link
-    * [ECMS-6573] - [Document Preview]WMA/MPG/MKV file - Auto play the video when refresh activity stream or open a preview mode of other video
-    * [ECMS-6574] - [Document Preview]WEBM/MP4 file Lack of Thumbnail Image Preview for upload video on Activity Stream
-    * [ECMS-6576] - [Document Preview][Comment Area] Comment box - Show a unknown error after pressed Enter key
-    * [ECMS-6577] - [Document Preview][IE][Comment Area] Comment box - Place holder text is not disappeared when focusing on this filed
-    * [ECMS-6578] - [Document Preview] Broken UI of Display Area when viewing a pdf file with big size (over 5MB)
-    * [ECMS-6581] - [Document Preview] Media -Cannot play .f4v file 
-    * [ECMS-6583] - [Document Preview][Chrome] Embedded video - Cannot play .mp4 file
-    * [ECMS-6586] - [Document Preview]External Embedded Video - Cannot close preview mode when press ESC key
-    * [ECMS-6591] - [Document Preview][FF]MKV file - Cannot play via corresponding player and on Preview mode
-    * [ECMS-6592] - [Document Preview] MKV file - Cannot re-play the video when exit full screen
-    * [ECMS-6611] - [Open in Office] Wrong office icons
-    * [ECMS-6612] - [Open in Office] Missing actions from public folder
-    * [ECMS-6614] - [Open in Office] Switch from "Open" to "Open in ..." visible
-    * [ECMS-6616] - [Open in Office] Wrong version number after update
-    * [ECMS-6617] - [Open in Office] Wrong button style when no preview
-    * [ECMS-6619] - [Site Explorer][Admin View] Unexpected error is displayed when opening file in Admin View
-    * [ECMS-6620] - [Open in Office] Admin View : "Open On Desktop" button is displayed with office files
-    * [ECMS-6621] - [Open in Office] Layout broken when opening a file
-    * [ECMS-6622] - [Open in Office] Read Only popup not localized from activity stream
-    * [ECMS-6625] - [Open in Office] Use a proper label for Open Document action
-    * [ECMS-6626] - [Open in Office] checkIn / checkOut actions available in view administration
-    * [ECMS-6627] - [Open in Office] Wrong icon for "Open on Desktop"
-    * [ECMS-6628] - [Open in Office] Detect good office icon for all format
-    * [ECMS-6642] - [Open in Office] Update label from "Open In ..." to Open in ..."
-    * [ECMS-6643] - [Open in Office] Lock not displayed for others types (txt, sh, xml ...)
-    * [ECMS-6646] - [Open in Office] Configuration not applied
-    * [ECMS-6649] - [Site Explorer] Wrong button for .txt file
-    * [ECMS-6652] - [Open in Office] "Open" should not be displayed in web view
-    * [ECMS-6668] - [Open in Office] "Open" button is not displayed in Admin view when not deploying addon
-    * [ECMS-6685] - [Open in Office] Wrong office icons after edit file
-    * [ECMS-6691] - [Open in Office] Wrong icon for some other file types in Icon view (.png, .jpg, .pdf)
-    * [ECMS-6702] - [Open in Office] Temp files when opening with TextEdit should not be visible
-    * [ECMS-6706] - [Open in Office] View button is still displayed with some unsupported files on activity stream
-    * [ECMS-6709] - [UXPaaS][Open in Office] "CheckIn and CheckOut" actions are not checked by default
-    * [ECMS-6712] - [Open in Office] Wrong icon of sxc extension
-    * [ECMS-6713] - [Open in Office] Wrong icon display during file loading
-    * [ECMS-6719] - [Open in office]Inconsistent label of Read Only button
-    * [ECMS-6739] - Delete icon in clipboard does not work 
-    * [ECMS-6755] - [acme] NPE in LinkManagerImpl during the deployment
-    * [ECMS-6766] - [Migration] bad log after migrate from PLF-4.1.0 to PLF-4.2.0-M2
-    * [ECMS-6781] - [Document Preview] Text param (create comment) is cheatable
-    * [ECMS-6785] - [Document Preview] NPE when a connection shares a file that I have no access permission
-    * [ECMS-6786] - [Document Preview] Text param (create comment) is not encoded
-    * [ECMS-6794] - [Document Preview]Comment Area- Show comment area of file in SE on Preview mode 
-    * [ECMS-6796] - [Document Preview] Matters with Illustrated Web content
-    * [ECMS-6800] - [Document Preview] The link view is not displayed for Flickr activities
-    * [ECMS-6802] - [Document Preview] Tool menu is not disappeared when an option is selected.
-    * [ECMS-6810] - [Open in Office] Displayed comment  when editing uploaded file on activity stream is not correct
-    * [ECMS-6815] - [Clipboard] The work of "Paste" action in clipboard is not good
-    * [ECMS-6818] - remote edit does not work on Chrome 42
-    * [ECMS-6820] - Wrong view is displayed when viewing file from activity stream
-    * [ECMS-6828] - There are many node not found exceptions in log
-
-** Improvement
-    * [ECMS-5642] - Improve cleanupPublication option to publish a first version
-    * [ECMS-5655] - Study and research about the integration with PDF JS
-    * [ECMS-6740] - CLONE - [Document Preview] Apply confirmation pop up style for deletion question
-
-** New Feature
-    * [ECMS-6487] - Document Preview
-    * [ECMS-6518] - Open Document in Office
+    * [PLF-6185] - [Suggestion Gadget] did not display 1 People without common connections
+    * [PLF-6202] - [User Profile] Unknown error when drag and drop a portlet to Dynamic column
+    * [PLF-6227] - [PLF-Jboss] Cannot connect to WebDAV from Windows machine to Linux server
+    * [PLF-6230] - JODConverter cannot detect LibreOffice 4.1 on Mac OSX
+    * [PLF-6246] - [acme-website]: Error while trying to add the mixin exo:navigable of Event3
+    * [PLF-6252] - ArrayIndexOutOfBoundsException when accessing intranet's Wiki or "Edit my profile"
+    * [PLF-6255] - Layout of PLF 4.2 is broken on IE9
+    * [PLF-6256] - [Suggestions gadget] Generic User Popup is not shown
+    * [PLF-6262] - Can not scroll up after scroll down when cofigure quick search
+    * [PLF-6271] - Tooltip text is encoded when File name contains accent chars
+    * [PLF-6272] - [Upgrade 4.1.1 to 4.2-RC1]: Error in AnswerPageUpgradePlugin
+    * [PLF-6285] - [Ubuntu 14.04.2] MIME type isn't recognized when uploading file via Nautilus
+    * [PLF-6297] - [Unified Search] Searching word is cut-off in advanced search
+    * [PLF-6317] - [acme] Missing Login and Logout links
+    * [PLF-6325] - [acme] Bad UI and loading forever when editing Banner and Footer
+    * [PLF-6328] - [Suggestions Gadget] Avatar of user is not showed when mouser over on an user
+    * [PLF-6332] - [Cluster] java.lang.ClassNotFoundException: org.exoplatform.faq.service.notify.NotifyJob occurs when starting nodes with upgrade data
 
 
-eXo Commons 4.2.0-RC1
-*************************
-** Bug
-    * [COMMONS-380] - [Notif] Too many warnings about Oort in tomcat and jboss standalone
-    * [COMMONS-381] - [Notif] NPE when server is restarting and browser makes long-polling requests
-
-** Improvement
-    * [COMMONS-402] - Deprecate XMLDeploymentPlugin
-
-eXo WIKI 4.2.0-RC1 
+eXo ECMS 4.2.0  
 *************************
 
 ** Bug
-    * [WIKI-554] - [Export to PDF] Missing format of the first line
-    * [WIKI-559] - Not add comment on activity when edit content of page with comment associated
-    * [WIKI-865] - [Export as PDF] Missing images in the exported file
-    * [WIKI-925] - Cannot upload a file that contains special characters (plus, quote) in name
-    * [WIKI-950] - Anonymous user cannot view image in public wiki page
-    * [WIKI-952] - RepositoryException "Data too long for column 'NAME'" when adding wiki page with long title
-    * [WIKI-979] - [Access control] Wiki page content is available for everyone via REST service
-    * [WIKI-986] - Wiki page images aren't displayed
-    * [WIKI-991] - Wiki - Add More Template does not work
-    * [WIKI-1000] - WARNING MalformedURLException when creating new wiki page
-    * [WIKI-1001] - [Export to PDF] Unknown error when exporting wiki page of less than 3 characters in page title
-    * [WIKI-1006] - [Page Info] Browser navigates to address javascrip:void(0) when expanding the Child page
+    * [ECMS-5417] - CLONE - XSS - executing script when edit a web content containing a link with hexa characters
+    * [ECMS-5839] - [ECMAdmin][Manage Document Tempalte]: Close button does not work in feature Add/Edit Template
+    * [ECMS-6017] - HTML Lists not well displayed in HTML file 
+    * [ECMS-6121] - Script isn't saved in File
+    * [ECMS-6387] - [CKEditor][IE 11] Cannot decorate the content
+    * [ECMS-6434] - [WebDav][Jboss] HTTP 500 Internal Server Error when renaming a file/folder
+    * [ECMS-6648] - [CKEditor]: Home AS, Number List and Bullet lines should not be combined in one line.
+    * [ECMS-6692] - Can not close [Import] window after Import an any kind of file to a Illustrated Web content
+    * [ECMS-6731] - [Content Explorer] Explorer cannot switch page
+    * [ECMS-6748] - [SE-Advance Search]: Can not search following property and document type 
+    * [ECMS-6775] - Pagination does not work in different views
+    * [ECMS-6799] - Comment is not updated in AS when removing tags in Edit Tag screen
+    * [ECMS-6812] - Webcontent content is encoded many times
+    * [ECMS-6817] - [Site Explorer] Check in / Checkout actions are not displayed in Collaboration drive
+    * [ECMS-6821] - [Document Preview][IE11] Show scroll bars when closed Preview mode
+    * [ECMS-6823] - [Open in Office]: Can NOT edit remote
+    * [ECMS-6827] - [Open in Office] Cannot view file content
+    * [ECMS-6829] - [acme-website] Impossible to create Contact Us
+    * [ECMS-6841] - Bad display of the title of the SCV icon
+    * [ECMS-6846] - [webdav] two activities created for 1 file when it is edited using webdav
+    * [ECMS-6848] - [Symlink activity] Exception posted when Click on symlink file in AS
+    * [ECMS-6852] - [Views] Restore button is shown when Enable Version is not ticked.
+    * [ECMS-6854] - [Upgrade 4.1.1 to 4.2-RC1]: Content page of SE is empty when upgrading from 4.1.1 to 4.2-RC1
+    * [ECMS-6857] - [XSS]"Description" field in Metadata has XSS vulnerability for CLV
+    * [ECMS-6859] - [XSS]"Label" field in Template Document has XSS vulnerability
+    * [ECMS-6866] - Exception when edit default.html file in Power-Fire
+    * [ECMS-6868] - Back button in file explorer does not keep the current "page" when we have pagination
+    * [ECMS-6872] - Pagination of right panels in Site Explorer doesn't work
+    * [ECMS-6873] - Unknown error when changing page (left side) in site explorer
+    * [ECMS-6876] - "View Document" from contextual menu doesn't work correctly
+    * [ECMS-6879] - [Regression] - CK editor does not load after opening insert image ("image icon") with IE
+    * [ECMS-6882] - TemplateRuntimeException and UI broken after services run
+    * [ECMS-6891] - [acme portal] popup menu is not displayed fully
+    * [ECMS-6892] - [IE9][acme] Impossible to switch between pages
+    * [ECMS-6895] - [IE10] [SEO] Unknown error and error exception posted when SEO is clicked
+    * [ECMS-6902] - [IE9, IE10] Document Preview doesn't work
+    * [ECMS-6904] - [Multiupload] Unicode value in the confirmation message when Cancel to upload All files
+    * [ECMS-6909] - "Unknown error" and PathNotFoundException when download multiple files
+    * [ECMS-6916] - Error syntax displays when clicking Open in .... on IE9 & IE11
+    * [ECMS-6924] - [Open In Office] Windows users - Cannot open MS Word files after a period of use
+    * [ECMS-6930] - [Draft] status does not display in edit mode
+    * [ECMS-6932] - [SCV] Cannot print pdf document
+    * [ECMS-6938] - NPE in SEO form
+    * [ECMS-6939] - [Open in Offices] Authentication is required continuously when open a file to edit
+    * [ECMS-6947] - [Acme] Search function does not work
+    * [ECMS-6968] - [Site Explorer][Upload] Cannot open office files on WebDav
+    * [ECMS-6973] - [Views] Wrong buttons are displayed in View form
+    * [ECMS-6976] - [CKEditor] Content CKeditor is encoded many times
+    * [ECMS-6977] - Editing a webContent displays the HTML code in the WYSIWYG editor
 
 
-eXo Social 4.2.0-RC1  
-*************************
-** Bug
-    * [SOC-3932] - Activity stream input box on homepage behaves awfully
-    * [SOC-4399] - Missing post and Server become slow when share activities on Activity Stream
-    * [SOC-4479] - [Link Share] Bug in case of sharing exoplatform site url.
-    * [SOC-4514] - An activity mentionning a member is not displayed in All Activities stream
-    * [SOC-4543] - [Notif] Notif icon should be next to the user menu
-    * [SOC-4544] - [Notif] Notif that was dismissed by clicking the x icon comes back in the popover
-    * [SOC-4545] - [Notif] Date of the notification doesn't change
-    * [SOC-4546] - [Notif] No icon displayed in notification after accepting a space invitation
-    * [SOC-4547] - [Notif] View All button should not be displayed on initial state
-    * [SOC-4548] - [Notif] Click on new user notif doesn't open his profile page
-    * [SOC-4549] - [Notif] Some notif don't appear in the popover but they do in the view all page
-    * [SOC-4550] - [Notif] Click on space join confirmation notif should redirect to the space home
-    * [SOC-4551] - [Notif] Click on notification area hides the notif from popover
-    * [SOC-4552] - [Notif] 0 in badge number when a new aggregated notif is received
-    * [SOC-4553] - [Notif] Loading icon not displayed in view all page and oldest notifications are not loaded
-    * [SOC-4555] - [Notif] 8+ displayed in the badge when more than 8 notif are received
-    * [SOC-4556] - [Notif] No notifications are generated when data is injected
-    * [SOC-4557] - [Intranet Notifications] Click on a notif redirect to localhost 
-    * [SOC-4558] - [Notif] Clicking on action buttons has no effect
-    * [SOC-4560] - [Notif] Firefox doesn't fallback to long-polling transport when WebSockets are disabled
-    * [SOC-4565] - [Intranet Notifications] Accept actions should not trigger a new entry
-    * [SOC-4566] - [Intranet Notification] First Notification refused - View all still displayed
-    * [SOC-4567] - [Intranet Notifications] Incorrect default user settings
-    * [SOC-4569] - [Intranet Notification] Date is not updated 
-    * [SOC-4570] - [Intranet Notification] Accept action from View All doesn't update the notification
-    * [SOC-4571] - [Intranet Notification] Top Navigation broken after delete an activity linked to a notification
-    * [SOC-4572] - [Intranet Notification] Can't click space request action if the request has been approved 
-    * [SOC-4573] - [Intranet Notification] Wrong style for No Notifications
-    * [SOC-4574] - [Intranet Notification] See on My intranet should be See on My Intranet
-    * [SOC-4575] - [Intranet Notification] Comment / Like are not pushed for space activity
-    * [SOC-4577] - [Intranet Notifications] Email settings lost after upgrading
-    * [SOC-4580] - [Intranet Notifications] View disappear from the popover
-    * [SOC-4581] - [Intranet Notifications] Random behavior : clicking a notification doesn't do anything
-    * [SOC-4582] - [Intranet Notifications] Notification popover broken after clicking [Refuse] or remove all notifications
-    * [SOC-4583] - [Intranet Notification] Can't accept a space join request
-    * [SOC-4584] - [Intranet Notifications] Comments and like are not merged
-    * [SOC-4586] - [Notif] Fix properties used in intranet notifs
-    * [SOC-4587] - [Intranet Notifications] Refused connection from View All is still display in the popover
-    * [SOC-4597] - Default experience field cannot be deleted and is mandatory
-    * [SOC-4598] - Wrong URL if protocol is not set
-    * [SOC-4599] - Email address overlaps About Me when it's too long
-    * [SOC-4600] - Misaligned Recent Activities section
-    * [SOC-4602] - Incorrect labels
-    * [SOC-4603] - Edit Profile - Experience section - Fields titles should be bold
-    * [SOC-4605] - Missing title on the edit profile page
-    * [SOC-4606] - Different font size of section titles
-    * [SOC-4607] - URL is too long and overlaps the center column
-    * [SOC-4608] - Improve the connection status buttons
-    * [SOC-4614] - [Notif] ViewAll the offset didn't up to date when some notifs deleted
-    * [SOC-4615] - [Intranet Notifications] Clustering - Notification is not sent instantly
-    * [SOC-4625] - [Intranet Notification] View All displayed for the first connection + wrong UI in View All page
-    * [SOC-4626] - [Intranet Notifications] Notifications not sent or displayed in the list
-    * [SOC-4627] - [Intranet Notifications] Homepage broken
-    * [SOC-4628] - [Intranet Notification] Inconsistency in the labels
-    * [SOC-4631] - User who disconnected with current user should be removed from Connections list
-    * [SOC-4632] - [Intranet Notifications] View All button removed after clicking Refuse
-    * [SOC-4633] - [Intranet Notifications] Notif number is back after few sec
-    * [SOC-4634] - [Intranet Notifications] Can't remove a notification from the list
-    * [SOC-4635] - [Intranet Notifications] Order of the notifications is changed
-    * [SOC-4636] - [Intranet Notifications] Space or User must NOT be a link in the notification list
-    * [SOC-4637] - [Intranet Notifications] Notif list not displayed instantaneously 
-    * [SOC-4638] - [Intranet Notifications] Wrong label for Comment notifications
-    * [SOC-4639] - [Intranet Notifications] Badge number is a big mess
-    * [SOC-4640] - Correct URL is not accepted
-    * [SOC-4641] - Some information are not truncated when too long
-    * [SOC-4642] - Job title is not removed
-    * [SOC-4643] - Start date field should have a clue that it is mandatory
-    * [SOC-4645] - Activity with mention is not displayed in the recent activities
-    * [SOC-4646] - Missing View all connections label
-    * [SOC-4647] - Connected / Disconnect labels must be in italic
-    * [SOC-4648] - Replace labels "Position" by "Job Title"
-    * [SOC-4650] - [Intranet Notifications] Some minor UI errors in popover
-    * [SOC-4651] - [Intranet Notifications] Mention not stable
-    * [SOC-4652] - [Intranet Notifications] Unexpected scroll bar in the popover
-    * [SOC-4654] - [Intranet Notifications] Wrong content for Mention notification in a comment
-    * [SOC-4655] - [Intranet Notifications] Only 6 notifications are displayed
-    * [SOC-4656] - [Intranet Notification] first comment highlighted for Post on My Stream
-    * [SOC-4658] - [Intranet Notifications] Configuration for notifications storage doesn't work
-    * [SOC-4659] - [Intranet Notifications] User Settings leak
-    * [SOC-4660] - [Intranet Notifications] Wrong notification when activity is a link
-    * [SOC-4661] - [Intranet Notifications] Wrong space icon on space invitation notification
-    * [SOC-4662] - [Intranet Notifications] No notification in case of space invitation to a group
-    * [SOC-4665] - [Intranet Notifications] Wrong loading at View All page
-    * [SOC-4671] - Start / End date fields should be optional
-    * [SOC-4673] - [Intranet Notifications] Upgrade from 4.1 to 4.2 with custom plugin is not transparent
-    * [SOC-4674] - Incorrect dynamic containers
-    * [SOC-4676] - Both two tabs are selected at the same time on User Navigation
-    * [SOC-4679] - [User Profile] Page's title is wrong when view my profile
-    * [SOC-4681] - [User Profile] Bugs on user profile page.
-    * [SOC-4685] - [User Profile] Wrong name of container: right-editprofile-container 
-    * [SOC-4687] - [User Profile] The field "Email" is required while it's optional
-    * [SOC-4690] - [User Profile] Job Details is not truncated when it's long
-    * [SOC-4691] - [User Profile] Wrong warning when Organization field is empty
-    * [SOC-4692] - Security holes in User Profile redesign
-    * [SOC-4693] - [User Profile] Not show warning message when user inputs negative years
-    * [SOC-4694] - [User Profile] Not warning when input invalid phone number
-    * [SOC-4697] - [User Profile] Not show message alert when not upload image but click Confirm
-    * [SOC-4698] - [User Profile] Save button is still disable after deleting URL
-    * [SOC-4701] - [User Profile] Wrong direction page when user has no connection and clicks on "Find connections"
-    * [SOC-4703] - [User Profile] Link for forum, answer, event, file activity
-    * [SOC-4707] - [User Profile] Gender field is not optional
-    * [SOC-4708] - [User Profile] Save button is still disable after editing Start date/End date of Experience
-    * [SOC-4709] - [User Profile] Wrong warning when Start date is greater than end date
-    * [SOC-4711] - [User Profile] Not show warning when input invalid URL
-    * [SOC-4713] - [Intranet Notifications] Rest API is not secure
-    * [SOC-4715] - [User Profile] UI broken in case of changing profile and recent activities portlet's position
-    * [SOC-4720] - [Intranet Notifications] Typo in user settings
-    * [SOC-4726] - [Intranet Notification] All notifications is disappeared after clicking "Back" button of browser
-    * [SOC-4730] - [Intranet Notifications] Incorrect Event Title notification display
-    * [SOC-4731] - [User Profile] Not accept update email address that same with an existing one
-    * [SOC-4734] - [Intranet Notification] View All page: hide/unhide "No notifications" icon when a Notif comes or removes
-    * [SOC-4736] - [User Profile] Users not removed after taking action on User Profile popup.
-    * [SOC-4741] - [User Profile] Link for poll activity
-    * [SOC-4742] - [User Profile] Redirect to wrong hostname when click on username in mention activity
-    * [SOC-4743] - [User Profile] Duplicated of star symbol of Start date field in special case
-    * [SOC-4744] - [User Profile] Inconsistent label display 
-    * [SOC-4745] - [User Profile] Recent Activities - wrong task icon
-    * [SOC-4747] - [User Profile] Wrong warning when IM is over 100 chars
-    * [SOC-4756] - [User Profile] Wrong warning message in case of lenght of URL over 100
-    * [SOC-4759] - [User Profile] Shows "Unknow error" when click save User profile after session time out.
-    * [SOC-4760] - [Chrome] (+) in Add New Space is changed to refresh icon when mousing over
-    * [SOC-4764] - [Intranet Notification] Wrong display of space title, site name and some activities
-    * [SOC-4767] - [Unified Search] All users are displayed in search result for all search term when fuzzy search is disabled
-    * [SOC-4784] - User pending and member at the same time in a space
-    * [SOC-4789] - [User Profile]: Wrong latest connection list
-    * [SOC-4823] - [Space] URL of Space is not correct
-
-** Improvement
-    * [SOC-4706] - Limit the number of characters that can be input in the edit profile fields
-
-** New Feature
-    * [SOC-4458] - Intranet Notifications
-    * [SOC-4498] - User Profile Redesigned 
-
-eXo Calendar 4.2.0-RC1  
+eXo Commons 4.2.0  
 *************************
 
 ** Bug
-    * [CAL-938] - [Unified Search]: Confirm about displaying time info of event or task in unified seach
-    * [CAL-1053] - [Calendar] JS error displayed when opening Calendar application
-    * [CAL-1066] - Calendar - Category : Missing label
-    * [CAL-1084] - Group member can change the color of a group calendar 
-    * [CAL-1095] - Broken Space Calendar when no calendar is selected to display
+    * [COMMONS-366] - <a target="_blank" > is destroyed by Antisamy
+    * [COMMONS-407] - [IE11][Document Selector] Broken encoding of Folder name
+    * [COMMONS-408] - [IE 9, IE 10] Cannot upload file in Activity Composer
+    * [COMMONS-413] - [IE9] Cannot upload file by activity composer
+    * [COMMONS-414] - [CKEditor] Button "Insert Special Characters" does not work in some languages (Vietnamese, Arabic, Japanese, Lithuanian)
+    * [COMMONS-419] - Notification Mail are to all users (even if not synchronized)
 
-** Improvement
-    * [CAL-997] - List View : Multiple Delete Confirmation Popup
-    * [CAL-1067] - [calendar] - Quick Search Field - do not use independent icons
 
-** New Feature
-    * [CAL-861] - Implement new REST APIs in calendar 
- 
-eXo GateIn 4.2.0-RC1-PLF  
+eXo WIKI 4.2.0 
 *************************
 
 ** Bug
-    * [EXOGTN-1953] - Delete Group from Cron Job throws NullPointerException
-    * [EXOGTN-1985] - [UIFormMultiValueInputSet] Warning message is wrong in case of StringLengthValidator
-
-** Improvement
-    * [EXOGTN-1948] - Upgrade to CometD 3
-    * [EXOGTN-1973] - [Datetime picker] Support broadcast event when select Datetime from Datetime picker
-
-
- 
+    * [WIKI-715] - [Advanced Search] Search by the keyboard "Enter" is not performed 
+    * [WIKI-1031] - Tip text should be in gray color and disappeared when textbox is clicked
+    * [WIKI-1040] - User can change wiki page content without permission
 
 
 
+eXo Social 4.2.0 
+*************************
+
+** Bug
+    * [SOC-4768] - Inconsistency of connection's activities
+    * [SOC-4810] - [User profile] End Date of Experience is updated incorrectly in other languages
+    * [SOC-4812] - [User Profile] Text by default in About me is not opaque
+    * [SOC-4817] - [User Profile] Connections section is updated incorrectly when Cancel Request
+    * [SOC-4821] - [IE11] Tip text should be in gray color
+    * [SOC-4828] - [IE11][Space] App List is displayed in 2 lines 
+    * [SOC-4832] - After renaming a space this space related activities are not published to the main activity stream
+    * [SOC-4837] - NoSuchPropertyException: Property latestLazyCreatedTime cannot be loaded from node
+    * [SOC-4855] - Impossible to change space avatar
+    * [SOC-4858] - Unknown error when clicking a tab of alphabet filter in Space's Member tab
+    * [SOC-4862] - [IE9, IE10][User Profile] Edit User Profile button and link do not work
+    * [SOC-4865] - [Migration] Mini connection portlet in User Profiles does not display
+    * [SOC-4866] - [Migration] Exceptions about Web notification in log after migrate from PLF-4.2.0-M2 to PLF-4.2.0-RC1
+    * [SOC-4867] - CLONE - [Intranet Notification] Wrong mention style
+    * [SOC-4870] - [IE9,10] Cannot navigate to Edit my profile page in IE9
+    * [SOC-4872] - [IE][Email Notifications][Activity] Comment box is not opened when click [Reply] link from email notification
+    * [SOC-4880] - Security vulnerabilities with space invitation service "/acceptInvitationToJoinSpace/"
+    * [SOC-4882] - [User Notification Settings] Loss of non-ASCII characters when clicking on Reset button
+    * [SOC-4885] - Property relationshipNo cannot be loaded
+    * [SOC-4900] - [Intranet Notification] WebNotificationJob consumes a lot of resources
+    * [SOC-4906] - [Cluster][Intranet Notifications]Not receive intranet notifications between 2 friends on 2 other nodes
+    * [SOC-4918] - [Cluster] "Missing protocol in comet URL" Exception when starting 2 nodes enabling cometd
 
 
+eXo Calendar 4.2.0  
+*************************
+
+** Bug
+    * [CAL-1104] - [Recurring Event] Incorrect editing when duration happens between 2 days
+    * [CAL-1105] - Cannot drag and drop a recurring event successfully in the space's calendar
+    * [CAL-1113] - Reminder pop-up is NOT displayed when opening Calendar
+    * [CAL-1115] - [Edit Recurring event] Missing the last occurence in the recurring series after editing with "Following events""
+    * [CAL-1119] - [Unified Search] Click on group event result does NOT open event details
+    * [CAL-1125] - In calendar the field viewPermision is wrote with one "s"
+    * [CAL-1139] - [Calendar][Event]Cannot edit an event in search results
+
+
+eXo GateIn 4.2.0-PLF  
+*************************
+
+** Bug
+    * [EXOGTN-2000] - Unknown error when click on Up Level icon in Group Management
+    * [EXOGTN-2004] - CLONE - [Unified Search] Missing scroll bar inside Setting form
+    * [EXOGTN-2005] - Bad display of calendar in search content form
