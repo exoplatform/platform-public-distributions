@@ -808,6 +808,18 @@
       <groupId>org.exoplatform.platform</groupId>
       <artifactId>platform-component-oauth-auth</artifactId>
     </dependency>
+
+    <!-- Forgot password -->
+    <dependency>
+      <groupId>org.gatein.portal</groupId>
+      <artifactId>exo.portal.component.web.forgetPassword</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.platform</groupId>
+      <artifactId>platform-component-forget-password</artifactId>
+    </dependency>
+
+
     <!-- org.gatein.security.oauth.webapi.OAuthDelegateFilter used but not declared in GateIn ? -->
     <dependency>
         <groupId>org.gatein.cdi</groupId>
