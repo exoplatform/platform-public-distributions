@@ -2,6 +2,90 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
+eXo Platform 4.2.1
+************************
+
+** Bug
+    * [PLF-6106] - [Calendar gadget] Repetitive event is shown twice in the starting day
+    * [PLF-6263] - [Monitoring gadgets] Labels are not translated fully in different languages
+    * [PLF-6326] - [ECMS Search] Excerpt in search result contains useless information
+    * [PLF-6337] - [JODConverter] Detect URE in LibreOffice4+ in Windows
+    * [PLF-6440] - [Content Explorer] Unknown error when deleting file
+
+
+eXo Integration 4.2.1
+************************
+
+** Bug
+    * [INTEG-293] - [Unified search] Filter doesn't work in anonymous search
+    * [INTEG-428] - Cannot change to other tab in Dashboard
+
+** Improvement
+    * [INTEG-422] - Hard-coded parameters for Unified Search portlet with anonymous user
+
+
+eXo Wiki 4.2.1
+************************
+
+** Bug
+    * [WIKI-1059] - Emoticons don't display
+
+
+eXo Social 4.2.1
+************************
+
+** Bug
+    * [SOC-4799] - Problems when adding non-synchronized LDAP User into space
+    * [SOC-4903] - Email Notification of promoting/revoking space manager in English
+    * [SOC-4973] - NPE in IdentityManagerImpl.broadcastUpdateProfileEvent
+    * [SOC-4974] - [LDAP] NPE in UIBasicProfilePortlet.gtmpl when opening User Profile page of a user without email
+    * [SOC-5065] - Avatar size modified in the user profile when the image is not square
+    * [SOC-5098] - Impossible to delete the last space manager without any error
+
+
+eXo ECMS 4.2.1
+************************
+
+** Bug
+    * [ECMS-5704] - [Unified search] NPE in BaseSearchServiceConnector when searching ECM contents by normal users
+    * [ECMS-6258] - PDF not shown in the PDFViewer with specific creation date
+    * [ECMS-6935] - [IE11][WCM Content Selector] Incorrect display when uploading a file.
+    * [ECMS-6936] - [WCM] Insert Content Link: Image displayed with redundant text.
+    * [ECMS-7049] - Html code is not recognized within the Description field
+    * [ECMS-7095] - CLONE - Cursor not displayed as hand when try to choose folder path or content in CLV
+    * [ECMS-7128] - [Open in Office] Unable to save a document to Public folder
+    * [ECMS-7244] - Activity of Node node is not removed in AS after deleting node in SE
+
+** Feedback
+    * [ECMS-7200] - [CLV] Sort categories by title using CategoryList template
+
+
+eXo Commons 4.2.1
+************************
+
+** Bug
+    * [COMMONS-400] - Several issues when sharing video on Activity Stream
+    * [COMMONS-430] - [Intranet Notifications] NotificationInfo clones without Title value.
+    * [COMMONS-443] - UserStateService cache is always missed
+
+
+eXo Gatein 4.2.1-PLF
+************************
+
+** Bug
+    * [EXOGTN-2002] - Display name of a node is splitted incorrectly in some cases
+
+
+eXo JCR 1.15.4-GA
+************************
+
+** Bug
+    * [JCR-2389] - "Specified key was too long" when start Platform with Mysql 5.6 in UTF-8
+    * [JCR-2394] - Wrong keyword highlighting in excerpt after adding some search rules
+    * [JCR-2405] - Backup / Restore  with disabled JCR Value Storage
+    * [JCR-2406] - Unable to commit volatile index in a clustered setup on Windows
+    * [JCR-2409] - [Cluster] Publication popup doesn't display when publication:liveRevision is empty
+
  
 eXo Platform 4.2.0  
 *************************

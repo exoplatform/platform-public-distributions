@@ -19,7 +19,7 @@
 
 Thank you for downloading eXo Platform ${org.exoplatform.platform.version}.
 
-Follow the installation procedure and start eXo Platform 4.2 now!
+Follow the installation procedure and start eXo Platform ${org.exoplatform.platform.version} now!
 
 ------------------------------
 System requirements
