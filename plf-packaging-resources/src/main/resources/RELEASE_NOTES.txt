@@ -34,7 +34,7 @@ However, if you still insist on skipping versions, we strongly advise to read al
 * Prepare bundle:
 ** If eXo Platform is connected to a populated organizational data source, Organization Integration Service must be activated so that the data are synchronized. Please refer to chapter 8 "LDAP Integration" in Administrator Guide for the detail.
 ** Go to $PLATFORM-4.2.1-TOMCAT_HOME/gatein/conf/ folder (Tomcat bundle) or $PLATFORM-4.2.1-JBOSS_HOME/standalone/configuration/gatein/ folder (Jboss bundle). Rename upgrade-4.2.0-to-4.2.1-sample.properties to upgrade.properties
-** In order to have ECMS search excerpts without unexpected fields on legacy data, you need to reindex collaboration workspace by removing its index folder (which is located at data/jcr/index/collaboration_portal).
+** With legacy data, in order to have excerpts in File search without unexpected information (such as author or publication status), collaboration workspace must be reindexed. It will be done by removing its index folder (which is located at data/jcr/index/collaboration_portal).
    Indexing might take time and memory depending on your data size.
    In case of huge data, you need to either (1) increase heap size or (2) reduce JCR Jboss cache size (by adding exo.jcr.workspace.eviction.maxnodes=200000 into exo.properties, the default value is 1000000) so that the indexing can finish without "Out of Memory" error.
 * Start server. The upgrade will be run automatically.

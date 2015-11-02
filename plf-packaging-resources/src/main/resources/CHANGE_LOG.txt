@@ -8,7 +8,7 @@ eXo Platform 4.2.1
 ** Bug
     * [PLF-6106] - [Calendar gadget] Repetitive event is shown twice in the starting day
     * [PLF-6263] - [Monitoring gadgets] Labels are not translated fully in different languages
-    * [PLF-6326] - [ECMS Search] Excerpt in search result contains useless information
+    * [PLF-6326] - [File Search] Excerpt in search result contains useless information
     * [PLF-6337] - [JODConverter] Detect URE in LibreOffice4+ in Windows
     * [PLF-6440] - [Content Explorer] Unknown error when deleting file
 
