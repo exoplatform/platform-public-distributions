@@ -41,7 +41,7 @@
     <module>plf-tomcat-integration-webapp</module>
     <module>plf-tomcat-pc-creator-listener</module>
     <module>plf-tomcat-resources</module>
-    <!--module>plf-community-sources</module-->
+    <module>plf-community-sources</module>
   </modules>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/platform-public-distributions.git</connection>
