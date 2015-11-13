@@ -2,7 +2,7 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
-eXo Platform 4.2.1
+eXo Platform 4.2.1-CP01
 ************************
 
 ** Bug
@@ -75,12 +75,11 @@ eXo Gatein 4.2.1-PLF
     * [EXOGTN-2002] - Display name of a node is splitted incorrectly in some cases
 
 
-eXo JCR 1.15.4-GA
+eXo JCR 1.15.4-CP01
 ************************
 
 ** Bug
     * [JCR-2389] - "Specified key was too long" when start Platform with Mysql 5.6 in UTF-8
-    * [JCR-2394] - Wrong keyword highlighting in excerpt after adding some search rules
     * [JCR-2405] - Backup / Restore  with disabled JCR Value Storage
     * [JCR-2406] - Unable to commit volatile index in a clustered setup on Windows
     * [JCR-2409] - [Cluster] Publication popup doesn't display when publication:liveRevision is empty
