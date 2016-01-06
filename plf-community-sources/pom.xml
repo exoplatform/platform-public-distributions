@@ -92,12 +92,14 @@
           <type>zip</type>
           <classifier>source-release</classifier>
         </dependency>
+        <!-- Workaround for 4.3.0-RC2
         <dependency>
           <groupId>org.exoplatform.jcr</groupId>
           <artifactId>jcr-parent</artifactId>
           <type>zip</type>
           <classifier>source-release</classifier>
         </dependency>
+        -->
         <dependency>
           <groupId>org.exoplatform.kernel</groupId>
           <artifactId>kernel-parent</artifactId>
@@ -140,12 +142,14 @@
           <type>zip</type>
           <classifier>source-release</classifier>
         </dependency>
+        <!-- Workaround for 4.3.0-RC2
         <dependency>
           <groupId>org.gatein.portal</groupId>
           <artifactId>exo.portal.parent</artifactId>
           <type>zip</type>
           <classifier>source-release</classifier>
         </dependency>
+        -->
       </dependencies>
     </profile>
   </profiles>
