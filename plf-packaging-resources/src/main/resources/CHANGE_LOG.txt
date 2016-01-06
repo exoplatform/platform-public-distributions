@@ -2,14 +2,15 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
- 
-eXo Platform 4.3.0-RC1  
+
+eXo Platform 4.3.0
 *************************
 
 ** Bug
     * [PLF-6046] - [Home Page's Calendar] Incorrect date in the title
     * [PLF-6100] - [Quick search] Quick search work incorrectly when hit enter
     * [PLF-6343] - [MySQL] "MySQLSyntaxErrorException: Specified key was too long" with UTF8
+    * [PLF-6350] - [PLF-4.3.x][Clustering][Tomcat & JBoss]:org.infinispan.remoting.transport.jgroups.SuspectException
     * [PLF-6364] - [Cluster] WARNs like "no physical address for 3f84a85f-076d-c0fc-4a16-d6f1529187ea, dropping message" continuously many times appear in log file in both 2 nodes
     * [PLF-6368] - [Cluster] Balancer node runs not stablely (Sometimes, system automatically log out and i have to log in again when testing) with Tomcat
     * [PLF-6396] - Cannot search in ECMS or WIKI
@@ -28,20 +29,21 @@ eXo Platform 4.3.0-RC1
     * [PLF-6487] - [Unified Search]Cannot search content of File documet
     * [PLF-6489] - [Tomcat - PLF4.3] Cannot create a user
     * [PLF-6490] - [Registration][Jboss] Cannot access to login screen
+    * [PLF-6515] - [Welcome screens] Add i18n bundles on all welcome screens
 
 ** Feedback
     * [PLF-5281] - Simpler article content type
 
 ** Improvement
     * [PLF-6422] - Upgrade to JCR 1.16.2-GA
-    * [PLF-6470] - Allow users to customize the location of license.xml 
+    * [PLF-6470] - Allow users to customize the location of license.xml
 
 ** New Feature
     * [PLF-6409] - Add Liquibase dependencies to eXo distribs
     * [PLF-6427] - Register Software
 
 
-eXo ECMS 4.3.0-RC1  
+eXo ECMS 4.3.0
 *************************
 
 ** Bug
@@ -57,7 +59,7 @@ eXo ECMS 4.3.0-RC1
     * [ECMS-6714] - [Open in Office][Action bar] The CheckIn/CheckOut actions are not displayed in action bar
     * [ECMS-6765] - Cannot create a taxonomy with an accented label
     * [ECMS-6783] - [Content Explorer] Permission of node's owner displays incorrectly after node's permission is modified
-    * [ECMS-6795] - [Site Explorer] Empty content after changed a new content for a file 
+    * [ECMS-6795] - [Site Explorer] Empty content after changed a new content for a file
     * [ECMS-6798] - Category's name is displayed incorrectly in AS when category contains accent chars
     * [ECMS-6831] - Cannot add Symlink for a node to other one which has "check-in" status
     * [ECMS-6832] - [UXPaaS][Document Preview]MKV Video is shown over Preview mode
@@ -83,7 +85,7 @@ eXo ECMS 4.3.0-RC1
     * [ECMS-7033] - Permission denied when adding a document node in intranet/category/intranet
     * [ECMS-7051] - User cannot remove file uploaded in Personal Documents
     * [ECMS-7094] - '+' character instead of space when downloading a file
-    * [ECMS-7140] - Need to correct typo for Content, Node & Template 
+    * [ECMS-7140] - Need to correct typo for Content, Node & Template
     * [ECMS-7149] - [Personal Documents] Cannot open Personal folder
     * [ECMS-7170] - Unknown error after creating View with tab's name contains space character
     * [ECMS-7174] - PathNotFoundException when saving a webcontent with image
@@ -97,6 +99,14 @@ eXo ECMS 4.3.0-RC1
     * [ECMS-7248] - Error showing PDF file in a linked detail page
     * [ECMS-7253] - Problem with document activity
     * [ECMS-7277] - ECM Admin UI broken when resize browser
+    * [ECMS-7280] - JS error when editing SCV content path
+    * [ECMS-7283] - Cannot upload file in Content selector
+    * [ECMS-7341] - [Open in Office] Wrong display of action bar when addon is NOT deployed
+    * [ECMS-7343] - [Security] XSS issue with Site Template addon
+    * [ECMS-7348] - Comment for a document has XSS vulnerability
+    * [ECMS-7353] - [CK Editor] HTML Lists not well display in SCV
+    * [ECMS-7357] - [PLF43 migration] "An identifier cannot be empty" when exporting legacy nodes
+    * [ECMS-7362] - Bad display of Copy URL to clipboard when uncheck document
 
 ** Improvement
     * [ECMS-7175] - Problem when removing some right click actions
@@ -107,7 +117,7 @@ eXo ECMS 4.3.0-RC1
     * [ECMS-6493] - Share in Content Explorer
 
 
-eXo Commons 4.3.0-RC1  
+eXo Commons 4.3.0
 *************************
 
 ** Bug
@@ -117,13 +127,19 @@ eXo Commons 4.3.0-RC1
     * [COMMONS-438] - [UserState] Error "Permission denied" for VideoCalls node when normal user logged in
     * [COMMONS-452] - [Dynamic portlet container] Invalid default name
     * [COMMONS-456] - Allow to configure dialect in ISPNCacheableLockManagerImpl
+    * [COMMONS-457] - [Social Notification] Weekly emails are not cleaned from one week to the next one
+    * [COMMONS-458] - Digest email doesn't work
+    * [COMMONS-461] - [FORUM Notification] Wrong content of New Post Notification template
+    * [COMMONS-462] - [Email Notification] Empty content in File activity notification
+    * [COMMONS-465] - XSS vulnerability in [New folder text] form field when sharing file activity stream
+    * [COMMONS-467] - EntityManager leak possibility
 
 
-eXo WIKI 4.3.0-RC1 
+eXo WIKI 4.3.0
 *************************
 
 ** Bug
-    * [WIKI-904] - [TC-4.0.6][Wiki Write Page]MySQLTransactionRollbackException when adding wiki page 
+    * [WIKI-904] - [TC-4.0.6][Wiki Write Page]MySQLTransactionRollbackException when adding wiki page
     * [WIKI-965] - "Formula" macro doesn't work
     * [WIKI-992] - [TC-PLF-4.2-M1][WIKI WRITE PAGE UPDATE] VersionException happens when saving a page
     * [WIKI-995] - [SSO] Failed to perform auto save wiki page
@@ -136,9 +152,34 @@ eXo WIKI 4.3.0-RC1
     * [WIKI-1082] - [TC-4.3.x]WIKI-RDBMS-Refactoring][WIKI READ PAGE] NullPointerException when reading wiki page
     * [WIKI-1088] - Encoding problem when create a wiki page after merge wiki-rdbms
     * [WIKI-1089] - Cannot save draft
+    * [WIKI-1092] - No 'plus' icon in the page tree when a page has children pages
+    * [WIKI-1094] - Missing Page Permission in the menu
+    * [WIKI-1095] - [Autosave] Content of wiki page is not autosave as draft
+    * [WIKI-1096] - [Space Switcher] Wrong label for Intranet Wiki
+    * [WIKI-1097] - [Page Info] Related Pages part is not displayed
+    * [WIKI-1098] - Administrator cannot change Page Permission
+    * [WIKI-1099] - Exception occurs when edit wiki page with comment
+    * [WIKI-1103] - No Default Wiki Template
+    * [WIKI-1104] - User who is not member of space still view wiki page in space
+    * [WIKI-1105] - Wrong link when open wiki page from wiki activity stream
+    * [WIKI-1106] - Cannot upload image in wiki page
+    * [WIKI-1107] - [Regression] Space group instead of Space name in Welcome message
+    * [WIKI-1109] - Cannot publish Wiki
+    * [WIKI-1110] - NPE occurs when add wiki link
+    * [WIKI-1119] - Failed to search wiki page's content
+    * [WIKI-1123] - Nothing in 'All Pages' tab when link a wiki page
+    * [WIKI-1125] - Restricted button does not appear to user having edit permission
+    * [WIKI-1128] - [Space Switcher] "My wiki" and "Space wiki" don't display
+    * [WIKI-1130] - unknown error popup appears and can not move wiki page from 1 space to another space
+    * [WIKI-1131] - [Wiki template] XSS vulnerability in Description field
+    * [WIKI-1134] - Cannot add wiki page from top navigation
+    * [WIKI-1135] - [Space Switcher] User name for "My Wiki"
+    * [WIKI-1137] - [Add] Redirect to Wiki Home page when add a new page
+    * [WIKI-1138] - Add the second page in space causes exception
+    * [WIKI-1143] - Wrong init permission in MyWiki
 
 
-eXo Social 4.3.0-RC1 
+eXo Social 4.3.0
 *************************
 
 ** Bug
@@ -177,6 +218,7 @@ eXo Social 4.3.0-RC1
     * [SOC-4999] - [Social-Addon] MUST check the connection between 2 identities have connected or not
     * [SOC-5001] - REST getActivityId doesn't work
     * [SOC-5005] - Tooltip of Permalink icon should be displayed under the icon
+    * [SOC-5007] - Tooltip text is shown instead of Generic User Popup
     * [SOC-5009] - Position of Link icons should be aligned a little bit
     * [SOC-5010] - Icon of Permalink icon is not displayed in Activity when Sharing a file
     * [SOC-5011] - Activity Permalink should be applied to activities of "Share Content"
@@ -217,7 +259,7 @@ eXo Social 4.3.0-RC1
     * [SOC-5068] - [REST API] No notification after sending request connect with other user.
     * [SOC-5074] - [RDBMS Addon] Can not start package with rdbms-addon in jboss with command
     * [SOC-5076] - Cannot remove the Forums app from the Space's actions bar
-    * [SOC-5078] - [Activiy Stream] Cannot loading activity stream after changing language 
+    * [SOC-5078] - [Activiy Stream] Cannot loading activity stream after changing language
     * [SOC-5080] - [Social-RDBMS] InvalidItemStateException occurs when migrate data from jcr to RDBMS
     * [SOC-5084] - [Activity Stream] Display many warning messages when attach invalid link by press Enter key
     * [SOC-5085] - [Activity Stream] Unknown Error displayed when sharing a not existed link
@@ -232,6 +274,7 @@ eXo Social 4.3.0-RC1
     * [SOC-5125] - [SocialRestV1] wrong logic of returnSize
     * [SOC-5128] - [SocialRestV1] the Rest allows forcible relationship
     * [SOC-5129] - [SocialRestV1] wrong json model of Comment
+    * [SOC-5131] - [SocialRestV1] activity json - wrong href of likes
     * [SOC-5134] - [SocialRestV1] getSpacesMemberships method - wrong returnSize
     * [SOC-5135] - Social REST APIs: can delete the last manager of a space via /rest/v1/social/spacesMemberships/{id}
     * [SOC-5137] - Social REST APIs: can not get relationships when identityId is of a space
@@ -245,19 +288,29 @@ eXo Social 4.3.0-RC1
     * [SOC-5158] - [Social Rest] A lot of warning in Console due to use swagger annotation making noisy
     * [SOC-5166] - [Responsive] Can't view an activity and can't share a link
     * [SOC-5167] - Status button in Activity detail page didn't work
+    * [SOC-5172] - Unknown error when update email in user profile if it was empty before
     * [SOC-5176] - [Generic User popup] Button disappears for disabled user
     * [SOC-5177] - My Pages of a deleted user
     * [SOC-5178] - Exception when delete uploaded content
     * [SOC-5179] - Cannot share file  in Activity stream
+    * [SOC-5180] - [LDAP] Unknown error when disable a non-sychronized user
+    * [SOC-5183] - Missing spaces in "All" filter
+    * [SOC-5186] - Unknown error occurs when like/unlike a connection activity
+    * [SOC-5194] - [XSRF] User Profile is changed
+    * [SOC-5195] - Error when like space activity
+    * [SOC-5197] - Wrong activity and comment when create new user
+    * [SOC-5198] - [MySQL] Unknown error occurs when creating space with Japanese characters
+    * [SOC-5201] - [Activity Stream] User cannot see friend's activity
+    * [SOC-5218] - Unable to confirm connection request
 
 ** New Feature
     * [SOC-4928] - [Social Activity Addon] Implements StreamFilter for Feed, Connections, My Spaces and Owner
     * [SOC-4929] - [Social Activity Addon] Implements get Older and Newer for StreamFilter for Feed, Connections, My Spaces and Owner
     * [SOC-4930] - [Social Activity Addon] Implements CRUD Comment and updates the activity.
     * [SOC-4931] - [Social Activity Addon] Apply the liquibase to manage the DB structure
-            
 
-eXo Calendar 4.3.0-RC1  
+
+eXo Calendar 4.3.0
 *************************
 
 ** Bug
@@ -266,19 +319,27 @@ eXo Calendar 4.3.0-RC1
     * [CAL-1123] - When the field groups is fill, no one is owner
     * [CAL-1136] - Impossible to edit the field " groups "
     * [CAL-1137] - When john wants to edit the owner of the calendar the error code is wrong
-    * [CAL-1147] - No reminder pop-up when Platform uses Apache web server
     * [CAL-1155] - CalendarRestApi sub-resources are wrong
     * [CAL-1157] - CalendarRestApi - null attachments
+    * [CAL-1170] - Checkbox in front of Calendar Name should be displayed as ticked or un-ticked
     * [CAL-1175] - CalendarRestApi - returned task status is always empty
+    * [CAL-1181] - [Recurring event] can not drag drop the second occurence in recurring event after drag drop the first one
+    * [CAL-1183] - Can not edit Group Calendar created by user
     * [CAL-1184] - Can not export Personal Calendar
-    * [CAL-1188] - Cannot delete a personal/group/shared calendar 
+    * [CAL-1188] - Cannot delete a personal/group/shared calendar
     * [CAL-1189] - Unknown error when click view on deleted event
+    * [CAL-1194] - [Recurring Event] Cannot delete only current recurring event
+    * [CAL-1195] - [Import Calendar] Unknown error display when clicking Import action
+    * [CAL-1198] - [PLF Trial] All calendar events disappear when unchecking Task Calendar
+    * [CAL-1201] - Cannot instantiate component CalendarWebservice with profile "minimal"
+    * [CAL-1205] - [XSS] XSS Vulnerability in workflow title
+    * [CAL-1206] - [XSS] XSS Vulnerability in project title when integrate with calendar
 
 ** Improvement
     * [CAL-1083] - Reminder mails are always in English
 
 
-eXo Integration 4.3.0-RC1
+eXo Integration 4.3.0
 *************************
 
 ** Bug
@@ -289,7 +350,7 @@ eXo Integration 4.3.0-RC1
     * [INTEG-435] - Bad display of Recent Activities in my profil
 
 
-eXo GateIn 4.3.0-RC1-PLF  
+eXo GateIn 4.3.0-PLF
 *************************
 
 ** Bug
@@ -298,8 +359,9 @@ eXo GateIn 4.3.0-RC1-PLF
     * [EXOGTN-1947] - Delete users function got CSRF vulnerability
     * [EXOGTN-1969] - [SSO - OpenAM] Cannot login to PLF with cross domain authentication
     * [EXOGTN-1971] - Backport GTNPORTAL-3569 Reduce the performance impact of TemplateService cache in a cluster
-    * [EXOGTN-1990] - Not allow "+" character in email address while registering 
+    * [EXOGTN-1990] - Not allow "+" character in email address while registering
     * [EXOGTN-1991] - [SSO] Failed to perform auto save wiki page
+    * [EXOGTN-2030] - Unknown Error and exception when a space is removed
     * [EXOGTN-2097] - CLONE - [Responsive Layout] The mini Calendar drop-down does not display in the From and To fields on large Android phone.
     * [EXOGTN-2099] - The global chromattic session doesn't close properly
     * [EXOGTN-2101] - [SSO-SAML] idp-sig.war is not integrated in exo-saml add-on
@@ -310,6 +372,9 @@ eXo GateIn 4.3.0-RC1-PLF
     * [EXOGTN-2107] - Send button is not disabled when the field Username or Email address is not input
     * [EXOGTN-2110] - Sender info is not matched with Notification definition
     * [EXOGTN-2114] - [Forgot Password] Cannot start Jboss package with Java 8
+    * [EXOGTN-2158] - Broken rendering of Forum, Content Explorer or Activity Stream when there are emojis in the content
+    * [EXOGTN-2165] - Cannot switch between tabs in My Dashboard
+    * [EXOGTN-2167] - RequestLifecycle is potentially NOT end() properly
 
 ** Improvement
     * [EXOGTN-1779] - Let "overwrite" import mode delete pages
