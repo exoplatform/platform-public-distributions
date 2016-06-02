@@ -257,36 +257,6 @@
       <groupId>org.exoplatform.ecms</groupId>
       <artifactId>ecms-core-webapp</artifactId>
       <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-ext-authoring-apps</artifactId>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-ext-authoring-apps</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-ext-fastcontentcreator-portlet</artifactId>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-ext-fastcontentcreator-portlet</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-packaging-wcm-webapp</artifactId>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-packaging-wcm-webapp</artifactId>
-      <type>pom</type>
       <exclusions>
         <!-- Coming by transitivity from org.exoplatform.core:exo.core.component.document -->
         <exclusion>
@@ -303,6 +273,26 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.ecms</groupId>
+      <artifactId>ecms-ext-authoring-apps</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.ecms</groupId>
+      <artifactId>ecms-ext-authoring-apps</artifactId>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.ecms</groupId>
+      <artifactId>ecms-ext-fastcontentcreator-portlet</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.ecms</groupId>
+      <artifactId>ecms-ext-fastcontentcreator-portlet</artifactId>
+      <type>pom</type>
     </dependency>
     <!-- ECMS Upgrade Plugins -->
     <dependency>

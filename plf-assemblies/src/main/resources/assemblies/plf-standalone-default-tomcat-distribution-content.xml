@@ -498,15 +498,6 @@
       <outputFileNameMapping>ecmadmin.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
-    <dependencySet>
-      <outputDirectory>/webapps</outputDirectory>
-      <includes>
-        <include>org.exoplatform.ecms:ecms-packaging-wcm-webapp:war</include>
-      </includes>
-      <scope>provided</scope>
-      <outputFileNameMapping>ecm-wcm-extension.war</outputFileNameMapping>
-      <useProjectArtifact>false</useProjectArtifact>
-    </dependencySet>
     <!-- Forum wars -->
     <dependencySet>
       <outputDirectory>/webapps</outputDirectory>
