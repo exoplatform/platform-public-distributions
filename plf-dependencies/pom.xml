@@ -331,16 +331,6 @@
     </dependency>
     <dependency>
       <groupId>org.exoplatform.forum</groupId>
-      <artifactId>forum-gadgets</artifactId>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.forum</groupId>
-      <artifactId>forum-gadgets</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.forum</groupId>
       <artifactId>forum-poll-webapp</artifactId>
       <type>war</type>
     </dependency>

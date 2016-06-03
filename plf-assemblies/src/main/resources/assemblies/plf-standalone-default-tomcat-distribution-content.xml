@@ -535,15 +535,6 @@
       <outputFileNameMapping>poll.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
-    <dependencySet>
-      <outputDirectory>/webapps</outputDirectory>
-      <includes>
-        <include>org.exoplatform.forum:forum-gadgets:war</include>
-      </includes>
-      <scope>provided</scope>
-      <outputFileNameMapping>forum-gadgets.war</outputFileNameMapping>
-      <useProjectArtifact>false</useProjectArtifact>
-    </dependencySet>
     <!-- Calendar wars -->
     <dependencySet>
       <outputDirectory>/webapps</outputDirectory>
