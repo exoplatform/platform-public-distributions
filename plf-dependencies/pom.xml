@@ -320,11 +320,6 @@
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.forum</groupId>
-      <artifactId>forum-poll-webapp</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.integration</groupId>
       <artifactId>integ-search-portlet</artifactId>
       <type>war</type>
