@@ -2,6 +2,133 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
+eXo Platform 4.3.1
+*************************
+
+** Bug
+    * [PLF-3429] - [OrgIntService] LDAP user not deleted (error of syncUser/syncAllUsers DELETED)
+    * [PLF-4217] - People suggestion is not removed permanently
+    * [PLF-6116] - Could not enter "key words" fluently in the Search Spaces input
+    * [PLF-6156] - UpgradeProductInfoNodePlugin does not work if ProductInfo node is checked-in
+    * [PLF-6527] - Calendar gadget shows 2 instances of today repetitive event
+    * [PLF-6550] - Startup problem: JVM hang because of lack of entropy
+    * [PLF-6587] - Problem when uploading many files with drag and drop
+    * [PLF-6595] - Top navigation should float on top
+    * [PLF-6603] - Classpath contains an empty entry
+
+** Improvement
+    * [PLF-6548] - Optimize Software Registration check
+    * [PLF-6559] - Ability to disable the BloomFilter via property configuration.
+    * [PLF-6572] - Better default value for fuzzy search on unified search
+    * [PLF-6574] - Better caching in Forum app
+    * [PLF-6577] - Better caching in forum app
+    * [PLF-6583] - Be able to create a task from the top bar navigation
+
+** Sub-task
+    * [PLF-6590] - Disable useless JCR actions for Social WS
+    * [PLF-6592] - Improve Transparent Upgrade Plugin
+
+eXo ECMS 4.3.1
+*************************
+
+** Bug
+    * [ECMS-6760] - [Site Explorer] Inconsistence for displaying version number between Activity stream, Version Info and Views
+    * [ECMS-7049] - Html code is not recognized within the Description field
+    * [ECMS-7302] - SEO form not displayed with minimal profile
+    * [ECMS-7389] - Using UnifiedSearch , when clicking on the back button of the browser, the search page displays the results of the first query
+    * [ECMS-7400] - Javascript error in File Explorer due to cach
+    * [ECMS-7411] - Problem with loading the file mimetype.properties
+    * [ECMS-7417] - The UI is not updated after uploading the image
+    * [ECMS-7420] - Publication status issue when restoring an older version
+
+** Improvement
+    * [ECMS-6410] - [Unified Search] Summary of web content isn't indexed
+    * [ECMS-7412] - Make preview limits configurable
+
+** Task
+    * [ECMS-7422] - Move IgnoreAccentAnalyzer from ECMS to JCR.
+
+eXo Commons 4.3.1
+*************************
+
+** Bug
+    * [COMMONS-469] - [HIbernate] Unit Tests failed with org.hibernate.SessionException: Session is closed!
+    * [COMMONS-470] - Transaction try to commit even if it sets as RollbackOnly
+
+** Improvement
+    * [COMMONS-476] - Ability to disable the BloomFilter via property configuration.
+    * [COMMONS-479] - Provide an alternative to TimeZone.getTimeZone with less contention
+    * [COMMONS-480] - Allow to override a search connector
+
+** Task
+    * [COMMONS-482] - Add IgnoreAccentAnalyzer to social configuration
+
+eXo WIKI 4.3.1
+*************************
+
+** Bug
+    * [WIKI-1140] - XSS vulnerability in [My Wiki page body textarea] form field when editing My Wiki Homepage
+    * [WIKI-1177] - The space switcher display the wiki id instead of the wiki owner
+    * [WIKI-1206] - Update permissions of any wiki page is open to ALL users
+
+** Feedback
+    * [WIKI-1182] - Wiki pages : "Public" vs "Restricted" label is very confusing in french
+
+** Task
+    * [WIKI-1188] - Improve Wiki cache settings
+
+eXo Social 4.3.1
+*************************
+
+** Bug
+    * [SOC-4492] - [Email Notification] Wrong character encoding in digest email
+    * [SOC-5187] - Unexpected validation name when editing space name
+    * [SOC-5252] - "Show More" button in Spaces lists do not work
+    * [SOC-5267] - When searching for a user in a mention, the apostrophe(') stop the search query
+    * [SOC-5281] - Exception not handled when using some Rest Services
+    * [SOC-5284] - After activity liked users mentioned in it appears in plain text
+    * [SOC-5292] - On user profile, some activities are not translated
+    * [SOC-5301] - Only the super user can see all the spaces
+
+** Feedback
+    * [SOC-4233] - Page title need to be updated after changing space name
+    * [SOC-5249] - Click on an url in activity stream should open a new tab or window
+    * [SOC-5275] - Too easy to make a mistake when inviting someone to a space
+
+** Improvement
+    * [SOC-5278] - Increase the Space Members Management pagination size
+    * [SOC-5283] - Improve social search connector
+
+eXo Calendar 4.3.1
+*************************
+
+** Bug
+    * [CAL-1032] - [TC-4.1-RC2][Calender Read Home] Slownless in (UICalendarWorkingContainer.active & UICalendarWorkingContainer.run)
+    * [CAL-1213] - [Calendar notification] Username is used in the email notification to the event participants
+    * [CAL-1220] - Last name duplicated in event participants
+    * [CAL-1222] - urls in event descriptions overflow the popup
+
+** Task
+    * [CAL-1223] - Reduce synchronization locks due to repeated TimeZone retrievals
+
+eXo Integration 4.3.1
+*************************
+
+** Bug
+    * [INTEG-446] - [Unified Search] Search result is not clickable
+
+eXo GateIn 4.3.1-PLF
+*************************
+
+** Bug
+    * [EXOGTN-2128] - Properties' changes are not taken into account with too full JCR or low latency
+    * [EXOGTN-2175] - Performance issue when trying to edit a page properties when the user belongs to many groups
+    * [EXOGTN-2184] - [Cluster] MOPSessionManager Cache problem when create or update navigation in node 2
+
+** Improvement
+    * [EXOGTN-2171] - javascript error not logged in "HttpResponseHandler"
+    * [EXOGTN-2183] - LDAP user not deleted (error of syncUser/syncAllUsers DELETED)
+
 
 eXo Platform 4.3.0
 *************************
