@@ -121,7 +121,18 @@ commons.upgrade.DisableUserUpgradePlugin.batchSize=100
 - If you don't want the “disable-user” feature (so you don't need to upgrade your user database when using PicketlinkIDM), you can add this to exo.properties configuration file
 exo.disable.user.activated=false. The feature will be hidden from PLF, and the disable-user upgrade plugin is also ignored
 
+
+=== Password Encryption ===  
+From GateIn 3.7, we used SHA-256 by default for encrypting password :
+# Default Encoder class: org.picketlink.idm.impl.credential.DatabaseReadingSaltEncoder
+# Default Hash algorithm: SHA-256
+So for accounts prior to Platform 4.2.1, the two following properties in exo.properties must be used.
+exo.plidm.password.class=org.picketlink.idm.impl.credential.HashingEncoder
+exo.plidm.password.hash=MD5
+
 == IV. KNOWN ISSUES ==
 
 * ECMS-6818: Remote edit does not work on Chrome 42
 * EXOGTN-1963: SPNEGO doesn't work when using Firefox client on the same Window 8 with PLF 4.2
+*[Tomcat cluster] Cometd related Exception in the server startup => a known issue in the Version 3.0.5 of Cometd and it was fixed in the 3.0.8
+
