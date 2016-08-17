@@ -2,7 +2,7 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
-eXo Platform 4.3.1
+eXo Platform 4.3.1-CP01
 *************************
 
 ** Bug
@@ -15,6 +15,7 @@ eXo Platform 4.3.1
     * [PLF-6587] - Problem when uploading many files with drag and drop
     * [PLF-6595] - Top navigation should float on top
     * [PLF-6603] - Classpath contains an empty entry
+	* [PLF-6709] - Property exo:lastModifiedDate not found when the daily and weekly notifications jobs are executed
 
 ** Improvement
     * [PLF-6548] - Optimize Software Registration check
@@ -28,7 +29,7 @@ eXo Platform 4.3.1
     * [PLF-6590] - Disable useless JCR actions for Social WS
     * [PLF-6592] - Improve Transparent Upgrade Plugin
 
-eXo ECMS 4.3.1
+eXo ECMS 4.3.1-CP01
 *************************
 
 ** Bug
@@ -48,7 +49,7 @@ eXo ECMS 4.3.1
 ** Task
     * [ECMS-7422] - Move IgnoreAccentAnalyzer from ECMS to JCR.
 
-eXo Commons 4.3.1
+eXo Commons 4.3.1-CP01
 *************************
 
 ** Bug
@@ -63,7 +64,7 @@ eXo Commons 4.3.1
 ** Task
     * [COMMONS-482] - Add IgnoreAccentAnalyzer to social configuration
 
-eXo WIKI 4.3.1
+eXo WIKI 4.3.1-CP01
 *************************
 
 ** Bug
@@ -77,7 +78,7 @@ eXo WIKI 4.3.1
 ** Task
     * [WIKI-1188] - Improve Wiki cache settings
 
-eXo Social 4.3.1
+eXo Social 4.3.1-CP01
 *************************
 
 ** Bug
@@ -89,6 +90,7 @@ eXo Social 4.3.1
     * [SOC-5284] - After activity liked users mentioned in it appears in plain text
     * [SOC-5292] - On user profile, some activities are not translated
     * [SOC-5301] - Only the super user can see all the spaces
+	* [SOC-5464] - [Share Activity] slowness and cache issues with a crowded space
 
 ** Feedback
     * [SOC-4233] - Page title need to be updated after changing space name
@@ -99,7 +101,7 @@ eXo Social 4.3.1
     * [SOC-5278] - Increase the Space Members Management pagination size
     * [SOC-5283] - Improve social search connector
 
-eXo Calendar 4.3.1
+eXo Calendar 4.3.1-CP01
 *************************
 
 ** Bug
@@ -111,7 +113,7 @@ eXo Calendar 4.3.1
 ** Task
     * [CAL-1223] - Reduce synchronization locks due to repeated TimeZone retrievals
 
-eXo Integration 4.3.1
+eXo Integration 4.3.1-CP01
 *************************
 
 ** Bug
