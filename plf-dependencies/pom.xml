@@ -80,6 +80,11 @@
           <artifactId>xpp3_min</artifactId>
           <groupId>xpp3</groupId>
         </exclusion>
+        <!-- DEP-107: Coming by transitivity from com.thoughtworks.xstream:xstream >= 1.4.1 -->
+        <exclusion>
+          <artifactId>xmlpull</artifactId>
+          <groupId>xmlpull</groupId>
+        </exclusion>
         <!-- Coming by transitivity from org.gatein.shindig:shindig-gadgets -->
         <exclusion>
           <artifactId>el-api</artifactId>

@@ -68,6 +68,8 @@
         <exclude>jdom:*</exclude>
         <!-- These artifacts are in conflict with others ones under xpp3:xpp3 -->
         <exclude>xpp3:xpp3_min</exclude>
+        <!-- DEP-107: These artifacts are loaded by default by com.thoughtworks.xstream:xstream >= 1.4.1 -->
+        <exclude>xmlpull:xmlpull</exclude>
         <!-- DEP-105: These artifacts are in conflict with others ones under org.ogce:xpp3 -->
         <exclude>xpp3:xpp3</exclude>
         <!-- These artifact is in conflict with ones under commons-beanutils:commons-beanutils -->
