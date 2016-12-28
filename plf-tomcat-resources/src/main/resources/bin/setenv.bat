@@ -166,7 +166,7 @@ SET CATALINA_OPTS=%CATALINA_OPTS% -Dexo.jcr.storage.data.dir="%EXO_DATA_DIR%\jcr
 REM # JCR indexes
 SET CATALINA_OPTS=%CATALINA_OPTS% -Dexo.jcr.index.data.dir="%EXO_DATA_DIR%\jcr\index"
 REM # Files storage
-SET CATALINA_OPTS=%CATALINA_OPTS% -Dexo.files.storage.dir="%EXO_DATA_DIR%\data"
+SET CATALINA_OPTS=%CATALINA_OPTS% -Dexo.files.storage.dir="%EXO_DATA_DIR%\files"
 
 REM # Logback configuration file
 SET CATALINA_OPTS=%CATALINA_OPTS% -Dlogback.configurationFile="%EXO_LOGS_LOGBACK_CONFIG_FILE%"
