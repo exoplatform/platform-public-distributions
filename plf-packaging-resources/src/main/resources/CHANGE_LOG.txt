@@ -98,6 +98,7 @@ eXo Calendar ${org.exoplatform.platform.version}
 ** Bugs
     * CAL-1249 - [Security] calendar import got XSS issue
     * CAL-1267 - [Calendar Integration] Performance regression for calendar read home
+    * CAL-1272 - URLS not clickable in events popover
 
 eXo Integration ${org.exoplatform.platform.version}
 *************************
