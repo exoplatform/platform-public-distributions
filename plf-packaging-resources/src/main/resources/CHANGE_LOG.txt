@@ -65,8 +65,6 @@ eXo WIKI ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * WIKI-1248 - HOW-TO Guide template and Three-Column Layout template doesn't work
-    * WIKI-1300 - [PLF4.4.0.RC1][Cluster][Tomcat][ES_WIKI] Mapper parsing exception when trying to send request to ES server
     * WIKI-1308 - Wrong indexation when a draft page is saved
 
 eXo Social ${org.exoplatform.platform.version}
@@ -79,18 +77,14 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-5485 - [Regression]:Refused Spaces suggestions should not be displayed again
 
 ** Bugs
-    * SOC-4985 - Item already exists when adding users to a space
     * SOC-5257 - No notification when we mention a user who has a username which begins with a number
-    * SOC-5482 - activity removal slowness with a crowded space
     * SOC-5493 - After Delete a space, "Show More" button in Spaces lists do not work
     * SOC-5505 - Activity is re-saved each time someone leave a comment
     * SOC-5549 - Hidden spaces never found in unified search
     * SOC-5579 - [Dashboard] Add gadget button is not displayed after closing Dashboard Workspace popup
-    * SOC-5631 - [SOC-RDBMS]: Review the user profile cache usage
     * SOC-5649 - Problem with conversationState in a listener
     * SOC-5662 - [SOC-RDBMS]: Review the SpacesCount cache usage
     * SOC-5663 - Improve get relationship operation
-    * SOC-5664 - [SOC-RDBMS]: Review the SpacesCache usage
     * SOC-5673 - Can not rename a space
 
 eXo Calendar ${org.exoplatform.platform.version}
