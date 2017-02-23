@@ -59,6 +59,7 @@ eXo Commons ${org.exoplatform.platform.version}
     * COMMONS-521 - Fix SettingService cache to consider null objects
     * COMMONS-522 - Avoid using lock for single user transaction
     * COMMONS-523 - Avoid persisting UserStateService information
+    * COMMONS-525 - Test on slideshare integration fails
 
 eXo WIKI ${org.exoplatform.platform.version}
 *************************
