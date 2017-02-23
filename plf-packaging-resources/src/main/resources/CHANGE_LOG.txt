@@ -31,6 +31,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7063 - Review the ResourceBundle cache usage
     * PLF-7074 - Exception with infinispan tomcat clustered node
     * PLF-7076 - [Privacy] Uploading a document in my documents fires an activity visible to my network
+    * PLF-7089 - Suggestion window: replace "Inviter" with "Se connecter"
 
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
