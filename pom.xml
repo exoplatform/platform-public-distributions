@@ -116,6 +116,12 @@
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-catalina-jmx-remote</artifactId>
         <version>${org.apache.tomcat.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-util</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <!-- Required by conditional processing in logback -->
       <dependency>
