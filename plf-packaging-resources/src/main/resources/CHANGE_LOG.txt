@@ -36,7 +36,6 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7132 - Last word of the comment are displayed splitted in the Document Preview Comment
     * PLF-7133 - Different versions of Juzu Core & Plugins in PLF Packaging Archive
     * PLF-7147 - [web-pack add-on ] Can not edit/remove responsive containers when using the Agital template.
-    * PLF-7151 - XSS injection via the username
 
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
