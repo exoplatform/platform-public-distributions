@@ -36,6 +36,8 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7132 - Last word of the comment are displayed splitted in the Document Preview Comment
     * PLF-7133 - Different versions of Juzu Core & Plugins in PLF Packaging Archive
     * PLF-7147 - [web-pack add-on ] Can not edit/remove responsive containers when using the Agital template.
+    * PLF-7186 - Search Indexing Management page does not appear after PLF upgrade
+    * PLF-7187 - MixinCleanerUpgradePlugin upgrade plugin should not be activated by default on social data
 
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
@@ -98,6 +100,7 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-5682 - [PLF441-RC06][Tomcat server][Cluster] Notification is not displayed in All Notifications page
     * SOC-5690 - Cannot add an event from the uiIcon in the navbar
     * SOC-5694 - The document preview in the AS displays wrong version
+    * SOC-5695 - User avatar is not shown in email notification content
     * SOC-5698 - [Document versionning]: restore a version doesn not display the correct version restored
 
 eXo Calendar ${org.exoplatform.platform.version}
