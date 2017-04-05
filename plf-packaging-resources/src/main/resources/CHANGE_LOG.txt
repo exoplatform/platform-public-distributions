@@ -100,7 +100,6 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-5682 - [PLF441-RC06][Tomcat server][Cluster] Notification is not displayed in All Notifications page
     * SOC-5690 - Cannot add an event from the uiIcon in the navbar
     * SOC-5694 - The document preview in the AS displays wrong version
-    * SOC-5695 - User avatar is not shown in email notification content
     * SOC-5698 - [Document versionning]: restore a version doesn not display the correct version restored
 
 eXo Calendar ${org.exoplatform.platform.version}
