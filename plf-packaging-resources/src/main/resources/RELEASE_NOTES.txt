@@ -151,6 +151,11 @@ commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
 * JCR data must be reindexed in order to apply the fix PLF-6326 for existing contents.
 * Elasticsearch spaces index must be recreated in order to apply SOC-5549
 
+=== Troubleshooting ===
+
+In a cluster environment, database locks issues can happen when starting the nodes the first time after the upgrade.
+The best solution to fix this is to start and stop completely one of the node to do the upgrade, then start the cluster.
+
 == Upgrading from Platform 4.3.1 to ${org.exoplatform.platform.version} ==
 
 === Description of the plugins used in this upgrade ===
