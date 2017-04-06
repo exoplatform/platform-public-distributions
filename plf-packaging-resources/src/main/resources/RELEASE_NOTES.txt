@@ -154,7 +154,7 @@ commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
 === Troubleshooting ===
 
 In a cluster environment, database locks issues can happen when starting the nodes the first time after the upgrade.
-The best solution to fix this is to start and stop completely one of the node to do the upgrade, then start the cluster.
+The best solution to fix this is to start and stop completely one of the nodes to do the upgrade, then start the cluster.
 
 == Upgrading from Platform 4.3.1 to ${org.exoplatform.platform.version} ==
 
