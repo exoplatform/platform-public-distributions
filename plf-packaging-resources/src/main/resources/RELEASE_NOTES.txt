@@ -136,7 +136,7 @@ However, if you still insist on skipping versions, we strongly advise to read al
 
 === Description of the plugins used in this upgrade ===
 
-# ECMS-7595: Cannot download a document : the Download button is not visible
+# PLF-7186 Search Indexing Management page does not appear after PLF upgrade
 commons.upgrade.Upgrade-PortalData.enable=true
 
 === Search ===
