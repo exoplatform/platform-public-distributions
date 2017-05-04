@@ -42,11 +42,6 @@
       <exclusions>
         <!-- Coming by transitivity from com.google.javascript:closure-compiler -->
         <exclusion>
-          <artifactId>args4j</artifactId>
-          <groupId>args4j</groupId>
-        </exclusion>
-        <!-- Coming by transitivity from com.google.javascript:closure-compiler -->
-        <exclusion>
           <artifactId>protobuf-java</artifactId>
           <groupId>com.google.protobuf</groupId>
         </exclusion>
