@@ -7,10 +7,10 @@ eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
+    * PLF-6331 - [OrganizationIntegrationService] Failed to sync a group
     * PLF-7075 - Catch exception in OrganizationIntegrationService when connection is cut between the platform and the AD server and avoid to mark the user as deleted
     * PLF-7088 - Problem while naming contents using apostrophes
-    * PLF-7205 - Problem with inviting a group of active Active Directory mapped users while creating a space 
-    * PLF-6331 - [OrganizationIntegrationService] Failed to sync a group
+    * PLF-7205 - Problem with inviting a group of active Active Directory mapped users while creating a space     
     
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
