@@ -7,9 +7,9 @@ eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * PLF-7205 - Problem with inviting a group of active Active Directory mapped users while creating a space
-    * PLF-7088 - Problem while naming contents using apostrophes
     * PLF-7075 - Catch exception in OrganizationIntegrationService when connection is cut between the platform and the AD server and avoid to mark the user as deleted
+    * PLF-7088 - Problem while naming contents using apostrophes
+    * PLF-7205 - Problem with inviting a group of active Active Directory mapped users while creating a space 
     * PLF-6331 - [OrganizationIntegrationService] Failed to sync a group
     
 eXo ECMS ${org.exoplatform.platform.version}
@@ -18,17 +18,17 @@ eXo ECMS ${org.exoplatform.platform.version}
 ** Improvements
     * ECMS-7625 - Upload an image through CKeditor in the media folder of a web content
     
-** Bugs
-    * ECMS-7628 - Wrong CLV pagination Display 
-    * ECMS-7614 - Wrong Mime-Type when downloading a version of a file
-    * ECMS-7607 - Error displayed when view document with special character
-    * ECMS-7600 - Bug in function UIBrokenChecking() in ecm-wcm-extension/javascript/eXo/ecm/ECMUtils.js
-    * ECMS-7598 - In Documents application, thumbnails of documents do not appear in IE 11
-    * ECMS-7597 - Impossible to navigate under a web content
-    * ECMS-7563 - MissingResourceException: Can't find resource for bundle org.gatein.common.i18n.ParentChildResourceBundle, key Drives.label.Collaboration
-    * ECMS-7550 - Documents explorer navigates incorrectly after reaching from activity stream
+** Bugs    
     * ECMS-4084 - Wrong CLV pagination with symlinks
-
+    * ECMS-7550 - Documents explorer navigates incorrectly after reaching from activity stream
+    * ECMS-7563 - MissingResourceException: Can't find resource for bundle org.gatein.common.i18n.ParentChildResourceBundle, key Drives.label.Collaboration
+    * ECMS-7597 - Impossible to navigate under a web content
+    * ECMS-7598 - In Documents application, thumbnails of documents do not appear in IE 11
+    * ECMS-7600 - Bug in function UIBrokenChecking() in ecm-wcm-extension/javascript/eXo/ecm/ECMUtils.js
+    * ECMS-7607 - Error displayed when view document with special character
+    * ECMS-7614 - Wrong Mime-Type when downloading a version of a file
+    * ECMS-7628 - Wrong CLV pagination Display 
+    
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
@@ -39,10 +39,10 @@ eXo WIKI ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * WIKI-1317 - IE11: Script error when creating a file attachment link in the wiki and the site is  unresponsive
-    * WIKI-1316 - Inline attachments not displayed when "VIEW" permission only
     * WIKI-1111 - Wiki content block disappears in certain zoom / screen sizes
-
+    * WIKI-1316 - Inline attachments not displayed when "VIEW" permission only
+    * WIKI-1317 - IE11: Script error when creating a file attachment link in the wiki and the site is  unresponsive 
+    
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
@@ -50,16 +50,17 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-4942 - [User Notification Settings] Hard-coded labels of channel selection
 
 ** Bugs
-    * SOC-5724 - Social RDBMS upgrade fail for activity with line break
-    * SOC-5722 - Social RDBMS upgrade fail for activity content with a link
     * SOC-5677 - Cannot search exact name
-    
+    * SOC-5722 - Social RDBMS upgrade fail for activity content with a link
+    * SOC-5724 - Social RDBMS upgrade fail for activity with line break
+       
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
+    * EXOGTN-2252 - Performance issue with intial login
     * EXOGTN-2265 - Pagination error in manage community 
-    * EXOGTN-2252 - Performance issue with intial login 
+     
   
 eXo WS ${org.exoplatform.platform.version}
 *************************
