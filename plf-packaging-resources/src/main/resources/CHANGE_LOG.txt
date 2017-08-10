@@ -7,63 +7,80 @@ eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * PLF-6331 - [OrganizationIntegrationService] Failed to sync a group
+    * PLF-6982 - space suggestions portlet does not show the spaces avatars 
+    * PLF-7016 - Disabled  user is displayed in My Connections tab
     * PLF-7075 - Catch exception in OrganizationIntegrationService when connection is cut between the platform and the AD server and avoid to mark the user as deleted
-    * PLF-7088 - Problem while naming contents using apostrophes
-    * PLF-7205 - Problem with inviting a group of active Active Directory mapped users while creating a space     
+    * PLF-7223 - Problem with SAML2 SSO integration
+    * PLF-7276 - [Search] : Indexing Metadata
+    * PLF-7286 - Stacktrace when login failure
+    * PLF-7341 - Users unexpectedly set as deleted	
     
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
-** Improvements
-    * ECMS-7625 - Upload an image through CKeditor in the media folder of a web content
-    
 ** Bugs    
-    * ECMS-4084 - Wrong CLV pagination with symlinks
-    * ECMS-7550 - Documents explorer navigates incorrectly after reaching from activity stream
-    * ECMS-7563 - MissingResourceException: Can't find resource for bundle org.gatein.common.i18n.ParentChildResourceBundle, key Drives.label.Collaboration
-    * ECMS-7597 - Impossible to navigate under a web content
-    * ECMS-7598 - In Documents application, thumbnails of documents do not appear in IE 11
-    * ECMS-7600 - Bug in function UIBrokenChecking() in ecm-wcm-extension/javascript/eXo/ecm/ECMUtils.js
-    * ECMS-7607 - Error displayed when view document with special character
-    * ECMS-7614 - Wrong Mime-Type when downloading a version of a file
-    * ECMS-7628 - Wrong CLV pagination Display 
-    
+    * ECMS-7046 - [OrgIntService] AccessControlException in AdjustDrivePermissionNewUserListener
+    * ECMS-7441 - [Open in Office] Exception when browsing documents having colon in their names
+    * ECMS-7615 - Wrong URL redirection after sharing a document in a space 
+    * ECMS-7624 - Can't download file with name that contains +
+    * ECMS-7632 - Share document is allowed only for the owner
+        
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
-** Improvements
-    * COMMONS-313 - Position in Document Selection popup is not relevant
+** Bugs
+    * COMMONS-545 - [Backport] Change the default maximum number of bytes allowed for each message
     
 eXo WIKI ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * WIKI-1111 - Wiki content block disappears in certain zoom / screen sizes
-    * WIKI-1316 - Inline attachments not displayed when "VIEW" permission only
-    * WIKI-1317 - IE11: Script error when creating a file attachment link in the wiki and the site is  unresponsive 
+    * WIKI-1310 - wiki draft does not save the last content
+    * WIKI-1339 - [Regression] Wiki pages are no more alphabetically sorted
+    * WIKI-1340 - error message when uploading file from XWiki  
     
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
-** Tasks
-    * SOC-4942 - [User Notification Settings] Hard-coded labels of channel selection
-
 ** Bugs
-    * SOC-5677 - Cannot search exact name
-    * SOC-5722 - Social RDBMS upgrade fail for activity content with a link
-    * SOC-5724 - Social RDBMS upgrade fail for activity with line break
+    * SOC-5514 - Space activities are lost after migration when the JCR space identity node has a name not equal to remoteId
+    * SOC-5532 - [social-rdbms] Ignore spaces and its activities marked as deleted while migrating
+    * SOC-5683 - [API] Avatar url should never return a 404 http error
+    * SOC-5741 - Exception raised blocking the upgrade process from 4.3.1 to 4.4.0
+    * SOC-5744 - [Migration] Exceptions of spaces acitivities migration preventing  migration of proceeding succesfully
+    * SOC-5745 - [Migration] Spaces activities of already deleted spaces are migrated
+    * SOC-5750 - [Migration] Exceptions raised during activities migrations 
        
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * EXOGTN-2252 - Performance issue with intial login
-    * EXOGTN-2265 - Pagination error in manage community 
-     
-  
-eXo WS ${org.exoplatform.platform.version}
+    * EXOGTN-2228 - HTTP status 302 on ajax response is misinterpreted
+    * EXOGTN-2275 - Exception when trying to retrieve nested groups after using filter in the picketLink configuration
+    * EXOGTN-2279 - Exception when mapping group from ad
+    * EXOGTN-2280 - Document: slow display of the list of users from the permission tool	
+
+eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
-** Improvements
-    * WS-297 - Removing lock and improving performance for DOMSourceEntityProvider
+** Bugs
+    * CAL-1268 - Unknown error when interrupting file upload
+    * CAL-1278 - Extremely slow participants list display in Calendar
+
+eXo Integration ${org.exoplatform.platform.version}
+*************************
+
+** Bugs
+    * INTEG-473 - [Migration] Wrong warning message display in file-space activity migration
+
+eXo Forum ${org.exoplatform.platform.version}
+*************************
+
+** Bugs
+    * FORUM-1192 - Links of BBCode are not clickable in the activity
+	
+eXo JCR ${org.exoplatform.platform.version}
+*************************
+
+** Bugs
+    * JCR-2459 - Failed recovery index on local index
