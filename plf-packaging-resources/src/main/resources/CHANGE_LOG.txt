@@ -37,7 +37,9 @@ eXo WIKI ${org.exoplatform.platform.version}
 ** Bugs
     * WIKI-1310 - wiki draft does not save the last content
     * WIKI-1339 - [Regression] Wiki pages are no more alphabetically sorted
-    * WIKI-1340 - error message when uploading file from XWiki  
+    * WIKI-1340 - error message when uploading file from XWiki
+    * WIKI-1344 - [Backport][Regression] Wiki page list is empty when link a wiki page
+    * WIKI-1347 - [Regression] Only one image is displayed twice when attaching two images with names "birthday_cake.jpg " and "birthday cake.jpg"	
     
 eXo Social ${org.exoplatform.platform.version}
 *************************
@@ -49,7 +51,10 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-5741 - Exception raised blocking the upgrade process from 4.3.1 to 4.4.0
     * SOC-5744 - [Migration] Exceptions of spaces acitivities migration preventing  migration of proceeding succesfully
     * SOC-5745 - [Migration] Spaces activities of already deleted spaces are migrated
-    * SOC-5750 - [Migration] Exceptions raised during activities migrations 
+    * SOC-5750 - [Migration] Exceptions raised during activities migrations
+    * SOC-5766 - Build failure on the CI on test IdentityStorageTest.testGetAvatarInputStreamById
+    * SOC-5790 - Improve logging of UISpaceMember#getExistingUsers
+    * SOC-5791 - NPE in SocialMembershipListenerImpl#postDelete 	
        
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
@@ -57,6 +62,7 @@ eXo GateIn ${org.exoplatform.platform.version}
 ** Bugs
     * EXOGTN-2228 - HTTP status 302 on ajax response is misinterpreted
     * EXOGTN-2275 - Exception when trying to retrieve nested groups after using filter in the picketLink configuration
+    * EXOGTN-2276 - Direct access to jsp pages is not allowed
     * EXOGTN-2279 - Exception when mapping group from ad
     * EXOGTN-2280 - Document: slow display of the list of users from the permission tool	
 
