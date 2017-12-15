@@ -6,87 +6,94 @@ Changelog Platform ${org.exoplatform.platform.version}
 eXo Platform ${org.exoplatform.platform.version} 
 *************************
 
+** Improvements
+    * PLF-7381 - Spaces administrators group feature
+    * PLF-7408 - Combine Search terms and multiple tags
+    * PLF-7441 - Improve Ldap users synchronization performance
+	
 ** Bugs
-    * PLF-6982 - space suggestions portlet does not show the spaces avatars 
-    * PLF-7016 - Disabled  user is displayed in My Connections tab
-    * PLF-7075 - Catch exception in OrganizationIntegrationService when connection is cut between the platform and the AD server and avoid to mark the user as deleted
-    * PLF-7223 - Problem with SAML2 SSO integration
-    * PLF-7276 - [Search] : Indexing Metadata
-    * PLF-7286 - Stacktrace when login failure
-    * PLF-7341 - Users unexpectedly set as deleted	
+    * PLF-7241 - Wrong width of notification bar  
+    * PLF-7379 - Duplicated rows in jbid_io_rel table
+    * PLF-7385 - Problem displaying chat and exo toolbar in some smartphones
+    * PLF-7392 - syncAll rest service does not work correctly
+    * PLF-7407 - The synchronization is not started when calling syncAll for the second time
+    * PLF-7741 - Wrong redirection when clicking a link of a shared document
+    
+
     
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
-** Bugs    
-    * ECMS-7046 - [OrgIntService] AccessControlException in AdjustDrivePermissionNewUserListener
-    * ECMS-7441 - [Open in Office] Exception when browsing documents having colon in their names
-    * ECMS-7615 - Wrong URL redirection after sharing a document in a space 
-    * ECMS-7624 - Can't download file with name that contains +
-    * ECMS-7632 - Share document is allowed only for the owner
+** Improvements
+    * ECMS-7653 - Make Upload Documents popup always visible in Sites Explorer
+	* ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
+	
+** Bugs
+    * ECMS-6069 - Send many emails when user watch an edited document    
+    * ECMS-7393 - When renaming document with extension "exo:name" property is not correctly updated :the dot was removed. 
+    * ECMS-7545 - [Sites Explorer] Overload thumbnail does not work when trying to remove a thumbnail
+    * ECMS-7605 - Can't upload in Documents after using breadcrumb 
+    * ECMS-7643 - [SECURITY][REMOTE EDIT] USING REMOTE EDIT makes all users/group content accessible
+	* ECMS-7644 - [Regression] invalid  path is opened when using view document to open a file in personal document 
+    * ECMS-7652 - Copy url doesn't work in some cases
+    * ECMS-7684 - [Regression] Content-by-Query portlet no longer works	
+	
+
         
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * COMMONS-545 - [Backport] Change the default maximum number of bytes allowed for each message
+    * COMMONS-547 - A Null pointer exception while processing UINotificationPopoverToolbarPortlet in cluster prevents second node to start
     
 eXo WIKI ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * WIKI-1310 - wiki draft does not save the last content
-    * WIKI-1339 - [Regression] Wiki pages are no more alphabetically sorted
-    * WIKI-1340 - error message when uploading file from XWiki
-    * WIKI-1344 - [Backport][Regression] Wiki page list is empty when link a wiki page
-    * WIKI-1347 - [Regression] Only one image is displayed twice when attaching two images with names "birthday_cake.jpg " and "birthday cake.jpg"	
-    
+    * WIKI-1207 - [Export PDF]  Missing images in the exported file for private pages
+    * WIKI-1350 - [backport][Regression] Wrong display of the Two-column template in Wiki
+        
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * SOC-5514 - Space activities are lost after migration when the JCR space identity node has a name not equal to remoteId
-    * SOC-5532 - [social-rdbms] Ignore spaces and its activities marked as deleted while migrating
-    * SOC-5683 - [API] Avatar url should never return a 404 http error
-    * SOC-5741 - Exception raised blocking the upgrade process from 4.3.1 to 4.4.0
-    * SOC-5744 - [Migration] Exceptions of spaces acitivities migration preventing  migration of proceeding succesfully
-    * SOC-5745 - [Migration] Spaces activities of already deleted spaces are migrated
-    * SOC-5750 - [Migration] Exceptions raised during activities migrations
-    * SOC-5766 - Build failure on the CI on test IdentityStorageTest.testGetAvatarInputStreamById
-    * SOC-5790 - Improve logging of UISpaceMember#getExistingUsers
-    * SOC-5791 - NPE in SocialMembershipListenerImpl#postDelete 	
-       
+    * SOC-5786 - Spaces unexpectedly  have Zero Members
+    * SOC-5828 - [Upgrade] Exception raised during the upgrade process from 4.3.1 to 4.4.3
+    * SOC-5840 - Internet Explorer : Bad display of the Select Picture popup  when upload a large image in the Activity Stream
+    * SOC-5893 - [Backport] java.lang.ArrayIndexOutOfBoundsException when checking if application is installed 
+           
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
+** Improvements
+    * EXOGTN-2282 - Improve syncAll reset service logs	
+	
 ** Bugs
-    * EXOGTN-2228 - HTTP status 302 on ajax response is misinterpreted
-    * EXOGTN-2275 - Exception when trying to retrieve nested groups after using filter in the picketLink configuration
-    * EXOGTN-2276 - Direct access to jsp pages is not allowed
-    * EXOGTN-2279 - Exception when mapping group from ad
-    * EXOGTN-2280 - Document: slow display of the list of users from the permission tool	
+    * EXOGTN-2267 - Problem of capital letter
+    
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
-** Bugs
-    * CAL-1268 - Unknown error when interrupting file upload
-    * CAL-1278 - Extremely slow participants list display in Calendar
-
-eXo Integration ${org.exoplatform.platform.version}
-*************************
+** Improvements
+    * CAL-1281 - Calendar checkbox status is not saved after refreshing the page 
 
 ** Bugs
-    * INTEG-473 - [Migration] Wrong warning message display in file-space activity migration
+    * CAL-1219 - Reminder with "Repeat Every" does not work correctly 
+    * CAL-1282 - cannot import remote calendar
+	* CAL-1283 - [Regression] Problem with single quote encode in title event
+	
+
 
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * FORUM-1192 - Links of BBCode are not clickable in the activity
+    * FORUM-1347 - Error when trying to download an attachment twice
 	
-eXo JCR ${org.exoplatform.platform.version}
+eXo Core ${org.exoplatform.platform.version}
 *************************
 
-** Bugs
-    * JCR-2459 - Failed recovery index on local index
+**Bugs
+    * COR-361 - Possibiliy to share Conversation State between two users
+	
