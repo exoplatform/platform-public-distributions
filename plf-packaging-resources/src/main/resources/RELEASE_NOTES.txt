@@ -139,7 +139,7 @@ However, if you still insist on skipping versions, we strongly advise to read al
 == Upgrading from Platform 4.4.3 to ${org.exoplatform.platform.version} ==
 === Description of the plugins used in this upgrade ===
 
-Nothing to report
+No Upgrade plugin
 
 == Upgrading from Platform 4.4.2 to 4.4.3 ==
 === Description of the plugins used in this upgrade ===

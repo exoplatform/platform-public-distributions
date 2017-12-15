@@ -6,6 +6,11 @@ Changelog Platform ${org.exoplatform.platform.version}
 eXo Platform ${org.exoplatform.platform.version} 
 *************************
 
+** Improvements
+    * PLF-7381 - Spaces administrators group feature
+    * PLF-7408 - Combine Search terms and multiple tags
+    * PLF-7441 - Improve Ldap users synchronization performance
+	
 ** Bugs
     * PLF-7241 - Wrong width of notification bar  
     * PLF-7379 - Duplicated rows in jbid_io_rel table
@@ -14,27 +19,26 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7407 - The synchronization is not started when calling syncAll for the second time
     * PLF-7741 - Wrong redirection when clicking a link of a shared document
     
-** Improvements
-    * PLF-7381 - Spaces administrators group feature
-    * PLF-7408 - Combine Search terms and multiple tags
-    * PLF-7441 - Improve Ldap users synchronization performance
+
     
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
+** Improvements
+    * ECMS-7653 - Make Upload Documents popup always visible in Sites Explorer
+	* ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
+	
 ** Bugs
-    * ECMS-6069 -Send many emails when user watch an edited document    
+    * ECMS-6069 - Send many emails when user watch an edited document    
     * ECMS-7393 - When renaming document with extension "exo:name" property is not correctly updated :the dot was removed. 
     * ECMS-7545 - [Sites Explorer] Overload thumbnail does not work when trying to remove a thumbnail
     * ECMS-7605 - Can't upload in Documents after using breadcrumb 
     * ECMS-7643 - [SECURITY][REMOTE EDIT] USING REMOTE EDIT makes all users/group content accessible
-    * ECMS-7644 -[Regression] invalid  path is opened when using view document to open a file in personal document 
+	* ECMS-7644 - [Regression] invalid  path is opened when using view document to open a file in personal document 
     * ECMS-7652 - Copy url doesn't work in some cases
     * ECMS-7684 - [Regression] Content-by-Query portlet no longer works	
 	
-** Improvements
-    * ECMS-7653 - Make Upload Documents popup always visible in Sites Explorer
-    * ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
+
         
 eXo Commons ${org.exoplatform.platform.version}
 *************************
@@ -61,22 +65,24 @@ eXo Social ${org.exoplatform.platform.version}
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
+** Improvements
+    * EXOGTN-2282 - Improve syncAll reset service logs	
+	
 ** Bugs
     * EXOGTN-2267 - Problem of capital letter
     
-** Improvements
-    * EXOGTN-2282 - Improve syncAll reset service logs	
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
+** Improvements
+    * CAL-1281 - Calendar checkbox status is not saved after refreshing the page 
+
 ** Bugs
     * CAL-1219 - Reminder with "Repeat Every" does not work correctly 
     * CAL-1282 - cannot import remote calendar
-    * CAL-1283 - [Regression] Problem with single quote encode in title event
+	* CAL-1283 - [Regression] Problem with single quote encode in title event
 	
-** Improvements
-    * CAL-1281 - Calendar checkbox status is not saved after refreshing the page 
 
 
 eXo Forum ${org.exoplatform.platform.version}
@@ -91,28 +97,3 @@ eXo Core ${org.exoplatform.platform.version}
 **Bugs
     * COR-361 - Possibiliy to share Conversation State between two users
 	
-===============================
-Changelog Supported Addons
-===============================
-
-
-
-eXo Add-on CHAT 1.5.1
-*************************
-
-**Bugs
-     * CHAT-742 - Chat not working if there is a space after the value of the property standaloneChatServer  
-     * CHAT-749 - Improve Chat server logs in ServerBootstrap
-     * CHAT-755 - User chat status is not updated after session timeout
-	 
-eXo Add-on Task 1.2.5
-*************************
-
-**Bugs
-     * TA-571 - Filter does not work for the first time
-     * TA-574 - [Tasks] Warning message when trying to modify task's status
-	 
-** Improvements
-     * TA-213 - The Group by & Sort by view are changed after adding tasks
-	 
-	 
