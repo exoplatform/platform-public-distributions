@@ -6,136 +6,113 @@ Changelog Platform ${org.exoplatform.platform.version}
 eXo Platform ${org.exoplatform.platform.version} 
 *************************
 
-** Tasks
-    * PLF-7042 - Upgrade Tomcat 7.0.75
-
-** Improvements
-    * PLF-6345 - Default language in Social notifications
-
 ** Bugs
-    * PLF-6326 - [ECMS Search]: Excerpt in search result contains useless information
-    * PLF-6686 - Some keys on the keyboard do not work normally when adding a comment before sharing a document
-    * PLF-6687 - intranet site name embedded in source code
-    * PLF-6724 - Performance regression caused by "TemplateService" cache settings
-    * PLF-6840 - Session timeout not working reliably
-    * PLF-6918 - Error design in attach file area when uploading a ppt, word and excel document
-    * PLF-6943 - A useless space is displayed when clicking on Show comments button in smartphone
-    * PLF-7004 - eXo platform 4.4 does not start with minimal profile
-    * PLF-7008 - [TC-PLF-4.4.0-RC01][Cluster] Stabilize Cluster under heavy load
-    * PLF-7031 - The indexing administration application doesn't work under JBoss EAP distribution
-    * PLF-7045 - Unable to preview a document in search screen
-    * PLF-7047 - Notifications window exceeds browser window frame
-    * PLF-7057 - Some user searches never end
-    * PLF-7059 - Update Gatein WCI packaged jar in PLF to 2.5.0
-    * PLF-7062 - [SOC-RDBMS]: Review the space cache usage
-    * PLF-7063 - Review the ResourceBundle cache usage
-    * PLF-7074 - Exception with infinispan tomcat clustered node
-    * PLF-7076 - [Privacy] Uploading a document in my documents fires an activity visible to my network
-    * PLF-7083 - Invalid format when saving document .docx with Microsoft Office 2016
-    * PLF-7089 - Suggestion window: replace "Inviter" with "Se connecter"
-    * PLF-7132 - Last word of the comment are displayed splitted in the Document Preview Comment
-    * PLF-7133 - Different versions of Juzu Core & Plugins in PLF Packaging Archive
-    * PLF-7147 - [web-pack add-on ] Can not edit/remove responsive containers when using the Agital template.
-    * PLF-7186 - Search Indexing Management page does not appear after PLF upgrade
-    * PLF-7187 - MixinCleanerUpgradePlugin upgrade plugin should not be activated by default on social data
-
+    * PLF-7241 - Wrong width of notification bar  
+    * PLF-7379 - Duplicated rows in jbid_io_rel table
+    * PLF-7385 - Problem displaying chat and exo toolbar in some smartphones
+    * PLF-7392 - syncAll rest service does not work correctly
+    * PLF-7407 - The synchronization is not started when calling syncAll for the second time
+    * PLF-7741 - Wrong redirection when clicking a link of a shared document
+    
+** Improvements
+    * PLF-7381 - Spaces administrators group feature
+    * PLF-7408 - Combine Search terms and multiple tags
+    * PLF-7441 - Improve Ldap users synchronization performance
+    
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
-** Tasks
-    * ECMS-6162 - [Unified Search] BaseSearchServiceConnector consumes all the CPUs of the server
-
-** Improvements
-    * ECMS-7254 - Cannot save metadata property of type Double
-    * ECMS-7593 - Error JCR occured after delete a base version
-
 ** Bugs
-    * ECMS-7307 - Timezone problem when publishing a document from the staged state
-    * ECMS-7513 - Display the rootCause of this exception: Repository not found. Ignoring
-    * ECMS-7520 - [Document Versioning] IE11, the preview screen cannot be closed
-    * ECMS-7572 - [Unified search] Bad performance for unified search
-    * ECMS-7584 - Unable to open shared file from link in mail
-    * ECMS-7595 - Cannot download a document : the Download button is not visible
-
+    * ECMS-6069 -Send many emails when user watch an edited document    
+    * ECMS-7393 - When renaming document with extension "exo:name" property is not correctly updated :the dot was removed. 
+    * ECMS-7545 - [Sites Explorer] Overload thumbnail does not work when trying to remove a thumbnail
+    * ECMS-7605 - Can't upload in Documents after using breadcrumb 
+    * ECMS-7643 - [SECURITY][REMOTE EDIT] USING REMOTE EDIT makes all users/group content accessible
+    * ECMS-7644 -[Regression] invalid  path is opened when using view document to open a file in personal document 
+    * ECMS-7652 - Copy url doesn't work in some cases
+    * ECMS-7684 - [Regression] Content-by-Query portlet no longer works	
+	
+** Improvements
+    * ECMS-7653 - Make Upload Documents popup always visible in Sites Explorer
+    * ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
+        
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * COMMONS-416 - Language in email notification
-    * COMMONS-500 - Loop on es indexation if an error occurs
-    * COMMONS-519 - In CKEditor, when want to insert image, button "Browse Server" is not displayed
-    * COMMONS-520 - Avoid to clear notifications cache when no changes made
-    * COMMONS-521 - Fix SettingService cache to consider null objects
-    * COMMONS-522 - Avoid using lock for single user transaction
-    * COMMONS-523 - Avoid persisting UserStateService information
-    * COMMONS-525 - Test on slideshare integration fails
-
+    * COMMONS-547 - A Null pointer exception while processing UINotificationPopoverToolbarPortlet in cluster prevents second node to start
+    
 eXo WIKI ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * WIKI-1308 - Wrong indexation when a draft page is saved
-
+    * WIKI-1207 - [Export PDF]  Missing images in the exported file for private pages
+    * WIKI-1350 - [backport][Regression] Wrong display of the Two-column template in Wiki
+        
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
-** Tasks
-    * SOC-5667 - Stabilize Unit Tests on Core Module
-
-** Improvements
-    * SOC-5485 - [Regression]:Refused Spaces suggestions should not be displayed again
+** Bugs
+    * SOC-5786 - Spaces unexpectedly  have Zero Members
+    * SOC-5828 - [Upgrade] Exception raised during the upgrade process from 4.3.1 to 4.4.3
+    * SOC-5840 - Internet Explorer : Bad display of the Select Picture popup  when upload a large image in the Activity Stream
+    * SOC-5893 - [Backport] java.lang.ArrayIndexOutOfBoundsException when checking if application is installed 
+           
+eXo GateIn ${org.exoplatform.platform.version}
+*************************
 
 ** Bugs
-    * SOC-5257 - No notification when we mention a user who has a username which begins with a number
-    * SOC-5493 - After Delete a space, "Show More" button in Spaces lists do not work
-    * SOC-5505 - Activity is re-saved each time someone leave a comment
-    * SOC-5549 - Hidden spaces never found in unified search
-    * SOC-5579 - [Dashboard] Add gadget button is not displayed after closing Dashboard Workspace popup
-    * SOC-5649 - Problem with conversationState in a listener
-    * SOC-5662 - [SOC-RDBMS]: Review the SpacesCount cache usage
-    * SOC-5663 - Improve get relationship operation
-    * SOC-5668 - Tasks: Can not be removed in spaces
-    * SOC-5673 - Can not rename a space
-    * SOC-5676 - User is redirected to a wrong URL when clicking on a link in email notification
-    * SOC-5682 - [PLF441-RC06][Tomcat server][Cluster] Notification is not displayed in All Notifications page
-    * SOC-5690 - Cannot add an event from the uiIcon in the navbar
-    * SOC-5694 - The document preview in the AS displays wrong version
-    * SOC-5698 - [Document versionning]: restore a version doesn not display the correct version restored
+    * EXOGTN-2267 - Problem of capital letter
+    
+** Improvements
+    * EXOGTN-2282 - Improve syncAll reset service logs	
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * CAL-1249 - [Security] calendar import got XSS issue
-    * CAL-1267 - [Calendar Integration] Performance regression for calendar read home
-    * CAL-1272 - URLS not clickable in events popover
-    * CAL-1273 - Unknown error in Advanced search
+    * CAL-1219 - Reminder with "Repeat Every" does not work correctly 
+    * CAL-1282 - cannot import remote calendar
+    * CAL-1283 - [Regression] Problem with single quote encode in title event
+	
+** Improvements
+    * CAL-1281 - Calendar checkbox status is not saved after refreshing the page 
 
-eXo Integration ${org.exoplatform.platform.version}
-*************************
-
-** Bugs
-    * INTEG-461 - An offline user can disable the search UnifiedSearch
 
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bugs
-    * FORUM-1084 - The test case org.exoplatform.forum.service.TopicTestCase.testTopic UNSTABLE
-    * FORUM-1318 - Topic edition takes wrong person in activity comment
-    * FORUM-1319 - [Private Messages] Problem in accessing Private Messages when delete user
-
-eXo GateIn ${org.exoplatform.platform.version}
+    * FORUM-1347 - Error when trying to download an attachment twice
+	
+eXo Core ${org.exoplatform.platform.version}
 *************************
 
-** Improvements
-    * EXOGTN-2149 - Add validator for property of type Double
-    * EXOGTN-2249 - PL IDM DB only mode should be automatically detected
+**Bugs
+    * COR-361 - Possibiliy to share Conversation State between two users
+	
+===============================
+Changelog Supported Addons
+===============================
 
-** Bugs
-    * EXOGTN-2169 - [Unified Search] Search Page doesn't keep the query after language switch
-    * EXOGTN-2223 - JBID_IO_ATTR_TEXT_VALUES.TEXT_ATTR_VALUE_ID column should be indexed
-    * EXOGTN-2234 - Template statistics collection use blocker operation
-    * EXOGTN-2236 - Remove unnecessary bottleneck from ServletContainer
-    * EXOGTN-2241 - server is blocked while starting
-    * EXOGTN-2248 - Fix DescriptionService cache to cache null values
+
+
+eXo Add-on CHAT 1.5.1
+*************************
+
+**Bugs
+     * CHAT-742 - Chat not working if there is a space after the value of the property standaloneChatServer  
+     * CHAT-749 - Improve Chat server logs in ServerBootstrap
+     * CHAT-755 - User chat status is not updated after session timeout
+	 
+eXo Add-on Task 1.2.5
+*************************
+
+**Bugs
+     * TA-571 - Filter does not work for the first time
+     * TA-574 - [Tasks] Warning message when trying to modify task's status
+	 
+** Improvements
+     * TA-213 - The Group by & Sort by view are changed after adding tasks
+	 
+	 
