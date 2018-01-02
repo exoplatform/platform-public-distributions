@@ -18,7 +18,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7392 - syncAll rest service does not work correctly
     * PLF-7407 - The synchronization is not started when calling syncAll for the second time
     * PLF-7741 - Wrong redirection when clicking a link of a shared document
-	* PLF-7759 - java.util.MissingResourceException when we click on notification icon
+    * PLF-7759 - java.util.MissingResourceException when we click on notification icon
     
 
     
@@ -27,7 +27,7 @@ eXo ECMS ${org.exoplatform.platform.version}
 
 ** Improvements
     * ECMS-7653 - Make Upload Documents popup always visible in Sites Explorer
-	* ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
+    * ECMS-7654 - Do not use Flash anymore for Copy URL to clipboard feature
 	
 ** Bugs
     * ECMS-6069 - Send many emails when user watch an edited document    
@@ -35,7 +35,7 @@ eXo ECMS ${org.exoplatform.platform.version}
     * ECMS-7545 - [Sites Explorer] Overload thumbnail does not work when trying to remove a thumbnail
     * ECMS-7605 - Can't upload in Documents after using breadcrumb 
     * ECMS-7643 - [SECURITY][REMOTE EDIT] USING REMOTE EDIT makes all users/group content accessible
-	* ECMS-7644 - [Regression] invalid  path is opened when using view document to open a file in personal document 
+    * ECMS-7644 - [Regression] invalid  path is opened when using view document to open a file in personal document 
     * ECMS-7652 - Copy url doesn't work in some cases
     * ECMS-7684 - [Regression] Content-by-Query portlet no longer works	
 	
@@ -82,7 +82,7 @@ eXo Calendar ${org.exoplatform.platform.version}
 ** Bugs
     * CAL-1219 - Reminder with "Repeat Every" does not work correctly 
     * CAL-1282 - cannot import remote calendar
-	* CAL-1283 - [Regression] Problem with single quote encode in title event
+    * CAL-1283 - [Regression] Problem with single quote encode in title event
 	
 
 
