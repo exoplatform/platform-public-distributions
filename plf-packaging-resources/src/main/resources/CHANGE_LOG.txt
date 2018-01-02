@@ -18,6 +18,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7392 - syncAll rest service does not work correctly
     * PLF-7407 - The synchronization is not started when calling syncAll for the second time
     * PLF-7741 - Wrong redirection when clicking a link of a shared document
+	* PLF-7759 - java.util.MissingResourceException when we click on notification icon
     
 
     
