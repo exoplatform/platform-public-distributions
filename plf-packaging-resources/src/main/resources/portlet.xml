@@ -34,10 +34,21 @@
   </filter>
 
   <filter>
+    <filter-name>Portlet Statistics Filter</filter-name>
+    <filter-class>org.exoplatform.platform.common.portlet.statistic.PortletStatisticFilter</filter-class>
+    <lifecycle>RENDER_PHASE</lifecycle>
+    <lifecycle>EVENT_PHASE</lifecycle>
+    <lifecycle>RESOURCE_PHASE</lifecycle>
+  </filter>
+  <filter>
     <filter-name>Portlet Disabler Filter</filter-name>
     <filter-class>org.exoplatform.platform.common.portlet.PortletDisablerFilter</filter-class>
     <lifecycle>RENDER_PHASE</lifecycle>
   </filter>
+  <filter-mapping>
+    <filter-name>Portlet Statistics Filter</filter-name>
+    <portlet-name>*</portlet-name>
+  </filter-mapping>
   <filter-mapping>
     <filter-name>Portlet Disabler Filter</filter-name>
     <portlet-name>*</portlet-name>
