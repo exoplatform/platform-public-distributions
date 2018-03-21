@@ -208,13 +208,11 @@ org.exoplatform.jcr.locks.force.remove=true
 
 === Data migration ===
 
-The following data migration are performed on the first startup of PLF ${org.exoplatform.platform.version}:
+The following data migration are automatically performed on the first startup of PLF ${org.exoplatform.platform.version}:
 * Settings and Notifications data are moved from JCR to JPA
 * Files are indexed in Elasticsearch instead of in the JCR
 * All space members are moved to JPA
 * Elasticsearch indexed are reindexed
-
-These data migrations are automatically launched and do not need any manual step.
 
 == Upgrading from Platform 4.4.3 to 4.4.4 ==
 === Description of the plugins used in this upgrade ===
