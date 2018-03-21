@@ -44,15 +44,15 @@ Main changes since Platform 4.4
 ** Upgrade to Elasticsearch 5.6
 ** Upgrade to Shindig 2.5
 ** Upgrade to Infinispan 8.2
+** Upgrade to Groovy 2.4.12
 ** Upgrade to JQuery 3.2.1
-** Upgrade ckeditor to 4.7.2
+** Upgrade to CKEditor to 4.7.2
 ** Upgrade caja from r4251 to r5054
 ** Upgrade com.google.javascript:closure-compiler from r1592 to v20131014
 ** Upgrade commons-fileupload:commons-fileupload from 1.3.2 to 1.3.3
 ** Upgrade org.apache.commons:commons-lang3 from 3.2 to 3.3.2
 ** Upgrade org.eclipse.jdt:ecj from 4.4.2 to 4.6.3
 ** Upgrade net.sf.ehcache:ehcache-core from 2.2.0 to 2.6.9
-** Upgrade org.codehaus.groovy:groovy-all from 1.8.9 to 2.4.12
 ** Upgrade com.google.guava:guava from 11.0.2 to 18.0
 ** Upgrade org.hsqldb:hsqldb from 2.3.3 to 2.4.0
 ** Upgrade org.jboss.logging:jboss-logging from 3.1.3.GA to 3.3.0.Final
@@ -189,10 +189,22 @@ However, if you still insist on skipping versions, we strongly advise to read al
 * Elasticsearch 5.6
 * Shindig 2.5
 * Infinispan 8.2
+* Upgrade to Groovy 2.4.12
+* Upgrade to JQuery 3.2.1
+* Upgrade to CKEditor to 4.7.2
 
 === Description of the plugins used in this upgrade ===
 
-No Upgrade plugin
+commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
+
+#PLF-7186 Search Indexing Management page does not appear after PLF upgrade
+commons.upgrade.Upgrade-PortalData.enable=true
+
+# PLF-7253 Improve performances for the load space members.
+commons.upgrade.SpaceMemberAnyMembershipUpgradePlugin.enable=true
+
+#PLF-7169 : Upgrade from ISPN 5 to ISPN 8
+org.exoplatform.jcr.locks.force.remove=true
 
 === Data migration ===
 
