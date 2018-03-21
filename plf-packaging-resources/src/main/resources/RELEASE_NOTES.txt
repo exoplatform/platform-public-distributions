@@ -214,6 +214,12 @@ The following data migration are performed on the first startup of PLF ${org.exo
 * All space members are moved to JPA
 * Elasticsearch indexes are reindexed
 
+We recommend to check that your database's statistics are up to date before starting the migration:
+* MySQL: https://dev.mysql.com/doc/refman/5.7/en/analyze-table.html
+* PostgreSQL: https://www.postgresql.org/docs/9.6/static/sql-vacuum.html
+* Oracle: https://docs.oracle.com/database/121/SQLRF/statements_4005.htm#SQLRF01105
+* SQL Server: https://docs.microsoft.com/en-us/sql/relational-databases/statistics/update-statistics
+
 == Upgrading from Platform 4.4.3 to 4.4.4 ==
 === Description of the plugins used in this upgrade ===
 
