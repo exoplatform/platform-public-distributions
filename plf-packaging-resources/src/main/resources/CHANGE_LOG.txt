@@ -68,6 +68,7 @@ eXo GateIn ${org.exoplatform.platform.version}
     * [EXOGTN-2344] - Application statistics collection is synchronous
     * [EXOGTN-2345] - Problem with a particular character when creating a content in the file explorer
     * [EXOGTN-2346] - Group created is not displayed in the group navigation container
+    * [EXOGTN-2349] - group still displayed in list of group after delete
 
 ** Improvement
     * [EXOGTN-2226] - Allow to disable the minification of resource modules
@@ -204,6 +205,11 @@ eXo ECMS ${org.exoplatform.platform.version}
     * [ECMS-7769] - Unable to display CLV Portlet in Edit mode
     * [ECMS-7770] - can not upload a video
     * [ECMS-7774] - Error message should be directly displayed when adding a version label with special characters
+    * [ECMS-7775] - Problem when right click on a document
+    * [ECMS-7776] - Documents /images with special characters are not shown correctly
+    * [ECMS-7777] - Preferences icon seems to be cutted with the scroll bar in the portlet page
+    * [ECMS-7778] - Node Types icons should be aligned in the Add Category Tree popup
+    * [ECMS-7784] - [Unified Search] Content Search is not working when search in the content
 
 ** Improvement
     * [ECMS-7592] - [Open in Office] upgrade ITHit to 3.0.2135.0
@@ -333,6 +339,8 @@ eXo Social ${org.exoplatform.platform.version}
     * [SOC-6012] - post button is not enabled immediately when trying to publish a link without text
     * [SOC-6016] - Last space duplicated when creating new space
     * [SOC-6019] - Missing translation for UIBannerUploader.gtmpl
+    * [SOC-6023] - Impossible to edit text and description of a link shared in activity stream
+    * [SOC-6025] - Nothing appears when we try to reply to a comment on IOS
 
 ** Improvement
     * [SOC-5713] - Space avatar position on Activity stream
@@ -401,6 +409,8 @@ eXo Wiki ${org.exoplatform.platform.version}
     * [WIKI-1390] - Duplicate rows with same owner and type in WIKI_WIKIS table
     * [WIKI-1392] - Content formatting on wiki activity type is not displayed as expected
     * [WIKI-1398] - Error message in 'All Pages' tab when attach an image to a wiki page
+    * [WIKI-1407] - Performance issue with relative page search
+    * [WIKI-1411] - can not insert "column" macro in "section" macro
 
 ** Feedback
     * [WIKI-1333] - Weird effect on wiki headers
@@ -485,6 +495,7 @@ eXo Forum ${org.exoplatform.platform.version}
     * [FORUM-1369] - avatar still displayed in forum posts and in settings the display avatar is unchecked
     * [FORUM-1375] - [SECURITY] Search in forum returns results from private spaces
     * [FORUM-1376] - ForumUserProfile and ForumLoginUserProfile not used
+    * [FORUM-1382] - Attachment icon in the forum topic doesn't disappear after removal
 
 ** Feedback
     * [FORUM-1324] - Quoting a private post creates a public post
@@ -628,12 +639,17 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7884] - Administration Menu is highly soliciting the MOP caches
     * [PLF-7887] - [webconferencing] JS error if the user has no current room
     * [PLF-7888] - [webconferencing] Error logged if an inactive user is present on a room
+    * [PLF-7889] - Concurrent use of non-thread safe date formatting appears to break infinispan
     * [PLF-7892] - can not authenticate to intranet with facebook account
+    * [PLF-7893] - Check hashCode calculation for cache entry value
     * [PLF-7903] - can not start JBoss instance which is in folder has space in its name
     * [PLF-7905] - [CKEditor ]Cannot insert gadget
     * [PLF-7912] - Wrong message tooltip when liking a document uploaded in activity stream
     * [PLF-7916] - SettingService Cache bottleneck
+    * [PLF-7917] - Strange behavior when upload a file from the quick add button
     * [PLF-7922] - JBoss doesn't start on Windows
+    * [PLF-7927] - Can't access site having 3 characters name
+    * [PLF-7930] - [upgrade] exceptions when upgrade from 4.4.3 to 5.0 on oracle database
 
 ** Documentation
     * [PLF-7724] - Describe more caches usage in documentation
@@ -686,6 +702,10 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7879] - Improve storage errors handling in Web Conferencing
     * [PLF-7881] - Show error reference to an user in Web Conferencing
     * [PLF-7894] - Sort client logs of Web Conferencing in user time order
+    * [PLF-7931] - Play incoming ringtone for WebRTC call on a single Platform page when multiple open
+    * [PLF-7933] - Increase client logs max length and log WebRTC call readiness at info level
+    * [PLF-7935] - Scroll bar is displayed on hover space name
+    * [PLF-7936] - link's popup disappears when clicking in text field to show the keyboard
 
 ** New Feature
     * [PLF-7092] - Enterprise Skin
@@ -727,6 +747,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7808] - Add Filipino language
     * [PLF-7826] - WebRTC call stops unexpectedly if started just after the stop
     * [PLF-7890] - Add Romanian language
+    * [PLF-7940] - Add Czech language and remove Vietnamese language
 
 eXo Task 2.0.0
 **************
@@ -819,6 +840,7 @@ eXo Chat 2.0.0
     * [CHAT-825] - Session timeout message displayed unexpectedly
     * [CHAT-827] - Popup width is dynamically resized when adding some members in a chat room
     * [CHAT-829] - Wrong chat status
+    * [CHAT-825] - Session timeout message displayed unexpectedly
     * [CHAT-831] -  Problem of message timestamping in the Chat on mobile application.
 
 ** Improvement
