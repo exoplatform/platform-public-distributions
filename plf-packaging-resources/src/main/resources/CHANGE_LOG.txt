@@ -2,6 +2,8 @@
 Changelog Platform ${org.exoplatform.platform.version}
 =========================
 
+Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
+
 eXo Core ${org.exoplatform.platform.version}
 *************************
 
@@ -26,22 +28,15 @@ eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [EXOGTN-2228] - HTTP status 302 on ajax response is misinterpreted
     * [EXOGTN-2244] - UpdateLoginTimeListener misses calling RequestLifecycle
     * [EXOGTN-2245] - Update Picketlink IDM sample files
     * [EXOGTN-2250] - Gatein build failure randomly on CI on TestDataStorage
-    * [EXOGTN-2252] - Performance issue with intial login
     * [EXOGTN-2253] - Gatein build failure randomly on CI on TestDownloadService
     * [EXOGTN-2259] - [Regression] "Page Creation Wizard" turns to "New Page"
     * [EXOGTN-2263] - JBoss - propagate the SSO login to rest context
-    * [EXOGTN-2265] - Pagination error in manage community
-    * [EXOGTN-2267] - Problem of capital letter
     * [EXOGTN-2269] - IDM Transaction never recreated if the rollback failed
     * [EXOGTN-2272] - Build failure on the CI on test EndToEndTest.testHelloWorld
     * [EXOGTN-2274] - TestGadgetRegistryService#testRemoteGadget failed because of remote URL not available anymore
-    * [EXOGTN-2276] - Direct access to jsp pages is not allowed
-    * [EXOGTN-2279] - Exception when mapping group from ad
-    * [EXOGTN-2280] - Document: slow display of the list of users from the permission tool
     * [EXOGTN-2285] - [regression] The categories don't appear after selecting a categorie when adding a remote gadget
     * [EXOGTN-2293] - Apply Locale policy for REST Context
     * [EXOGTN-2295] - The default skin is displayed after going to other site
@@ -74,7 +69,6 @@ eXo GateIn ${org.exoplatform.platform.version}
     * [EXOGTN-2226] - Allow to disable the minification of resource modules
     * [EXOGTN-2261] - Avoid loading the CSS links twice
     * [EXOGTN-2262] - Cleanup GateIN Code base
-    * [EXOGTN-2282] - Improve syncAll reset service logs
     * [EXOGTN-2290] - Log Javascript errors in the JS console instead of Popups
     * [EXOGTN-2292] - Add a warning on server startup for deprecated IDM parameters
 
@@ -91,12 +85,9 @@ eXo Commons ${org.exoplatform.platform.version}
 ** Bug
     * [COMMONS-527] - [commons-rdbms] web notification migration blocked on user loading
     * [COMMONS-528] - [commons-rdbms] DuplicateKeyException during settings migration
-    * [COMMONS-545] - [Backport] Change the default maximum number of bytes allowed for each message
     * [COMMONS-546] - Suggester component doesn't support anymore for textarea and content editable
-    * [COMMONS-547] - A Null pointer exception while processing UINotificationPopoverToolbarPortlet in cluster prevents second node to start
     * [COMMONS-551] - NotSerializableException during  replicate settings data
     * [COMMONS-556] - Index validity not checked before indexing an element
-    * [COMMONS-559] - Test on dailymotion integration fails
     * [COMMONS-560] - Performance issue with CommonsUtils.getUser
     * [COMMONS-561] - User Settings aren't cached
     * [COMMONS-562] - Marking all notifications as read is too slow
@@ -105,9 +96,6 @@ eXo Commons ${org.exoplatform.platform.version}
     * [COMMONS-567] - [Notifications] Notifications fall back to English for languages with country code
     * [COMMONS-568] - Warn message about settings on startup
     * [COMMONS-569] - Mention user with @ does not get suggestion with MOBILE
-
-** Feedback
-    * [COMMONS-313] - Position in Document Selection popup is not relevant
 
 ** Improvement
     * [COMMONS-549] - Improve mail notification migration when migration interrupted
@@ -121,39 +109,23 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-4084] - Wrong CLV pagination with symlinks
-    * [ECMS-6069] - Send many emails when user watch an edited document
     * [ECMS-7311] - Error message when view Content List under a new template
     * [ECMS-7516] - Error on document uploaded outside collaboration WS
     * [ECMS-7528] - Unkown error pop up after click on Apply in Share pop up after adding then deleting a user
-    * [ECMS-7545] - [Sites Explorer] Overload thumbnail does not work when trying to remove a thumbnail
-    * [ECMS-7550] - Documents explorer navigates incorrectly after reaching from activity stream
     * [ECMS-7559] - [Regression][Site Explorer] Announcement summary is not displayed.
-    * [ECMS-7563] - MissingResourceException: Can't find resource for bundle org.gatein.common.i18n.ParentChildResourceBundle, key Drives.label.Collaboration
     * [ECMS-7589] - Review the WCM SEO cache usage
     * [ECMS-7590] - Only 4 characters are passed in Confirm Password field
-    * [ECMS-7597] - Impossible to navigate under a web content
-    * [ECMS-7598] - In Documents application, thumbnails of documents do not appear in IE 11
-    * [ECMS-7600] - Bug in function UIBrokenChecking() in ecm-wcm-extension/javascript/eXo/ecm/ECMUtils.js
     * [ECMS-7603] - Missing French translation for Open in Office buttons
-    * [ECMS-7605] - Can't upload in Documents after using breadcrumb
-    * [ECMS-7607] - Error displayed when view document with special character
     * [ECMS-7610] - Cannot select allowed node types when adding a drive
     * [ECMS-7611] - [Document versionning]: An exception appears when uploading a new version
-    * [ECMS-7614] - Wrong Mime-Type when downloading a version of a file
-    * [ECMS-7615] - Wrong URL redirection after sharing a document in a space
     * [ECMS-7626] - CI Release Job randomly fails
     * [ECMS-7627] -  Cannot print files with names the contain the character "+"
-    * [ECMS-7632] - Share document is allowed only for the owner
     * [ECMS-7634] - [QuickEdit] Problem with Access Rights
     * [ECMS-7638] - The png is broken when the name contains an 'apostrophe'
     * [ECMS-7642] - [PDFJS][Preview]Raised Exception for content with over than expected max file pages
-    * [ECMS-7643] - [SECURITY][REMOTE EDIT] USING REMOTE EDIT makes all users/group content accessible
-    * [ECMS-7644] - [Regression] invalid  path is opened when using view document to open a file in personal document
     * [ECMS-7648] - [Document preview]Label are not shown as expected within PDFJs Viewer
     * [ECMS-7649] - Document thumbnail changes when adding a tag
     * [ECMS-7651] - Do not run CleanFavoriteActionUpgradePlugin on each upgrade
-    * [ECMS-7652] - Copy url doesn't work in some cases
     * [ECMS-7657] - Unable to create a folder under documents
     * [ECMS-7658] - Can not delete a folder
     * [ECMS-7660] - Strange behavior when clicking on Search button in Multiple Content Selector Panel popup when fields are empty
@@ -170,7 +142,6 @@ eXo ECMS ${org.exoplatform.platform.version}
     * [ECMS-7681] - [FileExplorer] Cannot drag and drop documents into FileExplorer
     * [ECMS-7682] - [FileExplorer]Upload new version leads to misperceptions
     * [ECMS-7683] - Can not search a node
-    * [ECMS-7684] - [Regression] Content-by-Query portlet no longer works
     * [ECMS-7685] - The page of content administration is not well displayed
     * [ECMS-7686] - No file search results is displayed
     * [ECMS-7688] - Problem when using accented characters in the search
@@ -213,15 +184,8 @@ eXo ECMS ${org.exoplatform.platform.version}
 
 ** Improvement
     * [ECMS-7592] - [Open in Office] upgrade ITHit to 3.0.2135.0
-    * [ECMS-7625] - Upload an image through CKeditor in the media folder of a web content
     * [ECMS-7647] - Upgrade ITHit to version 4
-    * [ECMS-7653] - Make Upload Documents popup always visible in Sites Explorer
-    * [ECMS-7654] - Do not use Flash anymore for Copy URL to clipboard feature
     * [ECMS-7694] - [files-in-es] File to index list computation slow
-
-** Task
-    * [ECMS-7046] - [OrgIntService] AccessControlException in AdjustDrivePermissionNewUserListener
-    * [ECMS-7441] - [Open in Office] Exception when browsing documents having colon in their names
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
@@ -232,8 +196,6 @@ eXo Social ${org.exoplatform.platform.version}
     * [SOC-5378] - [social-rdbms] Migrate activity failed due to duplicate entry for key 'UK_ACTIVITY_MENTIONER_01'
     * [SOC-5423] - Can't comment on an activity
     * [SOC-5470] - No activities are displayed in the other user activities
-    * [SOC-5514] - Space activities are lost after migration when the JCR space identity node has a name not equal to remoteId
-    * [SOC-5532] - [social-rdbms] Ignore spaces and its activities marked as deleted while migrating
     * [SOC-5557] - XSS vulnerability with invite member in space
     * [SOC-5568] - Error swallowed when granting user as manger of space
     * [SOC-5571] - [Regression] Activity added in a user activity stream is not displayed on user activity
@@ -246,33 +208,20 @@ eXo Social ${org.exoplatform.platform.version}
     * [SOC-5646] - TemplateParamsProcessor error due to a missing despecialisation of ${...}
     * [SOC-5659] - HTML code is displayed when comment a content
     * [SOC-5665] - Profiles page must not use ES to get all profiles
-    * [SOC-5677] - Cannot search exact name
-    * [SOC-5683] - [API] Avatar url should never return a 404 http error
     * [SOC-5710] - People are not ordered when selecting a character
-    * [SOC-5722] - Social RDBMS upgrade fail for activity content with a link
-    * [SOC-5724] - Social RDBMS upgrade fail for activity with line break
     * [SOC-5727] - Open button and title link in Answers email notification redirect to a wrong URL when commenting the answer activity from the AS
     * [SOC-5732] - User is redirected to an empty page when clicking on a space invitation notification
     * [SOC-5738] - Pending request does not apear until refreshing page
-    * [SOC-5741] - Exception raised blocking the upgrade process from 4.3.1 to 4.4.0
-    * [SOC-5744] - [Migration] Exceptions of spaces acitivities migration preventing  migration of proceeding succesfully
-    * [SOC-5745] - [Migration] Spaces activities of already deleted spaces are migrated
-    * [SOC-5750] - [Migration] Exceptions raised during activities migrations
     * [SOC-5754] - Enterprise Skin : space Settings / members screen UI KO
     * [SOC-5755] - Show More button of spaces does not work with conccurrent users
-    * [SOC-5766] - Build failure on the CI on test IdentityStorageTest.testGetAvatarInputStreamById
     * [SOC-5775] - Cannot search user with dash in search inputs
     * [SOC-5776] - Search people by selecting the name (autocomplete) does not work
     * [SOC-5777] - Space's icon are not displayed as expected
-    * [SOC-5786] - Spaces unexpectedly  have Zero Members
-    * [SOC-5790] - Improve logging of UISpaceMember#getExistingUsers
-    * [SOC-5791] - NPE in SocialMembershipListenerImpl#postDelete
     * [SOC-5797] - Social services test must use JPA implementation
     * [SOC-5806] - Last 2 users that have joined the Intranet don't appear in suggestion list
     * [SOC-5816] - The label of an application don't appear in the list of the applications when adding application in space
     * [SOC-5824] - Notification of like comment after preview Document is not sent
     * [SOC-5827] - Comments are not loaded after preview document only on JBOSS instances
-    * [SOC-5828] - [Upgrade] Exception raised during the upgrade process from 4.3.1 to 4.4.3
     * [SOC-5831] - An error message appears when posting an activity on the Activity stream
     * [SOC-5832] - An error popup appears when commenting on activity
     * [SOC-5834] - Space members list is not sorted by alphabetical order
@@ -352,16 +301,13 @@ eXo Social ${org.exoplatform.platform.version}
     * [SOC-5737] - Improve select picture popup on microblog
 
 ** Task
-    * [SOC-4942] - [User Notification Settings] Hard-coded labels of channel selection
     * [SOC-5829] - Test testGetActivitiesOfUser fails randmoly
 
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [WIKI-1111] - Wiki content block disappears in certain zoom / screen sizes
     * [WIKI-1197] - [wiki-rdbms] Delete wiki permission is not considered
-    * [WIKI-1207] - [Export PDF]  Missing images in the exported file for private pages
     * [WIKI-1273] - [Security] XSS vulnerability in wiki page title
     * [WIKI-1276] - Can not upload file in wiki page when it's empty
     * [WIKI-1279] - Attached image names overlap between whitespace and underscore
@@ -369,10 +315,7 @@ eXo Wiki ${org.exoplatform.platform.version}
     * [WIKI-1292] - Cannot insert Section macro in wiki page
     * [WIKI-1294] - Save a draft of currently saved page
     * [WIKI-1296] - Unknown error popup is displayed when selecting space in the wiki search
-    * [WIKI-1310] - wiki draft does not save the last content
     * [WIKI-1313] - Cannot add relation to wiki page
-    * [WIKI-1316] - Inline attachments not displayed when "VIEW" permission only
-    * [WIKI-1317] - IE11: Script error when creating a file attachment link in the wiki and the site is  unresponsive
     * [WIKI-1322] - Wiki editor French translation
     * [WIKI-1323] - Wiki page list is empty in Link popup
     * [WIKI-1324] - An empty page appears on wiki application with SqlServer
@@ -380,10 +323,7 @@ eXo Wiki ${org.exoplatform.platform.version}
     * [WIKI-1327] - Invalid liquibase checksum when upgrading to 5.0.0-M03
     * [WIKI-1330] - Strike effect does not work
     * [WIKI-1335] - Can rename a page with the name of an existing page
-    * [WIKI-1339] - [Regression] Wiki pages are no more alphabetically sorted
-    * [WIKI-1340] - error message when uploading file from XWiki
     * [WIKI-1343] - Wiki upload should use the global upload limit
-    * [WIKI-1347] - [Regression] Only one image is displayed twice when attaching two images with names "birthday_cake.jpg " and "birthday cake.jpg"
     * [WIKI-1348] - Restore uncache page capability for chosen macros
     * [WIKI-1354] - Open in new window doesn't work
     * [WIKI-1355] - An error appears when adding page (or web page) with link existed page
@@ -422,13 +362,9 @@ eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1219] - Reminder with "Repeat Every" does not work correctly
-    * [CAL-1268] - Unknown error when interrupting file upload
     * [CAL-1276] - Accented characters don't display correctly in calendar  after applying task calendar integration
     * [CAL-1277] - Recurring events are not exported/imported correctly
     * [CAL-1280] - [regression]:the drop down menu does not appear when clicking right on an event in calendar application
-    * [CAL-1282] -  cannot import remote calendar
-    * [CAL-1283] - [Regression] Problem with single quote encode in title event
     * [CAL-1284] - Events are not displayed in chronological order in month view
     * [CAL-1289] - An error popup appears when clicking on an event added in calendar
     * [CAL-1290] - Button "add" is disabled when adding an event category in the calendar application
@@ -470,7 +406,6 @@ eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [FORUM-1192] - Links of BBCode are not clickable in the activity
     * [FORUM-1221] - CLONE - [XSS] Forum - BBCode - Example - Preview
     * [FORUM-1222] - [XSS] Forum - BBCode - Replacement
     * [FORUM-1317] - Quote button is still visible when the topic is locked
@@ -483,7 +418,6 @@ eXo Forum ${org.exoplatform.platform.version}
     * [FORUM-1338] - [SECURITY] A topic creator/watcher receives emails of private posts
     * [FORUM-1339] - [Automation] Add ID for some buttons in forum application
     * [FORUM-1346] - Post link is not saved
-    * [FORUM-1347] - Error when trying to download an attachment twice
     * [FORUM-1352] - Can not add category with SqlServer
     * [FORUM-1359] - Post created with link effect is not displayed correctly in the user's Activity Stream
     * [FORUM-1361] - HTML markup in activity comment when using URL BBCode in forum
@@ -513,25 +447,18 @@ eXo Platform ${org.exoplatform.platform.version}
 ** Bug
     * [PLF-5064] - Platform Tomcat Server doesn't stop with stop_eXo.sh
     * [PLF-6173] - [Cluster]: User need to re-logging on load balancer after shutting down or kill node 1
-    * [PLF-6331] - [OrganizationIntegrationService] Failed to sync a group
     * [PLF-6600] - Have to click twice when starting a quick unified search
     * [PLF-6645] - Go to the last page functionality on view mode of pdf file doesn't work
     * [PLF-6689] - PNG thumbnail does not working correctly
     * [PLF-6690] - The Open button does not work and hides after clicking on it for all type of file on the activity stream.
     * [PLF-6849] - "Deadlock found when trying to get lock" error
     * [PLF-6863] - Popup is displayed in a wrong location
-    * [PLF-6982] - space suggestions portlet does not show the spaces avatars
     * [PLF-6988] - In mobile, user avatars are out of their border circle
-    * [PLF-7016] - Disabled  user is displayed in My Connections tab
     * [PLF-7033] - [Suggestion Component]People search does not return results for suggested name
-    * [PLF-7075] - Catch exception in OrganizationIntegrationService when connection is cut between the platform and the AD server and avoid to mark the user as deleted
     * [PLF-7078] - Data initiliazation issues at startup with MySQL 5.7.14+
-    * [PLF-7088] - Problem while naming contents using apostrophes
     * [PLF-7141] - The persmission list (Can Edit & Can View) of the Share With section and of the Who has access section are different
     * [PLF-7144] - Missing last modification date and wiki name in the wiki's search result
     * [PLF-7164] - [Remote edit] Mac Office 2016 Word file not recognized as such after remote edit
-    * [PLF-7205] - Problem with inviting a group of active Active Directory mapped users while creating a space
-    * [PLF-7223] - Problem with SAML2 SSO integration
     * [PLF-7225] - Delete JBoss WCI JAR from Tomcat Bundle
     * [PLF-7226] - Chat application doesn't work on JBoss EAP 7
     * [PLF-7229] - [Skin Module] CSS customization are lost after a server restart
@@ -541,23 +468,15 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7246] - [Skin Module] Mentions are not well displayed in the activities
     * [PLF-7263] - 2 versions of ecj lib in Tomcat libs
     * [PLF-7264] - ES embedded war size increased significally
-    * [PLF-7268] - ERROR exception while viewing uploaded document name containing & character
     * [PLF-7269] - Fix banned dependency in platform-public-distributions
     * [PLF-7270] - [Enable/Disable user feature]Filter doesn't work after migration
-    * [PLF-7276] - [Search] : Indexing Metadata
-    * [PLF-7286] - Stacktrace when login failure
     * [PLF-7294] - PLF fails to start with JBoss
     * [PLF-7305] - Enterprise Skin : space administrators section in Members KO
     * [PLF-7307] - Locale back to 'en' when the language contains a country
-    * [PLF-7341] - Users unexpectedly set as deleted
     * [PLF-7349] - Warn logs on groovy script loading at startup after 1st startup
     * [PLF-7367] - Warning in logs about javascript parsing errors
-    * [PLF-7379] - Duplicated rows in jbid_io_rel table
-    * [PLF-7385] - Problem displaying chat and exo toolbar in some smartphones
     * [PLF-7390] - Forum : quotes in activity comments results in <blockquote> markup displayed in forum
-    * [PLF-7392] - syncAll rest service does not work correctly
     * [PLF-7397] - Tests failures on projects in Jenkins because of folders containing @
-    * [PLF-7407] - The synchronization is not started when calling syncAll for the second time
     * [PLF-7412] - Footer position is badly computed for spaces pages
     * [PLF-7416] - The Home page content is not well translated when setting french language
     * [PLF-7445] - [Enterprise-Skin] Select Picture and Link popup are displayed with default skin.
@@ -598,7 +517,6 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7736] - [Space Banner] No upload popup is displayed when the user clicks on add banner (ie user profile avatar) button
     * [PLF-7738] - Error on Humberger menu in special case
     * [PLF-7740] - Better management of JPA Transaction when an error occurs while starting transaction
-    * [PLF-7741] - Wrong redirection when clicking a link of a shared document
     * [PLF-7742] - Page Not Found style is broken
     * [PLF-7745] - Wrong dependency to chat embedded addon on trial packaging
     * [PLF-7746] - The trial banner alert  appears on Enterprise edition
@@ -725,7 +643,6 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7297] - Upgrade Tomcat 8.5.13 -> 8.5.15
     * [PLF-7303] - Update Juzu version to 1.2.x-SNAPSHOT
     * [PLF-7351] - Enterprise Skin - Space names not displayed fully in activity stream on smartphone/portrait
-    * [PLF-7352] - Remove duplicated keys in resources bundles
     * [PLF-7374] - Upgrade to apache groovy 2.4.12
     * [PLF-7375] - Upgrade to Tomcat 8.5.16
     * [PLF-7409] - upgrade to CKEditor 4.7.2
