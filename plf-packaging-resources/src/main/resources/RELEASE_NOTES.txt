@@ -268,3 +268,28 @@ exo.disable.user.activated=false. The feature will be hidden from PLF, and the d
 
 * ECMS-6818: Remote edit does not work on Chrome 42
 * EXOGTN-1963: SPNEGO doesn't work when using Firefox client on the same Window 8 with PLF 4.2
+* SOC-5775: - This problem is fixed from eXo Platform 5.0. 
+            - To workaround this problem in eXo platform 4.4, you just need to replace the standard tokenizer with the whitespace tokenizer in order to delete the character - when indexing, by following these steps:
+			     1- Close profile index : $ curl -XPOST "http://localhost:9200/profile/_close"
+				 2- Update profile index settings :
+				 
+curl -XPUT "http://localhost:9200/profile/_settings" -d \
+'{
+    "index": {
+      "analysis": {
+         "analyzer": {
+            "default": {
+               "filter": [
+                  "standard",
+                  "lowercase",
+                  "asciifolding"
+               ],
+               "tokenizer": "standard"
+            }
+         }
+      }
+    }
+}'
+               3- Reopen profile index: $ curl -XPOST "http://localhost:9200/profile/_open"
+			   4- Go to Search Indexing administration page
+               5- Click on Reindex button for profile type
