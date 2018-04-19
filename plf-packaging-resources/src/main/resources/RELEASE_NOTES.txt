@@ -139,7 +139,7 @@ However, if you still insist on skipping versions, we strongly advise to read al
 == Upgrading from Platform 4.4.4 to ${org.exoplatform.platform.version} ==
 === Description of the plugins used in this upgrade ===
 
-The profile index in ES must be reindexed in order to apply the fix SOC-5775
+No Upgrade plugin
 
 == Upgrading from Platform 4.4.3 to 4.4.4 ==
 === Description of the plugins used in this upgrade ===
