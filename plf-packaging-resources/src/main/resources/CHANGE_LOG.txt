@@ -60,7 +60,6 @@ eXo Social ${org.exoplatform.platform.version}
 ** Bugs
     * SOC-5378 - [social-rdbms] Migrate activity failed due to duplicate entry for key 'UK_ACTIVITY_MENTIONER_01'
     * SOC-5665- Profiles page must not use ES to get all profiles
-    * SOC-5775 - Cannot search user with dash in search inputs
     * SOC-5776 -Search people by selecting the name (autocomplete) does not work
     * SOC-5894 - Strange received and pending invitations
     * SOC-6017 - ERROR | Failed migrate user
