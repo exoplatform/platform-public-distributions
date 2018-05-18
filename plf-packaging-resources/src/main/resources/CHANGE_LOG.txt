@@ -13,6 +13,7 @@ eXo Platform ${org.exoplatform.platform.version}
 ** Bugs
     * PLF-6645 - Go to the last page functionality on view mode of pdf file doesn't work   
     * PLF-7241 - Wrong width of notification bar 
+    * PLF-7246 - Mentions are not well displayed in the activities
     * PLF-7307 - Locale back to 'en' when the language contains a country
     * PLF-7889 - Concurrent use of non-thread safe date formatting appears to break infinispan
     * PLF-7913 - can not open a file from search result
@@ -36,7 +37,8 @@ eXo ECMS ${org.exoplatform.platform.version}
     * ECMS-7736 - View a sub-folder not displayed in the explorer content portlet 
     * ECMS-7740 - [Regression]HTML Sanitization is applied on dialog fields by default which causes input problems
     * ECMS-7763 - [Regression] Sub content does not appear from the file explorer side bar tree 
-    * ECMS-7764 - Problem when printing a PDF 	
+    * ECMS-7764 - Problem when printing a PDF 
+    * ECMS-7794 - Add users from searchbox	
 	
 
         
@@ -65,7 +67,8 @@ eXo Social ${org.exoplatform.platform.version}
     * SOC-6017 - ERROR | Failed migrate user
     * SOC-6027 - Social people REST API publicly accessible
     * SOC-6029 - Wrong username (on the activity stream) after editing a document
-    * SOC-6030 - [social-rdbms] Migrate activity failed when the same user is mentionned several times in an activity and its comments	
+    * SOC-6030 - [social-rdbms] Migrate activity failed when the same user is mentionned several times in an activity and its comments
+    * SOC-6032 - can not invite user to join a space	
            
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
@@ -114,3 +117,10 @@ eXo Chat ${org.exoplatform.platform.version}
     * CHAT-810 - Problem with meeting notes when there's a task
     * CHAT-824 - Deprecate old Mongodb server connection parameters
     * CHAT-828 - User Status window on chat opening
+
+eXo Answer ${org.exoplatform.platform.version}
+*************************
+
+**Bugs
+    * ANS-131 - Encoding problem when answer to question 
+
