@@ -55,7 +55,7 @@ eXo Platform ${org.exoplatform.platform.version}
 ** Task
     * [PLF-7919] - Upgrade to Tomcat 8.5.30
 
-eXo Chat ${org.exoplatform.platform.version}
+eXo Chat 2.0.1
 **************
 
 ** Bug
