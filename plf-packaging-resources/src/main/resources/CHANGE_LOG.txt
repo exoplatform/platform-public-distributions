@@ -46,7 +46,6 @@ eXo Platform ${org.exoplatform.platform.version}
 
 ** Bug
     * [PLF-7921] - Disallow listing the rest API services for unauthenticated users.
-    * [PLF-7929] - [upgrade] exceptions when upgrade from 4.4.3 to 5.0 on sqlserver and oracle database 
     * [PLF-7986] - Enterprise skin style cannot be overridden with custom modules because of too high priority
     * [PLF-7989] - Inconsistency between the versioning in activity stream and document application
 
