@@ -51,7 +51,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-7986] - Enterprise skin style cannot be overridden with custom modules because of too high priority
     * [PLF-7989] - Inconsistency between the versioning in activity stream and document application
     * [PLF-8025] - blocking error during the upgrade from 4.4.4 to 5.0.0
-    * [PLF-8026] - Errors During Migration eXo platform from 4.4.4 to 5.0.0
+    * [PLF-8026] - Error when creating new column BANNER_LAST_UPDATED in social db during migration from 4.4.4 to 5.0.0
 
 ** Improvement
     * [PLF-7902] - Restrict WebDAV folder listing only for some paths
