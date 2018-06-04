@@ -12,6 +12,7 @@ eXo ECMS ${org.exoplatform.platform.version}
     * [ECMS-7608] - wrong pagination display 
     * [ECMS-7631] - Unknown error message  caused by an Access denied error
     * [ECMS-7650] - Display buttons problem when resize popup of Share Document
+    * [ECMS-7817] - Files indexing errors when upgrading to 5.0 with files in the trash
     
 
 eXo Social ${org.exoplatform.platform.version}
