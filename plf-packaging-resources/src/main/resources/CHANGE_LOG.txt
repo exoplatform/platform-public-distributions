@@ -18,8 +18,8 @@ eXo Platform ${org.exoplatform.platform.version}
     * PLF-7889 - Concurrent use of non-thread safe date formatting appears to break infinispan
     * PLF-7913 - can not open a file from search result
     * PLF-7921 - Disallow listing the rest API services for unauthenticated users
-    * PLF-7989 - Inconsistency between the versioning in activity stream and document application
-    * PLF-8027 - After the deletion of a space the searchbox is no longer activated.
+    * PLF-7989 - Inconsistency between the versioning in activity stream and document application (4.4.5-cp01)
+    * PLF-8027 - After the deletion of a space the searchbox is no longer activated. (4.4.5-cp01)
     	
 ** Tasks
     * PLF-7908 - Upgrade Tomcat from 7.0.75 to 7.0.85
@@ -57,7 +57,7 @@ eXo WIKI ${org.exoplatform.platform.version}
     * WIKI-1322 - Wiki editor French translation
     * WIKI-1384 - Turkish character issue during exporting wiki as pdf
     * WIKI-1390 - Duplicate rows with same owner and type in WIKI_WIKIS table
-    * WIKI-1426 - Edit section on wiki doesn't work correctly
+    * WIKI-1426 - Edit section on wiki doesn't work correctly (4.4.5-cp01)
         
 eXo Social ${org.exoplatform.platform.version}
 *************************
@@ -94,9 +94,9 @@ eXo Calendar ${org.exoplatform.platform.version}
     * CAL-1317 - intermitent exception after starting second cluster node
     * CAL-1319 - Wrong content in reminder email
     * CAL-1321 - Calendar event time granularity
-    * CAL-1323 - Remote calendar CALDAV doesn't synchronize
-    * CAL-1332 - The timepopup is different from the time event
-    * CAL-1338 - SMTPAddressFailedException: 554 5.7.1 Relay access denied
+    * CAL-1323 - Remote calendar CALDAV doesn't synchronize (4.4.5-cp01)
+    * CAL-1332 - The timepopup is different from the time event (4.4.5-cp01)
+    * CAL-1338 - SMTPAddressFailedException: 554 5.7.1 Relay access denied (4.4.5-cp01)
 	
 
 
@@ -119,14 +119,14 @@ eXo Chat 1.5.2-cp01
 *************************
 
 **Bugs
-    * CHAT-798 - user is not redirect to chat app when clicking on the notification pop up
+    * CHAT-798 - user is not redirect to chat app when clicking on the notification pop up (4.4.5-cp01)
     * CHAT-799 - Support connections to a mongodb replica set
     * CHAT-810 - Problem with meeting notes when there's a task
     * CHAT-824 - Deprecate old Mongodb server connection parameters
     * CHAT-828 - User Status window on chat opening
-    * CHAT-836 - Chat content repeated
-    * CHAT-843 - not Automatically scroll down during the conversation (mini-chat)
-    * CHAT-845 - creating room chat user status is always available when adding him in chat room 
+    * CHAT-836 - Chat content repeated (4.4.5-cp01)
+    * CHAT-843 - not Automatically scroll down during the conversation (mini-chat)(4.4.5-cp01)
+    * CHAT-845 - creating room chat user status is always available when adding him in chat room (4.4.5-cp01)
 
 eXo Answer 1.2.5-cp01
 *************************
