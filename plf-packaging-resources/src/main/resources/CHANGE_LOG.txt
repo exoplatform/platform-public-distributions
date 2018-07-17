@@ -9,65 +9,42 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7608] - wrong pagination display 
-    * [ECMS-7631] - Unknown error message  caused by an Access denied error
-    * [ECMS-7650] - Display buttons problem when resize popup of Share Document
-    * [ECMS-7817] - Files indexing errors when upgrading to 5.0 with files in the trash
-    
+    * [ECMS-7599] - pagination of sub-folders does not rest 
+        
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-5402] - Translate  page's titles
-    * [SOC-5815] - [Regression]: All users activities are marked as Contact information has been updated.
-    * [SOC-6017] - ERROR | Failed migrate user
-    * [SOC-6027] - Social people REST API publicly accessible
-    * [SOC-6029] - Wrong username (on the activity stream) after editing a document
-    * [SOC-6032] - can not invite user to join a space
-    * [SOC-6043] - Wrong icons of space's tabs
+    * [SOC-5834] - Space members list is not sorted by alphabetical order
+    * [SOC-6030] - [social-rdbms] Migrate activity failed when the same user is mentionned several times in an activity and its comments
+    
+** Improvement
+    * [SOC-5917] - notification in platform still on display after [accept or refuse] request connect with other user by email 
 
-
-eXo Calendar ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [CAL-1319] - Wrong content in reminder email
-    * [CAL-1321] - Calendar event time granularity
-    * [CAL-1323] - Remote calendar CALDAV doesn't synchronize
-
-
-eXo Forum ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [FORUM-1381] - Latest forum posts gadget problem when there is a post with a pdf attachment
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7921] - Disallow listing the rest API services for unauthenticated users.
-    * [PLF-7986] - Enterprise skin style cannot be overridden with custom modules because of too high priority
-    * [PLF-7989] - Inconsistency between the versioning in activity stream and document application
-    * [PLF-8025] - blocking error during the upgrade from 4.4.4 to 5.0.0
-    * [PLF-8026] - Error when creating new column BANNER_LAST_UPDATED in social db during migration from 4.4.4 to 5.0.0
+    * [PLF-7948] - Restore user identity in Web Conferencing call channel
+    * [PLF-7963] - Web Conferencing call button doesn't appear in mini chat
+    * [PLF-7973] - address of a site in .bzh is not accepted
+    * [PLF-8033] - on the scroll down the banner still visible
+    * [PLF-8041] - Avoid double invocation of RTC negotiation in Chrome (66+)
+    * [PLF-8071] - XSS exploits using URL
 
 ** Improvement
-    * [PLF-7902] - Restrict WebDAV folder listing only for some paths
+    * [PLF-7201] - Remove Add User button in Share file popup
 
 ** Task
-    * [PLF-7919] - Upgrade to Tomcat 8.5.30
+    * [PLF-8047] - Don't print call logs for not interesting cases 
 
-eXo Chat 2.0.1
-**************
+
+eXo Commons ${org.exoplatform.platform.version}
+*************************
 
 ** Bug
-    * [CHAT-836] - Chat content repeated
-    * [CHAT-843] - not Automatically scroll down during the conversation (mini-chat)
-
-** Improvement
-    * [CHAT-799] - Support connections to a mongodb replica set
-
-** Task
-    * [CHAT-824] - Deprecate old Mongodb server connection parameters
+    * [COMMONS-573] - Users settings JCR cleaning fails when upgrading from 4.4 to 5.0
+    * [COMMONS-574] - Settings of disabled and deleted users are not handled correctly
+    * [COMMONS-575] - User settings migration cleanup set as done even if it fails
