@@ -28,7 +28,6 @@ eXo Platform ${org.exoplatform.platform.version}
 
 ** Bug
     * [PLF-7948] - Restore user identity in Web Conferencing call channel
-    * [PLF-7963] - Web Conferencing call button doesn't appear in mini chat
     * [PLF-7973] - address of a site in .bzh is not accepted
     * [PLF-8033] - on the scroll down the banner still visible
     * [PLF-8041] - Avoid double invocation of RTC negotiation in Chrome (66+)
