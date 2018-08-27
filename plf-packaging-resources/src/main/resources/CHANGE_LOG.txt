@@ -9,41 +9,59 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7599] - pagination of sub-folders does not rest 
+    * [ECMS-7786] - [Unified Search] Unable to open preview when content title contains quote 
         
 
-eXo Social ${org.exoplatform.platform.version}
+eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-5834] - Space members list is not sorted by alphabetical order
-    * [SOC-6030] - [social-rdbms] Migrate activity failed when the same user is mentionned several times in an activity and its comments
-    
-** Improvement
-    * [SOC-5917] - notification in platform still on display after [accept or refuse] request connect with other user by email 
+    * [CAL-1330] - Unable to create event in calendar
+    * [CAL-1332] - The timepopup is different from the time event
+    * [CAL-1338] - SMTPAddressFailedException: 554 5.7.1 Relay access denied
+	
+	
+eXo Forum ${org.exoplatform.platform.version}
+*************************
 
+** Bug
+    * [FORUM-1384] - spelling mistake after modify post in the forum
 
+eXo Wiki ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+    * [WIKI-1142] - [Wiki Page] Welcome to "MyWiki" 
+    * [WIKI-1426] - Edit section on wiki doesn't work correctly
+	
+	
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7948] - Restore user identity in Web Conferencing call channel
-    * [PLF-7973] - address of a site in .bzh is not accepted
-    * [PLF-8033] - on the scroll down the banner still visible
-    * [PLF-8041] - Avoid double invocation of RTC negotiation in Chrome (66+)
-    * [PLF-8071] - XSS exploits using URL
+    * [PLF-7963] - Web Conferencing call button doesn't appear in mini chat
+    * [PLF-8027] - After the deletion of a space the searchbox is no longer activated.
+    * [PLF-8064] - eXo platform 5 does not start with minimal profile
 
 ** Improvement
-    * [PLF-7201] - Remove Add User button in Share file popup
-
-** Task
-    * [PLF-8047] - Don't print call logs for not interesting cases 
+    * [PLF-7947] - Connect button is no longer present on the profile card
 
 
-eXo Commons ${org.exoplatform.platform.version}
+eXo JCR ${org.exoplatform.platform.version}
+*************************
+
+** Improvement
+    * [JCR-2415] - Improve clean swap files	
+
+
+eXo Kernel ${org.exoplatform.platform.version}
+*************************
+
+** Improvement
+    * [KER-327] - Add the field reply-to org.exoplatform.services.mail.Message
+	
+eXo Chat 2.0.3
 *************************
 
 ** Bug
-    * [COMMONS-573] - Users settings JCR cleaning fails when upgrading from 4.4 to 5.0
-    * [COMMONS-574] - Settings of disabled and deleted users are not handled correctly
-    * [COMMONS-575] - User settings migration cleanup set as done even if it fails
+    * [CHAT-845] -  creating room chat user status is always available when adding him in chat room 
