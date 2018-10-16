@@ -9,59 +9,42 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7786] - [Unified Search] Unable to open preview when content title contains quote 
+    * [ECMS-7823] - Pending contents are not displayed in dashboard
+    * [ECMS-7833] -	Context menu is not displayed in empty folder
         
 
-eXo Calendar ${org.exoplatform.platform.version}
+eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1330] - Unable to create event in calendar
-    * [CAL-1332] - The timepopup is different from the time event
-    * [CAL-1338] - SMTPAddressFailedException: 554 5.7.1 Relay access denied
-	
-	
+    * [SOC-6047] - Letter filter does not work in My Connections
+    * [SOC-6049] - Viewer files do not work  in Activity stream
+    * [SOC-6052] - Wrong page titles
+    * [SOC-6055] - change avatar is not saved from the first click 
+
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [FORUM-1384] - spelling mistake after modify post in the forum
+    * [FORUM-1315] - [Forum administration] Fail to import forum from zip file
+    * [FORUM-1351] [Security] [Regression] XSS issue with Forum topic content
+    * [FORUM-1387] Forum notifications sent with wrong reply links
 
-eXo Wiki ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [WIKI-1142] - [Wiki Page] Welcome to "MyWiki" 
-    * [WIKI-1426] - Edit section on wiki doesn't work correctly
-	
-	
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7963] - Web Conferencing call button doesn't appear in mini chat
-    * [PLF-8027] - After the deletion of a space the searchbox is no longer activated.
-    * [PLF-8064] - eXo platform 5 does not start with minimal profile
-
-** Improvement
-    * [PLF-7947] - Connect button is no longer present on the profile card
-
-
-eXo JCR ${org.exoplatform.platform.version}
-*************************
-
-** Improvement
-    * [JCR-2415] - Improve clean swap files	
+    * [PLF-7970] - Cannot preview a file from the AS while using the Turkish language.
+    * [PLF-8056] - The "Chat" button moves when click on the "Connect" button
+    * [PLF-8097] - eXo platform 5 does not start with minimal profile
+    * [PLF-8124] - Platform broken in some languages
+    * [PLF-8141] - No timeout specified on the SMTP Transport for email notification
 
 
-eXo Kernel ${org.exoplatform.platform.version}
-*************************
 
-** Improvement
-    * [KER-327] - Add the field reply-to org.exoplatform.services.mail.Message
 	
-eXo Chat 2.0.3
+eXo Chat 2.0.4
 *************************
 
 ** Bug
-    * [CHAT-845] -  creating room chat user status is always available when adding him in chat room 
+    * [CHAT-956] - the scroll go down to the messge doesn't work correctly
