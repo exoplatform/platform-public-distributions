@@ -4,30 +4,31 @@ Changelog Platform ${org.exoplatform.platform.version}
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
-eXo GateIn ${org.exoplatform.platform.version}
+eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
-** Bug
-    * [EXOGTN-2352] - Email valid but not accepted in our platform
+** Improvement
+    * [ECMS-7878] - The list of drives is not sorted
      
 
-eXo Social ${org.exoplatform.platform.version}
+eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6122] - Reduce Space Name limitations
+    * [CAL-1431] - Add Middle East Month naming style Calendar
     
 	
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8173] - Improve performance when listing a lot of users in Manage Users app
-    * [PLF-8217] - Faulty "standalone.conf.bat" file in exo distribution when using windows
+    * [PLF-7961] - Searching file find default.html
+    * [PLF-8174] - Out of memory in heap space encoutered by Wiki Page
+    * [PLF-8210] - Unified search is not working with files containing "_" in their titles.
+    * [PLF-8224] - Problem with Copying URL to Clipboard files containing special characters
+    * [PLF-8261] - When adding image in microblog, the image path is an absolute one, with the domain name
+    * [PLF-8276] - [lecko] Database connection left open when an exception occurs during the transfer
+    * [PLF-8277] - [lecko] Unable to transfer due to a NoClassDefFound on SftpClient class
+    * [PLF-8283] - poll doesn't load after changing domain name
+    * [PLF-8284] - Wiki Images doesn't load after changing domain name
     
-	
-** Improvement
-    * [PLF-7034] - Change the tomcat default connection pool
-	
-** Task
-    * [PLF-8191] - Upgrade to Tomcat 8.5.35
