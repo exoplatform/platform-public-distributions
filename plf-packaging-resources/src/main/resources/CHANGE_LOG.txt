@@ -38,7 +38,7 @@ eXo Wiki ${org.exoplatform.platform.version}
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
-** Bu
+** Bug
     * [PLF-8386] - Page Template's Access Permissions overridden
     * [PLF-8344] - Document App: Remove actions for Default Folders
     * [PLF-8339] - When applying filters in the leftNavigationMenu, "Space not found" page is displayed when clicking on a space which name has been edited
