@@ -4,34 +4,44 @@ Changelog Platform ${org.exoplatform.platform.version}
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
-eXo Commons ${org.exoplatform.platform.version}
+eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [COMMONS-577] - Test CachedWebNotificationStorageTest.testUpdate fails randomly
+    * [ECMS-7940] - Broken Document thumbnail
+    * [ECMS-7934] - Compare button is not functional
 	
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6041] - Problem with detection of the URL in activity stream
+    * [SOC-6244] - No sort applied in "My connexions", "Invitation" & "Pending" tabs of People directory
+    * [SOC-6237] - Disable useless MaxQueries check in UT
+    * [SOC-6145] - Sorting in People Directory doesn't work when filtering on a letter
+
+** Improvement
+    * [SOC-6239] - Make the identities sort field extensible
+    
+eXo Calendar ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+    * [CAL-1361] - Nothing appears on Calendar when creating a task with views Board
     
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [WIKI-1448] - Links in Activity Stream doesn't work after remove/add wiki application
+    * [WIKI-1415] - Image display problem when entering `(u \ 2019) in the title of a wiki page
+    * [WIKI-1408] - Users can remove attached files on wiki page even if they don't have the edit permission
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8166] - Application icons on space doesn't appear
-    * [PLF-8238] - Unsorted "Experiences" displayed in the user Profile
-    * [PLF-8307] - [Lecko Addon] dump file is not deleted after export on Windows
-    * [PLF-8312] - [Agital] multi-level menu not displayed when mouse hover menu of Corporate Website added
-    * [PLF-8323] - The display of file explorer is blocked when the user has no FavoriteFolder
-    * [PLF-8334] - Email notification template should be responsive for Outlook Application
-    * [PLF-8336] - Bad UI Content Management Status Column Width Limit
-    * [PLF-8352] - Blank page on the documents application after closing the browsing preferences popup
-    * [PLF-8355] - CRSF check fails when rendering portlets
+    * [PLF-8386] - Page Template's Access Permissions overridden
+    * [PLF-8344] - Document App: Remove actions for Default Folders
+    * [PLF-8339] - When applying filters in the leftNavigationMenu, "Space not found" page is displayed when clicking on a space which name has been edited
+    * [PLF-8289] - Browser Console error when using Ckeditor (Commons-Editor.js)
+    * [PLF-8175] - Display problem for arabic language in the document thumbnail in the activity stream
+    * [PLF-8156] - Can not insert image in web content under IE11 with special characters folders
