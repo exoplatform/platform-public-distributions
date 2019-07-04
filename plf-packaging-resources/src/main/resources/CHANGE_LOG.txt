@@ -45,3 +45,4 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-8289] - Browser Console error when using Ckeditor (Commons-Editor.js)
     * [PLF-8175] - Display problem for arabic language in the document thumbnail in the activity stream
     * [PLF-8156] - Can not insert image in web content under IE11 with special characters folders
+    * [PLF-8370] - Wrong Users status in the chat room page
