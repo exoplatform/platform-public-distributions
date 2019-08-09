@@ -8,41 +8,37 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7940] - Broken Document thumbnail
-    * [ECMS-7934] - Compare button is not functional
+    * [ECMS-7818] - Exception when search for a word existing in an uploaded file 
 	
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6244] - No sort applied in "My connexions", "Invitation" & "Pending" tabs of People directory
-    * [SOC-6237] - Disable useless MaxQueries check in UT
-    * [SOC-6145] - Sorting in People Directory doesn't work when filtering on a letter
+    * [SOC-6175] - Loading Icon is still displayed when click on Load More button
 
-** Improvement
-    * [SOC-6239] - Make the identities sort field extensible
     
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1361] - Nothing appears on Calendar when creating a task with views Board
+    * [CAL-1464] - Space's Calendar preferences
     
-eXo Wiki ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [WIKI-1415] - Image display problem when entering `(u \ 2019) in the title of a wiki page
-    * [WIKI-1408] - Users can remove attached files on wiki page even if they don't have the edit permission
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8386] - Page Template's Access Permissions overridden
-    * [PLF-8344] - Document App: Remove actions for Default Folders
-    * [PLF-8339] - When applying filters in the leftNavigationMenu, "Space not found" page is displayed when clicking on a space which name has been edited
-    * [PLF-8289] - Browser Console error when using Ckeditor (Commons-Editor.js)
-    * [PLF-8175] - Display problem for arabic language in the document thumbnail in the activity stream
-    * [PLF-8156] - Can not insert image in web content under IE11 with special characters folders
-    * [PLF-8370] - Wrong Users status in the chat room page
+    * [PLF-7990] - empty page when displaying more than 1000 users in people page
+    * [PLF-8220] - Creating Task projects: Primary_key violation error
+    * [PLF-8346] - Document App: deleting default folder Symlink doesn't work 
+    * [PLF-8347] - Document App: default folder Symlink cut/paste doesn't work
+    * [PLF-8406] - [MOB] Sharing a photo in eXo mobile app from galery breaks the activity stream
+    * [PLF-8408] - Unified search similar types' value issue
+    * [PLF-8414] - Unable to edit a user without email
+    
+
+** Improvement
+    * [PLF-8380] - [MOB] You can't comment directly from activity stream
+    * [PLF-8411] - [MOB] Old preview popup for images shared from mobile
+
+
