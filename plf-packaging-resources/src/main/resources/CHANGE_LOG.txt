@@ -21,6 +21,7 @@ eXo Social ${org.exoplatform.platform.version}
 
 ** Bug
     * [SOC-6175] - Loading Icon is still displayed when click on Load More button
+    * [SOC-6260] - The filter alphabetically in space members tab doesn't work
     
     
 ** Improvement    
