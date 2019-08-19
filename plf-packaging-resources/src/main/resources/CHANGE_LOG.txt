@@ -10,35 +10,46 @@ eXo ECMS ${org.exoplatform.platform.version}
 ** Bug
     * [ECMS-7818] - Exception when search for a word existing in an uploaded file 
 	
+eXo JCR ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+    * [JCR-2469] - The indexation fails if a node doesn't have a primary type
+	
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
     * [SOC-6175] - Loading Icon is still displayed when click on Load More button
+    
+    
+** Improvement    
+    * [SOC-6261] - Space Members - Make the identities sort field extensible
 
     
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1464] - Space's Calendar preferences
+    * [CAL-1464] - Ignore selected calendars user preference in space calendar app
     
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7990] - empty page when displaying more than 1000 users in people page
+    * [PLF-7990] - [Oracle DB] empty page when displaying more than 1000 users in people page
     * [PLF-8220] - Creating Task projects: Primary_key violation error
     * [PLF-8346] - Document App: deleting default folder Symlink doesn't work 
     * [PLF-8347] - Document App: default folder Symlink cut/paste doesn't work
-    * [PLF-8406] - [MOB] Sharing a photo in eXo mobile app from galery breaks the activity stream
+    * [PLF-8406] - [MOB] Sharing a photo from mobile app breaks the activity stream
     * [PLF-8408] - Unified search similar types' value issue
     * [PLF-8414] - Unable to edit a user without email
+    * [PLF-8420] - Login History migration: Node not found when cleaning JCR 's Nodes
     
 
 ** Improvement
-    * [PLF-8380] - [MOB] You can't comment directly from activity stream
-    * [PLF-8411] - [MOB] Old preview popup for images shared from mobile
+    * [PLF-8380] - [MOB] Can't comment directly from activity stream on mobile
+    * [PLF-8411] - [MOB] Use new images preview when sharing it from mobile app
 
 
