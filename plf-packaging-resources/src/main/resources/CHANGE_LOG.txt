@@ -41,6 +41,7 @@ eXo Platform ${org.exoplatform.platform.version}
 ** Bug
     * [PLF-7990] - [Oracle DB] empty page when displaying more than 1000 users in people page
     * [PLF-8220] - Creating Task projects: Primary_key violation error
+    * [PLF-8320] - JCR Session leak detected when launching the exo server
     * [PLF-8346] - Document App: deleting default folder Symlink doesn't work 
     * [PLF-8347] - Document App: default folder Symlink cut/paste doesn't work
     * [PLF-8406] - [MOB] Sharing a photo from mobile app breaks the activity stream
