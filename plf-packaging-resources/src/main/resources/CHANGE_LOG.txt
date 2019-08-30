@@ -48,6 +48,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-8408] - Unified search similar types' value issue
     * [PLF-8414] - Unable to edit a user without email
     * [PLF-8420] - Login History migration: Node not found when cleaning JCR 's Nodes
+    * [PLF-8441] - Administration bar is missing in forum application
     
 
 ** Improvement
