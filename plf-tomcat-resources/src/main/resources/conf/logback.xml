@@ -71,12 +71,37 @@ For more details see : http://logback.qos.ch/manual/configuration.html
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
   </appender>
+  <!--
+  Errors logs file for platform
+  -->
+  <appender name="FILE_PLATFORM_ERRORS_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${catalina.base}/logs/platform-errors.log</file>
+    <append>true</append>
+    <encoder>
+      <pattern>${exo.logs.default.pattern}</pattern>
+      <outputPatternAsHeader>true</outputPatternAsHeader>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${catalina.base}/logs/platform-errors-%d{yyyyMMdd}-%i.log.zip</fileNamePattern>
+      <!-- Max number of archives to keep -->
+      <maxHistory>${exo.logs.rolling.maxHistory}</maxHistory>
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <!-- or whenever the file size reaches maxFileSize -->
+        <maxFileSize>${exo.logs.rolling.maxFileSize}</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <level>WARN</level>
+    </filter>
+  </appender>
   <appender name="ASYNC_PLATFORM_LOG" class="ch.qos.logback.classic.AsyncAppender">
     <!-- Increase blocking queue capacity - 256 by default -->
     <queueSize>512</queueSize>
     <!-- Do not loose any event -->
     <discardingThreshold>0</discardingThreshold>
     <appender-ref ref="FILE_PLATFORM_LOG" />
+    <appender-ref ref="FILE_PLATFORM_ERRORS_LOG" />
   </appender>
   <logger name="org.exoplatform" level="INFO" />
   <logger name="org.gatein" level="INFO" />
