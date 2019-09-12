@@ -101,7 +101,6 @@ For more details see : http://logback.qos.ch/manual/configuration.html
     <!-- Do not loose any event -->
     <discardingThreshold>0</discardingThreshold>
     <appender-ref ref="FILE_PLATFORM_LOG" />
-    <appender-ref ref="FILE_PLATFORM_ERRORS_LOG" />
   </appender>
   <logger name="org.exoplatform" level="INFO" />
   <logger name="org.gatein" level="INFO" />
@@ -196,5 +195,6 @@ For more details see : http://logback.qos.ch/manual/configuration.html
   </if>
   <root level="INFO">
     <appender-ref ref="ASYNC_PLATFORM_LOG" />
+    <appender-ref ref="FILE_PLATFORM_ERRORS_LOG" />
   </root>
 </configuration>
