@@ -18,7 +18,7 @@ eXo Integration ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [MOB-2197] - Download file Button does not work on document application
+    * [MOB-2197] - Download file Button does not work on documents application
     
     
 eXo Wiki ${org.exoplatform.platform.version}
@@ -47,7 +47,8 @@ eXo Chat 2.2.4
 **************
 
 ** Bug
-    * [CHAT-1015] - Page is reloaded when the websocket handshake fails   
+    * [CHAT-1015] - Page is reloaded when the websocket handshake fails
+    * [CHAT-1026] - Slowness in chat application  
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
