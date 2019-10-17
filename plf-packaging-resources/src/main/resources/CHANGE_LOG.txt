@@ -58,6 +58,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [MOB-2258] - Display problem in spaces makes it difficult to access space applications and Status button
     * [PLF-8348] - Documents App: Wrong "warning" content displayed
     * [PLF-8462] - Allow users to classify uploaded files in Activity stream
+    * [PLF-8449] - Remove any "space" when registering usernames
     
 
 ** Improvement
