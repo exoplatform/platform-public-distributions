@@ -14,13 +14,6 @@ eXo ECMS ${org.exoplatform.platform.version}
     * [ECMS-7957] - Inaccessible folder after changing the permission of a sub-folder or a file in that folder
     
     
-eXo Integration ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [MOB-2197] - Download file Button does not work on documents application
-    
-    
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
