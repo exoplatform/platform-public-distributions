@@ -26,8 +26,9 @@ eXo Social ${org.exoplatform.platform.version}
 ** Bug
     * [SOC-6249] - Keep receiving mention notification everytime someone comment the activity 
     * [SOC-6270] - Cannot preview documents in activites stream
+    * [SOC-6267] - Slowness in the activity stream
+        
 
-    
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
