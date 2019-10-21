@@ -25,8 +25,6 @@ eXo Social ${org.exoplatform.platform.version}
 
 ** Bug
     * [SOC-6249] - Keep receiving mention notification everytime someone comment the activity 
-    * [SOC-6270] - Cannot preview documents in activites stream
-    * [SOC-6267] - Slowness in the activity stream
         
 
 eXo Calendar ${org.exoplatform.platform.version}
@@ -34,6 +32,8 @@ eXo Calendar ${org.exoplatform.platform.version}
 
 ** Bug
     * [CAL-1480] - [Event Edit] Find a time popup does not contain event participants and does not respect Time Format
+    
+** Improvement    
     * [CAL-1491] - Date-picker does not show the selected value after initial selection
     
     
@@ -41,8 +41,7 @@ eXo Chat 2.2.4
 **************
 
 ** Bug
-    * [CHAT-1015] - Page is reloaded when the websocket handshake fails
-    * [CHAT-1026] - Slowness in chat application  
+    * [CHAT-1015] - Page is reloaded when the websocket handshake fails  
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
@@ -51,7 +50,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [MOB-2248] - The design of "Enregistrer" button in event creation
     * [MOB-2258] - Display problem in spaces makes it difficult to access space applications and Status button
     * [PLF-8348] - Documents App: Wrong "warning" content displayed
-    * [PLF-8462] - Allow users to classify uploaded files in Activity stream
+    * [PLF-8462] - Fix NPE in IdentityMigrationService
     * [PLF-8449] - Remove any "space" when registering usernames
     
 
