@@ -8,64 +8,39 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7784] - [Unified Search] Content Search is not working when searching in the content
-    * [ECMS-7828] - Documents upload from document selector are considered as non-versioned
-    * [ECMS-7956] - Can't remove a copy of default personal folder
-    * [ECMS-7957] - Inaccessible folder after changing the permission of a sub-folder or a file in that folder
-    
-    
-eXo Wiki ${org.exoplatform.platform.version}
+    * [ECMS-7949] - Impossible to cancel a content deletion
+    * [ECMS-7952] - Modification not saved after sharing a document from space to space
+	
+eXo Chat 2.2.5
 *************************
 
-** Improvement
-    * [WIKI-1400] - When a page is made public, it becomes editable by anyone
+** Bug
+    * [CHAT-1021] - Wrong translation of "location" when creating an event
+    * [CHAT-1022] - Event created in Chat between 2 users is not added in calendar
 	
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6249] - Keep receiving mention notification everytime someone comment the activity 
-    * [SOC-6270] - Cannot preview documents in activites stream
-** Improvement
-    * [SOC-6267] - Slowness in the activity stream
+    * [SOC-6269] - Share link without thumbnail
 
 
-
-
+    
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1480] - [Event Edit] Find a time popup does not contain event participants and does not respect Time Format
+    * [CAL-1488] - Incorrect time whne create an event in next year
+    * [CAL-1489] - Create repeated event
     
-** Improvement    
-    * [CAL-1491] - Date-picker does not show the selected value after initial selection
-    
-    
-eXo Chat 2.2.4
-**************
-
-** Bug
-    * [CHAT-1015] - Page is reloaded when the websocket handshake fails  
-
-
-** Improvement
-    * [CHAT-1026] - Slowness in chat application
-
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [MOB-2248] - The design of "Enregistrer" button in event creation
-    * [MOB-2258] - Display problem in spaces makes it difficult to access space applications and Status button
-    * [PLF-8348] - Documents App: Wrong "warning" content displayed
-    * [PLF-8462] - Fix NPE in IdentityMigrationService
-    * [PLF-8449] - Remove any "space" when registering usernames
-    
+    * [MOB-2197] - Download file Button does not work on document application
+    * [PLF-8143] - Deployment Error with exo-saml Addon
+    * [PLF-8447] - "Send me a digest email" on notification settings is not working
 
 ** Improvement
-    * [PLF-8459] - Allow users to classify uploaded files in Activity stream
-    * [PLF-8379] - Disabled users are in the members list of the space
-
-
+    * [PLF-8442] - New packging for SAMLv2 addon
