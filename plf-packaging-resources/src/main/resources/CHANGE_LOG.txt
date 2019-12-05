@@ -8,50 +8,41 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7818] - Exception when search for a word existing in an uploaded file 
+    * [ECMS-7949] - Impossible to cancel a content deletion
+    * [ECMS-7952] - Modification not saved after sharing a document from space to space
 	
-eXo JCR ${org.exoplatform.platform.version}
+eXo Chat 2.2.5
 *************************
 
 ** Bug
-    * [JCR-2469] - The indexation fails if a node doesn't have a primary type
+    * [CHAT-1021] - Wrong translation of "location" when creating an event
+    * [CHAT-1022] - Event created in Chat between 2 users is not added in calendar
 	
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6175] - Loading Icon is still displayed when click on Load More button
-    * [SOC-6260] - The filter alphabetically in space members tab doesn't work
-    
-    
-** Improvement    
-    * [SOC-6261] - Space Members - Make the identities sort field extensible
+    * [SOC-6269] - Share link without thumbnail
+
 
     
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1464] - Ignore selected calendars user preference in space calendar app
+    * [CAL-1488] - Incorrect time whne create an event in next year
+    * [CAL-1489] - Create repeated event
     
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7990] - [Oracle DB] empty page when displaying more than 1000 users in people page
-    * [PLF-8220] - Creating Task projects: Primary_key violation error
-    * [PLF-8320] - JCR Session leak detected when launching the exo server
-    * [PLF-8346] - Document App: deleting default folder Symlink doesn't work 
-    * [PLF-8347] - Document App: default folder Symlink cut/paste doesn't work
-    * [PLF-8406] - [MOB] Sharing a photo from mobile app breaks the activity stream
-    * [PLF-8408] - Unified search similar types' value issue
-    * [PLF-8414] - Unable to edit a user without email
-    * [PLF-8420] - Login History migration: Node not found when cleaning JCR 's Nodes
-    
+    * [MOB-2197] - Download file Button does not work on document application
+    * [PLF-8143] - Deployment Error with exo-saml Addon
+    * [PLF-8447] - "Send me a digest email" on notification settings is not working
 
 ** Improvement
-    * [PLF-8380] - [MOB] Can't comment directly from activity stream on mobile
-    * [PLF-8411] - [MOB] Use new images preview when sharing it from mobile app
+    * [PLF-8442] - New packging for SAMLv2 addon
 
 
