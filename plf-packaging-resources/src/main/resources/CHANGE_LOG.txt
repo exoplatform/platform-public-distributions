@@ -44,5 +44,3 @@ eXo Platform ${org.exoplatform.platform.version}
 
 ** Improvement
     * [PLF-8442] - New packging for SAMLv2 addon
-
-
