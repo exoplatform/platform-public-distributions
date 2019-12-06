@@ -13,17 +13,14 @@ eXo JCR ${org.exoplatform.platform.version}
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
-** Bug
-
-
-** Improvement
-
-
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
     * [COMMONS-585] - Use justify plugin with exo custom plugin selectImage
+    
+** Improvement
+    * [COMMONS-583] - Enahnce ExoFeatureService to allow feature activation by user
 
 
 eXo ECMS ${org.exoplatform.platform.version}
@@ -32,10 +29,10 @@ eXo ECMS ${org.exoplatform.platform.version}
 ** Bug
     * [ECMS-7809] - The icon (+) and the category name should be aligned in the Edit category tree popup
     * [ECMS-7943] - Can't save the new summary of document versions 
-    * [ECMS-7993] - Interruption in ChangeStateCronJob  at first corrupted node 
-
- 
-
+    * [ECMS-7993] - Interruption in ChangeStateCronJob  at first corrupted node
+    
+** Improvement
+    * [ECMS-7954] - [QuickSearch]  Anonymous User cannot search public document
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
@@ -53,13 +50,12 @@ eXo Social ${org.exoplatform.platform.version}
     * [SOC-6299] - Liking a comment with an image throw an exception 
     * [SOC-6304] - The new space menu toolbar is not displayed after scrolling  
 
-
-
 ** Improvement
-
-
+    * [SOC-6263] - Display real creation date of activity in tooltip
+  
 ** New feature
-
+    * [SOC-6178] - Spaces Homepage Portlets  
+    * [SOC-6231] - Space templates  
 
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
@@ -68,7 +64,6 @@ eXo Wiki ${org.exoplatform.platform.version}
     * [WIKI-1455] - Timestamp label doesn't change when editing a comment for wiki in activity stream
     * [WIKI-1461] - Edit icon display
     * [WIKI-1461] - Problem in image display when renaming  the title of a wiki page 
-
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
@@ -80,8 +75,9 @@ eXo Calendar ${org.exoplatform.platform.version}
     * [CAL-1494] - Edit recurring events from month view
     * [CAL-1496] - Display activity after edit one instance of a repeated event
 
-
 ** Improvement
+    * [CAL-1335] - Add more times units to calendar's events reminder
+    * [CAL-1463] - Cannot override calendar event component
 
 eXo Forum ${org.exoplatform.platform.version}
 *************************
@@ -89,10 +85,6 @@ eXo Forum ${org.exoplatform.platform.version}
 ** Bug
     * [FORUM-1333] - Watches action is displayed with a delete icon
     * [FORUM-1428] - Top bar Navigation -Quick Add Discussion/Poll
-
-
-** Improvement
-
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
@@ -129,14 +121,29 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-8607] - Fix CSRF regressions
     * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results"
 
-
-
 ** Improvement
+    * [PLF-7224] - Upgrade Google Closure Compiler from v20131014 to v20170910 version
+    * [PLF-8055] - Allow to disable Login History by configuration
+    * [PLF-8192] - Applications in spaces should be accessible by right click
+    * [PLF-8213] - New  tabs style to be added to the navigation page in components | and tabs page in patterns
+    * [PLF-8214] - Adding a drawer pattern to the ux guideline
+    * [PLF-8215] - Changing style of all buttons in ux guideline
+    * [PLF-8350] - Remove "inline" style in /unified-search/js/common/search.js
+    * [PLF-8360] - Search and study the best devtool solution for dev and prod mode
+    * [PLF-8364] - The design for the avatar should follow what we have in our designs
+    * [PLF-8368] - Confirm before refreshing a page
+    * [PLF-8402] - Disable/Enable features by configuration
+    * [PLF-8433] - Upgrade Swagger lib to version 1.5.22 and Jackson lib to version 2.9.8
+    * [PLF-8438] - Upgrade Vue.js and Vuetify to latest versions
+    * [PLF-8541] - Allow to configure max concurrent requests to elasticsearch
+    * [PLF-8550] - Add a refresh button to the "Wallets administration"
+    * [PLF-8578] - Delete ability to select user by address when requesting funds
+    * [PLF-8603] - [Reward] Unable to exit from the orders filter in Perk Store in portrait mode
+    * [PLF-8603] - [Reward] Unable to exit from the orders filter in Perk Store in portrait mode
 
-
-** Task
-    
-
+** New feature
+    * [PLF-8373] - Company Branding
+    * [PLF-8384] - Productize Rewards addons
 
 eXo Task 2.3.0
 **************
@@ -155,4 +162,6 @@ eXo Chat 2.3.0
     * [CHAT-1050] - Start/Stop meeting is not synchronized between participants
 
 ** Improvement
-
+    * [CHAT-971]  - Chat contacts filter should not consider accents
+    * [CHAT-1016] - Add Home button in Desktop Chat application
+    * [CHAT-1018] - Cannot remove upload files on the chat room
