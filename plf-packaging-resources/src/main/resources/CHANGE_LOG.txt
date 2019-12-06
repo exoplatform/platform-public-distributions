@@ -14,140 +14,145 @@ eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [EXOGTN-2251] - Make PLIDM consistent on LDAP disconnection
-    * [EXOGTN-2384] - Hibernate error after an IDM error
-    * [EXOGTN-2401] - Wrong Gatein dep dependency version in WCI project
-    * [EXOGTN-2406] - NPE when reading JMX Bean attributes during startup
-    * [EXOGTN-2418] - cannot Add new tab for Dashboard
+
 
 ** Improvement
-    * [EXOGTN-2397] - Gender field missing empty field
+
 
 eXo Commons ${org.exoplatform.platform.version}
 *************************
+
+** Bug
+    * [COMMONS-585] - Use justify plugin with exo custom plugin selectImage
+
 
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7825] - Can't find file when its name is a single word
-    * [ECMS-7827] - Missing FR translate in content selector upload popup
-    * [ECMS-7841] - can not select permission when adding document template
-    * [ECMS-7844] - Fix Sonar blocker issues
-    * [ECMS-7845] - Unknown error when editing personal content from content explorer
-    * [ECMS-7846] - Document app doesn't work at all for normal users
-    * [ECMS-7881] - color of SEO is still red when input data
-    * [ECMS-7882] - color of SEO is not orange when I Input data for Description or Keywords field only
-    * [ECMS-7883] - delete button is displayed when select a default folder
-    * [ECMS-7889] - Document's template is empty
-    * [ECMS-7890] - Unknown error appears when click on Advanced Scripts
-    * [ECMS-7895] - favorite node are not displayed for user is not owner
-    * [ECMS-7896] - Right-click actions are not filtered based on user permissions
-    * [ECMS-7909] - [Open in Office] Can't open a shared file in different form
-    * [ECMS-7917] - Unknown error appears when search a document in site explorer
-    * [ECMS-7922] - Unkown error pop up is displayed when add a category tree
+    * [ECMS-7809] - The icon (+) and the category name should be aligned in the Edit category tree popup
+    * [ECMS-7943] - Can't save the new summary of document versions 
+    * [ECMS-7993] - Interruption in ChangeStateCronJob  at first corrupted node 
+
+ 
+
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6021] - Problem with links in notifications
-    * [SOC-6028] - Exception in the logs when assigning an user as a manager to a space group
-    * [SOC-6052] - Wrong page titles
-    * [SOC-6081] - file name/Type/size positions should be aligned
-    * [SOC-6122] - Reduce Space Name limitations
-    * [SOC-6128] - Social Activity REST Service returns wrong identity URL for spaces
-    * [SOC-6131] - Tooltip of user and space are displayed in top left corner in some cases
-    * [SOC-6137] - Blank space under activities comments must be removed
-    * [SOC-6177] - Activity is displayed on the bottom of "My activities" when a user is mentioned on it
-    * [SOC-6197] - Can't reply to comment with a link
+    * [SOC-6036] - [UI]Align activities filter dropdown to be align with the label 
+    * [SOC-6085] - Integration tests on Elasticsearch fail 
+    * [SOC-6227] - Test ExoSpacesAdministrationManageSpaces.test.js fails 
+    * [SOC-6229] - Deactivating auto activity for relationship 
+    * [SOC-6232] - Wrong notification content when react to activity after mention user 
+    * [SOC-6242] - Length of space name should be limited between 3 and 200 characters 
+    * [SOC-6247] - Warning message should be displayed if the length of space description exceeds 2000 chars 
+    * [SOC-6293] - Quick Add menu- Add Topic/Discussion in a space with long name 
+    * [SOC-6296] - Activity stream request is not performing well with mysql 5.7 
+    * [SOC-6299] - Liking a comment with an image throw an exception 
+    * [SOC-6304] - The new space menu toolbar is not displayed after scrolling  
+
+
 
 ** Improvement
-    * [SOC-6090] - Mark all as read in All Notifications page
+
 
 ** New feature
-    * [SOC-5712] - Editable activities and comments
-    * [SOC-6143] - Spaces Administration
+
 
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [WIKI-1417] - "null" is displayed when saving draft without title only with oracle db
+    * [WIKI-1455] - Timestamp label doesn't change when editing a comment for wiki in activity stream
+    * [WIKI-1461] - Edit icon display
+    * [WIKI-1461] - Problem in image display when renaming  the title of a wiki page 
+
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1428] - Qwick search doesn't work when share a personal calendar
-    * [CAL-1431] - Add Middle East Month naming style Calendar
-    * [CAL-1451] - Wrong category name is displayed on calendar
-    * [CAL-1460] - Calendar/ Details Tab are not displayed
+    * [CAL-1360] - Bad label in calendar
+    * [CAL-1457] - Create event : Problem of responsiveness in tablet and mobile
+    * [CAL-1468] - English message "Display a notification pop-up" in other language version
+    * [CAL-1494] - Edit recurring events from month view
+    * [CAL-1496] - Display activity after edit one instance of a repeated event
+
 
 ** Improvement
-    * [CAL-1358] - Improve the Create event popup
 
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [FORUM-1401] - user must log in to be displayed in manage users popup
-    * [FORUM-1412] - HTML code displayed when quote a post
+    * [FORUM-1333] - Watches action is displayed with a delete icon
+    * [FORUM-1428] - Top bar Navigation -Quick Add Discussion/Poll
+
 
 ** Improvement
-    * [FORUM-1409] - Add capability to track an opened topic event
+
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7052] - People section on profile is displayed improperly when user has no connections yet.
-    * [PLF-7607] - [Default-Skin][Responsive] Displayed Calendars tab in Calendar settings popup is displayed with bad format.
-    * [PLF-7961] - Searching file find default.html
-    * [PLF-8052] - Incorrect page title on the "View all notifications" page
-    * [PLF-8097] - eXo platform 5 start with many errors in minimal profile
-    * [PLF-8102] - Wrong RTL-Arabic text alignment in ativity stream
-    * [PLF-8141] - No timeout specified on the SMTP Transport for email notification
-    * [PLF-8150] - No update in an activity page when i click on a notification received for the same page
-    * [PLF-8168] - Space search is not consistent
-    * [PLF-8173] - Improve performance when listing a lot of users in Manage Users app
-    * [PLF-8174] - Out of memory in heap space encoutered by Wiki Page
-    * [PLF-8210] - Unified search is not working with files containing "_" in their titles.
-    * [PLF-8239] - Remove environment variable exo.file-rdbms.algorithm.checksum
-    * [PLF-8261] - When adding image in microblog, the image path is an absolute one, with the domain name
-    * [PLF-8298] - Login History table is not created on postgresql
+    * [PLF-7962] - Problem when selecting filter in unified search
+    * [PLF-8234] - addon.bat doesn't manage space character in the installation path
+    * [PLF-8235] - 500 Error message when displaying search results
+    * [PLF-8257] - Disabled user still displays in "Connections " block on Profile 
+    * [PLF-8313] - Upload Image using URL contains "*"
+    * [PLF-8317] - Space name: Content of warning should be updated when inserting a special character in the space name 
+    * [PLF-8345] - Clicking on a profile name from a profile tab : Redirection problem 
+    * [PLF-8349] - [MOBILE] unified search quick results display bug 
+    * [PLF-8358] - Mention notifications after edit  
+    * [PLF-8366] - Top-bar is overlapping with left-navigation Menu (Hamburger Menu)   
+    * [PLF-8387] - Browser error when displaying My Profile   
+    * [PLF-8424] - Impossible to use Emoticons in activity stream with MySQL   
+    * [PLF-8430] - Kudos style overrides some default styles   
+    * [PLF-8456] - Liquibase error during task table initialization  
+    * [PLF-8484] - Missing applications names in the dropdown menu of space application bar  
+    * [PLF-8488] - Space creator is still displayed as a Manager even when he's deleted  
+    * [PLF-8520] - Warning messages on startup when using Minimal profile  
+    * [PLF-8525] - Create & access new site: SkinService load issue when using minimal profile
+    * [PLF-8532] - Avatars in activities move when hovering the activity date
+    * [PLF-8554] - Last registered user doesn't appear when two users share a common connection
+    * [PLF-8566] - Unable to change title and subject for Daily and weekly digest email
+    * [PLF-8583] - Pop-up "Let's create your first task" is over add space menu
+    * [PLF-8590] - Enhance CSRF check parameter in URL
+    * [PLF-8592] - JS console error in space home page
+    * [PLF-8597] - Missing Message field in topic creation popup
+    * [PLF-8598] - Update exo-sample.properties to update cluster variables
+    * [PLF-8604] - A JS error is logged when commenting on Activity
+    * [PLF-8605] - Error 500 on spaceInfo rest end point when a space doesn't exist
+    * [PLF-8607] - Fix CSRF regressions
+    * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results"
+
+
 
 ** Improvement
-    * [PLF-7904] - Unify Show more Button with new style
-    * [PLF-8146] - not possible to return the user avatar image to its default
-    * [PLF-8178] - Display Update Notifications in the Browser Tab
-    * [PLF-8189] - Move data related to product information from JCR to JPA
-    * [PLF-8190] - Move data related to login history from JCR to JPA
-    * [PLF-8256] - Make Secure JCR folders upgrade plugins asynchronous
+
 
 ** Task
-    * [PLF-8265] - Do not build JBoss distribution anymore
+    
 
-eXo Task 2.2.0
+
+eXo Task 2.3.0
 **************
 
 ** Bug
-    * [TA-514] - Task list chops title
-    * [TA-546] - In tasks app, in a space, displayed with board view and group by assignee, unable to move task
-    * [TA-659] - Cannot update the project of a task
-    * [TA-670] - problem in formatting mail notification when mentioning someone in a task.
-    * [TA-671] - Wrong due date is added when creating task with chat
+	* [TA-665] - Due dates are not displayed correctly in tasks list view
 
-eXo Chat 2.2.0
+
+eXo Chat 2.3.0
 **************
 
 ** Bug
-    * [CHAT-928] - Presence status should be at the same level of the username
-    * [CHAT-983] - Mini chat is not well displayed when trying to open message
-    * [CHAT-994] - can not edit message with return to line
-    * [CHAT-999] - Scroll at top when loading a room
-    * [CHAT-1008] - changes are saved in notifications when I click on cancel button
+    * [CHAT-1012] - Chat app is not opened when click on desktop notification popup 
+    * [CHAT-1028] - Check Space Name displayed well with accent chars in its name
+    * [CHAT-1029] - Check upload file with some file types (jpg, png, pdf, doc, xls, ppt, docx, xlsx, pptx, odp, odt, ods zip) in Conversation
+    * [CHAT-1050] - Start/Stop meeting is not synchronized between participants
 
 ** Improvement
-    * [CHAT-972] - Clearing filter in chat is not convenient
-    * [CHAT-1001] - Add a badge of unread messages in the Mini Chat
+
