@@ -398,6 +398,16 @@
       <outputFileNameMapping>ROOT.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
+    <!-- TO DELETE: Legacy intranet unpack -->
+    <dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>org.exoplatform.addons.legacy-intranet:legacy-intranet-packaging:zip</include>
+      </includes>
+      <scope>provided</scope>
+      <unpack>true</unpack>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
   </dependencySets>
   <componentDescriptors>
     <componentDescriptor>assemblies/plf-copy-libraries-component.xml</componentDescriptor>
