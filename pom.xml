@@ -104,8 +104,6 @@
     <addon.exo.push-notifications.version>2.0.x-lightweight-SNAPSHOT</addon.exo.push-notifications.version>
     <addon.exo.digital-workplace.id>exo-digital-workplace</addon.exo.digital-workplace.id>
     <addon.exo.digital-workplace.version>1.0.x-lightweight-SNAPSHOT</addon.exo.digital-workplace.version>
-    <addon.exo.legacy-intranet.id>exo-legacy-intranet</addon.exo.legacy-intranet.id>
-    <addon.exo.legacy-intranet.version>6.0.x-lightweight-SNAPSHOT</addon.exo.legacy-intranet.version>
     <!-- Add-on manager extension to use (empty for Unix, .bat for Windows) -->
     <addon.manager.extension />
   </properties>
@@ -365,13 +363,6 @@
         <groupId>org.exoplatform.addons.digital-workplace</groupId>
         <artifactId>digital-workplace-packaging</artifactId>
         <version>${addon.exo.digital-workplace.version}</version>
-        <type>zip</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.legacy-intranet</groupId>
-        <artifactId>legacy-intranet-packaging</artifactId>
-        <version>${addon.exo.legacy-intranet.version}</version>
         <type>zip</type>
         <scope>provided</scope>
       </dependency>
