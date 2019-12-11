@@ -270,6 +270,10 @@
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.push-notifications.id}:${addon.exo.push-notifications.version}" />
                 </exec>
+                <!-- TO DELETE !!! -->
+                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
+                  <arg line="install exo-legacy-intranet:${project.version}" />
+                </exec>
               </target>
             </configuration>
           </execution>
