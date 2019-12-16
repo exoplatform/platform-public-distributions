@@ -97,7 +97,7 @@
     <addon.exo.wallet.id>exo-wallet</addon.exo.wallet.id>
     <addon.exo.wallet.version>2.0.x-lightweight-SNAPSHOT</addon.exo.wallet.version>
     <addon.exo.gamification.id>exo-gamification</addon.exo.gamification.id>
-    <addon.exo.gamification.version>2.0.x-SNAPSHOT</addon.exo.gamification.version>
+    <addon.exo.gamification.version>2.0.x-lightweight-SNAPSHOT</addon.exo.gamification.version>
     <addon.exo.enterprise-skin.id>exo-enterprise-skin</addon.exo.enterprise-skin.id>
     <addon.exo.enterprise-skin.version>6.0.x-lightweight-SNAPSHOT</addon.exo.enterprise-skin.version>
     <addon.exo.push-notifications.id>exo-push-notifications</addon.exo.push-notifications.id>
