@@ -67,6 +67,7 @@ eXo Platform ${org.exoplatform.platform.version}
     * [PLF-8641] - [Gamification] Badges avatars on reputation portlet doesn't work 
     * [PLF-8644] - Space Wiki page Edit: Issue when title contains accentuated letters  
     * [PLF-8650] - Wrong Display popup inside WebContent  
+    * [PLF-8654] - Preview does not work from document thumbnail in search results  
     * [PLF-8656] - Errors at startup about already existing gamification rules      
 
 ** Improvement
