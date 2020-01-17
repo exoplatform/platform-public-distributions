@@ -16,152 +16,65 @@ eXo GateIn ${org.exoplatform.platform.version}
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
-** Bug
-    * [COMMONS-585] - Use justify plugin with exo custom plugin selectImage
-    
-** Improvement
-    * [COMMONS-583] - Enahnce ExoFeatureService to allow feature activation by user
-
-
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7809] - The icon (+) and the category name should be aligned in the Edit category tree popup
-    * [ECMS-7943] - Can't save the new summary of document versions 
-    * [ECMS-7993] - Interruption in ChangeStateCronJob  at first corrupted node
-    
+    * [ECMS-7955] - Loss of the space application banner when opening a document from space's Activity stream
+    * [ECMS-7998] - No match between version number in the document preview, the activity stream, the list manage versions and in view versions
+    * [ECMS-7999] - Version History is lost when importing content with keep-publication
+    * [ECMS-8000] - Exported Web Content's content doesn't appear in a scv page
+    * [ECMS-8005] - Wrong Created Date displayed in the search result 
+   
 ** Improvement
-    * [ECMS-7954] - [QuickSearch]  Anonymous User cannot search public document
+    * [ECMS-7997] - Anonymous cannot search for any read webcontents / Documents    
+    
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-6036] - [UI]Align activities filter dropdown to be align with the label 
-    * [SOC-6085] - Integration tests on Elasticsearch fail 
-    * [SOC-6227] - Test ExoSpacesAdministrationManageSpaces.test.js fails 
-    * [SOC-6229] - Deactivating auto activity for relationship 
-    * [SOC-6232] - Wrong notification content when react to activity after mention user 
-    * [SOC-6242] - Length of space name should be limited between 3 and 200 characters 
-    * [SOC-6247] - Warning message should be displayed if the length of space description exceeds 2000 chars 
-    * [SOC-6293] - Quick Add menu- Add Topic/Discussion in a space with long name 
-    * [SOC-6296] - Activity stream request is not performing well with mysql 5.7 
-    * [SOC-6299] - Liking a comment with an image throw an exception 
-    * [SOC-6304] - The new space menu toolbar is not displayed after scrolling  
+    * [SOC-6299] - Liking a comment with an image throw an exception
 
-** Improvement
-    * [SOC-6263] - Display real creation date of activity in tooltip
-  
-** New feature
-    * [SOC-6178] - Spaces Homepage Portlets  
-    * [SOC-6231] - Space templates  
 
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
-
-** Bug
-    * [WIKI-1455] - Timestamp label doesn't change when editing a comment for wiki in activity stream
-    * [WIKI-1461] - Edit icon display
-    * [WIKI-1461] - Problem in image display when renaming  the title of a wiki page 
 
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1360] - Bad label in calendar
-    * [CAL-1457] - Create event : Problem of responsiveness in tablet and mobile
-    * [CAL-1468] - English message "Display a notification pop-up" in other language version
-    * [CAL-1494] - Edit recurring events from month view
-    * [CAL-1496] - Display activity after edit one instance of a repeated event
+    * [CAL-1466] - Anglophone format for a french calendar
+    * [CAL-1479] - Wrong Generated Calendar RSS feed
+    * [CAL-1508] - List of Guests are missing on ics filed
 
 ** Improvement
-    * [CAL-1335] - Add more times units to calendar's events reminder
-    * [CAL-1463] - Cannot override calendar event component
+    * [CAL-1509] - Disable save button when trying to create an event without selecting a calendar name
 
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
-** Bug
-    * [FORUM-1333] - Watches action is displayed with a delete icon
-    * [FORUM-1428] - Top bar Navigation -Quick Add Discussion/Poll
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7962] - Problem when selecting filter in unified search
-    * [PLF-8234] - addon.bat doesn't manage space character in the installation path
-    * [PLF-8235] - 500 Error message when displaying search results
-    * [PLF-8257] - Disabled user still displays in "Connections " block on Profile 
-    * [PLF-8313] - Upload Image using URL contains "*"
-    * [PLF-8317] - Space name: Content of warning should be updated when inserting a special character in the space name 
-    * [PLF-8345] - Clicking on a profile name from a profile tab : Redirection problem 
-    * [PLF-8349] - [MOBILE] unified search quick results display bug 
-    * [PLF-8358] - Mention notifications after edit  
-    * [PLF-8366] - Top-bar is overlapping with left-navigation Menu (Hamburger Menu)   
-    * [PLF-8387] - Browser error when displaying My Profile   
-    * [PLF-8424] - Impossible to use Emoticons in activity stream with MySQL   
-    * [PLF-8430] - Kudos style overrides some default styles   
-    * [PLF-8456] - Liquibase error during task table initialization  
-    * [PLF-8484] - Missing applications names in the dropdown menu of space application bar  
-    * [PLF-8488] - Space creator is still displayed as a Manager even when he's deleted  
-    * [PLF-8520] - Warning messages on startup when using Minimal profile  
-    * [PLF-8525] - Create & access new site: SkinService load issue when using minimal profile
-    * [PLF-8532] - Avatars in activities move when hovering the activity date
-    * [PLF-8554] - Last registered user doesn't appear when two users share a common connection
-    * [PLF-8566] - Unable to change title and subject for Daily and weekly digest email
-    * [PLF-8583] - Pop-up "Let's create your first task" is over add space menu
-    * [PLF-8590] - Enhance CSRF check parameter in URL
-    * [PLF-8592] - JS console error in space home page
-    * [PLF-8597] - Missing Message field in topic creation popup
-    * [PLF-8598] - Update exo-sample.properties to update cluster variables
-    * [PLF-8604] - A JS error is logged when commenting on Activity
-    * [PLF-8605] - Error 500 on spaceInfo rest end point when a space doesn't exist
-    * [PLF-8607] - Fix CSRF regressions
-    * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results"
+    * [PLF-7959] - Web content are not findable by content or by summary
+    * [PLF-8448] - Web content are not findable by content or by summary
+    * [PLF-8459] - Wrong top bar color and font size in gamification admin pages
+    * [PLF-8604] - A JS error is logged when commenting on Activity 
+    * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results" 
+    * [PLF-8641] - [Gamification] Badges avatars on reputation portlet doesn't work 
+    * [PLF-8644] - Space Wiki page Edit: Issue when title contains accentuated letters  
+    * [PLF-8650] - Wrong Display popup inside WebContent  
+    * [PLF-8656] - Errors at startup about already existing gamification rules      
 
 ** Improvement
-    * [PLF-7224] - Upgrade Google Closure Compiler from v20131014 to v20170910 version
-    * [PLF-8055] - Allow to disable Login History by configuration
-    * [PLF-8192] - Applications in spaces should be accessible by right click
-    * [PLF-8213] - New  tabs style to be added to the navigation page in components | and tabs page in patterns
-    * [PLF-8214] - Adding a drawer pattern to the ux guideline
-    * [PLF-8215] - Changing style of all buttons in ux guideline
-    * [PLF-8350] - Remove "inline" style in /unified-search/js/common/search.js
-    * [PLF-8360] - Search and study the best devtool solution for dev and prod mode
-    * [PLF-8364] - The design for the avatar should follow what we have in our designs
-    * [PLF-8368] - Confirm before refreshing a page
-    * [PLF-8402] - Disable/Enable features by configuration
-    * [PLF-8433] - Upgrade Swagger lib to version 1.5.22 and Jackson lib to version 2.9.8
-    * [PLF-8438] - Upgrade Vue.js and Vuetify to latest versions
-    * [PLF-8541] - Allow to configure max concurrent requests to elasticsearch
-    * [PLF-8550] - Add a refresh button to the "Wallets administration"
-    * [PLF-8578] - Delete ability to select user by address when requesting funds
-    * [PLF-8603] - [Reward] Unable to exit from the orders filter in Perk Store in portrait mode
-    * [PLF-8603] - [Reward] Unable to exit from the orders filter in Perk Store in portrait mode
-
-** New feature
-    * [PLF-8373] - Company Branding
-    * [PLF-8384] - Productize Rewards addons
+    * [PLF-7957] - Draft Web Content are displayed in search (without publication)
 
 eXo Task 2.3.0
 **************
 
-** Bug
-	* [TA-665] - Due dates are not displayed correctly in tasks list view
-
-
 eXo Chat 2.3.0
 **************
 
-** Bug
-    * [CHAT-1012] - Chat app is not opened when click on desktop notification popup 
-    * [CHAT-1028] - Check Space Name displayed well with accent chars in its name
-    * [CHAT-1029] - Check upload file with some file types (jpg, png, pdf, doc, xls, ppt, docx, xlsx, pptx, odp, odt, ods zip) in Conversation
-    * [CHAT-1050] - Start/Stop meeting is not synchronized between participants
-
-** Improvement
-    * [CHAT-971]  - Chat contacts filter should not consider accents
-    * [CHAT-1016] - Add Home button in Desktop Chat application
-    * [CHAT-1018] - Cannot remove upload files on the chat room

@@ -1,5 +1,5 @@
 ========================================
-Release notes - eXo Platform ${org.exoplatform.platform.version}
+Release notes - eXo Platform 5.3.0
 ========================================
 
 
@@ -12,6 +12,25 @@ III.  UPGRADE NOTES
 IV.   KNOWN ISSUES
 
 = I. MAIN CHANGES =
+
+
+Main changes since Platform 5.2
+
+* Features 
+** Company Branding 
+** Space Templates 
+** Rewards 
+** Gamification 
+** OnlyOffice 
+** Space widgets
+* Improvements 
+** Allow to configure max concurrent requests to Elasticsearch 
+** Allow to disable login history by configuration 
+** Remove uploaded files in chat room 
+** Chat contacts filter should not consider accents 
+** Confirm before refreshing a page 
+** Disable/Enale features by configuration 
+** Allow anonymous users to search public documents 
 
 Main changes since Platform 5.1
 
@@ -208,18 +227,18 @@ Since Platform 5.1, the file upgrade.properties is not used anymore, the upgrade
 
 * Prepare bundle:
 ** If eXo Platform is connected to a populated organizational data source, Organization Integration Service must be activated so that the data are synchronized. Please refer to chapter 7 "LDAP Integration" in Administrator Guide for the detail.
-** Go to $PLATFORM-${org.exoplatform.platform.version}-TOMCAT_HOME/gatein/conf/ folder (Tomcat bundle).
-** Rename upgrade—sample.properties to upgrade.properties
+** Go to $PLATFORM-5.3.0-TOMCAT_HOME/gatein/conf/ folder (Tomcat bundle).
+** Rename upgradeâ€”sample.properties to upgrade.properties
 * Start server. The upgrade will be run automatically.
 * Stop server.
 * Remove/Rename the file upgrade.properties
 * Restart the server. You're ready.
 
-== Upgrading from Platform 5.1.0 to ${org.exoplatform.platform.version} ==
+== Upgrading from Platform 5.1.0 to 5.3.0 ==
 
 === Data migration ===
 
-The following data migration are performed on the first startup of PLF ${org.exoplatform.platform.version}:
+The following data migration are performed on the first startup of PLF 5.3.0:
 * Login History data are moved from JCR to JPA
 * Product Information data are moved from JCR to JPA
 
@@ -257,7 +276,7 @@ org.exoplatform.jcr.locks.force.remove=true
 
 === Data migration ===
 
-The following data migration are performed on the first startup of PLF ${org.exoplatform.platform.version}:
+The following data migration are performed on the first startup of PLF 5.3.0:
 * Settings and Notifications data are moved from JCR to JPA
 * Files are indexed in Elasticsearch instead of in the JCR
 * All space members are moved to JPA
@@ -310,7 +329,7 @@ commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
 In a cluster environment, database locks issues can happen when starting the nodes the first time after the upgrade.
 The best solution to fix this is to start and stop completely one of the nodes to do the upgrade, then start the cluster.
 
-== Upgrading from Platform 4.3.1 to ${org.exoplatform.platform.version} ==
+== Upgrading from Platform 4.3.1 to 5.3.0 ==
 
 === Description of the plugins used in this upgrade ===
 
@@ -351,8 +370,8 @@ commons.upgrade.NodeTypeTemplateUpgradePlugin.enable=true
 
 * Prepare bundle:
 ** If eXo Platform is connected to a populated organizational data source, Organization Integration Service must be activated so that the data are synchronized. Please refer to chapter 7 "LDAP Integration" in Administrator Guide for the detail.
-** Go to $PLATFORM-${org.exoplatform.platform.version}-TOMCAT_HOME/gatein/conf/ folder (Tomcat bundle) or $PLATFORM-${org.exoplatform.platform.version}-JBOSS_HOME/standalone/configuration/gatein/ folder (Jboss bundle).
-** Rename upgrade-4.2.1-to-4.3.0—sample.properties to upgrade.properties
+** Go to $PLATFORM-5.3.0-TOMCAT_HOME/gatein/conf/ folder (Tomcat bundle) or $PLATFORM-5.3.0-JBOSS_HOME/standalone/configuration/gatein/ folder (Jboss bundle).
+** Rename upgrade-4.2.1-to-4.3.0â€”sample.properties to upgrade.properties
 * Start server. The upgrade will be run automatically.
 * Stop server.
 * Remove/Rename the file upgrade.properties
