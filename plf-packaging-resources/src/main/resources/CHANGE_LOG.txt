@@ -16,17 +16,24 @@ eXo GateIn ${org.exoplatform.platform.version}
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
+** Bug
+    * [COMMONS-586] - Transaction Problem after Migration
+
+
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
+    * [ECMS-6177] - [Upload file] No message when uploading a file with the same name as an existing file
     * [ECMS-7955] - Loss of the space application banner when opening a document from space's Activity stream
+    * [ECMS-7970] - Check the action "Open on Desktop" for other file type
     * [ECMS-7998] - No match between version number in the document preview, the activity stream, the list manage versions and in view versions
     * [ECMS-7999] - Version History is lost when importing content with keep-publication
     * [ECMS-8000] - Exported Web Content's content doesn't appear in a scv page
     * [ECMS-8005] - Wrong Created Date displayed in the search result 
    
 ** Improvement
+    * [ECMS-7813] - Upgrade ITHit to version 5   
     * [ECMS-7997] - Anonymous cannot search for any read webcontents / Documents    
     
 
@@ -60,8 +67,9 @@ eXo Platform ${org.exoplatform.platform.version}
 
 ** Bug
     * [PLF-7959] - Web content are not findable by content or by summary
-    * [PLF-8448] - Web content are not findable by content or by summary
-    * [PLF-8459] - Wrong top bar color and font size in gamification admin pages
+    * [PLF-8216] - "exo.email.smtp.from" not always used for "from" : emailSender
+    * [PLF-8448] - Unified search Exact match using double quotes is not accurate enough
+    * [PLF-8495] - Wrong top bar color and font size in gamification admin pages
     * [PLF-8604] - A JS error is logged when commenting on Activity 
     * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results" 
     * [PLF-8641] - [Gamification] Badges avatars on reputation portlet doesn't work 
@@ -72,6 +80,7 @@ eXo Platform ${org.exoplatform.platform.version}
 
 ** Improvement
     * [PLF-7957] - Draft Web Content are displayed in search (without publication)
+    * [PLF-8424] - Document detail view: Real stars rating and votes count not displayed
 
 eXo Task 2.3.0
 **************
