@@ -4,87 +4,103 @@ Changelog Platform ${org.exoplatform.platform.version}
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
-eXo Kernel ${org.exoplatform.platform.version}
-*************************
-
-eXo JCR ${org.exoplatform.platform.version}
-*************************
 
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
 
-eXo Commons ${org.exoplatform.platform.version}
+** Bug
+    * [EXOGTN-2436] - Unnecessary HTML sanitization of javascript in WebUI Ajax requests
+
+** Improvement
+    * [EXOGTN-2433] - Improve Group Management Fetch treatement
+    
+    
+eXo JCR ${org.exoplatform.platform.version}
 *************************
 
-** Bug
-    * [COMMONS-586] - Transaction Problem after Migration
+** Bug   
+    * [JCR-2470] - Hidden exception interrupted the platform reindexation 
 
 
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-6177] - [Upload file] No message when uploading a file with the same name as an existing file
-    * [ECMS-7955] - Loss of the space application banner when opening a document from space's Activity stream
-    * [ECMS-7970] - Check the action "Open on Desktop" for other file type
-    * [ECMS-7998] - No match between version number in the document preview, the activity stream, the list manage versions and in view versions
-    * [ECMS-7999] - Version History is lost when importing content with keep-publication
-    * [ECMS-8000] - Exported Web Content's content doesn't appear in a scv page
-    * [ECMS-8005] - Wrong Created Date displayed in the search result 
-   
-** Improvement
-    * [ECMS-7813] - Upgrade ITHit to version 5   
-    * [ECMS-7997] - Anonymous cannot search for any read webcontents / Documents    
+    * [ECMS-7628] - Wrong CLV pagination Display
+    * [ECMS-7935] - Comments written from activity stream are not displayed in the preview mode when the document is open from unified research     
+    * [ECMS-8018] - Activity images are lost when the file is renamed 
+    * [MOB-2283]  - [Tablet] "Open in Desktop" icon should not be displayed in file activity
+       
+** Note: To have the fix of ECMS-7935 applicable for old documents, a reindexation of all files is needed. 
+         Otherwise, it will be only applicable on new documents.    
     
-
-eXo Social ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [SOC-6299] - Liking a comment with an image throw an exception
+** Improvement    
+    * [ECMS-8013] - Install Full version ITHit5  
+    * [ECMS-8015] - Add missing id attribute for fetched files
 
 
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
+** Bug
+    * [WIKI-1473] - Wiki Page added from "HOW-TO Guide" Template is not displayed
+    * [WIKI-1475] - Unable to select My Wiki / Intranet as a location when moving adding a related page
+
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1466] - Anglophone format for a french calendar
-    * [CAL-1479] - Wrong Generated Calendar RSS feed
-    * [CAL-1508] - List of Guests are missing on ics filed
-
-** Improvement
-    * [CAL-1509] - Disable save button when trying to create an event without selecting a calendar name
-
-eXo Forum ${org.exoplatform.platform.version}
-*************************
+    * [CAL-1511] - Space Calendar not selected by Default
 
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-7959] - Web content are not findable by content or by summary
-    * [PLF-8216] - "exo.email.smtp.from" not always used for "from" : emailSender
-    * [PLF-8448] - Unified search Exact match using double quotes is not accurate enough
-    * [PLF-8495] - Wrong top bar color and font size in gamification admin pages
-    * [PLF-8604] - A JS error is logged when commenting on Activity 
-    * [PLF-8622] - Unified Search: ERROR in the logs clicking on "Show more results" 
-    * [PLF-8641] - [Gamification] Badges avatars on reputation portlet doesn't work 
-    * [PLF-8644] - Space Wiki page Edit: Issue when title contains accentuated letters  
-    * [PLF-8650] - Wrong Display popup inside WebContent  
-    * [PLF-8654] - Preview does not work from document thumbnail in search results  
-    * [PLF-8656] - Errors at startup about already existing gamification rules      
+    * [PLF-8158] - Image Insertion issue in a web content under IE11 and Microsoft Edge
+    * [PLF-8316] - Published document Link Doesn't lead to its new version
+    * [PLF-8642] - Wrong digest mail (Daily / Weekly) are sent to users concerning task application 
+    * [PLF-8677] - New-contents creation must not be accepted inside web-Contents
+    * [PLF-8683] - Quick Search - Search for {} issue
+    * [PLF-8708] - Opening Document displays an error inside subfolder of folder's symlink
+    * [PLF-8734] - Digest Email info : Missing key values in ressource bundle
+    * [PLF-8745] - Uploaded Documents not displayed in Document Application
+
 
 ** Improvement
-    * [PLF-7957] - Draft Web Content are displayed in search (without publication)
-    * [PLF-8424] - Document detail view: Real stars rating and votes count not displayed
+    * [PLF-8659] - "Edit Online" button missing in document's preview in search results and in news attachements
+    * [PLF-8679] - Notification Sender's name input should not accept unsupported characters
 
-eXo Task 2.3.0
+
+eXo Kudos 1.1.2
 **************
 
-eXo Chat 2.3.0
+** Bug
+    * [PLF-8655] - Kudos administration page fails to be created when exo-wallet is not installed 
+
+eXo Kernel ${org.exoplatform.platform.version}
+*************************
+
+eXo JCR ${org.exoplatform.platform.version}
+*************************
+
+eXo Forum ${org.exoplatform.platform.version}
+*************************
+
+eXo Social ${org.exoplatform.platform.version}
+*************************
+
+eXo Commons ${org.exoplatform.platform.version}
+*************************
+
+eXo Task 2.3.2
 **************
 
+eXo Chat 2.3.2
+**************
+
+eXo Wallet 1.0.2
+**************
+
+eXo Gamification 1.2.2
+**************
