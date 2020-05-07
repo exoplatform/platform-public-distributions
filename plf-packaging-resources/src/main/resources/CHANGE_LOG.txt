@@ -5,78 +5,49 @@ Changelog Platform ${org.exoplatform.platform.version}
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
 
-eXo GateIn ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [EXOGTN-2436] - Unnecessary HTML sanitization of javascript in WebUI Ajax requests
-
-** Improvement
-    * [EXOGTN-2433] - Improve Group Management Fetch treatement
-    
-    
-eXo JCR ${org.exoplatform.platform.version}
-*************************
-
-** Bug   
-    * [JCR-2470] - Hidden exception interrupted the platform reindexation 
-
-
 eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7628] - Wrong CLV pagination Display
-    * [ECMS-7935] - Comments written from activity stream are not displayed in the preview mode when the document is open from unified research     
-    * [ECMS-8018] - Activity images are lost when the file is renamed 
-    * [MOB-2283]  - [Tablet] "Open in Desktop" icon should not be displayed in file activity
-       
-** Note: To have the fix of ECMS-7935 applicable for old documents, a reindexation of all files is needed. 
-         Otherwise, it will be only applicable on new documents.    
-    
-** Improvement    
-    * [ECMS-8013] - Install Full version ITHit5  
-    * [ECMS-8015] - Add missing id attribute for fetched files
-
-
-eXo Wiki ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [WIKI-1473] - Wiki Page added from "HOW-TO Guide" Template is not displayed
-    * [WIKI-1475] - Unable to select My Wiki / Intranet as a location when moving adding a related page
-
+    * [ECMS-7945] - Unable to remote edit documents stored in space 
+    * [ECMS-8012] - Web-Contents schedule publication issue 
+   
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1511] - Space Calendar not selected by Default
+    * [CAL-1476] - Don't receive an invitation mail for event created in the calendar application of a space
 
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8158] - Image Insertion issue in a web content under IE11 and Microsoft Edge
-    * [PLF-8316] - Published document Link Doesn't lead to its new version
-    * [PLF-8642] - Wrong digest mail (Daily / Weekly) are sent to users concerning task application 
-    * [PLF-8677] - New-contents creation must not be accepted inside web-Contents
-    * [PLF-8683] - Quick Search - Search for {} issue
-    * [PLF-8708] - Opening Document displays an error inside subfolder of folder's symlink
-    * [PLF-8734] - Digest Email info : Missing key values in ressource bundle
-    * [PLF-8745] - Uploaded Documents not displayed in Document Application
-
-
+    * [PLF-8187] - Exception when disabling activity
+    * [PLF-8417] - Edit of an activity not taken into account
+    * [PLF-8437] - Extraction Problem with Lecko Addon
+    * [PLF-8635] - Image added in comments are lost after a while 
+    * [PLF-8664] - Error at startup when path contains a space  
+    * [PLF-8665] - [OnlyOffice] Creating a document in a space that has an accented character  
+    * [PLF-8727] - [Navigation Management] Site Navigation right click hidden choices 
+    * [PLF-8736] - Notification by eMail : warning displayed in logs 
+	
 ** Improvement
-    * [PLF-8659] - "Edit Online" button missing in document's preview in search results and in news attachements
-    * [PLF-8679] - Notification Sender's name input should not accept unsupported characters
+    * [PLF-8188] - Profile pictures distorted 
+    * [PLF-8525] - The social popover does not display the long user job title correctly  
 
 
-eXo Kudos 1.1.2
+eXo Chat 2.3.3
 **************
 
-** Bug
-    * [PLF-8655] - Kudos administration page fails to be created when exo-wallet is not installed 
+** Task
+    * [CHAT-1068] - Add missing image for default user avatar
+    
+eXo GateIn ${org.exoplatform.platform.version}
+*************************
+    
+eXo JCR ${org.exoplatform.platform.version}
+*************************    
 
 eXo Kernel ${org.exoplatform.platform.version}
 *************************
@@ -93,14 +64,17 @@ eXo Social ${org.exoplatform.platform.version}
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
-eXo Task 2.3.2
+eXo Wiki ${org.exoplatform.platform.version}
+*************************
+
+eXo Kudos 1.1.3
 **************
 
-eXo Chat 2.3.2
-**************
+eXo Task 2.3.3
+************** 
+    
+eXo Wallet 1.0.3
+******************
 
-eXo Wallet 1.0.2
-**************
-
-eXo Gamification 1.2.2
+eXo Gamification 1.2.3
 **************
