@@ -9,39 +9,56 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS-7945] - Unable to remote edit documents stored in space 
-    * [ECMS-8012] - Web-Contents schedule publication issue 
+    * [ECMS] Shared document name issue
+    * [ECMS-7946] Symlink for a file in a specific space is not removed after deleting that space
+
    
 eXo Calendar ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [CAL-1476] - Don't receive an invitation mail for event created in the calendar application of a space
+    * [CAL-1516] Edit event : Email invitation not sent
+    * [CAL-1490] Date format doesn't change
 
+eXo Wiki ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+    * [WIKI-1483] Can't access to wiki pages in a space after removing/adding wiki application  
+    
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8187] - Exception when disabling activity
-    * [PLF-8417] - Edit of an activity not taken into account
-    * [PLF-8437] - Extraction Problem with Lecko Addon
-    * [PLF-8635] - Image added in comments are lost after a while 
-    * [PLF-8664] - Error at startup when path contains a space  
-    * [PLF-8665] - [OnlyOffice] Creating a document in a space that has an accented character  
-    * [PLF-8727] - [Navigation Management] Site Navigation right click hidden choices 
-    * [PLF-8736] - Notification by eMail : warning displayed in logs 
+    * [PLF-8670] Scrolling effect
+    * [PLF-8674] Disabled users' display issues
+    * [PLF-8756] Documents: Cut and paste PDF file to original position issue
+    * [PLF-8765] Oauth integration: sign up/in with linkedin account issue
+    * [PLF-8768] Can't download a file from the activity stream and the preview when exo-onlyoffice addon is installed
+    * [Lecko] Different UserIds for the same user activities
+    * [SAML] 403 Error when rendering  the spaces Management permissions tab
+    * [Remote-edit] addon doesn’t uninstall correctly
+    * [CKEditor] InsertPortalLink and Content functionalities are missing
+
 	
 ** Improvement
-    * [PLF-8188] - Profile pictures distorted 
-    * [PLF-8525] - The social popover does not display the long user job title correctly  
+    * [Search]  Improve search algorithm
 
+eXo Social ${org.exoplatform.platform.version}
+*************************
 
-eXo Chat 2.3.3
+** Bug
+    * [SOC-4717] When the space's description is long it is truncated when listing the spaces
+    * [SOC-6266] [MAIL] [EDGE] Broken Image instead of [integrated image] placeholder
+    * [Space] Edit Space name : display name length issue
+
+eXo Chat 2.3.4
 **************
 
-** Task
-    * [CHAT-1068] - Add missing image for default user avatar
+** Bug
+    * [CHAT-1059] MalformedURLException exception raised at first access
+
     
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
@@ -58,23 +75,17 @@ eXo JCR ${org.exoplatform.platform.version}
 eXo Forum ${org.exoplatform.platform.version}
 *************************
 
-eXo Social ${org.exoplatform.platform.version}
-*************************
-
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
-eXo Wiki ${org.exoplatform.platform.version}
-*************************
-
-eXo Kudos 1.1.3
+eXo Kudos 1.1.4
 **************
 
-eXo Task 2.3.3
+eXo Task 2.3.4
 ************** 
     
-eXo Wallet 1.0.3
+eXo Wallet 1.0.4
 ******************
 
-eXo Gamification 1.2.3
+eXo Gamification 1.2.4
 **************
