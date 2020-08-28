@@ -9,56 +9,52 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS] Shared document name issue
-    * [ECMS-7946] Symlink for a file in a specific space is not removed after deleting that space
-
-   
-eXo Calendar ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [CAL-1516] Edit event : Email invitation not sent
-    * [CAL-1490] Date format doesn't change
-
-eXo Wiki ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [WIKI-1483] Can't access to wiki pages in a space after removing/adding wiki application  
+    * [ECMS] File name conversion problem after uploading a file with a name containing special character
     
-
-eXo Platform ${org.exoplatform.platform.version}
+    
+eXo Forum ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [PLF-8670] Scrolling effect
-    * [PLF-8674] Disabled users' display issues
-    * [PLF-8756] Documents: Cut and paste PDF file to original position issue
-    * [PLF-8765] Oauth integration: sign up/in with linkedin account issue
-    * [PLF-8768] Can't download a file from the activity stream and the preview when exo-onlyoffice addon is installed
-    * [Lecko] Different UserIds for the same user activities
-    * [SAML] 403 Error when rendering  the spaces Management permissions tab
-    * [Remote-edit] addon doesn’t uninstall correctly
-    * [CKEditor] InsertPortalLink and Content functionalities are missing
+    * [FORUM]Direct link to Forum home doesn’t work    
 
-	
-** Improvement
-    * [Search]  Improve search algorithm
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [SOC-4717] When the space's description is long it is truncated when listing the spaces
-    * [SOC-6266] [MAIL] [EDGE] Broken Image instead of [integrated image] placeholder
-    * [Space] Edit Space name : display name length issue
+    * [Social] Search by position doesn't work properly 
+    * [MANAGE-SPACES] Can’t Join Spaces when adding an Edit ability
 
-eXo Chat 2.3.4
+
+
+eXo Platform ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+    * [Password Policy] Custom validator parameters are not considered when resetting
+    * [Perkstore] Perkstore returns back to the navigation menu, even after its deletion
+    * [PLF] Add Generic Vuetify Parent dialog for all applications
+
+
+eXo Chat 2.3.5
 **************
 
 ** Bug
-    * [CHAT-1059] MalformedURLException exception raised at first access
+    * [CHAT] Could not chat with user having cyrillic characters in full name
+    * [CHAT] Can't delete a file uploaded from chat one to one
 
+
+
+
+eXo News 1.1.3
+**************
+
+** Bug
+    * [News] Latest News template never displays summary
+    * [News] "Activity has been deleted" when creating a news
+    * [News]hen the news contains a single quote in the title the details are not displayed when the news is shared
+    
     
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
@@ -72,20 +68,25 @@ eXo Kernel ${org.exoplatform.platform.version}
 eXo JCR ${org.exoplatform.platform.version}
 *************************
 
-eXo Forum ${org.exoplatform.platform.version}
-*************************
-
 eXo Commons ${org.exoplatform.platform.version}
 *************************
 
-eXo Kudos 1.1.4
+eXo Calendar ${org.exoplatform.platform.version}
+*************************
+
+eXo Wiki ${org.exoplatform.platform.version}
+*************************
+
+eXo Kudos 1.1.5
 **************
 
-eXo Task 2.3.4
+eXo Task 2.3.5
 ************** 
     
-eXo Wallet 1.0.4
+eXo Wallet 1.0.5
 ******************
 
-eXo Gamification 1.2.4
+eXo Gamification 1.2.5
 **************
+
+
