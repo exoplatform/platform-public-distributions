@@ -9,52 +9,46 @@ eXo ECMS ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [ECMS] File name conversion problem after uploading a file with a name containing special character
+    * Fix the display problem in view information form for documents with cyrillic chars
+    * Fix CLV wrong display issue when it contains a document with white space
+    * Fix versioning issue of a file containing a special character in its name
+    * Fix search documents failure when the key word in the search field contains special character such as "_"
+    * Fix the issue of breaking the strean when sharing media such as a video
+    * Can't change the icon image of a folder in space's document application
     
-    
-eXo Forum ${org.exoplatform.platform.version}
-*************************
-
-** Bug
-    * [FORUM]Direct link to Forum home doesn’t work    
-
 
 eXo Social ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [Social] Search by position doesn't work properly 
-    * [MANAGE-SPACES] Can’t Join Spaces when adding an Edit ability
-
+    * Fix the position of "invite" button in members application of a space
+    * Fix the empty display of activities relates to news and files uploard in "Recent Activity" section of the user profile
+    * Fix issue of members with jsessionid in SOC_SPACE_MEMBERS
+    * Space name with Cyrillic char "ь" not working after restarting server
 
 
 eXo Platform ${org.exoplatform.platform.version}
 *************************
 
 ** Bug
-    * [Password Policy] Custom validator parameters are not considered when resetting
-    * [Perkstore] Perkstore returns back to the navigation menu, even after its deletion
-    * [PLF] Add Generic Vuetify Parent dialog for all applications
-
-
-eXo Chat 2.3.5
-**************
-
-** Bug
-    * [CHAT] Could not chat with user having cyrillic characters in full name
-    * [CHAT] Can't delete a file uploaded from chat one to one
-
-
-
-
-eXo News 1.1.3
-**************
-
-** Bug
-    * [News] Latest News template never displays summary
-    * [News] "Activity has been deleted" when creating a news
-    * [News]hen the news contains a single quote in the title the details are not displayed when the news is shared
+    * Fix IDM Transaction leaks when errors occurs on JPA
+    * Search by skills or position doesn't work when position is in Cyrillic characters
+    * Fix the issue with Mp4 files reading
+    * Error displayed when uploading a big size file
     
+** Improvement
+    * Add the possibility to Enable/Disable Thumbnails by configuration  
+    
+    
+eXo Wiki ${org.exoplatform.platform.version}
+*************************
+
+** Bug
+     * Fix Page wiki encoding problem with saml integration      
+    
+
+eXo Forum ${org.exoplatform.platform.version}
+*************************    
     
 eXo GateIn ${org.exoplatform.platform.version}
 *************************
@@ -77,16 +71,20 @@ eXo Calendar ${org.exoplatform.platform.version}
 eXo Wiki ${org.exoplatform.platform.version}
 *************************
 
-eXo Kudos 1.1.5
+eXo Chat 2.3.6
 **************
 
-eXo Task 2.3.5
+eXo News 1.1.4
+**************
+
+eXo Kudos 1.1.6
+**************
+
+eXo Task 2.3.6
 ************** 
     
-eXo Wallet 1.0.5
+eXo Wallet 1.0.6
 ******************
 
-eXo Gamification 1.2.5
+eXo Gamification 1.2.6
 **************
-
-
