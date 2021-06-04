@@ -76,7 +76,7 @@
     <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
     <org.fusesource.jansi.version>1.11</org.fusesource.jansi.version>
     <!-- PLF-6409: Liquibase dependency -->
-    <org.snakeyaml.version>1.13</org.snakeyaml.version>
+    <org.snakeyaml.version>1.26</org.snakeyaml.version>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
