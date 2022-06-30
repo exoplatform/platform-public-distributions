@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+<%--
 
   Copyright (C) 2021 eXo Platform SAS
 
@@ -16,18 +15,8 @@
   You should have received a copy of the GNU Affero General Public License
   along with this program.  If not, see <gnu.org/licenses>.
 
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.exoplatform.platform.distributions</groupId>
-    <artifactId>plf-public-distributions</artifactId>
-    <version>6.4.x-SNAPSHOT</version>
-  </parent>
-  <name>eXo PLF:: Platform Public Distributions - Webapps</name>
-  <artifactId>plf-webapps</artifactId>
-  <packaging>war</packaging>
-  <build>
-    <finalName>ROOT</finalName>
-  </build>
-</project>
+--%>
+<%
+  response.setStatus(response.SC_MOVED_TEMPORARILY);
+  response.setHeader("Location", "/portal");
+%>
