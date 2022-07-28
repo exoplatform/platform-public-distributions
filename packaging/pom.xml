@@ -152,7 +152,7 @@
   </dependencies>
   <build>
     <!-- Used by the assembly for the main directory name -->
-    <finalName>platform-community-tomcat-${project.version}</finalName>
+    <finalName>platform-community-${project.version}</finalName>
     <resources>
       <resource>
         <filtering>true</filtering>
