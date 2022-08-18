@@ -63,6 +63,12 @@
       <version>${io.meeds.distribution.version}</version>
       <scope>provided</scope>
     </dependency>
+    <!--swagger-->
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <finalName>plf-community-edition-service</finalName>

@@ -9,24 +9,26 @@ import javax.ws.rs.core.Response;
 
 import org.exoplatform.services.rest.resource.ResourceContainer;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 @Path("/mobile")
-@Api(tags = "/mobile", value = "/mobile")
+@Tag(name = "/mobile", description = "Providing mobile application link")
 public class MobileRestService implements ResourceContainer {
 
   @GET
   @Path("/app/download")
-  @ApiOperation(value = "redirect the user to the appropriate link to download the mobile application", httpMethod = "GET", response = String.class, 
-      notes = "Use this method as an intermediate step when scanning the QR code to download the mobile application. The method will parse the user agent provided in the header and will redirect the user to either google play or the app store.")
+  @Operation(summary = "redirect the user to the appropriate link to download the mobile application", method = "GET",
+      description = "Use this method as an intermediate step when scanning the QR responseCode to download the mobile application. The method will parse the user agent provided in the header and will redirect the user to either google play or the app store.")
   @ApiResponses(value = {
-      @ApiResponse(code = 200, message = "Request fulfilled. user-agent pertaining to an android or an ios device", response = String.class),
-      @ApiResponse(code = 400, message = "the device that requested the service is not an android or an ios") })
-  public Response redirectToStore(@ApiParam(value = "the user-agent, ex: 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'", required = true)
+      @ApiResponse(responseCode = "200", description = "Request fulfilled. user-agent pertaining to an android or an ios device"),
+      @ApiResponse(responseCode = "400", description = "the device that requested the service is not an android or an ios") })
+  public Response redirectToStore(@Parameter(description = "the user-agent, ex: 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'", required = true)
   @HeaderParam("user-agent")
   String userAgent) {
 
