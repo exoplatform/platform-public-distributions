@@ -63,7 +63,16 @@
     <dependencySet>
       <outputDirectory>/webapps</outputDirectory>
       <includes>
-        <include>${project.groupId}:plf-webapps:war</include>
+        <include>${project.groupId}:plf-community-edition-webapps:war</include>
+      </includes>
+      <scope>provided</scope>
+      <outputFileNameMapping>${artifact.build.finalName}.war</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
+    <dependencySet>
+      <outputDirectory>/webapps</outputDirectory>
+      <includes>
+        <include>${project.groupId}:plf-community-edition-portlets:war</include>
       </includes>
       <scope>provided</scope>
       <outputFileNameMapping>${artifact.build.finalName}.war</outputFileNameMapping>

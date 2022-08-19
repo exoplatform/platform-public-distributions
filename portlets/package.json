@@ -1,0 +1,35 @@
+{
+  "name": "platform-portlets",
+  "version": "6.2.0",
+  "description": "Platform portlets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exoplatform/platform-private-distributions"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.dev.js --mode development",
+    "dev": "webpack-dev-server --config webpack.dev.js --mode development --hot",
+    "watch": "webpack --config webpack.dev.js --progress --colors --watch -d",
+    "lint": "eslint --fix './src/main/webapp/vue-apps/**'",
+    "eslint-check": "eslint \"./src/main/webapp/**\"",
+    "build": "webpack --config webpack.prod.js --mode production"
+  },
+  "author": "eXo",
+  "license": "LGPL",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-meedsio": "^1.0.3",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^14.2.3",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^4.1.3"
+  }
+}

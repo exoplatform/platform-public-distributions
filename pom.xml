@@ -32,8 +32,9 @@
   <name>eXo PLF:: Platform Community Distributions</name>
   <modules>
     <module>services</module>
-    <module>webapps</module>
+    <module>portlets</module>
     <module>packaging</module>
+    <module>webapps</module>
   </modules>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/platform-public-distributions.git</connection>

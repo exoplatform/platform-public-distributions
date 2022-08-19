@@ -36,7 +36,7 @@ pom.xml.versionsBackup
 
 # Misc
 *.swp
-
+node_modules
 # Exclude JEnv Config File
 .java-version
 dependency-reduced-pom.xml

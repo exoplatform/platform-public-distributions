@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2022 eXo Platform SAS.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_3.xsd http://www.exoplatform.org/xml/ns/kernel_1_3.xsd" xmlns="http://www.exoplatform.org/xml/ns/kernel_1_3.xsd">
+    <external-component-plugins>
+        <target-component>org.exoplatform.commons.addons.AddOnService</target-component>
+        <component-plugin>
+            <name>addPlugin</name>
+            <set-method>addPlugin</set-method>
+            <type>org.exoplatform.commons.addons.AddOnPluginImpl</type>
+            <description></description>
+            <init-params>
+                <value-param>
+                    <name>priority</name>
+                    <value>3</value>
+                </value-param>
+                <value-param>
+                    <name>containerName</name>
+                    <value>settings-bottom-container</value>
+                </value-param>
+                <object-param>
+                    <name>mobile-settings-portlet</name>
+                    <description></description>
+                    <object type="org.exoplatform.commons.addons.PortletModel">
+                        <field name="contentId">
+                            <string>community-portlets/userSettingsMobile</string>
+                        </field>
+                        <field name="permissions">
+                            <collection type="java.util.ArrayList">
+                                <value>
+                                    <string>*:/platform/users</string>
+                                </value>
+                                <value>
+                                    <string>*:/platform/externals</string>
+                                </value>
+                            </collection>
+                        </field>
+                        <field name="title">
+                            <string>>Mobile Settings Portlet</string>
+                        </field>
+                        <field name="showInfoBar">
+                            <boolean>false</boolean>
+                        </field>
+                        <field name="showApplicationState">
+                            <boolean>false</boolean>
+                        </field>
+                        <field name="showApplicationMode">
+                            <boolean>false</boolean>
+                        </field>
+                    </object>
+                </object-param>
+            </init-params>
+        </component-plugin>
+    </external-component-plugins>
+
+</configuration>

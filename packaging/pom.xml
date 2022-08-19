@@ -39,7 +39,14 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>plf-webapps</artifactId>
+      <artifactId>plf-community-edition-portlets</artifactId>
+      <type>war</type>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>plf-community-edition-webapps</artifactId>
       <type>war</type>
       <version>${project.version}</version>
       <scope>provided</scope>
