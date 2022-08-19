@@ -1,4 +1,4 @@
-name: Create and publish a Meeds binary
+name: Create and publish a eXo Community binary
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         run: |
            echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
            [[ ${GITHUB_REF#refs/*/} =~ .*-RC[0-9][0-9]$ ]] && echo "IS_PRE_RELEASE=true" >> $GITHUB_ENV || echo "IS_PRE_RELEASE=false" >> $GITHUB_ENV
-      - name: Download Meeds binary from Nexus
+      - name: Download eXo Community binary from Nexus
         run: |
             wget ${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip
       - name: release
@@ -34,7 +34,7 @@ jobs:
           tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: upload Meeds binary
+      - name: upload eXo Community binary
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
