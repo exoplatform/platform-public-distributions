@@ -50,7 +50,7 @@
     <!-- ************** -->
     <!-- Public distribution   -->
     <!-- ************** -->
-    <io.meeds.distribution.version>1.4.x-SNAPSHOT</io.meeds.distribution.version>
+    <io.meeds.distribution.version>1.4.x-exo-SNAPSHOT</io.meeds.distribution.version>
     <!-- ************** -->
     <!-- Add-ons for Entreprise packaging   -->
     <!-- ************** -->
@@ -59,7 +59,7 @@
     <addon.exo.ecms.id>exo-ecms</addon.exo.ecms.id>
     <addon.exo.ecms.version>6.4.x-SNAPSHOT</addon.exo.ecms.version>
     <addon.exo.tasks.id>exo-tasks</addon.exo.tasks.id>
-    <addon.exo.tasks.version>3.4.x-SNAPSHOT</addon.exo.tasks.version>
+    <addon.exo.tasks.version>3.4.x-exo-SNAPSHOT</addon.exo.tasks.version>
     <addon.exo.web-conferencing.id>exo-web-conferencing</addon.exo.web-conferencing.id>
     <addon.exo.web-conferencing.version>2.4.x-SNAPSHOT</addon.exo.web-conferencing.version>
     <addon.exo.layout-management.id>exo-layout-management</addon.exo.layout-management.id>
@@ -67,7 +67,7 @@
     <addon.exo.jitsi.id>exo-jitsi</addon.exo.jitsi.id>
     <addon.exo.jitsi.version>1.3.x-SNAPSHOT</addon.exo.jitsi.version>
     <addon.exo.analytics.id>exo-analytics</addon.exo.analytics.id>
-    <addon.exo.analytics.version>1.3.x-SNAPSHOT</addon.exo.analytics.version>
+    <addon.exo.analytics.version>1.3.x-exo-SNAPSHOT</addon.exo.analytics.version>
     <addon.exo.agenda.id>exo-agenda</addon.exo.agenda.id>
     <addon.exo.agenda.version>1.3.x-SNAPSHOT</addon.exo.agenda.version>
     <addon.exo.digital-workplace.id>exo-digital-workplace</addon.exo.digital-workplace.id>
