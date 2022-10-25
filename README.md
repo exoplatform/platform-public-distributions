@@ -48,3 +48,8 @@ You can force to activate the colorized console with the option
     plf-community-tomcat-standalone/target/platform-community-<<CURRENT_VERSION>>/platform-community-<<CURRENT_VERSION>>/start_eXo.bat --color
 
 Depending of your system you may need to install the package [Microsoft Visual C++ 2008 Redistributable Package (x64)](http://www.microsoft.com/en-us/download/confirmation.aspx?id=15336)
+
+## Thanks to all the contributors ❤️
+<a href = "https://github.com/exoplatform/platform-public-distributions/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=exoplatform/platform-public-distributions"/>
+</a>
