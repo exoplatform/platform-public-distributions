@@ -4,10 +4,10 @@ on:
   push:
     tags:
       - '[6-9].[0-9].[0-9]'
-      - '[6-9].[0-9].[0-9]-RC[0-9][0-9]'
 env:
   DOWNLOAD_URL: 'https://repository.exoplatform.org/content/groups/public/org/exoplatform/platform/distributions/plf-community-tomcat-standalone'
   DOWNLOAD_BINARY_PREFFIX: 'plf-community-tomcat-standalone'
+  DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX: 'platform-community'
 jobs:
   publish:
     name: build_release
@@ -20,16 +20,17 @@ jobs:
       - name: Get Release version
         run: |
            echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-           [[ ${GITHUB_REF#refs/*/} =~ .*-RC[0-9][0-9]$ ]] && echo "IS_PRE_RELEASE=true" >> $GITHUB_ENV || echo "IS_PRE_RELEASE=false" >> $GITHUB_ENV
       - name: Download eXo Community binary from Nexus
         run: |
             wget ${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip
+            sha256sum ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip > SHA256SUMS
+            unzip -j ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip ${DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX}-${RELEASE_VERSION}/CHANGE_LOG.txt
       - name: release
         uses: actions/create-release@v1
         id: create_release
         with:
           draft: false
-          prerelease: ${{ env.IS_PRE_RELEASE }}
+          prerelease: false
           release_name: ${{ env.RELEASE_VERSION }}
           tag_name: ${{ github.ref }}
         env:
@@ -43,3 +44,21 @@ jobs:
           asset_path: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_name: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_content_type: application/zip
+      - name: upload eXo Community changelog
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: CHANGE_LOG.txt
+          asset_name: CHANGE_LOG.txt
+          asset_content_type: text/plain
+      - name: upload eXo Community SHA256SUMS
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: SHA256SUMS
+          asset_name: SHA256SUMS
+          asset_content_type: text/plain
