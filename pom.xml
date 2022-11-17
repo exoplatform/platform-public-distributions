@@ -22,7 +22,7 @@
   <parent>
     <artifactId>maven-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>25-M05</version>
+    <version>25-exo-M06</version>
     <relativePath />
   </parent>
   <groupId>org.exoplatform.platform.distributions</groupId>
