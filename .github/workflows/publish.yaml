@@ -25,6 +25,13 @@ jobs:
             wget ${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip
             sha256sum ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip > SHA256SUMS
             unzip -j ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip ${DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX}-${RELEASE_VERSION}/CHANGE_LOG.txt
+            echo "## What's Changed" >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "Features:"  >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "" >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "Bug fixes:"  >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
+            rm -v CHANGE_LOG.txt
       - name: release
         uses: actions/create-release@v1
         id: create_release
@@ -33,6 +40,7 @@ jobs:
           prerelease: false
           release_name: ${{ env.RELEASE_VERSION }}
           tag_name: ${{ github.ref }}
+          body_path: WHATSCHANGED.TXT
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: upload eXo Community binary
@@ -44,15 +52,6 @@ jobs:
           asset_path: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_name: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_content_type: application/zip
-      - name: upload eXo Community changelog
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: CHANGE_LOG.txt
-          asset_name: CHANGE_LOG.txt
-          asset_content_type: text/plain
       - name: upload eXo Community SHA256SUMS
         uses: actions/upload-release-asset@v1
         env:
