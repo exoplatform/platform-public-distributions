@@ -28,6 +28,7 @@ jobs:
             echo "## What's Changed" >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "Features:"  >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "" >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "Bug fixes:"  >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
             rm -v CHANGE_LOG.txt
