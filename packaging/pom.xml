@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.exoplatform.platform.distributions</groupId>
     <artifactId>plf-public-distributions</artifactId>
-    <version>6.3.x-SNAPSHOT</version>
+    <version>6.3.4-RC02</version>
   </parent>
   <name>eXo PLF:: Platform Public Distributions - Packaging Community Tomcat Standalone</name>
   <artifactId>plf-community-tomcat-standalone</artifactId>
@@ -287,7 +287,7 @@
             <configuration>
               <target name="install-add-ons">
                 <echo message="Set permission on addon executable" />
-                <chmod file="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" perm="ugo+rx"/>
+                <chmod file="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" perm="ugo+rx" />
                 <echo message="Installing add-ons..." />
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.digital-workplace.id}:${addon.exo.digital-workplace.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
