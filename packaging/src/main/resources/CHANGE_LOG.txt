@@ -1,118 +1,117 @@
 =========================
-Changelog Platform 6.3.3
+Changelog Platform 6.3.4
 =========================
 
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
 
-eXo ECMS 6.3.3
+eXo ECMS 6.3.4
 *************************
-- fix: Image can't be saved after selection from the computer
-- fix: Fix documents disappears from the "My work" snapshot documents widget tab when another user modifies them
-- fix: Force videos to display thumbnail in Safari
-- fix: Fix lost extension after renaming a document
-- fix: Fix source mode view problem on CKEditor when creating or editing a web content
-- fix: fix owner property of activity stream attachments folder
+- fix: Change default folder for attachments in spaces - EXO-61872
+- fix: Fix Attach from existing upload under folder which name contains accent - EXO-61813
+- fix: Fix Upload or create document error - EXO-61814
+- fix: Fix task/task_id folders duplicated under public folder - EXO-61664
+- fix: add possibility to create attachment plugin per functionality - EXO-58740
+- fix: Fix when Refresh is needed to display created document - EXO-61166
+- fix: Fix personal drive shared document preview issues (breadcrumb, wrong folder displayed) - EXO-60838
 
 
-eXo Social 6.3.3
+eXo Social 6.3.4
 *************************
-- fix: Fix can't edit activity containing % character and link with preview
-- fix: Fix the disappearing of text containing "%" when posting an activity
-- fix: Hide digest mail notification from the notification settings menu
+- fix: Fix getting notifications while user is not a space member anymore - EXO-61097
+- fix: Fix Same activity posted multiple times
+- fix: Fix bad redirection when accepting an add contact request - EXO-60778
+- fix: Fix duplicated encoded link in activity - EXO-60750
+- fix: Fix edited activity link and its preview still displayed after removing the link - EXO-60760
 
-eXo agenda 1.2.3
+eXo agenda 1.2.4
 ***************
-- fix: Fix no notification received for weekly events
-- fix: Fix reply to an invitation to a recurring event for which a first occurrence is a past event
+- feat: Event Creator only should receive event replies notifications - EXO-61726
+- fix: Fix case when event organizer can't invite user to an event by email if character '-' exists in the email's domain name - EXO-61732
+- fix: Fix Event display from the last day of January to any date in February - EXO-61629
 
-
-eXo Chat 3.3.3
+eXo Chat 3.3.4
 **************
 
-eXo News 2.3.3
+eXo News 2.3.4
 **************
-- fix: Display right views number and publication/modification dates for an already posted article with the current draft publication state
-- fix: Fix the missing number of reactions per period in the contents analytics report
+- fix: Clean news title name when unpublishing news - EXO-61538
+- fix: Un-publish news issue after editing news title - EXO-61538
+- fix: Fix displaying of images in shared news - EXO-61176
 
-
-eXo onlyoffice 2.3.3
+eXo onlyoffice 2.3.4
 *************************
 
-eXo task 3.3.3
+eXo task 3.3.4
 *************************
-- fix: Fix typed label filter isn't maintained
-- fix: Fix vertical and horizontal scroll bars to tasks display in the Plan view
+- fix: Fix my tasks sorting when using primary filter affected to me or I collaborate to - EXO-54359
 
-eXo web-conferencing 2.3.3
+eXo web-conferencing 2.3.4
 *************************  
+- fix: Improve performance when getting space information - EXO-61212
 
-eXo jitsi 1.2.3
+eXo jitsi 1.2.4
 *************************
 
-eXo platform-ui 6.3.3
+eXo platform-ui 6.3.4
 **************
 
-eXo analytics 1.2.3
+eXo analytics 1.2.4
 *************************
-- fix: Fix generated operation without a name when uploading a file
+- fix: Fix missing activity type values in analytics - EXO-60792
+- fix: Fix translation of analytics charts - EXO-58757
 
-
-eXo perk-store 2.3.3
+eXo perk-store 2.3.4
 **************
 
-eXo Kudos 2.3.3
+eXo Kudos 2.3.4
+**************
+- fix: Disable send kudos from an activity for user who has left the space - EXO-67097
+
+eXo gamification 2.3.4
 **************
 
-eXo gamification 2.3.3
+eXo commons 6.3.4
 **************
 
-eXo commons 6.3.3
-**************
-- fix: Fix email notifications aren't received when the external username contains "@"
-- fix: Hide digest mail notification from the notification settings menu
-- fix: Fix bad display of folder component in insert portal link popup window 
-
-
-eXo ws 6.3.3
+eXo ws 6.3.4
 **************
 
-eXo kernel 6.3.3
+eXo kernel 6.3.4
 **************
 
-eXo gatein-portal 6.3.3
+eXo gatein-portal 6.3.4
 **************
 - fix: Fix the first and the last name allowing the use of illegal eXo characters for external user names
 - fix: Expire user password recovery tokens after a successful login
 
 
-eXo gatein-sso 6.3.3
+eXo gatein-sso 6.3.4
 **************
 
-eXo gatein-pc 6.3.3
+eXo gatein-pc 6.3.4
 **************
 
-eXo gatein-wci 6.3.3
+eXo gatein-wci 6.3.4
 **************
 
-eXo push-notifications 2.3.3
+eXo push-notifications 2.3.4
 **************
 
-eXo jcr 6.3.3
+eXo jcr 6.3.4
+**************
+- fix: Change default collation to utf8mb4_bin - EXO-60718
+- fix: Change default charset and collation of NAME field of JCR_SITEM table from latin1 to utf8mb4 - EXO-60718
+
+eXo notes 1.1.4
 **************
 
-eXo notes 1.1.3
-**************
-- fix: Image can't be saved
-- fix: Fix adding an image
-- fix: Fix export/import notes including images
-
-eXo app-center 2.3.3
+eXo app-center 2.3.4
 **************
 
-eXo Wallet 2.3.3
+eXo Wallet 2.3.4
 ******************
 
-eXo jitsi-call 1.2.3
+eXo jitsi-call 1.2.4
 **************
