@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.exoplatform.platform.distributions</groupId>
     <artifactId>plf-public-distributions</artifactId>
-    <version>6.4.x-SNAPSHOT</version>
+    <version>6.5.x-SNAPSHOT</version>
   </parent>
   <name>eXo PLF:: Platform Public Distributions - Packaging Community Tomcat Standalone</name>
   <artifactId>plf-community-tomcat-standalone</artifactId>
