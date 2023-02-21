@@ -25,9 +25,9 @@
     <version>6.5.x-SNAPSHOT</version>
   </parent>
   <name>eXo PLF:: Platform Public Distributions - Webapps</name>
-  <artifactId>plf-webapps</artifactId>
+  <artifactId>plf-community-webapps</artifactId>
   <packaging>war</packaging>
   <build>
-    <finalName>ROOT</finalName>
+    <finalName>plf-community</finalName>
   </build>
 </project>
