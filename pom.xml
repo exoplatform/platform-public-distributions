@@ -32,7 +32,8 @@
   <name>eXo PLF:: Platform Community Distributions</name>
   <modules>
     <module>services</module>
-    <module>webapps</module>
+    <module>plf-community-root-webapps</module>
+    <module>plf-community-webapps</module>
     <module>packaging</module>
   </modules>
   <scm>
