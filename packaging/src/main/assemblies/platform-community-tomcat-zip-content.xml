@@ -69,5 +69,14 @@
       <outputFileNameMapping>${artifact.build.finalName}.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
+    <dependencySet>
+      <outputDirectory>/webapps</outputDirectory>
+      <includes>
+        <include>${project.groupId}:plf-community-webapps:war</include>
+      </includes>
+      <scope>provided</scope>
+      <outputFileNameMapping>${artifact.build.finalName}.war</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
   </dependencySets>
 </assembly>

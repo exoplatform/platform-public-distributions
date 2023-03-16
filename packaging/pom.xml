@@ -44,6 +44,13 @@
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>plf-community-webapps</artifactId>
+      <type>war</type>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
     <!-- Platform - community distrib -->
     <dependency>
       <groupId>io.meeds.distribution</groupId>
