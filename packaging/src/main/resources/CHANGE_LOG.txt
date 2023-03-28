@@ -6,84 +6,1543 @@ Changelog Platform 6.4.x
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
 
 
-eXo ECMS 6.1.x
+eXo ECMS 6.4.0
 *************************
-** Bug
+- fix: Fix change location option issue when uploading file - EXO-62498
+- fix: Replace & char with underscore in file technical name - EXO-63084
+- fix: uploading file with & char in its name is truncated - EXO-63446
+- Fix: Lowercase technical names of jcr file nodes - EXO-62912
+- fix : Adding documents and folders in a read only shared folder should not be possible - EXO-63084
+- fix: Document warning snack bar during document upload conflict is not in the foreground - EXO-62942
+- fix: Click on uploading from existings invokes the creation of new process work draft - EXO-62961
+- fix: activity params keys case insensitivity block activity updates - EXO-62802
+- fix: fix upload issue : Folder duplicated if folder is a child - EXO-62778
+- fix: attchment list is not updated in sent request - EXO-62876
+- fix : Task attachments drawer doesn't display the attached files - EXO-63054
+- fix: fix create a new version during an upload conflict don't update the last modification date - EXO-62828
+- fix: remove the extra margins so the settings blocks will be aligned  - EXO-62228
+- fix: Process&fix-Upload issue on task and process - EXO-62638 
+- fix: Paste image stored in unexpected drive EXO-62331 
+- fix: Error when create new resource storage dw - EXO-62334 
+- fix: upload files in a folder containing % character 
+- fix: on document preview, with a large file, the click on download button do nothing - EXO-62303
+- fix: Preview image are not displayed in activity -EXO-60824  
+- fix : Decide whether to keep or create a new version of the file when uploading a file with an accented name - EXO-62290
+- fix: stabilize unit tests - EXO-62562
+- feat: Filter rules: change mapping for es to be able to search with numeric - EXO-60866
+- fix: change default folder for attachments in spaces - EXO-61872 
+- fix: Attach from existing upload :  folder name with accent - EXO-61813 
+- fix: Upload and create document error - EXO-61814 
+- backport fixes for task EXO-61664 
+- feat: Fix tools application registry category description - EXO-61480 
+- feat: Remove administration application registry category and configure tools application registry category - EXO-61480 
+- feat: Restrict allowed chars in the name of documents/folders - EXO-61256 
+- fix: add possibility to create attachment plugin per functionality - EXO-58740 
+- fix: restore cloud drive portlet - EXO-61440  
+- fix: Refresh needed to display created document - EXO-61166 
+- feat: Add an option to allow directly open attachments in editor by bypassing the preview step - EXO-60484  
+- fix: No version in the history version drawer if a file is created : EXO-61044 
+- feat: Resize enormous illustrations - EXO-60323 
+- fix: Fix personal drive shared document preview issues (breadcrumb, wrong folder displayed) - EXO-60838
+- feat: remove unneeded preload URLs - EXO-60649 
+- fix: Fix documents disappears from "My work" snapshot documents widget tab when they are modified by another user - EXO-58370 
+- fix: Force videos to display thumbnail in Safari - EXO-42230
+- fix: Fix document display in my work - EXO-60243
+- fix: Fix lost extension after renaming a document - EXO-60015 
+- feat: Create a first version when uploading a file - EXO-60229  
+- fix: Fix file preview height when hiding breadcrumb - EXO-60206 
+- feat: Manage document upload conflict - EXO-59504 
+- fix: fix owner property of activity stream attachments folder - EXO-59928 
+- fix: Fix source mode view problem on ckeditor when creating or editing a web content - EXO-60184 
+- feat: Search on Tags - EXO-59495 
+- fix: Fix recreating the activity stream attachments folder after delete or move it from root path - EXO-59928  
+- fix-59724 update project dependencies with meeds exo distribution
+- fix: Fix previewing a shared document by its copied link - EXO-58927 
+- feat: Add Drag and drop - EXO-59516
+- fix: Update ckedtorCustom config - EXO-58725
+- fix: Implement new ECMS ckeditor wcmImage.js plugin based on default ckeditor 4.16.0 image.js plugin in order to add browse image from WCM button - EXO-58725
+- fix: Add default ckedtor 4.16.0 image.js plugin - EXO-58725
+- fix: Update ckeditor customConfig from /commons-extension/eXoConfig.js to /ecmexplorer/javascript/eXo/ecm/ckeditorCustom/config.js - EXO-58725
+- fix: Move original class UIFormRichtextField.java from commons to ECMS - EXO-58725
+- fix-59019: Cloud drive connectors are displayed randomly 
+- fix-59262: Several warning messages when uploading more than 20 files 
+- fix-59577: Hide 3 dots button & edit button from Unified search results 
+- fix-57905: document name displaying encoded items 
+- fix-59413_59418_59425: Hide edit and 3 dots button in eXo document viewer of Google Cloud drive and One drive documents 
+- fix-58651_58652: Fix opening cloud drive documents from Google Cloud drive or one drive  
+- fix-59122: Add disconnect button for connected cloud drives 
+- fix-59140: Disconnect cloud drive account 
+- fix-58509: Display connected cloud drive accounts in settings and connectors drawer  
+- fix-59166: Upgrade to openapi swagger 3 
+- fix-50471: Add createCustomThumbnail function in thumbnail service 
+- fix-59221: fix listing documents under Personal drive 
+- fix-59203: Fix encoded special characters on preview's breadcrumb
+- fix-58606: cant add files inside a folder which name contains special characters  
+- fix-59178: Use PATCH annotation from Meeds WS implementation 
+- fix-57047: Access To Folder of a document from the preview mode  
+- fix-59179: Fix typo in api description property 
+- fix-58724: Delete old cloud drive connection buttons and content from attachments drawer 
+- fix-59105: prevent display of the document settings portlet everywhere in the user settings 
+- fix-58508: Remove cloud drive connectors service codebase and display connection information alert 
+- fix-58742: Display dynamically onedrive and gdrive connectors 
+- fix-58643: Related the attached file thumbnails to attachment file extension
+- fix-58506: Implement cloud drive settings drawer 
+- fix-58505: Implement cloud drive settings portlet in user settings 
+- fix-58517: Remove related dlp base code  
+- fix-58025: Remove MalwareDetectionJcr Connector 
+- fix-58103: Title of space not displayed in breadcrumb broken attachement  
+- fix-57767: Decoding the attachment name in the attachmentsDriverExplorerDrawer
+- fix-57545: fix file upload using safari
+- fix-57249: fix encoding accented file names displayed  in the footer of document preview 
+- fix-57175: Add getDocumentsTransferRules function in transferRulesService.js 
+- fix-55805: Change the default primary color 
+- fix-56988: Photo disappears when it is moved or resized in CKEditor 
+- fix-56379: Fix displayed cloud drives name 
+- fix-56752: Bad display for cloud storage page on Firefox  
+- fix-57195: cleaning node name that contains "."
+- fix-56979: Missing icon preview for potx files in activity attachment 
+- fix-57148: Fix display detach button in upload file
+- fix-56970: Fix snackbar position in mobile version when space footer menu is displayed 
+- fix-57296: Progress bar still displayed when changing the location of a file  
+- fix-57240: Fix refreshing uploaded files when editing an activity 
+- fix-55861: Add Content Length HTTP Header when reading Image Thumbnail 
+- fix-57293: Add Transfer Rules Administration Menu Categorization Configuration 
 
-** Improvemnts
-
-        
-eXo Forum 6.1.x
+eXo Social 6.4.0
 *************************
-** Bug
+- fix: Fix change location option issue when uploading file - EXO-62498
+- fix: Replace & char with underscore in file technical name - EXO-63084 
+- fix: uploading file with & char in its name is truncated - EXO-63446
+- Fix: Lowercase technical names of jcr file nodes - EXO-62912 
+- fix : Adding documents and folders in a read only shared folder should not be possible - EXO-63084 
+- fix: Document warning snack bar during document upload conflict is not in the foreground - EXO-62942
+- fix: Click on uploading from existings invokes the creation of new process work draft - EXO-62961 
+- fix: activity params keys case insensitivity block activity updates - EXO-62802 
+- fix: fix upload issue : Folder duplicated if folder is a child - EXO-62778 
+- fix: attchment list is not updated in sent request - EXO-62876 
+- fix : Task attachments drawer doesn't display the attached files - EXO-63054 
+- fix: fix create a new version during an upload conflict don't update the last modification date - EXO-62828 
+- fix: remove the extra margins so the settings blocks will be aligned  - EXO-62228 
+- fix: Process&fix-Upload issue on task and process - EXO-62638 
+- fix: Paste image stored in unexpected drive EXO-62331 
+- fix: Error when create new resource storage dw - EXO-62334 
+- fix: upload files in a folder containing % character 
+- fix: on document preview, with a large file, the click on download button do nothing - EXO-62303
+- fix: Preview image are not displayed in activity -EXO-60824  
+- fix : Decide whether to keep or create a new version of the file when uploading a file with an accented name - EXO-62290  
+- fix: stabilize unit tests - EXO-62562 
+- feat: Filter rules: change mapping for es to be able to search with numeric - EXO-60866
+- fix: change default folder for attachments in spaces - EXO-61872 
+- fix: Attach from existing upload :  folder name with accent - EXO-61813 
+- fix: Upload and create document error - EXO-61814 
+- feat: Fix tools application registry category description - EXO-61480 
+- feat: Remove administration application registry category and configure tools application registry category - EXO-61480 
+- feat: Restrict allowed chars in the name of documents/folders - EXO-61256 
+- fix: add possibility to create attachment plugin per functionality - EXO-58740 
+- fix: restore cloud drive portlet - EXO-61440  
+- fix: Refresh needed to display created document - EXO-61166 
+- feat: Add an option to allow directly open attachments in editor by bypassing the preview step - EXO-60484  
+- fix: No version in the history version drawer if a file is created - EXO-61044 
+- feat: Resize enormous illustrations - EXO-60323 
+- fix: Fix personal drive shared document preview issues (breadcrumb, wrong folder displayed) - EXO-60838 
+- fix: Update loader-utils dependency - EXO-60887 
+- feat: remove unneeded preload URLs - EXO-60649 
+- fix: Fix documents disappears from "My work" snapshot documents widget tab when they are modified by another user - EXO-58370 
+- fix: Force videos to display thumbnail in Safari - EXO-42230 
+- fix: Fix document display in my work - EXO-60243 
+- fix: Fix lost extension after renaming a document - EXO-60015 
+- feat: Create a first version when uploading a file - EXO-60229  
+- fix: Fix file preview height when hiding breadcrumb - EXO-60206 
+- feat: Manage document upload conflict - EXO-59504 
+- fix: fix owner property of activity stream attachments folder - EXO-59928 
+- fix: Fix source mode view problem on ckeditor when creating or editing a web content - EXO-60184 
+- feat: Search on Tags - EXO-59495 
+- fix: Fix recreating the activity stream attachments folder after delete or move it from root path - EXO-59928  
+- fix-59724 update project dependencies with meeds exo distribution
+- fix: Fix previewing a shared document by its copied link - EXO-58927 
+- feat: Add Drag and drop - EXO-59516
+- fix: Update ckedtorCustom config - EXO-58725
+- fix: Implement new ECMS ckeditor wcmImage.js plugin based on default ckeditor 4.16.0 image.js plugin in order to add browse image from WCM button - EXO-58725
+- fix: Add default ckedtor 4.16.0 image.js plugin - EXO-58725
+- fix: Update ckeditor customConfig from /commons-extension/eXoConfig.js to /ecmexplorer/javascript/eXo/ecm/ckeditorCustom/config.js - EXO-58725
+- fix: Move original class UIFormRichtextField.java from commons to ECMS - EXO-58725
+- fix-59019: Cloud drive connectors are displayed randomly 
+- fix-59262: Several warning messages when uploading more than 20 files 
+- fix-59577: Hide 3 dots button & edit button from Unified search results 
+- fix-57905: document name displaying encoded items 
+- fix-59413: Hide edit and 3 dots button in eXo document viewer of Google Cloud drive and One drive documents 
+- fix-58651: Fix opening cloud drive documents from Google Cloud drive or one drive  
+- fix-59122: Add disconnect button for connected cloud drives 
+- fix-59140: Disconnect cloud drive account 
+- fix-58509: Display connected cloud drive accounts in settings and connectors drawer  
+- fix-50471: Add createCustomThumbnail function in thumbnail service 
+- fix-59221: fix listing documents under Personal drive 
+- fix-59203: Fix encoded special characters on preview's breadcrumb
+- fix-58606: cant add files inside a folder which name contains special characters  
+- fix-59178: Use PATCH annotation from Meeds WS implementation 
+- fix-57047: Access To Folder of a document from the preview mode  
+- fix-59179: Fix typo in api description property 
+- fix-58724: Delete old cloud drive connection buttons and content from attachments drawer 
+- fix-59105: prevent display of the document settings portlet everywhere in the user settings 
+- fix-58508: Remove cloud drive connectors service codebase and display connection information alert 
+- fix-58742: Display dynamically onedrive and gdrive connectors 
+- fix-58643: Related the attached file thumbnails to attachment file extension
+- fix-58506: Implement cloud drive settings drawer 
+- fix-58505: Implement cloud drive settings portlet in user settings 
+- fix-58517: Remove related dlp base code  
+- fix-58025: Remove MalwareDetectionJcr Connector 
+- fix-58103: Title of space not displayed in breadcrumb broken attachement  
+- fix-57767: Decoding the attachment name in the attachmentsDriverExplorerDrawer
+- fix-57545: fix file upload using safari
+- fix-57249: fix encoding accented file names displayed  in the footer of document preview 
+- fix-57175: Add getDocumentsTransferRules function in transferRulesService.js 
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-56988: Photo disappears when it is moved or resized in CKEditor 
+- fix-56379: Fix displayed cloud drives name 
+- fix-56752: Bad display for cloud storage page on Firefox  
+- fix-57195: cleaning node name that contains "."
+- fix-56979: Missing icon preview for potx files in activity attachment 
+- fix-57148: Fix display detach button in upload file
+- fix-56970: Fix snackbar position in mobile version when space footer menu is displayed 
+- fix-57296: Progress bar still displayed when changing the location of a file  
+- fix-57240: Fix refreshing uploaded files when editing an activity 
+- fix-55861: Add Content Length HTTP Header when reading Image Thumbnail 
+- fix-57293: Add Transfer Rules Administration Menu Categorization Configuration 
 
-** Improvemnts
-
-eXo Social 6.1.x
+eXo Documents 1.1.0
 *************************
-** Bug
+- fix: Edit option is no more present in 3 dots menu
+- fix: Lowercase renamed files technical names and ensure to trim file names on each operation 
+- fix: [Document] sort rules are not respected during filter by name and extended search - EXO-62937. Prior to this change,the filter by name in the list of document files and extended search is not working properly. After this changes, this list of document files displays the workflows correctly.
+- fix: Adding documents and folders in a read only shared folder should not be possible - EXO-63084 
+- fix: Remove 3-dots menu actions role redactor filter -EXO-63325  
+- fix: Disable the ability to open the access manage drawer when the sharing of documents is suspended - EXO-62870
+- fix: load correctly contents of folder : subfolders then files with symlinks included - EXO-62645  
+- fix: Loading area doesn't disappear when canceling drag and drop operation - EXO-62932 
+- fix: Document not visible in recent view after empty the description - EXO-63282 
+- fix: Create/upload a document in My Drive is automatically done in Public folde - EXO-63311 
+- fix: Document-Alignment issue with the column Access - EXO-62971 
+- fix: fix documents lost after shortcut and move actions - EXO-63061 
+- fix: Redirection issue when sharing a folder - EXO-63010 
+- SWF: Restore Task notifications workflow for Tribe
+- fix :Fix sort by favorite for documents does not work - EXO-62483 
+- fix : Fix wrong visibility information when share document with another space - EXO-62495  
+- fix:  change Documents container to singlePageApplication - EXO-62968 
+- fix : Fix quick favorite filter doesn't work in document application -EXO-62473  
+- fix : Fix visibility rules when share folder with another space - EXO-62495 
+- fix : Enable to move a folder in a certain cases - EXO-62663  
+- fix: not allow to make drag and drop of folders -EXO-62533 
+- fix: fix displaying alert when reloading the page after saving the description - EXO-62449 
+- fix: fix details drawer UI issues- EXO-62247 
+- fix: Fix documents button show detail error on the first click -EXO-62414  
+- fix: In document app, when clicking on download in action menu, with a large file, the click on download button do nothing - EXO-62303
+- fix: fix the 3 dots menu actions are not immediatly displayed after the creation of a folder - EXO-62146
+- fix: Display save description button only when the description is edited - EXO-62252  
+- feat: fix: Fix restore code related to exo-61300 - EXO-62279
+- fix: bad display for filter badge icon in mobile vue - EXO-62361 
+- fix: infinite loop when loading files from symlink inside its source folder - EXO-61923 
+- feat: Improve edit a document or folder description - EXO-61302 
+- feat: Improve move success UX - EXO-61300 
+- fix: deleted files reappear - EXO-61938  
+- feat: feat: Update document last updated date after change document permissions in manage access drawer - EXO-61292 
+- feat: Update document last updated date after restoring a version - EXO-61297 
+- feat: Remove useless padding of the document app - EXO-61870 
+- feat: Improve Add description to a document or folder - EXO-60651 
+- fix: fix warning when create a new folder - EXO-61872 
+- fix: display correctly files/folders containing % in their names - EXO-59750 
+- fix: fullTree drawer - renamed symlink folder displayed with original folder name - EXO-62037 
+- fix: duplicated documents in timeline view - EXO-61741  
+- feat: Some ui enhancments for mobile - EXO-61792  
+- feat: Add UX enhancement to Access Drawer Manager - EXO-61296 
+- feat: Manage conflict during the move/create folders,documents and shortcuts - EXO-61868_EXO-61464_EXO-61867_EXO-61260  
+- feat: Manage conflict with rename for documents and folders - EXO-61429  
+- feat: The modification description of the document manage access checkbox is not displayed at the right place - EXO-61313  
+- feat: Set favorite document icon depends on its real type - EXO-61666 
+- feat: Manage folder creation conflicts - EXO-61257 
+- feat: Remove extended search feature flag - EXO-61798 
+- feat: Click on visibility icons to open manage access drawer - EXO-59552  
+- fix: Shortcut not created without alert if document with same name and analytics is incremented - EXO-61437 
+- fix: new folder not translated to PLF language - EXO-59410 
+- fix: Initialize correctly attachment drawer - EXO-61664  
+- fix: Clicking on open in documents should open the file's path not the docement preview - EXO-61531 
+- Feat: Extended search in documents 
+- feat: Restrict allowed chars in the name of documents/folders - EXO-61256 
+- feat: Natural sort in folders treeview - EXO-61298 
+- feat: Customize sort by name in documents recent/folder view to use natural sort - EXO-60131 
+- fix: Documents dissappear when filtering them by name, date or visibility - EXO-61422 
+- fix: Document actions : Display issue in case of doucment's long name 
+- fix: Fix exception when tring to get file description - EXO-61496 
+- fix: Folder view : prioritize the sort of folders over files - EXO-60880  
+- fix: Align symlink icon and folder name in the breadcrumb - EXO-60263  
+- fix: Enhance Document empty description - EXO-60371  
+- fix: Miss selected mode in drawer tree folder - EXO-55417 
+- fix: wrong space document after creating a document shortcut - EXO-61289 
+- fix: remove ecms dependency and rework the history version for duplicated file - EXO-61044 
+- feat: Filter by name as reusable feature - EXO-60872 
+- fix: UI glitches in doc app when name is long - EXO-60814   
+- fix: No version in the history version drawer if a file is duplicated : EXO-61044  
+- fix : Document uploaded in wrong location - EXO-60910 
+- fix: fix load more button missing - EXO-60826 
+- fix: Fix personal drive shared document preview issues (breadcrumb, wrong folder displayed) - EXO-60838 
+- SWF: Update sonarcloud JDK version to 17
+- feat: When searching a tag from document the detail drawer is still displayed - EXO-60218
+- Fix analytics wrong dependency version
+- feat: Add analytics on tag in documents - EXO-59671
+- feat: Fix list of group collaborators' suggestions in the access management - EXO-59958
+- fix: No redirection when create a shortcut - EXO-60197 
+- fix: Drag and Drop : weird UI - EXO-60033 
+- feat: Add analytics for update description on document or folder - EXO-59672 
+- feat: Add analytics for add description on document or folder - EXO-59571 
+- fix: Fix lost extension after renaming a document - EXO-60015 
+- fix: Keep documents search term filter when switching between documents views - EXO-60059 
+- feat: Add analytics on tag in documents - EXO-59671
+- feat: Browse a shortcut folder - EXO-59728
+- feat: Show version history option for all versionable files - EXO-60233  
+- feat: Enhancements in version history - EXO-60211 
+- Task 60196 
+- feat: Delete the original file delete all shortcut  - EXO-59876
+- feat: Restriction on document app when a redactor is promoted - EXO-59598 
+- feat: Fix icon for groups in manage access 
+- fix: Create a shortcut of a folder doesn't work - EXO-60122
+- feat: Tag on description - EXO-59495 
+- fix: Fix uploading files inside subfolders of an uppercase parent folder name - EXO-59861  
+- fix: creating uppercase folder through webdav leads to duplicate folder - EXO-59745  
+- feat: Hide version history path on version previewer and fix download versions - EXO-60055,60057  
+- feat: Handle version history on symlinks - EXO-60017 
+- feat: Add analytics for version history - EXO-59570  
+- feat: Display version number in documet info drawer - EXO-59601  
+- feat: Add restore version option - EXO-59626  
+- feat: Edit summary version - EXO-59624  
+- feat: Add Add version history management services - EXO-59585,59522,59540  
+- feat: Add version history option - EXO-59667 
+- fix-59724 update project dependencies with meeds exo distribution
+- fix: Fix Symlink icon in doc app - EXO-59869  
+- fix: Fix refresh after delete - EXO-57172  
+- fix: Fix create shortcut action menu position - EXO-59869 
+- feat: Space members aren't notified when they are designed as collaborators on a document - EXO-59955 
+- fix-59554: Add collaborators groups in Manage Access 
+- feat: Assign group as collaborator in manage access - EXO-59883  
+- feat: Enhance display shortcut actions and last updated timestemp - EXO-59612  
+- feat: Add Drag and drop - EXO-59516  
+- feat: Display shortcut according to permissions added to the original document - EXO-59866 
+- fix: fix problem of delete document - EXO-59821  
+- fix-59564: Add analytics manage access operation 
+- feat: Implement create shortcut action back side - EXO-59566  
+- fix-59517: Fix feature flag bug 
+- fix-59433: Rename file : accentuated charachters aren't saved  
+- fix-53696: fix tooltip for documents view headers  
+- fix-59473: Fix labels for manage access with folders  
+- fix-59665: Hide manage access on file attached to an article 
+- fix-59065: As member i want add collaborators 
+- fix-59517: Implement create shortcut action front side 
+- Task 53416 
+- fix-59422: Don't display modify option from the 3 dots options of One Drive and Google Drive cloud drive documents 
+- fix-59419: Customize 3 dots options on One Drive and Google Drive cloud drive folders 
+- fix-59413: Hide edit and 3 dots button in eXo document viewer of Google Cloud drive and One drive documents 
+- fix-59380: Fix document application wrong icons
+- fix-53773: Display pop-up user when hovering on user name in details drawer 
+- fix-59166: Upgrade to openapi swagger 3  
+- fix-59174: Display cloud drive folder in Drives app 
+- fix-58914: Sort the folder list node
+- fix-59068: Add drawer visibility for folder
+- fix-58900: In move drawer when changing the destination folder the current location shouldn't be changed  
+- fix-59062: Add action Manage access in three dots folder
+- fix-59167: Display column visiblity
+- fix-58708: Fix redirect to root folder when duplicate file
+- fix-58606: can't add files inside a folder which name contains special characters  
+- fix-58997: Add the ability to create folder with the name contains only numbers
+- fix-57797: Hide system folders and files  
+- fix-58643: Fix rename document uploaded
+- fix-57172: Documents - After deleting a file double refresh is needed to make it dispappear from the list
+- fix-57530 fix breadcrumb related to a symlink folder
+- fix-54482: Add missing listener to update activity cache when attachments renamed
+- fix-57136: Translate terms when creating / duplicating files
+- fix-57220: Added document from quick file creation is not saved in the right destination 
+- fix-57552: Decoding the document name in the favorite list
+- fix-57767: Decoding documents' names with special characters in the Documents application
+- fix-57178: Fix add folder  button on documents app
+- fix-57510 Fix creating new folder 
+- fix-57678: Fix full name in suggestor is not display well
+- fix-57156 Improve documents sorting display in folder view 
+- fix-56789:  Edit option is displayed for Non supported documents 
+- fix-57552: Decoding the document name in the favorite list
+- fix-57175: Transfer rules are not applied in documents app 
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-57485: fix sorting folders by name in folder view  
+- fix-57411 : Miss padding left for column name desktop / mobile
+- fix-57309: fix display of accented folder name 
+- fix-57150: Bad display when user is redirected to shared folder via notification  
+- fix-57305: Fix moving a folder to another space 
+- fix-57189: UI bug issue on the feature Move to of new application document 
 
-** Improvemnts
-
-
-eXo Platform 6.1.x
+eXo agenda 1.3.0
 *************************
+- fix: remove the extra margins so the notification blocks will be aligned  - EXO-62228 
+- fix: drawer is not displayed when inside a sticky container - EXO-62633 
+- fix: support iCAL property TZUNTIL - EXO-62018 
+- fix: Can't invite user to an event by email if '-' caratcter exists in the email's domain name - EXO-61732  
+- feat: Event response notification : creator only should receive event replies notifications - EXO-61726 
+- feat: Configure tools application registry category - EXO-61480 
+- fix:Agenda :Event from last month of january to any date of february is displayed on all the month EXO-61629 
+- feat: Add client secret key for google remote provider connector - EXO-59880 
+- fix: Fix no notification received for weekly events - EXO-60311 
+- fix: Fix reply to an invitation to a recurring event for which the first occurrence is past event - EXO-46906 
+- fix-59724 update project dependencies with meeds exo distribution
+- Revert "fix-59198: Improve protection to protect rest services AgendaEventRest 
+- fix-59198: Improve protection to protect rest services AgendaEventRest  
+- fix-59166: Upgrade to openapi swagger 3  
+- fix-59178: Use PATCH annotation from Meeds WS implementation 
+- fix-57950: Retrieve events of only current connected connector 
+- fix-58529: Display popup to confirm switching the connection from an agenda connector to another 
+- fix-57954: Add tooltip and italic font to the connected username displayed into agenda connectors drawer 
+- fix-58171: Remove agendaConnectors module dependency from agenda 
+- fix-58327: Fix displaying planning bar for events
+- fix-55923: Add missing gamification properties path to agenda translations properties.
+- fix-55928: conference link is lost when scheduling an event on mobile application
+- fix-54594 permit to  managers, redactors, and super manager to edit events in space and enable toggle button "modify event" to Allow participants to modify this event if there is no redactor. 
+- fix-58284: Remove Exchange agenda connector from the agenda codebase 
+- fix-58285: Remove Google and Outlook agenda connectors from the agenda codebase 
+- fix-57951: Display Exchange agenda connector in "Connect You Personal Agenda" user setting drawer 
+- fix-58002: Enable/Disable microsoft exchange agenda connector 
+- fix-57952: Manage "exchange" Agenda Connector 
+- fix-57601: fix close button does not appear on mobile
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-55025: Fix agenda widget on the snapshot page 
 
-** Bug
-
-** Improvemnts
-
-eXo Chat 3.1.x
-**************
-** Bug
-
-** Improvemnts
-    
-eXo News 2.1.x
-**************
-
-** Bug
-
-** Improvemnts
-    
-eXo GateIn 6.1.x
+eXo Chat 3.4.0
 *************************
+- fix-62670: fix chat server standalone deployment and update dependencies 
+- fix: Chat Notifications is duplicated - EXO-53349 
+- fix: Chat unread badge is not aligned - EXO-61969 
+- feat: Remove quick create chat discussion feature flag - EXO-61877 
+- feat: Fix displaying Quick create chat room discussion help message - EXO-61323 
+- feat: Open quick chat discussion drawer when searching a discussion has no results - EXO-60916 
+- feat: Implement quick create chat discussion drawer actions - EXO-60971  
+- feat: Implement quick create descussion chat drawer - EXO-60885  
+- fix: set correct value for websocket message size limitation - EXO-59044  
+- fix: add ids for mini chat drawer icons - EXO-61071  
+- feat: Make the quick create chat discussion button not available for externals - EXO-61000 
+- feat: Implement feature flag for quick create chat discussion feature - EXO-60940 
+- feat: Display + button to create a quick chat discussion from chat drawer - EXO-60883 
+- fix-59724 update project dependencies with meeds exo distribution
+- fix-58531: [Accessibility-Image C1.3] Chat - Providing short text-alternative that provide a brief description of the image 
+- fix-58584: Left chatrooms are still displayed in favorite list 
+- fix-59166: Upgrade to openapi swagger 3  
+- fix-59308: chat drawer displays blank 
+- fix-58849: icon upload file in chat room not displayed 
+- fix-59043: Update addons-parent-pom to 16-M04
+- fix-58835: Duplicated chat messages 
+- fix-58840: Chat app button doesn't work on firefox.  
+- fix-588807: [Accessibility - Contrast C3.2 - Stream Page] Fix contrast problem notifications in the top bar 
+- fix-57693: Button send a message chat not clickable
+- fix-57175: Disable download files in chat messages depends on transferRules settings 
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-56377: fix notification badges alignment
+- fix-57412 Use ellipsis form in chat drawer title  
+- fix-57294: wrong Labels displayed 
 
-eXo Calendar 6.1.x
+eXo News 2.4.0
 *************************
-** Bug
+- fix : Fix dispaly of space name on the latest news item view - EXO-62143 
+- fix: Illustration image is sent in raw format in rest service for getting associated activity - EXO-63263
+- SWF: Restore Task notifications workflow for Tribe
+- fix: News tags are not working - EXO-63153 
+- fix: change news container to singlePageApplication - EXO-62963 
+- fix: Standardize font styles/size between notes and news pages - EXO-61667  
+- fix : fix news list template displayed news in one column if we have more than container on the page - EXO-62351  
+- fix: publish news notification is received when editing a published news - EXO-62469 
+- fix: No attachment when a news is published later - EXO-62227  
+- Update addons-parent-pom to 16-exo-RC01
+- fix: News illustration is blur in mobile view - EXO-61893 
+- feat: Send publish notification when switching from Only space members to All users - EXO-61771 
+- fix: Unread Activities - Doesn't work with news activities - EXO-61582 
+- feat: Set news illsutration image as icon in favorite list - EXO-61666  
+- feat: Improve security for add and edit news target rest services regarding mandatory permissions - EXO-61882 
+- fix : When an illustration is requested with a size, the image is always resized - EXO-61217
+- feat: Draft article generation should not be tracked on analytics - EXO-61864
+- feat: In news analytics, "Content Id" attribute should display the title of the content instead of the content id - EXO-61779 
+- fix: News template headlines: Move container to side layout output issue. - EXO-61647 
+- feat: Fix wrong default audience value and default targets when edit publishing and scheduling - EXO-61777 
+- feat: News target without permissions should be unvailable in news list portlets settings and news publishing/scheduling drawers - EXO-61776 
+- feat: Remove news targeting audiencing FT flag - EXO-60923 
+- fix: for simple user the post button is disabled - EXO-61796  
+- feat: Fix blank displaying of news with Only space member audience for a non space member - EXO-61721 
+- feat: Implement published news article audience analytics - EXO-61015 
+- feat: Disable publish checkbox, hide targets list and audiencing in different publishing drawers when no target is allowed - EXO-61512 
+- feat: Fix UI glitches on publishing drawer - EXO-61536 
+- feat: Implement "Only space members" and "All users" articles targeting audience - EXO-61240 - EXO-61239 
+- feat: Implement news targeting audiencing FT flag - EXO-61443 
+- feat: Add audiencing section in publishing drawers - EXO-60508 
+- feat: Fix can't set permission on default targets - EXO-61445 
+- fix: clean news title name when unpublishing news - EXO-61538 
+- fix: Unpublish news problem after editing news title - EXO-61538  
+- fix: News List template: use correct size for illustrations -EXO-60461  
+- feat: Implement publish news article analytics - EXO-61014 
+- fix: Slider News templates : Center the Article title : EXO-61567 
+- fix: News Template admin/user view : Header is hidden if see all button if disabled - EXO-61514 
+- fix: Template News list images disabled case - EXO-61552 
+- fix: Template News Headlines images disabled case - EXO-61551 
+- fix : News Headlines Template space Name and Title for main displayed article color - EXO-61508 
+- fix : Title and see All  general rule - EXO-61553 
+- feat: Display No target is allowed in news list settings - EXO-61246 
+- fix: add margin for headline template  with the setting bar - EXO-61362 
+- fix: fix displaying news list margin - EXO-61362 
+- feat: Allow the publishers of spaces to publish, schedule all their spaces articles and update space news list portlets settings - EXO-60504 - Meeds-io/MIPs 
+- feat: Display no target is allowed in publish section of drawers - EXO-60990 
+- fix; displaying news list for large and small containers - EXO-61365  
+- fix: news title UI - EXO-61363 
+- feat: Display news targets according to the permission in news list portlet setting - EXO-61245 
+- feat: Set platform/web contributors group permission to "snapshotSliderNews" and "snapshotLatestNews" default eXo news targets - EXO-61244 
+- feat: Hover of a target displays the description in a tooltip - EXO-61322 
+- feat: Delete the space or group defined as a target permission should make it disallowed for any user - EXO-61359 
+- feat: Display allowed news targets in publish section of publishing drawers - EXO-60989 
+- feat: Allow the publishers of web contributors group to publish and schedule all their spaces articles - EXO-61237 - Meeds-io/MIPs 
+- feat: Remove the default redactor permission to post an article in a redactional space for the publisher of web contributors group - EXO-61216 - Meeds-io/MIPs 
+- fix: images in shared news are not displayed - EXO-61176 
+- Update addons-parent-pom to 16-exo-M07
+- feat: Edit target permissions from edit target drawer - EXO-60986 
+- feat: Display news target permissions in news targets administration page - EXO-60983 
+- feat: Add target permission when creating a news target - EXO-60503 
+- fix : improve displaying new list UI - EXO-60939 
+- fix : fix displaying news without illustration - EXO-60831 
+- fix: News Mosaic template : UI Improvements - EXO-60594 
+- fix: Stories template : UI improvements - Exo-60938 
+- feat: Resize news activity illustration - EXO-60323 
+- SWF: Update sonarcloud JDK version to 17
+- feat: News detail page: use correct size for illustrations -EXO-60462 
+- fix: Update loader-utils dependency - EXO-60887
+-  fix: Prefetch news list rest call contains the target hardcoded : EXO-60823  
+- *feat:stabilize news with JDK 17 : EXO-60546  
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- feat: Preload the rest call to get news by target - EXO-60470 
+-  feat:News: In newList, the settings drawer is loaded when the main page is loaded 
+- feat: update illustration size : EXO-60463 
+- feat: Split news styles - EXO-60537 
+- fix: Display right views number and publication/modfication dates for an already posted article whith current draft publication state - EXO-57681 
+- fix: Fix missing number of reactions per period in contents analytics report - EXO-60102 
+- fix-60231: Update addons-parent-pom to 16-M05
+- fix: Fix news search with apostrophe and double quote - EXO-59689 
+- fix-59724 update project dependencies with meeds exo distribution
+- fix: Prevent display of alert template when there is no related articles - fix-56232 
+- fix-59071: Empty Email notification info area , after sharing a short message or  article from space stream to another
+- fix-59318: News information aren't displayed as intended 
+- fix-59112 : Fix alert message when adding a news to favorite on search result
+- fix-59166: Upgrade to openapi swagger 3 
+- fix-50471: Create a resized thumbnail image of news illustration when list news articles
+- fix-59159: Fix the display of item in the news cards 
+- fix-59158: The display of item in the slide story is not correctly 
+- fix-58627: Long article title not displaying correctly in stream on mobile or small sliders  
+- fix-59178: Use PATCH annotation from Meeds WS implementation 
+- fix-58038: Add openapi swagger rest documentation maven plugin 
+- fix-59043: Update addons-parent-pom to 16-M04
+- fix-58934: Update addons-parent-pom to 16-M03
+- fix-58928: Update addons-parent-pom to 16-M02
+- fix-56899: Enhance latest news portlet and news illustration images load time 
+- fix-57174: Long article title not displaying correctly in stream on mobile or small sliders 
+- fix-58319: Article names are black when using Mosaic template  
+- fix-57165: News mosaic template is ko if small width  
+- fix-57143: Adjust display of news headlines template using a small width container  
+- fix-51498: Fix Copy and paste a document from Google Doc into an article
+- fix-57154: Spaces names are forced in Upper characters in newslist  
+- fix-57548: Adjust alignment of news list template 
+- fix-54409: Fix displaying numbers of views and date for posted news with draft status.
+- fix-56737 Add Space Identifier when bookmarking a news 
+- fix-57285: Attached documents from other spaces existing resource in news articles have no right permissions 
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-56988: Photo disappears when it is moved or resized in editor 
+- fix-56827: Add text truncate in mobile when space name is too long
+- fix-51771: fix problem when pressing enter in input title that redirect to loading page
+- fix-57270: the header in News article list settings drawer doesn't support Accented characters
+- fix-57267: Fix translation of update button 
+- fix-56676: A space member should be allowed to Bookmark a news.  
+- fix-57193 : Single notif received for the update of article  
 
-** Improvemnts
-    
-eXo JCR 6.1.x
-*************************    
-
-eXo Kernel 6.1.x
+eXo onlyoffice 2.4.0
 *************************
+- fix: In some cases, OO was not able to open the document as it use the path to open it - EXO-62901
+- feat: Hide Go to full version history button in editor versions drawer - EXO-59627  
+- fix: Avoid creating two versions of a document at first edit by onlyoffice - EXO-59882  
+- fix-59724 update project dependencies with meeds exo distribution
+- fix: Fix previewing a shared document by its copied link - EXO-58927 
+- fix-57905 fix the encoding special characters included in the document name and displayed in toolbar in onlyoffice 
+- fix-56789: Add supported documents extension 
 
-eXo Commons 6.1.x
+eXo task 3.4.0
 *************************
+- fix: Fix Task Changes Drawer left Margin - MEED-1974 - Meeds-io/meeds 
+- feat: UI enhancements of project cards - MEED-1836 - Meeds-io/meeds  
+- Merge Meeds-io/MIPs 
+- feat: Add Emoji option in Task CKEditor - MEED-1950 - Meeds-io/meeds
+- fix: Fix Comment Drawwer Arrow icon alignment - MEED-1951 - Meeds-io/meeds
+- fix: Fix Margins of Task Drawer - MEED-1905 - Meeds-io/meeds Adjust Margins of Task Drawer elements for better alignement.
+- fix: Fix Task Card Footer Alignment - MEED-1949 - Meeds-io/meeds
+- fix: Fix Numbered list not displayed in Tasks - MEED-1947 - Meeds-io/meeds 
+- fix: Fix Arrow Icon Display in Drawer - MEED-1943 - Meeds-io#MIPs 
+- feat: Move JS resources libraries from app-center and delete useless dependency for VueEllipsis  - Meeds-io/MIPs - MEED-1891 
+- Sync crowdin translations.properties with latest change
+- Merge Meeds-io/MIPs 
+- feat: Cleanup Artifacts and Delete previously deprecated elements for better maintainability and evolutivity - MEED-1451 - Meeds-io/MIPs 
+- feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs 
+- feat: Add a hover effect to the task project - MEED-1549 
+- feat: Add a hover effect to the task card - MEED-1413
+- feat: Remove collaboration application registry and configure tools application registry category - EXO-61480 - Meeds-io/MPIs 
+- Merge Meeds-io/MIPs
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs  
+- fix: Check how the suggestions are done - MEED-651 
+- Merge Meeds-io/MIPs
+- feat: Engagement Center Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
+- feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs 
+- fix-54359: tasks are not well sorted on myTasks board when using primary filter affected to me or I collaborate to 
+- SWF: Combine PLF Task Notification GHA
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: UI glitch in task assignee and coworkers avatar display - MEED-916 - Meeds-io/meeds 
+- fix: Fix typed label filter isn't maintained -EXO-60110 - Meeds-io/meeds 
+- fix: Fix vertical and horizontal scroll bars to tasks display in Planview - EXO-59238 - Meeds-io/meeds 
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix-60231: Update addons-parent-pom to 16-M05
+- fix: Fix App Center Override Mode Settings - MEED-768 
+- fix: Fix task due and start dates issue - fix-60074- Meeds-io/meeds 
+- fix: Fix issue when multiple assigning at same time -fix-59718 
 
-eXo Wiki 6.1.x
+eXo web-conferencing 2.4.0
+*************************  
+- SWF: Restore Task notifications workflow for Tribe
+- SWF: Remove Task notifications webhook GHA
+- fix: Can't rename the call recording file - EXO-61701
+- Revert "fix: improve performance when getting space information - EXO-61212 "  
+- Update addons-parent-pom to 16-exo-RC01
+- fix: improve performance when getting space information - EXO-61212 
+- SWF: Update sonarcloud JDK version to 17
+- feat: update addons parent pom to 16-exo-M06 - EXO-60439 
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix-60231: Update addons-parent-pom to 16-M05
+- fix-59724 update project dependencies with meeds exo distribution
+- fix-59166: Upgrade to openapi swagger 3  
+- fix-58038: Add openapi swagger rest documentation maven plugin 
+- fix-59043: Update addons-parent-pom to 16-M04
+- fix-58965 : Update cometd from 3.0.8 to 6.0.7 
+- fix-58934: Update addons-parent-pom to 16-M03
+- fix-58928: Update addons-parent-pom to 16-M02
+- fix-57361: Space call doesn't stop for guests after all exo paticipants leave 
+- fix-57608 : Display the call button in big chat and in profile 
+- fix-57496: Fix loading page for room display space's default avatar  
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-57415: Fix call icon on chat drawer's mask 
+- fix-57307: Fix user popover when webRTC call is enabled 
+
+eXo jitsi 1.3.0
 *************************
-** Bug
+- SWF: Restore Task notifications workflow for Tribe
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- fix-59724 update project dependencies with meeds exo distribution
+- fix-59043: Update addons-parent-pom to 16-M04
+- fix-58934: Update addons-parent-pom to 16-M03
+- fix-58928: Update addons-parent-pom to 16-M02
+- fix-57515: Display the call button in big chat and in profile 
+- fix-55805: [Accessibility - Contrast - 3.2] Change the default primary color 
+- fix-57307: Fix user popover when webRTC call is enabled 
 
-** Improvemnts
+eXo platform-ui 6.4.0
+*************************
+- SWF: Remove Task notifications webhook GHA
+- feat: Revert Add css style for people advanced filter drawer - EXO-60555 - Meeds-io/MIPs 
+- feat: Merge feature profile settings - Meeds-io/MIPs 
+- Update maven-parent-pom to 25-exo-RC01
+- feat: Quick filter of admin profile settings - EXO-61484 - Meeds-io/M…
+- feat: Add a new profile field - EXO-61481 - Meeds-io/MIPs
+- feat: Labels section for profile field - EXO-61623 - Meeds-io/MIPs 
+- feat: Labels section for profile field - EXO-61623 - Meeds-io/MIPs 
+- feat: Add profile page settings table - EXO-60717 - Meeds-io/MIPs
+- feat: Ad css style for people advanced filter drawer - EXO-60555 - Meeds-io/MIPs 
+- fix: Fix Simple column container size changed when inserting an application -EXO-61705 -Meeds-io/MIPs 
+- fix: Update css styles for simple row container - EXO-61906 - Meeds/io-MIPs 
+- feat: Delete useless Kudos icon classes - MEED-1596 - Meeds-io/meeds 
+- feat: Adjust some UI in the space toolbar filters - MEED-1550 - Meeds-io/meeds 
+- feat: Change the space menu options in the spaces page - MEED-1491 - Meeds-io/meeds 
+- feat: enhance Profile experiences block - MEED-1583 - Meeds-io/meeds 
+- feat: Use Images Cropper Component for  Space and Profile avatars and banners - Meeds-io/meeds 
+- feat: Add General Settings Portlet skin and import CSS of reusable image cropper component - MEED-1501- Meeds-io/MIPs 
+- feat: Define new Portlet for General Settings including Branding Form- MEED -1499 - Meeds-io/MIPs 
+- feat: Change some UI of the menu members card when using a mobile - MEED-1518 - Meeds-io/meeds 
+- feat: Add the hover effect to the space card - MEED-1361 - Meeds-io/MIPs 
+- feat: Review Space stream page layout - MEED-1411 - Meeds-io/meeds 
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs 
+- Add meeds licence header
+- feat: Delete useless CSS after Login pages rework - Meeds-io/MIPs
+- feat: Add External Login Providers images - MEED-1305 - Meeds-io/MIPs 
+- feat: Rework Login Page UI & UX - MEED-1303 - Meeds-io/MIPs 
+- feat: Add styles for topBar navigation menu portlet - EXO-61285 - Meeds-io/MIPs  
+- feat: Implement new default page template css syles - EXO-61142 - Meeds/io-MIPs 
+- feat: Implement Simple Column container css style - EXO-61141 - Meeds-io/MIPs 
+- fix: Fix the display of the avatar space in settings drawer - MEED-1347 - Meeds-io/meeds 
+- fix: Remove unused image - MEED-1235 - Meeds-io/meeds 
+- feat: OVERVIEW PAGE add overview trophy solid icon - MEED-550 - Meeds-io/MIPs 
+- feat: Unread activities information Display unread activities in the stream - MEED-704- Meeds-io/MIPs 
+- feat: Unread activities information Mark as read from the left menu - MEED-701- Meeds-io/MIPs 
+- feat: Unread activities information Display number of unread activities for a space from the left menu -MEED-700 - Meeds-io/MIPs 
+- feat: unread activities information Change the UI of selected items in the nav -MEED-622 - Meeds-io/MIPs 
+- feat:Unread activities information Notification options for unread activities - Admin -MEED-697- Meeds-io/MIPs 
+- feat: Implement Simple Row container - EXO-61140 - Meeds-io/MIPs 
+- Merge develop into develop-exo
+- feat: Implement Simple Table container - EXO-61139 - Meeds-io/MIPs 
+- Update maven-parent-pom to 25-M06
+- Update maven-parent-pom to 25-exo-M07
+- fix: Rank Widget UI glitch - MEED-1196 
+- fix: Rank Widget UI glitch - MEED-1196 
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- Fix: During page load, the text remains visible - EXO-60466 - Meeds-io/meeds-414 
+- Fix: During page load, the text remains visible - EXO-60466 - Meeds-io/meeds-414 
+- feat: update addons parent pom to 25-exo-M06 - EXO-60439 
+- feat: style the common version history drawer component - EXO-59522 -Meeds-io/MIPs 
+- feat: left menu review Remove additional semicolon
+- feat: left navigation menu Add feature flag - MEED-995 
+- feat: left menu review Display the space details panel - MEED-601-720 - Meeds-io/MIPs 
+- feat: left menu review Display second panels (recent spaces / admin) - Desktop - MEED-609 - Meeds-io/meeds 
+- fix: Upgrade font-awesome file to latest release of v5.x - MEED-573 
+- feat: Left menu review Position of icons when bookmarked space (leftmenu) - MEED-608 - meeds-io/meeds  
+- feat: Left menu review Adjust the space drawer from the left navigation menu - MEED-52 - Meeds-io/meeds 
+- MEED-418: Display the three dots icon when hovering on the latest visited spaces item 
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- MEED-362: Edit read more users color background in space topbar popover 
+- feat: Pin an activity Space host or redactor can pin/unpin an activity to/from the space stream - MEED-457 - meeds-io/meeds 
+- fix: Add new CSS class helper - MEED-711 
+- fix-60231: Update maven-parent-pom to 22-M05
+- feat: style the common version history drawer component - EXO-59522 -Meeds-io/MIPs 
+- Merge Left menu review & adds - Meeds-io/MIPs 
+- feat: left menu review Remove additional semicolon
+- feat: left navigation menu Add feature flag - MEED-995 
+- feat: left menu review Display the space details panel - MEED-601-720 - Meeds-io/MIPs 
+- feat: left menu review Display second panels (recent spaces / admin) - Desktop - MEED-609 - Meeds-io/meeds 
+- fix: Upgrade font-awesome file to latest release of v5.x - MEED-573 
+- feat: Left menu review Position of icons when bookmarked space (leftmenu) - MEED-608 - meeds-io/meeds  
+- feat: Left menu review Adjust the space drawer from the left navigation menu - MEED-52 - Meeds-io/meeds 
+- MEED-418: Display the three dots icon when hovering on the latest visited spaces item 
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- Merge space topbar popover - Meeds-io/MIPs 
+- MEED-362: Edit read more users color background in space topbar popover 
+- Merge Pin Activity Feature - Meeds-io/MIPs 
+- feat: Pin an activity Space host or redactor can pin/unpin an activity to/from the space stream - MEED-457 - meeds-io/meeds 
+- fix: Add new CSS class helper - MEED-711 
+- feat: style the common version history drawer component - EXO-59522 -Meeds-io/MIPs  
+
+eXo analytics 1.3.0
+*************************
+- SWF: Remove Task notifications webhook GHA
+- fix: Fix Full Page display collected data duration in non dev mode - MEED-1805 - Meeds-io/meeds
+- Update addons-parent-pom to 16-exo-RC01
+- feat: Fix meeds header - EXO-61480 -Meeds-io/MIPs
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs 
+- feat: Configure analytics application registry category - EXO-61480 -Meeds-io/MIPs 
+- feat: Add analytics data for Read/Unread Activities events - MEED-1278 - Meeds-io/MIPs
+- fix: missing activity types values in analytics - EXO-60792 
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- Update addons-parent-pom to 16-exo-M07
+- feat: Move Analytics page template to normalPageConfigs page templates category - EXO-61138 - Meeds-io/MIPs 
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: update addons parent pom to 16-exo-M06 - EXO-60439 
+- fix : Fix title of analytics chart are not translated - EXO-58757 - Meeds-io/meeds 
+- fix : Fix title of analytics chart are not translated - EXO-58757 - Meeds-io/meeds 
+- feat: left menu review Operations for left menu action - MEED-549 - Meeds-io/meeds 
+- Merge pull request  from Meeds-io/MEED-801 
+- feat: left menu review Operations for left menu action - MEED-549 - Meeds-io/meeds 
+- fix : Fix generated operation without name when uploading file - EXO-56830 - Meeds-io/meeds 
+- Merge pull request  from Meeds-io/fix-56830-dev
+- fix : Fix generated operation without name when uploading file - EXO-56830 - Meeds-io/meeds 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- MEED-464: Add Analytics for space topbar popover 
+- Merge space topbar popover - Meeds-io/MIPs 
+- MEED-464: Add Analytics for space topbar popover 
+- feat: Analytics for pinned activities - MEED-413 - meeds-io/meeds 
+- Merge Pin Activity Feature - Meeds-io/MIPs 
+- fix: Fix Analytics ES JSON response parsing - Meeds-io/meeds - MEED-716 
+- feat: Add analytics manage access operation - EXO-59564 
+- fix: Fix Computing Analytics Data when using date in X-Axis - MEED-480 
+
+eXo perk-store 2.4.0
+*************************
+- fix: wrong column type for Product.isdeleted in postgresql - Meeds-io/meeds - EXO-63088 
+- SWF: Remove Task notifications webhook GHA
+- Update addons-parent-pom to 16-exo-RC01
+- fix: Remove th technical label detected when adding an image to the new product - MEED 1538 - Meeds-io/meeds 
+- feat: Overview page disable buy button - MEED-1481 - Meeds-io/MIPs 
+- fix: Perk Store drop down filter enhancement - MEED-1497 
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs 
+- fix: External users access to pages - MEED-1465 
+- feat: Overview Page Add perkStore block in rewards portlet - MEED-937 - Meeds-io/MIPs   
+- feat: Perk Store Add palceholder when no products displayed - MEED-1259 
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- feat: stabilize perk-store with jdk 17- EXO-60521 
+- Update addons-parent-pom to 16-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: stabilize perk-store with jdk 17- EXO-60521 - Meeds-io/MIPs 
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- feat: Add walletAPi portlet in perkstore dynamic container - EXO-60319 
+- feat: Add walletAPi portlet in perkstore dynamic container - EXO-60319 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+
+eXo Kudos 2.4.0
+*************************
+- feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs 
+- fix: fix user full name and popover after updating user contact in kudos activity - EXO-59990 
+- feat: Replace PLF-ICONS on profile page with fa icons - MEED-1596 - Meeds-io/meeds  
+- feat: Improve Kudos Widget to use same display as overview page - MEED-1556 - Meeds-io/meeds 
+- fix: Kudos fix display of success notification - MEED-1484
+- feat: Fix Admin Page Margins to offer coherent UX - MEED-1320 - Meeds-io/MIPs  
+- fix: Icons with wrong color - MEED-1480 
+- fix: Check how the suggestions are done - MEED-651 
+- fix: I can't send kudos back to the one who sent me one in kudos activity - MEED-1455 - Meeds-io/meeds  
+- feat: Adjust Mobile view of kudos when sent/received - MEED-1387 - Meeds-io/MIPs 
+- feat: Overview Page Implement when no kudos  - MEED-961 - Meeds-io/MIPs 
+- feat: Overview Page Implement blank kudos in my reputation portlet - MEED-666 - Meeds-io/MIPs 
+- feat: Overview Page implement kudos extension registry - MEED-665 - Meeds-io/MIPs  
+- fix: Add Missing File License Header in Engagement Center JS Extension - Meeds-io/MIPs
+- feat: Engagement Center Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
+- feat: Contribution Center Display icon on action label in acheivement table - MEED-805 - Meeds-io/MIPs 
+- fix: Fix the right primary color used - MEED-1226 
+- Merge develop into develop-exo
+- fix: Disable send kudos from an activity for user who has left the space - EXO-67097 
+- fix: Disable send kudos from an activity for user who has left the space - EXO-67097 
+- Update addons-parent-pom to 16-M06
+- feat: stabilize kudos with jdk 17- EXO-60519 
+- Update addons-parent-pom to 16-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: stabilize kudos with jdk 17- EXO-60519  
+- MEED-490 Enable tags indexation when added in kudos 
+- MEED-490 Enable tags indexation when added in kudos 
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- fix : Activity Stream some pre-fetched REST URLs aren't used in page - MEED-645 - Meeds-io/meeds 
+- fix : Activity Stream some pre-fetched REST URLs aren't used in page - MEED-645 - Meeds-io/meeds 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix : In reward administration, the request to compute reward is too long - EXO-60157 - meeds-io/meeds
+
+eXo gamification 2.4.0
+*************************
+- SWF: Remove Task notifications webhook GHA
+- Fix: Overview page Challenges portlet is empty when delete a program - MEED-1830 
+- fix: Engagement center Filtered challenges are not expanded by default - MEED-1785 
+- fix: Overview page My reputation portlet is DOWN - MEED-1814 - Meeds-io/meeds 
+- ContributionsPlaceholder_US06: When program has been deleted - MEED-1674 
+- feat: Engagement Center Display additional program owners and audience space on the program detail page - MEED-1425 -  Meeds-io/meeds 
+- fix: Overview page Programs are not sorted by max points - MEED-1653 
+- fix: Days left are wrongly displayed for challenges - MEED-1776 
+- fix: Clicking twice to announce makes 2 posts - MEED-1784 
+- fix: Overview page User names are not displayed in top challenger portlet of overview page - MEED-1756 
+- fix: Engagement Center Filter field is not working in challenge TAB - MEED-1773 
+- fix: Overview page Ended challenges should not be displayed in challenge portlet of overview page - MEED-1654 
+- fix: Engagement Center Default rules are not available anymore - MEED-1663 
+- fix: Delete usage of deprecated endpoint for user relationship management - MEED-1723 - Meeds-io/meeds 
+- fix: Fix exporting achievements in XLS file - MEED-1771 - Meeds-io/meeds 
+- fix: Fix Close Icon of Connections and Spaces drawers - MEED-1707 - Meeds-io/meeds 
+- Update addons-parent-pom to 16-exo-RC01
+- fix: Engagement Center Challenge activity message not update user's name after profile update - MEED-1186 - Meeds-io/meeds 
+- fix: Stabilize Automatic Tests by using common drawer component for profile stats - MEED-1632 
+- fix: Update program name and action name in export achievements - MEED 1548 
+- fix: Fix the value of the action label column - MEED-1548 
+- fix: Fix empty Badge Position in Profile Page - MEED-1633 
+- feat: Engagement Center  Review winners drawer - MEED-1417 - Meeds-io/MIPs 
+- feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs 
+- fix: Fix Badges Display In Profile and Overview pages - MEED-1581 - Meeds-io/meeds 
+- fix: Adjust the alignment of the add action button with the drop down filter - MEED-1620  
+- feat: Engagement Center Display participant on action tab limited - MEED-1603 - Meeds-io/MIPs  
+- feat: Engagement Center Points reminder in card and drawer - MEED-1616 - Meeds-io/MIPs  
+- feat: Engagement Center Challenges card enhancement - MEED-1569 - Meeds-io/MIPs 
+- fix: Adjust the icon in the placeholder of the contribution portlet - MEED-1619 - Meeds-io/meeds 
+- fix: Remove the duplicate tooltip of the program name - MEED-1617 
+- fix: Adjust the right action icon using mobile - MEED-1422  
+- fix: Engagement Center Option to filter by disabled and removed program - MEED-1195 - Meeds-io/meeds 
+- fix: Engagement Center fix Actions name alignment in program details page - MEED-1598 - Meeds-io/MIPs 
+- feat: Engagement Center Update the default program banner - MEED-1607- Meeds-io/MIPs 
+- feat: Rework User Gamification Points Chart for better UX - MEED-1602 - Meeds-io/meeds 
+- feat: Improve People Pie Chart to hide labels when displayed - MEED-1242 - Meeds-io/meeds 
+- feat: Engagement Center  program detail and going back to the list - MEED-1231 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on programs details table by adding participants - MEED-1430 - Meeds-io/MIPs 
+- feat: Engagement Center Mobile enhacement display for program detail - MEED-1570 - Meeds-io/MIPs 
+- feat: Delete Feature Flags of Productized Features - MEED-1594 - Meeds-io/meeds 
+- feat: Engagement Center Display 25 action per page - MEED-1428 - Meeds-io/MIPs  
+- feat: Engagement Center enhance programs card display - MEED-1568 - Meeds-io/MIPs 
+- feat: Improve Profile Stats Widget - MEED-1556 - Meeds-io/meeds 
+- feat: Only active challenges should be listed in the overview page - MEED-1553 - Meeds-io/MIPs 
+- fix: Engagement Center Description in challenge drawer out of the drawer - MEED-1565 - Meeds-io/meeds 
+- feat: Engagement Center Remove separators on drawer program owners - MEED-1575 - Meeds-io/MIPs 
+- fix: Link preview not proposed anymore (Challenge) - MEED-1552 - Meeds-io/meeds 
+- feat: Engagement Center Users earn points depending on the audience of the program - MEED-1404 - Meeds-io/MIPs 
+- fix: Fix Popular Spaces Text Display when having long name - MEED-1546 - Meeds-io/meeds 
+- feat: Engagement Center display rules total score by domain when accessed from achievements- MEED-1405 - Meeds-io/MIPs 
+- feat: Engagement Center When i hoover on action line  - MEED-1479 - Meeds-io/MIPs 
+- feat: Engagement Center Review challenges card - MEED-1418 - Meeds-io/MIPs 
+- feat: Overview page banner technical label update from layout management addon- MEED-1512 - Meeds-io/MIPs 
+- fix: Fix useless warning Log Issue when exporting achievements - MEED-1544 
+- feat: Engagement Center Manage program from program detail - MEED-1424 - Meeds-io/MIPs 
+- feat: Engagement Center Announce a challenge from details drawer - MEED-1290 - Meeds-io/MIPs 
+- Merge develop into develop-exo
+- feat: Fix meeds header - EXO-61480 - Meeds-io/MPIs
+- feat: Merge Feature New Pages and Containers Templates - Meeds-io/MIPs
+- feat: Fix meeds header - EXO-61480 - Meeds-io/MPIs
+- feat: Configure contributions application registry category - EXO-61480 - Meeds-io/MPIs 
+- feat: Engagement Center Challenges details drawer review - MEED-1285 - Meeds-io/MIPs 
+- feat: Engagement Center Challenges details drawer review - MEED-1285 - Meeds-io/MIPs 
+- feat: Fix Top Margin of Pages to offer coherent UX - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on programs details table by adding icons - MEED-1426 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on programs details table - MEED-1427 - Meeds-io/MIPs 
+- Merge Meeds-io/MIPs
+- feat: Fix Top Margin of Pages to offer coherent UX - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on programs details table by adding icons - MEED-1426 - Meeds-io/MIPs 
+- feat: Configure contributions application registry category - EXO-61480 - Meeds-io/MPIs 
+- feat: Engagement Center Improvement on programs details table - MEED-1427 - Meeds-io/MIPs 
+- fix : enhance top challengers portlet display performance - MEED-1468 - Meeds-io/MIPs 
+- fix: Fix the text size when copy and paste text on description - MEED-1478 - Meeds-io/Meeds 
+- fix : restore ressource bundle for banner overview - MEED-1469 - Meeds-io/MIPs 
+- feat: Display Upcoming earnings of current week instead of my total earnings - MEED-1134 - Meeds-io/MIPs 
+- fix : enhance top challengers portlet display performance - MEED-1468 - Meeds-io/MIPs 
+- fix: Fix the text size when copy and paste text on description - MEED-1478 - Meeds-io/Meeds 
+- fix : restore ressource bundle for banner overview - MEED-1469 - Meeds-io/MIPs 
+- feat: Display Upcoming earnings of current week instead of my total earnings - MEED-1134 - Meeds-io/MIPs 
+- Fix: Blacklisted-users from gamification are still identified - MEED-1467 
+- Fix: Blacklisted-users from gamification are still identified - MEED-1467 
+- fix: announcements weekly count display in challenges overview - MEED-1414 - Meeds-io/MIPs 
+- fix: Fix the display for profile image in avatar icon - MEED-1466  - Meeds-io/MIPs 
+- fix: announcements weekly count display in challenges overview - MEED-1414 - Meeds-io/MIPs 
+- fix: Fix the display for profile image in avatar icon - MEED-1466  - Meeds-io/MIPs 
+- feat: Overview page External users access to overview - MEED-1311 - Meeds-io/MIPs 
+- fix : winners list display challenge overview - MEED-1470 - Meeds-io/MIPs  
+- feat: Overview page External users access to overview - MEED-1311 - Meeds-io/MIPs 
+- fix : winners list display challenge overview - MEED-1470 - Meeds-io/MIPs  
+- fix: Deleted program are displayed on portlet top programs - MEED-1461 - Meeds-io/MIPs  
+- fix: Deleted program are displayed on portlet top programs - MEED-1461 - Meeds-io/MIPs  
+- feat: Overview Page Access to challenge drawer from the overview - MEED-1359 - Meeds-io/MIPs 
+- feat: Overview Page Access to challenge drawer from the overview - MEED-1359 - Meeds-io/MIPs 
+- fix: Overview page Portlets are not declared correctly in the page administration registry - MEED-1444 - Meeds-io/meeds 
+- feat: Move overview page from Meeds organization - MEED-1412 - Meeds-io/MIPs 
+- fix: Overview page Portlets are not declared correctly in the page administration registry - MEED-1444 - Meeds-io/meeds 
+- feat: Move overview page from Meeds organization - MEED-1412 - Meeds-io/MIPs 
+- feat: Engagement Center External users cannot be program owners - MEED-1312 - Meeds-io/MIPs 
+- feat: Engagement Center External users cannot be program owners - MEED-1312 - Meeds-io/MIPs 
+- fix: Unit test fails because of wrong period calculation EXO-61497 - Meeds-io/meeds 
+- feat: Adjust Mobile view of kudos when sent/received - MEED-1387 - Meeds-io/MIPs 
+- feat: Overview Page top challengers Alignment of names in leaderboard - MEED-1366 - Meeds-io/meeds 
+- fix: Unit test fails because of wrong period calculation EXO-61497 - Meeds-io/meeds 
+- feat: Adjust Mobile view of kudos when sent/received - MEED-1387 - Meeds-io/MIPs 
+- feat: Overview Page top challengers Alignment of names in leaderboard - MEED-1366 - Meeds-io/meeds 
+- fix: Adjust Alignment of challenges and programs items - MEED-1380 - Meeds-io/MIPs 
+- fix: Overview Page Adjust my reputation and my rewards display - MEED-1379 - Meeds-io/MIPs  
+- fix: Overview Page Fix the badge display in desktop device - MEED-1383 - Meeds-io/MIPs 
+- fix: Overview Page Fix the tooltip style used in badges in overview page - MEED-1381 - Meeds-io/MIPs 
+- fix: Engagement Center Fix the program name limitation in program drawer - MEED-1374 - Meeds-io/MIPs 
+- fix: Actions not displayed in mobile view - MEED-1385 - Meeds-io/meeds  
+- fix: Engagement Center Fix of the program name display in the badge drawer - MEED-1365 - Meeds-io/meeds 
+- fix: Engagement Center Adjust the challenge action icon in achievement board - MEED-1271  
+- fix: Adjust Alignment of challenges and programs items - MEED-1380 - Meeds-io/MIPs 
+- fix: Overview Page Adjust my reputation and my rewards display - MEED-1379 - Meeds-io/MIPs  
+- fix: Overview Page Fix the badge display in desktop device - MEED-1383 - Meeds-io/MIPs 
+- fix: Overview Page Fix the tooltip style used in badges in overview page - MEED-1381 - Meeds-io/MIPs 
+- fix: Engagement Center Fix the program name limitation in program drawer - MEED-1374 - Meeds-io/MIPs 
+- fix: Actions not displayed in mobile view - MEED-1385 - Meeds-io/meeds  
+- fix: Engagement Center Fix of the program name display in the badge drawer - MEED-1365 - Meeds-io/meeds 
+- fix: Engagement Center Adjust the challenge action icon in achievement board - MEED-1271  
+- Merge develop into develop-exo
+- feat: Engagement Center Add palceholder when no programs displayed - MEED-1295 Meeds-io/meeds 
+- fix: Fix the right primary color used - MEED-1226  
+- fix: Use Java Time instead of Joda Time - Meeds-io/MIPs
+- fix: Fix Label To use EN - Meeds-io/MIPs
+- fix: Overview Page Have access to the options by right-clicking on the program item - MEED-1316 - Meeds-io/MIPs  
+- fix: Fix User Profile Chart widget Header spacing - MEED-1150 - Meeds-io/MIPs
+- fix: Display See All on Perk Store only when wallet initialized - MEED-1283 - Meeds-io/MIPs
+- fix: Fix Challenge & Programs Placeholders Label Keys - MEED-1296 - Meeds-io/MIPs
+- feat: Overview Page Add perkStore block in rewards portlet - MEED-937 - Meeds-io/MIPs 
+- fix: Overview Page Improve the performance of contributions portlet - MEED-1079 - Meeds-io/MIPs  
+- feat: Overview Page challenges overview add challenges with no participants - MEED-1238 - Meeds-io/MIPs 
+- feat: Overview Page eliminate decimals from balance and earnings display - MEED-1240 - Meeds-io/MIPs 
+- feat: Overview Page Sort programs by points in Contributions portlet - MEED-945 - Meeds-io/MIPs 
+- fix: Overview Page Fix myRewards portlet display - MEED-1212 - Meeds-io/MIPs  
+-  feat: Overview Page Adjust the pie chart display - MEED-1169 - Meeds-io/MIPs 
+- feat: Overview Page sort challenges in challenges overview - MEED-1062 - Meeds-io/MIPs 
+- feat: Overview Page fix Top challengers portlet overflow - MEED-1170 - Meeds-io/MIPs 
+- feat: Overview Page Display programs from the most to the less rewarded - MEED-1081 - Meeds-io/MIPs 
+- feat: Overview Page fix my reputation display - MEED-961 - Meeds-io/MIPs  
+- feat: Overview Page Display the programs portlet - MEED-674 - Meeds-io/MIPs  
+- feat: Overview Page add clickable challenges for challenges overview - MEED-1102 - Meeds-io/MIPs 
+- feat: Overview Page Adjust the pie chart in contribution portlet - MEED-966 - Meeds-io/MIPs 
+- feat: Overview Page Fix the wallet block display - MEED-1133 - Meeds-io/MIPs 
+- feat: Overview Page Ipmlement when no data portlet - MEED-961 - Meeds-io/MIPs 
+- feat: Overview Page Implement blank kudos in my reputation portlet - MEED-666 - Meeds-io/MIPs 
+-  feat: Overview Page Add wallet block in rewards portlet - MEED-936 - Meeds-io/MIPs 
+-  feat: Overview Page Fix the display of SeeAll when no data - MEED-1096 - Meeds-io/MIPs 
+- feat: Overview Page Fix program name display in the pie chart - MEED-1095 - Meeds-io/MIPs 
+- feat: Overview Page Implement challenges overview block - MEED-671 - Meeds-io/MIPs 
+- feat: Overview Page Implement top contributors block - MEED-669 - Meeds-io/MIPs  
+- feat: Overview Page Implement urls in case of blank portlet - MEED-1006 - Meeds-io/MIPs  
+- feat: Implement portlets in Overview Page  - MEED-665 - MEED-551 - MEED-667 - Meeds-io/MIPs  
+- feat: Overview Page Add a description in contributions portlet when nothing to display - MEED-663 - Meeds-io/MIPs 
+- feat: Overview Page Add my contributions portlet - MEED-662 - Meeds-io/MIPs 
+- feat: Enable Contribution Center Feature by default - Meeds-io/MIPs
+- fix: Fix Badges domain List in Select Box - MEED-1332 - Meeds-io/MIPs
+- feat: Engagement Center  Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
+- feat: Generate a notification when announcement made in Space audience - MEED-1284 - Meeds-io/MIPs 
+- feat: Engagement Center Cleanup gamification old pages - MEED-1286 - Meeds-io/MIPs 
+- fix: Engagement Center can't cancel a creation or editing program from button - MEED-1309 
+- feat: Engagement Center Display Display space hosts + owners added on program card  - MEED-1256 - Meeds-io/MIPs 
+- feat: Engagement Center Display program depending the audience - MEED-1236 - Meeds-io/MIPs 
+- feat: Engagement Center Display placeholder when no audience's memberyet - MEED-1279 - Meeds-io/MIPs 
+- feat: Engagement Center Ability to manage rules and challenges- program owner - MEED-1232 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on achievement table by adding tooltips - MEED-1261 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on achievement table - MEED-1142 - Meeds-io/MIPs 
+- feat: Engagement Center Programs access for users - MEED-1233 - Meeds-io/MIPs 
+- feat: Engagement Center Review way owners are added - MEED-1243 - Meeds-io/MIPs 
+- fix: Engagement Center Load more mobile view in table realizations - MEED-1258 - Meeds-io/MIPs  
+- feat: Engagement Center Wrong placeholder displayed when picking Upcoming Challenges filter - MEED-1190 - Meeds-io/MIPs 
+- fix: Engagement Center Action name instead of action description in achievement table - MEED-1245 
+- fix: Contribution Center CKEditor of program description is not consistent and is KO - MEED-950 - Meeds-io/meeds 
+- fix: Fix Challenge Participants List display - MEED-999 - Meeds-io/MIPs 
+- fix: Contributions center Only active challenges should be considered in points per program - MEED-949 - Meeds-io/MIPs 
+- fix: Fix displaying Avatars list of challenge winners - MEED-999 - Meeds-io/MIPs Prior tot his change, the list of winners were cached in DOM due to a null :key used for avatars.
+- fix: display Add challenge button for program owners - MEED-683 - Meeds-io/MIPs Prior to this change, the 'Add challenge' button was displayed only to rewarding admins. This change will allow to any user who owns a program to add a new challenge for his programs.
+- fix: Fix retrieving duplicated domains - MEED-795 - Meeds-io/MIPs Prior to this change, the retrieved domains in users leaderboard are duplicated due to a use of deprecated endpoint. This change will allow to use a newer endpoint that includes programs and sort them by budget to be listed in dropdown.
+- feat: Enhance Challenge Drawer to inherit From Program audience and managers - MEED-683 - Meeds-io/MIPs 
+- feat: Contribution Center Audience for programs - MEED-657 - Meeds-io/MIPs 
+- feat: Engagement Center Implement mobile view for realization table - MEED-1037 - Meeds-io/MIPs 
+- fix: Contribution Center Cannot add a rule having same event as a deleted rule - MEED-1028 - Meeds-io/meeds 
+- feat: Engagement Center Program Display Number Of cards - MEED-687 - Meeds-io/MIPs 
+- feat: Contribution Center Ability to create challenges for reward admin - MEED-682 - Meeds-io/MIPs 
+- feat: Contribution Center display quick filter for rules ( enabled / disabled) in program details - MEED-767 - Meeds-io/MIPs 
+- feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs 
+- fix: Migration failed for realization table - MEED-1094 
+- fix: Contribution Center Unable to announce challenge - MEED-1036 - Meeds-io/meeds 
+- feat: Contribution Center improve achievement filter - MEED-1022 - Meeds-io/MIPs 
+- fix: Contribution Center The challenge textual filter is not working - MEED-940 
+- feat: Contribution Center Add status on challenges - MEED-929 - Meeds-io/MIPs 
+- fix: Contribution Center Missing achievements in achievement board after filtering with a period - MEED-959 
+- fix: Contribution Center Fix challenge link click from annoucement activity - MEED-957 - Meeds-io/MIPs 
+- fix: Contribution Center Achievements board KO when sorting or filtering - MEED-887 
+- feat: Engagement Center Add an ID for add program button - MEED-947 - Meeds-io/MIPs 
+- feat: Engagement Center Delete program - MEED-755 - Meeds-io/MIPs 
+- feat: feat: Engagement Center Display manuel rules (challenges) on program details - MEED-762 - Meeds-io/MIPs 
+- feat: Engagement Center Manage Rule - MEED-723 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Update URL and page when browsing tabs with return button browser -MEED-765- Meeds-io/MIPs  
+- feat: Engagement Center Add advanced filter for realization table to filter by programs - MEED-139 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Unifie program title max length -MEED-803- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Adjust the winners counter display on the challenge details -MEED-769- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Control the click of the back button on the browser -MEED-764- Meeds-io/MIPs  
+- fix: ENGAGEMENT CENTER Adjust the display for counter on challenge and program card - MEED-754- Meeds-io/MIPs 
+-  fix: ENGAGEMENT CENTER Adjust the program details link - MEED-706 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Display 10 rules per page - MEED-725 - Meeds-io/MIPs 
+-  fix: ENGAGEMENT CENTER Improve the display of challenge card - MEED-688 - Meeds-io/MIPs  
+- fix: ENGAGEMENT CENTER Hide budget field on program drawer - MEED-656 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Improve the display of program card - MEED-707 - Meeds-io/MIPs 
+- fix: Associate rules to program - MEED-660 
+- feat: Engagement center Display estimation points to be earn - MEED-113 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER some problems related to actions in achievement table - MEED-648 - Meeds-io/MIPs 
+- feat: Engagement center Open program detail by clicking on program card - MEED-417 - Meeds-io/MIPs 
+- fix: Engagement Center Displaying program title instead of program description - MEED-644 - Meeds-io/MIPs 
+- feat: Engagement Center enabling sorting by status in the realizations table - MEED-496 - Meeds-io/MIPs. 
+- feat: Engagement Center Change application's name to contributions - MEED-604 - Meeds-io/MIPs  
+- feat: Engagement Center Display twenty-five item per page in realizations table - MEED-478 - Meeds-io/meeds 
+- feat: Engagement Center Add permalink to the engagement center tabs - MEEDS-449 - meeds-io/meeds 
+- fix: fix displaying program field with html tags in achievements - MEED-603 - meeds-io/meeds 
+- feat: Engagement Center Enabling administrator view for realizations table from left admin drawer -MEED-571-io/meeds 
+- feat: add  engagement center programs quick filter - MEED-499 - Meeds-io/meeds 
+- feat: update engagement Center program cover size and add error alerts - MEED-560 -  Meeds-io/meeds 
+- feat: Add Engagement Center Display manual program in challenges - MEED-557 -  meeds-io/meeds 
+-  feat: Add Engagement Center Edit Program Drawer - MEED-114 - Meeds-io/meeds 
+- MEED-112: implement add program feature  
+- MEED-563: fix columns order 
+- MEED-463: disable actions for simple user achievements view  
+- MEED-523: Changing achievements report exporting type to xlsx  
+- MEED-195: add the ability to show achievements depending on the userType. 
+- MEED-486: change Application Display to single page application 
+- MEED-492 reorder engagement center tabs 
+- MEED-435 Add Achievements tab to the engagement app with embedded realizations table 
+- feat: Engagement Center Add palceholder when no programs displayed - MEED-1295 Meeds-io/meeds 
+- fix: Fix the right primary color used - MEED-1226  
+- fix: Use Java Time instead of Joda Time - Meeds-io/MIPs
+- fix: Fix Label To use EN - Meeds-io/MIPs
+- fix: Overview Page Have access to the options by right-clicking on the program item - MEED-1316 - Meeds-io/MIPs  
+- fix: Fix User Profile Chart widget Header spacing - MEED-1150 - Meeds-io/MIPs
+- fix: Display See All on Perk Store only when wallet initialized - MEED-1283 - Meeds-io/MIPs
+- fix: Fix Challenge & Programs Placeholders Label Keys - MEED-1296 - Meeds-io/MIPs
+- feat: Overview Page Add perkStore block in rewards portlet - MEED-937 - Meeds-io/MIPs 
+- fix: Overview Page Improve the performance of contributions portlet - MEED-1079 - Meeds-io/MIPs  
+- feat: Overview Page challenges overview add challenges with no participants - MEED-1238 - Meeds-io/MIPs 
+- feat: Overview Page eliminate decimals from balance and earnings display - MEED-1240 - Meeds-io/MIPs 
+- feat: Overview Page Sort programs by points in Contributions portlet - MEED-945 - Meeds-io/MIPs 
+- fix: Overview Page Fix myRewards portlet display - MEED-1212 - Meeds-io/MIPs  
+-  feat: Overview Page Adjust the pie chart display - MEED-1169 - Meeds-io/MIPs 
+- feat: Overview Page sort challenges in challenges overview - MEED-1062 - Meeds-io/MIPs 
+- feat: Overview Page fix Top challengers portlet overflow - MEED-1170 - Meeds-io/MIPs 
+- feat: Overview Page Display programs from the most to the less rewarded - MEED-1081 - Meeds-io/MIPs 
+- feat: Overview Page fix my reputation display - MEED-961 - Meeds-io/MIPs  
+- feat: Overview Page Display the programs portlet - MEED-674 - Meeds-io/MIPs  
+- feat: Overview Page add clickable challenges for challenges overview - MEED-1102 - Meeds-io/MIPs 
+- feat: Overview Page Adjust the pie chart in contribution portlet - MEED-966 - Meeds-io/MIPs 
+- feat: Overview Page Fix the wallet block display - MEED-1133 - Meeds-io/MIPs 
+- feat: Overview Page Ipmlement when no data portlet - MEED-961 - Meeds-io/MIPs 
+- feat: Overview Page Implement blank kudos in my reputation portlet - MEED-666 - Meeds-io/MIPs 
+-  feat: Overview Page Add wallet block in rewards portlet - MEED-936 - Meeds-io/MIPs 
+-  feat: Overview Page Fix the display of SeeAll when no data - MEED-1096 - Meeds-io/MIPs 
+- feat: Overview Page Fix program name display in the pie chart - MEED-1095 - Meeds-io/MIPs 
+- feat: Overview Page Implement challenges overview block - MEED-671 - Meeds-io/MIPs 
+- feat: Overview Page Implement top contributors block - MEED-669 - Meeds-io/MIPs  
+- feat: Overview Page Implement urls in case of blank portlet - MEED-1006 - Meeds-io/MIPs  
+- feat: Implement portlets in Overview Page  - MEED-665 - MEED-551 - MEED-667 - Meeds-io/MIPs  
+- feat: Overview Page Add a description in contributions portlet when nothing to display - MEED-663 - Meeds-io/MIPs 
+- feat: Overview Page Add my contributions portlet - MEED-662 - Meeds-io/MIPs 
+- feat: Enable Contribution Center Feature by default - Meeds-io/MIPs
+- fix: Fix Badges domain List in Select Box - MEED-1332 - Meeds-io/MIPs
+- feat: Engagement Center  Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
+- feat: Generate a notification when announcement made in Space audience - MEED-1284 - Meeds-io/MIPs 
+- feat: Engagement Center Cleanup gamification old pages - MEED-1286 - Meeds-io/MIPs 
+- fix: Engagement Center can't cancel a creation or editing program from button - MEED-1309 
+- feat: Engagement Center Display Display space hosts + owners added on program card  - MEED-1256 - Meeds-io/MIPs 
+- feat: Engagement Center Display program depending the audience - MEED-1236 - Meeds-io/MIPs 
+- feat: Engagement Center Display placeholder when no audience's memberyet - MEED-1279 - Meeds-io/MIPs 
+- feat: Engagement Center Ability to manage rules and challenges- program owner - MEED-1232 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on achievement table by adding tooltips - MEED-1261 - Meeds-io/MIPs 
+- feat: Engagement Center Improvement on achievement table - MEED-1142 - Meeds-io/MIPs 
+- feat: Engagement Center Programs access for users - MEED-1233 - Meeds-io/MIPs 
+- feat: Engagement Center Review way owners are added - MEED-1243 - Meeds-io/MIPs 
+- fix: Engagement Center Load more mobile view in table realizations - MEED-1258 - Meeds-io/MIPs  
+- feat: Engagement Center Wrong placeholder displayed when picking Upcoming Challenges filter - MEED-1190 - Meeds-io/MIPs 
+- fix: Engagement Center Action name instead of action description in achievement table - MEED-1245 
+- fix: Contribution Center CKEditor of program description is not consistent and is KO - MEED-950 - Meeds-io/meeds 
+- fix: Fix Challenge Participants List display - MEED-999 - Meeds-io/MIPs 
+- fix: Contributions center Only active challenges should be considered in points per program - MEED-949 - Meeds-io/MIPs 
+- fix: Fix displaying Avatars list of challenge winners - MEED-999 - Meeds-io/MIPs Prior tot his change, the list of winners were cached in DOM due to a null :key used for avatars.
+- fix: display Add challenge button for program owners - MEED-683 - Meeds-io/MIPs Prior to this change, the 'Add challenge' button was displayed only to rewarding admins. This change will allow to any user who owns a program to add a new challenge for his programs.
+- fix: Fix retrieving duplicated domains - MEED-795 - Meeds-io/MIPs Prior to this change, the retrieved domains in users leaderboard are duplicated due to a use of deprecated endpoint. This change will allow to use a newer endpoint that includes programs and sort them by budget to be listed in dropdown.
+- feat: Enhance Challenge Drawer to inherit From Program audience and managers - MEED-683 - Meeds-io/MIPs 
+- feat: Contribution Center Audience for programs - MEED-657 - Meeds-io/MIPs 
+- feat: Engagement Center Implement mobile view for realization table - MEED-1037 - Meeds-io/MIPs 
+- fix: Contribution Center Cannot add a rule having same event as a deleted rule - MEED-1028 - Meeds-io/meeds 
+- feat: Engagement Center Program Display Number Of cards - MEED-687 - Meeds-io/MIPs 
+- feat: Contribution Center Ability to create challenges for reward admin - MEED-682 - Meeds-io/MIPs 
+- feat: Contribution Center display quick filter for rules ( enabled / disabled) in program details - MEED-767 - Meeds-io/MIPs 
+- feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs 
+- fix: Migration failed for realization table - MEED-1094 
+- fix: Contribution Center Unable to announce challenge - MEED-1036 - Meeds-io/meeds 
+- feat: Contribution Center improve achievement filter - MEED-1022 - Meeds-io/MIPs 
+- fix: Contribution Center The challenge textual filter is not working - MEED-940 
+- feat: Contribution Center Add status on challenges - MEED-929 - Meeds-io/MIPs 
+- fix: Contribution Center Missing achievements in achievement board after filtering with a period - MEED-959 
+- fix: Contribution Center Fix challenge link click from annoucement activity - MEED-957 - Meeds-io/MIPs 
+- fix: Contribution Center Achievements board KO when sorting or filtering - MEED-887 
+- feat: Engagement Center Add an ID for add program button - MEED-947 - Meeds-io/MIPs 
+- feat: Engagement Center Delete program - MEED-755 - Meeds-io/MIPs 
+- feat: feat: Engagement Center Display manuel rules (challenges) on program details - MEED-762 - Meeds-io/MIPs 
+- feat: Engagement Center Manage Rule - MEED-723 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Update URL and page when browsing tabs with return button browser -MEED-765- Meeds-io/MIPs  
+- feat: Engagement Center Add advanced filter for realization table to filter by programs - MEED-139 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Unifie program title max length -MEED-803- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Adjust the winners counter display on the challenge details -MEED-769- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Control the click of the back button on the browser -MEED-764- Meeds-io/MIPs  
+- fix: ENGAGEMENT CENTER Adjust the display for counter on challenge and program card - MEED-754- Meeds-io/MIPs 
+-  fix: ENGAGEMENT CENTER Adjust the program details link - MEED-706 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Display 10 rules per page - MEED-725 - Meeds-io/MIPs 
+-  fix: ENGAGEMENT CENTER Improve the display of challenge card - MEED-688 - Meeds-io/MIPs  
+- fix: ENGAGEMENT CENTER Hide budget field on program drawer - MEED-656 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER Improve the display of program card - MEED-707 - Meeds-io/MIPs 
+- fix: Associate rules to program - MEED-660 
+- feat: Engagement center Display estimation points to be earn - MEED-113 - Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER some problems related to actions in achievement table - MEED-648 - Meeds-io/MIPs 
+- feat: Engagement center Open program detail by clicking on program card - MEED-417 - Meeds-io/MIPs 
+- fix: Engagement Center Displaying program title instead of program description - MEED-644 - Meeds-io/MIPs 
+- feat: Engagement Center enabling sorting by status in the realizations table - MEED-496 - Meeds-io/MIPs. 
+- feat: Engagement Center Change application's name to contributions - MEED-604 - Meeds-io/MIPs  
+- feat: Engagement Center Display twenty-five item per page in realizations table - MEED-478 - Meeds-io/meeds 
+- feat: Engagement Center Add permalink to the engagement center tabs - MEEDS-449 - meeds-io/meeds 
+- fix: fix displaying program field with html tags in achievements - MEED-603 - meeds-io/meeds 
+- feat: Engagement Center Enabling administrator view for realizations table from left admin drawer -MEED-571-io/meeds 
+- feat: add  engagement center programs quick filter - MEED-499 - Meeds-io/meeds 
+- feat: update engagement Center program cover size and add error alerts - MEED-560 -  Meeds-io/meeds 
+- feat: Add Engagement Center Display manual program in challenges - MEED-557 -  meeds-io/meeds 
+-  feat: Add Engagement Center Edit Program Drawer - MEED-114 - Meeds-io/meeds 
+- MEED-112: implement add program feature  
+- MEED-563: fix columns order 
+- MEED-463: disable actions for simple user achievements view  
+- MEED-523: Changing achievements report exporting type to xlsx  
+- MEED-195: add the ability to show achievements depending on the userType. 
+- MEED-486: change Application Display to single page application 
+- MEED-492 reorder engagement center tabs 
+- MEED-435 Add Achievements tab to the engagement app with embedded realizations table 
+- SWF: Update sonarcloud JDK version to 17
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- feat: stabilize gamification with jdk 17- EXO-60517 
+- Update addons-parent-pom to 16-exo-M07
+- fix: Rank Widget UI glitch - MEED-1196 
+- fix: Rank Widget UI glitch - MEED-1196 
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- feat: stabilize gamification with jdk 17- EXO-60517 - Meeds-io/MIPs 
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
+- fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
+- fix : In reward administration, the request to compute reward is too long - EXO-60157 - meeds-io/meeds
+- feat: Engagement Center Improve behaviour when editing an achievement - MEED-649 - Meeds-io/MIPs 
+- feat: Engagement Center eliminating 'spaces' column from xlsx realizations - MEED-524 - Meeds-io/MIPs 
+- fix: Fix problem when adding chanllenges or domain after migration from 6.2 - MEED-631 
+- fix: Fix Gamification Point Action Date to be dependant from Time Zone - MEED-572 - Meeds-io/meeds 
+
+eXo commons 6.4.0
+*************************
+- fix: add the missing technical label for the description of the unread activities channel - Meeds-io/meeds - EXO-63042
+- SWF: Remove Task notifications webhook GHA
+- fix: fix displaying comment ckeditor container - EXO-60626 
+- fix: fix UI issue while using source mode full screen - EXO-60626 - Meeds-io/meeds 
+- Update maven-parent-pom to 25-exo-RC01
+- fix: Agenda - No notification is sent when inviting guest users to an event - EXO-61764 
+- fix: Change irrelevant log warn to info about used default value for properties and delete useless favicon file - Meeds-io/meeds 
+- fix: The resizeService do not resize correcly banner-like image - EXO-61895 - Meeds-io/meeds
+- fix: return original image for unsupported image types - EXO-61578 - Meeds-io/meeds
+- fix: return original image for unsupported image types - EXO-61578 - Meeds-io/meeds 
+- feat: Configure the new Column container category - EXO-61141 - Meeds-io/MIPs 
+- feat: Allow to extend existing notification system by adding new channels - MEED-1252 - Meeds-io/MIPs 
+- feat:Unread activities information Notification options for unread activities - Admin -MEED-697- Meeds-io/MIPs 
+- fix: Add missing JAR dependency to add in Meeds Package - Meeds-io/meeds 
+- fix: Delete purify.min.js.map file reference from minified purify JS 
+- Add licence headers for fileresize service
+- feat: Configure the new container Row Category - EXO-61140 - Meeds-io/MIPs 
+- Merge develop into develop-exo
+- feat: Cleanup unuseful containers - EXO-61137 - Meeds-io/MIPs  
+- feat: Configure the new container Table Category - EXO-61139 - Meeds-io/MIPs 
+- Update maven-parent-pom to 25-M06
+- feat: stabilize commons with JDK 17 - EXO-60455 
+- fix: Resize Service is not efficient - EXO-61221 - meeds-io/MIPs
+- Update maven-parent-pom to 25-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- feat: Add a common resize image service - EXO-60290 - Meeds-io/MIPs 
+- SWF: Update sonarcloud JDK version to 17
+- feat: stabilize commons with JDK 17 - EXO-60455 - Meeds-io/MIPs 
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- fix: Fix email notifications aren't received when external username contains "@" char - EXO-60661 - Meeds-io/meeds 
+- fix: Fix email notifications aren't received when external username contains "@" char - EXO-60661 - Meeds-io/meeds 
+- fix : Hide digest mail notification from notification settings menu - EXO-54929 - Meeds-io/meeds 
+- fix : Hide digest mail notification from notification settings menu - EXO-54929 - Meeds-io/meeds 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix: Fix bad display of folder component in insert portal link popup window - EXO-58626 - Meeds-io/meeds 
+- fix: Fix bad display of folder component in insert portal link popup window - EXO-58626 - Meeds-io/meeds 
+- feat: Allow search on mulitple metadata filters - EXO-59495 - Meeds-io/meeds 
+- fix: Clean Ckeditor WCM custom config - EXO-58725 - Meeds-io/meeds 
+- Update org.json:json:20070829 to 20220320 - EXO-59401 - Meeds-io/meeds
+
+eXo kernel 6.4.0
+*************************
+- SWF: Remove Task notifications webhook GHA
+- Update maven-parent-pom to 25-exo-RC01
+- Merge develop into develop-exo
+- Update maven-parent-pom to 25-M06
+- feat: stabilize kernel with JDK 17 - EXO-60318 
+- Update maven-parent-pom to 25-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- feat: stabilize kernel with JDK 17 - EXO-60318  
+- fix : random error in kernel Unit tests - EXO-60598  - meeds-io/meeds 
+- fix : random error in kernel Unit tests - EXO-60598
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix-60231: Update maven-parent-pom to 22-M05
+- fix-60231: Update maven-parent-pom to 22-M05
+- fix: Stabilize kernel Unit Test - MEED-709 
+- fix: Stabilize kernel Unit Test - MEED-709 
+- fix : avoid filtering configuration files - EXO-59810 - Meeds-io/meeds-305 
+- fix : avoid filtering configuration files EXO-59810 
+
+eXo gatein-portal 6.4.0
+*************************
+- fix: Default Cache configuration of Groups 
+- fix: Avoid NPE when displaying Page - Meeds-io/meeds 
+- feat: Add Email validation feature when registering - MEED-1958 
+- Merge Meeds-io/MIPs 
+- fix: Fix Select Box Width in WebUI Portlets - Meeds-io/MIPs
+- fix: Move Scrollbar controlling in Portal UI - MEED-1956 - Meeds-io/meeds 
+- feat: Move deprecated JS & CSS files - Meeds-io/MIPs - MEED-1891
+- feat: Allow to hide shared layout in a standalone page - Meeds-io/meeds - MEED-1912 
+- fix: Fix Crowdin Configuration - Meeds-io/MIPs 
+- Merge Meeds-io/MIPs 
+- fix: Cleanup MOP API and Enahance Loading Time of Sites - MEED-1777 - Meeds-io/meeds 
+- feat: Move oAuth to Social to avoid overrides and complicated maintenance & evolutions - MEED-1308 - Meeds-io/MIPs
+- SWF: Remove Task notifications webhook GHA
+- feat: Allow to Stick the Left Menu - MEED-1806 - Meeds-io/meeds 
+- fix: when OpenID is not configured no warning should be displayed - EXO-62336 - Meeds-io/meeds 
+- fix: Error in log when migrate from 1.2.5 to 1.3.x with psql database - EXO-62553 - meeds-io/meeds
+- Update maven-parent-pom to 26-M01
+- Update Project version and Dependencies to 6.5.x-SNAPSHOT
+- Revert "Update Project version and Dependencies to 6.5.x-SNAPSHOT"
+- Update Project version and Dependencies to 6.5.x-SNAPSHOT
+- Update maven-parent-pom to 25
+- fix: Trim the username/email field to login - EXO-61937 
+- feat: Add the possibility to reload a portalConfig programmatically - EXO-61993 - meeds-io/meeds 
+- fix: Fix Remember Me token not considered for REST endpoints - Meeds-io/meeds 
+- fix: Avoid minifying third part library on server startup - Meeds-io/meeds 
+- Merge Meeds-io/MIPs
+- feat: Improve General settings UI Performances - MEED-1514 - Meeds-io/MIPs 
+- feat: Add Login Title I18N & Background & Text Color selection from Branding API - MEED-1501 - Meeds-io/MIPs 
+- feat: Add Favicon in Branding API to allow customize it through UI - MEED-1499 - Meeds-io/MIPs 
+- fix: Fix Triggering RememberMe filter on static resources - MEED-1597- Meeds-io/meeds 
+- feat: Hide Swipe buttons when drawer opened - MEED-1571 - Meeds-io/meeds 
+- feat: Fix meeds header - EXO-61137 - EXO-61141 - EXO-61142 - EXO-61480 - Meeds-io/MPIs
+- feat: Remove the administration application registry category and the IFramePortlet application from tools application registry category - EXO-61480 - Meeds-io/MPIs 
+- feat: Fix insert app permission for a new inserted simple column container - EXO-61650 - Meeds/io-MIPs 
+- feat: Configure new default page template - EXO-61142 - Meeds/io-MIPs 
+- feat: Implement Simple Column container - EXO-61141 - Meeds-io/MIPs 
+- feat: Implement Simple Row container - EXO-61140 - Meeds-io/MIPs 
+- feat: Fix Simple Table Container labels  - EXO-61139 - Meeds-io/MIPs 
+- feat: Cleanup unuseful containers - EXO-61137 - Meeds-io/MIPs 
+- feat: Implement Simple Table container - EXO-61139 - Meeds-io/MIPs 
+- feat: Cleanup unuseful pages templates categories - EXO-61138 - Meeds-io/MIPs 
+- fix: include AuthenticationPlugin inside the authentication transaction - Meeds-io/meeds 
+- Merge Meeds-io/MIPs
+- feat: Fix Row Container Margins - MEED-1320 - Meeds-io/MIPs 
+- Merge pull request  from Meeds-io/devv-60886
+- feat: Update navigation service api to allow loading children of specific navigation node - EXO-60886 - Meeds-io/MIPs 
+- feat: Display Message when user displays registration while logged in  - MEED-1483 - Meeds-io/MIPs 
+- Merge Meeds-io/MIPs
+- fix: Fix Extending Login Title & Subtitle to forgot password and registration pages - Meeds-io/MIPs Prior to this change, the title and subtitle extension via properties wasn't applied on other pages but login page.
+- fix: Fix OAuth Missing Dependency in packaging marked as provided - MEED-1308 - Meeds-io/MIPs
+- feat: Rework Register Form to be able  to use Vue Application in Frontend - MEED-880 - Meeds-io/MIPs 
+- feat: Rework External User Onboarding Registration Process to be able  to use Vue Application in Frontend - MEED-1392 - Meeds-io/MIPs 
+- feat: Rework Internal Onboarding Process to be able to use Vue Application in Frontend - MEED-851 - Meeds-io/MIPs 
+- feat: Rework Forgot Password Process to be able to use Vue Application in Front-end - MEED-1304 - Meeds-io/MIPs 
+- feat: Rename Default Branding Company Title and allow to extend login page titles - MEED-1303 - Meeds-io/MIPs 
+- feat: Move col and raw containers used in overview page from Meeds organization - MEED-1412 - Meeds-io/MIPs  
+- Merge Meeds-io/MIPs
+- feat: Contribution Center Improve JS Modules Group Loading - MEED-805 - Meeds-io/MIPs 
+- Remove unneded genereic Exception throw in fileserviecImpl constructor
+- feat: Broadcast file service action events - EXO-60290 - Meeds-io/MIPs 
+- SWF: Update sonarcloud JDK version to 17
+- Update maven-parent-pom to 25-M06
+- feat: stabilize gatein portal with JDK 17 - EXO-60454 
+- SWF: Combine PLF Task Notification GHA
+- fix : popup OpenID displayed - EXO-60961 - meeds-io/meeds
+- Merge pull request  from Meeds-io/dev-60487
+- fix:  Align Css cache TTL to JS cache TTL - EXO-60487 - meeds-io/meeds 
+- fix: Fix first and last name allowing the use of illegal eXo characters for external user names - EXO-60662 - Meeds-io/meeds 
+- Merge branch 'develop' into EXO-59958
+- feat: list group collaborators' suggestions in the access management - EXO-59958 - Meeds-io/MIPs
+- fix: Fix first and last name allowing the use of illegal eXo characters for external user names - EXO-60662 - Meeds-io/meeds 
+- Merge remote-tracking branch 'origin/EXO-59958' into EXO-59958
+- feat: list group collaborators' suggestions in the access management - EXO-59958 - Meeds-io/MIPs
+- Merge branch 'develop' into EXO-59958
+- feat: list group collaborators' suggestions in the access management - EXO-59958 - Meeds-io/MIPs
+- Merge remote-tracking branch 'origin/EXO-59958' into EXO-59958
+- feat: list group collaborators' suggestions in the access management - EXO-59958 - Meeds-io/MIPs
+- Merge branch 'develop' into EXO-59958
+- feat: list group collaborators' suggestions in the access management - EXO-59958 - Meeds-io/MIPs
+- fix: enhance performance on loading page - MEED-1000 
+- Apply suggestions from code review
+- Merge Left menu review & adds - Meeds-io/MIPs 
+- feat: Allow to change navigation order from XML with MERGE import mode - MEED-514 - Meeds-io/MIPs 
+- fix : fix membership format in groups Rest endpoint - EXO-59678 - meeds-io/meeds 
+- fix: Expire user password recovery tokens after a successful login - EXO-60312 - Meeds-io/meeds 
+- feat: list group collaborators' suggestions in the access management … 
+- feat: list group collaborators' suggestions in the access management … 
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix-60231: Update maven-parent-pom to 22-M05
+- fix: Fix NullPointer exception when uploading an empty resource - EXO-59910 - Meeds-io/meeds 
+- fix: Account is locked when password is changed - EXO-59903 - meeds-io/meeds 
+- fix: Fix blank page displayed when login with non existing email - EXO-59754 - Meeds-io/meeds 
+
+eXo push-notifications 2.4.0
+*************************
+- SWF: Remove Task notifications webhook GHA
+- Update addons-parent-pom to 16-exo-RC01
+- feat: Delete outdated Upgrade Plugin used to enable Push notification channel - MEED-698 - Meeds-io/MIPs
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- Update addons-parent-pom to 16-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- feat: update addons parent pom to 16-exo-M06 - EXO-60439 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+
+eXo jcr 6.4.0
+*************************
+- SWF: Restore Task notifications workflow for Tribe
+- fix: add new method for Initialized status for NodeHierarchyCreator service - EXO-62334 
+- fix: Change default collation to utf8mb4_bin - EXO-60718 
+- SWF: Update sonarcloud JDK version to 17
+- fix: Change default charset and collation of NAME field of JCR_SITEM table from latin1 to utf8mb4 - EXO-60718 
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
 
 
-eXo Kudos 2.1.x
-**************
+eXo notes 1.2.0
+*************************
+- fix: Hide unnecessary warning alert message for note access without edit permission - EXO-62612 Meeds-io/meeds 
+- fix:  Fix note don't get posted if its content isn't changed  - EXO-58861 
+- fix:Standardize font styles/size - EXO-61667 - Meeds-io/meeds  
+- SWF: Remove Task notifications webhook GHA
+- fix: fix displaying empty version drawer - EXO-62185 
+- Update addons-parent-pom to 16-exo-RC01
+- feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs 
+-  fix: notes favIcon bug - EXO-61827 
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs 
+- fix: Fix random fail on Notes Unit Test due to privileges on temp folder - MEED-1476 
+- feat: Engagement Center Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
+- feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs 
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- feat: stabilize notes with jdk 17- EXO-60524 
+- Update addons-parent-pom to 16-exo-M07
+- fix: History version drawer is empty - EXO-60449
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: stabilize notes with jdk 17- EXO-60524 - Meeds-io/MIPs 
+- Merge pull request  from Meeds-io/dev-59522
+- feat: Re-use the common version history drawer - EXO-59522 - Meeds-io/MIPs 
+- fix: Fix export/import a note lead to disappearance of images in it - fix-58694 - Meeds-io/meeds-314 
+- fix: Fix export/import a note lead to disappearance of images in it - fix-58694 - Meeds-io/meeds-314 
+- fix: History version drawer is empty - EXO-60449
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- fix: Can't add an image for a new note - EXO-59684 - Meeds-io/meeds 
+- fix: Can't add an image for a new note - EXO-59684 - Meeds-io/meeds 
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- fix-59276: Improve protection to protect REST services  
 
-eXo Task 3.1.x
-************** 
+eXo app-center 2.4.0
+*************************
+- fix: fix displaying app center cards - EXO-62978 - Meeds-io/meeds
+- SWF: Remove Task notifications webhook GHA
+- Update addons-parent-pom to 16-exo-RC01
+- fix: Avoid logging warn in server startup - Meeds-io/meeds 
+- feat: Add a hover effect to the app center cards - MEED-1362 
+- feat: Fix app Center Pages Margins to offer coherent UX - MEED-1320 - Meeds-io/MIPs  
+- fix: Icons with wrong color - MEED-1480 
+- feat: Engagement Center Change application's name to contributions - MEED-604 - Meeds-io/MIPs 
+- Merge develop into develop-exo
+- Update addons-parent-pom to 16-M06
+- Update addons-parent-pom to 16-exo-M07
+- SWF: Combine PLF Task Notification GHA
+- SWF: Combine PLF Task Notification GHA
+- SWF: Update sonarcloud JDK version to 17
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: update addons parent pom to 16-exo-M06 - EXO-60439 
+- SWF: Use generic PLF TASK notification
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
+- SWF: Use centralized eXo Tasks notifications GHA
 
-** Bug
 
-** Improvemnts
-    
-    
-eXo Wallet 2.1.x
-******************
+eXo Wallet 2.4.0
+*************************
+- feat: Delete Feature Flags of Productized Features - MEED-1594 - Meeds-io/meeds 
+- feat: Delete Rewards Widget from Profile Page - MEED-1556 - Meeds-io/meeds 
+- feat: Improve Pages Margin to offer coherent UX - MEED-1320 - Meeds-io/MIPs 
+- feat: Remove the wallet application registry category - EXO-61480 - Meeds-io/MPIs 
+- feat: Display Upcoming earnings of current week instead of my total earnings - MEED-1134 - Meeds-io/MIPs 
+- fix: External users access to pages - MEED-1465 
+- fix: Overview Page Fix the last transaction drawer display in overview page - MEED-1375 
+- fix: Remove the i icon in earnings drawer - MEED-1377 
+- feat: Overview Page My Rewards disable ripple effect - MEED-1255 - Meeds-io/MIPs  
+- fix: Fix display of Rewards Amount - MEED-1255 - Meeds-io/MIPs
+- fix: Avoid Ripple effect on User Profile Page - MEED-1149 - Meeds-io/MIPs
+- fix: Use Responsive Font Size switch User Balance to not have an overflow - MEED-1239 - Meeds-io/MIPs
+- feat: Overview Page Add perkStore block in rewards portlet - MEED-937 - Meeds-io/MIPs 
+- feat: Overview Page eliminate decimals from balance and earnings display - MEED-1240 - Meeds-io/MIPs 
+- feat: Overview Page Fix the wallet block display - MEED-1133 - Meeds-io/MIPs  
+-  feat: Overview Page Add wallet block in rewards portlet - MEED-936 - Meeds-io/MIPs 
+- feat: Overview Page Add rewards portlet - MEED-667 - Meeds-io/MIPs 
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
+- feat: stabilize wallet  with jdk 17- EXO-60523- Meeds-io/MIPs 
+- feat: update maven parent pom to 25-exo-M06 - EXO-60439 
+- feat: Remove walletApi portlet from wallet dynamic container - EXO-60319  
+- fix : Server do not start if we remove wallet addon - EXO-60702 - meeds-io/meeds
+- feat: Remove walletApi portlet from wallet dynamic container - EXO-60319  
+- fix : Server do not start if we remove wallet addon - EXO-60702 - meeds-io/meeds
+- fix: Fix Reward computing when changing timezone - Meeds-io/meeds - MEED-771 
+- fix : In reward administration, the request to compute reward is too long - EXO-60157 - meeds-io/meeds
 
-eXo Gamification 2.1.x
-**************
+eXo jitsi-call 1.2.4
+*************************
+- SWF: Restore Task notifications workflow for Tribe
+- SWF: Remove Task notifications webhook GHA
+- Update addons-parent-pom to 16-exo-RC01
+- SWF: Remove jitsi-call release GHA
+- SWF: Refactor publish release workflow
+- SWF: Sign exo-swf publish commits
+- fix: add logging when failed to close window - EXO-60257
+- feat: Upgrade jitsi to latest stable - EXO-58813  
+- Update addons-parent-pom to 16-exo-M07
+- fix: upgrade to use JDK17 as compiler target - EXO-58815 
+- feat: update maven parent pom to 16-exo-M06 - EXO-60439
+- fix: add size for user pixelized avatars -  EXO-61028 
+- SWF: Update sonarcloud JDK version to 17
+- SWF: Use generic PLF TASK notification
+- SWF: Use centralized Sonarcloud GHA
+- SWF: Use centralized eXo Tasks notifications GHA
