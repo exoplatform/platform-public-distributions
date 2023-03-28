@@ -224,7 +224,6 @@ eXo Documents 1.1.0
 - fix: Document-Alignment issue with the column Access - EXO-62971 
 - fix: fix documents lost after shortcut and move actions - EXO-63061 
 - fix: Redirection issue when sharing a folder - EXO-63010 
-- SWF: Restore Task notifications workflow for Tribe
 - fix :Fix sort by favorite for documents does not work - EXO-62483 
 - fix : Fix wrong visibility information when share document with another space - EXO-62495  
 - fix:  change Documents container to singlePageApplication - EXO-62968 
@@ -284,7 +283,6 @@ eXo Documents 1.1.0
 - fix : Document uploaded in wrong location - EXO-60910 
 - fix: fix load more button missing - EXO-60826 
 - fix: Fix personal drive shared document preview issues (breadcrumb, wrong folder displayed) - EXO-60838 
-- SWF: Update sonarcloud JDK version to 17
 - feat: When searching a tag from document the detail drawer is still displayed - EXO-60218
 - Fix analytics wrong dependency version
 - feat: Add analytics on tag in documents - EXO-59671
@@ -445,7 +443,6 @@ eXo News 2.4.0
 *************************
 - fix : Fix dispaly of space name on the latest news item view - EXO-62143 
 - fix: Illustration image is sent in raw format in rest service for getting associated activity - EXO-63263
-- SWF: Restore Task notifications workflow for Tribe
 - fix: News tags are not working - EXO-63153 
 - fix: change news container to singlePageApplication - EXO-62963 
 - fix: Standardize font styles/size between notes and news pages - EXO-61667  
@@ -508,7 +505,6 @@ eXo News 2.4.0
 - fix: News Mosaic template : UI Improvements - EXO-60594 
 - fix: Stories template : UI improvements - Exo-60938 
 - feat: Resize news activity illustration - EXO-60323 
-- SWF: Update sonarcloud JDK version to 17
 - feat: News detail page: use correct size for illustrations -EXO-60462 
 - fix: Update loader-utils dependency - EXO-60887
 -  fix: Prefetch news list rest call contains the target hardcoded : EXO-60823  
@@ -593,13 +589,10 @@ eXo task 3.4.0
 - feat: Engagement Center Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs 
 - feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs 
 - fix-54359: tasks are not well sorted on myTasks board when using primary filter affected to me or I collaborate to 
-- SWF: Combine PLF Task Notification GHA
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: UI glitch in task assignee and coworkers avatar display - MEED-916 - Meeds-io/meeds 
 - fix: Fix typed label filter isn't maintained -EXO-60110 - Meeds-io/meeds 
 - fix: Fix vertical and horizontal scroll bars to tasks display in Planview - EXO-59238 - Meeds-io/meeds 
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix-60231: Update addons-parent-pom to 16-M05
 - fix: Fix App Center Override Mode Settings - MEED-768 
 - fix: Fix task due and start dates issue - fix-60074- Meeds-io/meeds 
@@ -607,17 +600,11 @@ eXo task 3.4.0
 
 eXo web-conferencing 2.4.0
 *************************  
-- SWF: Restore Task notifications workflow for Tribe
-- SWF: Remove Task notifications webhook GHA
 - fix: Can't rename the call recording file - EXO-61701
 - Revert "fix: improve performance when getting space information - EXO-61212 "  
 - Update addons-parent-pom to 16-exo-RC01
 - fix: improve performance when getting space information - EXO-61212 
-- SWF: Update sonarcloud JDK version to 17
 - feat: update addons parent pom to 16-exo-M06 - EXO-60439 
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix-60231: Update addons-parent-pom to 16-M05
 - fix-59724 update project dependencies with meeds exo distribution
 - fix-59166: Upgrade to openapi swagger 3  
@@ -635,9 +622,6 @@ eXo web-conferencing 2.4.0
 
 eXo jitsi 1.3.0
 *************************
-- SWF: Restore Task notifications workflow for Tribe
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
 - fix-59724 update project dependencies with meeds exo distribution
 - fix-59043: Update addons-parent-pom to 16-M04
 - fix-58934: Update addons-parent-pom to 16-M03
@@ -648,7 +632,6 @@ eXo jitsi 1.3.0
 
 eXo platform-ui 6.4.0
 *************************
-- SWF: Remove Task notifications webhook GHA
 - feat: Revert Add css style for people advanced filter drawer - EXO-60555 - Meeds-io/MIPs 
 - feat: Merge feature profile settings - Meeds-io/MIPs 
 - Update maven-parent-pom to 25-exo-RC01
@@ -693,9 +676,6 @@ eXo platform-ui 6.4.0
 - Update maven-parent-pom to 25-exo-M07
 - fix: Rank Widget UI glitch - MEED-1196 
 - fix: Rank Widget UI glitch - MEED-1196 
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - Fix: During page load, the text remains visible - EXO-60466 - Meeds-io/meeds-414 
 - Fix: During page load, the text remains visible - EXO-60466 - Meeds-io/meeds-414 
 - feat: update addons parent pom to 25-exo-M06 - EXO-60439 
@@ -708,9 +688,6 @@ eXo platform-ui 6.4.0
 - feat: Left menu review Position of icons when bookmarked space (leftmenu) - MEED-608 - meeds-io/meeds  
 - feat: Left menu review Adjust the space drawer from the left navigation menu - MEED-52 - Meeds-io/meeds 
 - MEED-418: Display the three dots icon when hovering on the latest visited spaces item 
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - MEED-362: Edit read more users color background in space topbar popover 
 - feat: Pin an activity Space host or redactor can pin/unpin an activity to/from the space stream - MEED-457 - meeds-io/meeds 
 - fix: Add new CSS class helper - MEED-711 
@@ -725,9 +702,6 @@ eXo platform-ui 6.4.0
 - feat: Left menu review Position of icons when bookmarked space (leftmenu) - MEED-608 - meeds-io/meeds  
 - feat: Left menu review Adjust the space drawer from the left navigation menu - MEED-52 - Meeds-io/meeds 
 - MEED-418: Display the three dots icon when hovering on the latest visited spaces item 
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - Merge space topbar popover - Meeds-io/MIPs 
 - MEED-362: Edit read more users color background in space topbar popover 
 - Merge Pin Activity Feature - Meeds-io/MIPs 
@@ -737,7 +711,6 @@ eXo platform-ui 6.4.0
 
 eXo analytics 1.3.0
 *************************
-- SWF: Remove Task notifications webhook GHA
 - fix: Fix Full Page display collected data duration in non dev mode - MEED-1805 - Meeds-io/meeds
 - Update addons-parent-pom to 16-exo-RC01
 - feat: Fix meeds header - EXO-61480 -Meeds-io/MIPs
@@ -749,9 +722,6 @@ eXo analytics 1.3.0
 - Update addons-parent-pom to 16-M06
 - Update addons-parent-pom to 16-exo-M07
 - feat: Move Analytics page template to normalPageConfigs page templates category - EXO-61138 - Meeds-io/MIPs 
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - feat: update addons parent pom to 16-exo-M06 - EXO-60439 
@@ -763,12 +733,6 @@ eXo analytics 1.3.0
 - fix : Fix generated operation without name when uploading file - EXO-56830 - Meeds-io/meeds 
 - Merge pull request  from Meeds-io/fix-56830-dev
 - fix : Fix generated operation without name when uploading file - EXO-56830 - Meeds-io/meeds 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - MEED-464: Add Analytics for space topbar popover 
 - Merge space topbar popover - Meeds-io/MIPs 
 - MEED-464: Add Analytics for space topbar popover 
@@ -781,7 +745,6 @@ eXo analytics 1.3.0
 eXo perk-store 2.4.0
 *************************
 - fix: wrong column type for Product.isdeleted in postgresql - Meeds-io/meeds - EXO-63088 
-- SWF: Remove Task notifications webhook GHA
 - Update addons-parent-pom to 16-exo-RC01
 - fix: Remove th technical label detected when adding an image to the new product - MEED 1538 - Meeds-io/meeds 
 - feat: Overview page disable buy button - MEED-1481 - Meeds-io/MIPs 
@@ -794,21 +757,12 @@ eXo perk-store 2.4.0
 - Update addons-parent-pom to 16-M06
 - feat: stabilize perk-store with jdk 17- EXO-60521 
 - Update addons-parent-pom to 16-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - feat: stabilize perk-store with jdk 17- EXO-60521 - Meeds-io/MIPs 
 - feat: update maven parent pom to 25-exo-M06 - EXO-60439 
 - feat: Add walletAPi portlet in perkstore dynamic container - EXO-60319 
 - feat: Add walletAPi portlet in perkstore dynamic container - EXO-60319 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 
 eXo Kudos 2.4.0
 *************************
@@ -835,9 +789,6 @@ eXo Kudos 2.4.0
 - Update addons-parent-pom to 16-M06
 - feat: stabilize kudos with jdk 17- EXO-60519 
 - Update addons-parent-pom to 16-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - feat: stabilize kudos with jdk 17- EXO-60519  
@@ -846,17 +797,10 @@ eXo Kudos 2.4.0
 - feat: update maven parent pom to 25-exo-M06 - EXO-60439 
 - fix : Activity Stream some pre-fetched REST URLs aren't used in page - MEED-645 - Meeds-io/meeds 
 - fix : Activity Stream some pre-fetched REST URLs aren't used in page - MEED-645 - Meeds-io/meeds 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix : In reward administration, the request to compute reward is too long - EXO-60157 - meeds-io/meeds
 
 eXo gamification 2.4.0
 *************************
-- SWF: Remove Task notifications webhook GHA
 - Fix: Overview page Challenges portlet is empty when delete a program - MEED-1830 
 - fix: Engagement center Filtered challenges are not expanded by default - MEED-1785 
 - fix: Overview page My reputation portlet is DOWN - MEED-1814 - Meeds-io/meeds 
@@ -1203,24 +1147,14 @@ eXo gamification 2.4.0
 - MEED-486: change Application Display to single page application 
 - MEED-492 reorder engagement center tabs 
 - MEED-435 Add Achievements tab to the engagement app with embedded realizations table 
-- SWF: Update sonarcloud JDK version to 17
 - Merge develop into develop-exo
 - Update addons-parent-pom to 16-M06
 - feat: stabilize gamification with jdk 17- EXO-60517 
 - Update addons-parent-pom to 16-exo-M07
 - fix: Rank Widget UI glitch - MEED-1196 
 - fix: Rank Widget UI glitch - MEED-1196 
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - feat: stabilize gamification with jdk 17- EXO-60517 - Meeds-io/MIPs 
 - feat: update maven parent pom to 25-exo-M06 - EXO-60439 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
 - fix: ENGAGEMENT CENTER  Adjust the display of challenge card when the title is too long -MEED-790- Meeds-io/MIPs 
 - fix : In reward administration, the request to compute reward is too long - EXO-60157 - meeds-io/meeds
@@ -1232,7 +1166,6 @@ eXo gamification 2.4.0
 eXo commons 6.4.0
 *************************
 - fix: add the missing technical label for the description of the unread activities channel - Meeds-io/meeds - EXO-63042
-- SWF: Remove Task notifications webhook GHA
 - fix: fix displaying comment ckeditor container - EXO-60626 
 - fix: fix UI issue while using source mode full screen - EXO-60626 - Meeds-io/meeds 
 - Update maven-parent-pom to 25-exo-RC01
@@ -1255,22 +1188,13 @@ eXo commons 6.4.0
 - feat: stabilize commons with JDK 17 - EXO-60455 
 - fix: Resize Service is not efficient - EXO-61221 - meeds-io/MIPs
 - Update maven-parent-pom to 25-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
 - feat: Add a common resize image service - EXO-60290 - Meeds-io/MIPs 
-- SWF: Update sonarcloud JDK version to 17
 - feat: stabilize commons with JDK 17 - EXO-60455 - Meeds-io/MIPs 
 - feat: update maven parent pom to 25-exo-M06 - EXO-60439 
 - fix: Fix email notifications aren't received when external username contains "@" char - EXO-60661 - Meeds-io/meeds 
 - fix: Fix email notifications aren't received when external username contains "@" char - EXO-60661 - Meeds-io/meeds 
 - fix : Hide digest mail notification from notification settings menu - EXO-54929 - Meeds-io/meeds 
 - fix : Hide digest mail notification from notification settings menu - EXO-54929 - Meeds-io/meeds 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix: Fix bad display of folder component in insert portal link popup window - EXO-58626 - Meeds-io/meeds 
 - fix: Fix bad display of folder component in insert portal link popup window - EXO-58626 - Meeds-io/meeds 
 - feat: Allow search on mulitple metadata filters - EXO-59495 - Meeds-io/meeds 
@@ -1279,24 +1203,14 @@ eXo commons 6.4.0
 
 eXo kernel 6.4.0
 *************************
-- SWF: Remove Task notifications webhook GHA
 - Update maven-parent-pom to 25-exo-RC01
 - Merge develop into develop-exo
 - Update maven-parent-pom to 25-M06
 - feat: stabilize kernel with JDK 17 - EXO-60318 
 - Update maven-parent-pom to 25-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - feat: stabilize kernel with JDK 17 - EXO-60318  
 - fix : random error in kernel Unit tests - EXO-60598  - meeds-io/meeds 
 - fix : random error in kernel Unit tests - EXO-60598
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix-60231: Update maven-parent-pom to 22-M05
 - fix-60231: Update maven-parent-pom to 22-M05
 - fix: Stabilize kernel Unit Test - MEED-709 
@@ -1318,7 +1232,6 @@ eXo gatein-portal 6.4.0
 - Merge Meeds-io/MIPs 
 - fix: Cleanup MOP API and Enahance Loading Time of Sites - MEED-1777 - Meeds-io/meeds 
 - feat: Move oAuth to Social to avoid overrides and complicated maintenance & evolutions - MEED-1308 - Meeds-io/MIPs
-- SWF: Remove Task notifications webhook GHA
 - feat: Allow to Stick the Left Menu - MEED-1806 - Meeds-io/meeds 
 - fix: when OpenID is not configured no warning should be displayed - EXO-62336 - Meeds-io/meeds 
 - fix: Error in log when migrate from 1.2.5 to 1.3.x with psql database - EXO-62553 - meeds-io/meeds
@@ -1366,10 +1279,8 @@ eXo gatein-portal 6.4.0
 - feat: Contribution Center Improve JS Modules Group Loading - MEED-805 - Meeds-io/MIPs 
 - Remove unneded genereic Exception throw in fileserviecImpl constructor
 - feat: Broadcast file service action events - EXO-60290 - Meeds-io/MIPs 
-- SWF: Update sonarcloud JDK version to 17
 - Update maven-parent-pom to 25-M06
 - feat: stabilize gatein portal with JDK 17 - EXO-60454 
-- SWF: Combine PLF Task Notification GHA
 - fix : popup OpenID displayed - EXO-60961 - meeds-io/meeds
 - Merge pull request  from Meeds-io/dev-60487
 - fix:  Align Css cache TTL to JS cache TTL - EXO-60487 - meeds-io/meeds 
@@ -1393,9 +1304,6 @@ eXo gatein-portal 6.4.0
 - fix: Expire user password recovery tokens after a successful login - EXO-60312 - Meeds-io/meeds 
 - feat: list group collaborators' suggestions in the access management … 
 - feat: list group collaborators' suggestions in the access management … 
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix-60231: Update maven-parent-pom to 22-M05
 - fix: Fix NullPointer exception when uploading an empty resource - EXO-59910 - Meeds-io/meeds 
 - fix: Account is locked when password is changed - EXO-59903 - meeds-io/meeds 
@@ -1403,33 +1311,18 @@ eXo gatein-portal 6.4.0
 
 eXo push-notifications 2.4.0
 *************************
-- SWF: Remove Task notifications webhook GHA
 - Update addons-parent-pom to 16-exo-RC01
 - feat: Delete outdated Upgrade Plugin used to enable Push notification channel - MEED-698 - Meeds-io/MIPs
 - Merge develop into develop-exo
 - Update addons-parent-pom to 16-M06
 - Update addons-parent-pom to 16-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - feat: update addons parent pom to 16-exo-M06 - EXO-60439 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 
 eXo jcr 6.4.0
 *************************
-- SWF: Restore Task notifications workflow for Tribe
 - fix: add new method for Initialized status for NodeHierarchyCreator service - EXO-62334 
 - fix: Change default collation to utf8mb4_bin - EXO-60718 
-- SWF: Update sonarcloud JDK version to 17
 - fix: Change default charset and collation of NAME field of JCR_SITEM table from latin1 to utf8mb4 - EXO-60718 
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 
 
 eXo notes 1.2.0
@@ -1437,7 +1330,6 @@ eXo notes 1.2.0
 - fix: Hide unnecessary warning alert message for note access without edit permission - EXO-62612 Meeds-io/meeds 
 - fix:  Fix note don't get posted if its content isn't changed  - EXO-58861 
 - fix:Standardize font styles/size - EXO-61667 - Meeds-io/meeds  
-- SWF: Remove Task notifications webhook GHA
 - fix: fix displaying empty version drawer - EXO-62185 
 - Update addons-parent-pom to 16-exo-RC01
 - feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs 
@@ -1451,9 +1343,6 @@ eXo notes 1.2.0
 - feat: stabilize notes with jdk 17- EXO-60524 
 - Update addons-parent-pom to 16-exo-M07
 - fix: History version drawer is empty - EXO-60449
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - feat: stabilize notes with jdk 17- EXO-60524 - Meeds-io/MIPs 
@@ -1462,20 +1351,13 @@ eXo notes 1.2.0
 - fix: Fix export/import a note lead to disappearance of images in it - fix-58694 - Meeds-io/meeds-314 
 - fix: Fix export/import a note lead to disappearance of images in it - fix-58694 - Meeds-io/meeds-314 
 - fix: History version drawer is empty - EXO-60449
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
 - fix: Can't add an image for a new note - EXO-59684 - Meeds-io/meeds 
 - fix: Can't add an image for a new note - EXO-59684 - Meeds-io/meeds 
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 - fix-59276: Improve protection to protect REST services  
 
 eXo app-center 2.4.0
 *************************
 - fix: fix displaying app center cards - EXO-62978 - Meeds-io/meeds
-- SWF: Remove Task notifications webhook GHA
 - Update addons-parent-pom to 16-exo-RC01
 - fix: Avoid logging warn in server startup - Meeds-io/meeds 
 - feat: Add a hover effect to the app center cards - MEED-1362 
@@ -1485,18 +1367,9 @@ eXo app-center 2.4.0
 - Merge develop into develop-exo
 - Update addons-parent-pom to 16-M06
 - Update addons-parent-pom to 16-exo-M07
-- SWF: Combine PLF Task Notification GHA
-- SWF: Combine PLF Task Notification GHA
-- SWF: Update sonarcloud JDK version to 17
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds
 - feat: update addons parent pom to 16-exo-M06 - EXO-60439 
-- SWF: Use generic PLF TASK notification
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
-- SWF: Use centralized eXo Tasks notifications GHA
 
 
 eXo Wallet 2.4.0
@@ -1530,19 +1403,10 @@ eXo Wallet 2.4.0
 
 eXo jitsi-call 1.2.4
 *************************
-- SWF: Restore Task notifications workflow for Tribe
-- SWF: Remove Task notifications webhook GHA
 - Update addons-parent-pom to 16-exo-RC01
-- SWF: Remove jitsi-call release GHA
-- SWF: Refactor publish release workflow
-- SWF: Sign exo-swf publish commits
 - fix: add logging when failed to close window - EXO-60257
 - feat: Upgrade jitsi to latest stable - EXO-58813  
 - Update addons-parent-pom to 16-exo-M07
 - fix: upgrade to use JDK17 as compiler target - EXO-58815 
 - feat: update maven parent pom to 16-exo-M06 - EXO-60439
 - fix: add size for user pixelized avatars -  EXO-61028 
-- SWF: Update sonarcloud JDK version to 17
-- SWF: Use generic PLF TASK notification
-- SWF: Use centralized Sonarcloud GHA
-- SWF: Use centralized eXo Tasks notifications GHA
