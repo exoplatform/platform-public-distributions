@@ -248,5 +248,22 @@
     "supportedDistributions": "exo_community,community,enterprise",
     "supportedApplicationServers": "tomcat",
     "compatibility": "[${project.version},)"
+  },
+  {
+    "id": "meeds-push-notifications",
+    "version": "${addon.exo.push-notifications.version}",
+    "unstable": true,
+    "name": "Mobile Push Notifications",
+    "description": "Add Push Notifications for mobile application",
+    "sourceUrl": "https://github.com/meeds-io/push-notifications",
+    "downloadUrl": "file://${settings.localRepository}/org/exoplatform/addons/push-notifications/exo-push-notifications-addon-packaging/${addon.exo.push-notifications.version}/exo-push-notifications-addon-packaging-${addon.exo.push-notifications.version}.zip",
+    "vendor": "Meeds.io",
+    "author": "Meeds.io",
+    "license": "LGPLv3",
+    "licenseUrl": "https://www.gnu.org/licenses/lgpl-3.0.txt",
+    "mustAcceptLicense": false,
+    "supportedDistributions": "exo_community,community,enterprise",
+    "supportedApplicationServers": "tomcat",
+    "compatibility": "[${project.version},)"
   }
 ]
