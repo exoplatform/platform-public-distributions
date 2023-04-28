@@ -85,6 +85,8 @@
     <addon.exo.automatic-translation.version>1.2.x-SNAPSHOT</addon.exo.automatic-translation.version>
     <addon.exo.documents.id>exo-documents</addon.exo.documents.id>
     <addon.exo.documents.version>1.2.x-SNAPSHOT</addon.exo.documents.version>
+    <addon.exo.push-notifications.id>meeds-push-notifications</addon.exo.push-notifications.id>
+    <addon.exo.push-notifications.version>2.5.x-exo-SNAPSHOT</addon.exo.push-notifications.version>
     <!-- Add-on manager extension to use (empty for Unix, .bat for Windows) -->
     <addon.manager.extension />
   </properties>
@@ -187,6 +189,13 @@
         <version>${addon.exo.documents.version}</version>
         <scope>provided</scope>
         <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.push-notifications</groupId>
+        <artifactId>exo-push-notifications-addon-packaging</artifactId>
+        <version>${addon.exo.push-notifications.version}</version>
+        <type>zip</type>
+        <scope>provided</scope>
       </dependency>
       <!-- Our modules -->
       <dependency>
