@@ -58,6 +58,7 @@ Fixes :
 eXo Chat 3.4.2
 *************************
 Fixes :
+- fix: Remove the limit when getting the list of room participants in edit mode - EXO-64727
 - fix: Enable to preview and download file which name contains special characters - EXO-64575
 - fix: Enable to open a file containing a "+" character in its title on chat application - EXO-64326
 
