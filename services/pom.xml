@@ -22,7 +22,7 @@
   <parent>
     <artifactId>plf-public-distributions</artifactId>
     <groupId>org.exoplatform.platform.distributions</groupId>
-    <version>6.4.x-SNAPSHOT</version>
+    <version>6.4.3-RC01</version>
   </parent>
   <artifactId>plf-community-edition-service</artifactId>
   <packaging>jar</packaging>
@@ -155,7 +155,7 @@
               <target>
                 <copy todir="${project.build.directory}/classes/">
                   <fileset dir="${project.build.directory}/alternateDestination/">
-                    <exclude name="${project.build.directory}/alternateDestination/conf/platform/configuration.properties"/>
+                    <exclude name="${project.build.directory}/alternateDestination/conf/platform/configuration.properties" />
                   </fileset>
                 </copy>
               </target>
