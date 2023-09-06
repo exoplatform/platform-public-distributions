@@ -275,6 +275,7 @@
                               <exclude name="**/addons/configuration/am.properties" />
                               <exclude name="**/CHANGE_LOG.txt" />
                               <exclude name="**/RELEASE_NOTES.txt" />
+                              <exclude name="**/README.txt" />
                           </fileset>
                       </move>
                       <echo message="Delete directory ${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/meeds-community-${io.meeds.distribution.version}" />
