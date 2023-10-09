@@ -31,7 +31,8 @@
       <properties-param>
         <name>EnableMainStreamComposerProperty</name>
         <description>Enable main stream composer property</description>
-        <property name="exo.config.mainStreamComposer.enabled" value="${exo.config.mainStreamComposer.enabled:false}" />
+        <property name="exo.feature.EditorAttachImage.enabled" value="${exo.feature.EditorAttachImage.enabled:true}" />
+        <property name="exo.feature.PostToNetwork.enabled" value="${exo.feature.PostToNetwork.enabled:true}" />      
       </properties-param>
     </init-params>
   </component>
