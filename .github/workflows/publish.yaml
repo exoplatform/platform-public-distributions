@@ -8,6 +8,8 @@ env:
   DOWNLOAD_URL: 'https://repository.exoplatform.org/content/groups/public/org/exoplatform/platform/distributions/plf-community-tomcat-standalone'
   DOWNLOAD_BINARY_PREFFIX: 'plf-community-tomcat-standalone'
   DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX: 'platform-community'
+  SF_HOST: 'frs.sourceforge.net'
+  SF_PROJECT: 'exo'
 jobs:
   publish:
     name: build_release
@@ -61,3 +63,13 @@ jobs:
           asset_path: SHA256SUMS
           asset_name: SHA256SUMS
           asset_content_type: text/plain
+      - name: Generate SF Readme
+        run: |
+          sudo apt-get update && sudo apt-get install -y pandoc 
+          pandoc -f markdown WHATSCHANGED.TXT > README.md
+      - name: Upload to SF 
+        run: |
+          mv ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip eXo-Platform-${{ env.RELEASE_VERSION }}.zip
+          echo "${{ secrets.SF_SSH_KEY }}" > /tmp/sshkey
+          chmod 0600 /tmp/sshkey
+          rsync -avP -e 'ssh -i /tmp/sshkey -o StrictHostKeyChecking=no' eXo-Platform-${{ env.RELEASE_VERSION }}.zip README.md ${{ secrets.SF_USERNAME }}@${{ env.SF_HOST }}:/home/frs/p/${{ env.SF_PROJECT }}/${{ env.RELEASE_VERSION }}
