@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Get Release version
@@ -33,6 +33,13 @@ jobs:
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "" >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "Bug fixes:"  >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
+            echo "<h2>What's Changed</h2>" > README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "<h3>Features:</h3>" >> README.md && echo "<ul>" >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "</ul>" >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "<h3>Bug fixes:</h3>" >> README.md && echo "<ul>" >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "</ul>" >> README.md
             rm -v CHANGE_LOG.txt
       - name: release
         uses: actions/create-release@v1
@@ -63,10 +70,6 @@ jobs:
           asset_path: SHA256SUMS
           asset_name: SHA256SUMS
           asset_content_type: text/plain
-      - name: Generate SF Readme
-        run: |
-          sudo apt-get update && sudo apt-get install -y pandoc 
-          pandoc -f markdown WHATSCHANGED.TXT > README.md
       - name: Upload to SF 
         run: |
           mv ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip eXo-Platform-${{ env.RELEASE_VERSION }}.zip
