@@ -1,172 +1,140 @@
 =========================
-Changelog Platform 6.4.3
+Changelog Platform 6.4.4
 =========================
 
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
 
-eXo ECMS 6.4.3
+eXo ECMS 6.4.4
 *************************
 Fixes :
-- fix: Downloading files fails with some encoded chars - EXO-65735
-- fix: Can not preview a file when its title contains a "%" - EXO-65642
-- fix: Allow downloading documents with special characters and '+' - EXO-65518
-- fix: Enable the preview of imported documents from Google Drive - EXO-65281
-- fix: Gif without animation in news illustration EXO-64163
-- fix: Enable like/dislike an activity from attachment preview - EXO-64824
-
-eXo Social 6.4.3
-*************************
-Fixes :
-- fix: Downloading files fails with some encoded chars - EXO-65735
-- fix: Can not preview a file when its title contains a % - EXO-65642
-- fix: Allow downloading documents with special characters and '+' - EXO-65518
-- fix: Enable the preview of imported documents from Google Drive - EXO-65281
-- fix: Gif without animation in news illustration EXO-64163
-- fix: Enable like/dislike an activity from attachment preview - EXO-64824
+- fix: Allow importing custom & multivalued properties with csv - EXO-65669 - Meeds-io/meeds#1070
 - fix: The password confirmation validation is not functional - EXO-65860 - Meeds-io/meeds#1075
-- fix: Chat icon should only be displayed for space members - EXO-64806 - Meeds-io/meeds#1069
-- fix: paste menu for post short messages - EXO-65657 - Meeds-io/meeds#1073
-- fix: Issue with cursor icon when hovering over a notification text -EXO-63933
-- fix: The full name isn't updated after updating multiple profile properties including the first name or the last name - EXO-65382 - Meeds-io/meeds#1050
-- fix: Can not search attributes containg spaces in the field name - EXO-65498 - Meeds-io/meeds#1031
+- fix: Chat icon should only be displayed for space members - EXO-64806 - Meeds-io/meeds#1069.
+- fix: Paste menu for post short messages - EXO-65657 - Meeds-io/meeds#1073
+- fix: Remove the user  from the old group synchronized profile property groups - EXO-64814 - Meeds-io/meeds#1052
+- fix: The full name isn't updated after updating multiple profile properties - EXO-65382 - Meeds-io/meeds#1050
+- fix: Can not search attributes containing spaces in the field name - EXO-65498 - Meeds-io/meeds#1031
+- fix: Select the drive of the current space in attachment drawer -EXO-67230 (#2204)
+- fix: Store files under space root folder - EXO-64344 (#2203)
+- fix: Enable to create news article with title contains a '.' character followed by special character - EXO-66277
+- fix: Disabling transition effects on the circular progress bar for fie uploads - EXO-63220
+- fix: After adding a document version, allow to create a new activity when the original is deleted - EXO-65154
+
+eXo Social 6.4.4
+*************************
+Fixes :
+- fix: Clean the profile property group synchronized name of special characters - EXO-66936 - Meeds-io/meeds#1228
+- fix: Space Activity Stream Load more issue - EXO-66818 - Meeds-io/meeds#1199
+- fix: Deleted typed chars from search field when searching with long names - EXO-66349 - Meeds-io/meeds#1128
+- fix: Display the default user avatar for disabled users - EXO-66363 - Meeds-io/meeds#1129
+- fix: Display unread notifications correctly after clicking - EXO-66167 - Meeds-io/meeds#1103
+- fix: Un-visible profile attribute is visible in the advanced filter drawer - EXO-65618 - Meeds-io/meeds#1100
+- fix: Disable the save profile property edit button when no changes - EXO-63068 - Meeds-io/meeds#1096
+- Fix: Update Profile when synchronized profile property setting from AD - EXO-65023 - Meeds-io/meeds#1084
+
+eXo News 2.4.4
+*************************
+Fixes:
+- fix: Clean news title name when un-publishing news - EXO-61538
+- fix: Remove unused allowed target - EXO-61538
+- fix: Un-publish news problem after editing news title - EXO-61538
+- fix: Images in shared news are not displayed - EXO-61176
+
+eXo Task 3.4.4
+*************************
+Fixes :
+- fix : Color bullet points of tasks status - EXO-61421 - Meeds-io/meeds#1153
+- fix : Preventing the apply button from triggering the blur event of the task editor description - EXO-66080 Meeds-io/meeds#1105
+
+eXo Commons 6.4.4
+*************************
+Fixes :
+- fix: Add the French translation to the user notification description for unread activities
+- fix: Fix Suggester doesn't appear anymore on CKEditor - MEED-2434 - Meeds-io/meeds#1079
+
+eXo Gatein-Portal 6.4.4
+*************************
+Fixes :
+- fix: New created disabled user displayed in active members list - EXO-64050
+- fix: Switch to indonesian language issue - EXO-66238 - Meeds-io/meeds#1163
+
+eXo Notes 1.2.4
+*************************
+Fixes :
+- fix: Update notes configuration for image storage location - EXO-64344
+
+eXo Onlyoffice 2.4.4
+*************************
+Fixes :
+- fix : Enable to download document containing apostrophe from action menu of preview mode - EXO-66214
+
+eXo Jitsi 1.3.4
+*************************
+Fixes :
+- fix: Error in logs when looking for js map file - EXO-66212
+
+eXo Platform-UI 6.4.4
+*************************
+Fixes :
+- fix: Date picker is hidden on Analytics page - EXO-65430 - Meeds-io/meeds#1024
+
+eXo Mail Integration 1.1.4
+*************************
+Fixes :
+- fix: Display mail content in html when possible - EXO-67301
+
+eXo Documents 1.1.4
+*************************
+Fixes :
+- fix : Cleaning the document's name from accents when renaming a document - EXO-66370
+
+eXo Agenda 1.3.4
+*************************
+Fixes :
+- fix: Prevent to send the reminder notification of the parent recurrent event to avoid the redundancy at the first occurrence -EXO-65965
 
 Improvements :
-- IMP: Allow importing custom & multivalued properties using csv file - EXO-65669 - Meeds-io/meeds#1070
+- feat: Add server url to RemoteProviderEntity - EXO-67342
 
-eXo Documents 1.1.3
+eXo Agenda Connectors 1.1.4
 *************************
 Fixes :
-- fix: Enable the search for document descriptions using the tag name - EXO-65172
-- fix: Remove the symlink when designating a document's collaborator - EXO-65859
-- fix: Notify only corresponding collaborators after making changes on their permission on the document managed access drawer - EXO-65096
-- fix: Create a symlink to the user's personal documents when assigninga space member as a document collaborator - EXO-65095
-- fix: Move Natural Comparator of Strings to commons module - EXO-46735 - Meeds-io/meeds#1056
-- fix: Grant all permissions to space hosts and editors when the document visibility is set to Only designated collaborator -EXO-65224
-- fix: Notify only corresponding collaborators after making changes on their permission on the document managed access drawer - EXO-65096
-- fix: Can not preview a file from Documents app - EXO-65735
-- fix: Downloading files fails with some encoded chars - EXO-65735
-- fix: Do not notify space members when the space is assigned as a document collaborator - EXO-65094
-- fix: Can not preview a file when its title contains a % - EXO-65642
-- fix: allow downloading documents with special characters and '+' - EXO-65518
-- fix: Upload or create documents within the shortcut of a folder created in exo 6.3 after upgrading to exo 6.4/6.5 - EXO-65280
-- fix: Enable to upload document on shortcut sub folder - EXO-65264
-- fix: Redirect the user to the destination folder after creating a document shortcut to a renamed space location - EXO-65390
-- fix: Display all type of folders - EXO-65353
-- fix: When a version is created by system, the version history drawer is empty - EXO-65435
-- fix: Redirect user to the destination folder after creating a document shortcut - EXO-65263
-- fix: Fix the infinite loop that occurs when creating a shortcut of a folder within the same folder -EXO-65086
-- fix: Enable to search document with name contains an elastic search reserved characters - EXO-64651
-- fix: Enable to updating document permisson from the all users visibilty drawer - EXO-65052
+- fix: Use local storage for storing MS tokens to avoid frequent logins - EXO-65633
 
-eXo Agenda 1.3.3
-*************************
-Fixes :
-- fix: Drag and drop event - EXO-65674
-- fix: Remove the use of secret key in agenda connectors on the front side - EXO-65042
-- fix: Dispaly all day events planned for the current day on the agenda gadget in space stream page - EXO-65143
-
-eXo Chat 3.4.3
-*************************
-Fixes :
-- fix: Chat icon on users popover not displayed - EXO-65999
-- fix: Chat icon should only be displayed for space members - EXO-64806
-- fix: Stop retrieving online users when some requests are pending - EXO-65044
-- fix: Existing users in a chatroom are suggested to be added again on edit mode - EXO-64919
-
-eXo News 2.4.3
-*************************
-Fixes :
-- fix: Inserted images/videos aren't considered as a content in news - EXO-65311
-- fix: Use of '#' glitches the News filter - EXO-65188
-- fix: Search - paste filtered url in a new tab glitches the display - EXO-65200
-- fix: Filtered articles aren't retreived if they contain links - EXO-64780
-- fix: Update btn disabled in Edit posting/ publishing drawer - EXO-65317
-- fix: Suggest all spaces for the spaces administrator group - EXO-65113
-- fix: Auto saving of an article edited using his public link - EXO-65336
-- fix: News filtering by space with search terms - EXO-64778
-- fix: Enable to display published news images selected from existing upload for non members - EXO-65111
-- fix: Add content title for News analytics - EXO-61869
-- fix: Gif displayed without animation in news illustration - EXO-64163
-
-eXo Task 3.4.3
-*************************
-Fixes :
-- fix: Change task drawer title
-
-eXo Notes 1.2.3
-*************************
-Fixes :
-- fix: Return child notes sorted with natural sorting rule - EXO-46735 - Meeds-io/meeds#1056
-- fix: Error when searching notes - EXO-65101 - Meeds-io/meeds#1038
-- fix: Insert position is wrong EXO-65312 - Meeds-io/meeds#1019
-- fix: Navigation menu appears randomly in wrong place - EXO-64938 - Meeds-io/meeds#1025
-
-
-eXo Onlyoffice 2.4.3
-*************************
-Fixes :
-- fix: Set correctly the Onlyoffice editor language - EXO-64615
-- fix: Can not preview a file when its title contains a "%" - EXO-65642
-- fix: Change Charset of DOCUMENT_TITLE to UTF-8 - EXO-64213
-- fix: When a version is created by system, the version history drawer is empty - EXO-65435
-- fix: Don't prevent other users from saving new versions even if they have not added changes - EXO-64990
-
-eXo Multifactor-Authentication 1.2.3
-*************************
-Fixes :
-- fix: Bypass MFA login screen when user is already authorized - EXO-65641
-- fix: Display user's fullname in revocation requests list - EXO-64957
-
-eXo JCR 6.4.3
-*************************
-Fixes :
-- fix: Special characters prevents downloading files using Webdav - EXO-65735
-
-eXo Commons 6.4.3
-*************************
-Fixes :
-- fix: Error when getting notes app tree drafts after creating a new draft page without title - EXO-65932 - Meeds-io/meeds#1077
-- fix: No key for Documents label in settings>Manage notifications page - EXO-64493 - Meeds-io/meeds#1074
-- fix: Paste menu for post short messages - EXO-65657 - Meeds-io/meeds#1073
-- fix: Add Natural sorting comparator for Strings with digits - EXO-46735 - Meeds-io/meeds#1056
-
-eXo Analytics 1.1.3
-*************************
-- fix: After a page refresh, events are not pushed to Google Calendar - EXO-65485
-- fix: Renew JWT token to avoid its expiration - EXO-65633
-- fix: Refactor agenda google connector - EXO-65042
-
-eXo Gatein-Portal 6.4.3
+eXo Chat 3.4.4
 *************************
 
-eXo Gamification 2.4.3
+eXo Multifactor-Authentication 1.2.4
 *************************
 
-eXo Web-Conferencing 2.4.3
+eXo JCR 6.4.4
 *************************
 
-eXo Jitsi 1.3.3
+eXo Analytics 1.1.4
 *************************
 
-eXo Platform-UI 6.4.3
+eXo Gamification 2.4.4
 *************************
 
-eXo Perk-Store 2.4.3
+eXo Web-Conferencing 2.4.4
 *************************
 
-eXo Kudos 2.4.3
+eXo Perk-Store 2.4.4
 *************************
 
-eXo kernel 6.4.3
+eXo Kudos 2.4.4
 *************************
 
-eXo Push-Notifications 2.4.3
+eXo kernel 6.4.4
 *************************
 
-eXo App-Center 2.4.3
+eXo Push-Notifications 2.4.4
 *************************
 
-eXo Wallet 2.4.3
+eXo App-Center 2.4.4
+*************************
+
+eXo Wallet 2.4.4
 *************************
