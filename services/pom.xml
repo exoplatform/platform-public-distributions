@@ -22,7 +22,7 @@
   <parent>
     <artifactId>plf-public-distributions</artifactId>
     <groupId>org.exoplatform.platform.distributions</groupId>
-    <version>6.5.x-SNAPSHOT</version>
+    <version>6.6.x-SNAPSHOT</version>
   </parent>
   <artifactId>plf-community-edition-service</artifactId>
   <packaging>jar</packaging>
