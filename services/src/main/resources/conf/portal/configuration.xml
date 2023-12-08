@@ -33,8 +33,6 @@
         <description>Enable main stream composer property</description>
         <property name="exo.feature.EditorAttachImage.enabled" value="${exo.feature.EditorAttachImage.enabled:true}" />
         <property name="exo.feature.PostToNetwork.enabled" value="${exo.feature.PostToNetwork.enabled:true}" />
-        <property name="io.meeds.engagementSite.name" value="${io.meeds.engagementSite.name:engage}" />
-        <property name="io.meeds.myCraftSite.name" value="${io.meeds.myCraftSite.name:mycraft}" />
       </properties-param>
     </init-params>
   </component>
