@@ -1,0 +1,62 @@
+
+Thank you for downloading eXo Platform 6.5.0.
+
+------------------------------
+System requirements
+------------------------------
+
+    * CPU:     Multi-core recommended, 2GHz minimum.
+    * Memory:  The eXo Platform package is optimized with default settings: max heap size = 4GB and non-heap size = 256MB; so the available memory should be at least 4GB. It is recommended you have a memory of 8GB (4GB free for database, Elasticsearch, Jitsi and Onlyoffice services and file system caches).
+    * Disk:    10GB (depending of the amount of data)
+    * OS:      Windows or Linux
+    * JDK:     Java 17 (Set the JAVA_HOME environment variable)
+    * Browser: Check Browser compatibility section in Supported Environment https://www.exoplatform.com/supported-environments
+    * The eXo Platform server will run on port 8080, make sure this port is not currently in use
+
+
+More compatibility info is available at :
+https://www.exoplatform.com/legal/supported-environments.pdf
+
+-------------------------------------
+How to start the Platform Tomcat
+-------------------------------------
+
+    * PLF_HOME is the location of the unzipped eXo Platform server.
+    * On Windows: Open a DOS prompt command, go to PLF_HOME directory and type the command: "start_eXo.bat"
+    * On Linux: Open a terminal, go to PLF_HOME directory and type the command: "./start_eXo.sh"
+
+
+----------------------------------------------------------
+How to access the Platform homepage
+----------------------------------------------------------
+
+    * Wait for the server to start. You should see something like this on the console
+
+      INFO  | Server startup in XXXX ms
+
+    * Enter the following URL into your browser's address bar: http://localhost:8080/portal
+
+-------------------------------------
+How to install add-ons
+-------------------------------------
+
+Several add-ons are not installed by default. To find a list of compatible add-ons, use the add-ons manager.
+
+
+On Windows, Open a DOS prompt command, go to PLF_HOME directory and type the command:
+    * To install an add-on use: addon.bat install <add-on>
+    * List all available add-ons use: addon.bat list
+
+On Linux: Open a terminal, go to PLF_HOME directory and type the command :
+    * To install an add-on use: ./addon install <add-on>
+    * List all available add-ons use: ./addon list
+
+
+------------------
+eXo Resources
+------------------
+
+Community         https://github.com/exoplatform/exo-community/discussions
+Documentation     https://docs.exoplatform.org/
+Blog              https://www.exoplatform.com/blog
+eXo               https://www.exoplatform.com

@@ -15,7 +15,7 @@ IV.   KNOWN ISSUES
 
 Main changes since Platform 6.3.0
 
-* Features 
+* Features
 **
 
 * Improvements
