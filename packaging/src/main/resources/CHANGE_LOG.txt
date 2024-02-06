@@ -1,570 +1,96 @@
 =========================
-Changelog Platform 6.5.0
+Changelog Platform 6.5.1
 =========================
 
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
 
-eXo ECMS 6.5.0
+eXo ECMS 6.5.1
 *************************
 Fixes :
-- fix: Make configuration of PDF viewer services overridable - EXO-68305
-- fix: Apply border radius to Document portlet - EXO-67627
-- fix: Apply the border radius for the transfer rules application - EXO-67638
-- fix: Remove unneeded editor resizing after uploading an image - EXO-67793
-- fix: Apply border radius to Content list view portlet - EXO-67628
-- fix: Fix displaying analytics page - EXO-67565
-- fix: Breadcrumb folder links are broken - EXO-67575
-- fix: Apply border radius and padding rule to Single content view portlet - EXO-67629
-- fix: Reuse centralized Toast Notifs component - EXO-67595
-- fix: Apply border radius to documents user setting - EXO-67622
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Change the document preview URL with the new pattern - EXO-67548
-- fix: Update the default image of ecms applications - EXO-67096
-- fix: Store files under space root folder - EXO-64344
-- fix: Select the drive of the current space in attachment drawer -EXO-67230
-- fix: Enable to create a news with title contains a '.' character followed by a special character - EXO-66277
-- fix: Disabling transition effects on the circular progress bar for fie uploads - EXO-63220
-- fix: Fix trash cleaner transaction timeout exception - EXO-66248
-- fix: After adding a document version, allow to create a new activity when the original is deleted - EXO-65154
-- fix: Downloading files fails with some encoded chars - EXO-65735
-- fix: Can not preview a file when its title contains a % - EXO-65642
-- fix: Move eXoResources and eXoSkin Maven Modules from meeds to eXo - Meeds-io/MIPs#52
-- fix: Move Third party libraries dependencies  from meeds to exo - Meeds-io/MIPs#42
-- fix: Allow downloading documents with special characters and '+' - EXO-65518
-- fix: Enable the preview of imported documents from Google Drive - EXO-65281
-- fix: Error when loading ckedito config in documents preview - EXO-65351
-- fix: Gif without animation in news illustration EXO-64163
-- fix: Enable liking/disliking an activity from attachment preview - EXO-64824
-- fix: Enable to download document with name contains a + character from chat application - EXO-64667
-- fix: Enable to preview and dowload file with name contains a special character - EXO-64575
-- fix: Insert from existing Uploads : display issue - EXO-64517
-- fix: Enable to preview a file containing an '+' character in its name- EXO-64192
-- fix: Select from existing uploads filtered space displays empty content - EXO-63848
-- fix: Preventing users from re-uploading documents to the same attachment drawer after reaching the maximum limit - EXO-64261
-- fix: ok button disabled when inserting image -EXO-63849
-- fix: Reset the number of attachement after posting an activity - EXO-64141
-- fix: Do not allow uploading more than the defined maximum number of documents - EXO-61841
-- fix: Add attachment app to Notes edition page - EXO-64149
-- fix: Warning when loading files - EXO-64092
-- fix: Add missing German transaltion in Ckeditor - EXO-63816
-- fix: Save new version by only office generate no contenet activity - EXO-63508
+- fix: Fix Shortcut of folder content not displayed from backoffice - EXO-69082
+- fix: Fix Permissions for space notes node - EXO-68358
+- fix: Fix oform extension can't be searched on unified search - EXO-66819
+- fix: Attached elements aren't saved - EXO-68689
+- fix: After modification of a property, old value are regularly displayed in user profile - EXO-68774
+- fix: Enable to upload an image with a title containing a # character - EXO-68379
+- fix: Updating a post creates an activity folder if ASD is deleted - EXO-68609
+- fix: Fix error log after creating an activity - EXO-67398
+- fix: Fix Error message and endless progress bar in drawer when adding a new version to a file - EXO-67382
 
 Improvements:
-- feat: Remove the usage of Jodcconverter - EXO-61210
-- feat: Attach image to an article from connected one/google personal drive - EXO-63936
-- feat: Add trashcleaner job - EXO-63795
-- feat: Remove old documents app notification plugins - EXO-61301
-- feat: Add possibility to remove old content from trash
-- feat: Use Extended CKEditor configuration - Meeds-io/MIPs#59 - EXO-64905
-- feat: Mark attachment as viewed - EXO-64500
-- feat: Remove uneeded source param from oeditor url - EXO-64500
-- feat: Add Attachment views update listener - EXO-64500
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Configure ecms navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Update custom insert image cke plugin to be able to set image as link - EXO-65708
-- feat: Clean administration site navigation.xml - EXO-66902 - Meeds-io/MIPs#88
-- feat: Update Document node icon - EXO-66902 - Meeds-io/MIPs#88
-- feat: Remove useless administration pages and navigations - EXO-67268  - Meeds-io/MIPs#88
+- feat: Make news detail accessible from public sites - EXO-68952
 
-
-eXo Social 6.5.0
+eXo Social 6.5.1
 *************************
 Fixes :
-- fix: Work experience: Missing indication for required fields - EXO-62858 - meeds-io/meeds#814
-- fix: activity params keys case insensitivity block activity updates -EXO-62802 - Meeds-io/meeds#815
-- fix: Attribute options in edit mode not updating according to the position - EXO-63127 - Meeds-io/meeds#827
-- fix: Deactivating sub attributes of IMs does not work - Meeds-io/meeds#797 - EXO-63174
-- fix: Fix displaying Space Navigation Arrows - MEED-1971 - Meeds-io/meeds#833
-- fix: Fix Spaces Application Cards Drawer Width - MEED-1972 - Meeds-io/meeds#834
-- fix: fix the phones types not filled are displayed - EXO-63187
-- fix: Fix Home Selection from Left Menu - MEED-1978 - Meeds-io/meeds#838
-- fix: Fix Collapsing Second and Third level of Hamburger menu Drawer - MEED-1979 - Meeds-io/meeds#839
-- fix: Work experience values are empty after migrating from 5 to 6.4  EXO-63059 - Meeds-io/meeds#848
-- fix: Deactivating sub attributes of IMs does not work int edit drawer - Meeds-io/meeds#797 - EXO-63174
-- fix: Profile new multi field sub attributes are not saved in profile - Meeds-io/meeds#801 - EXO-63188
-- fix: Profile - Attribute position change not taken into account - EXO-63150
-- fix: Erroneous number of search results when using advanced people search - EXO-63148 - Meeds-io/meeds#818
-- fix: Unable to invite user in a room, or in a space - EXO-63472
-- fix: Update isActivityDeletable method for non removable activities - MEED-1890 - Meeds-io/meeds#781
-- fix: Replace the error alert with a global notification alert when creating a space with an existing name - Meeds-io/meeds#859 - EXO-62856
-- fix: Cancel a gamified event - MEED-1842 - Meeds-io/meeds#775
-- fix: Refresh cache is needed after renaming profile attribute - Meeds-io/meeds#867 - EXO-62875
-- fix: Social organization provider does not return disabled users - EXO-63637 - Meeds-io/meeds#888
-- fix: third element in people card menu is invisible - EXO-62230 - Meeds-io/meeds#891
-- fix: New multi valued profile attribute not saved - Meeds-io/meeds#889 - EXO-63578
-- fix: OpenId connection is KO - EXO-63713 - meeds-io/meeds#894
-- fix: Technical label displayed instead of label on people advanced filter button - Meeds-io/meeds#890 - EXO-63060
-- fix: Fix Rich Editor Configuration Rest Content Type - MEED-2090 - Meeds-io/meeds#919
-- fix: Fix Spaces administration label display - MEED-2086 - Meeds-io/meeds#916
-- fix: Fix Rich Editor Configuration JS Variables interpretation - MEED-2097 - Meeds-io/meeds#925
-- fix: Implement method to retrieve the technical identifiers of the spaces I manage - MEED-2063 - Meeds-io/meeds#898
-- fix: Incorrect advanced people filter if the searched attribute value ends with a space character - EXO-64041 - Meeds-io/meeds#929
-- fix: Can't like an activity after detaching its attachment - EXO-64057 - Meeds-io/meeds#935
-- fix: cache correctly response for Safari browser - EXO-64072 - Meeds-io/meeds#938
-- fix: Fix technical nodes labels in space navigation - EXO-62470 - Meeds-io/MIPs#51
-- fix: Fix Issue of space root node not changed on space navigation topbar - EXO-64294 - Meeds-io/MIPs#51
-- fix: Display Hidden option in a space member's card options list - EXO-64105 - Meeds-io/meeds#950
-- fix: Fix Avatar Fullname Truncation Display - MEED-2249 - Meeds-io/meeds#988
-- fix: Fix renamed space root node label issue - EXO-64817 - Meeds-io/MIPs#51
-- fix: Fix Notifications Alert Z-index - MEED-2220 - Meeds-io/MIPs#49
-- fix: Fix displaying likers list - MEED-2268 - Meeds-io/meeds#998
-- fix: Fix top bar navigation behavior - EXO-64657 - Meeds-io/MIPs#51
-- fix: Fix Email footer name and link - MEED-2267
-- fix: Fix space top bar navigation behavior - EXO-65369 - Meeds-io/MIPs#68
-- fix: Fix Activity Stream loading style - MEED-2238 - Meeds-io/MIPs#50
-- fix: Fix Activity Delete ACL - MEED-2313 - Meeds-io/MIPs#50
-- fix: Fix Space Avatar Display When Hidden space - MEED-2371 - Meeds-io/meeds#1032
-- fix: Fix Expand View of Action drawer - MEED-2373 - Meeds-io/meeds#1034
-- fix: Fix Clear Cache when deleting comment - MEED-2381 - Meeds-io/meeds#1039
-- fix: Fix user avatar border applied on name - MEED-2383 - Meeds-io/meeds#1041
-- fix: can not search attributes containg spaces in the field name - EXO-65498 - Meeds-io/meeds#1031
-- fix :The full name isn't updated after updating multiple profile properties including the first name or the last name - EXO-65382 - Meeds-io/meeds#1050
-- fix: Remove the user  from the old group synchronized profile property groups - EXO-64814 - Meeds-io/meeds#1052
-- fix: Notification drawer : close a notification issue - EXO-65724 - Meeds-io/meeds#1054
-- fix: Issue with cursor icon when hovering over a notification text -EXO-63933
-- fix: Check user existence before updating his salt - EXO-65151 - Meeds-io/MIPs#69
-- fix: add missing id attributes to the Share activity drawer - EXO-67173 - Meeds-io/meeds#1497
-- fix: Add some enhancements to the the activity toolbar icons - MEED-2581 - Meeds-io/MIP#54
-- fix: Add workaround for Viewport definition in Mobile - MEED-2819 - Meeds-io/meeds#1232
-- fix: Adjust the kudos CTA from general stream - MEED-2568 - Meeds-io/MIP#54
-- fix: Adjust the placeholder depending the audience - MEED-2464 - Meeds-io/MIPs#54
-- fix: allow importing custom & system multivalued properties with csv - EXO-65669 - Meeds-io/meeds#1070
-- fix: Avoid loading useless URLs - MEED-3076 - Meeds-io/meeds#1440
-- fix: Avoid sending uploaded images with reverse order - MEED-2358 - Meeds-io/MIPs#53
-- fix: button favorite and 3 dots menu in activity detail have no accessible name - EXO-62416 - Meeds-io/meeds#1376
-- fix: Change the banner of Platform settings site - EXO-67724 - Meeds-io/meeds#1354
-- fix: Change the composer filter texts - MEED-2503 - Meeds-io/MIPs#54
-- fix: Chat icon should only be displayed for space members - EXO-64806 - Meeds-io/meeds#1069
-- fix: Clean the profile property group synchronized name of special characters - EXO-66936 - Meeds-io/meeds#1228
-- fix: Correctly display the space after space selection in composer - EXO-67423 - meeds-io/meeds#1273
-- fix: Default activity - no radius applied- MEED-2932-Meeds-io/meeds#1287
-- fix: Delete Breadcrumb Margins - MEED-3023 - Meeds-io/meeds#1349
-- fix: Delete confirmation alert before reloading page - MEED-411 -Meeds-io/meeds#619
-- fix: Deleted typed chars from search field when searching with long names - EXO-66349 - Meeds-io/meeds#1128
-- fix: Delete spacing in Links Portlet - MEED-2674 - Meeds-io/meeds#1167
-- fix: Delete useless Class in Image Preview - MEED-2713 - Meeds-io/meeds#1185
-- fix: Delete zoom on Links Column preview - MEED-2716 - Meeds-io/meeds#1187
-- fix: Disable rule management to allow displaying Space pages in different shared layouts - MEED-3014 - Meeds-io/meeds#1334
-- fix: Disable rule management to allow displaying Space pages in different shared layouts - MEED-3014 - Meeds-io/meeds#1334
-- fix:  Disable the save profile property edit button when no changes - EXO-63068 - Meeds-io/meeds#1096
-- fix: Display the audience choice when only create an activity - MEED-2572 - Meeds-io/MIP#54
-- fix: Display the default user avatar for disabled users - EXO-66363 - Meeds-io/meeds#1129
-- fix: Display wallet settings in Space Settings - MEED-3058 - Meeds-io/meeds#1412
-- fix: Enable the main stream composer property - MEED-2548 - Meeds-io/MIP#54
-- fix: Enahnce Stream Composer Loading - MEED-2589 - Meeds-io/meeds#1131
-- fix: Extra margin to remove when no about me in profile you visit- MEED-2989-Meeds-io/meeds#1315
-- fix: Fix About Me Field Update and use Rich Editor field for it - MEED-1580 - Meeds-io/meeds#1428
-- fix: Fix Activity Comment Editing - MEED-2705 - Meeds-io/meeds#1179
-- fix: Fix Activity Not Found Placeholder Style - MEED-2494 - Meeds-io/meeds#1095
-- fix: Fix Administration Menu items alignments - MEED-3010 - Meeds-io/meeds#1330
-- fix: Fix Bottom Site Navigation Display in Public Site - MEED-2851 - Meeds-io/MIPs#100
-- fix: Fix BreadCrumb Navigation Border radius - MEED-3011 - Meeds-io/meeds#1331
-- fix: Fix color of Notification CTA - MEED-2958 - Meeds-io/meeds#1277
-- fix: fix conflict after merging mip-53 - meeds-io/MIPs#53
-- fix: Fix conflict related to merge meeds-io/MIPs#92
-- fix: Fix Direct Link to reply on comment - MEED-2663 - Meeds-io/meeds#1151
-- fix: Fix Drawer Loading Effect Display - MEED-2550 - Meeds-io/meeds#1113
-- fix: Fix Dynamic Refresh of Attached images when deleted all - MEED-2038 - Meeds-io/MIPs#53
-- fix: Fix feedbacks - Meeds-io/MIPs#95
-- fix: Fix Hub Access URLs - MEED-3037 - Meeds-io/meeds#1381
-- fix: Fix I18N Activity processing when having emoji - MEED-2990 - Meeds-io/meeds#1117
-- fix: Fix Icon alignments and Space navigation spacing - MEED-3036 - Meeds-io/meeds#1380
-- fix: Fix JS error in Site Navigation - MEED-2747 - Meeds-io/meeds#1198
-- fix: Fix Left Space Selection - MEED-2490 - Meeds-io/meeds#1092
-- fix: Fix license Header of newly introduced Java file - Meeds-io/MIPs#80
-- fix: Fix link type node opening from top bar navigation menu portlet -  EXO-68401 - Meeds-io/meeds#1488
-- fix: Fix Mail Notification Subject Label for watched activity - MEED-2549 - Meeds-io/meeds#1112
-- fix: Fix Mention User Processing - MEED-2930 - Meeds-io/meeds#1286
-- fix: Fix Mocked Web Storage Unit Test - MEED-2436 - Meeds-io/meeds#1122
-- fix: Fix Preloaded navigation URL for Hamburger Menu - MEED-2727 - Meeds-io/meeds#1176
-- fix: Fix Recent Spaces Loading - MEED-2951 - Meeds-io/meeds#1022
-- fix: Fix Rendering Old Grouped Comments - MEED-2533 - Meeds-io/meeds#1101
-- fix: Fix replacing algorithm for Rich Editor Cotnent - MEED-2704 - Meeds-io/meeds#1178
-- fix: Fix Rich Editor modification change - MEED-2596 - Meeds-io/meeds#1135
-- fix: Fix Sanitized HTML Processing - MEED-2644 - Meeds-io/meeds#1155
-- fix: Fix sending Watch notification when Activity isn't of predefined type - MEED-2531 - Meeds-io/MIPs#80
-- fix: Fix Server Error Logs for Image Attachments - MEED-2284 - Meeds-io/MIPs#53
-- fix: Fix single attributes when it is considered as parent  - EXO-67825 - Meeds-io/meeds#1383
-- fix: Fix the edit message from general stream - MEED-2665 -Meeds-io/meeds#1159
-- fix: Fix the post attach image in general stream - MEED-2587 -Meeds-io/MIP#54
-- fix: Fix the post button activation when the property is set to false - MEED-2608 -Meeds-io/MIP#54
-- fix: Fix the space stream filter - MEED-2622 - Meeds-io/meeds#1148
-- fix: Fix the users mention in CKeditor for the kudos case - MEED-2749 -  Meeds-io/meeds#1200
-- fix: Fix the users mention in CKeditor - MEED-2666 - Meeds-io/meeds#1160
-- fix: Fix Top Bar Items Loading UX - MEED-3022 - Meeds-io/meeds#1326
-- fix: Fix topbar menu accessibility - EXO-62481
-- fix: fix topbar UI/UX issue - EXO-68385
-- fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
-- fix: Fix User Setting Edit Icon colors - MEED-2690 - Meeds-io/meeds#1169
-- fix: Fix User Sugester performances issue - MEED-2879 - Meeds-io/meeds#1258
-- fix: Fix UX of Site Details in Mobile - MEED-3033 - Meeds-io/meeds#1372
-- fix: Fix Vertical Menu Scroll Style - MEED-3022 - Meeds-io/meeds#1326
-- fix: Handle 'Everyone' permission when computing site permissions - EXO-68132 - Meeds-io/meeds#1474
-- fix: Hide Activity Composer when not space redactor - MEED-2698 - Meeds-io/meeds#1174
-- fix: Hide the reset filter button when using mobile - MEED-2543 - Meeds-io/MIP#54
-- fix: Improve the post CTA from a space - MEED-2070  - meeds-io/MIPs#54
-- fix: Improve the toolbar post CTA - MEED-2401 - Meeds-io/MIPs#54
-- fix: Left/right arrow buttons in activity have not accessible name - EXO-62419 - Meeds-io/meeds#1304
-- fix: Mention a user when changing the audience - MEED-2463 - Meeds-io/MIP#54
-- fix: Mobile view of activity actions - meed-2275
-- fix: Move administration site and default site banners from social to meeds - EXO-68183 - Meeds-io/meeds#1449
-- fix: Multifactor group suggestor isn't working - EXO-67960 - Meeds-io/meeds#1494
-- fix: Non visible profile attribute is visible in the advanced filter drawer - EXO-65618 - Meeds-io/meeds#1100
-- fix: Notification button in top bar have not accessible name - EXO-62523 - Meeds-io/meeds#1296
-- fix: Notification options behind watch activity CTA-MEED-2895-Meeds-io/meeds#1270
-- fix: Notifications apps in expanded view - no radius applied- MEED-2940-Meeds-io/meeds#1293
-- fix: Notification snack-bar not closed - EXO-68048 - Meeds-io/meeds#1425
-- fix: paste menu for post short messages - EXO-65657 - Meeds-io/meeds#1073
-- fix: Pin activity - no radius applied- MEED-2933-Meeds-io/meeds#1289
-- fix: Radius not to be applied to language settings drawer- MEED-2952-Meeds-io/meeds#1298
-- fix: Refresh Space cache when activity marked as read - MEED-2986 - Meeds-io/meeds#1309
-- fix: Refresh Space Favorite Button in Popups when change elsewhere - MEED-2673 - Meeds-io/meeds#1166
-- fix: Remove extra margin in stream page- MEED-2959 - Meeds-io/meeds-1314
-- fix: Remove placeholder when editing an activity - MEED-2444 - Meeds-io/MIPs#54
-- fix: Remove the html tag when editing an activity and removed mentioned users - MEED-2762 - Meeds-io/meeds#1207
-- fix: Remove useless FT flag newLeftNavigationDrawer navigation missed after Meeds-io/MIPs#72 merge
-- fix: Reset Style of all CKEditor Contents to have WYSIWYG effect after editing - MEED-2534 - Meeds-io/meeds#1102
-- fix: Restore oldAdministrationMenu feature after rebase conflict resolution
-- fix: Review the display of the composer drawer when space audience chosen - MEED-2569 - Meeds-io/MIP#54
-- fix: Space Activity Stream Load more issue - EXO-66818 - Meeds-io/meeds#1199
-- fix: Space application titles not well displayed on mobile view - EXO-68043 - Meeds-io/meeds#1424
-- fix: Space popover Favorite icon status - MEED-2667 - Meeds-io/meeds#1161
-- fix: Suggestor isn't displaying users - EXO-68574 - Meeds-io/meeds#1503
-- fix: The password confirmation validation is not functional - EXO-65860 - Meeds-io/meeds#1075
-- fix: Unable to manage documents and notes app in space settings - EXO-65679
-- fix: Unify space between activities- MEED-2987-Meeds-io/meeds#1310
-- fix: Update Activity Link Template Params on Content Update - MEED-2467 - Meeds-io/meeds#1087
-- Fix: Update Profile when synchronized profile property setting from AD - EXO-65023 - Meeds-io/meeds#1084
-- fix: Update the global stream cache after joining or leaving space - EXO-66567 - Meeds-io/meeds#1145
-- fix: Update the kudos receiver - MEED-2598 -Meeds-io/meeds#1137
-- fix: Update the social applications images of page editor - EXO-67096 - Meeds-io/meeds#1358
-- fix: update upgrade plugin to support Posgresql DB - EXO-67619 - Meeds-io/meeds#1373
-- fix: Use "about an hour" instead of "about 60 minutes" - MEED-2828 - Meeds-io/meeds#162
-- fix: Use current configured default language in LinkPortlet app - EXO-68280 - meeds-io/meeds#1463
+- fix: UX issue of the button update when editing a post when having imges - EXO-68203 - Meeds-io/meeds#1607
+- fix: display of call button in mobile device - EXO-67690 - Meeds-io/meeds#1586
+- fix: Prevent external users from receiving notifications of published news from a space which they are not members - EXO-69079
+- fix: Make users and space popovers controllable from the keyboard - EXO-68900 - Meeds-io/meeds#1595
+- fix: Can't make search by email in users management - EXO-65032 - Meeds-io/meeds#1085
+- fix: Display of call button in mobile device - EXO-67690 - Meeds-io/meeds#1586
+- fix: Fix alert role to be in line with the notification status  - EXO-68926
+- fix: For space avatar, aria-label on link does not contains the text - EXO-69059 - Meeds-io/meeds#1564
+- fix: platform settings button accessibility - EXO-68805
+- fix: Add Branding Stylesheet in CKEditor iframe - MEED-3188 - Meeds-io/meeds#1547
+- fix: Fix Saving Branding form the second time - MEED-3151 - Meeds-io/meeds#1522
+- fix: Fix User and space avatar are not accessibility - EXO-68785_68787 -  Meeds-io/meeds#1544
+- fix: Fix log error for non activity handled MetadataModification - EXO-68532 - Meeds-io/MIPs#1542
+- fix : [AD Sync] After modification of a property, old value are regularly displayed in user profil - EXO-68774 - meeds/meeds-io#1533
+- fix: Problem when option post to network is set to false - EXO-67423 - Meeds-io/meeds#1273
 
 Improvements:
-- feat: Add label for Registration I18N - MEED-1958
-- feat: Open Left menu when hovering the hamburger icon - MEED-1807-1954 - meeds-io/meeds#755
-- feat: UI enhancements of the people and space cards - MEED-1836 - Meeds-io/meeds#691
-- feat: Spaces page enhancement - MEED-1840- Meeds-io/meeds#748
-- feat: Improve Menus loading UX - MEED-1888 - Meeds-io/meeds#772
-- feat: Analytics for choosing to stick the menu - MEED-1841 - Meeds-io/meeds#776
-- feat: People page enhancement - MEED-1838 - Meeds-io/meeds#746
-- feat: Adapt Tests After changing default sender email - MEED-2011 - Meeds-io/meeds#862
-- feat: display Field Translation in readonly mode instead of I18N Key - MEED-2012 - Meeds-io/meeds#863
-- feat: Allow to Extend CKEditor configuration by instance Type - MEED-2058 - Meeds-io/MIPs#59
-- feat: Display scheduled navigation nodes in top bar navigation menu and  hamburger menu navigation - EXO-63240 - Meeds-io/MIPs#51
-- feat: Notficiation administration : disabled notifs should be hidden to users - EXO-64634 - Meeds-io/meeds#951
-- feat: Enhance ExoDrawer.vue style to allow embedded drawers and make TranslationTextField.vue more extensible - MEED-1629 - Meeds-io/MIPs#49
-- feat: Add Confeti Animation Re-usable component - MEED-1863 - Meeds-io/MIPs#49
-- feat: Add Re-usable Application Toolbar Component - MEED-2172 - Meeds-io/MIPs#49
-- feat: Improve Drawer and Avatars List Re-usable components - MEED-2179 - Meeds-io/MIPs#49
-- feat: Add option to Date Picker Component to not allowing Overflow - MEED-2085 - Meeds-io/MIPs#49
-- feat: Add Generic API for fields Translations - MEED-2109 - Meeds-io/MIPs#49
-- feat: Allow to display Translation Text Field Rules Messages - MEED-1835 - Meeds-io/MIPs#49
-- feat: Enhance Translation and Cropper Components - MEED-1524 - Meeds-io/MIPs#49
-- feat: Improve display of Activity when not found - MEED-2221 - Meeds-io/meeds#982
-- feat: Add Improve Re-usable Application Toolbar Component - MEED-2172 - Meeds-io/MIPs#49
-- feat: Display scheduled navigation nodes in top bar navigation menu and  hamburger menu navigation - EXO-63240 - Meeds-io/MIPs#51
-- feat: Implement impact of node link and node target in left and top navigation - EXO-64124 - Meeds-io/MIPs#51
-- feat: Hide nodes of type Group in topbar navigation menu - EXO-63529 -  Meeds-io/MIPs#51
-- feat: Implement redirection impact of node link and node target in space navigation menu - EXO-64521 - Meeds-io/MIPs#51
-- feat: Fix link node redirection in top and left navigations - EXO-64557 - Meeds-io/MIPs#51
-- feat: Fix link node redirection issue for sub nodes of top bar navigation - EXO-64610 - Meeds-io/MIPs#51
-- feat: Update "expandPageDetails" get Navigations rest service param to "expand" - Meeds-io/MIPs#51
-- feat: Implement "Manage navigation feature" - Meeds-io/MIPs#51
-- feat: Update "expandPageDetails" get Navigations rest service param to "expand" - Meeds-io/MIPs#51
-- feat: Add I18N Labels introduced by Meeds-io/MIPs#50 and Meeds-io/MIPs#53 - MEED-2294
-- feat: Adjust permissions for displaying site Navigation icon in Manage spaces - EXO-65324 - Meeds-io/MIPs#68
-- feat: Implement Space Invitation Decline Triggering - MEED-2262 - Meeds-io/MIPs#50
-- feat: Add dynamic containers in Stream Page - MEED-2323 - Meeds-io/MIPs#50
-- feat: Add User making the activity like action - MEED-2204 - Meeds-io/MIPs#50
-- feat: Use Branding Name in Mail Subject instead of Property - MEED-2258 - Meeds-io/meeds#992
-- feat: Include modifier username in profile update operation - MEED-2206 - Meeds-io/MIPs#50
-- feat: Allow to hide/show activity on specific types - MEED-2239 - Meeds-io/MIPs#50
-- feat: Allow to extend specific Comment Content and allow disable delete comment - MEED-2244 - Meeds-io/MIPs#50
-- feat: Allow to disable Activity Notifications by plugin - MEED-2290 - Meeds-io/MIPs#50
-- feat: Add Activity Type Plugin ACL extensibility - MEED-2291 - Meeds-io/MIPs#50
-- feat: Fix Space Events Triggering - MEED-2263 - Meeds-io/MIPs#50
-- feat: Trigger Event When an activity is pinned - MEED-2207 - Meeds-io/MIPs#50
-- feat: Make Hidden activities not reachable using Search - MEED-2243 - Meeds-io/MIPs#50
-- feat: Add User making the activity like action - MEED-2204 - Meeds-io/MIPs#50
-- feat: Allow to change default Language through REST API call - MEED-2260 - Meeds-io/meeds#994
-- feat: Auto Detect Links Target Window - MEED-2264 - Meeds-io/meeds#996
-- feat: Add Access Button in Public Site Top bar - MEED-2820 - Meeds-io/meeds#1236
-- feat: Add Analytics for attach images - MEED-2435 - Meeds-io/MIPS#53
-- feat: Add a property to post to your network or not - MEED-2075 - Meeds-io/MIPs#54
-- feat: Add border radius on site banner - MEED-3098 - Meeds-io/meeds#1473
-- feat: Add CMS Image Application - MEED-2731 - Meeds-io/MIPs#98
-- feat: Add CMS Portlet and Service Base components - MEED-2632 - Meeds-io/MIPs#93
-- feat: Add Contextual Help to User Registration settings - MEED-2426 - Meeds-io/MIPs#63
-- feat: Add CTAs below the post CTA - MEED-2072 - Meeds-io/MIPs#54
-- feat: Add direct Access to Main Settings Tab - MEED-2429 - Meeds-io/MIPs#63
-- feat: Add feature Flag on the new administration node "Sites" - EXO-64653 - Meeds-io/MIPs#68
-- feat: Add Links Application - MEED-2512 - Meeds-io/MIPs#92
-- feat: Add Message Warning when closing Main Setting Tab - MEED-2465 - Meeds-io/MIPs#63
-- feat: Add Page Not Found Application - MEED-2822 - Meeds-io/meeds#1235
-- feat: Add Text and icons when Swiping in Notification - MEED-2564 - Meeds-io/meeds#1123
-- feat: Add the ability to choose the audience from composer - MEED-2462  - Meeds-io/MIPs#54
-- feat: Add the ability to send a kudos from genral stream- MEED-2076 - Meeds-io/MIP#54
-- feat: Add the ability to send a kudos from the composer - MEED-2071 - Meeds-io/MIPs#54
-- feat: Add the space administration portlet to the ManageSpaceGRP load group - EXO-68206 - Meeds-io/meeds#1467
-- feat: Add Transition when expanding main setting section - MEED-1652 - Meeds-io/MIPs#63
-- feat: Add Unread Activities Filter - MEED-2610 - Meeds-io/MIPs#96
-- feat: Adjust permissions for displaying site Navigation icon in Manage spaces - EXO-65324 - Meeds-io/MIPs#68
-- feat: Adjust the CTAs display from the general stream - MEED-2073 - Meeds-io/MIPs#54
-- feat: Adjust the style of the activity stream title when the activity composer is enabled for users - MEED-2402 - Meeds-io/MIPs#54
-- feat: Allow Like Activity and comment Web Notification grouping - MEED-2501 - Meeds-io/MIPs#80
-- feat: Allow to accept/deny notification to a subset of activity receivers by plugin - MEED-1650 - Meeds-io/meeds#576
-- feat: Allow to access Portal Navigation Anonymously - MEED-2811 - Meeds-io/MIPs#100
-- feat: Allow to add embedded content in Rich Editor contents - MEED-2439 - Meeds-io/meeds#1082
-- feat: Allow to add manage space actions in manage space portlet using extension registry - EXO-64650 - Meeds-io/MIPs#68
-- feat: Allow to add Vertical Menu Mobile button in BreadCrumb - MEED-3050 - Meeds-io/meeds#1394
-- feat: Allow to choose default spaces when registering a user - MEED-2425 - Meeds-io/MIPs#63
-- feat: Allow to filter unread notifications - MEED-2552 - Meeds-io/meeds#1110
-- feat: Allow to fine Upgrade layouts - MEED-2981 - Meeds-io/meeds#1307
-- feat: Allow to have posts update button on stream filters - MEED-412 - Meeds-io/meeds#505
-- feat: Allow to hide and mark as read by swiping in Mobile - MEED-2496- Meeds-io/MIPs#80
-- feat: Allow to Mute Space Notifications - MEED-2628 - Meeds-io/MIPs#97
-- feat: Allow to Register on Fly when Restricted - MEED-2470 - Meeds-io/MIPs#63
-- feat: Allow to store Registration Settings from UI - MEED-1645 - Meeds-io/MIPs#63
-- feat: Allow to watch and unwatch activity modifications - MEED-2502 - Meeds-io/MIPs#80
-- feat: Apply Generic UI to existing portlet
-- feat: Attach an image to a comment - MEED-2033 - Meeds-io/MIPs#53
-- feat: Attach an image to an activity MEED-2030- Meeds-io/MIPs#53
-- feat: AttachImage- Stabilize Social Build -MEED-2231 - Meeds-io/MIPs#53
-- feat: attach images to comment -  MEED-2033 - Meeds-io/MIPs#53
-- feat: Attach image to a comment - MEED-2033 - Meeds-io/MIPs#53
-- feat: Attaching images to a poll is not possible - MEED-2530-Meeds-io/MIPs#53
-- feat: Attaching images to a task I create is not possible - MEED-2546 - Meeds-io/MIP#53
-- feat: Auto Detect Links Target Window - MEED-2264 - Meeds-io/meeds#996
-- feat: Avoid Auto Stream filter Reset - MEED-2647 - Meeds-io/meeds#1156
-- feat: Border-radius to comments - MEED-2764 - Meeds-io/MIPs#81
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Change Applications URLs using Multi-Site - MEED-2809 - Meeds-io/MIPs#100
-- feat: Configure administration site portal, navigations and pages - EXO-66546_ EXO-66871 - Meeds-io/MIPs#88
-- feat: Configure default icons for new space nodes - EXO-66660 - Meeds-io/MIPs#95
-- feat: Configure Group Identity Provider - MEED-2896 - Meeds-io/meeds#1271
-- feat: Container margins managements - MEED-2867-Meeds-io/Mips#103
-- feat: Define a node of a non meta site as my homepage  - EXO-66260 - Meeds-io/MIPs#72
-- feat: Define skin for admin site - EXO-67695 - Meeds-io/MIPs#88
-- feat: Delete an activity with attached images -MEED-2118 - Meeds-io/MIPs#53
-- feat: Delete Comment Metadatas when deleted - MEED-2356 - Meeds-io/MIPs#53
-- feat: Delete Deprecated Juzu dependency - MEED-2466 - Meeds-io/MIPs#82
-- feat: Delete TimeZone UI from User Settings - MEED-2691 - Meeds-io/meeds#993
-- feat: Deselect Unread Badge when all Web Notifications are read - MEED-2552 - Meeds-io/meeds#1110
-- feat: Disable send kudos button when no receiver has been added - MEED-2418 - Meeds-io/MIPs#54
-- feat: Dispatch dismissed event in common snackbar - EXO-67599 - Meeds-io/meeds#1367
-- feat: Display left border on the current selected site from left navigation Level 1 - EXO-66124 - Meeds-io/MIPs#72
-- feat: Display of Gif attached to a message -Meed-2134 - Meeds-io/MIPs#53
-- feat: Display of image thumbnail - MEED-2134-2436 - Meeds-io/MIPs#53
-- feat: display of portlets titles when using firefox - MEED-2818 - Meeds-io/MIPs#81
-- feat: Display Platform settings Button cog in the top bar only when administration site is standalone - EXO-66909 - Meeds-io/MIPs#88
-- feat: Display Platform settings Button cog in the top bar only when administration site is standalone - EXO-66909 - Meeds-io/MIPs#88
-- feat: Drop an image to an activity - meed-2032 - Meeds-io/MIPs#53
-- feat: Ease access to Links Settings steps - MEED-2715 - Meeds-io/meeds#1186
-- feat: Edit an activity - Remove images  -MEED-2038 - Meeds-io/MIPs#53
-- feat:  Edit an image - Cancel option - MEED-2405 - Meeds-io/MIPs#53
-- feat: Edit an image - MEED-2043 - Meeds-io/MIPs#53
-- feat: Enhance Toast Notification Style - MEED-2627 - Meeds-io/MIPs#99
-- feat: Error JS when displaying display char. page -MEED-2884-Meeds-io/MIPs#81
-- feat: Extra margin to remove when CMS portlets are not displayed - MEED-2953-Meeds-io/MIPs#103
-- feat: Fix accessibility issue on siteHumburger portlet - EXO-66125 - Meeds-io/MIPs#72
-- feat: Fix breadcrumbs responsive behavior - EXO-67480 - Meeds-io/MIPs#87
-- feat: Fix breadcrumbs responsive behavior - EXO-67480 - Meeds-io/MIPs#87
-- feat: Fix displaying default folder icon for navigation nodes in left navigation menu - EXO-66373 - Meeds-io/MIPs#72
-- feat: Fix displaying general settings page on administration standalone site - EXO-66546 - Meeds-io/MIPs#88
-- feat: Fix feedbacks - Meeds-io/MIPs#72
-- feat: Fix feedbacks - Meeds-io/MIPs#86
-- feat: Fix issue when clicking on a link node from top navigation bar third level - EXO-66389 - Meeds-io/MIPs#72
-- feat: Fix left navigation display problem when the new left navigation FT is disabled - EXO-66217 - Meeds-io/MIPs#72
-- feat: Fix left navigation first and second level issues and feedbacks - EXO-66221 - Meeds-io/MIPs#72
-- feat: Fix left navigation UI issues and filter navigations to be dispayed - EXO-66384 - Meeds-io/MIPs#72
-- feat: Fix login loop when redirecting on the default site as the first not group available - EXO-66447 - Meeds-io/MIPs#72
-- feat: Fix vertical menu UI issues - EXO-67231 - Meeds-io/MIPs#86
-- feat: Hide attach option from other composer than activity MEED-2133- Meeds-io/MIPs#53
-- feat: Hide Platform settings cog button for tablet and mobile screens - EXO-67276 - Meeds-io/MIPs#88
-- feat: Hide Platform settings cog button for tablet and mobile screens - EXO-67276 - Meeds-io/MIPs#88
-- feat: If one image, no slider -MEED-2177 - Meeds-io/MIPs#53
-- feat: Images added previously are removed -MEED-2178 - Meeds-io/MIPs#53
-- feat: Implement an upgrade plugin to update passwords hashing algorithm - EXO-65151 - Meeds-io/MIPs#69
-- feat: Implement breadcrumb portlet - EXO-66554 - Meeds-io/MIPs#87
-- feat: Implement breadcrumb portlet - EXO-66554 - Meeds-io/MIPs#87
-- feat: Implement feature flag for dynamic display of space node icons - EXO-67402 - Meeds-io/MIPs#95
-- feat: Implement feature flag for new left navigation drawer - EXO-65449 - Meeds-io/MIPs#72
-- feat: Implement feature flag for old administration menu - EXO- 66659 - Meeds-io/MIPs#88
-- feat: Implement getSiteById rest service - EXO-66263 - Meeds-io/MIPs#72
-- feat: Implement getSites rest endpoint and services in order to retrieve sites with navigations - EXO-65477 - Meeds-io/MIPs#72
-- feat: Implement left navigation feature - Meeds-io/MIPs#72
-- feat: Implement multilingual for site label and description properties - EXO-65344 - Meeds-io/MIPs#72
-- feat: Implement node icons impact on left navigation - EXO-65501 -  Meeds-io/MIPs#72
-- feat: Implement Platform settings Button cog in the top bar - EXO-66552 - Meeds-io/MIPs#88
-- feat: Implement Public Site Applications - MEED-2505 - Meeds-io/MIPs#84
-- feat: Implement site banner API and UI - EXO-65534 - Meeds-io/MIPs#72
-- feat: Implement "Site management feature" - Meeds-io/MIPs#68
-- feat: Implement Site vertical menu behavior under/over 1280px - EXO-67286 - Meeds-io/MIPs#86
-- feat: Implement SpaceNodeIconsPlugin upgrade plugin to set icons for old spaces nodes - EXO-66789 - Meeds-io/MIPs#95
-- feat: Implement space nodes default icons impact in the level 2 of the space left navigation - EXO-66662 - Meeds-io/MIPs#95
-- feat: Implement space nodes default icons impact on the mobile space bottom bar - EXO-66661 - Meeds-io/MIPs#95
-- feat: Implement the navigation tree block of Left navigation Level 2 for non meta sites - EXO-65531 - Meeds-io/MIPs#72
-- feat: Implement the site informations block of Left navigation Level 2 for non meta sites - EXO-65401- Meeds-io/MIPs#72
-- feat: Implement vertical menu portlet - EXO-66547 - Meeds-io/MIPs#86
-- feat: Implement vertical menu portlet- Meeds-io/MIPs#86
-- feat: Improve Administration Menu UX - MEED-3047 - Meeds-io/meeds#1388
-- feat: Improve Comment Image Attachment extensibility - MEED-2033 - Meeds-io/MIPs#53
-- feat: Improve Notification Drawer Loading Effect - MEED-2560 - Meeds-io/meeds#1120
-- feat: Improve Web Notification menu UX - MEED-3055 - Meeds-io/meeds#1404
-- feat: Increase Links Icon size when small - MEED-2726 - Meeds-io/meeds#1188
-- feat: Label style not consistent in space settings - MEED-2858-Meeds-io/MIPs#81
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Make Image Attachment Form & View Components Generic & re-usable - MEED-2038 - Meeds-io/MIPs#53
-- feat: Margins cleanup - Remove extra-margins - MEED-2895-Meeds-io/MIPs#103
-- feat: Mark a notification as read when click - MEED-2551 - Meeds-io/meeds#1111
-- feat: Mention cannot be done in task description - MEED-2541- Meeds-io/MIPs#53
-- feat: Message when a gif image - MEED-2406 - Meeds-io/MIPs#53
-- feat: Move Notification UI from Commons - MEED-2445 - Meeds-io/MIPs#79
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: No access to items that are overflow - MEED-2728-Meeds-io/MIPs#81
-- feat: No addictional space bottom when hidden app - MEED-2924-Meeds-io/MIPs#103
-- feat: No additional margin when hidden app - MEED-2924-Meeds-io/MIPs#103
-- feat: options to image thumbnail - MEED-2130 -Meeds-io/MIPs#53
-- feat: Paste an image to an activity
-- feat: Prevent the default event when clicking to delete an attached image - MEED-2036 - Meeds-io/MIPs#53
-- feat: Preview of branding changes - MEED-2760 - Meeds-io/MIPs#81
-- feat: Provide a way to change radius style - MEED-2759 -Meeds-io/MIPs#81
-- feat: Redirect logo link to the default site as the first allowed site if no user homepage defined - EXO-66109 - Meeds-io/MIPs#72
-- feat: Redirect to the first allowed page or link sub root node when clicking on a group non meta site root node - EXO-66391 - Meeds-io/MIPs#72
-- feat: Refactor Backend To allow Defining Specific Attachment Storage - MEED-2038 - Meeds-io/MIPs#53
-- feat: Refresh Space Cache even when user is already member of space - MEED-2602 - Meeds-io/meeds#1142
-- feat: Remove Administration Main Settings Page title - MEED-3048 - Meeds-io/meeds#1390
-- feat: Remove dynamicSpaceNodeIcons feature flag - EXO-67431 - Meeds-io/MIPs#95
-- feat: Remove "newSiteManagement" feature Flag - EXO-65954 - Meeds-io/MIPs#68
-- feat: remove warn message and resolve conflict - Meeds-io/MIPs#53
-- feat: Reorganize application categories - EXO-67323 - Meeds-io/MIPs#88
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
-- feat: Restore wrongly deleted SiteTranslationPlugin - EXO-66643 - Meeds-io/MIPs#75
-- feat: Return root navigation node from site entity - EXO-66035 - Meeds-io/MIPs#72
-- feat: Review the activity stream filter option - MEED-2422 - Meeds-io/MIPs#54
-- feat: Rework General Settings Page to diffferent sections - MEED-1652 - Meeds-io/MIPs#63
-- feat: Update General node icon - EXO-66902 - Meeds-io/MIPs#88
-- feat: Update getSites rest service and builder with additional params -   EXO-66028 - Meeds-io/MIPs#72
-- feat: Upgrade echarts to version 5.4.3 - MEED-2874 - Meeds-io/meeds#1257
-- feat: Use Id in Avatar URLs instead of RemoteId - MEED-2909 - Meeds-io/MIPs#104
-- feat: View images -MEED-2039 - Meeds-io/MIPs#53
 
-eXo News 2.5.0
+eXo News 2.5.1
 *************************
 Fixes:
-- fix: Add cancel button in article creation page to return to previous page - EXO-63301
-- fix: Add content title for News analytics - EXO-61869
-- fix: Adjust the Styling of the Error Messages for News Header Input - EXO-65316
-- fix: Adjust the styling of the news list portlet - EXO-66613
-- fix: Adjust the styling of the news mosaic view on the extra-large screen - EXO-66168
-- fix: Apply border radius and padding rule to News application  portlet - EXO-67631
-- fix: Apply border radius for the news target administration - EXO-67636
-- fix: apply the border radius to the write news composer button - EXO-68053
-- fix: Article drafts edition makes the article displayed on top of the news app - EXO-56012
-- fix: Back arrow button on browser shouldn't be redirecting to news editor - EXO-67362
-- fix: Button favorite and 3 dots menu in activity detail have no accessible name - EXO-62416
-- fix: Change all news redirection urls from current portal name to meta portal name - EXO-68049
-- fix: Enable post button after inserting draged or pasted image on the news body - EXO-66290
-- fix: Enable to add numbers in the header of news - EXO-64519
-- fix: Enable to create a news with title contains a '.' character followed by special character - EXO-66277
-- fix: Enable to display published news images for non members - EXO-64339
-- fix: Enable to display published news images selected from existing upload for non members - EXO-65111
-- fix: Enhance news load resources using load-group - EXO-63805
-- fix: favorite button is not colored for news posted in other spaces - EXO-62273
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Fix auto saving of an article edited using his public link - EXO-65336
-- fix: Fix Gamification API package name - MEED-2237 - Meeds-io/MIPs#49
-- fix: Fix Image Alignment Issue After Saving - EXO-68298
-- fix: Fix news filtering by space with search terms - EXO-64778
-- fix: Fix News Rich Editor content display style - MEED-2534 - Meeds-io/meeds#1102
-- fix: Fix news settings form grayed out and not editable - EXO-68547
-- fix: fix open embedded links - EXO-65753
-- fix: Fix styling issue and prevent empty news template display for non-publishers - EXO-66925
-- fix: Gif without animation in news illustration EXO-64163.
-- fix: '#' glitches the filter - EXO-65188
-- fix: Inserted images/videos aren't considered as a content in news - EXO-65311
-- fix: Move eXoResources and eXoSkin Maven Modules from meeds to eXo - Meeds-io/MIPs#52
-- fix: Move Third party libraries dependencies  from meeds to exo - Meeds-io/MIPs#42
-- fix: News Card news template does not have a unique ID - EXO-62572 .
-- fix: Filtered articles aren't retreived if they contain links - EXO-64780
-- fix: News illustration is not centered in news details - EXO-67803
-- fix: News list button see have a constrast problem - EXO-62421
-- fix: News template accessibility problems - EXO-62419
-- fix: Ordred list not dispalyed on news details article - EXO-64061
-- fix: Pasted image not displayed after posting news - EXO-66378
-- fix: Remove the margin bottom from the news list view portlet - EXO-66613
-- fix: Remove the text transformation from the news portlet title - EXO-66613
-- fix: Search - paste filtered url in a new tab glitches the display - EXO-65200
-- fix: suggest all spaces for the spaces administrator group - EXO-65113
-- fix: The search for news using the news tag text does not display any results - EXO-64009
-- fix: Unread activities is displayed for hidden activities - EXO-68198
-- fix: Update btn disabled in Edit posting/ publishing drawer - EXO-65317
-- fix: Update news configuration for image storage location - EXO-64344
-- fix: Update the news application image of page editor - EXO-67096
-- fix: Update v-alert components - EXO-67600
-- fix: User and space avatar are not accessible - EXO-62527
+- fix: Apply the css class singlePageApplication for the news details application - EXO-69238
+- fix: Add mail notification button with redirection to news - EXO-66721
+- fix: Fix add the file_drop module to exo commons resources - EXO-68825
+- fix: Fix news illustration link accessibility
+- fix: Fix wrong displayed audience for edited published news
+- fix: Fix bad display of news article jcr node from file explorer - EXO-69032
+- fix: fix news activity details border radius - EXO-68868
+- fix: fix filtering unread activities articles' activities are not displayed - EXO-68634
 
 Improvements:
-- feat: According audience choice to the news target permissions - EXO-66949
-- feat: Adapt news list portlet layout -EXO-66613
-- feat: Add a target from the drawer News list - EXO-65536 - Meeds-io/MIPs#68
-- feat: Add automatic translation option - EXO-65764
-- feat: Add cke standard embedding media plugin - EXO-65753
-- feat: Add the restrict Audience choice description to the news target management drawer - EXO-67263
-- feat: Adjust the styling of the news mosaic view on the extra-small screen - EXO-67422
-- feat: Allow only _blank and _self target options in link dialog - EXO-65748
-- feat: Apply the border radius to the news list template - EXO-67643
-- feat: Configure Images portlet into news page template - EXO-65514 - Meeds-io/MIPs#68
-- feat: Configure news navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Configure the image portlet into news page template - EXO-67323 - Meeds-io/MIPs#88
-- feat: Disable News Activity Notifications by plugin instead of props - Meeds-io/MIPs#50
-- feat: Dispaly  only the open settings button when the news list tepmlate is not deined yet - EXO-66925
-- feat: Display a No News message for the news publisher when the news list is empty - EXO-66928
-- feat: Displaying news settings icon by hovring on news portlet - EXO-65743
-- feat: Display new target action of News list portlet drawer only for managers of web-contributors group - EXO-65909 - Meeds-io/MIPs#68
-- Feat: Display views count on news list template -EXO-63953
-- feat: Enhance toolbar options in mobile view - EXO-67421
-- feat: Gamification connector Fix News gamification event config - EXO-66377 - Meeds-io/MIPs#64
-- feat: Implement news page template - EXO-65437 - Meeds-io/MIPs#68
-- feat: Implement new UI for user who can publish news when no settings are configured - EXO-65696 - Meeds-io/MIPs#68
-- feat: Improve News editor toolbar options - EXO-65746
-- feat: Improve news wysiwyg aspect - EXO-65755
-- feat: Introduce eXo parent pom - EXO-64103
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: News view/edit page inconsistency issue - EXO-65745
-- feat: Remove news default targets - EXO-65517 - Meeds-io/MIPs#68
-- feat: Remove opacity from toolbar options buttons - EXO-67396
-- feat: Remove the alphanumeric check from the header text field in the news list settings - EXO-65567
-- feat: Remove useless administration pages and navigations - EXO-67268 - Meeds-io/MIPs#88
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - EXO-66412
-- feat: Update news composer to add the ability to write a news in the composer - EXO-66543 - Meeds-io/MIPs#54
-- feat: Use Extended CKEditor configuration - Meeds-io/MIPs#59 - EXO-64905
+- feat: Make news list portlet and news detail accessible from public sites
 
-eXo Task 3.5.0
+eXo Task 3.5.1
 *************************
 Fixes :
-- fix: add task link for push notification - EXO-67587 - Meeds-io/meeds#1299
+- fix: Filter glitches on myTasks tab when making an edit on a task from the filtered list
+- fix: Add placeholder when no tasks - MEED-2833 - Meeds-io/meeds#885
+- fix: Add task link for push notification - EXO-67587 - Meeds-io/meeds#1299
 - fix: Change task drawer title
+- fix: Check how the suggestions are done - MEED-651
 - fix: Clear Task Drawer UI components on close - MEED-2643 - Meeds-io/meeds#1154
-- fix: Color bullet points of tasks status - EXO-61421 - Meeds-io/meeds#1153
+- fix: Clear task search keyword when switching between projects and projectsTasksDetails - EXO-68620
+- fix : Color bullet points of tasks status - EXO-61421 - Meeds-io/meeds#1153
 - fix: Enhance task gamification achievement - MEED-1890 - Meeds-io/meeds#781
 - fix: Error when trying to add a comment in task with curl - EXO-65882 - meeds-io/meeds#1067
-- fix: filter glitches on myTasks tab when making an edit on a task from the filtred list
+- fix: Fix App Center Override Mode Settings - MEED-768
+- fix: Fix Arrow Icon Display in Drawer - MEED-1943 - Meeds-io#MIPs#52
+- fix: Fix Comment Drawer Arrow icon alignment - MEED-1951 - Meeds-io/meeds#809
+- fix: Fix issue when multiple assigning at same time -TASK-59718
+- fix: Fix Margins of Task Drawer - MEED-1905 - Meeds-io/meeds#807 Adjust Margins of Task Drawer elements for better alignment.
+- fix: Fix Numbered list not displayed in Tasks - MEED-1947 - Meeds-io/meeds#803
 - fix: fix style issues with task drawer - EXO-63729 - Meeds-io/meeds#892
+- fix: Fix Task Card Footer Alignment - MEED-1949 - Meeds-io/meeds#806
 - fix: Fix Task Changes Drawer left Margin - MEED-1974 - Meeds-io/meeds#835
 - fix: Fix Task Comment and description WYSIWYG style - MEED-2534 - Meeds-io/meeds#1102
 - fix: Fix Task Comment Delete Icon - MEED-2414 - Meeds-io/meeds#941
+- fix: Fix task due and start dates issue - TASK-60074- Meeds-io/meeds#327
 - fix: Fix Task Label Text truncation - MEED-2664 - Meeds-io/meeds#1065
 - fix: Fix Task Mail Notification - MEED-2338 - Meeds-io/meeds#1016
 - fix: Fix Task Mention content generation - MEED-2529 - Meeds-io/MIPs#80
+- fix: Fix typed label filter isn't maintained -EXO-60110 - Meeds-io/meeds#360
 - fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
+- fix: Fix vertical and horizontal scroll bars to tasks display in Planview - EXO-59238 - Meeds-io/meeds#350
 - fix: Participants Are Only Mentioned - MEED-2689 - Meeds-io/meeds#1168
-- fix: Preventing the apply button from triggering the blur event of the task editor description - EXO-66080 Meeds-io/meeds#1105
+- fix : Preventing the apply button from triggering the blur event of the task editor description - EXO-66080 Meeds-io/meeds#1105
 - fix: Process space is displayed twice in the process task project participants - EXO-62456 -  Meeds-io/meeds#924
 - fix: Remove Label Thanks to Keyboard - MEED-2707 - Meeds-io/meeds#391
 - fix: Replace usage of <strike> by <del> - Meeds-io/MIPs#80
@@ -572,15 +98,21 @@ Fixes :
 - fix: task drawer does not open for task search results - EXO-62888 - Meeds-io/meeds#892
 - fix: Task mention notification are not displayed inline - EXO-66779 - meeds-io/meeds#1181
 - fix: Tasks event to cancel - MEED-2755 -Meeds-io/meeds#1202
+- fix: UI glitch in task assignee and coworkers avatar display - MEED-916 - Meeds-io/meeds#356
 - fix: update duplicated skin module name - EXO-63729 - Meeds-io/meeds#892
+- fix: Update loader-utils dependency - EXO-60887 - meeds-io/meeds#430
 - fix: Update task widget dynamically - MEED-2802 - Meeds-io/meeds#1224
 - fix: Update the task applications images of page editor - EXO-67096 - Meeds-io/meeds#1358
 
 Improvements:
+- feat: Add a hover effect to the task card - MEED-1413
+- feat: Add a hover effect to the task project - MEED-1549
 - feat: Add Analytics for attach images - MEED-2435 - Meeds-io/MIPs#53
 - feat:Add an information in task history when adding images - MEED-2437 - Meeds-io/MIPs#53
 - feat: Add dedicated event for task archiving - MEED-2201 - Meeds-io/MIPs#50
+- feat: Add Emoji option in Task CKEditor - MEED-1950 - Meeds-io/meeds#808
 - feat: Add I18N Labels introduced by Meeds-io/MIPs#50 - MEED-2294
+- feat: Add image to comments of a task - MEED-2036
 - feat: Add image to comments of a task - MEED-2036 - Meeds-io/MIPs#53
 - feat: Add information in task history when removing images - MEED-2561-Meeds-io/MIPs#53
 - feat: Add missing gamification task labels - MEED-2544 - Meeds-io/meeds#1107
@@ -591,1282 +123,207 @@ Improvements:
 - feat: Apply widget-style to  tasks app
 - feat: Attach images to task description - MEED-2355 - Meeds-io/MIPs#53
 - feat: Attaching images to a task I create is not possible - MEED-2546 - Meeds-io/MIP#53
+- feat: Cleanup Artifacts and Delete previously deprecated elements for better maintainability and evolutionary - MEED-1451 - Meeds-io/MIPs#42
 - feat: Configure default icon for the tasks node of new space - EXO-66660 - Meeds-io/MIPs#95
+- feat: Contribution Center Display icon on action label in achievement table - MEED-805 - Meeds-io/MIPs#13
 - feat: Delete AppCenter Mandatory Flag - MEED-3034 - Meeds-io/meeds#1371
 - feat: Display blank content when tasks loading - MEED-2803 - Meeds-io/MIPs#81
 - feat: Editing a task comment must not be possible - MEED-2438 - Meeds-io/MIPs#53
 - feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
+- feat: Engagement Center Access to automatic/manuel rules detail - MEED-1262 - Meeds-io/MIPs#13
+- feat: Engagement Center Remove programs and disable actions - MEED-1600 - Meeds-io/MIPs#13
+- feat: Enhance Pages Margin to make it better responsive - MEED-1320 - Meeds-io/MIPs#43
 - feat: Gamification connector Fix Task gamification event config - MEED-2441 - Meeds-io/MIPs#64
 - feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
 - feat: Mention cannot be done in task description - MEED-2541- Meeds-io/MIPs#53
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
+- feat: Move JS resources libraries from app-center and delete useless dependency for VueEllipsis  - Meeds-io/MIPs#52 - MEED-1891
+- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100 This change will move sites pages definition into sites.war extension to centralize the configuration of sites which will improve the maintainability and evolutivity.
 - feat: No access to items that are overflow - MEED-2728-Meeds-io/MIPs#81
+- feat: Remove collaboration application registry and configure tools application registry category - EXO-61480 - Meeds-io/MPIs#37
 - feat: Remove load more button when no more items to display - MEED-2023 - Meeds-io/meeds#872
 - feat: remove skeleton and update to loading progressive bar - MEED-2877 - Meeds-io/meeds#1225
 - feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
 - feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
 - feat: Task description regressions - MEED-2532 - Meeds-io/MIPs#53
 - feat: UI enhancements of project cards - MEED-1836 - Meeds-io/meeds#691
+- feat: update addons parent pom to 16-exo-M06 - EXO-60439
 - feat: Update Gamification API usage - MEED-2094 - MEED-1987 - Meeds-io/MIPs#49
 - feat: Use Extended CKEditor configuration - MEED-2058 - Meeds-io/MIPs#59
 
-eXo Commons 6.5.0
+eXo Commons 6.5.1
 *************************
 Fixes :
-- fix: Add error message context - EXO-66779 - meeds-io/meeds#1181
-- fix: add Natural sorting comparator for Strings with digits - EXO-46735 - Meeds-io/meeds#1056
-- fix: Allow retro-compatibility for Meeds DAO members - Meeds-io/MIPs#80
-- fix: Allow to filter unread notifications - MEED-2552 - Meeds-io/meeds#1110
-- fix: anchor disappear in notes app for accentuated chars - EXO-68365 - Meeds-io/meeds#1495
-- fix: CKeditor margin issues in font size and paragraph format dropdown lists - EXO-68267 - Meeds-io/meeds#1496
-- fix: Delete confirmation alert before reloading page - MEED-411 -Meeds-io/meeds#619
-- fix: Error when getting notes app tree drafts after creating a new draft page without title - EXO-65932 - Meeds-io/meeds#1077
-- fix: fix accessibility plugin skin name - EXO-66514  - Meeds-io/MIPs#71
-- fix: Fix blank notification settings and administration pages after upgrade from 6.3.x to 6.4.x - EXO-62945 - Meeds-io/meeds#850
-- fix: Fix color definition for Heading elements - MEED-3015 - Meeds-io/meeds#1335
-- fix: Fix displaying notification when built message is null - MEED-1650 - Meeds-io/meeds#576
-- fix: Fix Email footer name and link - MEED-2267
-- fix: fix feedback on ckeditor improvements - Meeds-io/MIPs#71
-- fix: Fix Notification language to use only supported languages - MEED-2897 - Meeds-io/meeds#1272
-- fix: Fix Suggester doesn't appear anymore on CKEditor - MEED-2434 - Meeds-io/meeds#1079
-- fix: fix table border wyiswyg issue - EXO-65752 - Meeds-io/MIPs#71
-- fix: Fix Toogle CKEditor Format when multiple CKeditors - MEED-2109 - Meeds-io/MIPs#49
-- fix: Fix Unread Flag Count Update after Marking as Unread a Web Notification - MEED-2551 - Meeds-io/meeds#1111
-- fix: Make Web Notification List retrieving fault tolerant - MEED-2555 - Meeds-io/meeds#1118
-- fix: No key for Documents label in settings>Manage notifications page - EXO-64493 - Meeds-io/meeds#1074
-- fix: paste menu for post short messages - EXO-65657 - Meeds-io/meeds#1073
-- fix: Review border-style of composer/comment field-MEED-2840-Meeds-io/meeds#1177
-- fix: Task notification like mention are not displayed in site in certain case - EXO-66779 - meeds-io/meeds#1181
-- fix: Update Time of Web Notification not preserved when marking as read - MEED-2564 - Meeds-io/meeds#1123
-- fix: Upgrade Plugin are not comparing meeds version correctly - meeds-io/meeds#1072
 
 Improvements:
-- feat: Add cke accessibility plugins - EXO-66514 - Meeds-io/MIPs#70
-- feat: Add ckeditor codesnippets, table, copyFormatting and link plugins- EXO-65695 - Meeds-io/MIPs#71
-- feat: Add ckeditor colorDialog plugin - EXO-65704 - Meeds-io/MIPs#71
-- feat: Allow caption and summary on table element in HTML sanitizer - EXO-65716 - Meeds-io/MIPs#71
-- feat: Allow custom data attribute in oembed tag in HTMLSanitizer to store embed iframe data - EXO-65753 - Meeds-io/MIPs#71
-- feat: Allow to change default Language through REST API call - MEED-2260 - Meeds-io/meeds#994
-- feat: Allow to Mute Space Notifications - MEED-2628 - Meeds-io/MIPs#97
-- feat: Broadcast Event when User Modifies its notifications - MEED-2206 - Meeds-io/MIPs#50
-- feat: Centrelize ckedior custom styles - EXO-66890 - Meeds-io/MIPs#71
-- feat: code snippets plugin - EXO-65719 - Meeds-io/MIPs#71
-- feat: Convert list in entity to single string column in database - MEED-2301 - Meeds-io/MIPs#64
-- feat: Delete Deprecated Juzu dependency - MEED-2466 - Meeds-io/MIPs#82
-- feat: Icons of cke context menu are not correctly shown - EXO-65722 -Meeds-io/MIPs#71
-- feat: Move Notification REST and UI to Social - MEED-2445 - Meeds-io/MIPs#79
-- feat: Move Test library to commons - Meeds-io/MIPs#42
-- feat: Replace Web Notification rendering engine from gtmpl to Vue  - MEED-2479 - Meeds-io/MIPs#80
-- feat: Use Branding Name in Mail Subject instead of Property - MEED-2258 - Meeds-io/meeds#992
 
-eXo Gatein-Portal 6.4.4
+eXo Gatein-Portal 6.5.1
 *************************
 Fixes :
-- fix: Update indonesian language identifier - EXO-66238 - Meeds-io/meeds#1163
-- fix: Update database changelog and add a postgresql script - EXO-67619 - Meeds-io/meeds#1373
-- fix: Unable to login just after password encoder update using rest service
-- fix: Too many redirect when login - EXO-68055 - Meeds-io/meeds#1423
-- fix: Set "displayed" property of space sites to true - EXO-67478 - Meeds-io/MIPs#88
-- fix: Rename Default Registration properties and make it case insensitive - Meeds-io/MIPs#63
-- fix: Rename Default Registration properties and make it case insensitive - Meeds-io/MIPs#63
-- fix: Rename content Web Contributors name - Meeds-io/MIPs#92
-- fix: Rename content Web Contributors name - Meeds-io/MIPs#92
-- fix: Provide the portal default language in a js variable - EXO-68280 - meeds-io/meeds#1463
-- fix: New created disabled user displayed in active members list - EXO-64050
-- fix: New created disabled user displayed in active members list - EXO-64050
-- fix: Navigation redirection for group navigation - EXO-68058 - Meeds-io/meeds#1426
-- fix: LDAP user unable to login - EXO-67267 - meeds-io/meeds#1244
-- fix: Improve security for rememberme feature - EXO-59675 - meeds-io/MIPs#69
-- Fix: Fix technical nodes labels in space navigation - EXO-62470 - Meeds-io/MIPs#51
-- Fix: Fix technical nodes labels in space navigation - EXO-62470 - Meeds-io/MIPs#51
-- fix: Fix startup server exception when creating PORTAL_SITES indexes - EXO-66763 - Meeds-io/meeds#1175
-- fix: Fix startup server exception when creating PORTAL_SITES indexes - EXO-66763 - Meeds-io/meeds#1175
-- fix: Fix site properties changing after edit portal layout -  EXO-67453 - Meeds-io/MIPs#88
-- fix: fix redirecting when user is not logged in - EXO-68381 - Meeds-io/meeds#1426
-- fix: fix redirecting for global site navigation - EXO-68381 - Meeds-io/meeds#1426
-- fix: Fix Misleading Transaction status on IDM listeners - MEED-2899 - Meeds-io/meeds#1276
-- fix: Fix Meta Portal Site Definition in API - MEED-3024 - Meeds-io/meeds#1351
-- fix: Fix Id Generator in Tests - MEED-2700 - Meeds-io/MIPs#93
-- fix: Fix Id Generator in Tests - MEED-2700 - Meeds-io/MIPs#93
-- fix: Fix filtering application after changing permissions - EXO-68546  - Meeds-io/meeds#1505
-- fix: Fix Emoji usage in Settings Service Value fields - MEED-2896 - Meeds-io/meeds#1271
-- fix: Fix displaying page access permissions and page edit permission after update - EXO-68000 - Meeds-io/meeds#1429
-- fix: Fix Anonymous access to site - MEED-2505 - Meeds-io/MIPs#84
-- fix: Fix Anonymous access to site - MEED-2505 - Meeds-io/MIPs#84
-- fix: Display Shared layout in all portal types different from site - MEED-3014 - Meeds-io/meeds#1334
-- fix: Delete useless preloaded resource - MEED-2589 - Meeds-io/meeds#1131
-- fix: Delete useless preloaded resource - MEED-2589 - Meeds-io/meeds#1131
-- Fix: Delete a useless Comma - Meeds-io/MIPs#50
-- Fix: Delete a useless Comma - Meeds-io/MIPs#50
-- fix: Default Cache configuration of Groups
-- fix: correctly remove the remember me token if it does not manage to authenticate - EXO-63622 - meeds-io/meeds#882
-- fix: correctly remove the remember me token if it does not manage to authenticate - EXO-63622 - meeds-io/meeds#882
-- fix: Clean Useless Maven Modules - Meeds-io/MIPs#52
-- fix: Clean Useless Maven Modules - Meeds-io/MIPs#52
-- fix: Clean insert left/right dropdown from UISimpleColumn container - EXO-64611 - Meeds-io/MIPs#51
-- fix: Clean insert left/right dropdown from UISimpleColumn container - EXO-64611 - Meeds-io/MIPs#51
-- fix: Avoid NPE when displaying Page - Meeds-io/meeds#845
-- fix: Allow to create a user with hyphen in user if authorized by regexp property - EXO-66876 - meeds-io/meeds#1197
-- fix: Allow to create a user with hyphen in user if authorized by regexp property - EXO-66876 - meeds-io/meeds#1197
-- fix: Add Test Conf to ignore Hibernate warnings - MEED-1580 - Meeds-io/meeds#1428
-- fix: Add passwordSalt128 attribute to non profile keys - EXO-65823 - Meeds-io/meeds#1061
-- fix: Add passwordSalt128 attribute to non profile keys - EXO-65823 - Meeds-io/meeds#1061
-- fix: Add hidden class when portlet is empty-MEED-2977-Meeds-io/meeds#1313
+- fix: Unable to create a user with a username starting with digit - EXO-69012
+- fix: Containers only accept pixel or % numeric value for width and height - EXO-66580 - meeds-io/meeds#1527
 
 Improvements:
-- feat: Use Branding Name in Mail Subject instead of Property - MEED-2258 - Meeds-io/meeds#992
-- feat: Update the default radius - MEED-2758 - Meeds-io/MIPs#81
-- feat: Update the default password hashing algorithm - EXO-65150  - Meeds-io/MIPs#69
-- feat: Update password validation in authentication phase regarding the new hash algorithm upgrade - EXO-65151 - Meeds-io/MIPs#69
-- feat: Update new page and node API models for page and node creation  EXO-63255 - Meeds-io/MIPs#51
-- feat: Update navigation REST service to retrieve only current site navigation - EXO-63564 - Meeds-io/MIPs#51
-- feat: Update container block border color in page edit inline - EXO-63840 - Meeds-io/MIPs#51
-- feat: Set UITopBarContainer id to "UITopBarContainer" instead of dynamic componentId to ensure needed styles applied - EXO-67424 - Meeds-io/MIPs#88
-- feat: Save User locale on first login - MEED-2897 - Meeds-io/meeds#1272
-- feat: Return breadcrumb entity with user navigation node response - EXO-66554 - Meeds-io/MIPs#87
-- feat: Retrieve node link within user navigations rest entity result - EXO-64124 - Meeds-io/MIPs#51
-- feat: Remove useless navigation labels - MEED-2274 - Meeds-io/MIPs#64
-- feat: Refactor getSiteTypeNavigations method of navigation rest service - Meeds-io/MIPs#51
-- feat: Refactor findSites method to ignore empty sites - EXO-65013 - Meeds-io/MIPs#68
-- feat: Redirect to standalone site if no aggregated is reachable - MEED-2823 - Meeds-io/meeds#1234
-- feat: Redirect after login or access to the uri "/portal" on the default site as the first allowed site if no user homepage defined - EXO-66100 - Meeds-io/MIPs#72
-- feat: Provide a way to change radius style - MEED-2759 -Meeds-io/MIPs#81
-- feat: Preview of branding changes - MEED-2760 -Meeds-io/MIPs#81
-- feat: Move Public Site Behavior Container to Meeds - MEED-2811 - Meeds-io/MIPs#100
-- feat: Move JS definition of Site names in Meeds - MEED-2811 - Meeds-io/MIPs#100
-- feat: Move deprecated JS & CSS files - Meeds-io/MIPs#52 - MEED-1891
-- feat: Make a specific title for Public site - MEED-2783 - Meeds-io/MIPs#84 This change will introduce a specific title for Public site.
-- feat: Introduce CMS Publisher group - MEED-2605 - Meeds-io/MIPs#92
-- feat: Implement updateNode API service - EXO-63440 - Meeds-io/MIPs#51
-- feat: Implement the service getPortalConfig by site Id - EXO-65344 - Meeds-io/MIPs#72
-- feat: Implement temporalCheck API param to getNavigations rest API - EXO-63240 - Meeds-io/MIPs#51
-- feat: Implement "Site management feature" - Meeds-io/MIPs#68
-- feat: Implement site banner storage and service - EXO-65534 - Meeds-io/MIPs#72
-- feat: Implement navigation node description API service - EXO-63408 - Meeds-io/MIPs#51
-- feat: Implement moveNode API service - EXO-63074 - Meeds-io/meeds#51
-- feat: Implement "Manage navigation feature" - Meeds-io/MIPs#51
-- feat: Implement "Left navigation feature" - Meeds-io/MIPs#72
-- feat: Implement hasAccessPermission method on portalConfig for UserACL service - EXO-65344 - Meeds-io/MIPs#72
-- feat: Implement getSites rest endpoint and services in order to retrieve sites with navigations - EXO-65477 - Meeds-io/MIPs#72
-- feat: Implement getPageTemplates api service for PageTemplateService - EXO-63252 - Meeds-io/MIPs#51
-- feat: Implement EditPortalLayout action listener for UIWorkingWorkspace to allow edit any site layout - EXO-64951 - Meeds-io/MIPs#68
-- feat: Implement display rule for a standalone site, an aggregated and space site - Meeds-io/MIPs#85
-- feat: Implement deleteNode and getNodeById API services - EXO-63071 - Meeds-io/MIPs#51
-- feat: Implement createNode API service - EXO-63243 - Meeds-io/meeds#51
-- feat: Implement computePortalSitePath for a given portal site - EXO-66552 - Meeds-io/MIPs#88
-- feat: Implement Argon2PasswordEncoder - EXO-59676  - Meeds-io/MIPs#69
-- feat: Implement Argon2PasswordEncoder - EXO-59676  - Meeds-io/MIPs#69
-- feat: Implement and configure the new attributes "displayed" and "displayOrder" for site entity - EXO-65346 - Meeds-io/MIPs#72
-- feat: Hide shared layout for standalone sites - EXO-66549 - Meeds-io/MIPs#85
-- feat: Gamification connector Move admin navigation label - MEED-2195 - Meeds-io/MIPs#64
-- feat: Fix login loop when redirecting on the default site as the first not group available - EXO-66447 - Meeds-io/MIPs#72
-- feat: Expand node page extra details on navigation rest service results - EXO-63142_EXO-63143 - Meeds-io/meeds#51
-- feat: Enhance the implementation of getNodes with includeGlobal API method -  EXO-63994 - Meeds-io/MIPs#51
-- feat: Display Page Not Found Application when visiting inaccessible site - MEED-2822 - Meeds-io/meeds#1235
-- feat: Display meta site portal layout for for aggregated and space sites - EXO-66550_EXO-66551 - Meeds-io/MIPs#85
-- feat: Disallow Server Startup when Symmetric Key changes - MEED-2298 - Meeds-io/meeds#1007
-- feat: Delete duplicated vuetify-apps id - MEED-2806 - Meeds-io/MIPs#100
-- feat: Delete Asynchronous Listeners Behavior in Test scope - MEED-2290 - Meeds-io/MIPs#50
-- feat: Define eXo.env.portal.siteId eXo variable as the current site id - Meeds-io/MIPs#86
-- feat: Container margins managements - MEED-2867-Meeds-io/Mips#103
-- feat: Change the character set for description column of PORTAL_SITES table to utf8mb4 in order to support emojis insertion - EXO-65345 - Meeds-io/MIPs#68
-- feat: Change get membership types endpoint roles allowed to users - EXO-63142 - Meeds-io/MIPs#51
-- feat: Change default Mail Sender for Notification - MEED-2011 - Meeds-io/meeds#862
-- feat: Apply Generic UI to existing portlet - MEED-2573 - Meeds-io/MIPs#81
-- feat: Allow to store Registration Settings from UI - MEED-1645 - Meeds-io/MIPs#63
-- feat: Allow to store Global Default Language in DB for LocaleConfiguService - MEED-2260 - Meeds-io/meeds#994
-- feat: Allow to retrieve Portal Object mapped from configuration - MEED-2981 - Meeds-io/meeds#1307
-- feat: Allow to hide pages or part of page switch Hub Access Type - MEED-2811 - Meeds-io/MIPs#100
-- feat: Allow to edit a specific page layout from any other page - EXO-63066 - Meeds-io/meeds#51
-- feat: Allow to define profile on pages and delete useless I18N files - MEED-3007 - Meeds-io/meeds#1327
-- feat: Allow to define a Reusable Skin Module - MEED-2994 - Meeds-io/MIPs#108
-- feat: Allow to anonymous users to access Public Site navigation - MEED-2811 - Meeds-io/MIPs#100
-- feat: Allow search page on page name - EXO-64359 - Meeds-io/MIPs#51
-- feat: Adjust portlet settings in edit/view mode - EXO-66037 - Meeds-io/MIPs#88
-- feat: Adjust layout service and update site filter and dao with additional params - EXO-66028 - Meeds-io/MIPs#72
-- feat: Add updatedDate field in node entity - EXO-64489 - Meeds-io/MIPs#51
-- feat: Add updatedDate field in node entity - EXO-64489 - Meeds-io/MIPs#51
-- feat: Add the possibitily to not authorize the login against the external store - EXO-68030 - meeds-io/meeds#1417
-- feat: Add newly registered users to spaces on first login - MEED-2602 - Meeds-io/meeds#1142
-- feat: Add Email validation feature when registering - MEED-1958
-- feat: Add Administration Window Title - MEED-3021 - Meeds-io/meeds#1348
-- feat: Use Branding Name in Mail Subject instead of Property - MEED-2258 - Meeds-io/meeds#992
 
-eXo Notes 1.3.0
+eXo Notes 1.3.1
 *************************
 Fixes :
-- fix: Add Missing file in Crowdin Configuration File - MEED-2273 - Meeds-io/meeds#999
-- fix: Adjust wysiwyg issue in content area between view and edit mode -  EXO-66650 -  Meeds-io/MIPs#71
-- fix: Apply MOP API Refactoring to Enahance Loading Time of Sites - MEED-1777 - Meeds-io/meeds#660
-- fix: Create a note is not working - EXO-67185 - Meeds-io/MIPs#70
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Display Notes Editor Page in standalone mode - Meeds-io/meeds#755 - MEED-1912
-- Fix: Enhance notes gamification achievement - MEED-1890 - Meeds-io/meeds#781
-- fix: Error when searching notes - EXO-65101 - Meeds-io/meeds#1038
-- fix: Fix Border Radius of Notes Application - MEED-2976 - Meeds-io/meeds#1305
-- fix: Fix Browser Go Back in Notes - MEED-3019 - Meeds-io/meeds#1336
-- fix: fix cke embed media wysiwyg issue - EXO-65717 - Meeds-io/MIPs#71
-- fix: fix detecting tags on notes update - EXO-66540 -  Meeds-io/MIPs#71
-- fix: Fix feedback in ckeditor improvement - Meeds-io/MIPs#71
-- fix: Fix HTML codesnippet on edit - MEED-3013 - Meeds-io/meeds#1333
-- fix: Fix Image Alignment Issue After Saving - EXO-68298 - Meeds-io/meeds#1482
-- fix: fix inserted image wysiwyg issue in edit mode - EXO-66452 - Meeds-io/MIPs#71
-- fix: Fix note don't get posted if its content isn't changed  - EXO-58861
-- fix: Fix Notes Page gamification listener braodcast - MEED-2230 - Meeds-io/MIPs#49
-- fix: fix note version language favorite item issue - EXO-65766 - Meeds-io/MIPs#70
-- fix: Fix Note WYSIWYG style - MEED-2534 - Meeds-io/meeds#1102
-- fix: fix open embedded links - EXO-65753 - Meeds-io/meeds#1306
-- fix: Fix scrolling issue in the single note view application edit mode - EXO-68518_68519 - Meeds-io/notes#917
-- fix: Fix SNV toolbar position - MEED-3004 - Meeds-io/MIPs#108
-- fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
-- fix: Hide unnecessary warning alert message for note access without edit permission - EXO-62612 Meeds-io/meeds#840
-- fix: Insert position is wrong EXO-65312 - Meeds-io/meeds#1019
-- fix: Navigation menu appears randomly in wrong place - EXO-64938 - Meeds-io/meeds#1025
-- Fix: Notes - Navigation menu in a note with a text is not displayed in view mode - EXO-67951 - Meeds-io/meeds#1484
-- fix: ok button disabled when inserting image for a not saved note -EXO-64433 -  Meeds-io/meeds#944
-- fix: Publish Note when Created - MEED-2980 - Meeds-io/meeds#1308
-- fix: Resolve the mobile display issue related to the bulleted list - EXO-68427
-- fix: Return child notes sorted with natural sorting rule - EXO-46735 - Meeds-io/meeds#1056
-- fix: Set primary text color for navigation menu - EXO-67647 - Meeds-io/meeds#1318
-- fix: Set zero margin top of first title comes in page content - EXO-66864 - Meeds-io/MIPs#71
-- fix: Standardize font styles/size - EXO-61667 - Meeds-io/meeds#641
-- fix: Update notes configuration for image storage location - EXO-64344
-- fix: Update the notes applications images of page editor - EXO-67096 - Meeds-io/meeds#1358
-- fix: Use the content of the note in the zip when importing a note - EXO-68356 - meeds-io/meeds~1475
-- fix: Wrong UX for translation button in view mode - EXO-67284 - Meeds-io/MIPs#70
-- fix: Wysiwyg issue in tabel when width property is not set - EXO-66882 - Meeds-io/MIPs#71
-- fix: Wysiwy issue in table border property EXO-66692 - Meeds-io/MIPs#71
+- fix: Add Branding Stylesheet in CKEditor iframe - MEED-3188 - Meeds-io/meeds#1547
+- fix: Fix Border Radius on SNV in edit mode - MEED-3171 - Meeds-io/meeds#1536
+- fix: fix Opening a note from Unified search opens the home page of the plateform - EXO-68332 - Meeds-io/meeds#1529
 
 Improvements:
-- feat: Add analytics on added tags metadata in notes content - EXO-66540 - Meeds-io/MIPs#71
-- feat: Add assets version to editor content css file - EXO-65716 - Meeds-io/MIPs#71
-- feat: Add auto translate option in notes - EXO-65429 - Meeds-io/MIPs#70
-- feat: Add cke accessibility plugin - EXO-66514 - Meeds-io/MIPs#71
-- feat: Add more colors option to text color button of editor toolbar - EXO-65704 - Meeds-io/MIPs#71
-- feat: Add Multi~lang support on SNV - MEED-3017 - Meeds-io/MIPs#108
-- feat: Add multilangue backend services - EXO-65935 - Meeds-io/MIPs#70
-- feat: Add Notification Administration Label - MEED-2445 - Meeds-io/MIPs#79
-- feat: Allow only self and blank selectable options in cke link target dialog - EXO-65705 - Meeds-io/MIPs#71
-- feat: Allow open inserted note navigations in a new tab - EXO-66034 - Meeds-io/MIPs#71
-- feat: Allow to hide SNV Application in preview mode - MEED-2505 - Meeds-io/MIPs#84
-- feat: Automatic translation when adding a language - EXO-65422 - Meeds-io/MIPs#70
-- feat: Avoid indexing SNV Notes - MEED-2722 - Meeds-io/meeds#1189
-- feat: Centrelize ckeditor js config and styles - EXO-66890 - Meeds-io/MIPs#71
-- feat: Cleanup dependencies and enhance Unit Tests - MEED-1451 - Meeds-io/MIPs#42
-- feat: codenippets plugin - EXO-65719 - Meeds-io/MIPs#71
-- feat: Configure default icon for the notes node of new space - EXO-66660 - Meeds-io/MIPs#95
-- feat: Configure NotePageView portlet into Content category - EXO-67323 - Meeds-io/MIPs#88
-- feat: Consult a note with translations - EXO-65427 - Meeds-io/MIPs#70
-- feat: Consult a note with translations - EXO-65427- Meeds-io/MIPs#70
-- feat: Delete feature flag SNVFullPageAccess - MEED-2993 - Meeds-io/MIPs#108
-- feat: Delete useless Notes Notification - MEED-2487 - Meeds-io/MIPs#80
-- feat: Disable full page editing using Feature Flag - MEED-2725 - Meeds-io/meeds#1192
-- feat: Display automatic trasnlation option when note has no translations - EXO-66881 - Meeds-io/MIPs#70
-- feat: Display Multi-lang icon in SNV - MEED-3018 - Meeds-io/MIPs#108
-- feat: Display note with translations - EXO-65766 - Meeds-io/MIPs#70
-- feat: Display note with translations
-- feat: Draft filter with translation - EXO-66047 - Meeds-io/MIPs#70
-- feat: Draft of a new  translation never saved - EXO-66050 - Meeds-io/MIPs#70
-- feat: Draft with translation - EXO-66042 - Meeds-io/MIPs#70
-- feat: edito page and notes overview page size are not consistent - EXO-65734 - Meeds-io/MIPs#70
-- feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
-- feat: Enable search by tags for notes - EXO-65706 - Meeds-io/MIPs#71
-- feat: Enhance embedding media display in mobile - EXO-65717 - Meeds-io/MIPs#71
-- feat: Extra margin to remove when CMS portlets are not displayed - MEED-2953-Meeds-io/MIPs#103
-- feat: fix merge conflicts - Meeds-io/MIPs#70
-- feat: Gamification connector Fix Notes gamification event config - MEED-2441 - Meeds-io/MIPs#64
-- feat: Generic Operation : View Content improvement - EXO-65576 - Meeds-io/MIPs#70
-- feat: Hide Insert options for SNV Full Edit Mode - MEED-3003 - Meeds-io/MIPs#108
-- feat: Hide Tag Suggester When Editing SNV - MEED-3000 - Meeds-io/MIPs#108
-- feat: i18n the Home note - EXO-67101 - Meeds-io/MIPs#70
-- feat: Implement Note View Application - MEED-2632 - Meeds-io/MIPs#93
-- feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
-- feat: Improve Notes editing When Mobile and small container - MEED-2718 - MEED-2717 - Meeds-io/meeds#1190 - Meeds-io/meeds#1191
-- feat: Include notes version languages in unified search and favorites - EXO-65766 - Meeds-io/MIPs#70
-- feat: Indent option is available only in lists - EXO-66446 - Meeds-io/MIPs#71
-- feat: Language version option - EXO-65373 - Meeds-io/MIPs#70
-- feat: Move Notes gamification labels - MEED-2544 - Meeds-io/meeds#1107
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Notes editor cke table option - EXO-65716 - Meeds-io/MIPs#71
-- feat: Notes editor is not wysiwyg - EXO-65725 - Meeds-io/MIPs#70
-- feat: Notes editor toolbar options improvments - EXO-65695 - Meeds-io/MIPs#71
-- feat: Optimize JS resources fetching to load in scope of ActivityStream instead of global  - Meeds-io/MIPs#52 - MEED-1891
-- feat: Remove the FF of the translation in notes - EXO-67489 - Meeds-io/MIPs#70
-- feat: Remove the language name in the language - EXO-66254- Meeds-io/MIPs#70
-- feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
-- feat: Reuse Notes Edit, Save and Display algorithms in SNV - MEED-2997 - Meeds-io/MIPs#108
-- feat: Reuse RichEditor Style in all Notes portlets - MEED-2994 - Meeds-io/MIPs#108
-- feat: set zero margin top of first title comes in page content - EXO-66634 - Meeds-io/MIPs#71
-- feat: Translation of Home note name - EXO-65711 - Meeds-io/MIPs#70
-- feat: UI/UX issue with the translation button - EXO-67645 - Meeds-io/MIPs#70
-- feat: Update Gamification API usage - MEED-2094 - MEED-1987 - Meeds-io/MIPs#49
-- feat: Use Extended CKEditor configuration - MEED-2058 - Meeds-io/MIPs#59
 
-eXo Onlyoffice 2.5.0
+eXo OnlyOffice 2.5.1
 *************************
 Fixes :
-- fix: Can not preview a file when its title contains a % - EXO-65642
-- fix: Change Charset of DOCUMENT_TITLE to UTF-8 - EXO-64213
-- fix: Don't prevent other users from saving new versions even if they have not added changes - EXO-64990
-- fix: Enable to download document containing apostrophe from action menu of preview mode - EXO-66214
-- fix: Re-enforce lock when versionning the node in case of edition with multiple users - EXO-67975
-- fix: Remove unneeded functions from IdentityManager Mock - EXO-68162 - Meeds-io/meeds#142
-- fix: Set correctly the Onlyoffice editor language - EXO-64615
-- fix: Unable to open a document in edition - EXO-67974
-- fix: When a version is created by system, the version history drawer is empty - EXO-65435
 
 Improvements:
-- feat: enable mobile editor - EXO-65016
-- feat: introduce eXo parent pom - EXO-64103
+- feat: Make news detail accessible from public sites - EXO-68952
 
-eXo Platform-UI 6.5.0
+eXo Platform-UI 6.5.1
 *************************
 Fixes :
-- fix: Add Class Helpers for padding and margin outside Vue apps - MEED-3023 - Meeds-io/meeds#1349 (#713)
-- fix: Add missing class for uiIconMiniArrowRight - MEED-2468 - Meeds-io/meeds#1088 (#672)
-- fix: Add Missing file in Crowdin Configuration File - MEED-2273 - Meeds-io/meeds#999
-- fix: Add workaround for Viewport definition in Mobile - MEED-2819 - Meeds-io/meeds#1232 (#704)
-- fix: Adjust the identity suggester display - MEED-2540 - Meeds-io/meeds#1132 (#682)
-- fix: Adjust wysiwyg issue in content area between view and edit mode -  EXO-66650 -  Meeds-io/MIPs#71
-- fix: Apply MOP API Refactoring to Enahance Loading Time of Sites - MEED-1777 - Meeds-io/meeds#660
-- fix: Can not preview a file when its title contains a % - EXO-65642 (#205)
-- fix: Change Charset of DOCUMENT_TITLE to UTF-8 - EXO-64213 (#202)
-- Fix: Conflict during merge MIP-80
-- fix: Create a note is not working - EXO-67185 - Meeds-io/MIPs#70
-- fix: Date picker is hidden on Analytics page - EXO-65430 - Meeds-io/meeds#1024 (#669)
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Display Notes Editor Page in standalone mode - Meeds-io/meeds#755 - MEED-1912
-- fix: Don't prevent other users from saving new versions even if they have not added changes - EXO-64990 (#195)
-- fix: Enable to download document containing apostrophe from action menu of preview mode - EXO-66214
-- fix: Enhance notes gamification achievement - MEED-1890 - Meeds-io/meeds#781
-- fix: Error when searching notes - EXO-65101 - Meeds-io/meeds#1038
-- fix: Fix Border Radius of Notes Application - MEED-2976 - Meeds-io/meeds#1305
-- fix: Fix Bottom Bar Display on chrome for Mobile - MEED-2187 - Meeds-io/meeds#949
-- fix: Fix Browser Go Back in Notes - MEED-3019 - Meeds-io/meeds#1336
-- fix: Fix Bullet Points Rich Editor Style - MEED-2553 - Meeds-io/meeds#1114 (#676)
-- fix: fix cke embed media wysiwyg issue - EXO-65717 - Meeds-io/MIPs#71
-- fix: Fix color of Heading elements - MEED-3015 - Meeds-io/meeds#1335 (#712)
-- fix: Fix Container Style when applied twice - MEED-3024 - Meeds-io/meeds#1351 (#722)
-- fix: fix detecting tags on notes update - EXO-66540 -  Meeds-io/MIPs#71
-- fix: Fix feedback in ckeditor improvement - Meeds-io/MIPs#71
-- fix: Fix HTML codesnippet on edit - MEED-3013 - Meeds-io/meeds#1333
-- fix: Fix Image Alignment Issue After Saving - EXO-68298 - Meeds-io/meeds#1482
-- fix: fix inserted image wysiwyg issue in edit mode - EXO-66452 - Meeds-io/MIPs#71
-- fix: Fix note don't get posted if its content isn't changed  - EXO-58861
-- fix: Fix Notes Page gamification listener braodcast - MEED-2230 - Meeds-io/MIPs#49
-- fix: Fix note version language favorite item issue - EXO-65766 - Meeds-io/MIPs#70
-- fix: Fix Note WYSIWYG style - MEED-2534 - Meeds-io/meeds#1102
-- fix: Fix open embedded links - EXO-65753 - Meeds-io/meeds#1306
-- fix: Fix Rich Editor Numbered List display - MEED-2337 - Meeds-io/meeds#1027 (#662)
-- fix: Fix scrolling issue in the single note view application edit mode - EXO-68518_68519 - Meeds-io/notes#917
-- fix: Fix SNV toolbar position - MEED-3004 - Meeds-io/MIPs#108
-- fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
-- fix: Fix Vuetify Based link Colors - MEED-2534 - Meeds-io/meeds#1102 (#674)
-- Fix: Heading 3 color in editor of Notes app - EXO-68247
-- fix: Hide unnecessary warning alert message for note access without edit permission - EXO-62612 Meeds-io/meeds#840
-- fix: Insert position is wrong EXO-65312 - Meeds-io/meeds#1019
-- fix: Navigation menu appears randomly in wrong place - EXO-64938 - Meeds-io/meeds#1025
-- fix: Notes - Navigation menu in a note with a text is not displayed in view mode - EXO-67951 - Meeds-io/meeds#1484
-- fix: ok button disabled when inserting image for a not saved note -EXO-64433 -  Meeds-io/meeds#944
-- fix: Publish Note when Created - MEED-2980 - Meeds-io/meeds#1308
-- fix: Re-enforce lock when versionning the node in case of edition with multiple users - EXO-67975
-- fix: remove unneeded functions from IdentityManager Mock - EXO-68162 - Meeds-io/meeds#142 (#225)
-- fix: Resolve the mobile display issue related to the bulleted list - EXO-68427
-- fix: return child notes sorted with natural sorting rule - EXO-46735 - Meeds-io/meeds#1056
-- fix: Set correctly the Onlyoffice editor language - EXO-64615 (#209)
-- fix: Set primary text color for navigation menu - EXO-67647 - Meeds-io/meeds#1318
-- fix: Set zero margin top of first title comes in page content - EXO-66864 - Meeds-io/MIPs#71
-- fix: Standardize font styles/size - EXO-61667 - Meeds-io/meeds#641
-- fix: Unable to open a document in edition - EXO-67974
-- fix: update notes configuration for image storage location - EXO-64344
-- fix: Update the notes applications images of page editor - EXO-67096 - Meeds-io/meeds#1358
-- fix: Use the content of the note in the zip when importing a note - EXO-68356 - meeds-io/meeds~1475
-- fix: When a version is created by system, the version history drawer is empty - EXO-65435 (#197)
-- fix: Wrong UX for translation button in view mode - EXO-67284 - Meeds-io/MIPs#70
-- fix: wysiwyg issue in tabel when width property is not set - EXO-66882 - Meeds-io/MIPs#71
-- fix: wysiwy issue in table border property EXO-66692 - Meeds-io/MIPs#71
 
 Improvements:
-- feat: Add analytics on added tags metadata in notes content - EXO-66540 - Meeds-io/MIPs#71
-- feat: Add assets version to editor content css file - EXO-65716 - Meeds-io/MIPs#71
-- feat: Add auto translate option in notes - EXO-65429 - Meeds-io/MIPs#70
-- feat: Add cke accessibility plugin - EXO-66514 - Meeds-io/MIPs#71
-- feat: Add more colors option to text color button of editor toolbar - EXO-65704 - Meeds-io/MIPs#71
-- feat: Add Multi~lang support on SNV - MEED-3017 - Meeds-io/MIPs#108
-- feat: Add multilangue backend services - EXO-65935 - Meeds-io/MIPs#70
-- feat: Add Notification Administration Label - MEED-2445 - Meeds-io/MIPs#79
-- feat: Allow only self and blank selectable options in cke link target dialog - EXO-65705 - Meeds-io/MIPs#71
-- feat: Allow open inserted note navigations in a new tab - EXO-66034 - Meeds-io/MIPs#71
-- feat: Allow to hide SNV Application in preview mode - MEED-2505 - Meeds-io/MIPs#84
-- feat: Automatic translation when adding a language - EXO-65422 - Meeds-io/MIPs#70
-- feat: Avoid indexing SNV Notes - MEED-2722 - Meeds-io/meeds#1189
-- feat: Centrelize ckeditor js config and styles - EXO-66890 - Meeds-io/MIPs#71
-- feat: Cleanup dependencies and enhance Unit Tests - MEED-1451 - Meeds-io/MIPs#42
-- feat: codenippets plugin - EXO-65719 - Meeds-io/MIPs#71
-- feat: Configure default icon for the notes node of new space - EXO-66660 - Meeds-io/MIPs#95
-- feat: Configure NotePageView portlet into Content category - EXO-67323 - Meeds-io/MIPs#88
-- feat: Consult a note with translations - EXO-65427 - Meeds-io/MIPs#70
-- feat: Consult a note with translations - EXO-65427- Meeds-io/MIPs#70
-- feat: Delete feature flag SNVFullPageAccess - MEED-2993 - Meeds-io/MIPs#108
-- feat: Delete useless Notes Notification - MEED-2487 - Meeds-io/MIPs#80
-- feat: Disable full page editing using Feature Flag - MEED-2725 - Meeds-io/meeds#1192
-- feat: Display automatic trasnlation option when note has no translations - EXO-66881 - Meeds-io/MIPs#70
-- feat: Display Multi-lang icon in SNV - MEED-3018 - Meeds-io/MIPs#108
-- feat: Display note with translations - EXO-65766 - Meeds-io/MIPs#70
-- feat: Display note with translations
-- feat: Draft filter with translation - EXO-66047 - Meeds-io/MIPs#70
-- feat: Draft of a new  translation never saved - EXO-66050 - Meeds-io/MIPs#70
-- feat: Draft with translation - EXO-66042 - Meeds-io/MIPs#70
-- feat: edito page and notes overview page size are not consistent - EXO-65734 - Meeds-io/MIPs#70
-- feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
-- feat: Enable search by tags for notes - EXO-65706 - Meeds-io/MIPs#71
-- feat: Enhance embedding media display in mobile - EXO-65717 - Meeds-io/MIPs#71
-- feat: Extra margin to remove when CMS portlets are not displayed - MEED-2953-Meeds-io/MIPs#103
-- feat: fix merge conflicts - Meeds-io/MIPs#70
-- feat: Gamification connector Fix Notes gamification event config - MEED-2441 - Meeds-io/MIPs#64
-- feat: Generic Operation : View Content improvement - EXO-65576 - Meeds-io/MIPs#70
-- feat: Hide Insert options for SNV Full Edit Mode - MEED-3003 - Meeds-io/MIPs#108
-- feat: Hide Tag Suggester When Editing SNV - MEED-3000 - Meeds-io/MIPs#108
-- feat: i18n the Home note - EXO-67101 - Meeds-io/MIPs#70
-- feat: Implement Note View Application - MEED-2632 - Meeds-io/MIPs#93
-- feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
-- feat: Improve Notes editing When Mobile and small container - MEED-2718 - MEED-2717 - Meeds-io/meeds#1190 - Meeds-io/meeds#1191
-- feat: Include notes version languages in unified search and favorites - EXO-65766 - Meeds-io/MIPs#70
-- feat: Indent option is available only in lists - EXO-66446 - Meeds-io/MIPs#71
-- feat: Language version option - EXO-65373 - Meeds-io/MIPs#70
-- feat: Move Notes gamification labels - MEED-2544 - Meeds-io/meeds#1107
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Notes editor cke table option - EXO-65716 - Meeds-io/MIPs#71
-- feat: Notes editor is not wysiwyg - EXO-65725 - Meeds-io/MIPs#70
-- feat: Notes editor toolbar options improvments - EXO-65695 - Meeds-io/MIPs#71
-- feat: Optimize JS resources fetching to load in scope of ActivityStream instead of global  - Meeds-io/MIPs#52 - MEED-1891
-- feat: Remove the FF of the translation in notes - EXO-67489 - Meeds-io/MIPs#70
-- feat: Remove the language name in the language - EXO-66254- Meeds-io/MIPs#70
-- feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
-- feat: Reuse Notes Edit, Save and Display algorithms in SNV - MEED-2997 - Meeds-io/MIPs#108
-- feat: Reuse RichEditor Style in all Notes portlets - MEED-2994 - Meeds-io/MIPs#108
-- feat: set zero margin top of first title comes in page content - EXO-66634 - Meeds-io/MIPs#71
-- feat: Translation of Home note name - EXO-65711 - Meeds-io/MIPs#70
-- feat: UI/UX issue with the translation button - EXO-67645 - Meeds-io/MIPs#70
-- feat: Update Gamification API usage - MEED-2094 - MEED-1987 - Meeds-io/MIPs#49
-- feat: Use Extended CKEditor configuration - MEED-2058 - Meeds-io/MIPs#59
+- feat: Add CSS Helper for Deleting Border in child elements - MEED-3171 - Meeds-io/meeds#1536
 
-eXo Layout-Management 1.5.0
+eXo Layout-Management 1.5.1
 *************************
 Fixes:
-- fix: Add site navigation extension in a load-group - EXO-68206
-- fix: Allow to update the node permissions to everyone twice - EXO-68151
-- fix: Apply border radius and padding rule to Site management portlet - EXO-67633
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Fix copy node issue - EXO-65160 - Meeds-io/MIPs#68
-- fix: fix displaying existing page suggestions - EXO-68523
-- fix: Fix edit site properties - EXO-66773 - Meeds-io/MIPs#72
-- fix: Fix insert left/right action of UISimpleColumn container - EXO-64611 - Meeds-io/MIPs#51
-- fix: Fix opening site navigation from site card - EXO-68188
-- fix: Fix site navigation behavior issues from manage space portlet - EXO-65306 - Meeds-io/MIPs#68
-- fix: Hide edit layout for aggregated sites- EXO-67641
-- fix: Remove extra margin between portlets of section template - EXO-67744
-- fix: Remove useless getNavigationNodes and getSiteNavigations functions from siteNavigationService.js - EXO-68401
-- fix: Update v-alert components - EXO-67597
+- fix: Disable save button when editing site properties with 0 or negative display order - EXO-69031
+- fix: Allow special character in url validation during the link node creation - EXO-67762
 
 Improvements:
-- feat: Add control on Save action of Element drawer - EXO-64447 - Meeds-io/MIPs#51
-- feat: Add document event listener to open site navigation listener - EXO-64650 - Meeds-io/MIPs#68
-- feat:  Add feature Flag on the new administration node "Sites" - EXO-64653 -Meeds-io/MIPs#68
-- feat: Add help text for node type field of create node drawer - EXO-65842 - Meeds-io/MIPs#51
-- feat: Add help text for node type field of edit node drawer - EXO-65439 - Meeds-io/MIPs#51
-- feat: Add New page element node - EXO-63252 - Meeds-io/MIPs#51
-- feat: Add node icon field on add/edit site navigation node drawer - EXO-65004 - Meeds-io/MIPs#72
-- feat: Add site banner field on edit site drawer - EXO-65534 - Meeds-io/MIPs#72
-- feat: Add Site management page - EXO-64652 - Meeds-io/MIPs#68
-- feat: Adjust rules of site management portlet - EXO-66028 - Meeds-io/MIPs#72
-- feat: Allow search page on page name - EXO-64359 - Meeds-io/MIPs#51
-- feat: Configure layout-management navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Configure open edit layout by page template after page creation -  EXO-65437 - Meeds-io/MIPs#68
-- feat: Disable editing displayed status for default site - EXO-65024 - Meeds-io/MIPs#72
-- feat: Display 3 dots icon of site navigation drawer on hover of the navigation nodes - EXO-63615
-- feat: Display Edit layout action only for users having page edit permission - EXO-63629 - Meeds-io/meeds#51
-- feat: Display group sites in sites management cards portlet only for the corresponding group members - EXO-65405 - Meeds-io/MIPs#68
-- feat: Enhance site navigation portlet drawers dom loading - EXO-64891 - Meeds-io/MIPs#51
-- feat: Execute edit layout action in the same tab - EXO-63660 - Meeds-io/meeds#51
-- feat: Expand mode of Add Element drawer - EXO-63479 - Meeds-io/MIPs#51
-- feat: Fix displaying non meta sites in the existing page site suggester list - EXO-66348 - Meeds-io/MIPs#72
-- feat: Fix display of the 3 dots icon on parent nodes when hovering on child nodes - EXO-63843 - Meeds-io/MIPs#51
-- feat: Fix issues of node icon picker font awesome drawer - EXO-66373 - Meeds-io/MIPs#72
-- feat: Fix issues related to site description field - EXO-66263 - Meeds-io/MIPs#72
-- feat: Fix issue when move up or move down a node - EXO-65242 - Meeds-io/MIPs#68
-- feat: Fix left navigation UI issues and filter navigations to be displayed - EXO-66384 - Meeds-io/MIPs#72
-- feat: Fix link node redirection in site navigation drawer after creation and edit link node - EXO-64557 - Meeds-io/MIPs#51
-- feat: Fix Navigation tree behavior issues - EXO-64720 - Meeds-io/MIPs#51
-- feat: Fix the display of 3 dots in site navigation drawer - EXO-64595 - Meeds-io/MIPs#51
-- feat: Fix the display of toast notification in expand mode - EXO-64594 - Meeds-io/MIPs#51
-- feat: Fix vertical menu technical issues  - EXO-67261 - Meeds-io/MIPs#86
-- feat: Hide site properties action menu for the global site - EXO-65370 - Meeds-io/MIPs#68
-- feat: Implement add element drawer actions - EXO-63255 - Meeds-io/MIPs#51
-- feat: Implement add element drawer - EXO-63459 - Meeds-io/meeds#51
-- feat: Implement add group node - EXO-63243 -  Meeds-io/meeds#51
-- feat: Implement add node drawer - EXO-63070 - Meeds-io/meeds#51
-- feat: Implement add node with schedule visibility - EXO-63240 - Meeds-io/MIPs#51
-- feat: Implement alphabetical sort for displaying sites into Site Management portlet - EXO-65371 - Meeds-io/MIPs#68
-- feat: Implement authorized chars and conversion rules for node id field - EXO-63217 - Meeds-io/meeds#51
-- feat: Implement copy/paste node action - EXO-63072 - Meeds-io/MIPs#51
-- feat: Implement create root node action for meta site - EXO-66035 - Meeds-io/MIPs#72
-- feat: Implement create site - EXO-67615
-- feat: Implement cut/paste node action - EXO-63073 - Meeds-io/MIPs#51
-- feat: Implement delete site action menu  of site management cards portlet - EXO-64952 - Meeds-io/MIPs#68
-- feat: Implement edit element drawer - EXO-63247 - Meeds-io/MIPs#51
-- feat: Implement edit layout action - EXO-63066 - Meeds-io/meeds#51
-- feat: Implement edit node drawer - EXO-63440 - Meeds-io/MIPs#51
-- feat: Implement edit site properties - EXO-65345 - Meeds-io/MIPs#68
-- feat: Implement existing page section in add element drawer - EXO-63251- Meeds-io/MIPs#51
-- feat: Implement Images portlet - EXO-65514 - Meeds-io/MIPs#68
-- feat: Implement Last updated column in Expand full view mode of Site Navigation - EXO-64489 - Meeds-io/MIPs#51
-- feat: Implement link page section in add element drawer - EXO-63254 - Meeds-io/MIPs#51
-- feat: Implement Manage Access drawer - EXO-63075 - Meeds-io/meeds#51
-- feat: Implement manage access edit and view permissions sections - EXO-63142_EXO-63143_EXO-63638_EXO-63144_EXO-63147 - Meeds-io/meeds#51
-- feat: Implement manage site permissions action menu - EXO-64959_64960_64961_64992_64993 - Meeds-io/MIPs#68
-- feat: Implement move up and move down actions - EXO-63074 - Meeds-io/meeds#51
-- feat: Implement multilingual for site properties - EXO-65344 - Meeds-io/MIPs#72
-- feat: Implement multilingual for the node label - EXO-63408_63409
-- feat: Implement navigation node type filter on expand mode - EXO-63478 - Meeds-io/MIPs#51
-- feat: Implement Node icon picker font awesome component - EXO-65005_66218 - Meeds-io/MIPs#72
-- feat: Implement "section" page template - EXO-66919 - Meeds-io/MIPs#88
-- feat: Implement site management edit layout action of site management cards portlet - EXO-64951 - Meeds-io/MIPs#68
-- feat: Implement Site Management portlet - EXO-65013 - Meeds-io/MIPs#68
-- feat: Implement site navigation drawer with Expand full view mode - EXO-63410 - Meeds-io/MIPs#51
-- feat: Implement site navigation menu action of site management cards portlet - EXO-64950 - Meeds-io/MIPs#68
-- feat: Implement site properties action menu of site management cards portlet - EXO-64931 - Meeds-io/MIPs#68
-- feat: Implement some adjustments for Images portlet - EXO-65944 - Meeds-io/MIPs#68
-- feat: Implement the delete node action - EXO-63071 - Meeds-io/meeds#51
-- feat: Improve the indentation between nodes and sub nodes in Site Navigation drawer - EXO-64564 - Meeds-io/MIPs#51
-- feat: Improve UI of Site Navigation drawer - EXO-63842 - Meeds-io/MIPs#51
-- feat: Introduce eXo parent pom - EXO-64103
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Make false by default the value of old edit navigation menu feature flag - EXO-64562 - Meeds-io/MIPs#51
-- feat: Make Site Navigation icon always visible in topbar menu - EXO-64655 - Meeds-io/MIPs#51
-- feat: Make the Site Navigation icon invisible on mobile devices - EXO-64718 - Meeds-io/MIPs#51
-- feat: Open the site navigation drawer when clicking on site card - EXO-65729 - Meeds-io/MIPs#68
-- feat: Remove calculating eXo.env.portal.siteId already centralized in UIPortalApplication.gtmpl - Meeds-io/MIPs#86
-- feat: Remove feature flag of new site navigation drawer - EXO-63358 - Meeds-io/meeds#51
-- feat: Remove ImagesPortlet - EXO-67323 - Meeds-io/MIPs#88
-- feat: Remove "newSiteManagement" feature Flag - EXO-65954 - Meeds-io/MIPs#68
-- feat: Remove useless administration pages and navigations - EXO-67268 - Meeds-io/MIPs#88
-- feat: Reorder the position of the delete node action - EXO-64585 - Meeds-io/MIPs#51
-- feat: Update "expandPageDetails" rest param to "expand" param - EXO-65031 - Meeds-io/MIPs#51
-- feat: Update site properties drawer with the new new fields "displayed" and "displayOrder" - EXO-65346 - Meeds-io/MIPs#72
-- feat: Use vue tooltip UI for edit site navigation - EXO-64803 - Meeds-io/MIPs#51
+- feat: Make news detail accessible from public sites - EXO-68952
 
-eXo Jitsi 1.4.0
+eXo Jitsi 1.4.1
 *************************
 Fixes:
-- fix: Blank space is appended when receiving a call - EXO-63688
-- fix: Error 500 when launching a call - EXO-65875
-- fix: Error in logs when lookig for js map file - EXO-66212
-- fix: Fix call button display - EXO-66885
-- fix: jitsi call button is not well displayed in left menu level 2 - EXO-66752
-
-eXo Jitsi-call 1.4.0
-*************************
-Fixes:
-- fix: Reuse centralized Toast Notifs component - EXO-67596
-- fix: Upgrade transliteration from 2.2.0 to 2.3.5
+- fix: WebConferencing admin portlet not working - EXO-67648
 
 Improvements:
-- feat: Add excalidraw whiteboard button to the toolbar options - EXO-63804
 
-eXo Mail Integration 1.2.0
+eXo Jitsi-call 1.4.1
 *************************
 Fixes:
-- fix: Apply the border radius and the padding rule on the mail intagration settings application - EXO-67623
-- fix: Display mail content in html when possible - EXO-67301
-- fix: Move eXoResources and eXoSkin Maven Modules from meeds to eXo - Meeds-io/MIPs#52
-- fix: Update the web notification template - EXO-67463
 
 Improvements:
-- feat : Use new notification system with vueJs - EXO-67302
 
-eXo Documents 1.2.0
+eXo Mail Integration 1.2.1
 *************************
 Fixes:
-- fix: Add new folder/document button labels not displayed on mobile view - EXO-64606
-- fix: Adjust ui icons positions of visibility collaborators - EXO-64544
-- fix: After collaborating on a document group permission isn't displayed in the access manage drawer  -EXO-63772
-- fix: Allow downloading documents with special characters and '+' - EXO-65518
-- fix: Apply border radius on the document application - EXO-67618
-- fix: Blank content page displayed when open document app - EXO-63718
-- fix: Button change when selecting one item - EXO-66238
-- fix: Can not preview a file when its title contains a % - EXO-65642
-- fix: Cleaning the document's name from accents when renaming a document - EXO-66370
-- fix: Could not load folder content when redirected from the preview URL of a document - EXO-67548
-- fix: Create a symlink to the user's personal documents when assigning a space member as a document collaborator - EXO-65095
-- fix: Display all type of folders - EXO-65353
-- fix: Can't disable document edition on which there are all rights - EXO-63201
-- fix: Do not notify space members when the space is assigned as a document collaborator - EXO-65094
-- fix: Downloading documents keeps loading when we download multiple elements from different locations - EXO-67972
-- fix: Downloading files fails with some encoded chars - EXO-65735
-- fix: Enable the search for document descriptions using the tag name - EXO-65172
-- fix: Enable to preview and download file with name contains a special character - EXO-64575
-- fix: Enable to search document with name contains an elastic search reserved characters - EXO-64651
-- fix: Enable to updating document permisson from the all users visibilty drawer - EXO-65052
-- fix: Enable to upload a file containing an '+' character in its name - EXO-64192
-- fix: Enable to upload a file with name contains a special character from the download menu action - EXO-64549
-- fix: Enable to upload document in folder with name contains '.' character  - EXO-64403 - EXO-64406
-- fix: Enable to upload document on shortcut sub folder - EXO-65264
-- fix: Fix copy public link on ios - EXO-64645
-- fix: Fix deleting several selected symlinks - EXO-64184
-- fix: Fix DocumentSize Widget installation Listener - Meeds-io/MIPs#50 #565
-- fix: Fix issue of multiple document selection deletion alert always showing 0 elements - EXO-68276
-- fix: fix muliple selection downloaded zip name - EXO-64506
-- fix: Fix renaming documents with accents - EXO-67736
-- fix: Fix the display issue when multi-selection flag is not active - EXO-59518
-- fix: Fix the infinite loop that occurs when creating a shortcut of a folder within the same folder -EXO-65086
-- fix: Fix visibility rules when share folder with a user personal drive - EXO-63701
-- fix: Fix wrong count for expiration delay when choosing day option - EXO-67306
-- fix: Grant all permissions to space hosts and editors when the document visibility is set to Only designated collaborator -EXO-65224
-- fix: Implement natural comparator to sort tree view items - EXO-63141
-- fix: Load all files when they exceed pagination limit - EXO-64087
-- fix: Move drawer ko - EXO-67091
-- fix: Move NaturalComparator of Strings to commons module - EXO-46735 - Meeds-io/meeds#1056
-- fix: Multiple zip downloaded on multi-selection when several tabs are opened - EXO-64506
-- fix: Navigate between folders using history button of browser - EXO-63527
-- fix: No results displayed if search starts with a special character - EXO-65198
-- fix: Notification redirection issue after sharing documment with personal drive -EXO-63618
-- fix: Notify only corresponding collaborators after making changes on their permission on the document managed access drawer - EXO-65096
-- fix: Notify only corresponding collaborators after making changes on their permission on the document managed access drawer - EXO-65096
-- fix: No versioning when a documents is imported by a zip file - EXO-67504
-- fix: Opening the personal drive in a new tab or refreshing the current tab does not display the document list - EXO-68443
-- fix: Prevent dragging and dropping documents when the Edit Name mode is active - EXO-67175
-- fix: Prevent group administrators from being displayed in the access management drawer for non-group administrator members - EXO-64412
-- fix: Redirect the user to the destination folder after creating a document shortcut to a renamed space location - EXO-65390
-- fix: Redirect user to destination folder after move to or create shortuct document action - EXO-63545
-- fix: Redirect user to the destination folder after creating a document shortcut - EXO-65263
-- fix: Remove the symlink when designating a document's collaborator - EXO-65859
-- fix: Root folder in treeview drawer not translated EXO-64528
-- fix: Share document with user who have left the space - EXO-63717
-- fix: Treeview label is not translated in folder view in documents app
-- fix: UI Cleanup portlet Documents size - EXO-67616
-- fix: UI issues in action menu - EXO-63902,EXO-59499
-- fix: Update the documents applications images of page editor - EXO-67096
-- fix: Update web notification from gtmpl to vue - EXO-66410
-- fix: Upload files under symlink folders - EXO-66517
-- fix: Upload or create documents within the shortcut of a folder created in exo 6.3 after upgrading to exo 6.4/6.5 - EXO-65280
-- fix: When a version is created by system, the version history drawer is empty - EXO-65435
-- fix: Wrong sorting by access type of files/folders - EXO-67314
 
 Improvements:
-- feat: Adapt manage access drawer choices to personal drive - EXO-64482
-- feat: Add analytics for individual and mass deletions actions - EXO-63423
-- feat: Add document views detail - EXO-64500
-- feat: Add moveTo action on multiSelection - EXO-59573,EXO-63800
-- feat: Add Multi-Selection feature
-- feat: Add new loader indication for multi-selection actions - EXO-63609
-- feat: Add size column in documents list with custom sortby - EXO-63362,EXO-63742
-- feat: Add tooltips for select document and select all checkboxes - EXO-64374
-- feat: add underline style on hover for last updated for versionable files -EXO-59726
-- feat: Add upload new version action - EXO-59874, EXO-59499
-- feat: Advanced filter drawer  - EXO-64102
-- feat: Advanced filter drawer  - EXO-64102
-- feat: Allow update document description only with edit permission - EXO-63202
-- feat: Apply advanced filter options - EXO-7656
-- feat: Delete on multiselection - EXO-62360
-- feat: Document size gadget app in the edit layout tool - EXO-64568
-- feat: Document size gadget - EXO-64586
-- feat: Download on multiselection - EXO-63258
-- feat: Enable Document app-center for mobile
-- feat: Enable edit document in mobile - EXO-65016
-- feat: Fix download one folder action - EXO-64605
-- feat: Hide Current path in Tree selector drawer when selected documents have different paths - EXO-63800
-- feat: Icon and tooltip of space members and public access in visibility cell - EXO-64321
-- feat: Implement default icon for the document node of a new space - EXO-66660 - Meeds-io/MIPs#95
-- feat: Implement documents public links - EXO-64307,EXO-64319
-- feat: Implement MoveTo with drag and drop - EXO-64044, EXO-64049
-- feat: Import Documents from zip - EXO-64649
-- feat: Improve last updated column - EXO-50165
-- feat: introduce eXo parent pom - EXO-64103
-- feat: memorize the last document view consulted - EXO-64166
-- feat: Open previous folder when hovering on breadcrumb while drag&drop - EXO-64492
-- feat: Open version history on last updated date click - EXO-59726
-- feat: Optimise Filters UI and UX  - EXO-64101
-- feat: Optimise Filters UI and UX  - EXO-64101
-- feat: Optimize interlining in mobile - EXO-63959
-- feat: Reduce waiting time of select range tooltip display - EXO-63960
-- feat: Reduce waiting time to open folder when hovering while drag&drop - EXO-64890
-- feat: remove feature flags - EXO-65215
-- feat: Remove switch to old app and add needed configuration and pages for new doc app - EXO-63948
-- feat: Remove the reminders of switch to old app and the introduction to the new app - EXO-65215
-- feat: Show select all checkbox by hovring on the header line instead of the name header - EXO-64375
-- feat: UI/UX issues in doc app - EXO-63902-63899-63898
 
-eXo Agenda 1.4.0
+eXo Documents 1.2.1
 *************************
 Fixes:
-- fix: Add a default time zone to resolve the build failure in the unit tests - EXO-66210
-- fix: Apply border radius to agenda user setting - EXO-67621
-- fix: Clean up agenda admin settings - EXO-67634
-- fix: Dispaly all day events planned for the current day on the agenda gadget in space stream page - EXO-65143
-- fix: drag and drop extend event - EXO-65674
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Fix AgendaTimeline Widget installation Listener - Meeds-io/MIPs#50
-- fix: Fix event duplicated when recurring event is updated - EXO-67588
-- fix: Fix Gamification API package name - MEED-2237 - Meeds-io/MIPs#49
-- fix: Move agenda connectors extension in a group js - EXO-67332
-- fix: Prevent to send the reminder notification of the parent recurrent event to avoid the redundancy at the first occurrence -EXO-65965
-- fix: Remove the use secret key in agenda connectors in the front side - EXO-65042
-- fix: Replace Web Notification rendering engine from gtmpl to Vue - EXO-66404
-- fix: Reuse centralized Toast Notifs component - EXO-67592
-- fix: Some properties lost when updating a recurrent event - EXO-63856
-- fix: UI Cleanup portlet Agenda - EXO-67630
-- fix: UI Cleanup portlet Agenda timeline - EXO-67617
-- fix: Update the agenda applications images of page editor - EXO-67096
-- fix: Wrong recurrence day selected when updating an event by D&D - EXO-63851
-- fix: Wrong time selected when updating an event by D&D - EXO-63851
+- fix: Fix displaying documents in documents app out of documents page - EXO-62356
+- fix: Enable the import documents notification plugin by default after migration context - EXO-68085
+- fix: Change edit document redirection url from current portal name to meta portal name - EXO-69070
+- fix: Prevent to display the add document for members if the space has a redactor - EXO-68922
+- fix: Prevent to display no content folder actions for users who don't have permissions - EXO-68806
+- fix: Sorting by latest modification ko inside folders - EXO-68469
+- fix: After migration from 6.4 to 6.5 Personal drive has blank page - EXO-68728
 
 Improvements:
-- feat: add server url to RemoteProviderEntity - EXO-67342
-- feat: Configure agenda navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Gamification connector Fix Agenda gamification event config - EXO-66377 - Meeds-io/MIPs#64
-- feat: Implement default icon for the agenda node of a new space - EXO-66660 - Meeds-io/MIPs#95
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Modify agenda notification to align the button style with meeds - EXO-66916
-- feat: Modify agenda notification to rely on mute space feature - EXO-66729
-- feat: Remove useless administration pages and navigations - EXO-67268 - Meeds-io/MIPs#88
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - EXO-66404
-- feat: Update RemoteProviderDefinitionPlugin to add connectorUrl
 
-eXo Agenda Connectors 1.2.0
+eXo Agenda 1.4.1
+*************************
+Fixes:
+- fix: Created event not visible - EXO-68824
+- fix: Fix retrieving pending event for deleted events - EXO-68786
+- fix: Prevent the sending of event reminders for the deleted calendar- EXO-68784
+
+Improvements:
+
+eXo Agenda Connectors 1.2.1
 ****************************
 Fixes:
-- fix: Access to edit page layout is not working
-- fix: After a page refresh, events are not pushed to Google Calendar - EXO-65485
-- fix: Exchange connector make a request related to inbox to check credentials - EXO-63702
-- fix: Move agenda connectors extension in a group js - EXO-67332
-- fix: Refactor agenda google connector - EXO-65042
-- fix: Renew JWT token to avoid its expiration - EXO-65633
-- fix: Use local storage for storing MS tokens to avoid frequent logins - EXO-65633
+- fix: Fix monthly/yearly events are ko with outlookConnector - EXO-69013
+- fix: Recurrent events only one event is displayed on exchange agenda- EXO-68948
+- fix: Exchange events synchronization issue after server restart - EXO-67725
 
 Improvements:
-feat: Update name of event to open drawer exchange settings
 
-eXo Chat 3.5.0
+eXo Chat 3.5.1
 *************************
 Fixes:
-- fix: Chat icon on users popover not displayed - EXO-65999
-- fix: Chat icon should only be displayed for space members - EXO-64806
-- fix: Delete useless Third party libraries dependencies declaration - Meeds-io/MIPs#42
-- fix: Edit chat messages in the default message composer - EXO-65075
-- fix: Emojis aren't recognized after the break line in the chat message - EXO-65070
-- fix: Enable to open a file containing an '+' character in its title in the chat application - EXO-64326
-- fix: Enable to preview and dowload file with name contains a special character - EXO-64575
-- fix: Enhance infinite loading of chat when logged out - EXO-67681
-- fix: Error when retrieving chat settings - EXO-64706
-- fix: Exisiting users in a chatroom are suggested to be added again in edit mode - EXO-64919
-- fix: Fix css regression on chat - EXO-66336
-- fix: Line breack isn't recognized after a Blockquote - EXO-65349
-- fix: Reinitialize composer after message edition - EXO-66875
-- fix: Remove the limit when getting the list of room participants in edit mode - EXO-64727
-- fix: Revert an error in chat services - EXO-68172
-- Fix: Search KO chat app - EXO-65937
-- fix: Stop retrieving online users when some requests are pending - EXO-65044
-- fix: UI cleanup portlet - chat space settings block - EXO-67620
-- fix: Upgrade MongoDB and MongoDB driver - EXO-64442
+- fix: Fix user and space avatar, and back to home button link accessibility - EXO-68219
+- fix: Fix add the file_drop module to exo commons resources - EXO-68825
 
 Improvements:
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - EXO-66407
 
-eXo Multifactor-Authentication 1.3.0
+eXo Multi-factor-Authentication 1.3.1
 *************************************
 Fixes:
-- fix: Bypass MFA login screen when user is already authorized - EXO-65641
-- fix: Display user informations in revocation requests list - EXO-64957
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Move eXoResources and eXoSkin Maven Modules from meeds to eXo - Meeds-io/MIPs#52
-- fix: move missing configuration file in mfa module - meeds-io/MIPs#79
-- fix: Multi-Factor group suggester isn't working - EXO-67960
-- fix: Update v-alert components - EXO-67598
+- fix: Fix MFA isn't working - EXO-69094
 
 Improvements:
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Remove useless administration pages and navigations - EXO-67268 - Meeds-io/MIPs#88
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - EXO-66411
-- feat: Update multifactor-authentication node icon - EXO-66902 - Meeds-io/MIPs#88
 
-eXo JCR 6.5.0
+eXo JCR 6.5.1
 *************************
 Fixes:
-- fix: Add missing PDF dependency - EXO-63719
-- fix: Fix Huge Memory consumption in WebDav Access
-- fix: Remove unused transitive dependency cxf client - EXO-64344
-- fix: Reuse centralized Toast Notifs component - EXO-67596
-- fix: Special char prevents downloading files with Webdav - EXO-65735
 
 Improvements:
-- feat: Add excalidraw whiteboard button to the toolbar options - EXO-63804
 
-eXo Analytics 1.4.0
+
+eXo Analytics 1.4.1
 *************************
 Fixes:
-- fix: Deleted space message displayed instead of space name in content analytics page - Meeds-io/meeds#903 - EXO-63797
-- fix: Fix Full Page display collected data duration in non dev mode - MEED-1805 - Meeds-io/meeds#697
-- fix: Update the analytics applications images for the editor - EXO-67096 - Meeds-io/meeds#1358
 
 Improvements:
-- feat: Add Analytics for attach images - MEED-2435 - Meeds-io/MIPs#53
-- feat: Allow to extend using load-group Analytics Cell Value - MEED-1275 - Meeds-io/MIPs#13
-- feat: Analytics for choosing to stick the menu - MEED-1841 - Meeds-io/meeds#776
-- feat: Collect statistics when Muting/Unmuting Spaces - MEED-2638 - Meeds-io/MIPs#97
-- feat: Delete AppCenter Mandatory Flag - MEED-3034 - Meeds-io/meeds#1371
-- feat: Delete useless polyfill JS resources dependency - Meeds-io/MIPs#52 - MEED-1891
-- feat: Margins cleanup - Remove extra-margins - MEED-2895-Meeds-io/MIPs#103
-- feat: Move Plugins configuration to WAR to avoid exceptions in UT - MEED-2811 - Meeds-io/MIPs#100
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Remove empty css block - Meeds-io/MIPs#103
-- feat: Rename Social Web Artifact - MEED-2632 - Meeds-io/MIPs#93
 
-eXo Gamification 2.5.0
+eXo Gamification 2.5.1
 *************************
 Fixes:
-- fix: Achievement is not clickable anymore - MEED-2028 - Meeds-io/meeds#878
-- fix: Achievement not accessible - MEED-2068 - Meeds-io/meeds#907
-- fix: Allow to add Rule even without attached images - MEED-2035 - Meeds-io/MIPs#53
-- fix: Allow to Program Member to access achievement of other Members - MEED-2566 - Meeds-io/meeds#1125
-- fix: Avoid gamifying like action on own activity or comment - MEED-2204 - Meeds-io/MIPs#50
-- Fix: Cancel a gamified event  - MEED-1842 - Meeds-io/meeds#775
-- Fix: Cancel a sent kudos - MEED-1692 - Meeds-io/meeds#771
-- fix: Cleanup and fix Meeds predefined Events usage - MEED-2363 - Meeds-io/MIPs#64
-- fix: Delete Activities Clearing when chaging user profile - MEED-2391 - Meeds-io/meeds#1048
-- fix: Delete radius on Badgers in Overview - MEED-3064 - Meeds-io/meeds#1427
-- fix: Delete useless Gamification Document Upload Event - MEED-2205 - Meeds-io/MIPs#50
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Description displays empty in program and rule description editors - MEED-1953 - Meeds-io/meeds#812
-- Fix: Engagement Center Cancel a challenge announcement - MEED-1691 - Meeds-io/meeds#221
-- Fix: Engagement Center Cancel an achievement - MEED-1609 - Meeds-io/meeds#221
-- fix: Enhance UX on User Gamification Widget - MEED-2847 - Meeds-io/MIPs#100
-- fix: Fix Achievements Application Margins - MEED-2372 - Meeds-io/meeds#1033
-- fix: Fix Achievements export and date filtering - MEED-2347 - Meeds-io/MIPs#50
-- fix: Fix Achievements list filtering - MEED-2224 - Meeds-io/MIPs#49
-- fix: Fix Action Form Disable Button - MEED-2596 - Meeds-io/meeds#1135
-- fix: Fix Action Rule Title emoji bad display - MEED-2384 - Meeds-io/meeds#1042
-- fix: Fix Admin Connector Configuration Display - MEED-3089 - Meeds-io/meeds#1461
-- fix: Fix Announcement Activity Comment Options - MEED-2296 - Meeds-io/MIPs#50
-- fix: Fix arrow-back color to go back to previous page - MEED-2740 -Meeds-io/meeds#1204
-- fix: Fix automatic event definition - MEED-2193 - Meeds-io/MIPs#49
-- fix: Fix Avatar and Banner Update Gamification - MEED-2202 - Meeds-io/MIPs#50
-- fix: Fix Canceling Gamification Action - MEED-2126 - Meeds-io/meeds#933
-- fix: Fix Challenge Title truncation in Realizations - MEED-1952 - Meeds-io/meeds#811
-- fix: Fix Disabled Program Display of CTA Button - MEED-2219 - Meeds-io/MIPs#49
-- fix: Fix display gamified portlet if not connected - MEED-2601 - Meeds-io/meeds#1141
-- fix: Fix Display of Action Activity Message - MEED-2380 - Meeds-io/meeds#1037
-- fix: Fix display of activities when program is deleted or disabled - MEED-2855 - Meeds-io/meeds#1250
-- fix: Fix Display of Emojis In Web Notifications - MEED-2319 - Meeds-io/MIPs#50
-- fix: Fix display of Program Drawer - MEED-2841 - Meeds-io/MIPs#100
-- fix: Fix Display of User Points - MEED-1929 - Meeds-io/meeds#770
-- fix: Fix Ellipsis for title - MEED-1621 - Meeds-io/meeds#1013
-- fix: Fix Exported File Header - MEED-2308 - Meeds-io/meeds#1011
-- fix: Fix I18N label initialization in Connectors - MEED-3073 - Meeds-io/meeds#1439
-- fix: Fix icon overflow in connectors -administration - MEED-3083 - Meeds-io/meeds#1446
-- fix: Fix labels for recognition menu - MEED-2351 - Meeds-io/MIPs#64
-- fix: Fix Labels in Public page Program CTA - MEED-2804 - Meeds-io/MIPs#100
-- fix: Fix loading I18N of Challenge in Stream - MEED-1970 - Meeds-io/meeds#832
-- fix: Fix Notification Extension Initialization - MEED-3086 - Meeds-io/meeds#1448
-- fix: Fix Pie Chart display in Widget when resizing window - MEED-2017 - Meeds-io/meeds#747
-- fix: Fix Program Card Avatars alignment and enhance error handling while saving - MEED-2222 - Meeds-io/MIPs#49
-- fix: Fix Program date info display - MEED-2123 - Meeds-io/meeds#930
-- fix: Fix Program Form Disable Button - MEED-2604 - Meeds-io/meeds#1144
-- fix: Fix Programs Toolbar Tab Margin - MEED-1289 - MEED-2171 - Meeds-io/MIPs#49
-- fix: Fix Realizations Filtering Algorithm - MEED-2121 - Meeds-io/meeds#928
-- fix: Fix Refreshing Challenges after update - MEED-2084 - Meeds-io/meeds#49
-- fix: Fix retrieving owner programs - MEED-2121 - Meeds-io/meeds#928
-- fix: Fix Retrieving Profile Stats when Program is Deleted - MEED-2891 - Meeds-io/MIPs#104
-- fix: Fix Rule Access link Menu Item - MEED-2349 - MEED-2350 - Meeds-io/MIPs#50
-- fix: Fix Rule displayed with another program while editing - MEED-2186 - Meeds-io/MIPs#49
-- fix: Fix Sorting Programs by Max Score - MEED-1653 - Meeds-io/meeds#837
-- fix: Fix Space Grant Host Event Name - MEED-2200 - Meeds-io/MIPs#50
-- fix: Fix Used Delimiter When Exporting XLSX - MEED-2308 - Meeds-io/meeds#1011
-- fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
-- fix: Fix Users Leaderboard computing - MEED-1957 - Meeds-io/meeds#816
-- fix: Fix using common JS Services before init - MEED-3070 - Meeds-io/meeds#1433
-- fix: Github connector fix display gamification connector user setting on mobile - MEED-2363 - Meeds-io/MIPs#64
-- fix: Implement new common connector extension - MEED-2962 - MEED-3080 - Meeds-io/meeds#1442 - Meeds-io/MIPs#105
-- fix: Improve extensibility by using an image to display the rule avatar - MEED-2766 - Meeds-io/MIPs#94
-- fix: Move PerkStore labels from Gamification - MEED-2013 - Meeds-io/meeds#864
-- fix: Move Task Labels to dedicated addon - MEED-2201 - Meeds-io/MIPs#50
-- fix: Placeholder visible while not needed
-- fix: Points for a program not ok with new add action drawer - MEED-2104 - Meeds-io/MIPs#49
-- fix: Program owner can see related achievements - MEED-2063 - Meeds-io/meeds#898
-- fix: Refresh Rule audience when changing domain audience - MEED-2112  Meeds-io/meeds#855
-- Fix: Reject all realization related to deleted activity or comment - MEED-1890 - Meeds-io/meeds#781
-- fix: Remove extra-margin to remove for connectors page - MEED-2741 -Meeds-io/meeds#1205
-- fix: Rework Domain Score Computing Query - MEED-1653
-- fix: Send a kudos from the overview page - MEED-2079 -Meeds-io/meeds#879
-- fix: Unable to create a declarative rule when using psql - EXO-67984 - meeds-io/meeds#1317
-- fix: Update the applications images in Contributions category of page editor - EXO-67096 - Meeds-io/meeds#1358
 
 Improvements:
-- feat: Action Announcement and Publishing Notifications - MEED-2280 - Meeds-io/MIPs#50
-- feat: Adapt Translation API behavior change - MEED-2512 - Meeds-io/MIPs#92
-- feat: Add action drawer rework - MEED-1677 - Meeds-io/MIPs#49
-- feat: Add Action score validation message - MEED-3002 - Meeds-io/meeds#1323
-- feat: Add Activity link for made announcement - MEED-1863 - Meeds-io/MIPs#49
-- feat: Add an action - Step 2 - Duration option - MEED-1678 - Meeds-io/MIPs#49
-- feat: Add Analytics for attach images - MEED-2435 - Meeds-io/MIPs#53
-- feat: Add confeti animation on action announcement - MEED-1863 - Meeds-io/MIPs#49
-- feat: Add Create Program Application - MEED-2804 - Meeds-io/MIPs#100
-- feat: Add Croper for Program cover and add Avatar on Program - MEED-1524 - Meeds-io/MIPs#49
-- feat: Add direct Link to expanded View of Action Drawer - MEED-2166 - Meeds-io/MIPs#49
-- feat: Add direct rule link from public site - MEED-2849 - Meeds-io/MIPs#100
-- feat: Add Edit and delete options in Rule Drawer - MEED-2190 - Meeds-io/MIPs#49
-- feat: Add gamification connector missing labels - MEED-2544 - MEED-2545 - Meeds-io/meeds#1107
-- feat: Add I18N Labels introduced by Meeds-io/MIPs#50 - MEED-2294
-- feat: Add List Drawers to Programs and rules Widgets - MEED-2848 - Meeds-io/MIPs#100
-- feat: Add List Meeds events in gamification admin UI - MEED-2544 - MEED-2545 - Meeds-io/meeds#1107
-- feat: Add lock option when adding a rule - MEED-1988 - Meeds-io/MIPs#49
-- feat: Add Profile Event Triggers - MEED-2206 - Meeds-io/MIPs#50
-- feat: Add Program Branding with user colors - MEED-2220 - Meeds-io/MIPs#49
-- feat: Add Program Drawer used in Overview Page - MEED-2078 - Meeds-io/MIPs#50
-- feat: Add Rule Dates Form Input with both start and end dates input - MEED-2157 - Meeds-io/MIPs#49
-- feat: Add Rule Favorite Button in Drawer and Card - MEED-2345 - Meeds-io/MIPs#50
-- feat: Add Rule Search Card - MEED-2096 - Meeds-io/MIPs#50
-- feat: Add SpaceId in Generated notifications to allow muting it - MEED-2598 - Meeds-io/MIPs#97
-- feat: Add Space Management Gamification Events - MEED-2263 - Meeds-io/MIPs#50
-- feat: Add Space Rules Widget - MEED-1819 - Meeds-io/MIPs#50
-- feat: Add Specific Mask for Program when audience deleted or user not whitelisted - MEED-2235 - Meeds-io/MIPs#49
-- feat: Add specific message when same event exists in program - MEED-2088 - Meeds-io/MIPs#49
-- feat: Add Tag Support on Rule Publications - MEED-2243 - Meeds-io/MIPs#50
-- feat: Add Widget For Stream Page - MEED-2323 - Meeds-io/MIPs#50
-- feat: Allow for a Program Host to access Programs Filter - MEED-1631 - Meeds-io/MIPs#49
-- feat: Allow Internal Users to View Rule Activity - MEED-2291 - Meeds-io/MIPs#50
-- feat: Allow Public Programs for all internal users, add translation for title and description and rework UI - MEED-1629 - Meeds-io/MIPs#49
-- feat: Allow to access Program and Rule details anonymously and secure other users information - MEED-2806 - Meeds-io/MIPs#100
-- feat: Allow to achieve actions for non-redactors - MEED-2252 - Meeds-io/meeds#991
-- feat: Allow to add video in Rule Publication Rich Editor - MEED-2357 - Meeds-io/meeds#1030
-- feat: Allow to an External User to access Open Program - MEED-2432 - Meeds-io/meeds#1078
-- feat: Allow to attach images to announcements - MEED-2035 - Meeds-io/MIPs#53
-- feat: Allow to delete Rule even not ended yet - MEED-1690 - Meeds-io/MIPs#49
-- feat: Allow to Gamify Space invitation action - MEED-2262 - Meeds-io/MIPs#50
-- feat: Allow to have a direct access to Achievement Tab - MEED-2335 - Meeds-io/MIPs#50
-- feat: Allow to list actions from Program Drawer - MEED-2878 - Meeds-io/MIPs#104
-- feat: Apply border-radius to Gamification applications - MEED-2653 - Meeds-io/MIPs#81
-- feat: Apply generic UI to existing portlet - MEED-2653 - Meeds-io/MIPs#81
-- feat: Attach an image to an action and to an announcement - MEED-2035 - Meeds-io/Mips#53
-- feat: Avoid disable program when having upcoming action - MEED-2250 - Meeds-io/meeds#989
-- feat: Border-radius for tab component - MEED-2729- Meeds-io/MIPs#81
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Change Achievements Toolbar Switch button - MEED-2170 - Meeds-io/MIPs#49
-- feat: Change announcements drawer by achievements drawer for Automatic and Manual actions - MEED-2179 - Meeds-io/MIPs#49
-- feat: Change Applications URL switch new Multi Site Strategy - MEED-2811 - Meeds-io/MIPs#100
-- feat: Change Placeholder Label - MEED-2853 - Meeds-io/MIPs#100
-- feat: Change Program Description Limit - MEED-2336 - Meeds-io/MIPs#50
-- feat: Change Reset Filter in Program Selector Drawer to Overall - MEED-2842 - Meeds-io/MIPs#100
-- feat: Change Rule Description Limit - MEED-2331 - Meeds-io/MIPs#50
-- feat: Change Rule Publication Limit - MEED-2331 - Meeds-io/MIPs#50
-- feat: Change URL when opening action drawer in public site - MEED-2911 - Meeds-io/MIPs#104 , the URL will be updated to give direct link to Action from Actions page.
-- feat: Clean Twitter static connector - MEED-2567 - MEED-2620 - Meeds-io/MIPs#94
-- feat: Configure gamification navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Contribution Center Action Activity - MEED-2238 - Meeds-io/MIPs#50 This change will allow to publish a new activity for each action.
-- feat: Contributions placeholder when no achievement found - MEED-1843 -   Meeds-io/meeds#709
-- feat: Delete Label from Actions Trends View - MEED-2189 - Meeds-io/MIPs#49
-- feat: Delete usage of Juzu and adapt Notification Settings - MEED-2445 - Meeds-io/MIPs#79
-- feat: Disable automatically programs without active rules - MEED-1631 - Meeds-io/MIPs#49
-- feat: Disabled challenge behaviors - MEED-1989 - Meeds-io/MIPs#49
-- feat: Disallow automatic actions for blacklisted users- MEED-2251 - Meeds-io/meeds#990
-- feat: Display Achievements Administration Switch button for program owners only - MEED-2128 - Meeds-ioMIPs#49
-- feat: Display automatic actions in challenges tab - MEED-1688 - Meeds-io/MIPs#49
-- feat: Display confirm closing drawer when editing action or program - MEED-1680 - Meeds-io/MIPs#49
-- feat: Display Disabled Action information in Drawer detail - MEED-2280 - Meeds-io/MIPs#50
-- feat: Display information about selected space subscription in program drawer - MEED-2804 - Meeds-io/MIPs#100
-- feat: Display no audience placeholder in program detail - MEED-2900 - Meeds-io/MIPs#104
-- feat: Display Overall participations In Rules Overview - MEED-2309 - Meeds-io/MIPs#50
-- feat: Display Placeholders When visiting empty profiles - MEED-2927 - Meeds-io/MIPs#104
-- feat: Display Rule Menu to Regular Users - MEED-2279 - Meeds-io/MIPs#50
-- feat: Display seeAll link of Overview Page Widgets on Mobile  - MEED-1839 - Meeds-io/meeds#747
-- feat: Display Selected User Profile in middle of podium - MEED-2893 - Meeds-io/MIPs#104
-- feat: Drop an image to an activity - MEED-2032 - Meeds-io/MIPs#53
-- feat: enable Embedded content in Rich editor of Rules - MEED-2439 - Meeds-io/meeds#1082
-- feat: Enhance Achievements filter UX - MEED-3051 - Meeds-io/meeds#1396
-- feat: Enhance Lock information in Action Card - MEED-2185 - Meeds-io/MIPs#49
-- feat: Enhance Padding of Announcement Rich Editor - MEED-2214 - Meeds-io/MIPs#49
-- feat: Enhance Program Card and Detail Cover and avatar display - MEED-2233 - Meeds-io/MIPs#49
-- feat: Enhance Rule cards UI - MEED-2218 - Meeds-io/MIPs#49
-- feat: Enhance Rule Card UX - MEED-2226 - Meeds-io/MIPs#49
-- feat: Enhance Rule Details Drawer with newly introduced validity conditions - MEED-1988 - Meeds-io/MIPs#49
-- feat: Enhance Rule Form in Expand view - MEED-2216 - Meeds-io/MIPs#49
-- feat: Enhance Rules Widget in Overview Page - MEED-2310 - Meeds-io/MIPs#50
-- feat: Enhance UX of Action Description Links Target - MEED-2264 - Meeds-io/meeds#996
-- feat: Fix End Date Display of Action in Activity Stream - MEED-2292 - Meeds-io/MIPs#50
-- feat: Fix gamifications portlet UI feedback - MEED-2653- Meeds-io/MIPs#81
-- feat: Gamification Connector Clean events after update config page- MEED-2887 - Meeds-io/MIPs#94
-- feat: Gamification connector List cancelled case - MEED-2441 - Meeds-io/MIPs#64
-- feat: Gamification connector List new events available - MEED-2428 - Meeds-io/MIPs#64
-- feat: Github connector List events available - MEED-2301 - Meeds-io/MIPs#64
-- feat: Hide Rule Drawer Menu when anonymous - MEED-2852 - Meeds-io/MIPs#100
-- feat: Implement Gamification Connector settings - MEED-2195 - MEED-2265 - Meeds-io/MIPs#64
-- feat: Implement Gamification Realization Analytics - MEED-2889 - Meeds-io/meeds#1265
-- feat: Implement Platform settings site - Meeds-io/MIPs#88
-- feat: Implement Search Rules switch user language using Translations - MEED-2109 - Meeds-io/MIPs#49
-- feat: Implement Translation Plugins for Rule Title & Description - MEED-2109 - Meeds-io/MIPs#49
-- feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
-- feat: Improve Activity and Notification display of deleted action - MEED-2872 - Meeds-io/meeds#1255
-- feat: Improve Layers and code readability after challenge and rule behavior merging - MEED-2094 - Meeds-io/MIPs#49
-- feat: Improve Leaderboard REST API Performances - MEED-2826 - Meeds-io/MIPs#100
-- feat: Improve Overview Leaderboard with filter drawer - MEED-2808 - Meeds-io/MIPs#100
-- feat: Improve URL for connectors - MEED-2408 - Meeds-io/MIPs#64
-- feat: Improve UX and CTA of Overview Widgets - MEED-2862 - Meeds-io/MIPs#104
-- feat: List Program administrators as owners - MEED-2831 - Meeds-io/MIPs#104
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Make Back Button Text clickable in Program Detail - MEED-2215 - Meeds-io/MIPs#49
-- feat: Make disable mask of program rounded - MEED-2219 - Meeds-io/MIPs#49
-- feat: Make page Size dynamic switch window height in Achievement Drawer - MEED-2875 - Meeds-io/MIPs#104
-- feat: Make Programs and rules publically accessible when Hub access is Open - MEED-2811 - Meeds-io/MIPs#100
-- feat: Margins cleanup - Remove extra-margins - MEED-2895-Meeds-io/MIPs#103
-- feat: Merge Activity Stream Events - MEED-2204 - Meeds-io/MIPs#50
-- feat: Modify Max length of program description - MEED-1835 - Meeds-io/MIPs#49
-- feat: Move administration site translation file config from translations.properties to crowdin.yml - Meeds-io/MIPs#88
-- feat: Move new placeholders to be reused in profile page - MEED-2894 - Meeds-io/MIPs#104
-- feat: Move Overview Page banner to Meeds - MEED-3025 - Meeds-io/meeds#1357
-- feat: Move Program Color Definition in first step - MEED-2805 - Meeds-io/MIPs#100
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: No addictional space bottom when hidden app - MEED-2924-Meeds-io/MIPs#103
-- feat: Open Announcement Notification Link in the same Browser Tab - MEED-2217 - Meeds-io/MIPs#49
-- feat: Open Profile Achievement Drawer from Action Drawer - MEED-2907 - Meeds-io/MIPs#104
-- feat: Placeholder not ok when loading overview - MEED-2795 - Meeds-io/MIPs#81
-- feat: Prepare new Messages for Overview Widget Placeholders - MEED-2804 - Meeds-io/MIPs#100
-- feat: Redirect To action drawer after login - MEED-2908 - Meeds-io/MIPs#104
-- feat: Remove add challenge from challenge tab - MEED-1682 - Meeds-io/MIPs#49
-- feat: Remove See All Link in Program Overview - MEED-2877 - Meeds-io/MIPs#104
-- feat: Remove Useless icon in Leaderboard - MEED-2846 - Meeds-io/MIPs#100
-- feat: Rename Challenges to EngagementCenter Portlet and optimize JS resources loading - Meeds-io/MIPs#52 - MEED-1891
-- feat: Rename packages and add Recurrence restriction in Rule Drawer - MEED-1987 - Meeds-io/MIPs#49
-- feat: Replace Overview Image portlet by CMS Image Portlet - MEED-2735 - Meeds-io/MIPs#98
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
-- feat: Reuse Archivements Drawer component in Gamification Widgets - MEED-2826 - Meeds-io/MIPs#100
-- feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
-- feat: Reuse Overview Widget Placeholder in Stream Page - MEED-2832 - Meeds-io/MIPs#104
-- feat: Reuse Profile Stats component in My contributions Widget - MEED-2850 - Meeds-io/MIPs#104
-- feat: Review Action Card Points Color - MEED-2228 - Meeds-io/MIPs#49
-- feat: Review Challenge Cards - MEED-2106 - Meeds-io/MIPs#49
-- feat: Review Connector events display - MEED-2504 - Meeds-io/MIPs#64
-- feat: Review Programs List Overview Widget - MEED-2314 - Meeds-io/MIPs#50
-- feat: Rework Application Toolbar and Views with Search Behavior - MEED-2172
-- feat: Rework Engagement Center Actions Tab - MEED-2172 - MEED-1687 - Meeds-io/MIPs#49
-- feat: Rework Overview Widgets Placeholders - MEED-2860 - Meeds-io/MIPs#104
-- feat: Rework Program Detail when newly created or disabled - MEED-1630 - Meeds-io/MIPs#49
-- feat: Re-work Rule Drawer Detail - MEED-2181 - Meeds-io/MIPs#49
-- feat: Rework Space Rules Widget - MEED-2320 - Meeds-io/MIPs#50
-- feat: Rework UI/UX of Leaderboard - MEED-2810 - Meeds-io/MIPs#100
-- feat: Rules Overview Widget UX - MEED-1864 - Meeds-io/MIPs#50
-- feat: Split Contribution Center to three distinct pages - MEED-2248 - Meeds-io/MIPs#50
-- feat: Tooltip for Conditions not implemented - MEED-2083 - Meeds-io/MIPs#49
-- feat: Transform Announcement publication to Activity comment - MEED-2244 - Meeds-io/MIPs#50
-- feat: Trigger Activity Pin Gamification Event - MEED-2207 - Meeds-io/MIPs#50
-- feat: Update action drawer rework - MEED-1679 - Meeds-io/MIPs#49
-- feat: Update gamification admin - MEED-2274 - Meeds-io/MIPs#64
-- feat: Update titles color in program details page  - MEED-1815 - Meeds-io/meeds#858
-- feat: Update upcoming connectors - MEED-2694 - Meeds-io/meeds#1172
-- feat: Use Extended CKEditor configuration - MEED-2058 - Meeds-io/MIPs#59
-- feat: Use option to Date Picker Component to enhance Rule Form UX - MEED-2085 - Meeds-io/MIPs#49
 
-eXo Web-Conferencing 2.5.0
+eXo Web-Conferencing 2.5.1
 *************************
 Fixes:
-- fix: Fix administration site nodes order - EXO-67778
-- fix: Fix displaying analytics page - EXO-67565
-- fix: jitsi call button is not well displayed in left menu level 2 - EXO-66752
-- fix: Preserve webconf_session_token cookie httponly and secure state for logout filter
-- fix: Update web notification template from gtmpl to vue - EXO-66415
+- fix: Display of call button in mobile device - EXO-67690 - Meeds-io/meeds#1586 .
+- fix: Retrieve current space without using Webui context - EXO-68991
+- fix: WebConferencing admin portlet not working - EXO-67648
 
 Improvements:
-- feat: Configure web-conferencing navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Remove useless administration pages and navigations - EXO-67268 - Meeds-io/MIPs#88
+- feat: Add the new external video connector to the Videoconferencing administration page - EXO-68655
+- feat: Fix connector subtitle in videoconferencing administration page - EXO-68968
+- feat: Implement changes in the WebConferencing administration page - EXO-68226
 
-eXo Perk-Store 2.5.0
+eXo Perk-Store 2.5.1
 *************************
 Fixes:
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Fix merge MIPs-88 - Meeds-io/MIPs#88
-- fix: Fix Metamask Image URL - MEED-2092 - Meeds-io/meeds#920
-- fix: Fix Perks Deletion process - MEED-2382 This change is changing the permissions to check when deleting a perk to only managers instead of all members of audience.
-- fix: Fix referencing mandatory Wallet JS resources - MEED-3024 - Meeds-io/meeds#1351
-- fix: Move PerkStore labels from Gamification - MEED-2013 - Meeds-io/meeds#864
-- fix: Perkstore page - placeholder review-MEED-2839-Meeds-io/meeds#849
-- fix: wrong column type for Product.isdeleted in postgresql - Meeds-io/meeds#791 - EXO-63088
 
 Improvements:
-- feat: Add direct access URL to open product form - MEED-2863 - Meeds-io/MIPs#104
-- feat: Add Notification Administration Label - MEED-2445 - Meeds-io/MIPs#79
-- feat: Apply Generic UI to existing portlet perkstore - MEED-2657 - Meeds-io/MIPs#81
-- feat: Border-radius for tab component - MEED-2729 - Meeds-io/MIPs#81
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Cleanup Useless Configuration already defined in upper layer and define Perk Store Configuration in a standalone File - MEED-1451 - Meeds-io/MIPs#42
-- feat: Configure perk-store navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Delete AppCenter Mandatory Flag - MEED-3034 - Meeds-io/meeds#1371
-- feat: Delete useless polyfill JS resources dependency - Meeds-io/MIPs#52 - MEED-1891
-- feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
-- feat: Implement Platform settings site - Meeds-io/MIPs#88
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Perkstore toolbar enhancement - MEED-2015 - Meeds-io/meeds#865
-- feat: Refactor Move Administration to Setup Page - MEED-2896 - Meeds-io/meeds#1271
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
-- feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
-- feat: Update gamification admin - MEED-2274 - Meeds-io/MIPs#64
 
-eXo Kudos 2.5.0
+eXo Kudos 2.5.1
 *************************
 Fixes:
-- fix: Add some enhancements to the the activity toolbar icons - MEED-2581 - Meeds-io/MIP#54
-- fix: Adjust the author items to the left in the kudos drawer - MEED-2821 - meeds-io/meeds#1245
-- fix: Adjust the display of icons used in the composer drawer - MEED-2606 -Meeds-io/MIP#54
-- fix: Adjust the kudos CTA from general stream - MEED-2568 - Meeds-io/MIP#54
-- fix: Adjust the padding between receiver and audience - MEED-2599 -Meeds-io/meeds#1140
-- fix: Align action labels below the composer - MEED-2609 -Meeds-io/MIP#54
-- Fix: Cancel a sent kudos - MEED-1692 - Meeds-io/meeds#771
-- fix: Clean the kudos drawer after sending one to a user - MEED-2585 - Meeds-io/MIP#54
-- fix: Delete Asynchronous Kudos Comment deletion when canceled - MEED-2381 - Meeds-io/meeds#1039
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Fix Cancel Sending Kudos Achievement status - MEED-2027 - Meeds-io/meeds#921
-- fix: Fix Kudos Sending outside of activities - MEED-2476 - Meeds-io/meeds#1090
-- fix: Fix Send and Receive Kudos event names initialization - MEED-2193 - Meeds-io/MIPs#49
-- fix: Fix sending Kudos from space Stream - MEED-3071 - Meeds-io/meeds#1435
-- fix: Fix the audience kudos drawer display when hover a profile - MEED-2624 -Meeds-io/meeds#1150
-- fix: Fix the padding between the audience and chosen audience - MEED-2580 - Meeds-io/MIP#54
-- fix: Fix the send kudos button activation - MEED-2443 - Meeds-io/MIPs#54
-- fix: Fix the users mention in CKeditor for the kudos case - MEED-2749 - Meeds-io/meeds#1200
-- fix: Fix used meta site name reference - MEED-3024 - Meeds-io/meeds#1351
-- fix: Hide audience when sending kudos through an activity or a comment - MEED-2597 -Meeds-io/meeds#1136
-- fix: Improve the toolbar post CTA - MEED-2401 - Meeds-io/MIPs#54
-- Fix: Option to delete a kudos message - MEED-1890 - Meeds-io/meeds#781
-- fix: Remove placeholder when editing an activity - MEED-2444 - Meeds-io/MIPs#54
-- fix: Reset the audience field to empty after closing send kudos drawer - MEED-2801 - Meeds-io/meeds#1223
-- fix: Review the display of the composer drawer when space audience chosen - MEED-2569 - Meeds-io/MIP#54
-- fix: Update the kudos receiver - MEED-2598 -Meeds-io/meeds#1137
-- fix: Update the kudos receiver - MEED-2777 -Meeds-io/meeds#1211
-- fix: Update the receiver field after sending kudos - MEED-2419 - Meeds-io/MIPs#54
 
 Improvements:
-- feat: Add a tooltip in the kudos drawer for reset audience icon - MEED-2584 - Meeds-io/MIP#54
-- feat: Add Attach images integration to Kudos - MEED-2034 - Meeds-io/MIPs#53
-- feat: Add CTAs below the post CTA - MEED-2072 - Meeds-io/MIPs#54
-- feat: Add kudos overview row component - MEED-2676 - Meeds-io/MIPs#81
-- feat: Add Notification Administration Label - MEED-2445 - Meeds-io/MIPs#79
-- feat: Add SpaceId in Generated notifications to allow muting it - MEED-2598 - Meeds-io/MIPs#97
-- feat: Add the ability to send a kudos from genral stream- MEED-2076 - Meeds-io/MIP#54
-- feat: Add the ability to send a kudos from the composer - MEED-2071 - Meeds-io/MIPs#54
-- feat: Adjust the CTAs display from the general stream - MEED-2073 - Meeds-io/MIPs#54
-- feat: Allow to hide Kudos Button in specific activities - MEED-2239 - Meeds-io/MIPs#50
-- feat: Allow to send Kudos even on owned activity - MEED-2838 - Meeds-io/meeds#1068
-- feat: Apply border-radius to apps
-- feat: Border-radius for tab component - MEED-2729- Meeds-io/MIPs#81
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Change default kudos period to one Week - MEED-2008 - Meeds-io/meeds#860
-- feat: Configure kudos navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Delete useless polyfill JS resources dependency - Meeds-io/MIPs#52 - MEED-1891
-- feat: Disable double notification when recieving a Kudos - MEED-1650 - Meeds-io/meeds#576
-- feat: Disable send kudos button when no receiver has been added - MEED-2418 - Meeds-io/MIPs#54
-- feat: Display Kudos Placeholder Widget When visiting empty profiles - MEED-2927 - Meeds-io/MIPs#104
-- feat: Drop an image to an activity - MEED-2032 - Meeds-io/MIPs#53
-- feat: enable Kudos Space Web Notification - MEED-2662 - Meeds-io/meeds#1157
-- feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
-- feat: Enhance Kudos Overview Display - MEED-2860 - Meeds-io/MIPs#104
-- feat: Gamification connector Fix Kudos gamification event config - MEED-2441 - Meeds-io/MIPs#64
-- feat: Implement Platform settings site - Meeds-io/MIPs#88
-- feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
-- feat: Kudos drawer cannot be opened anymore - MEED-2781 -Meeds-io/MIPs#81
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Move kudos gamification labels - MEED-2544 -  Meeds-io/meeds#1107
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Refactor Move Administration to Setup Page - MEED-2896 - Meeds-io/meeds#1271
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
-- feat: Rework Unit Test for more appropriate dependencies and clean configuration - MEED-1451 - Meeds-io/MIPs#42
-- feat: Update gamification admin - MEED-2274 - Meeds-io/MIPs#64
 
-eXo kernel 6.5.0
+eXo kernel 6.5.1
 *************************
 Fixes:
-- fix: Add exception for mocked classes with security manager - EXO-65023 - Meeds-io/meeds#1084 #59
-- fix: Fix Heavy Addons deployments in Kernel Startup - MEED-1965 - Meeds-io/meeds#829
 
 Improvements:
-- feat: Move useless lib definition into kernel - Meeds-io/MIPs#42
 
-eXo Push-Notifications 2.5.0
+eXo Push-Notifications 2.5.1
 *************************
 Fixes:
-- fix: Add activity/comment link for push notification - EXO-67587 - Meeds-io/meeds#1299
-- fix: Add company name from Branding service for the Push notification title to fix NPE - EXO-63726 - Meeds-io/meeds#904
-- fix: Fix Mobile Push Notification Message content processing - MEED-2556 - Meeds-io/meeds#1119
-- fix: Social notifications are not displayed inline - EXO-67216 - meeds-io/meeds#1241
 
 Improvements:
-- feat: Add Transitive dependencies Moved from Portal to Social - MEED-1451 - Meeds-io/MIPs#42
-- feat: Delete useless definition of portal skin - Meeds-io/MIPs#52 - MEED-1891
-- feat: Remove useless dependency to WebNotification Template - MEED-2447 - Meeds-io/MIPs#80
 
-eXo App-Center 2.5.0
+eXo App-Center 2.5.1
 *************************
 Fixes:
-- fix: Addressing XSS vulnerability during application creation - EXO-67968 - Meeds-io/meeds#1441
-- fix: Fix displaying app center cards - EXO-62978 - Meeds-io/meeds#785
-- fix: Fix the empty application center list on a new server - EXO-68230 - Meeds-io/meeds#1462
-- fix: Increase the application center permission column max length - EXO-66927 - Meeds-io/meeds#1240
 
 Improvements:
-- feat: Apply border-radius to apps
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Configure app-center navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Delete useless JS resources dependency - Meeds-io/MIPs#52 - MEED-1891
-- feat: Display placeholder when Launcher Empty - MEED-3034 - Meeds-io/meeds#1371
-- feat: fix admin setup border radius - MEED-2729- Meeds-io/MIPs#81
-- feat: Implement Platform settings site - Meeds-io/MIPs#88
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: Remove load more button when no more items to display - MEED-2024 - Meeds-io/meeds#873
-- feat: UI enhancements of application cards - MEED-1836 - Meeds-io/meeds#691
-- feat: Update General node icon - EXO-66902 - Meeds-io/MIPs#88
 
-eXo Wallet 2.5.0
+eXo Wallet 2.5.1
 *************************
 Fixes:
-- fix: Delete useless Mocked methods - MEED-1580 - Meeds-io/meeds#1428
-- fix: Display wallet settings in Space Settings - MEED-3058 - Meeds-io/meeds#1412
-- fix: Enhance Wallet Funds Display in Notifications - MEED-2528 - Meeds-io/MIPs#80
-- fix: Fix Accepting Funds Request Url - MEED-3060 - Meeds-io/meeds#1413
-- fix: Fix Display of Rewarded Transaction information when duplicated in database - MEED-2455 - Meeds-io/meeds#1086
-- fix: Fix display of Space Wallet Creation for to non managers - MEED-3059 - Meeds-io/meeds#1418
-- fix: Fix Initializing Wallet Upcoming Reward Overview - MEED-2311 - Meeds-io/meeds#1012
-- fix: Fix wallet association for same address - MEED-2318
-- fix: Fix Wallet Main Currency Name - MEED-2307 - Meeds-io/meeds#1010
-- fix: Fix Wallet Reward Computing Job - MEED-2455 - Meeds-io/meeds#1086
-- fix: Fix Wallet Rewards Report notification sending - MEED-2394 - Meeds-io/meeds#1051
-- fix: Improve display Wallet Overview UX - MEED-2311 - Meeds-io/meeds#1012
-- fix: Update the wallet application image of page editor - EXO-67096 - Meeds-io/meeds#1358
 
 Improvements:
-- feat: Add I18N Labels introduced by Meeds-io/MIPs#50 - MEED-2294
-- feat: Add Notification Administration Label - MEED-2445 - Meeds-io/MIPs#79
-- feat: Add Wallet Initialization Gamification Trigger - MEED-2208 - Meeds-io/MIPs#50
-- feat: Allow to start even if wallet admin key is not ok - Meeds-io/meeds#1028
-- feat: Apply border-radius to apps
-- feat: Centralize Administration Site definition - MEED-3007 - Meeds-io/meeds#1327
-- feat: Change Wallet Request Funds Link to dApp - MEED-2009 - Meeds-io/meeds#861
-- feat: Collect statistics when Rewards sent - MEED-2890 - Meeds-io/meeds#1266
-- feat: Configure default icon for the the wallet node of new space with "community" space template - EXO-66660 - Meeds-io/MIPs#95
-- feat: Configure wallet navigation and pages for administration site - EXO-66546_66871 - Meeds-io/MIPs#88
-- feat: Container margins managements - MEED-2867-Meeds-io/Mips#103
-- feat: Delete AppCenter Mandatory Flag - MEED-3034 - Meeds-io/meeds#1371
-- feat: Enable Push notifications Channel when addon installed - MEED-2062 - Meeds-io/meeds#900
-- feat: Exclude bcprov-jdk15on from wallet packaging - EXO-59676 - Meeds-io/MIPs#69
-- feat: Gamification connector Fix wallet gamification event config - MEED-2441 - Meeds-io/MIPs#64
-- feat: Implement Platform settings site - Meeds-io/MIPs#88
-- feat: Improve Achievements link processing - MEED-2917 - Meeds-io/MIPs#104
-- feat: Make administration site containers and applications accessible to everyone - EXO-67250 - Meeds-io/MIPs#88
-- feat: Margins cleanup - Remove extra-margins - MEED-2895-Meeds-io/MIPs#103
-- feat: Move sites definition into common extension - MEED-2811 - Meeds-io/MIPs#100
-- feat: No access to items that are overflow - MEED-2728-Meeds-io/MIP#81
-- feat: Refactor Wallet Administration to move in Setup UI - MEED-2896 - Meeds-io/meeds#1271
-- feat: Remove spaces-templates-configuration configuration from wallet  - Meeds-io/MIPs#95
-- feat: Replace Web Notification rendering engine from gtmpl to Vue - MEED-2479 - Meeds-io/MIPs#80
-- feat: Reuse centralized Toast Notifs component - MEED-2627 - Meeds-io/MIPs#99
-- feat: Stop Server Startup When Admin Wallet Password Parameter changes - MEED-2303 - Meeds-io/meeds#1008
-- feat: Update gamification admin - MEED-2274 - Meeds-io/MIPs#64
-- feat: Update Gamification API usage - MEED-1987 - MEED-2094 - Meeds-io/MIPs#49
