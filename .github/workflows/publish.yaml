@@ -35,10 +35,10 @@ jobs:
             cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
             echo "<h2>What's Changed</h2>" > README.md
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "<h3>Features:</h3>" >> README.md && echo "<ul>" >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E -e 's/[<>]//g' -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "</ul>" >> README.md
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "<h3>Bug fixes:</h3>" >> README.md && echo "<ul>" >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
+            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E -e 's/[<>]//g' -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "</ul>" >> README.md
             rm -v CHANGE_LOG.txt
       - name: release
