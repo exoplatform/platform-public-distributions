@@ -66,12 +66,6 @@
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.addons.layout-management</groupId>
-      <artifactId>layout-management-packaging</artifactId>
-      <scope>provided</scope>
-      <type>zip</type>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.addons.jitsi</groupId>
       <artifactId>web-conferencing-jitsi-packaging</artifactId>
       <version>${addon.exo.jitsi.version}</version>
@@ -316,9 +310,6 @@
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.ecms.id}:${addon.exo.ecms.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
-                </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.exo.layout-management.id}:${addon.exo.layout-management.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.jitsi.id}:${addon.exo.jitsi.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />

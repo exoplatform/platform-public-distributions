@@ -63,8 +63,6 @@
     <addon.exo.tasks.version>7.0.x-exo-SNAPSHOT</addon.exo.tasks.version>
     <addon.exo.web-conferencing.id>exo-web-conferencing</addon.exo.web-conferencing.id>
     <addon.exo.web-conferencing.version>7.0.x-SNAPSHOT</addon.exo.web-conferencing.version>
-    <addon.exo.layout-management.id>exo-layout-management</addon.exo.layout-management.id>
-    <addon.exo.layout-management.version>7.0.x-SNAPSHOT</addon.exo.layout-management.version>
     <addon.exo.jitsi.id>exo-jitsi</addon.exo.jitsi.id>
     <addon.exo.jitsi.version>7.0.x-SNAPSHOT</addon.exo.jitsi.version>
     <addon.exo.analytics.id>exo-analytics</addon.exo.analytics.id>
@@ -103,13 +101,6 @@
         <groupId>org.exoplatform.addons.digital-workplace</groupId>
         <artifactId>digital-workplace-packaging</artifactId>
         <version>${addon.exo.digital-workplace.version}</version>
-        <scope>provided</scope>
-        <type>zip</type>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.layout-management</groupId>
-        <artifactId>layout-management-packaging</artifactId>
-        <version>${addon.exo.layout-management.version}</version>
         <scope>provided</scope>
         <type>zip</type>
       </dependency>
