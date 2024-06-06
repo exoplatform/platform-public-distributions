@@ -73,8 +73,6 @@
     <addon.exo.digital-workplace.version>7.0.x-SNAPSHOT</addon.exo.digital-workplace.version>
     <addon.exo.data-upgrade.id>exo-data-upgrade</addon.exo.data-upgrade.id>
     <addon.exo.data-upgrade.version>7.0.x-SNAPSHOT</addon.exo.data-upgrade.version>
-    <addon.exo.news.id>exo-news</addon.exo.news.id>
-    <addon.exo.news.version>7.0.x-SNAPSHOT</addon.exo.news.version>
     <addon.exo.onlyoffice.id>exo-onlyoffice</addon.exo.onlyoffice.id>
     <addon.exo.onlyoffice.version>7.0.x-SNAPSHOT</addon.exo.onlyoffice.version>
     <addon.exo.chat.id>exo-chat</addon.exo.chat.id>
@@ -143,13 +141,6 @@
         <groupId>org.exoplatform.addons.upgrade</groupId>
         <artifactId>data-upgrade-packaging</artifactId>
         <version>${addon.exo.data-upgrade.version}</version>
-        <type>zip</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.news</groupId>
-        <artifactId>news-packaging</artifactId>
-        <version>${addon.exo.news.version}</version>
         <type>zip</type>
         <scope>provided</scope>
       </dependency>

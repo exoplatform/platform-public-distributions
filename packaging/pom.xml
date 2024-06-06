@@ -104,12 +104,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.addons.news</groupId>
-      <artifactId>news-packaging</artifactId>
-      <type>zip</type>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.addons.onlyoffice</groupId>
       <artifactId>exo-onlyoffice-editor-packaging</artifactId>
       <type>zip</type>
@@ -316,9 +310,6 @@
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                  <arg line="install ${addon.exo.agenda.id}:${addon.exo.agenda.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
-                </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.exo.news.id}:${addon.exo.news.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.onlyoffice.id}:${addon.exo.onlyoffice.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
