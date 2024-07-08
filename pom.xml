@@ -22,7 +22,7 @@
   <parent>
     <artifactId>maven-exo-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>27-M03</version>
+    <version>27-M04</version>
     <relativePath />
   </parent>
   <groupId>org.exoplatform.platform.distributions</groupId>
@@ -59,14 +59,14 @@
     <addon.exo.jcr.version>7.0.x-SNAPSHOT</addon.exo.jcr.version>
     <addon.exo.ecms.id>exo-ecms</addon.exo.ecms.id>
     <addon.exo.ecms.version>7.0.x-SNAPSHOT</addon.exo.ecms.version>
-    <addon.exo.tasks.id>exo-tasks</addon.exo.tasks.id>
-    <addon.exo.tasks.version>7.0.x-exo-SNAPSHOT</addon.exo.tasks.version>
+    <addon.meeds.tasks.id>meeds-tasks</addon.meeds.tasks.id>
+    <addon.meeds.tasks.version>7.0.x-exo-SNAPSHOT</addon.meeds.tasks.version>
     <addon.exo.web-conferencing.id>exo-web-conferencing</addon.exo.web-conferencing.id>
     <addon.exo.web-conferencing.version>7.0.x-SNAPSHOT</addon.exo.web-conferencing.version>
     <addon.exo.jitsi.id>exo-jitsi</addon.exo.jitsi.id>
     <addon.exo.jitsi.version>7.0.x-SNAPSHOT</addon.exo.jitsi.version>
-    <addon.exo.analytics.id>exo-analytics</addon.exo.analytics.id>
-    <addon.exo.analytics.version>7.0.x-exo-SNAPSHOT</addon.exo.analytics.version>
+    <addon.meeds.analytics.id>meeds-analytics</addon.meeds.analytics.id>
+    <addon.meeds.analytics.version>7.0.x-exo-SNAPSHOT</addon.meeds.analytics.version>
     <addon.exo.agenda.id>exo-agenda</addon.exo.agenda.id>
     <addon.exo.agenda.version>7.0.x-SNAPSHOT</addon.exo.agenda.version>
     <addon.exo.digital-workplace.id>exo-digital-workplace</addon.exo.digital-workplace.id>
@@ -81,8 +81,8 @@
     <addon.exo.automatic-translation.version>7.0.x-SNAPSHOT</addon.exo.automatic-translation.version>
     <addon.exo.documents.id>exo-documents</addon.exo.documents.id>
     <addon.exo.documents.version>7.0.x-SNAPSHOT</addon.exo.documents.version>
-    <addon.exo.push-notifications.id>meeds-push-notifications</addon.exo.push-notifications.id>
-    <addon.exo.push-notifications.version>7.0.x-exo-SNAPSHOT</addon.exo.push-notifications.version>
+    <addon.meeds.push-notifications.id>meeds-push-notifications</addon.meeds.push-notifications.id>
+    <addon.meeds.push-notifications.version>7.0.x-exo-SNAPSHOT</addon.meeds.push-notifications.version>
     <!-- Add-on manager extension to use (empty for Unix, .bat for Windows) -->
     <addon.manager.extension />
   </properties>
@@ -173,9 +173,9 @@
         <type>zip</type>
       </dependency>
       <dependency>
-        <groupId>org.exoplatform.addons.push-notifications</groupId>
-        <artifactId>exo-push-notifications-addon-packaging</artifactId>
-        <version>${addon.exo.push-notifications.version}</version>
+        <groupId>io.meeds.push-notifications</groupId>
+        <artifactId>push-notifications-packaging</artifactId>
+        <version>${addon.meeds.push-notifications.version}</version>
         <type>zip</type>
         <scope>provided</scope>
       </dependency>
