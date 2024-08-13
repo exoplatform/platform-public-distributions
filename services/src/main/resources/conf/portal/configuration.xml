@@ -34,8 +34,15 @@
         <property name="exo.feature.EditorAttachImage.enabled" value="${exo.feature.EditorAttachImage.enabled:true}" />
         <property name="exo.feature.PostToNetwork.enabled" value="${exo.feature.PostToNetwork.enabled:true}" />
         <property name="exo.feature.metamaskLogin.enabled" value="${exo.feature.metamaskLogin.enabled:false}" />
+        <property name="exo.feature.pwa.enabled" value="${exo.feature.pwa.enabled:true}" />
+      </properties-param>
+      <properties-param>
+        <name>PWA-Properties</name>
+        <property name="pwa.manifest.description" value="${pwa.manifest.description:meeds.pwa.manifest.description}" />
+        <property name="pwa.manifest.version" value="${pwa.manifest.version:1}" />
       </properties-param>
     </init-params>
   </component>
+  
 
 </configuration>
