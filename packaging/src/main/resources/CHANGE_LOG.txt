@@ -1,140 +1,139 @@
 =========================
-Changelog Platform 6.5.3
+Changelog Platform 6.5.4
 =========================
 
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
 
-eXo ECMS 6.5.3
+eXo ECMS 6.5.4
 *************************
 Fixes :
-- fix: Can't resize snv images in Mozilla - EXO-71264
+- fix: Redirect should be to related to current page after editing attachment  - EXO-71706
 
 Improvements:
 
-eXo Social 6.5.3
+eXo Social 6.5.4
 *************************
 Fixes :
-- fix: Unexpected attributes displayed - EXO-71322 - Meeds-io/meeds#1915
-- fix: Fix enabled/disabled button in about me section in user's profile according to chars number
-- fix: Redirection ko following space binding - EXO-71024 - Meeds-io/meeds#1919
-- fix: Add connections field to the ES mapping - EXO-71633 - Meeds-io/meeds#1961
-- fix: Users management / search isn't working - EXO-71616 -Meeds-io/meeds#1964
-- fix: Update linked-in oauth to use openid endpoints - EXO-71792
-- fix: Un-limit the number of spaces to display in the External spaces portlet - EXO-61391 - Meeds-io/meeds#1828
-- fix: Notification are updated even if nothing modified - EXO-72161
-- fix: Fix different problems when using a profile property multivalued, linked to a group - EXO-72017
+- fix: Improve profile search in ES - EXO-71595 - Meeds-io/meeds#2072
+- fix: Quicksearch result is not correct - EXO-70143 - Meeds-io/MIPs#110
+- fix: non editable properties should be reindexed - EXO-72733 - Meeds-io/meeds#2237
+- fix: When wellKnownUrl is temporary not reachable, and get back online, the OIDC login not working - EXO-62561
+- fix: Link should be opened in new tab yet it opens in the same tab - EXO-71860 - Meeds-io/meeds#2214
 
 Improvements:
-- feat: Allow to add more than one current job experience - MEED-6346 - Meeds-io/meeds#1918
+- feat: Allow advanced filter api to filter by queried name along with profile settings - EXO-70332 - Meeds-io/MIPs#110
+- feat: Exclude unneeded profile properties in the building of the complementary filter - EXO-69731 - Meeds-io/MIPs#110
 
-eXo News 2.5.3
+eXo News 2.5.4
 *************************
 Fixes:
-- fix : Published news related email displays truncated border and content - EXO-72017
-- fix: News-list display on right block - EXO-71852
-- fix: News article's title isn't displayed in related email's notification content - EXO-72226
-- fix: News-list display on right block - EXO-71852
-- fix: News article's title isn't displayed in related email's notification content - EXO-72226
+- fix: Search news by title or summary is not working - EXO-72721
+- fix: Space publisher is able to choose all space members as target audience - EXO-71975 - Meeds-io/meeds#2199
+- fix: Enhance see more button display in Stories template - EXO-70399 - Meeds-io/meeds#2296
 
 Improvements:
 
 eXo Task 3.5.3
 *************************
 Fixes :
-- fix: Fix empty labels drawer & glitched display of filtered tasks after a task archive - EXO-67205 Meeds-io/meeds#2004
-- fix: Project detail labels can be out of screen when the status name is long - EXO-39839 - Meeds-io/meeds#1922
+- fix: Prevent a project from being cloned by a user which have not edit rights - EXO-73660
 
 Improvements:
 
-eXo Commons 6.5.3
+eXo Commons 6.5.4
 *************************
 Fixes :
-- fix: When username have email format, field from and to of the email are not correct - EXO-72048
-- fix: Can't resize snv images in Mozilla - EXO-71264 - Meeds-io/meeds#1965
+- fix: Fix preserving Image EXIF Orientation Metadata after scaling - MEED-2471 - Meeds-io/meeds#1126
 
 Improvements:
 
-eXo Gatein-Portal 6.5.3
+eXo Gatein-Portal 6.5.4
 *************************
 Fixes :
-- fix : Fill cache of InMemoryGroupDaoHandler with a Modifiable Map - EXO-72017
+- fix: Username need to be cleaned up to remove accents on registering new account - EXO-72767 - meeds-io/meeds#2251
 
 Improvements:
 
 eXo Notes 1.3.3
 *************************
 Fixes :
-- fix: Notes creation/update title hidden on mobile view mode- EXO-71328 - Meeds-io/meeds#1909
+- fix: Search by tag doesn't display any note in result - EXO-73805
+- fix: Import note generate new folder in doc app while it has to be located under the root of the space instead of under the Documents folder- EXO-71883 - Meeds-io/meeds#2315
 
 Improvements:
 
-eXo OnlyOffice 2.5.3
+eXo OnlyOffice 2.5.4
+*************************
+Fixes :
+- fix: Redirect should be to related to current page after editing attachment - EXO-71706
+
+Improvements:
+
+eXo Platform-UI 6.5.4
 *************************
 Fixes :
 
 Improvements:
 
-eXo Platform-UI 6.5.3
+eXo Layout-Management 1.5.4
 *************************
-Fixes :
+Fixes:
+- fix: Translated labels not loaded - EXO-73828
 
 Improvements:
 
-eXo Layout-Management 1.5.3
+eXo Jitsi 1.4.4
+*************************
+Fixes:
+- fix: user profile - bug - start a call button has different display - EXO-71671
+
+Improvements:
+
+eXo Jitsi-call 1.4.4
+*************************
+Fixes:
+- fix: Fix js error displayed in console due to wrong path for a css file - EXO-73780
+- fix: Add button "more" in settings menu - EXO-72638
+
+Improvements:
+
+eXo Mail Integration 1.2.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo Jitsi 1.4.3
+eXo Documents 1.2.4
 *************************
 Fixes:
-- fix: Unable to deactivate jitsi in a space - EXO-71467
+- fix: Details drawer of documents memorize description - EXO-72820
+- fix: Delete document: file reappear again - EXO-72918
+- fix: Wrong creator on file and folder symlink when designate as collaborator - EXO-72919
+- fix: Download selected documents / folders : Zip creation issue and empty zip - EXO-72976
+- fix: Document app preferences never saved after server restart in App center- EXO-72235
 
 Improvements:
 
-eXo Jitsi-call 1.4.3
+eXo Agenda 1.4.4
 *************************
 Fixes:
+- fix: Agenda timeline gadget do not correctly display webconferencing providers - EXO-72163
 
 Improvements:
 
-eXo Mail Integration 1.2.3
-*************************
-Fixes:
-
-Improvements:
-
-eXo Documents 1.2.3
-*************************
-Fixes:
-- fix: Space home application : Documents vue change isn't working - EXO-71534
-- fix: Upload/create documents after the use of go to location action saves the item in the root folder - EXO-71438
-- fix: Favorite's Documents filter issue - EXO-70647
-
-Improvements:
-
-eXo Agenda 1.4.3
-*************************
-Fixes:
-
-Improvements:
-
-eXo Agenda Connectors 1.2.3
+eXo Agenda Connectors 1.2.4
 ****************************
 Fixes:
-- fix: Can't connect Google calendar account - EXO-71912
 
 Improvements:
 
 eXo Chat 3.5.3
 *************************
 Fixes:
-- fix: Send a message - Word is displayed on two lines - EXO-72068
-- fix: Bad display of content and can't send the message through Send button - EXO-71791
-- fix: Text replacement with copy/paste doesn't work anymore on Chat Message composer - EXO-53350
+- fix: Fix No chat notifications if user is idle for few days - EXO-69418
+- fix: Enhance infinite loading of chat when logged out in chat drawer - EXO-73721
 
 Improvements:
 
@@ -144,64 +143,63 @@ Fixes:
 
 Improvements:
 
-eXo JCR 6.5.3
+eXo JCR 6.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo Analytics 1.4.3
+eXo Analytics 1.4.5
 *************************
 Fixes:
 
 Improvements:
 
-eXo Gamification 2.5.3
+eXo Gamification 2.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo Web-Conferencing 2.5.3
-*************************
-Fixes:
-- fix: Jitsi call can't be launched when room name is too long - EXO-71657
-
-Improvements:
-
-eXo Perk-Store 2.5.3
+eXo Web-Conferencing 2.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo Kudos 2.5.3
+eXo Perk-Store 2.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo kernel 6.5.3
+eXo Kudos 2.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo Push-Notifications 2.5.3
+eXo kernel 6.5.4
 *************************
 Fixes:
 
 Improvements:
 
-eXo App-Center 2.5.3
+eXo Push-Notifications 2.5.4
 *************************
 Fixes:
-- fix: Application description exceeds border - EXO-71810 - Meeds-io/meeds#2003
-- fix: App center - Application help icon is mis-placed - EXO-71815 - Meeds-io/meeds#2035
 
 Improvements:
 
-eXo Wallet 2.5.3
+eXo App-Center 2.5.4
+*************************
+Fixes:
+- fix: Improve updateApplication method to be compatible with createApplication - EXO-72513 - Meeds-io/meeds#2216
+- fix: New app not created it its url contains special chars - EXO-72513 - Meeds-io/meeds#2216
+
+Improvements:
+
+eXo Wallet 2.5.4
 *************************
 Fixes:
 
