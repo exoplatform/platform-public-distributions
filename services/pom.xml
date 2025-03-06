@@ -46,12 +46,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.ecms</groupId>
-      <artifactId>ecms-core-publication</artifactId>
-      <version>${addon.exo.ecms.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>io.meeds.distribution</groupId>
       <artifactId>plf-configuration</artifactId>
       <version>${io.meeds.distribution.version}</version>
