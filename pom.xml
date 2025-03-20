@@ -63,8 +63,6 @@
     <addon.meeds.tasks.version>7.0.x-exo-SNAPSHOT</addon.meeds.tasks.version>
     <addon.exo.web-conferencing.id>exo-web-conferencing</addon.exo.web-conferencing.id>
     <addon.exo.web-conferencing.version>7.0.x-SNAPSHOT</addon.exo.web-conferencing.version>
-    <addon.exo.jitsi.id>exo-jitsi</addon.exo.jitsi.id>
-    <addon.exo.jitsi.version>7.0.x-SNAPSHOT</addon.exo.jitsi.version>
     <addon.meeds.analytics.id>meeds-analytics</addon.meeds.analytics.id>
     <addon.meeds.analytics.version>7.0.x-exo-SNAPSHOT</addon.meeds.analytics.version>
     <addon.exo.agenda.id>exo-agenda</addon.exo.agenda.id>
@@ -75,15 +73,17 @@
     <addon.exo.data-upgrade.version>7.0.x-SNAPSHOT</addon.exo.data-upgrade.version>
     <addon.exo.onlyoffice.id>exo-onlyoffice</addon.exo.onlyoffice.id>
     <addon.exo.onlyoffice.version>7.0.x-SNAPSHOT</addon.exo.onlyoffice.version>
-    <addon.exo.chat.id>exo-chat</addon.exo.chat.id>
-    <addon.exo.chat.version>7.0.x-SNAPSHOT</addon.exo.chat.version>
-    <addon.exo.automatic-translation.id>exo-automatic-translation</addon.exo.automatic-translation.id>
-    <addon.exo.automatic-translation.version>7.0.x-SNAPSHOT</addon.exo.automatic-translation.version>
     <addon.exo.documents.id>exo-documents</addon.exo.documents.id>
     <addon.exo.documents.version>7.0.x-SNAPSHOT</addon.exo.documents.version>
     <addon.meeds.push-notifications.id>meeds-push-notifications</addon.meeds.push-notifications.id>
     <addon.meeds.push-notifications.version>7.0.x-exo-SNAPSHOT</addon.meeds.push-notifications.version>
     <!-- Add-on manager extension to use (empty for Unix, .bat for Windows) -->
+
+    <addon.jdbc.mysql.id>exo-jdbc-driver-mysql</addon.jdbc.mysql.id>
+    <addon.jdbc.mysql.version>2.1.0</addon.jdbc.mysql.version>
+    <addon.jdbc.postgresql.id>exo-jdbc-driver-postgresql</addon.jdbc.postgresql.id>
+    <addon.jdbc.postgresql.version>2.5.0</addon.jdbc.postgresql.version>
+
     <addon.manager.extension />
   </properties>
   <dependencyManagement>
@@ -99,13 +99,6 @@
         <groupId>org.exoplatform.addons.digital-workplace</groupId>
         <artifactId>digital-workplace-packaging</artifactId>
         <version>${addon.exo.digital-workplace.version}</version>
-        <scope>provided</scope>
-        <type>zip</type>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.jitsi</groupId>
-        <artifactId>web-conferencing-jitsi-packaging</artifactId>
-        <version>${addon.exo.jitsi.version}</version>
         <scope>provided</scope>
         <type>zip</type>
       </dependency>
@@ -152,20 +145,6 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.exoplatform.addons.chat</groupId>
-        <artifactId>chat-embedded-packaging</artifactId>
-        <version>${addon.exo.chat.version}</version>
-        <type>zip</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.addons.automatic-translation</groupId>
-        <artifactId>automatic-translation-packaging</artifactId>
-        <version>${addon.exo.automatic-translation.version}</version>
-        <scope>provided</scope>
-        <type>zip</type>
-      </dependency>
-      <dependency>
         <groupId>org.exoplatform.documents</groupId>
         <artifactId>documents-packaging</artifactId>
         <version>${addon.exo.documents.version}</version>
@@ -179,6 +158,23 @@
         <type>zip</type>
         <scope>provided</scope>
       </dependency>
+
+      <!-- jdbc drivers -->
+      <dependency>
+        <groupId>org.exoplatform.addons.exo-jdbc-driver-mysql</groupId>
+        <artifactId>exo-jdbc-driver-mysql</artifactId>
+        <version>${addon.jdbc.mysql.version}</version>
+        <type>zip</type>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.exo-jdbc-driver-postgresql</groupId>
+        <artifactId>exo-jdbc-driver-postgresql</artifactId>
+        <version>${addon.jdbc.postgresql.version}</version>
+        <type>zip</type>
+        <scope>provided</scope>
+      </dependency>
+
       <!-- Our modules -->
       <dependency>
         <groupId>${project.groupId}</groupId>
