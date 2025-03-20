@@ -66,13 +66,6 @@
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.addons.jitsi</groupId>
-      <artifactId>web-conferencing-jitsi-packaging</artifactId>
-      <version>${addon.exo.jitsi.version}</version>
-      <scope>provided</scope>
-      <type>zip</type>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.agenda</groupId>
       <artifactId>agenda-packaging</artifactId>
       <version>${addon.exo.agenda.version}</version>
@@ -110,18 +103,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.addons.chat</groupId>
-      <artifactId>chat-embedded-packaging</artifactId>
-      <type>zip</type>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.addons.automatic-translation</groupId>
-      <artifactId>automatic-translation-packaging</artifactId>
-      <type>zip</type>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.exoplatform.documents</groupId>
       <artifactId>documents-packaging</artifactId>
       <version>${addon.exo.documents.version}</version>
@@ -131,6 +112,19 @@
     <dependency>
       <groupId>io.meeds.push-notifications</groupId>
       <artifactId>push-notifications-packaging</artifactId>
+      <type>zip</type>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.exoplatform.addons.exo-jdbc-driver-mysql</groupId>
+      <artifactId>exo-jdbc-driver-mysql</artifactId>
+      <type>zip</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.addons.exo-jdbc-driver-postgresql</groupId>
+      <artifactId>exo-jdbc-driver-postgresql</artifactId>
       <type>zip</type>
       <scope>provided</scope>
     </dependency>
@@ -222,8 +216,7 @@
                               <outputDirectory>target/${project.build.finalName}/${project.build.finalName}</outputDirectory>
                           </artifactItem>
                       </artifactItems>
-                      <excludes>**/exo-sample.properties</excludes>
-                      <excludes>**/webapps/ROOT.war</excludes>
+                    <excludes>**/exo-sample.properties,**/webapps/ROOT.war</excludes>
                   </configuration>
               </execution>
           </executions>
@@ -306,19 +299,10 @@
                   <arg line="install ${addon.exo.ecms.id}:${addon.exo.ecms.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.exo.jitsi.id}:${addon.exo.jitsi.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
-                </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                  <arg line="install ${addon.exo.agenda.id}:${addon.exo.agenda.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.onlyoffice.id}:${addon.exo.onlyoffice.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
-                </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.exo.chat.id}:${addon.exo.chat.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
-                </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.exo.automatic-translation.id}:${addon.exo.automatic-translation.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.documents.id}:${addon.exo.documents.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
@@ -326,6 +310,28 @@
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.meeds.push-notifications.id}:${addon.meeds.push-notifications.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
+                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
+                  <arg line="install ${addon.jdbc.mysql.id}:${addon.jdbc.mysql.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                </exec>
+                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
+                  <arg line="install ${addon.jdbc.postgresql.id}:${addon.jdbc.postgresql.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                </exec>
+              </target>
+            </configuration>
+          </execution>
+          <execution>
+            <id>delete-addon-manager</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <delete includeemptydirs="true">
+                  <fileset dir="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addons/"></fileset>
+                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon"></fileset>
+                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon.bat"></fileset>
+                </delete>
               </target>
             </configuration>
           </execution>
