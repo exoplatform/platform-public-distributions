@@ -326,9 +326,6 @@
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.meeds.push-notifications.id}:${addon.meeds.push-notifications.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
-                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="uninstall meeds-content" />
-                </exec>
               </target>
             </configuration>
           </execution>
