@@ -1,243 +1,25 @@
 =========================
-Changelog Platform 6.5.5
+Changelog Platform 6.5.6
 =========================
 
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo ECMS 6.5.5
+eXo Social 6.5.6
 *************************
 Fixes :
-- fix: Edit button displayed twice in a shared file preview mode - EXO-74839
-- fix: File uploaded twice in documents application - EXO-74631
-- fix: New added images in published news are undefined after edit - EXO-71982
-- fix: Document & parent Folder lost in case of Upload from existing document (new process/new request) - EXO-74485
+- fix: Fix UsersLastLoginTimeMigration execution with idm and jpa schemas others than public - eXo-76876
+
 Improvements:
 
-eXo Social 6.5.5
+Data-Upgrade 6.5.6
 *************************
 Fixes :
-- fix: Profile for disabled users can be reindexed - EXO-75104
-- fix: Invitation to join space : notification is never updated -EXO-75048 - Meeds-io/meeds#2531
-- fix: Sweep issue using AR language in cardCarrousel component - EXO-74720 -Meeds-io/meeds#2530
-- fix: Unsearchable disabled users by their email or name-EXO-69348-Meeds-io/meeds#1827
-- fix: Host space user accepting a single user request to join a space injects wrong notifications of  - EXO-74363 - Meeds-io/meeds#2467
-- fix: Link settings are not correctly read from server and display an old config - EXO-71985
-- fix: Update Facebook Oauth authentication - EXO-74546
-- fix: Plan view is ko in language different from EN & FR - EXO-72317 - Meeds-io/meeds#2140
-- fix: Allow emojis using MySQL in Profile Experience Fields - MEED-7512 - Meeds-io/meeds#2402
-- fix: Search containing "-" gives no results in people page - EXO-74310 - Meeds-io/meeds#2410
-- fix: Poll's Post button is always disabled - EXO-71446 - Meeds-io/meeds#2403
-- fix: Show more display no results - EXO-74231 - Meeds-io/meeds#2409
-- fix: Display mention user ko if username has email format - EXO-72863
+- fix: PublishedNewsImagesPermissionsV2UpgradePlugin have error when updating from 6.5.4 to 6.5.5 - EXO-75897
+- fix: Create a new upgrade plugin to add remove permissions to recording files existing in private drive of users - EXO-75233
 
 Improvements:
-- feat: Add profile Disconnect button - EXO-74237
 
-eXo News 2.5.5
+Tomcat version for eXo Platform 6.5.6
 *************************
-Fixes:
-- fix: Unexpected Notes/News bottom white line added on each update - EXO - 75342 - Meeds-io/meeds#2594
-- fix: News Slider: Mouse hover makes article content misplaced - EXO-75170 - Meeds-io/meeds#255
-- fix: New added images in published news are undefined after edit - EXO-71982
-- fix: Resize of image in scheduled news lead to no display in news list - EXO-73978
-
-Improvements:
-
-eXo Task 3.5.5
-*************************
-Fixes :
-- fix: Bad display after deleting a task - EXO-46811 -Meeds-io/meeds#2497
-- fix: Show more button missing when grouping tasks by project in tasks tab EXO-72589  Meeds-io/meeds#2441
-- fix: Plan view is ko in language different from EN & FR - EXO-72317 -Meeds-io/meeds#2140
-- fix: Task status labels are not translated on the project details - EXO-73978
-
-Improvements:
-
-eXo Commons 6.5.5
-*************************
-Fixes :
-- fix: No image displayed when ImageResizeService throw an error - EXO-74337
-- fix: Image Resize not working for some specific images - EXO-74160
-
-Improvements:
-
-eXo Gatein-Portal 6.5.5
-*************************
-Fixes :
-- fix: Remove branding name from external users verification/confirmation emails - EXO-74008
-
-Improvements:
-
-eXo Notes 1.3.5
-*************************
-Fixes :
-- fix: Unexpected Notes/News bottom white line added on each update - EXO - 75342 - Meeds-io/meeds#2594
-- fix: Move a parent note under its child note breaks the treeview - EXO-75215
-- fix: Treeview menu loading perf issue - EXO-73169 - Meeds-io/meeds#2411
-- fIX: Click on notes tags on home page displays no results - EXO-73907
-
-Improvements:
-
-eXo Documents 1.2.5
-*************************
-Fixes:
-- fix: Expiration date format in public access in not i18n - EXO-73910
-- fix: File moved to root folder issue by drag&drop through breadcrumb - EXO-73723
-- fix: Allow Admins to delete System created files - EXO-75232
-- fix: Clicking on user popover in document's application doesn't redirect to user's profile- EXO-74875
-- fix: Remove access restriction for file and folder system for Personal Documents - EXO-73213
-- fix: Import zip with accents isn't working - EXO-70136
-- fix: Remove restrictions for system folders - EXO-73202
-
-Improvements:
-
-eXo Process 1.2.5
-*************************
-Fixes:
-- fix: Process disappears if updated- EXO-75002
-- fix: Members of managing space don't have the 3 dots action menu displayed - EXO-74880
-- fix: Document&parent Folder lost in case of Upload from existing document (new process/new request) - EXO-74485
-
-Improvements:
-- feat: Add Process Copy link - EXO-74723
-
-eXo OnlyOffice 2.5.5
-*************************
-Fixes :
-- fix: New post of a user not member in "who can manage space" is generated because of new version - EXO-72993
-
-Improvements:
-
-eXo Jitsi 1.4.5
-*************************
-Fixes:
-- fix: Start a call button icon has different display on user profile if color updated in Branding - EXO-71671
-
-Improvements:
-
-eXo Agenda 1.4.5
-*************************
-Fixes:
-- fix: Webconference not displayed when diuplaying event from agenda timeline - EXO-74164
-
-Improvements:
-
-eXo Chat 3.5.5
-*************************
-Fixes:
-- fix: Fix wrong creator for chat attachments  - EXO-73182
-
-Improvements:
-
-eXo Kudos 2.5.5
-*************************
-Fixes:
-- fix: Posting to 'Your network' shouldn't be possible when exo.feature.PostToNetwork.enabled is set to false - EXO-75422 - Meeds-io/meeds#2606
-
-Improvements:
-
-eXo App-Center 2.5.5
-*************************
-Fixes:
-- fix: Add/update application having a customized URL isn't saved - EXO-75618 - Meeds-io/meeds#2619
-
-Improvements:
-
-eXo meeds 1.5.5
-*************************
-Fixes:
-- fix: Update Facebook Oauth authentication - EXO-74546
-
-Improvements:
-
-eXo external-visio-connector 1.0.1
-*******************************************
-Fixes:
-- fix: External visio added updates last changed item - EXO-72076
-
-Improvements:
-
-eXo Wallet 2.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Platform-UI 6.5.5
-*************************
-Fixes :
-
-Improvements:
-
-eXo Layout-Management 1.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Jitsi-call 1.4.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Mail Integration 1.2.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Agenda Connectors 1.2.5
-****************************
-Fixes:
-
-Improvements:
-
-eXo Multi-factor-Authentication 1.3.5
-*************************************
-Fixes:
-
-Improvements:
-
-eXo JCR 6.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Analytics 1.4.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Gamification 2.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Web-Conferencing 2.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Perk-Store 2.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo kernel 6.5.5
-*************************
-Fixes:
-
-Improvements:
-
-eXo Push-Notifications 2.5.5
-*************************
-Fixes:
-
-Improvements:
+Bump tomcat version from 9.0.80 to 9.0.99
