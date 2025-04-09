@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.exoplatform.platform.distributions</groupId>
     <artifactId>plf-public-distributions</artifactId>
-    <version>7.0.x-SNAPSHOT</version>
+    <version>7.0.0</version>
   </parent>
   <name>eXo PLF:: Platform Public Distributions - Packaging Community Tomcat Standalone</name>
   <artifactId>plf-community-tomcat-standalone</artifactId>
@@ -281,7 +281,7 @@
             <configuration>
               <target name="install-add-ons">
                 <echo message="Set permission on addon executable" />
-                <chmod file="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" perm="ugo+rx"/>
+                <chmod file="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" perm="ugo+rx" />
                 <echo message="Installing add-ons..." />
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.exo.digital-workplace.id}:${addon.exo.digital-workplace.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
@@ -308,13 +308,13 @@
                   <arg line="install ${addon.exo.documents.id}:${addon.exo.documents.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.meeds.push-notifications.id}:${addon.meeds.push-notifications.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                  <arg line="install ${addon.meeds.push-notifications.id}:${addon.meeds.push-notifications.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.jdbc.mysql.id}:${addon.jdbc.mysql.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                  <arg line="install ${addon.jdbc.mysql.id}:${addon.jdbc.mysql.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
-                  <arg line="install ${addon.jdbc.postgresql.id}:${addon.jdbc.postgresql.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                  <arg line="install ${addon.jdbc.postgresql.id}:${addon.jdbc.postgresql.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
               </target>
             </configuration>
@@ -328,9 +328,9 @@
             <configuration>
               <target>
                 <delete includeemptydirs="true">
-                  <fileset dir="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addons/"></fileset>
-                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon"></fileset>
-                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon.bat"></fileset>
+                  <fileset dir="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addons/" />
+                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon" />
+                  <fileset file="${project.basedir}/target/${project.build.finalName}/${project.build.finalName}/addon.bat" />
                 </delete>
               </target>
             </configuration>
