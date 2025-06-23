@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Notify Tribe Tasks
-        uses: Green-Hub-Tools/notifs-task@v1
+        uses: Green-Hub-Tools/notifs-task@v2
         with:
           TASKS_REGEX_FILTER: ${{ vars.TRIBE_TASKS_REGEX_FILTER }}
           SERVER_URL: ${{ vars.TRIBE_TASKS_SERVER_URL }}
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Notify Builders Tasks
-        uses: Green-Hub-Tools/notifs-task@v1
+        uses: Green-Hub-Tools/notifs-task@v2
         with:
           TASKS_REGEX_FILTER: ${{ vars.BUILDERS_TASKS_REGEX_FILTER }}
           SERVER_URL: ${{ vars.BUILDERS_TASKS_SERVER_URL }}
