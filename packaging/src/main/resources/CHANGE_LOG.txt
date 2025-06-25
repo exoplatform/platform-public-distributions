@@ -1,330 +1,244 @@
 =========================
-Changelog Platform 7.0.1
+Changelog Platform 7.0.2
 =========================
+
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo MATRIX 7.0.1
+eXo MATRIX 7.0.2
 *************************
 Fixes :
-- fix: adapt message object for message received events - MEED-8845 - Meeds-io/MIPs#163
-- fix: add border to user avatar - MEED-8524 - Meeds-io/MIPs#163
-- fix: add bottom margin for last message of conversation - MEED-8918 - Meeds-io/MIPs#163
-- fix: align first reaction with message box - MEED-8921 - Meeds-io/MIPs#163
-- fix: align the file name for attachments - MEED-8957 - Meeds-io/MIPs#163
-- fix: avoid duplicating drawer for chat discussions - MEED-8686 - Meeds-io/MIPs#163
-- fix: change the default background color and fix display of links - MEED-8685 - Meeds-io/MIPs#163
-- fix: disable temporarily pwa notifications - MEED-8914 - Meeds-io/MIPs#163
-- fix: enhance message width responsiveness - MEED-8873 - Meeds-io/MIPs#163
-- fix: fix regex for user mentions and add loading effect for rooms - MEED-8885 - Meeds-io/MIPs#163
-- fix: fix ui issue on image message - MEED-9053 - Meeds-io/MIPs#163
-- fix: hide message sender when is same as viewer - MEED-8844 - Meeds-io/MIPs#163
-- fix: update UI of day timestamp - MEED-8514 - Meeds-io/MIPs#163
+- fix: Allow fetching users info while matrixId property is invisible - MEED-8442 - Meeds-io/MIPs#163
+- fix: Escape correctly unauthorized characters before creating a 1:1 matrix room - MEED-9161 - Meeds-io/MIPs#163
+- fix: Improve bottom margin for last message of a conversation - MEED-9095 - Meeds-io/MIPs#163
+- fix: Improve user synchronization - MEED-9182 - Meeds-io/MIPs#163
+- fix: Load rooms from backend to avoid latency from Matrix server - MEED-9262 - Meeds-io/MIPs#163
+- fix: Return correctly the room when full ID is provided - MEED-9227 - Meeds-io/MIPs#163
+- fix: Update visibility of Matrix ID property - MEED-8442 - Meeds-io/MIPs#163
 
 Improvements:
-- feat: Adjust discussion list ui/ux - MEED-9062 - Meeds-io/MIPs#162
-- feat: Adjust ui/ux arround display audio messages - MEED-8920 - Meeds-io/MIPs#163
-- feat: Display animated image in chat and preview for gif images - MEED-8846 - Meeds-io/MIPs#163
-- feat: display attachment in chat drawer - MEED-8684 - Meeds-io/MIPs#163
-- feat: Display edited message - MEED-8912 - Meeds-io/MIPs#163
-- feat: Display emoji reaction in chat drawer - MEED-8682 - Meeds-io/MIPs#163
-- feat: Display reply to a message in chat drawer - MEED-8680 - Meeds-io/MIPs#163
-- feat: display static text for deleted messages - MEED-8925 - Meeds-io/MIPs#163
-- feat: Display voice messages in chat drawer - MEED-8683 - Meeds-io/MIPs#163
-- feat: enable display and preview images in chat - MEED-8681 - Meeds-io/MIPs#163
-- feat: enable mentioning users in chat - MEED-8514 - Meeds-io/MIPs#163
-- feat: Enhance Audio attachments display - MEED-8956 - Meeds-io/MIPs#163
-- feat: Enhance send button UI - MEED-9050 - Meeds-io/MIPs#163
-- feat: Implement copy/past image in drawer redaction area - MEED-7712 - Meeds-io/MIPs#163
-- feat: Implement drag&drop files in discussion drawer - MEED-7713 - Meeds-io/MIPs#163
-- feat: Implement send image via chat drawer - MEED-7711 - Meeds-io/MIPs#163
-- feat: Review chat drawer redaction area - MEED-8964 - Meeds-io/MIPs#163
+- feat: Add hover effect on discussion list items - MEED-8475 - Meeds-io/MIPs#163
+- feat: Display avatar previous message has reactions - MEED-9002 - Meeds-io/MIPs#163
 
-eXo ECMS 7.0.1
+eXo ECMS 7.0.2
 *************************
 Fixes :
+- fix : In rest service getFoldersAndFiles, name have the same value than title - EXO-79569
 
 Improvements:
-- feat: Cleanup global site FileManagementAnalytics navigation & page - EXO-78646
 
-eXo Social 7.0.1
+eXo Social 7.0.2
 *************************
 Fixes :
-- fix: Add loading info when exporting templates - MEED-8823 - Meeds-io/MIPs#180
-- fix: Add loading info when importing templates - MEED-8824 - Meeds-io/MIPs#180
-- fix: Delete Parent Category ACL from indexed permissions - MEED-8895 - Meeds-io/meeds#3247
-- fix: Display Card shadow in Links when Hover - MEED-8927 - Meeds-io/meeds#3255
-- fix: Display Right Space Permissions in Admin UI - MEED-8793 - Meeds-io/meeds#3221
-- fix: Display warning when admin importing wrong template object type - MEED-8802 - Meeds-io/MIPs#180
-- fix: Fix labels for exporting templates - MEED-8676 - Meeds-io/MIPs#180
-- fix: Fix opening the deserialize drawer without reloading the page - MEED-8756 - Meeds-io/MIPs#180
-- fix: Fix posting message when the post button is clicked many times - MEED-8762 - Meeds-io/meeds#3038
-- fix: Fix Spaces Cache when using category filter - MEED-8852 - Meeds-io/meeds#3228
-- fix: Fix the bad mention user display - MEED-8760 - Meeds-io/meeds#3120
-- fix: Hide Overlay displayed when reducing Window size - MEED-8881 - Meeds-io/meeds#3214
-- fix: Organizational chart reinitialized after edit layout - MEED-8759- Meeds-io/meeds#2841
-- fix: Remove options of duplication management - MEED-8541 - Meeds-io/MIPs#180
-- fix: Remove the outlined property from the 'Add Profile Property Value' button - MEED-8891 - Meeds-io/meeds#3142
-- fix: Set an empty alt to the Platform logo - MEED-8752 - Meeds-io/meeds#3075
-- fix: Set an empty alt to the profile picture - MEED-8753 - Meeds-io/meeds#3076
-- fix: suggest only active templates when applying a template to a space - MEED-8864 - Meeds-io/meeds#3231
-- Fix: Technical label displayed in text the profile property tooltip MEED-8892 - Meeds-io/meeds#3143
-- fix: UI glitch when guest user mentioned - MEED-8775 - Meeds-io/meeds#3070
+- fix: Add Activity Head Ellipsis in Space Name - MEED-9319 - Meeds-io/meeds#3431
+- fix: Add missing expand parameter in JS identityservice - MEED-9161 - Meeds-io/MIPs#163
+- fix: Add validators when using Social Rest Endpoint to create users - MEED-9303
+- fix: Enable Branding Apply Button - MEED-9280 - Meeds-io/meeds#3397
+- fix: Fix adding and removing a multiValue user profile field whe it is not editable - MEED-8907 - Meeds-io/meeds#3094
+- fix: Fix displaying primary, second and third dropdownList user fields in people user card drawer - MEED-9251 - Meeds-io/meeds#3361
+- fix: Fix display of item id instead of item name for profile properties using dropdown option - MEED-9072 - Meeds-io/meeds#3299
+- fix: Fix people profile search when searched fields contain white spaces - MEED-9163_MEED-9174 - Meeds-io/meeds#3336_ Meeds-io/meeds#3338
+- fix: Fix Site Pages Retrieval in Sidebar Navigation Admin UI - MEED-9105 - Meeds-io/meeds#3316
+- fix: Google Oauth authentication no more working - MEED-9255
+- fix: Set default property type to text when editing - MEED-8442 - Meeds-io/MIPs#163
 
 Improvements:
-- Accessibility: Set an empty alt to user card's avatar and banner - MEED-8955 - Meeds-io/meeds#3265
-- Accessibility: Set logo empty alt & update its text aria in the top bar - MEED-8917 - Meeds-io/meeds#3250
-- feat: Enhance Category Filter Display switch Object Type - MEED-8887 - Meeds-io/meeds#3241
-- feat: Export multiple portlets instances - MEED-8401 - Meeds-io/MIPs#180
-- feat: Export Portlets Instances - MEED-8399 - Meeds-io/MIPs#180
-- feat: Export space template navigation - MEED-8705 - Meeds-io/MIPs#180
-- feat: Import / Export Space templates - MEED-8423 - Meeds-io/MIPs#180
-- feat: Import Templates - MEED-8400 - Meeds-io/MIPs#180
-- feat: Unauthorize importing portlets' instances in page templates app -  MEED-8604 - Meeds-io/MIPs#180
-- feat: Unselect instances once exported - MEED-8539 - Meeds-io/MIPs#180
-- feat: Use fixed Card Size in Links - MEED-8926 - Meeds-io/meeds#3256
-- feat: Use Image preview dialog for image messages - MEED-8681 - Meeds-io/MIPs#163
-- feat: Delete multiple space templates - MEED-8414 - Meeds-io/MIPs#180
+- feat: Allow hide drawer footer divider - MEED-8964 - Meeds-io/MIPs#163
+- feat: Allow to define default choice for a notification channel - MEED-9304
+- feat: Allow to Registered Users to access Space Members Drawer - MEED-9076 - Meeds-io/meeds#3293
+- feat: Implement custom claims for OpenIdConnect - Meeds-9282
+- feat: Use Space Members First Name in Circle Space Name instead of Full Name - MEED-9136 - Meeds-io/meeds#2798
 
-eXo Content 7.0.1
+eXo Content 7.0.2
 *************************
 Fixes:
-- fix: Content translation draft not deleted from news delete action - MEED-8741 - Meeds-io/meeds#3213
-- fix: Display problem with Headline Template in case of high resolution - MEED-8884 - Meeds-io/meeds#2677
-- fix: incorrect post and publish notification URL redirection after updating the server domain name - MEED-8761 - Meeds-io/meeds#2871
-- fix: Original draft of existing article opened instead of the specific lang draft - MEED-8794 - Meeds-io/meeds#3220
-- fix: Remove dropdown filter in space filters - MEED-8655 - Meeds-io/meeds#3152
-- fix: Switch from a post to an article - Mentioning isn't well displayed in the article body - MEED-8750 - Meeds-io/meeds#3179
+- fix: Fix displaying published articles with "space" audience in news list portlets for admins not space members - MEED-9089 - Meeds-io/meeds#2794
+- fix: Fix lost of the content when editing a draft of a scheduled article - MEED-9289 - Meeds-io/meeds#3398
+- fix: Fix news list portlet headline template reactions text color of the cover article - MEED-9293 - Meeds-io/meeds#3282
+- fix: Implement UP to cleanup duplicated News ES indexes - MEED-8747 - Meeds-io/meeds#3218
 
 Improvements:
-- feat: Cleanup global site analyticsContents navigation & page - MEED-8924 - Meeds-io/meeds#3254
 
-eXo Task 7.0.1
+eXo Task 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Commons 7.0.1
-*************************
-Fixes :
-- fix: No cell spacing or padding is applied to the inserted table - MEED-8751 - Meeds-io/meeds#3126
-
-Improvements:
-
-eXo Gatein-Portal 7.0.1
-*************************
-Fixes :
-- fix: Fix NPE when Cloning Navigation - MEED-8886 - Meeds-io/meeds#3239
-- fix: Prevent NPE by checking for null Page ID before parsing in PageKey - MEED-8821 - Meeds-io/MIPs#180
-
-Improvements:
-
-eXo Notes 7.0.1
-*************************
-Fixes :
-- fix: Allow target attribute in sanitized content view - MEED-8796 - Meeds-io/meeds#3176
-- fix: Blank Notes version history - MEED-8509 - Meeds-io/meeds#3029
-- fix: Can't remove mention when editing a note - MEED-8758 - Meeds-io/meeds#2828
-- fix: Can't search a note if it contains hyphen or apostrophe char - MEED-8795 - Meeds-io/meeds#3219.
-- fix: Differentiate portlet preference generation for export or regular usage - MEED-8821 - Meeds-io/MIPs#180
-- fix: Error when saving content block containing an at sign
-- fix: Go-back action not opening previously opened note in notes overview - MEED-8833 - Meeds-io/meeds#3227
-- fix: Insert home note into first draft note not working - MEED-8890 -Meeds-io/meeds#2937
-- Fix: Original note summary displayed instead of the translated version in note overview - MEED-8961 - Meeds-io/meeds#3262
-- fix: Prevent pasted user profile link from being converted to a mention on edit - MEED-8757 - Meeds-io/meeds#2675
-- fix: TermsAndCondition redirection issue when defined handler has empty excludedUris param - EXO-78278 - Meeds-io/meeds#3216
-- fix: Unable to edit notes title when its content has the navigation inserted - MEED-8754 - Meeds-io/meeds#2844
-
-Improvements:
-
-eXo Documents 7.0.1
-*************************
-Fixes :
-- fix: Document action Menu update - 3 dots and right click menu style - EXO-73143
-- fix: Generate public link access issue - EXO-78542
-- fix: Make files with the 'public accessibility' option accessible from the public site - EXO-77151
-- fix: resolve document copy link issue after migration - EXO-78359
-- fix: Update move & create shortlink drawers style - EXO-73146
-
-Improvements:
-- feat: Add translation labels for documents reports - EXO-78573
-- feat: Remove "Drives" application from application center - EXO-78691
-
-eXo Process 7.0.1
-*************************
-Fixes :
-
-Improvements:
-- feat: Cleanup global site analyticsProcesses navigation & page - EXO-78646
-- feat: Remove "Processes" application from application center - EXO-78691
-
-eXo OnlyOffice 7.0.1
-*************************
-Fixes :
-- fix: View openoffice documents in onlyoffice - EXO-78232
-
-Improvements:
-
-eXo Jitsi 7.0.1
+eXo Commons 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Agenda 7.0.1
+eXo Gatein-Portal 7.0.2
 *************************
 Fixes :
-- fix: validation options are missing in event poll - EXO-78308
+- fix: Harmonize property to validate email - MEED-9303
+- fix: Display Portal using Browser locale after a first login - MEED-9309 - Meeds-io/meeds#3422
+- fix: Add default timeout for jndi ldap connexion - MEED-9299
+- fix: Fix regex replacement in Mails sent by Password Recovery - MEED-9290 - Meeds-io/meeds#3410
 
 Improvements:
-- feat: Add translation labels for agenda reports - EXO-78572
-- feat: Remove "Agenda" application from application center - EXO-78691
+- feat: Allow to access pages without full path - MEED-9026 - Meeds-io/meeds#3286
 
-eXo Kudos 7.0.1
+eXo Notes 7.0.2
+*************************
+Fixes :
+- fix: Fix note page auto translation - MEED-9351 - Meeds-io/meeds#3445
+- fix: Rely on Statistic Collection JS included in Bottom End Container - MEED-9310 - Meeds-io/meeds#3423
+- fix: Fix create, update and restore a note with numeric title - MEED-8960 - Meeds-io/meeds#3263
+- fix: Fix 404 error when create or edit a note in a space having name with special chars
+
+Improvements:
+
+eXo Documents 7.0.2
+*************************
+Fixes :
+- fix: Fix application-ref of the documents application configured for spaceDocuments page template - EXO-79265
+
+Improvements:
+
+eXo Process 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo App-Center 7.0.1
+eXo OnlyOffice 7.0.2
 *************************
 Fixes :
-- fix: MyFavorite doesn't display all favorited applications - MEED-8931 - Meeds-io/meeds#3260
-- fix: Remove undefined onDragStart handler - MEED-8847 - Meeds-io/meeds#3230
-- fix: Shortcut Portlet not accessible when using mobile - MEED-8847 - Meeds-io/meeds#3230
+- fix: Improve OnlyofficeService startup time when nodetype configuration not change - EXO-79740
 
 Improvements:
-- feat: Enhance appcenter drawer UX - MEED-8972 - Meeds-io/meeds#3277
 
-eXo meeds 7.0.1
+eXo Jitsi 7.0.2
 *************************
 Fixes :
 
 Improvements:
-- feat: Cleanup global site analytics navigation & page - MEED-8924 - #3254
 
-eXo external-visio-connector 7.0.1
+eXo Agenda 7.0.2
+*************************
+Fixes :
+- fix: Agenda caldav connector drawer is opend on background - EXO-79620
+- fix: Events are displayed over date selector on PWA mobile app - EXO-79223
+- fix: Fix event detail url from agenda event timeline gadget - EXO-79567
+
+Improvements:
+
+eXo Kudos 7.0.2
+*************************
+Fixes :
+
+Improvements:
+
+eXo App-Center 7.0.2
+*************************
+Fixes :
+- fix: MyApplicationPortlet does not display when headerTitle is null - MEED-9170
+
+Improvements:
+
+eXo meeds 7.0.2
+*************************
+Fixes :
+- fix: Update Notes Editor Layout Definition - MEED-9310 - Meeds-io/meeds#3423
+
+Improvements:
+
+eXo external-visio-connector 7.0.2
 *******************************************
 Fixes :
 
 Improvements:
 
-eXo Wallet 7.0.1
-*************************
-Fixes :
-- fix : Automatic contributions cannot be reviewed if the reward has not yet been sent - MEED-8713 - Meeds-io/meeds#3202
-
-Improvements:
-- feat: Cleanup global site analytics bundles - MEED-8924 - Meeds-io/meeds#3254
-
-eXo Platform-UI 7.0.1
+eXo Wallet 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Layout-Management 7.0.1
-*************************
-Fixes :
-- fix: Add loading info when importing templates - MEED-8824 - Meeds-io/MIPs#180
-- fix: Display warning when admin importing wrong template object type - MEED-8802 - Meeds-io/MIPs#180
-- fix: Export & Import preview of instances - MEED-8540 - Meeds-io/MIPs#180
-- fix: Fix import/export section template portlet instance content - MEED-8813 - Meeds-io/MIPs#180
-- fix: Fix import/export  template background image - MEED-8813 - Meeds-io/MIPs#180
-- fix: Fix Importing IDE Gadget portlet - MEED-8821 - Meeds-io/MIPs#180
-- fix: Fix importing templates name and descriptions labels - MEED-8710 - Meeds-io/MIPs#180
-- fix: Fix labels for exporting templates - MEED-8676 - Meeds-io/MIPs#180
-- fix: Fix missing navigation when importing site template - MEED-8904 - Meeds-io/meeds#3248
-- fix: Fix opening the deserialize drawer without reloading the page - MEED-8756 - Meeds-io/MIPs#180
-
-Improvements:
-- feat: Delete multiple instances - MEED-8403 - Meeds-io/MIPs#180
-- feat: Delete multiple page templates - MEED-8407 - Meeds-io/MIPs#180
-- feat: Export multiple portlets instances - MEED-8401 - Meeds-io/MIPs#180
-- feat: Export of WidgetPortlet Instances - MEED-8502 - Meeds-io/MIPs#180
-- feat: Export Page templates - MEED-8404 - Meeds-io/MIPs#180
-- feat: Export Portlets Instances - MEED-8399 - Meeds-io/MIPs#180
-- feat: Export Site templates - MEED-8421 - Meeds-io/MIPs#180
-- feat: Export space template navigation - MEED-8705 - Meeds-io/MIPs#180
-- feat: Import / Export Section templates - MEED-8422 - Meeds-io/MIPs#180
-- feat:  Import Page templates - MEED-8405 - Meeds-io/MIPs#180
-- feat: Import portlets Instances - MEED-8400 - Meeds-io/MIPs#180
-- feat: Import Site templates - MEED-8418 - Meeds-io/MIPs#180
-- feat: Unauthorize importing portlets' instances in page templates app - MEED-8604 - Meeds-io/MIPs#180
-- feat: Unselect instances once exported - MEED-8539 - Meeds-io/MIPs#180
-
-eXo Jitsi-call 7.0.1
+eXo Platform-UI 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Mail Integration 7.0.1
+eXo Layout-Management 7.0.2
+*************************
+Fixes :
+- fix: Fix Access to Portlets List From Layout Editor - MEED-9140 - Meeds-io/meeds#3333
+- fix: Fix Portlet Name Display in Layout Drawer - MEED-9130 - MEED-9131 - Meeds-io/meeds#3318 - Meeds-io/meeds#3319
+
+Improvements:
+
+eXo Jitsi-call 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Agenda Connectors 7.0.1
+eXo Mail Integration 7.0.2
+*************************
+Fixes :
+
+Improvements:
+
+eXo Agenda Connectors 7.0.2
 ****************************
 Fixes :
 
 Improvements:
 
-eXo Multi-factor-Authentication 7.0.1
+eXo Multi-factor-Authentication 7.0.2
 *************************************
 Fixes :
 
 Improvements:
 
-eXo JCR 7.0.1
+eXo JCR 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Analytics 7.0.1
+eXo Analytics 7.0.2
 *************************
 Fixes :
-- fix: Add invisible indexed in analytics profile setting properties to user statistics - MEED-8755 - Meeds-io/meeds#3208
-- fix: Add invisible indexed in analytics profile setting properties touser statistics - MEED-8755 - Meeds-io/meeds#3208
-- fix: Fix displayed "null" value for chartOptions tooltip in Analytics Portlet with single chart - MEED-8963 - Meeds-io/meeds#3276
-- fix: fix: Ensure latest mapping is used by sorting indices by creation date during field mapping generation - MEED-8848 - Meeds-io/meeds#3226
-
-Improvements:
-- feat: Add translation labels for devices reports - MEED-8929 -  Meeds-io/meeds#3258
-- feat: Cleanup global site analytics bundles - MEED-8924 - Meeds-io/meeds#3254
-- feat: Enhance "pageDisplay" analytics operation and remove unneeded "pageUIDisplay" and "applicationUIDisplay" operations - MEED-8889 - Meeds-io/meeds#3087_Meeds-io/meeds#3287
-- feat: Enhance UI title information for analytics charts portlet - MEED-8923 - Meeds-io/meeds#3253
-- feat: Remove "Analytics" application from application center - MEED-8924 - Meeds-io/meeds#3254
-
-eXo Gamification 7.0.1
-*************************
-Fixes :
-- fix: Avoid display rejected contribution in contribution lists - MEED-8825 - Meeds-io/meeds#3156
+- fix: Allow to have Statistic Collection JS in all pages - MEED-9310 - Meeds-io/meeds#3423
 
 Improvements:
 
-eXo Web-Conferencing 7.0.1
+eXo Gamification 7.0.2
+*************************
+Fixes :
+- fix: Actions to do first are not listed if no available actions limit- MEED-9266 - Meeds-io/meeds#9266
+- fix: Fix CTA of notification setup automatic action - MEED-9256 - Meeds-io/meeds#3385
+- fix: Actions list: Enable to set 0 available actions to list - MEED-9258 - Meeds-io/meeds#3387
+- fix: Action completed must not be listed if set to list actions to dofirst - MEED-9259
+
+Improvements:
+
+eXo Web-Conferencing 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Perk-Store 7.0.1
+eXo Perk-Store 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo kernel 7.0.1
+eXo kernel 7.0.2
 *************************
 Fixes :
 
 Improvements:
 
-eXo Push-Notifications 7.0.1
+eXo Push-Notifications 7.0.2
 *************************
 Fixes :
 
