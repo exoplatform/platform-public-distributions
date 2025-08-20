@@ -39,13 +39,6 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>plf-webapps</artifactId>
-      <type>war</type>
-      <version>${project.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
       <artifactId>plf-community-webapps</artifactId>
       <type>war</type>
       <version>${project.version}</version>
@@ -216,7 +209,7 @@
                               <outputDirectory>target/${project.build.finalName}/${project.build.finalName}</outputDirectory>
                           </artifactItem>
                       </artifactItems>
-                    <excludes>**/exo-sample.properties,**/webapps/ROOT.war</excludes>
+                      <excludes>**/exo-sample.properties</excludes>
                   </configuration>
               </execution>
           </executions>
