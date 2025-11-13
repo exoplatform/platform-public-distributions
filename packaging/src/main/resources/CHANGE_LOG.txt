@@ -1,89 +1,2209 @@
 =========================
-Changelog Platform 6.4.x
+Changelog Platform 7.1.0
 =========================
 
+Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-Changelogs of previous releases are available at https://community.exoplatform.com/portal/intranet/wiki/group/spaces/platform_4/Release_Notes.
-
-
-eXo ECMS 6.1.x
+eXo Social 7.1.0
 *************************
-** Bug
+fix:
+- Accessibility: Set an empty alt to user card's avatar and banner - MEED-8955 - Meeds-io/meeds#3265
+- Accessibility: Set logo empty alt & update its text aria in the top bar - MEED-8917 - Meeds-io/meeds#3250
+- fix: Ability to not set text for login form - MEED-9649 - meeds-io/MIPs#203
+- fix: Adapt the favorite filter implementation in the unified search - MEED-9870 - meeds-io/meeds#3763.
+- fix: Add Activity Head Ellipsis in Space Name - MEED-9319 - Meeds-io/meeds#3431
+- fix: Add an adjustment to the unified search tags -MEED-9914
+- fix: Add an alternative to distinguish the active tags - MEED-9871 - meeds-io/meeds#3756.
+- fix: Add an enhancement to the space creation handler - MEED-8811 - Meeds-io/MIPs#187
+- fix: Add autocomplete attribute on login form fields - MEED-9638 - meeds-io/MIPs#203
+- fix: Add external-link icon for external links in navigations tabs - MEED-9233 - Meeds-io/meeds#2820
+- fix: Add external-link icon in external links in sublevel navigation - MEED-9328 - Meeds-io/meeds#3442
+- fix: Add label on back button in login form - MEED-9756 - meeds-io/MIPs#203
+- fix: Add loading info when exporting templates - MEED-8823 - Meeds-io/MIPs#180
+- fix: Add loading info when importing templates - MEED-8824 - Meeds-io/MIPs#180
+- fix: Add missing expand parameter in JS identityservice - MEED-9161 - Meeds-io/MIPs#163
+- fix: Add validators when using Social Rest Endpoint to create users - MEED-9303
+- fix: Adjust Login portlet to content - MEED-9470 - meeds-io/MIPs#203
+- fix: Adjust some ui issues in sidebar user popup - MEED-9525 - Meeds-io/MIPs#188
+- fix: Adjust space templates suggested in form drawer after selection - MEED-9300 - Meeds-io/MIPs#187 MEED-
+- fix: Adjust the apply button - MEED-9254 - Meeds-io/MIPs#187
+- fix: Adjust the create button - MEED-9034 - Meeds-io/MIPs#187
+- fix: Adjust the user profile attributes display - MEED-8386 - Meeds-io/meeds#2723
+- fix: After session expiration, redirection on url like /portal/s/xxx is not effective - MEED-8608
+- fix: Allow CMS portlet classes to override portlet setting name - EXO-80594 - eXIP-18
+- fix: Allow expression searches when inserting objects - MEED-9731 - meeds-io/meeds#3667.
+- fix: Allow saving Links Header - MEED-8596 - Meeds-io/meeds#3118
+- fix: Allow saving Links Header - MEED-8596 - Meeds-io/meeds#3118
+- fix: Allow Space Admin to access Managing Spaces Stream - MEED-9324 - Meeds-io/meeds#3438
+- fix: Allow to change group Role from Users Management UI - Meeds-io/MIPs#220
+- fix: Allow to export portlet settings  - MEED-9809 - meeds-io/meeds#3780
+- fix: Allow to select a Cotnent Link by click - MEED-9423 - Meeds-io/meeds#3486
+- fix: Apply primary color to the envelope icon - MEED-9650 - meeds-io/MIPs#203
+- fix: Automatic redirection on oidc is not working with PWA - MEED-9446
+- fix: Avatar is not the one of mentioned user in notification - MEED-8572 - Meeds-io/meeds#1275
+- fix: Avoid Flickering in Low Performant Device - MEED-8542 - Meeds-io/meeds#2836
+- fix: Avoid Flickering when clicking on Notification in Mobile - MEED-8542 - Meeds-io/meeds#2836
+- fix: Avoid NPE when transforming HTML content - Meeds-io/meeds#3593
+- fix: Bump spring-boot dependencies from 3.5.5 to 3.5.7 - MEED-9919
+- fix: Categories filter not displayed as expected - MEED-9407 - Meeds-io/meeds#3478
+- fix: Change portlets InternalRegistration and Register to not automatically redirect if user is already loggued - MEED-9827 - meeds-io/meeds#3739
+- fix: Clean up code after feature completion - MEED-9753 - meeds-io/MIPs#203
+- fix: Click on an anchor open a news tab instead of scrolling - MEED-8740 - meeds-io/meeds#2936
+- fix: Click on an anchor open a news tab instead of scrolling - MEED-8740 - meeds-io/meeds#2936
+- fix: comments drawer not opening from activity search result - MEED-9247 - Meeds-io/MIPs#193
+- fix: Compute Real Space Home on Renaming - MEED-9026 - Meeds-io/meeds#3286
+- fix: Content link menu not displayed properly when there is no space at the bottom - MEED-9277 - Meeds-io/meeds#3390
+- fix: correct accesibility problems on login page - MEED-9202 - meeds-io/MIPs#203
+- fix: Correct feedbacks for merge - meeds-io/MIPs#203 - MEED-9791
+- fix: Delete Parent Category ACL from indexed permissions - MEED-8895 - Meeds-io/meeds#3247
+- fix: Delete the aria-label on article title in the stream - MEED-9858
+- fix: Display Card shadow in Links when Hover - MEED-8927 - Meeds-io/meeds#3255
+- fix: Displaying a Space Stream displays User Activities as well - MEED-9314 - Meeds-io/meeds#3428
+- fix: Display option ID of the dropdown item in profile admin - Meed-8381 - Meeds-io/meeds#2908
+- fix: Display Right Space Permissions in Admin UI - MEED-8793 - Meeds-io/meeds#3221
+- fix: Display the number of users by role in space role settings - MEED-8646 - Meeds-io/meeds#3144
+- fix: Display the number of users by role in space role settings - MEED-8646 - Meeds-io/meeds#3144
+- fix: Display the total number of comments in activity details and the comment drawer - MEED-9450 - Meeds-io/Meeds#3455
+- fix: Display warning when admin importing wrong template object type - MEED-8802 - Meeds-io/MIPs#180
+- fix: Do not expose user email in url during registration process - MEED-9829 - meeds-io/meeds#3778
+- fix: Double curly braces in Activity/comments displays an empty content - meed-9356 - meeds-io/meeds#3447
+- fix: Edited profile not first in last updated sort - MEED-9504 - Meeds-io/MIPs#212
+- fix: Editing a post creates new <p> - MEED-9669 - meeds-io/meeds#3616
+- fix: Emoji in branding name are not displayed in left side bar header - MEED-9399
+- fix: Emoticon are not correctly displayed in loginForm translations - meeds-io/MIPs#203 - MEED-9520
+- fix: Enable Branding Apply Button - MEED-9280 - Meeds-io/meeds#3397
+- fix: Enable post button in activity composer when category filtering is off - MEED-9493 - Meeds-io/meeds#3513
+- fix: Enable Save Button when Hub Access Form Saved - MEED-9625 - Meeds-io/meeds#3498
+- fix: Enable the apply button when editing the button label - MEED-9168 - Meeds-io/MIPs#187
+- fix: Enable visitors to obtain ckeditor configuration to use it - MEED-9036 - Meeds-io/MIPs#187
+- fix: Enhance the content link plugin to detect numeric and UUID identifiers - MEED-81671
+- fix: Ensure Space Banner compatibility with previous version - MEED-8641 - Meeds-io/meeds#3138
+- fix: Ensure to broadcast profile save event when updating the profile - MEED-9427
+- fix: Ensure to have a focus on the drawer when user open it with keyboard - MEED-9785 - meeds-io/meeds#3743
+- fix: Ensure to update unread badge in sidebar - MEED-8598 - Meeds-io/meeds#3085
+- fix: Error in server console after adding option in a profile property - MEED-9541 - meeds-io/meeds#3382
+- fix: Error log when saving loginForm settings first time - MEED-9899 - meeds-io/meeds#3790
+- fix: Filter Category identities when updating via UI - MEED-9380 - Meeds-io/meeds#3460
+- fix: Filter space templates displayed for not logged users - MEED-9188 - Meeds-io/MIPs#187
+- fix: fix: ActivityManager API breaking Change - MEED-9450 - Meeds-io/Meeds#3455
+- fix: fix: Activity Toolbar Layout Style - MEED-9218 - Meeds-io/MIPs#197
+- fix: fix: Adding and removing a multiValue user profile field whe it is not editable - MEED-8907 - Meeds-io/meeds#3094
+- fix: fix: Attachment Carousel DOM Id - MEED-9323
+- fix: fix: Attachment Download URL - MEED-9424 - Meeds-io/meeds#3487
+- fix: fix: Content Link Enabling when Copy & Paste Text containing / - Meeds-io/MIPs#192
+- fix: fix: Displayed activities in general stream - MEED-9719 - Meeds-io/meeds#3640
+- fix: fix: Displaying primary, second and third dropdownList user fields in people user card drawer - MEED-9251 - Meeds-io/meeds#3361
+- fix: fix: Display of Dynamic HTML Element Reusable Component - MEED-9219 - Meeds-io/meeds#3370
+- fix: fix: Display of item id instead of item name for profile properties using dropdown option - MEED-9072 - Meeds-io/meeds#3299
+- fix: fix: Display on profile attribute after disabling dropdown option - MEED-9744 - Meeds-io/meeds#3568
+- fix: fix: Extra space before group role label when copying links - MEED-9620 - Meeds-io/meeds#3292
+- fix: fix: Identity filtering Query Alias - Meeds-io/MIPs#220
+- fix: fix: internal imported users display in stream - MEED-9823 - Meeds-io/meeds#3731
+- fix: fix: labels for exporting templates - MEED-8676 - Meeds-io/MIPs#180
+- fix: fix: Loading Stream Activity Ids - MEED-9302 - Meeds-io/meeds#3416
+- fix: fix: mention display when editing an activity with files - MEED-9578 - Meeds-io/meeds#2149
+- fix: fix: mention users display for translated labels - MEED-9559 - Meeds-io/meeds#3569
+- fix: fix: opening the deserialize drawer without reloading the page - MEED-8756 - Meeds-io/MIPs#180
+- fix: fix: people and users admin pages - MEED-9690 - Meeds-io/meeds#3627
+- fix: fix: people profile search when searched fields contain white spaces - MEED-9163_MEED-9174 - Meeds-io/meeds#3336_ Meeds-io/meeds#3338
+- fix: fix: post article notification URL to navigate space members to news activity details instead of news details - MEED-8536 - Meeds-io/meeds#3054
+- fix: fix: posting message when the post button is clicked many times - MEED-8762 - Meeds-io/meeds#3038
+- fix: fix: profile fields after importing users from a csv file - MEED-9714 - Meeds-io/meeds#3637
+- fix: fix: Retrieving Spaces with Category Filtering - MEED-9071 - Meeds-io/meeds#3303
+- fix: fix: sidebar filter spaces by category - MEED-9959 - Meeds-io/meeds#3847
+- fix: fix: Site Pages Retrieval in Sidebar Navigation Admin UI - MEED-9105 - Meeds-io/meeds#3316
+- fix: fix: space creation when adding logo and banner - MEED-9245 - Meeds-io/MIPs#187
+- fix: fix: Space Description Alignment in Favorite Drawer - MEED-9468 - Meeds-io/meeds#3495
+- fix: fix: Spaces Cache when using category filter - MEED-8852 - Meeds-io/meeds#3228
+- fix: fix: Space Template Permission Check - Meeds-io/MIPs#187
+- fix: fix: the bad mention user display - MEED-8760 - Meeds-io/meeds#3120
+- fix: fix: the bottom tabbar menu display - MEED-8570 - Meeds-io/meeds#3080
+- fix: fix: the display of breadcrumb portlet - MEED-8658 - Meeds-io/meeds#3153
+- fix: fix: the display of encoded special characters in titles - MEED-9880 - Meeds-io/meeds#3745
+- fix: fix: the display of ordered pinned activities - MEED-9683 - Meeds-io/meeds#3620
+- fix: fix: the display of recent spaces of a category - MEED-8664 - Meeds-io/meeds#3155
+- fix: fix: the display of the group of an attribute having dropdown list - MEED-9481 - Meeds-io/meeds#3497
+- fix: fix: the display of the profile attributes label - MEED-8588 - Meeds-io/meeds#3093
+- fix: fix: the list of last visited spaces after adding a new one - MEED-9530 - Meeds-io/meeds#3544
+- fix: fix: the list of last visited spaces after adding a new one - MEED-9530 - Meeds-io/meeds#3544
+- fix: fix: the organizational chart display - MEED-9817 - Meeds-io/meeds#3724
+- fix: fix: the space creation button display after adding new template - MEED-9291 - Meeds-io/MIPs#187
+- fix: fix: the user mention when posting/commenting activities in drawers - MEED-9688 - Meeds-io/meeds#3624
+- fix: fix: User dashboard page wrong title - MEED-9947 - Meeds-io/meeds#3835
+- fix: fix: User Language when locale is Null - Meeds-io/MIPs#185 This change will avoid an NPE when a supported locale is null.
+- fix: fix: Users Management Add Button alignment - Meeds-io/MIPs#220
+- fix: fix: Video Embed Editing - Meeds-io/MIPs#19
+- fix: Go Back arrow is not aligned with text in login form - MEED-9548 - meeds-io/MIPs#203
+- fix: Google Oauth authentication no more working - MEED-9255
+- fix: handle integrate the user status from different locations - MEED-9536
+- fix: handle unsupported sort fields by returning default sorting query - MEED-9574 - Meeds-io/MIPs#212
+- fix: Have an accessible name for published articles in stream - MEED-9171 - Meeds-io/meeds#3345
+- fix: Having a relevant title for the profile page - MEED-9886 - meeds-io/meeds#3785.
+- fix: Hide Add User Action To delegated Admin User - MEED-9685 - Meeds-io/MIPs#220
+- fix: Hide embedded content when searching for articles - MEED-9584 - Meeds-io/meeds#3550
+- fix: Hide invite users step when user not connected - MEED-9037 - Meeds-io/MIPs#187
+- fix: Hide Overlay displayed when reducing Window size - MEED-8881 - Meeds-io/meeds#3214
+- fix: Incorrect activity title displayed when searching by favorites -MEED-9337 - Meeds-io/MIPs#200
+- fix: Incorrect aria-label rendering - MEED-9866 - meeds-io/meeds#3759
+- fix: Insert element using shortcut do not display suggestions properly - MEED-9808 - meeds-io/meeds#3700.
+- fix: Invite again a user previously invited or requested to join - MEED-9553 - meeds-io/meeds#3564
+- fix: Keep placeholder displayed when selecting template - MEED-9167 - Meeds-io/MIPs#187
+- fix: Label for external providers is not updated once changed - MEED-9713 - meeds-io/MIPs#203
+- fix: Latest commented Activities has to be displayed at first - MEED-9308 - Meeds-io/meeds#3421
+- fix: load more shown even when there's nothing to load - MEED-9337 - Meeds-io/MIPs#200
+- fix: Login page - Indication of mandatory fields - MEED-9181 - Meeds-io/meeds#3353.
+- fix: Login Portlets  cant be added twice on the same page - meeds-io/MIPs#203 - MEED-9515
+- fix: Login portlet settings missing when editing login page with oauth registration - MEED-9969 - meeds-io/meeds#3852
+- fix: Make settings drawer accessible by keyboard navigation on login portlet - MEED-9785 - meeds-io/MIPs#203
+- fix: make settings drawers not loaded if user can not edit portlet preferences - MEED-9798 - meeds-io/MIPs#203
+- fix: Make the login background image focusable - MEED-9051 - Meeds-io/meeds#3291
+- fix: Make the tag controllable by the keyboard and by any pointing device - MEED-9010 - Meeds-io/meeds#2930
+- fix: Make the tag controllable by the keyboard and by any pointing device - MEED-9010 - Meeds-io/meeds#2930
+- fix: Mark Sidebar Configuration as Updated when changing icon - MEED-9654 - Meeds-io/meeds#3614
+- fix: Missing settings in the login form drawer - MEED-9702 - meeds-io/MIPs#203
+- fix: Modification of the background color of the link/activity in the stream - MEED-9097 - Meeds-io/meeds#3310
+- fix: Modification of the color of summary/description and the number of views of news in the stream - MEED-9099 - Meeds-io/meeds#3311.
+- fix: multivalue dropdown attribute required but never checked - MEED-9482 - meeds-io/meeds#3485
+- fix: Mustache syntax
+- fix: Name of Space Sidebar Setting Drawer Name - MEED-9701 - Meeds-io/meeds#3631
+- fix: Not all group members are added to bounded space - Meeds-io/meeds#8218
+- fix: NotificationUpgradePlugin falsly detects error on execution - MEED-8688
+- fix: On external login provider buttons, Remove accessible name when the text is displayed - MEED-9758 - meeds-io/MIPs#203
+- fix: Organizational chart reinitialized after edit layout - MEED-8759- Meeds-io/meeds#2841
+- fix: Prevent disabled space templates from being displayed in the space form drawer - MEED-8707 - Meeds-io/meeds#3193
+- fix: Providing an alternative text for the image near the form - MEED-9008 - Meeds-io/meeds#3279.
+- fix: Radius management is not applied on login portlet - meeds-io/MIPs#203 - MEED-9425
+- fix: Refresh search connector when a space search result element changes - MEED-9874 - Meeds-io/meeds#3768
+- fix: Remove caption and text-bold classes from user and space popover content - MEED-8595 - Meeds-io/Meeds#309
+- fix: Remove caption and text-bold classes from user and space popover content - MEED-8595 - Meeds-io/Meeds#3091
+- fix: Remove drop shadow from button style - MEED-9320 - Meeds-io/MIPs#187
+- fix: Remove options of duplication management - MEED-8541 - Meeds-io/MIPs#180
+- fix: Remove pagination when retrieving space templates - MEED-9752 - Meeds-io/meeds#3676
+- fix: remove tabindex on login form field - MEED-9786 - meeds-io/MIPs#203
+- fix: Remove text-capitalize-first-letter from activity head time - MEED-8667 - Meeds-io/meeds#3160
+- fix: Remove the outlined property from the 'Add Profile Property Value' button - MEED-8891 - Meeds-io/meeds#3142
+- fix: Remove the outlined property from the 'Add Profile Property Value' button - MEED-8891 - Meeds-io/meeds#3142
+- fix: rename component StickyArrowButton to FloatingArrowButton - MEED-9761 - Meeds-io/MIPs#198
+- fix: Review of login page customization admin page - MEED-9375 - meeds-io/MIPs#203
+- fix: Review the search page display when no results are found - MEED-9872 - Meeds-io/meeeds#3769
+- fix: RTL bad menu display of activity stream post options - MEED-9547 - meeds-io/meeds#3558
+- fix: Set an empty alt to images of published and pinned article and to the avatar of whom pinned it - MEED-9151 - Meeds-io/meeds#3337.
+- fix: Set an empty alt to some images - MEED-8491 - Meeds-io/meeds#2984
+- fix: Set an empty alt to the Platform logo - MEED-8752 - Meeds-io/meeds#3075
+- fix: Set an empty alt to the profile picture - MEED-8753 - Meeds-io/meeds#3076
+- fix: Set an empty alt to the profile picture - MEED-8753 - Meeds-io/meeds#3076
+- fix: Set an empty alt to the space avatar -MEED-8490 - Meeds-io/meeds#2864
+- fix: Set a suitable alt to thumbnail of published article - MEED-9198 - Meeds-io/meeds#3363
+- fix: Set default property type to text when editing - MEED-8442 - Meeds-io/MIPs#163
+- fix: Setting default platform language to pt-br generates problems in interface - MEED-8665
+- fix: SideBar Login Title display a technical label - MEED-9820 - meeds-io/meeds#3740
+- fix: sonarcloud issues
+- fix: space avatar not displayed for invited users - MEED-8639 - Meeds-io/meeds#3105
+- fix: Space-directory - Set an empty alt to aspace avatars - MEED-9063 - Meeds-io/meeds#3296
+- fix: Split IDM Users UI Table Menu into a seperated component - Meeds-io/MIPs#220
+- fix: Status messages not rendered by assistive technologies - MEED-9172 - Meeds-io/meeds#3346
+- fix: Stream & News-details- User reactions Information are given only by color - MEED-8932 - Meeds-io/meeds#2985
+- fix: suggest only active templates when applying a template to a space - MEED-8864 - Meeds-io/meeds#3231
+- fix: Task- Providing an explicit label for project managers - MEED-8968 - Meeds-io/meeds#3275
+- fix: Technical label displayed in text the profile property tooltip -MEED-8892 - Meeds-io/meeds#3143
+- fix: Technical label displayed in text the profile property tooltip MEED-8892 - Meeds-io/meeds#3143
+- fix: The copy of an attachment copies only the link - MEED-9802 - meeds-io/meeds#3742
+- fix: The icon of each site must have an accessible name - MEED-8958 - Meeds-io/meeds#3269
+- fix: The icon of each site must have an accessible name - MEED-8958 - Meeds-io/meeds#3269
+- fix: The notification setting link must have an accessible name - MEED-9201 - Meeds-io/meeds#3366
+- fix: Transform branding properties to portletPreferences for sidebarLogin - meeds-io/MIPs#203 - MEED-9487
+- fix: Trigger editor change event when content is modified externally - MEED-9576 - Meeds-io/meeds#3305
+- fix: UI glitch when guest user mentioned - MEED-8775 - Meeds-io/meeds#3070
+- fix: UI glitch when guest user mentioned - MEED-8775 - Meeds-io/meeds#3070
+- fix: Unable to logout when all pages of dw portal are not visible - MEED-8709
+- fix: Unify UI of external providers with sign-in button - MEED-9763 - meeds-io/MIPs#203
+- fix: Update a user profile attribute after changing its multivalued property - MEED-9830 - Meeds-io/meeds#3671
+- fix: Update display of button if long label, to use more than one line - MEED-9673 - meeds-io/MIPs#203
+- fix: Update metadata filter logic regarding space Ids attribute - MEED-8648 - Meeds-io/meeds#2856
+- fix: Update shared activity after updating the original one - MEED-9627 - Meeds-io/meeds#3511
+- fix: Update the shortcut for opening notif center - MEED-9284 - Meeds-io/meeds#3404
+- fix: Update topbar application properties on startup - MEED-9013 - Meeds-io/MIPs#163
+- fix: Upgrade Hibernate to version 6.6 - Meeds-io/meeds#3365
+- fix: Use correct aria role for provider button - MEED-9757 - meeds-io/MIPs#203
+- fix: Use css helper to set background-color for login buttons - MEED-9765 - meeds-io/MIPs#203
+- fix: User Global Stream doesn't list all activities - MEED-9287 - Meeds-io/meeds#3407
+- fix: When hidding a property by REST service by admin, the hidden property is the admin ones - MEED-9067
+- fix: When instanciating a new loginForm portlet, there is an error in server log - meeds-io/MIPs#203 - MEED-9521
+- fix: When using OIDC, redirection to initialURI is not working in some case - MEED-8609
+- fix: who's online portlet display js erreur when loaded by external user - MEED-8644
 
-** Improvemnts
+Improvements:
+- feat: Access to Filters using keyboard - MEED-9239 - Meeds-io/MIPs#193
+- feat: add actions to activity search result card - MEED-8989 - Meeds-io/MIPs#193
+- feat: Add analytics statistics for search sorting by date - MEED-9506- Meeds-io/MIPs#212
+- feat: Add analytics statistics for search within space - MEED-9476 - Meeds-io/MIPs#211
+- feat: add aria-label attribute to the search filter - MEED-9209 - Meeds-io/MIPs#193
+- feat: add aria-labels to search filter options - MEED-9210 - Meeds-io/MIPs#193
+- feat: add aria-pressed attribute to the favorite search filter option - MEED-9207 - Meeds-io/MIPs#193
+- feat: Add avatar/banner preferences in profile header portlet - MEED-8548 - Meeds-io/MIPs#184
+- feat: Add button to export Users - MEED-9640 - Meeds-io/MIPs#219
+- feat: Add canCreateSpaceWithTemplate rest endpoint in spaceTemplateRest component - MEED-9353 - Meeds-io/MIPs#188
+- feat: Add Content Link Backend - MEED-8962 - Meeds-io/MIPs#192
+- feat: Add creation space portlet - MEED-8805 - Meeds-io/MIPs#187
+- feat: Add default categories - MEED-9509 - Meeds-io/MIPs#213
+- feat: Add Digest Password Generator Endpoint - EXIP-17
+- feat: Add extensions for portlet login form - meeds-io/MIPs#203 - MEED-9363
+- feat: add extensions point for Notification channel administration - MEED-9557 - Meeds-io/MIPs#189
+- feat: Add Favorite Drawer Expanded View - MEED-9430 - Meeds-io/MIPs#209
+- feat: Add Favorites App Shortcut - MEED-8843 - Meeds-io/MIPs#185
+- feat: Add filter option in drawer header - MEED-7704 - Meeds-io/MIPs#169
+- feat: Add Global Activity Stream Settings Drawer - MEED-9145 - Meeds-io/MIPs#197
+- feat: Add Mail Template Content Processing Service - MEED-9059 - Meeds-io/MIPs#192
+- feat: Add Notifications Drawer Shortcut - MEED-8874 - Meeds-io/MIPs#185
+- feat: Add option to filter search results by space - MEED-9350 - Meeds-io/MIPs#200
+- feat: Add option to filter search results by spaces - MEED-9459 - Meeds-io/MIPs#211
+- feat: Add option to goback when user click on "Signin with email" - meeds-io/MIPs#203 - MEED-9513
+- feat: Add Platform Logo Settings - meeds-io/MIPs#203 - MEED-9420
+- feat: Add portlet Login Form - meeds-io/MIPs#203 - MEED-9360
+- feat: Add portlet Login Sidebar - meeds-io/MIPs#203 - MEED-9366
+- feat: Add portlet Platform Logo - meeds-io/MIPs#203 - MEED-9365
+- feat: Add portlet Platform name - meeds-io/MIPs#203 - MEED-9364
+- feat: Add Search App Shortcut - MEED-8842 - Meeds-io/MIPs#185
+- feat: add search sort selection - MEED-9498 - Meeds-io/MIPs#212
+- feat: add search text field ID attribute to fix: test failure - MEED-9244 - Meeds-io/MIPs#193
+- feat: Add settings for external authentication providers in login form - meeds-io/MIPs#203 - MEED-9454
+- feat: Add settings for LoginForm Portlet - meeds-io/MIPs#203 - MEED-9368
+- feat: Add settings for sidebar Portlet - meeds-io/MIPs#203 - MEED-9367
+- feat: Add Site Attachment Plugin and Navigation Icon URL - MEED-9633 - Meeds-io/MIPs#218
+- feat: Add Site Navigation Icon from SideBar administration UI - MEED-9634 - Meeds-io/MIPs#218
+- feat: Add Standard Web Component for Content Link of type Drawer - MEED-9066 - Meeds-io/MIPs#192
+- feat: Add the ability to open activity/people search results in a new tab - MEED-9241 - Meeds-io/MIPs#193
+- feat: Add the space creation handler - MEED-8810 - Meeds-io/MIPs#187
+- feat: Add Topbar extension - MEED-8815 - Meeds-io/MIPs#185
+- feat: Add Utils Method to add shortcut listener - MEED-8790 - Meeds-io/MIPs#185
+- feat: Adjust height of people search result card - MEED-8985 - Meeds-io/MIPs#193
+- feat: Adjust mobile view of people search results - MEED-9114 - meeds-io/MIPs#193
+- feat: Adjust mobile view of spaces search results - MEED-9115 - meeds-io/MIPs#193
+- feat: Adjust some ui issues in user status popup - MEED-9597,MEED-9598 - Meeds-io/MIPs#188
+- feat: Adjust stream owner and author display in ActivitySearch results - MEED-9197 - Meeds-io/MIPs#193
+- feat: Allow any user to create a space using template - MEED-8804 - Meeds-io/MIPs#187
+- feat: Allow Delegated Admins to access User Memberships - MEED-9680 - Meeds-io/MIPs#220
+- feat: Allow hide drawer footer divider - MEED-8964 - Meeds-io/MIPs#163
+- feat: Allow hide drawer footer divider - MEED-8964 - Meeds-io/MIPs#163
+- feat: Allow PWA Offline Mode and enhance Favorites Extensibility - EXIP-15
+- feat: Allow setting fix:ed banner height in profile header settings - MEED-8643 - Meeds-io/MIPs#184
+- feat: Allow site properties to be updated directly via plugin - MEED-9180 - Meeds-io/MIPs#194
+- feat: Allow to access Apps Shortcuts using a custom event - MEED-9220 - Meeds-io/meeds#3357
+- feat: Allow to access Registration Property from global JS variable - MEED-8726 - Meeds-io/MIPs#185
+- feat: Allow to add categories to activities - MEED-9158 - Meeds-io/MIPs#197
+- feat: Allow to add categories when posting an activity - MEED-9191 - Meeds-io/MIPs#197
+- feat: Allow to add Content Link Extensions through JS - MEED-8969 - Meeds-io/MIPs#192
+- feat: Allow to add Multiple Activity Stream Portlet instances in a page - MEED-9157 - Meeds-io/MIPs#197
+- feat: Allow to attach image in Sidebar Link - MEED-9635 - Meeds-io/MIPs#218
+- feat: Allow to define default choice for a notification channel - MEED-9304
+- feat: Allow to delegated Admins to access user synchronization info - MEED-9679 - Meeds-io/MIPs#220
+- feat: Allow to edit Memberships of User - MEED-9661 - Meeds-io/MIPs#220
+- feat: Allow to edit Space Name and Properties from Sidebar - MEED-9133 - Meeds-io/meeds#2865
+- feat: Allow to export only selected users - MEED-9642 - Meeds-io/MIPs#219
+- feat: Allow to export searched Users - MEED-9641 - Meeds-io/MIPs#219
+- feat: Allow to import Skin via JS - MEED-8616 - Meeds-io/MIPs#185
+- feat: Allow to inline insert content link from CKEditor - MEED-8941 - Meeds-io/MIPs#192
+- feat: Allow to order User Favorites by last accessed - MEED-9428 - Meeds-io/MIPs#209
+- feat: Allow to redirect to space as User Home - MEED-9286 - Meeds-io/meeds#3405
+- feat: Allow to Registered Users to access Space Members Drawer - MEED-9076 - Meeds-io/meeds#3293
+- feat: Allow to use Language Edit Drawer in any page - MEED-8728 - Meeds-io/MIPs#185
+- feat: Allow updating properties of stored portal config whose configuration path has been deleted - MEED-9180 - Meeds-io/MIPs#194
+- feat: Apply layout compatibility to PlatformName portlet - meeds-io/MIPs#203 - MEED-9406
+- feat: automatically select current space as filter when search is opened from space page - MEED-9339 - Meeds-io/MIPs#200
+- feat: Avoid Memory Leak in ConversationState ThreadLocal - MEED-9593 - Meeds-io/meeds#3472
+- feat: Centralize URL Query Param Parsing methods - MEED-8745 - Meeds-io/MIPs#185
+- feat: Change Category addition button to be outlined - MEED-8764 - Meeds-io/MIPs#185
+- feat: Change Search Application to Drawer instead of Dialog - MEED-8781 - Meeds-io/MIPs#185
+- feat: Cleanup IDM Users Management Custom Style - Meeds-io/MIPs#220
+- feat: content link not well displayed in activity search result - MEED-9305 - Meeds-io/MIPs193
+- feat: Create a new re-usable StickyArrowButton common component - MEED-9473 - Meeds-io/MIPs#198
+- feat: Create page login in global site - MEED-9372 - meeds-io/MIPs#203
+- feat: Customize clear icon in search input field - MEED-8977 - Meeds-io/MIPs#193
+- feat: Delete Space and User Links and Popover from Favorite Items - MEED-9452 - Meeds-io/MIPs#209
+- feat: Delete useless Label - MEED-9221 - Meeds-io/meeds#3350
+- feat: Disable App Center Topbar Deactivation from General Settings - MEED-8814 - Meeds-io/MIPs#185
+- feat: Disable Email Editing from User Profile UI - MEED-9567 - Meeds-io/MIPs#214
+- feat: Display Activity Categories - MEED-9185 - Meeds-io/MIPs#197
+- feat: Display a space card when creating the space - MEED-8808 - Meeds-io/MIPs#187
+- feat: Display Content Not Found when Link is missing - MEED-8947 - Meeds-io/MIPs#192
+- feat: Display Drawers Overlay On Top of Bottom Drawers - MEED-9250 - Meeds-io/meeds#3436
+- feat: Display Enable or Disable Users Management Action switch selected status - MEED-9645 - Meeds-io/MIPs#219
+- feat: Display Label when content Link not accessible - MEED-9052 - Meeds-io/MIPs#192
+- feat: Display Language Options using user language in Translation Input - MEED-8728 - Meeds-io/MIPs#185
+- feat: Display last updated date in activity search results - MEED-9561 - Meeds-io/MIPs#212
+- feat: Display search activity result actions on hover - MEED-8989 - Meeds-io/MIPs#193
+- feat: Dont display by default the  mobile company logo - MEED-8650 - Meeds-io/meeds#3138
+- feat: Dont display by default the  mobile company logo - MEED-8650 - Meeds-io/meeds#3138
+- feat: Enable admin to exclude spaces from the spaces list in the sidebar - MEED-9383 - Meeds-io/meeds#3461
+- feat: Enable Content Link Plugin on Activity Share Message - MEED-8952 - Meeds-io/MIPs#192
+- feat: enable sorting by last updated in profiles search - MEED-9505 -Meeds-io/MIPs#212
+- feat: enable sorting by last updated in spaces search - MEED-9505 - Meeds-io/MIPs#212
+- feat: Enable sorting by last update in Activity search - MEED-9499 - Meeds-io/MIPs#212
+- feat: Enahnce Category Selector in Mobile using a Carousel - MEED-9199 - Meeds-io/MIPs#197
+- feat: Enance alignment See All category breadcrumb button - MEED-8851 - Meeds-io/MIPs#185
+- feat: Enhance Category Filter Display switch Object Type - MEED-8887 - Meeds-io/meeds#3241
+- feat: Enhance Category Filter Display switch Object Type - MEED-8887 - Meeds-io/meeds#3241
+- feat: Enhance emojiPicker component to support a composer options - MEED-7718 - Meeds-io/MIPs#164
+- feat: enhance extension check to use async fuctions - MEED-9285 - Meeds-io/MIPs#164
+- feat: Enhance IDM Users Management UX  - Meeds-io/MIPs#220
+- feat: Enhance Users Management UI Mobile View - Meeds-io/MIPs#220
+- feat: Ensure upgrade for categories roles identification - MEED-9550 - Meeds-io/MIPs#213
+- feat: Export multiple portlets instances - MEED-8401 - Meeds-io/MIPs#180
+- feat: Export Portlets Instances - MEED-8399 - Meeds-io/MIPs#180
+- feat: Export space template navigation - MEED-8705 - Meeds-io/MIPs#180
+- feat: fix: counting user managed spaces - MEED-9169 - Meeds-io/MIPs#194
+- feat: fix: parentId assignment to enable kudos sending for comments - MEED-8989 - Meeds-io/MIPs#193
+- feat: Hide Email Edit Drawer UI when not modifiable - MEED-9568 - Meeds-io/MIPs#214
+- feat: Hide Email Field from User Profile UI if not Hiddenable - MEED-9567 - Meeds-io/MIPs#214
+- feat: Hide Removed Favorite Items - MEED-9612 - Meeds-io/meeds#3575
+- feat: Hide the Topbar loading after the activity search module initialization - MEED-9139 - Meeds-io/MIPs#193
+- feat: Hide User Management Buttons when no Multi Select - MEED-9639 - Meeds-io/MIPs#219
+- feat: Implement Activity and Comment Editor Content Link Extensions - MEED-8934 - Meeds-io/MIPs#192
+- feat: Implement Activity Categorization Backend - MEED-9166 - Meeds-io/MIPs#197
+- feat: Implement a custom common emojiPicker - MEED-9135 - Meeds-io/MPIs#164
+- feat: Implement CKEditor Content Suggester - MEED-8934 - Meeds-io/MIPs#192
+- feat: Implement custom claims for OpenIdConnect - Meeds-9282
+- feat: Implement Default Category Plugin and allow switch Category Object - MEED-9185 - Meeds-io/MIPs#197
+- feat: Implement Email Editing Drawer - MEED-9564 - Meeds-io/MIPs#214
+- feat: Implement Email OTP Code Verification Plugin - exoplatform/exip#21
+- feat: Implement Emoji suggester component - MEED-9225 - Meeds-io/MIPs#164
+- feat: Implement Internal Users Space Invitation Process - MEED-9572 - Meeds-io/meeds#3580
+- feat: Implement profile header settings drawer - MEED-8554, MEED-8555 - Meeds-io/MIPs#184
+- feat: Implement profile header settings drawer - MEED-8554, MEED-8555 - Meeds-io/MIPs#184
+- feat: Implement sidebar user popup menu - MEED-9412 - Meeds-io/MIPs#188
+- feat: Implement space creation instantiation settings - MEED-8807 - Meeds-io/MIPs#187
+- feat: Implement user status update - MEED-9413 - Meeds-io/MIPs#188
+- feat: Import / Export Space templates - MEED-8423 - Meeds-io/MIPs#180
+- feat: Import Templates - MEED-8400 - Meeds-io/MIPs#180
+- feat: Improve Favorite Activity Item Display when drawer expanded - MEED-9433 - Meeds-io/MIPs#209
+- feat: Improve Favorite Activity Item Display when drawer expanded - MEED-9433 - Meeds-io/MIPs#209
+- feat: Improve Favorite Placeholder - MEED-9438 - Meeds-io/MIPs#209
+- feat: Improve Favorite Space Item Display when drawer expanded - MEED-9432 - Meeds-io/MIPs#209
+- feat: Improve Password changing UX - MEED-8566 - Meeds-io/MIPs#214
+- feat: Improve the message "we could not find the requested activity" - MEED-9388
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/meeds#3608
+- feat: Increase Content Link Drawers ZIndex - Meeds-io/MIPs#192
+- feat: Increase Drawer ZIndex Automatically when Dialog opened - Meeds-io/MIPs#192
+- feat: Introduce Web Component for ContentLink - MEED-8937 - Meeds-io/MIPs#192
+- feat: keep search text after closing and reopening search drawer - MEED-9007 - Meeds-io/MIPs#193
+- feat: Limit Topbar Apps to 10 - MEED-8883 - Meeds-io/MIPs#185
+- feat: Make Category Filter Component reusable - MEED-8789 - Meeds-io/MIPs#185
+- feat: Make Category Selection Mandatory when filtered Stream - MEED-9190 - Meeds-io/MIPs#197
+- feat: Make External Onboarding page modifiable in layout - MEED-9700 - meeds-io/MIPs#203
+- feat: Make Forgot password page modifiable in layout - MEED-9362 - Meeds-io/MIPs#203
+- feat: Make Internal Onboarding page modifiable in layout - MEED-9711 - Meeds-io/MIPs#203
+- feat: Make Register page modifiable in layout - MEED-9361 - Meeds-io/MIPs#203
+- feat: Move Links and Image Portlets From Social - Meeds-io/meeds#3313
+- feat: Move "myCraft" site from plf-sites-extension to plf-meeds-extension - EXO-77649 - Meeds-io/meeds#3124
+- feat: move TopBar display loading event dispatch to activity stream init method - MEED-9139 - Meeds-io/MIPs#193
+- feat: Move Users Import from REST to a dedicated Service - MEED-9644 - MEED-9643 - Meeds-io/MIPs#219
+- feat: Open Content Links in Same Tab - MEED-8945 - Meeds-io/MIPs#192
+- feat: Options to exclude categories from feed - MEED-9377 - Meeds-io/meeds#3457
+- feat: Options to exclude categories from spaces list - MEED-9376 - Meeds-io/meeds#3456
+- feat: Prevent select list from closing when a search type is selected- MEED-9206 - Meeds-io/MIPs#193
+- feat: Refactor contentLinkExtension pattern building logic - MEED-9305 - Meeds-io/MIPs#193
+- feat: Remove Access permission for categories - MEED-9507 - Meeds-io/MIPs#213
+- feat: Remove border color from profile header portlet - MEED-8652 - Meeds-io/MIPs#184
+- feat: Remove Expanded Favorite Drawer Header from right side - MEED-9444 - Meeds-io/MIPs#209
+- feat: Remove Favorites from Mandatory Topbar Apps - MEED-8871 - Meeds-io/MIPs#185
+- feat: Remove text transformation from the search filter options - MEED-9205 - Meeds-io/MIPs#193
+- feat: Remove the title and summary tooltips from the search result card - MEED-9217 - Meeds-io/MIPs#193
+- feat: Remove WebSocket usage for user status updates - MEED-9692 - Meeds-io/MIPs#188
+- feat: Rename ContentLink CKEDitor Plugin - Meeds-io/MIPs#192
+- feat: Replace HTML line breaks with plain text in activity search result title - MEED-8982 - Meeds-io/MIPs#193
+- feat: replace jquery usage with utility function in activity search card result - MEED-9241 - Meeds-io/MIPs#193
+- feat: Replace product name with company name in search input placeholder - MEED-9306 - Meeds-io/MIPs#193
+- feat: Review activities search result display - MEED-8982 - Meeds-io/MIPs#193
+- feat: Review people search result display - MEED-8985 - Meeds-io/MIPs#193
+- feat: Review search drawer display - MEED-8973 - Meeds-io/MIPs#193
+- feat: Review search drawer display on small screens - MEED-9014 - Meeds-io/MIPs#193
+- feat: Review search result card display - MEED-8980 - Meeds-io/MIPs#193
+- feat: Review spaces search result display - MEED-8984 - Meeds-io/MIPs#193
+- feat: Review the activity search result display - MEED-9404 - Meeds-io/MIPs#200
+- feat: Review the search filter options display - MEED-9400 - Meeds-io/MIPs#200
+- feat: Review title style in search results - MEED-9491 - Meeds-io/MIPs#211
+- feat: Review Users Management Table Actions - MEED-9659 - Meeds-io/MIPs#220
+- feat: Review Users Management Table Columns - MEED-9658 - Meeds-io/MIPs#220
+- feat: Review Users Management Table Onboard Action - MEED-9660 - Meeds-io/MIPs#220
+- feat: Rework Password Modification UI - MEED-9563 - Meeds-io/MIPs#214
+- feat: Rework Users Management Filter Drawer and Toolbar - MEED-9655 - Meeds-io/MIPs#220
+- feat: Rules when closing a drawer from search - MEED-9249 - Meeds-io/MIPs#193
+- feat: Search activity in multiple spaces - MEED-9331 - Meeds-io/MIPs#211
+- feat: Search activity in multiple spaces - MEED-9460 - Meeds-io/MIPs#211
+- feat: Search activity of one space - MEED-9331 - Meeds-io/MIPs#200
+- feat: Search profile in multiple spaces - MEED-9464 - Meeds-io/MIPs#211
+- feat: Search profiles of one space - MEED-9334 - Meeds-io/MIPs#200
+- feat: Secure Update of User Email by OTP Code - Meeds-io/MIPs#214
+- feat: set activity base link to correctly build comment activity URL - MEED-9164 - Meeds-io/MIPs#193
+- feat: Sort Content Link Extensions alphabetically - MEED-8065 - Meeds-io/MIPs#192
+- feat: Split AboutMe App components - MEED-8730 - Meeds-io/MIPs#185
+- feat: Support counting user managed spaces and templates for access control - MEED-8970 - Meeds-io/MIPs#194
+- feat: Unauthorize importing portlets' instances in page templates app -  MEED-8604 - Meeds-io/MIPs#180
+- feat: Unify search potions display with icons - MEED-8978 - Meeds-io/MIPs#193
+- feat: unify sort param appending in search connectors URI - MEED-9503 - Meeds-io/MIPs#212
+- feat: Unify sort params in search RESTs - MEED-9573 - Meeds-io/MIPs#212
+- feat: Unify spacing between search filter options - MEED-9400 - Meeds-io/MIPs#200
+- feat: Unify the font size of the search options filter - MEED-9033 - Meeds-io/MIPs#193
+- feat: Unselect instances once exported - MEED-8539 - Meeds-io/MIPs#180
+- feat: Update Notifications Drawer Access Shortcut - MEED-8875 - Meeds-io/MIPs#185
+- feat: update the window title by opening and closing the search drawer - MEED-9208 - Meeds-io/MIPs#193
+- feat: Upgrade to Spring 3.5.5
+- feat: Use common border-radius class for emoji picker components - MEED-9445 - Meeds-io/MIPs#164
+- feat: use computed property instead of method to add aria-label to tags list - MEED-9210 - Meeds-io/MIPs#193
+- feat: Use expand parameter to include the original activity in the search results - MEED-9014 - Meeds-io/MIPs#193
+- feat: Use fix:ed Card Size in Links - MEED-8926 - Meeds-io/meeds#3256
+- feat: Use Image preview dialog for image messages - MEED-8681 - Meeds-io/MIPs#163
+- feat: Use Space Members First Name in Circle Space Name instead of Full Name - MEED-9136 - Meeds-io/meeds#2798
+- feat: Delete multiple space templates - MEED-8414 - Meeds-io/MIPs#180
 
-        
-eXo Forum 6.1.x
+eXo MATRIX 7.1.0
 *************************
-** Bug
+fix:
+- fix: Adapt message object for message received events - MEED-8845 - Meeds-io/MIPs#163
+- fix: Add border to user avatar - MEED-8524 - Meeds-io/MIPs#163
+- fix: Add bottom margin for last message of conversation - MEED-8918 - Meeds-io/MIPs#163
+- fix: Add direct URL to open discusssion from Push notification - MEED-9527 - Meeds-io/MIPs#189
+- fix: Add header for RoomStatus class - MEED-9285 - Meeds-io/MIPs#164
+- fix: Add message content to on site notification - MEED-9271 - Meeds-io/MIPs#189
+- fix: Add translation key for matrix notification group name - MEED-9783 - Meeds-io/meeds#3712
+- fix: Adjust chat notification badge size - meed-8457 - Meeds-io/MIPs-163
+- fix: Adjust room lastMessage fetch limit param - MEED-9591 - Meeds-io/MIPs#188
+- fix: Adjust spacing between message border and drawer - MEED-8526 - Meeds-io/MIPs#163
+- fix: Align first reaction with message box - MEED-8921 - Meeds-io/MIPs#163
+- fix: Align the file name for attachments - MEED-8957 - Meeds-io/MIPs#163
+- fix: Allow changing user status from user avatar in chat drawer - MEE-9536
+- fix: Allow creating users with numeric identifiers in Matrix - MEED-9787
+- fix: Allow fetching users info while matrixId property is invisible - MEED-8442 - Meeds-io/MIPs#163
+- fix: Avoid duplicating drawer for chat discussions - MEED-8686 - Meeds-io/MIPs#163
+- fix: Avoid playing notification sound twice due to race conditions issue - MEED-9887 - Meeds-io/meeds#3787
+- fix: Avoid sending empty notifications - MEED-9740 - Meeds-io/MIPs#189
+- fix: Build failure on MatrixRest#notify unit test - MEED-9738
+- fix: change the default background color and fix display of links - MEED-8685 - Meeds-io/MIPs#163
+- fix: Delete data after tests - MEED-8496 - Meeds-io/MIPs-163
+- fix: Disable refresh on swipe down and load more messages - MEED-8589 - Meeds-io/MIPs#163
+- fix: Disable temporarily pwa notifications - MEED-8914 - Meeds-io/MIPs#163
+- fix: Discussion avatar smashed when room name is long - MEED-9229 - Meeds-io/MIPs#164
+- fix: Display quoted user even for old messages - MEED-9390 - Meeds-io/meeds#3704
+- fix: Do not block server startup when matrix is unavailable - MEED-8497 - Meeds-io/MIPs-163
+- fix: Do not display notification when message is already read - MEED-9558 - Meeds-io/MIPs#189
+- fix: Do not show user interaction error while attempt to play notification sound - MEED-9734 - Meeds-io/meeds#3717
+- fix: Enable chat button for external users - MEED-8669 - Meeds-io/MIPs#163
+- fix: Enable chat button for external users - MEED-8669 - Meeds-io/MIPs-163
+- fix: Enhance message width responsiveness - MEED-8873 - Meeds-io/MIPs#163
+- fix: Enhance typing users list when switching rooms - MEED-9708 - Meeds-io/MIPs#198
+- fix: Enhance unread section and allow loading old unseen messages - MEED-9730 - Meeds-io/meeds#3703
+- fix: Enhance unread section feature - MEED-9730 - Meeds-io/meeds#3703
+- fix: Enhnace reset/resize composer - MEED-9070 - Meeds-io/MIPs#163
+- fix: Ensure to live hide quote part of the reply when delete target message - MEED-9908 - Meeds-io/meeds#3804
+- fix: Escape correctly unauthorized characters before creating a 1:1 matrix room - MEED-9161 - Meeds-io/MIPs#163
+- fix: fix chat 1:1 mention userId retrieve - MEED-9960 - Meeds-io/meeds#3850
+- fix: fix chat app drawer min width on mobile - MEED-9796 - Meeds-io/MIPs#225
+- fix: fix edit space properties from chat room - MEED-9636 - Meeds-io/MIPs#189
+- fix: fix mentions handling during message send - MEED-9794
+- fix: fix mentions handling during message send - MEED-9794 - Meeds-io/MIPs#225
+- fix: fix message recorder component name typo
+- fix: fix message update processing - MEED-9875 - Meeds-io/meeds#3773
+- fix: fix m.read receipt event handling - MEED-9774 - Meeds-io/meeds#3711
+- fix: fix press shift+enter two times to add new line in message composer - MEED-9092 - Meeds-io/MIPs#163
+- fix: fix random test fail - MEED-9689 - Meeds-io/MIPs#189
+- fix: fix regex for user mentions and add loading effect for rooms - MEED-8885 - Meeds-io/MIPs#163
+- fix: fix retrieving user id while formatting mentions in message - MEED-9867 - Meeds-io/meeds#3764
+- fix: fix some ui/ux issues related to unread section - MEED-9705,MEED-9707 - Meeds-io/MIPs#198
+- fix: fix sound notification depends on user status - MEED-9704 - Meeds-io/MIPs#188
+- fix: fix tooltip reaction user info on 1:1 chat - MEED-9900 - Meeds-io/meeds#3794
+- fix: fix ui issue on image message - MEED-9053 - Meeds-io/MIPs#163
+- fix: fix ui issue related to long full name while replying to message - MEED-9455 - Meeds-io/meeds#3719
+- fix: fix unit tests - Meeds-io/MIPs#188
+- fix: fix unread counter flickering - MEED-9591 - Meeds-io/MIPs#188
+- fix: fix wrong chat unread badge counter - MEED-9591 - Meeds-io/MIPs#188
+- fix: hide message sender when is same as viewer - MEED-8844 - Meeds-io/MIPs#163
+- fix: ignore read receipts for custom event types - MEED-9888 - Meeds-io/meeds#3792
+- fix: improve bottom margin for last message of a conversation - MEED-9095 - Meeds-io/MIPs#163
+- fix: improve displaying rooms on first page display - MEED-9326
+- fix: improve user synchronization - MEED-9182 - Meeds-io/MIPs#163
+- fix: JWT token and related cookie should have the exact live time - meeds-8482 - Meeds-io/MIPs-163
+- fix: load rooms from backend to avoid latency from Matrix server - MEED-9262 - Meeds-io/MIPs#163
+- fix: load rooms from backend to avoid latency from Matrix server - MEED-9262 - Meeds-io/MIPs#163
+- fix: Maintain chat topbar application position - MEED-9288 - Meeds-io/meeds#3641
+- fix: Make sure the sent message is fully visible - MEED-9722 - Meeds-io/meeds#3707
+- fix: make sure to display full name when the user is mentioned - MEED-9929
+- fix: Make sure to keepscroll at bottom when send or receive a message - MEED-9903 - Meeds-io/meeds#3801
+- fix: Mark own message as read after being sent - MEED-9774 - Meeds-io/meeds#3711
+- fix: Mark room as read when open conversation - MEED-9458 - Meeds-io/meeds#3705
+- fix: mention external users in 1:1 chat - MEED-9930
+- fix: open immediately discussion on last message - MEED-8546 - Meeds-io/MIPs#163
+- fix: preserve lastMessageContent when loading rooms from cache - MEED-9833 - Meeds-io/meeds#3791
+- fix: prevent edits from being applied to redacted messages - MEED-9443 - Meeds-io/MIPs#164
+- fix: Prevent hiding last message while resizing the composer - MEED-9881 - Meeds-io/meeds#3775
+- fix: Prevent messages scroll down effect after adding reactions - MEED-9728 - Meeds-io/meeds#3716
+- fix: Prevent multiple message sends by adding send lock - MEED-9742 - Meeds-io/meeds#3721
+- fix: Prevent playing twice the receive message sound notification - MEED-9723 - Meeds-io/meeds#3708
+- fix: Prevent uneeded sent custom requests for unseen section update - MEED-9883 - Meeds-io/meeds#3786
+- fix: remove mark as read action - MEED-9528 - Meeds-io/MIPs#189
+- fix: remove mx-reply tag from the content body of the reply of a message - MEED-9232
+- fix: remove profile property setting matrixId - MEED-9741
+- fix: Remove the circle icon when message edited and timestamp is not displayed - MEED-9315 - Meeds-io/meeds#3720
+- fix: rename component StickyArrowButton to FloatingArrowButton - MEED-9761 - Meeds-io/MIPs#198
+- fix: replace Matrix unallowed chars with hyphen character - MEED-9102 - Meeds-io/MIPs#163
+- fix: reset typing state after sending the message - MEED-9834 - Meeds-io/meeds#3774
+- fix: return correctly the room when full ID is provided - MEED-9227 - Meeds-io/MIPs#163
+- fix: Set composer on focus state after any message action - MEED-9706 - Meeds-io/meeds#3685
+- fix: sort discussion with latest received message then natural order - MEED-8455 - Meeds-io/MIPs-163
+- fix: Stop getRoomLastMessage early if room has no messages - MEED-9443 - Meeds-io/MIPs#164
+- fix: Support cross-device unseen section sync via custom Matrix events - MEED-9725 - Meeds-io/meeds#3715
+- fix: truncate last message includes html content - MEED-9083 - Meeds-io/MIPs#163
+- fix: typos in component names - MEED-9869
+- fix: Update chat application params in Topbar adminsitration - MEED-9013 - Meeds-io/MIPs#163
+- fix: Update layout of the discussions list - meed-8459 - Meeds-io/MIPs-163
+- fix: Update Mail message labels and fix avatars in web notification - MEED-9271 - Meeds-io/MIPs#189
+- fix: Update push notif message and fix labels - MEED-9271 - Meeds-io/MIPs#189
+- fix: Update UI of day timestamp - MEED-8514 - Meeds-io/MIPs#163
+- fix: Update visibiity of Matrix ID property - MEED-8442 - Meeds-io/MIPs#163
+- fix: Use original image dimension in the previewer - MEED-9868 - Meeds-io/meeds#3762
+- fix: User does not join group when group is already bound - MEED-9551
+- fix: Use websockets for push notifications - MEED-9670
+- fix: Wrong connectionsIncommonCount in list receipts drawer - MEED-9703 - Meeds-io/MIPs#198
 
-** Improvemnts
+Improvements:
+- feat: add administration for push notifications - MEED-9557 - Meeds-io/MIPs#189
+- feat: add API to sync users and spaces - MEED-8584 - Meeds-io/MIPs#163
+- feat: Add a tooltip to display the users who reacted - MEED-9085 - Meeds-io/MIPs#164
+- feat: Add emojiPicker option in chat composer - MEED-7718 - Meeds-io/MIPs#164
+- feat: Add hover effect on discussion list items - MEED-8475 - Meeds-io/MIPs#163
+- feat: Add matrix prefix to declared componens names - MEED-9675 - Meeds-io/MIPs#226
+- feat: add message composer area - MEED-7709 - Meeds-io/MIPs#163
+- feat: Add message sent analytics measuring point - MEED-7716 - Meeds-io/MIPs#163
+- feat: add sound effect for received messages - MEED-9268 - Meeds-io/MIPs#189
+- feat: add timestamp of the day before messages - MEED-7715 - Meeds-io/MIPs-163
+- feat: add timestamp to each chat message - MEED-7717 - Meeds-io/MIPs-163
+- feat: Add upload attachment option in chat composer area - MEED-9447 - Meeds-io/MIPs#189
+- feat: Adjust border radius style of chat room space properties menu - MEED-9456 - Meeds-io/MIPs#189
+- feat: Adjust discussion list ui/ux - MEED-9062 - Meeds-io/MIPs#162
+- feat: Adjust ui/ux arround display audio messages - MEED-8920 - Meeds-io/MIPs#163
+- feat: allow adding extensions in chat rooms - MEED-8532 - Meeds-io/MIPs#163
+- feat: Allow delete all types of messages - MEED-9384 - Meeds-io/MIPs#164
+- feat: Allow edit space name/properties from an associated chat room - MEED-9387 - Meeds-io/MIPs#189
+- feat: Allow mention participant in 1:1 chat - MEED-9272 - Meeds-io/MIPs#189
+- feat: Allow mute chat room from the converstaion header menu  - MEED-9417 - Meeds-io/MIPs#188
+- feat: Allow open discussion by clicking on the whole area of room list item - MEED-9231 - Meeds-io/MIPs#164
+- feat: Auto focus on chat composer when open a chat room - MEED-9265 - Meeds-io/MIPs#189
+- feat: Avoid having scroll jumps while loading room messages - MEED-9795 - Meeds-io/MIPs#225
+- feat: Chat push notif accroding to user status - MEED-9469 - Meeds-io/MIPs#188
+- feat: Copy/paste text keep the original style/formatting - MEED-9069 - Meeds-io/MIPs#163
+- feat: Delegate chat status updates to internal status service - MEED-9413 - Meeds-io/MIPs#188
+- feat: Disable space chat from the settings - MEED-9285 - Meeds-io/MIPs#164
+- feat: Display animated image in chat and preview for gif images - MEED-8846 - Meeds-io/MIPs#163
+- feat: display attachment in chat drawer - MEED-8684 - Meeds-io/MIPs#163
+- feat: display attachment in chat drawer - MEED-8684 - Meeds-io/MIPs#163
+- feat: Display avatar previous message has reactions - MEED-9002 - Meeds-io/MIPs#163
+- feat: Display edited message - MEED-8912 - Meeds-io/MIPs#163
+- feat: Display emoji reaction in chat drawer - MEED-8682 - Meeds-io/MIPs#163
+- feat: Display reply to a message in chat drawer - MEED-8680 - Meeds-io/MIPs#163
+- feat: display static text for deleted messages - MEED-8925 - Meeds-io/MIPs#163
+- feat: Display voice messages in chat drawer - MEED-8683 - Meeds-io/MIPs#163
+- feat: Enable display and preview images in chat - MEED-8681 - Meeds-io/MIPs#163
+- feat: Enable edit message in drawer - MEED-9080 - Meeds-io/MIPs#164
+- feat: Enable emoji suggester on chat composer - MEED-9225 - Meeds-io/MIPs#164
+- feat: Enable expand option in chat drawer - MEED-9162 - Meeds-io/MIPs#164
+- feat: Enable mentioning users in chat - MEED-8514 - Meeds-io/MIPs#163
+- feat: Enable Mention notifications - MEED-9271 - meeds-io/Mips#189
+- feat: enable Push notification for new messages - MEED-9270 - Meeds-io/MIPs#189
+- feat: Enhance Audio attachments display - MEED-8956 - Meeds-io/MIPs#163
+- feat: Enhance concurrency handling for messageReceived event processing - MEED-9394 - Meeds-io/MIPs#164
+- feat: Enhance deleted message reactivity on message list and conversation list - MEED-9075 - Meeds-io/MIPs#163
+- feat: Enhance display of last message reaction in room list - MEED-9292 - Meeds-io/MIPs#164
+- feat: Enhance message three-dots menu ux - MEED-9316 - Meeds-io/MIPs#164
+- feat: Enhance send button UI - MEED-9050 - Meeds-io/MIPs#163
+- feat: handle reactions on room last message - MEED-9086 - Meeds-io/MIPs#164
+- feat: Implement Add/remove reaction by clicking on existing reactions - MEED-9082 - Meeds-io/MIPs#164
+- feat: Implement chat full page from conversation - MEED-9782 - Meeds-io/MIPs#225
+- feat: Implement chat full screen mode - MEED-9674 - Meeds-io/MIPs#225
+- feat: Implement copy/past image in drawer redaction area - MEED-7712 - Meeds-io/MIPs#163
+- feat: implement delete message - MEED-9081 - Meeds-io/MIPs#164
+- feat: Implement drag&drop files in discussion drawer - MEED-7713 - Meeds-io/MIPs#163
+- feat: Implement filter chat rooms - MEED-7704 - Meeds-io/MIPs#169
+- feat: Implement message reactions action - MEED-9135 - Meeds-io/MIPs#164
+- feat: Implement message reply action - MEED-9078 - Meeds-io/MIPs#164
+- feat: Implement message typing indicator - MEED-9472 - Meeds-io/MIPs#198
+- feat: Implement mute private room - MEED-9522 - Meeds-io/MIPs#188
+- feat: Implement private room creation - MEED-9353 - Meeds-io/MIPs#189
+- feat: Implement read message indicator - MEED-9471 - Meeds-io/MIPs#198
+- feat: Implement send image via chat drawer - MEED-7711 - Meeds-io/MIPs#163
+- feat: Implement unread messages section - MEED-9473 - Meeds-io/MIPs#198
+- feat: Implement voice message - MEED-9675 - Meeds-io/MIPs#226
+- feat: Introduce Crowdin WF - MEED-9409 - Meeds-io/MIPs#164
+- feat: Load more messages from history - MEED-8453 - Meeds-io/MIPs#163
+- feat: Mute chat room from conversation list - MEED-9416 - Meeds-io/MIPs#188
+- feat: Press and hold to open message action menu - MEED-9386 - Meeds-io/MIPs#164
+- feat: Prevent applying layout styles on chat button portlet - MEED-9228 - Meeds-io/MIPs#189
+- feat: quick access chat discussion for user and spaces - MEED-7723 - Meeds-io/MIPs-163
+- feat: Review chat drawer redaction area - MEED-8964 - Meeds-io/MIPs#163
+- feat: Switch user status updates from WebSocket to polling - MEED-9692 - Meeds-io/MIPs#188
+- feat: update labels and check autoplay permission - MEED-9268 - Meeds-io/MIPs#189
+- feat: Update License Headers - Meeds-io/meeds#3324
+- feat: Update message indicator when room is opened - MEED-8519 - Meeds-io/MIPs#163
+- feat: Update room last message when removing reaction - MEED-9178 - Meeds-io/MIPs#164
+- feat: update UI of conversation layout - MEED-7714 - Meeds-io/MIPs-163
+- feat: update UI of the drawer of Quick room creation - MEED-7703 - Meeds-io/MIPs-163
+- feat: Use common border-radius class for message action menu components - MEED-9445 - Meeds-io/MIPs#164
 
-eXo Social 6.1.x
+eXo Layout 7.1.0
 *************************
-** Bug
+fix:
+- fix: Add Application titles in Admin Portlets - MEED-8171 - Meeds-io/MIPs#173
+- fix: Add loading info when importing templates - MEED-8824 - Meeds-io/MIPs#180
+- fix: Add missing Section Template Label - Meeds-io/MIPs#172
+- fix: Allow to export portlet settings  - MEED-9809 - meeds-io/meeds#3780
+- fix: Allow to have a fixed height lower than 100 when editing application layout - MEED-9790 - Meeds-io/meeds#3695
+- fix: Correct feedbacks for merge - meeds-io/MIPs#203 - MEED-9791
+- fix: Disable Suggester in Layout CKEditor instances  - MEED-8094 - Meeds-io/MIPs#173
+- fix: Display Site Sidebar Layout Container in full height - MEED-8307 - Meeds-io/MIPs#175
+- fix: Display warning when admin importing wrong template object type - MEED-8802 - Meeds-io/MIPs#180
+- fix: Enable Navigation Drawer in Site Templates - MEED-8432 - Meeds-io/meeds#2950
+- fix: Enhance Access to Layout Editor Section Buttons - MEED-8591 - Meeds-io/meeds#3109
+- fix: Enhance Section Menu Buttons Display - MEED-8544 - Meeds-io/meeds#3074
+- fix: Export & Import preview of instances - MEED-8540 - Meeds-io/MIPs#180
+- fix: fix Access to Portlets List From Layout Editor - MEED-9140 - Meeds-io/meeds#3333
+- fix: fix Admin UI List Alignements - MEED-8175 - Meeds-io/MIPs#173
+- fix: fix Banner and Sidebar Sections CSS Computing - MEED-8340 - Meeds-io/MIPs#175
+- fix: fix Creating A Page Template - MEED-8341 - Meeds-io/MIPs#175
+- fix: fix display of Menu Application in Banner Section - MEED-8247 - Meeds-io/MIPs#175
+- fix: fix duplicating Site Template - Meeds-io/MIPs#175
+- fix: fix Extra Margin In Sites Management UI - Meeds-io/MIPs#175
+- fix: fix Impersonating Addon Containers - MEED-8349 - Meeds-io/meeds#2894
+- fix: fix import/export section template portlet instance content - MEED-8813 - Meeds-io/MIPs#180
+- fix: fix import/export  template background image - MEED-8813 - Meeds-io/MIPs#180
+- fix: fix Importing IDE Gadget portlet - MEED-8821 - Meeds-io/MIPs#180
+- fix: fix importing templates name and descriptions labels - MEED-8710 - Meeds-io/MIPs#180
+- fix: fix labels for exporting templates - MEED-8676 - Meeds-io/MIPs#180
+- fix: fix missing navigation when importing site template - MEED-8904 - Meeds-io/meeds#3248
+- fix: fix opening the deserialize drawer without reloading the page - MEED-8756 - Meeds-io/MIPs#180
+- fix: fix Page Body Height in Site Layout Editor - MEED-8285 - Meeds-io/MIPs#175
+- fix: fix Page Width Application in Site Layout Editor - Meeds-io/MIPs#175
+- fix: fix Parsing Site and Page permissions in Permission Management UI - MEED-8093 - Meeds-io/MIPs#173
+- fix: fix Portlet Name Display in Layout Drawer - MEED-9130 - MEED-9131 - Meeds-io/meeds#3318 - Meeds-io/meeds#3319
+- fix: fix Site Banner Section Move - Meeds-io/MIPs#175
+- fix: fix Site Form Save Button Disaling - MEED-8300 - Meeds-io/meeds#2850
+- fix: fix Site Layout Update by checking storage before updating layout - Meeds-io/MIPs#175
+- fix: fix Site Template Saving Snackbar CTA Url - MEED-8292 - Meeds-io/MIPs#175
+- fix: fix Sticky position on Site Top banners Option - Meeds-io/MIPs#175
+- fix: fix the display of encoded special characters in titles - MEED-9880 - Meeds-io/meeds#3745
+- fix: fix the save button activation when saving page layout as a template - MEED-9801 - Meeds-io/meeds#3699
+- fix: fix the site label when editing navigation after upgrading from 6.5 to 7.0 - MEED-9495 - Meeds-io/meeds#3347
+- fix: fix the zip file content after updating a page template - MEED-9486 - Meeds-io/meeds#3479
+- fix: fix the zip file content after updating a page template - MEED-9486 - Meeds-io/meeds#3479
+- fix: Implement Site Rendering Engine - MEED-8266 - Meeds-io/MIPs#175
+- fix: List only enabled site template when creating a site - MEED-9488 - Meeds-io/meeds#3480
+- fix: Open Site Template Preview When clicked - MEED-9489 - Meeds-io/meeds#3481
+- fix: Prevent remove system pages - MEED-7967 - Meeds-io/meeds#2686
+- fix: Save Edited Page Template - MEED-8460 - Meeds-io/meeds#2983
+- fix: SpaceBannerHomePageUpgradePlugin tries to load page with ID null - MEEDS-8286
+- fix: Store each Site container's Background Attachment using its id - MEED-8306 - Meeds-io/MIPs175
+- fix: Transform branding properties to portletPreferences for sidebarLogin - meeds-io/MIPs#203 - MEED-9487
+- fix: update page template without losing content - MEED-9942
+- fix: when migrate from 1.5.x to 7.0.x, space banner are not kept - EXO-76489
 
-** Improvemnts
+Improvements:
+- feat: Adapt to New Portal API for Page State Object - MEED-8178 - Meeds-io/meeds#2772
+- feat: Add Application in site layout editor - MEED-8239 - Meeds-io/MIPs#175
+- feat: Add Application Properties Drawer - MEED-8199 - Meeds-io/MIPs#175
+- feat: Add Banner Section Properties Drawer - MEED-8195 - Meeds-io/MIPs#175
+- feat: Add Edit Site Template Layout Option - MEED-8260 - Meeds-io/MIPs#175
+- feat: Add Internal Sections Option - MEED-8255 - Meeds-io/MIPs#175
+- feat: Add Portlet Intance Viewer Quick Action - MEED-8812 - Meeds-io/MIPs#185
+- feat: Add portlet Login Form - meeds-io/MIPs#203 - MEED-9360
+- feat: Add portlet Login Sidebar - meeds-io/MIPs#203 - MEED-9366
+- feat: Add portlet Platform Logo - meeds-io/MIPs#203 - MEED-9365
+- feat: Add portlet Platform name - meeds-io/MIPs#203 - MEED-9364
+- feat: Add settings for LoginForm Portlet - meeds-io/MIPs#203 - MEED-9368
+- feat: Add Sidebar Section Properties Drawer - MEED-8194 - Meeds-io/MIPs#175
+- feat: Add Site Icon Property - MEED-8165 - Meeds-io/MIPs#173
+- feat: Add Site Layout Editor Portlet - MEED-8194 - Meeds-io/MIPs#175
+- feat: Add Site Layout Section colors - MEED-8263 - Meeds-io/MIPs#175
+- feat: Add Site Pages Properties Drawer - MEED-8254 - Meeds-io/MIPs#175
+- feat: Add Site Preview Button to access Draft - MEED-8326 - Meeds-io/MIPs#175
+- feat: Add Site Sections Drawer - MEED-8193 - Meeds-io/MIPs#175
+- feat: Add Site Sidebar Section Horizontal Align Option - MEED-8252 - Meeds-io/MIPs175
+- feat: Add Site Template Management UI - MEED-8079 - Meeds-io/MIPs#173
+- feat: Add Spaces Directory Settings Preference Plugin - MEED-8481 - Meeds-io/meeds#3009
+- feat: Add static CSS/JS apps to a dedicated site - MEED-8148 - Meeds-io/MIPs#167
+- feat: Allow empty sections in Site Layout Structure - MEED-8265 - Meeds-io/MIPs#175
+- feat: Allow to add and edit Site Template Properties - MEED-8083 - Meeds-io/MIPs#173
+- feat: Allow to Add an Image to Page Navigation - MEED-9633 - Meeds-io/MIPs#218
+- feat: Allow to add Site Background - MEED-8314 - Meeds-io/MIPs#175
+- feat: Allow to Align Application in Banner Section - MEED-8244 - Meeds-io/MIPs#175 This change will add a new option to allow aligning applications inside a Banner Container.
+- feat: Allow to Choose Sections when creating a Site Template - MEED-8257 - Meeds-io/MIPs#175
+- feat: Allow to Define a specific color on Sidebar and Banner on scroll - MEED-8246 - Meeds-io/MIPs#175
+- feat: Allow to duplicate a site - MEED-8091 - Meeds-io/MIPs#173
+- feat: Allow to duplicate Site Templates - MEED-8087 - Meeds-io/MIPs#173
+- feat: Allow to Edit Admin and Public Site layouts - Meeds-io/MIPs#175
+- feat: Allow to Edit Site Template Navigation - MEED-8085 - Meeds-io/MIPs#173
+- feat: Allow to Hide Site Sections on Mobile - MEED-8249 - Meeds-io/MIPs#175
+- feat: Allow to resize Banner Apps using mouse - MEED-8256 - Meeds-io/MIPs#175
+- feat: Allow to restore a Builtin Page Template  - MEED-9223 - Meeds-io/meeds#3348
+- feat: Allow to restore a Builtin Section Template  - MEED-9222 - Meeds-io/meeds#3349
+- feat: Allow to restore a Builtin Space Template Page Layouts - MEED-9221 - Meeds-io/meeds#3350
+- feat: Allow to restore Site Layout and Pages - MEED-8268 - Meeds-io/MIPs#175
+- feat: Allow to save a Site as Template - MEED-8092 - Meeds-io/MIPs#173
+- feat: Allow to set auto height for Banner Sections - MEED-8597 - Meeds-io/meeds#3119
+- feat: Allow to set Page Width in Site Layout Editor - MEED-8250 - Meeds-io/MIPs#175
+- feat: Allow to setup page width and design from Site Layout - MEED-8262 - Meeds-io/MIPs#175
+- feat: Change Default Height of Site Banner Section - MEED-8247 - Meeds-io/MIPs#175
+- feat: Change default sticky behavior in Dynamic Section Template - MEED-7860 - Meeds-io/meeds#2626
+- feat: Change Sites Management UI to use List instead of Cards - MEED-8088 - Meeds-io/MIPs#173
+- feat: Create page login in global site - MEED-9372 - meeds-io/MIPs#203
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete multiple instances - MEED-8403 - Meeds-io/MIPs#180
+- feat: Delete multiple page templates - MEED-8407 - Meeds-io/MIPs#180
+- feat: Delete Show Option In Site Section Drawer - MEED-8245 - Meeds-io/MIPs#175
+- feat: Disable System sites Delete button - MEED-8089 - Meeds-io/MIPs#173
+- feat: Display Bottom Bar in Bottom of the Site Layout editor to enhance first time UX - MEED-8248 - Meeds-io/MIPs#175
+- feat: Enhance Layout Permissions Input - MEED-9311 - Meeds-io/meeds#3424
+- feat: Enhance Page Template Listing Performances - MEED-8266 - Meeds-io/MIPs#175
+- feat: Enhance Sidebar Width to make it Dynamic - MEED-8354 - Meeds-io/MIPs#175
+- feat: Enhance Site Layout Section Moving UX - Meeds-io/MIPs#175
+- feat: Enhance UX of Application Menu Display - MEED-8244 - Meeds-io/MIPs#175
+- feat: Enhance Visibility of Section Menu button - MEED-8113 - Meeds-io/meeds#2557
+- feat: Export multiple portlets instances - MEED-8401 - Meeds-io/MIPs#180
+- feat: Export of WidgetPortlet Instances - MEED-8502 - Meeds-io/MIPs#180
+- feat: Export Page templates - MEED-8404 - Meeds-io/MIPs#180
+- feat: Export Portlets Instances - MEED-8399 - Meeds-io/MIPs#180
+- feat: Export Site templates - MEED-8421 - Meeds-io/MIPs#180
+- feat: Export space template navigation - MEED-8705 - Meeds-io/MIPs#180
+- feat: Implement Page Margins UI - MEED-8287 - Meeds-io/MIPs#175
+- feat: Import / Export Section templates - MEED-8422 - Meeds-io/MIPs#180
+- feat: Import Page templates - MEED-8405 - Meeds-io/MIPs#180
+- feat: Import portlets Instances - MEED-8400 - Meeds-io/MIPs#180
+- feat: Import Predefined Site Templates - MEED-8080 - Meeds-io/MIPs#173
+- feat: Import Site templates - MEED-8418 - Meeds-io/MIPs#180
+- feat: Improve Site Template Attributes Mapping - MEED-8094 - Meeds-io/MIPs#173
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/meeds#3608
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/MIPs#203
+- feat: Improve WYSIWYG effect in Site Layout editor - MEED-8266 - Meeds-io/MIPs#175
+- feat: Increment page template import version - MEED-2129 - Meeds-io/MIPs#194
+- feat: List creation space portlet in instances list - MEED-8806 - Meeds-io/MIPs#187
+- feat: Make External Onboarding page modifiable in layout - MEED-9700 - meeds-io/MIPs#203
+- feat: Make Internal Onboarding page modifiable in layout - MEED-9711 - Meeds-io/MIPs#203
+- feat: Make Register page modifiable in layout - MEED-9361 - Meeds-io/MIPs#203
+- feat: Move Coediting API in Social - Meeds-io/MIPs#175
+- feat: Move Links and Image Portlets From Social - Meeds-io/meeds#3313
+- feat: Move Utils Method to EntityMapper Utils Class - Meeds-io/MIPs#175
+- feat: Reduce Mobile View Width in site Layout Editor - MEED-8327 - Meeds-io/MIPs#175
+- feat: Remove deprecated languages files
+- feat: Rename Portal Page Label to Page - MEED-8253 - Meeds-io/MIPs#175
+- feat: Retrieve full Application CSS and JS in editors - MEED-8266 - Meeds-io/MIPs#175
+- feat: Review Manage Permissions Drawer UX - MEED-8093 - Meeds-io/MIPs#173
+- feat: Review Margins in Site Layout Editor - MEED-8295 - Meeds-io/MIPs#175
+- feat: Review Site Form UX - MEED-8094 - Meeds-io/MIPs#173
+- feat: Review Site Template Preview UX - MEED-8095 - Meeds-io/MIPs#173
+- feat: Review Space Directory Portlet Instances Default Permissions - MEED-8435 - Meeds-io/MIPs#178
+- feat: Save data in page template - MEED-8114 - Meeds-io/meeds#2753
+- feat: Unauthorize importing portlets' instances in page templates app - MEED-8604 - Meeds-io/MIPs#180
+- feat: Unselect instances once exported - MEED-8539 - Meeds-io/MIPs#180
+- feat: Variabilize Page Background Style - MEED-8308 - Meeds-io/MIPs#175
 
-
-eXo Platform 6.1.x
+eXo Content 7.1.0
 *************************
+fix:
+- fix: Add analytics extension to display target label - MEED-8097 - Meeds-io/MIPs#162
+- fix: Add an icon for external links in the links portlet- MEED-9234 - Meeds-io/meeds#3374
+- fix: Add missing translationField amd module to newsListView portlet -  MEED-8602 - Meeds-io/meeds#3114
+- fix: Add schedule end date for post in feed - MEED-8533 - Meeds-io/meeds#3037
+- fix: Adjust edit/delete/schedule permissions for redactional and non redactional spaces - MEED-8450 - Meeds-io/meeds#2969
+- fix: Adjust the marge between image and title of news in list news template - MEED-9556 - Meeds-io/meeds#3567
+- fix: Align external-link-alt icon to links label - MEED-9352
+- fix: Allow space members to see their scheduled articles - MEED-8291 - Meeds-io/meeds#2843
+- fix: Allow space publisher to add and edit news list portlet header translation - MEED-8568 - Meeds-io/meeds#3079
+- fix: Article attachments lost when cancel the scheduling - MEED-8390 - Meeds-io/meeds#2935
+- fix: Change tabulation behavior on articles displayed in cards template - MEED-9594 - Meeds-io/meeds#3589
+- fix: Content translation draft not deleted from news delete action - MEED-8741 - Meeds-io/meeds#3213
+- fix: Delete non-existing CSS Module Declaration in Search - MEED-8781 - Meeds-io/MIPs#185
+- fix: Delete the aria-label on article title in the stream - MEED-9858
+- fix: Display article title in MENTION IN NEWS mail notification description - MEED-8357 - Meeds-io/meeds#2902
+- fix: Display article title in POST NEWS and PUBLISH NEWS mail notifications description - MEED-8359 - Meeds-io/meeds#2897
+- fix: Display problem with Headline Template in case of high resolution - MEED-8884 - Meeds-io/meeds#2677
+- fix: Display the article summary as sanitized HTML - MEED-8600 - Meeds-io/meeds#3121
+- fix: Do not display any aria-label or role on the div displaying the illustration of an article - MEED-9857 - meeds-io/meeds#3749
+- fix: Enhance content anaytics dynamic displayed values via extensions - MEED-8096 - Meeds-io/MIPs#162
+- fix: Enhance newsList templates styles for better compatibly with layout options - MEED-8704_MEED-8711 - Meeds-io/meeds#3200
+- fix: Error when first openinig notes page - MEED-8346
+- fix: error when unpublishing scheduled article - MEED-8714 - Meeds-io/meeds#3149
+- fix: fix displaying all targets allowed targets after target deletion - MEED-9697 - Meeds-io/meeds#3617
+- fix: fix displaying published articles with "space" audience in news list portlets for admins not space members - MEED-9089 - Meeds-io/meeds#2794
+- fix: fix empty template not displayed in News List portlet - MEED-8582 - Meeds-io/meeds#3097
+- fix: fix error Logged when creating or updating articles - MEED-8489 - Meeds-io/meeds#2928
+- fix: fix exceptions NullPointerException when create and edit snv - MEED-8389_MEED-8393 - Meeds-io/meeds#2748_Meeds-io/meeds#2756
+- fix: fix how links are aligned when selecting/updating settings - MEED-9483 - Meeds-io/meeds#3483
+- fix: fix lost of the content when editing a draft of a scheduled article - MEED-9289 - Meeds-io/meeds#3398
+- fix: fix news list portlet headline template reactions text color of the cover article - MEED-9293 - Meeds-io/meeds#3282
+- fix: fix publish content operation invocation when update publishing params - MEED-8097 - Meeds-io/MIPs#162
+- fix: fix publishing drawer displaying instead of edit publishing drawer after note publication - MEED-8507 - Meeds-io/meeds#3031
+- fix: fix space member can not edit/delete/publish his own article and can not see his own scheduled article when edited by another member - MEED-8449 - Meeds-io/meeds#2967
+- fix: fix suggester in news editor - MEED-9526 - Meeds-io/meeds#3536
+- fix: fix the displayed icon/image when editing a link - MEED-9494 - Meeds-io/meeds#3512
+- fix: fix translation menu item color - MEED-8605 - Meeds-io/meeds#3127
+- fix: Grant edit permissions to publisher role on content - MEED-9879 - Meeds-io/meeds#3772
+- fix: handle unsupported sort fields by returning default sorting query - MEED-9574 - Meeds-io/MIPs#212
+- fix: Have an accessible name for published articles in stream - MEED-9171 - Meeds-io/meeds#3345.
+- fix: Having an accessible name for additional content of articles displayed in cards template - MEED-9952 - Meeds-io/meeds#3844
+- fix: Hide embedded content when searching for articles - MEED-9584 - Meeds-io/meeds#3550
+- fix: Implement UP to cleanup duplicated News ES indexes - MEED-8747 - Meeds-io/meeds#3218
+- fix: incorrect post and publish notification URL redirection after updating the server domain name - MEED-8761 - Meeds-io/meeds#2871
+- fix: Indicate the edition of an article in the article details display - MEED-8488 - Meeds-io/meeds#2994
+- fix: Missing margin between image and title of news when using arabic view - MEED-9539 - meeds-io/meeds#3489
+- fix: Missing margin between image and title of news when using arabic view - MEED-9539 - meeds-io/meeds#3489
+- fix: News app search item having # should display no results if item doesn't exist - MEED-8353 - Meeds-io/meeds#2890
+- fix: Newslists templates do not get text styling from layout options - MEED-8704 - Meeds-io/meeds#3116
+- fix: news notifications must be set as relative link - MEED-8761 - meeds-io/meeds#2871.
+- fix: News Publish drawer - infinite save button loading - EXO-78154 - Meeds-io/meeds#3184.
+- fix: News Search item having # will not disply results as expected - EXO-76795 - Meeds-io/meeds#2845
+- fix: No date displayed when enabling the display date in the news list portlet - MEED-8599 - Meeds-io/meeds#3095
+- fix: Note page not unindexed when the article is dereferred - MEED-8290 - Meeds-io/meeds#2838
+- fix: No vertical scroll provided for list template - MEED-8702 - Meeds-io/meeds#3187
+- fix: null value retreived when searching news prevents from displaying results - MEED-9395 - meeds-io/meeds#3468
+- fix: null value retreived when searching news prevents from displaying results - MEED-9395 - meeds-io/meeds#3468
+- fix: Original draft of existing article opened instead of the specific lang draft - MEED-8794 - Meeds-io/meeds#3220
+- fix: Prevent articles from being indexed as notes - EXO-75010 - Meeds-io/meeds#2752
+- fix: Prevent articles with canceled scheduling from being posted - MEED-8593 - Meeds-io/meeds#3092
+- fix: Prevent space members from referring articles they do not own - MEED-8662 - Meeds-io/meeds#3146
+- fix: Prevent space members from referring articles they do not own - MEED-8662 - Meeds-io/meeds#3146
+- fix: Remove dropdown filter in space filters - MEED-8655 - Meeds-io/meeds#3152.
+- fix: Replace the delete option with the hide article activity option - MEED-8487 - Meeds-io/meeds#2872
+- fix: Replace url occurences of "news/editor" navigation node by "news-editor" navigation node - MEED-8425 - Meeds-io/meeds#2944
+- fix: RTL bad menu display of news details options - MEED-9549 - meeds-io/meeds#3559
+- fix: RTL bad menu display of news details options - MEED-9549 - meeds-io/meeds#3559
+- fix: Scheduled news not displayed in news list - MEED-8663 - Meeds-io/meeds#3148
+- fix: Set an empty alt to images of published and pinned article and to the avatar of whom pinned it - MEED-9151 - Meeds-io/meeds#3337.
+- fix: Set a suitable alt to images of published article - MEED-9198 - Meeds-io/meeds#3363
+- fix: Space admin cannot configure the news list in space - MEED-8661 - Meeds-io/meeds#3158
+- fix: Spaces should be unselected by default in news app filter - MEED-8648 - Meeds-io/meeds#2856
+- fix: Switch from a post to an article - Mentioning isn't well displayed in the article body - MEED-8750 - Meeds-io/meeds#3179
+- fix: Switch from a post to an article - Mentioning isn't well displayed in the article body - MEED-8750 - Meeds-io/meeds#3179
+- fix: Target news settings are displayed to everyone  - EXO-76743 -Meeds-io/meeds#2802
+- fix: Target news settings are displayed to everyone  - EXO-76743 -Meeds-io/meeds#2802
+- fix: Update crowdin.yml by adding Image_en.properties and Links_en.properties
+- fix: Update shared news article activity after updating the original one - MEED-9682 - Meeds-io/meeds#3618
+- fix: URL having Anchor element isn't displaying as expected - EXO-73493 - Meeds-io/meeds#2665
+- fix: User identified after a publication  - Meeds-io/meeds#8377
 
-** Bug
+Improvements:
+- feat: Add content-analytics page/navigation - MEED-8499 - Meeds-io/MIPs#162
+- feat: Add contentId parametre to publish content measuring operation - MEED-8097 - Meeds-io/MIPs#162
+- feat: Add Content Link Extension and CKEditor Plugin - MEED-8935 - Meeds-io/MIPs#192
+- feat: Add Favorite Extension Label and Icon - MEED-9430 - Meeds-io/MIPs#209
+- feat: Add Publish content analytics measuring point - MEED-8097 - Meeds-io/MIPs#162
+- feat: Add the ability to open news search results in a new tab - MEED-9241 - Meeds-io/MIPs#193
+- feat: Adjust news title and space display in the news search result - MEED-9197 - Meeds-io/MIPs#193
+- feat: Allow analytics measuring operations for article version language - MEED-8099 - Meeds-io/MIPs#162
+- feat: Allow to order User Favorites by last accessed - MEED-9428 - Meeds-io/MIPs#209
+- feat: Cleanup global site analyticsContents navigation & page - MEED-8924 - Meeds-io/meeds#3254
+- feat: CleanUp static ressources - EXO-72981
+- feat: content link not well displayed in news search result - MEED-9305 - Meeds-io/MIPs#193
+- feat: Correct last author and content creator info in created statistics - MEED-8505 - Meeds-io/MIPs#162
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: Define icon for newsSearchConnector - MEED-8978 - Meeds-io/MIPs#193
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default App Center app - MEED-8872 - Meeds-io/MIPs#185
+- feat: Delete Default Flag from App Center page - MEED-8764 - Meeds-io/MIPs#185
+- feat: Delete Space and User Links and Popover from Favorite Items - MEED-9452 - Meeds-io/MIPs#209
+- feat: Enable sorting by last update in news search - Meeds-io/MIPs#212
+- feat: Hide Removed Favorite Items - MEED-9612 - Meeds-io/meeds#3575
+- feat: Improve Favorite News Display when drawer expanded - MEED-9435 - Meeds-io/MIPs#209
+- feat: Improve retrieval of space identity when searching news of a space - MEED-9337 - Meeds-io/MIPs#200
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/meeds#3608
+- feat: Move Links and Image Portlets From Social - Meeds-io/meeds#3313
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Remove deprecated languages files
+- feat: Remove Referencing Notes Button - MEED-8933 - Meeds-io/MIPs#192
+- feat: Remove title and summary tooltips from the news search result -MEED-9217 - Meeds-io/MIPs#193
+- feat: Rename ContentLink CKEDitor Plugin - Meeds-io/MIPs#192
+- feat: Review news search result display - MEED-8981 - Meeds-io/MIPs#193
+- feat: Review the news title and summary display in search results - MEED-9403 - Meeds-io/MIPs#200
+- feat: Review title style in news search results - MEED-9491 - Meeds-io/MIPs#211
+- feat: Search news of one space - MEED-9332 - Meeds-io/MIPs#200
+- feat: Separate author and publisher in the different display of an article/note - MEED-9410 - Meeds-io/meeds#3462
+- feat: Update article analytics measuring point - MEED-8096 - Meeds-io/MIPs#162
+- feat: Update contentId analytics display extension - MEED-8103 - Meeds-io/MIPs#162
+- feat: Update content title analytics display extension - MEED-8096 - Meeds-io/MIPs#162
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+- feat: Update viewContent analytics measuring point - MEED-8098 - Meeds-io/MIPs#162
+- feat: Add contentUpdatedDate parameter to publishContent statistics - MEED-8103 - Meeds-io/MIPs#162
+- feat: Avoid having duplicate deleteContent statistics when delete a note - MEED-8120 - Meeds-io/MIPs#162
 
-** Improvemnts
-
-eXo Chat 3.1.x
-**************
-** Bug
-
-** Improvemnts
-    
-eXo News 2.1.x
-**************
-
-** Bug
-
-** Improvemnts
-    
-eXo GateIn 6.1.x
+eXo Notes 7.1.0
 *************************
+fix:
+- fix: Accented notes aren't displayed when making a search in notes tree - MEED-8699 - Meeds-io/meeds#3178
+- fix: Accessibility -  Breadcrumb cannot be reached  - MEED-9864 - Meeds-io/meeds#3757
+- fix: Add missing properties file in crowdin.yml - meeds-io/MIPs#157
+- fix: Add schedule end date for post in feed - MEED-8533 - Meeds-io/meeds#3037
+- fix: Allow space publishers to move note and edit note/article posting and publishing in redactional spaces - MEED-8450 - Meeds-io/meeds#2969
+- fix: Allow target attribute in sanitized content view - MEED-8796 - Meeds-io/meeds#3176
+- fix: a text with a link on all the text is not fully displayed - EXO-76498 - Meeds-io/meeds#2735
+- fix: Blank Notes version history - MEED-8509 - Meeds-io/meeds#3029
+- fix: Can't create a task using keyboard shortcut in note or article - MEED-9860 - meeds-io/meeds#3748.
+- fix: Can't remove mention when editing a note - MEED-8758 - Meeds-io/meeds#2828
+- fix: Can't search a note if it contains hyphen or apostrophe char - MEED-8795 - Meeds-io/meeds#3219
+- fix: Can't search a note if it contains hyphen or apostrophe char - MEED-8795 - Meeds-io/meeds#3219.
+- fix: can't update existing note by import in same space - meed-9396 - meeds-io/meeds#3469
+- fix: can't update existing note by import in same space - meed-9396 - meeds-io/meeds#3469
+- fix: Delete non-existing CSS Module Declaration in Search - MEED-8781 - Meeds-io/MIPs#185
+- fix: Differentiate portlet preference generation for export or regular usage - MEED-8821 - Meeds-io/MIPs#180
+- fix: display missing space info in notes search results when space is renamed - MEED-9405 - Meeds-io/MIPs#200
+- fix: Display note title in MENTION IN NOTE mail notification description - MEED-8357 - Meeds-io/meeds#2902
+- fix: Display T&C user actions even when content is empty - MEED-8495 - Meeds-io/meeds#3004
+- fix: DRAFT article/note content not saved if content added after title - MEED-8447_MEED-8448 - Meeds-io/meeds#2968_Meeds-io/meeds#2970
+- fix: Drop dependency to com.google.common and upgrade Hibernate and bcprov - Meeds-io/meeds#3365
+- fix: Drop Notes Attachments and useless Cache - MEED-9052 - Meeds-io/MIPs#192
+- fix: error when creating the wiki in a space - MEED-8343
+- fix: Error when first openinig notes page - MEED-8346
+- fix: Error when saving content block containing an at sign
+- fix: fix 404 error when create or edit a note in a space having name with special chars - MEED-8747 - Meeds-io/meeds#3378
+- fix: fix check restricted audience when selecting all targets for publishing - MEED-9398 - Meeds-io/meeds#3466
+- fix: fix create, update and restore a note with numeric title - MEED-8960 - Meeds-io/meeds#3263
+- fix: fix Drawers Overlay definition - MEED-8266 - Meeds-io/MIPs#175
+- fix: fix Note ACL Algorithm Check Structure - MEED-9052 - Meeds-io/MIPs#192
+- fix: fix note page auto translation - MEED-9351 - Meeds-io/meeds#3445
+- fix: fix notes search when a note is deleted - MEED-8581 -  Meeds-io/meeds#3081
+- fix: fix note treeview search - MEED-8530 - Meeds-io/meeds#3062
+- fix: fix NPE when creating or opening translation notes - MEED-9815 - Meeds-io/meeds#3728
+- fix: fix page content when switching language - MEED-9073 - Meeds-io/meeds#3281
+- fix: fix page content when switching language - MEED-9073 - Meeds-io/meeds#3281
+- fix: fix publishing drawer displaying instead of edit publishing drawer after note publication - MEED-8507 - Meeds-io/meeds#3031
+- fix: fix Restrieving SNV Pusblished Translations - MEED-8299 - Meeds-io/meeds#2847
+- fix: fix space members can not create articles - MEED-8322 - Meeds-io/meeds#2858
+- fix: fix suggester in news editor - MEED-9526 - Meeds-io/meeds#3536
+- fix: fix TC WebSocket initialization in Vue prototype & Improve TC Portlet Cache - MEED-8361 - Meeds-io/meeds#2905
+- fix: fix the display of searched imported notes - MEED-9762 - Meeds-io/meeds#3680
+- fix: fix the pasted media content - MEED-9074 - Meeds-io/meeds#3290
+- fix: Go-back action not opening previously opened note in notes overview - MEED-8833 - Meeds-io/meeds#3227
+- fix: Grant edit permissions to publisher role on note - MEED-9879 - Meeds-io/meeds#3772
+- fix: handle unsupported sort fields by returning default sorting query - MEED-9574 - Meeds-io/MIPs#212
+- fix: Having a relevant title for the notes page - MEED-9889 - meeds-io/meeds#3788.
+- fix: Imported notes are not indexed during creation - MEED-8318 - Meeds-io/meeds#2805
+- fix: Initialize Websocket before subscribing to a channel - MEED-8371 - Meeds-io/meeds#2923
+- fix: Insert home note into first draft note not working - MEED-8890 -Meeds-io/meeds#2937
+- fix: KB space not created automatically- EXO-66372 - 8473 - Meeds-io/meeds#3008
+- fix: Links inserted in a note are not "reindexed" when exporting it  - MEED-9811 - Meeds-io/meeds#3701
+- fix: media embedded Video not displayed in SNV - MEED-8360 - Meeds-io/meeds#2893
+- fix: Move Profiles declaration from external-component-plugins - MEED-9614 - Meeds-io/meeds#3597
+- fix: No margin in SNV quick edit - EXO-76499 - Meeds-io/meeds#2734
+- fix: Note attachments lost after publishing - MEED-8446 - Meeds-io/meeds#2966
+- fix: Notes Breadcrumb review when path is long - MEED-8366 - Meeds-io/meeds#2866
+- fix: Notes cannot be saved if the title has less than 3 chars - MEED-9540 - meeds-io/meeds#3500
+- fix: Notes rich editor extensions not opened when editing an article - MEED-8390 - Meeds-io/meeds#2935
+- fix: Note translation of current user lang is not correctly displayed when open note from toc - MEED-8334 - Meeds-io/meeds#2862
+- fix: Option to duplicate a note - MEED-9631 - Meeds-io/meeds#3067
+- fix: Original note summary displayed instead of the translated version in note overview - MEED-8961 - Meeds-io/meeds#3262
+- fix: Prevent having a loop redirection in termsAndCondtions web handler - EXO-77031 - Meeds-io/meeds#3215
+- fix: Prevent pasted user profile link from being converted to a mention on edit - MEED-8757 - Meeds-io/meeds#2675
+- fix: Prevent processing note mention notifications when creating or updating an article - MEED-8468 - Meeds-io#2852
+- fix: Problem with hours selection when publishing - MEED-9451 - meeds-io/meeds#3492
+- fix: Problem with hours selection when publishing - MEED-9451 - meeds-io/meeds#3492
+- fix: Rely on Statistic Collection JS included in Bottom End Container - MEED-9310 - Meeds-io/meeds#3423
+- fix: Set a suitable alt to images of published article - MEED-9198 - Meeds-io/meeds#3363
+- fix: SNV update issue - MEED-8517 Meeds-io/meeds#3064
+- fix: T&C should not be displayed when they are not published - MEED-9497 - Meeds-io/meeds#3516
+- fix: T&C should not be displayed when they are not published - MEED-9497 - Meeds-io/meeds#3516
+- fix: TermsAndCondition redirection issue when defined handler has empty excludedUris param - EXO-78278 - Meeds-io/meeds#3216
+- fix: The active page in the note tree can only be distinguished by color - MEED-9865 - meeds-io/meeds#3758.
+- fix: Unable to edit notes title when its content has the navigation inserted - MEED-8754 - Meeds-io/meeds#2844
+- fix: User identified after a publication - Meeds-io/meeds#8377
+- fix: when closing notes move drawer, there is a js error in console - MEED-8345
+- fix: When import notes, if there request upload have a little delay , the upload fails - MEED-8494
+- fix: When trying to move a note to his parent, the "move" button is not disabled - MEED-8344
 
-eXo Calendar 6.1.x
+Improvements:
+- feat: Add analytics extension to display snv title - MEED-8096 - Meeds-io/MIPs#162
+- feat: Add Favorite Extension Label and Icon - MEED-9430 - Meeds-io/MIPs#209
+- feat: Add Note Navigation Content Link Extension - MEED-8969 - Meeds-io/MIPs#192
+- feat: Add the ability to open note search results in a new tab - MEED9241 - Meeds-io/MIPs#193
+- feat: Adjust note title and author display in the notes search result- MEED-9197 - Meeds-io/MIPs#193
+- feat: Allow analytics measuring operations for note version language - MEED-8099 - Meeds-io/MIPs#162
+- feat: Allow fetch deleted note by adding a new query param - MEED-8103 - Meeds-io/MIPs#162
+- feat: Allow to insert Cotnent Link in SNV - MEED-9057 - Meeds-io/MIPs#192
+- feat: Allow to order User Favorites by last accessed - MEED-9428 - Meeds-io/MIPs#209
+- feat: content link not well displayed in note search result - MEED-9305 - Meeds-io/MIPs#193
+- feat: Correct the lastModifier info in update note content statistics - MEED-8505 - Meed-io/MIPs#162
+- feat: Define icon for notesSearchConnector - MEED-8978 - Meeds-io/MIPs#193
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Space and User Links and Popover from Favorite Items - MEED-9452 - Meeds-io/MIPs#209
+- feat: Delete Useless WebUI Extensions configuration - Meeds-io/MIPs#181
+- feat: Enable sorting by last update in notes search - MEED-9500 - Meeds-io/MIPs#212
+- feat: Exclude SNV content type from content statistics measuring - MEED-8096 - Meeds-io/MIPs#162
+- feat: Hide Removed Favorite Items - MEED-9612 - Meeds-io/meeds#3575
+- feat: Implement Notes Editor Content Link Extensions - MEED-8934 - Meeds-io/MIPs#192
+- feat: Improve Favorite Note Display when drawer expanded - MEED-9435 - Meeds-io/MIPs#209
+- feat: Improve retrieval of space identity when searching notes of a space - MEED-9337 - Meeds-io/MIPs#200
+- feat: Remove deprecated languages files
+- feat: Remove Referencing Notes Button - MEED-8933 - Meeds-io/MIPs#192
+- feat: Remove title and summary tooltips from the notes search result - MEED-9217 - Meeds-io/MIPs#193
+- feat: Rename ContentLink CKEDitor Plugin - Meeds-io/MIPs#192
+- feat: Rename System Addon Container Extension to use it as UIPortalApplication extension - MEED-8281 - Meeds-io/MIPs#175
+- feat: Review notes search result display - MEED-8980 - Meeds-io/MIPs#193
+- feat: Review the notes title and summary display in search results - MEED-9403 - Meeds-io/MIPs#200
+- feat: Review title style in note search results - MEED-9491 - Meeds-io/MIPs#211
+- feat: Search notes of one space - MEED-9333 - Meeds-io/MIPs#200
+- feat: Separate author and publisher in the different display of an article/note - MEED-9410 - Meeds-io/meeds#3462
+- feat: Update contentUpdated analytics measuring point - MEED-8099 - Meeds-io/MIPs#162
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update note page analytics measuring point - MEED-8096 - Meeds-io/MIPs#162
+- feat: Update note’s last modified date when title is edited - MEED-9500 - Meeds-io/MIPs#212
+- feat: Update viewContent analytics measuring point - MEED-8089 - Meeds-io/MIPs#162
+
+eXo Agenda 7.1.0
 *************************
-** Bug
+fix:
+- fix: Agenda caldav connector drawer is opend on background - EXO-79620
+- fix: Agenda's connect calendar drawer issue - EXO-77950
+- fix: Can't create event with user invitation by email in uppercase letters - EXO-75566
+- fix: Can't create event with user invitation by email in uppercase letters - EXO-75566
+- fix: Edit reminders icon not displayed in event details - EXO-78236
+- fix: Edit reminders icon not displayed in event details - EXO-78236
+- fix: Events are displayed over date selector on PWA mobile app - EXO-79223
+- fix: fix event detail url from agenda event timeline gadget - EXO-79567
+- fix: fix the one-hour offset in Outlook Desktop importing eXo ics file -exo-78656
+- fix: Last day of a custom recurring event isn't considered - EXO-80090
+- fix: repeat event frequency customize drawer not displayed until event canceled or created - EXO-77608
+- fix: start date and end date of an event is the same - EXO-81820.
+- fix: Synchronized events title display not ok if long - EXO-76605
+- fix: UI glitch when opening an agenda using Mobile - EXO-77995 .
+- fix: Unify agenda timeline portlet's placeholder with ui guidelines - EXO-7773
+- fix: Upgrade Hibernate to version 6.6 - Meeds-io/meeds#3365
+- fix: validation options are missing in event poll - EXO-78308.
+- fix: Web conference event is not created if the event participant includes a deactivated user - EXO-77085
 
-** Improvemnts
-    
-eXo JCR 6.1.x
-*************************    
+Improvements:
+- feat: Add Agenda Event Content Link Extension - EXO-79046 - EXO-79053 - eXIP-11
+- feat: Add translation labels for agenda reports - EXO-78572
+- feat: Enable sorting by last updated in events search - EXO-80518 - exoplatform/eXIP#23
+- feat: eXIP13: Define icon for AgendaSearchConnector - EXO-79593
+- feat: eXIP13: Review the display of the event search result - EXO-79547
+- feat: eXIP20: Review the event title and description display in search results - EXO-80263
+- feat: eXIP20: Search events of one space - EXO-80078
+- feat: Remove "Agenda" application from application center - EXO-78691
+- feat: Review title style in event search results - EXO-80446 - exoplatform/eXIP#22
+- feat: Search events in multiple spaces - EXO-80448 - exoplatform/eXIP#22
 
-eXo Kernel 6.1.x
+eXo Documents 7.1.0
 *************************
+fix:
+- fix: 1.3 Clicking to thumbnail from detail drawer is not working - EXO-80064
+- fix: add property to deactivate computing documents size including versions - EXO-78104
+- fix: Allow saving Tmp Files using WebDav - exoplatform/exip#21
+- fix: Avoid closing WebDav response before writing all content - exoplatform/exip#21
+- fix: Breadcrumb in doc app refers to trash and deleted shortcut instead of correct path of original folder - EXO-75899
+- fix: Breadcrumb to improve when long name - EXO-81122.
+- fix: Cannot access subfolders from treeview - EXO-81063
+- fix: Cannot drop doc while recent view - EXO-81960
+- fix: Cannot move files/folders by D&D - EXO-81478
+- fix: Cannot open a shared doc if view permission only - EXO-8093
+- fix: Cards view: Not all options available - EXO-81754
+- fix: Clicking to categories from detail drawer while browsing folders - EXO-79972 - eXIP-14
+- fix: Convert exo:categoryIds from CSV string to multi-value property - EXO-79879 - eXIP-14
+- fix: Copy link from 3dots - EXO-80141
+- fix: Docs app empty when changing view while seeing folders - EXO-81527
+- fix: Document action Menu update - 3 dots and right click menu style - EXO-73143
+- fix: Document name hidden in comments drawer - EXO-81363
+- fix: Document uploaded not displayed in shared folder - EXO-80427.
+- fix: Duplicate option is not working anymore - EXO-80323
+- fix: Enhance document copy link option - EXO-78185
+- fix: Ensure to correctly open the document when clicking on a notification - EXO-81980
+- fix: Exclude documents of public folder from the document insertion - EXO-81878
+- fix: Filter by documents type not working - EXO-79302
+- fix: Filter documents per category in personal drive - EXO-79984 - eXIP-14
+- fix: fix application-ref of the documents application configured for spaceDocuments page template - EXO-79265
+- fix: fix card width of file thumbnail and folder - EXO-81142 - eXIP-24
+- fix: fix display folder title in cards view - EXO-8070 - eXIP-24
+- fix: fix displaying toggle button of document edit permission - EXO-79298
+- fix: fix display load more option for space drives list when cards view - EXO-81069 - eXIP-24
+- fix: fix Display of Public Download UI - EXO-80912
+- fix: fix display select option for document item card - EXO-81124 - eXIP-24
+- fix: fix Docoment gadget header display - EXO-80594 - eXIP-18
+- fix: fix document three-dots action menu position - EXO-80335
+- fix: fix document three-dots menu items alignment issue - EXO-81755
+- fix: fix drag and drop documents  - EXO-80443
+- fix: fix image file display opened from see more drawer - EXO-80594 - eXIP-18
+- fix: fix missing protocol in copied document link - MEED-9943 - Meeds-io/meeds#3802
+- fix: fix Replacing Existing File - exoplatform/exip#21
+- fix: fix video file Display - EXO-80878
+- fix: Folder must not be listed as shared item in document list - EXO-81850
+- fix: Folder view: table display UI to fix - EXO-81378
+- fix: Folder view: table display UI to fix on mobile views- EXO-81635
+- fix: Folder view: table display UI to fix on small view
+- fix: Generate public link access issue - EXO-78542
+- fix: Group actions button not displayed - EXO-80244
+- fix: Import document zip displays accentuated wrongly - EXO-80253
+- fix: Improve copy link of a document/folder - EXO-77150
+- fix: Improve copy link of a document/folder - EXO-77150
+- fix: Improve document description placeholder - EXO-62496
+- fix: Link to open location from OO - EXO-80476
+- fix: Make files with the 'public accessibility' option accessible from the public site - EXO-77151
+- fix: Misaligned cancel option in file upload - EXO-76185
+- fix: No access to document viewer  when only view access - exo-79669 This commit will open documents having only view access in onlyoffice in view mode
+- fix: No more possible to move a - EXO-81119
+- fix: Non OO docs cannot be opened from document list - EXO-81837
+- fix: Open doc location is KO when doc opened from favorite - EXO-81992
+- fix: Open doc location is KO when doc opened from unified search - EXO-81991
+- fix: Option "Move to" is missing when multiselecting documents - EXO-80676
+- fix: Pb with treeview from personal drive page and space drives - EXO-81434
+- fix: prevent group admins from being automatically added as collaborators in personal drive - EXO-81752
+- fix: Public access : password and expiration date are lost - EXO-78184
+- fix: redirect user to view mode when they dont have edit access - EXO-80317
+- fix: refactor document details drawer styling - EXO-73142
+- fix: Remove any dependencies to old doc preview - EXO-8099
+- fix: Remove padding before folders when using mobile - EXO-80054
+- fix: resolve document copy link issue after migration - EXO-78359
+- fix: Review alignement of category chips filter - EXO-79881 - eXIP-14
+- fix: Same UX when opening a link from document inserted - exo-79695
+- fix: Send All Webdav HTTP Headers before closing OutputStream - exoplatform/exip#21
+- fix: Shared documents preview issue - EXO-81350
+- fix: Technical label for Copy Link - EXO-80140
+- fix: Transform DocumentPublic Access from handler to Portlet - EXO-81854
+- fix: TranslationService API with Object Id of Type String instead of Long - MEED-9632 - Meeds-io/meeds#3608
+- fix: Treeview and breadcrumb are blank when accessing it from a file - EXO-80806
+- fix: Treeview not opened when reloading the page - EXO-81285
+- fix: Unable to access the space drives when using mobile
+- fix: Update document preview for analytics - EXO-80992
+- fix: Update download-document pages margin and size - MEED-9838 - meeds-io/meeds#3779
+- fix: Update move & create shortlink drawers style - EXO-73146
+- fix: Update the Public Document Download Page as a global page - MEED-9766 - meeds-io/MIPs#203
+- fix: Uploaded files are stored in wrong folder if added from folder view - EXO-81346
+- fix: Url to open a symlink to folder not working  - EXO-80427
+- fix: Use new Analytics Field Mapping Type - MEED-9542 - Meeds-io/meeds#3494
+- fix: Wrong creation date on the info drawer- EXO-80696
 
-eXo Commons 6.1.x
+Improvements:
+- feat: Ability to add multiple document gadget in same page - EXO-80368 - eXIP-18
+- feat: Access hidden items when from link or from location option - EXO-81168
+- feat: Add action to post document in feed - EXO-80222
+- feat: Add categories to a document - EXO-79557 - eXIP-14
+- feat: Add Document Content Link Plugin - EXO-79045 - eXIP-11
+- feat: Add Favorite Documents Offline Access when PWA enabled - EXIP-15
+- feat: Add translation labels for documents reports - EXO-78573
+- feat: Adjust cards view of list of space drives - EXO-81061 - eXIP-24
+- feat: Adjut font-size of cards text - EXO-81029 - eXIP-24
+- feat: Allow drop of folders - EXO-80280
+- feat: Allow to Open a JCR Document In Desktop using Desktop Office Application - EXIP-17
+- feat: Breadcrumb is missing when changing the view of docs list - EXO-81321
+- feat: Cannot create folder when using card view - EXO-81568
+- feat: Cannot rename a file/folder when cards view - EXO-81596
+- feat: Display categories filter in recent view - EXO-79559 - eXIP-14
+- feat: Display categories of a doc - EXO-79558 - eXIP-14
+- feat: Display documents list drawer for document gadget- EXO-80122 - eXIP-18
+- feat: Display folders view in cards - EXO-80884 - eXIP-24
+- feat: Display of documents in gadget
+- feat: Display options in a drawer when using mobile - EXO-80314
+- feat: Display recent view in cards - EXO-80883 - eXIP-24
+- feat: [Drives] Improve the loading UI of drives app - EXO-79119
+- feat: Edit doc app to exclude categories from the list - EXO-79562
+- feat: Enable drag and drop for cards view - EXO-81565
+- feat: eXIP10: Behaviour when clicking to thumbnail from info detail drawer - EXO-79118
+- feat: eXIP12_US01.06: Review UI of drawer document filters- EXO-79224
+- feat: Filter docs list by category - EXO-79560 - eXIP-14
+- feat: Filter document to a category in document gadget - EXO-80130 - eXIP-18
+- feat: Filter the document  list clicking to categories listed from the drawer - EXO-79563 - eXIP-14
+- feat: fix display document gadget items - EXO-80338 - eXIP-18
+- feat: fix the download URL of the file/attachment - MEED-8681 - Meeds-io/MIPs#163
+- feat: Folder treeview - Dynamic Update when deletion or hiding - EXO-80203
+- feat: Hide Removed Favorite Items - MEED-9612 - Meeds-io/meeds#3575
+- feat: Implement categories filtering for document application - EXO-79555 - eXIP-14
+- feat: Implement Documents WebDav User Settings UI - exoplatform/exip#21
+- feat: Implement filter document by type - EXO-80125 - eXIP-18
+- feat: Implement new portlet to list document - EXO-80116 - eXIP-18
+- feat: Implement WebDAV Front SPI - exoplatform/exip#21
+- feat: Improve Favorite Documents Display when drawer expanded - EXO-80275 - exoplatform/exip#2
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/meeds#3608
+- feat: Improve UI of WebDav User Settings - EXO-80818 - exoplatform/exip#21
+- feat: Limit the doc size of versions  - EXO-81797
+- feat: Limit to 2 folders for mobile view of breadcrumb - EXO-80299
+- feat: List documents from an identified drive - EXO-80129 - eXIP-18
+- feat: Make WebDav OS System files hiddenable - EXO-80922
+- feat: No cards view for docs list when mobile - EXO-81031 - eXIP-24
+- feat: Options for doc/folders when cards view - EXO-80312
+- feat: Option to select a folder when choosing one drive - - EXO-80396 - eXIP-18
+- feat: Placeholder when no documents - EXO-80369 - eXIP-18
+- feat: Plus button display when using mobile - EXO-80053
+- feat: Redirect WebDav HTTP Requests from / to /webdav/drives - exoplatform/exip#21
+- feat: Remove "Drives" application from application center - EXO-78691
+- feat: Rename Document Gadget name - EXO-80506 - eXIP-18
+- feat: Rework OpenIn to use new WebDav Mounting Paths - exoplatform/exip#21
+- feat: Select All documents using keyboard shortcut - EXO-81141 - eXIP-24
+- feat: Select docs when cards view - EXO-80886 - eXIP-24
+- feat: Snackbar when copying file/folder - EXO-80313
+- feat: Sort list of docs when cards view - EXO-80885 - eXIP-24
+- feat: Split Otp Service from API Key Service - exoplatform/exip#21
+- feat: Style of the docs app settings tooltip - EXO-80142
+- feat: Suggest users to change the view type of document App - EXO-80882 - eXIP-24
+- feat: UI to improve for Info detail drawer of a doc - EXO-81092
+- feat: Unify Description label in doc info detail drawer - exo-79776
+- feat: Update display when no category associated to docs - EXO-79803 - eXIP-14
+- feat: Update document gadget Header - EXO-80121 - eXIP-18
+- feat: Update the view of documents list - EXO-80116 - eXIP-18
+- feat: Use Custom Digest Authenticator to allow preserving WebDav session through server restarts - exoplatform/exip#21
+- feat: UX to Open version - EXO-80872
+
+eXo Portal 7.1.0
 *************************
+fix:
+- fix: add default timeout for jndi ldap connexion - MEED-9299
+- fix: Add missing translations removed by error
+- fix: Allow direct access to allowed sub-pages - MEED-8472 - Meeds-io/meeds#2999
+- fix: Allow to add emoji in space name when creating token - MEED-9253 - Meeds-io/MIPs#187
+- fix: Allow to have empty Site Layout - MEED-8266 - Meeds-io/MIPs#175
+- fix: Avoid flushing IDM Hibernate session on read operations - MEED-8013 - Meeds-io/meeds#2662
+- fix: Clean up code after feature completion - MEED-9753 - meeds-io/MIPs#203
+- fix: Correct feedbacks for merge - meeds-io/MIPs#203 - MEED-9791
+- fix: Default language has become ar instead of en - MEED-8471
+- fix: Display Portal using Browser locale after a first login - MEED-9309 - Meeds-io/meeds#3422
+- fix: Display problems with languages with a dialect like PT-BR - MEED-8467
+- fix: Exclude Draft Pages from Default Site Pages - MEED-8044 - Meeds-io/meeds#2721
+- fix: fix ACL check for Page Access in WebUI - MEED-7989 - Meeds-io/meeds#2698
+- fix: fix Banner and Sidebar Sections CSS Computing from XML - MEED-8340 - Meeds-io/MIPs#175
+- fix: fix gatein errors when postgres server startup - MEED-8510 - Meeds-io/meeds#3055
+- fix: fix Missing Quote in Deprecated gtmpl files - EXO-76079
+- fix: fix NPE when Cloning Navigation - MEED-8886 - Meeds-io/meeds#3239
+- fix: fix NPE when requesting WebUI the first time - MEED-7941 - Meeds-io/meeds#2673
+- fix: fix regex replacement in Mails sent by Password Recovery - MEED-9290 - Meeds-io/meeds#3410
+- fix: fix Retrieving current instance of PortalRequestContext - MEED-8372 - Meeds-io/meeds#2924
+- fix: fix Retrieving Leaderboard App - MEED-8355 - Meeds-io/MIPs#175
+- fix: fix Shared Layout Topbar Elevation on Scroll Style - MEED-8266 - Meeds-io/MIPs#175
+- fix: fix Site Cache Layout Efficiency - MEED-8351 - Meeds-io/meeds#2883
+- fix: fix Site Descriptions Cache Efficiency - MEED-8352 - Meeds-io/meeds#2886
+- fix: fix the title of an old space in a page - MEED-9532 - Meeds-io/meeds#3371
+- fix: Group name starting with number not found in suggester - MEED-9552 - meeds-io/meeds#3562
+- fix: Harmonize property to validate email - MEED-9303
+- fix: Have relevant and unique page title - MEED-9029 - Meeds-io/meeds#2914.
+- fix: Impossible to require forgot password - MEED-9855
+- fix: Include Body-End-Container Portlet Static Resources in Portal - Meeds-io/MIPs#175
+- fix: just after creation, external user is seen as internal user - MEED-8716
+- fix: Prevent NPE by checking for null Page ID before parsing in PageKey - MEED-8821 - Meeds-io/MIPs#180
+- fix: Providing an alternative text for the image near the form - MEED-9008 - Meeds-io/meeds#3279
+- fix: setting default platform language to pt-br generates problems in interface - MEED-8665
+- fix: UI Is not rtl-ized when Arabic  language choose - MEED-8708
+- fix: unable to apply negative margin in ModelStyle - MEED-9838 -  meeds-io/meeds#3779
+- fix: Unable to reload page configuration when addons add another page in the portal - MEED-9696
+- fix: Update commons-fileupload2-jakarta:2.0.0-M1 to commons-fileupload2-jakarta-servlet6:2.0.0-M4 - MEED-9913 - meeds-io/meeds#3809
+- fix: Update the content of guest invitation notification - MEED-9283 - Meeds-io/meeds#3403
+- fix: Upgrade Hibernate to version 6.6 and delete useless Dependent class - Meeds-io/meeds#3365
+- fix: user can logs using wildcard - MEED-8649
 
-eXo Wiki 6.1.x
+Improvements:
+- feat: Add API to access Nav Root Node - MEED-7848 - Meeds-io/meeds#2644
+- feat: Add custom app to meta site shared layout - MEED-8155 - Meeds-io/MIPs#167
+- feat: Add Digest Login Module - EXIP-17
+- feat: Add DRAFT Portal Site Type - MEED-8194 - Meeds-io/MIPs#175
+- feat: Add Portal Handler to allow access to Draft Site - MEED-8239 - Meeds-io/MIPs#175
+- feat: Add portlet Login Form - meeds-io/MIPs#203 - MEED-9360
+- feat: Add properties on PageBody Container - MEED-8250 - Meeds-io/MIPs#175
+- feat: Add Site ACL Plugin - MEED-9633 - Meeds-io/MIPs#218
+- feat: Add Site icon property methods - MEED-8165 - Meeds-io/MIPs#173
+- feat: Add the space creation handler - MEED-8810 - Meeds-io/MIPs#187
+- feat: Add Topbar Image Url attribute - MEED-8815 - Meeds-io/MIPs#185
+- feat: Allow Delegated Admins to access User Memberships - MEED-9680 - Meeds-io/MIPs#220
+- feat: Allow to access pages without full path - MEED-9026 - Meeds-io/meeds#3286
+- feat: Allow to define Horizontal and Vertical Align of Banner Cell by XML - MEED-8266 - Meeds-io/MIPs#175
+- feat: Allow to force displaying Shared Layout for a Single Page - MEED-8178 - Meeds-io/meeds#2772
+- feat: Allow to log Hibernate Queries Statistics per Transaction lifecycle - MEED-8014 - Meeds-io/meeds#2709
+- feat: Allow to manage Site Templates of type Portal - MEED-8079 - Meeds-io/MIPs#173
+- feat: Allow to redirect to space as User Home - MEED-9286 - Meeds-io/meeds#3405
+- feat: Allow to Restore Default Sites Layout and Pages - MEED-8268 - Meeds-io/MIPs#175
+- feat: Allow to retrieve current Portal Label from Request Context - MEED-8168 - Meeds-io/MIPs#173
+- feat: Allow to set a site as non removable - MEED-8089 - Meeds-io/MIPs#173
+- feat: Allow to use portal.xml file name for all Site Types - MEED-8094 - Meeds-io/MIPs#173
+- feat: Apply layout-top-bar class to Topbar container - MEED-8205 - Meeds-io/MIPs#174
+- feat: Apply product default configuration for languages - MEED-8461
+- feat: Build WebUI Components Tree Statically - MEED-8302 - Meeds-io/MIPs#175
+- feat: Centralize ACL Checks in UserACL Service using plugins - MEED-8962 - Meeds-io/MIPs#192
+- feat: Change default path computing algorithm - MEED-8176 - Meeds-io/MIPs#173
+- feat: Clear UIPortal on Site Save through UI - Meeds-io/MIPs#175
+- feat: Create page login in global site - MEED-9372 - meeds-io/MIPs#203
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete HSTS HTTP Header from Spring REST calls - Meeds-io/meeds#3502
+- feat: Delete useless WebUI component - Meeds-io/MIPs#181
+- feat: Deprecate Static Site Template Definition - MEED-8085 - Meeds-io/MIPs#173
+- feat: Enable WebUI Stateless Mode by default - Meeds-io/MIPs#181
+- feat: Enhance User Membership Caching and Registration - MEED-9572 - Meeds-io/meeds#3580
+- feat: eXIP10_US02.01: Doc file thumbnail - EXO-78390
+- feat: fix ACL Check on WebUI components and Shared layout display - MEED-8266 - Meeds-io/MIPs#175
+- feat: Implement A Simple API Key Framework - exoplatform/exip#21
+- feat: Implement Cache for Portal Token API - MEED-8347 - Meeds-io/meeds#2881
+- feat: Implement drawer styling option in site branding management - MEED-8069 - Meeds-io/MIPs#174
+- feat: Implement drawer styling option in site branding management - MEED-8072 - Meeds-io/MIPs#174
+- feat: Implement New Site Layout Structure - MEED-8265 - Meeds-io/MIPs#175
+- feat: Implement page styling drawer in site branding management - MEED-8065 - Meeds-io/MIPs#174
+- feat: Implement sidebar styling option in site branding management - MEED-8068 - Meeds-io/MIPs#174
+- feat: Implement Topbar styling option in site branding management - MEED-8066 - meeds-io/MIPs#174
+- feat: Improve Based Spring Integration Test Root Class - Meeds-io/meeds#3313
+- feat: Improve JS Preloading when using HTTP/2 protocol - MEED-8372 - Meeds-io/meeds#2924
+- feat: Make External Onboarding page modifiable in layout - MEED-9700 - meeds-io/MIPs#203
+- feat: Make Forgot password page modifiable in layout - MEED-9362 - Meeds-io/MIPs#203
+- feat: Make Internal Onboarding page modifiable in layout - MEED-9711 - Meeds-io/MIPs#203
+- feat: Make Register page modifiable in layout - MEED-9361 - Meeds-io/MIPs#203
+- feat: Move Navigation Configuration API from Social and Improve Default Path computing - MEED-8319 - Meeds-io/meeds#2830
+- feat: Move System Addon Containers as UIPortalApplication extensions - MEED-8281 - Meeds-io/MIPs#175
+- feat: Optimize Maximized Application Rendering - MEED-8266 - Meeds-io/MIPs#175
+- feat: Optimize Single Application Rendering - Meeds-io/MIPs#175
+- feat: Remove the option to add custom CSS from branding page - MEED-8149 - Meeds-io/MIPs#167
+- feat: Retrieve user first menu path API  - MEED-8828 - Meeds-io/MIPs#185
+- feat: Set back custom CSS feature from branding page - MEED-8427 - Meeds-io/meeds#2939
+- feat: Simplify Page and Node permissions mapping in REST - MEED-8093
+
+eXo ECMS 7.1.0
 *************************
-** Bug
+fix:
+- fix: 3dots menu in documents preview do not opens - EXO-78073
+- fix: add property to deactivate computing documents size including versions - EXO-78104
+- fix: Convert exo:categoryIds from CSV string to multi-value property - EXO-79879 - eXIP-14
+- fix: Drop dependency to commons-httpclient - Meeds-io/meeds#3365
+- fix: Properly remove event listeners in NoteAttachment's beforeDestroy - EXO-77998
+- fix: In rest service getFoldersAndFiles, name have the same value than title - EXO-79569
+- fix: Remove any dependencies to old doc preview - EXO-80993
+- fix: Versions cleanup when max of versions reached - EXO-81970
 
-** Improvemnts
+Improvements:
+- feat: Add categories to a document - EXO-79557 - eXIP-14
+- feat: Cleanup global site FileManagementAnalytics navigation & page - EXO-78646
+- feat: Enable sorting by last updated in files search - EXO-80517 - exoplatform/eXIP#23
+- feat: eXIP10_US02.01: Doc file thumbnail - EXO-77966
+- feat: eXIP12_US01.01: Hide System Folders by default - EXO-79179
+- feat: eXIP13: Define icon for FileSearchConnector - EXO-79593
+- feat: eXIP13: Review files search result display - EXO-79550
+- feat: eXIP20: Review the document title and summary display in search results - EXO-80263
+- feat: eXIP20: Search documents in a space - EXO-80077
+- feat: eXIP:Add file search result actions - EXO-79551
+- feat: Filter document to a category in document gadget - EXO-80130 - eXIP-18
+- feat: Hide personal folders: video, music, pictures, favorites - EXO-79778
+- feat: Search files in multiple spaces - EXO-80448 - exoplatform/eXIP#22
 
+eXo Task 7.1.0
+*************************
+fix:
+- fix: Add a hidden span text next to the icon task comments - MEED-9862
+- fix: Add contribution link to the achievements exported file - MEED-7835 - Meeds-io/meeds#2601
+- fix: Add IDs for radio button group used in tasks filter -  MEED-9873
+- fix: Avoid Drag Effect on Tasks in Mobile - MEED-9348 - Meeds-io/MIPs#175
+- fix: Bad display after deleting a task - EXO-46811 -Meeds-io/meeds#2497
+- fix: Change the color used for the due date in the task application - MEED-9215
+- fix: Cleanup Not Existing JS Modules - Meeds-io/MIPs#134
+- fix: Create an activity with ++ generates a server error in logs - MEED-8573
+- fix: Delete Jcabi Maven Plugin - Meeds-io/meeds#2417
+- fix: fix background color when moving task - MEED-7399 - Meeds-io/MIPs#156
+- fix: fix display space favorite icon when hovering on space name in atask project card - MEED-8142 - Meeds-io/meeds#1834
+- fix: fix Task Topbar Menu Style - Meeds-io/MIPs#160
+- fix: fix Task width to follow Layout designated max width - MEED-7399 - Meeds-io/MIPs#156
+- fix: handle unsupported sort fields by returning default sorting query - MEED-9574 - Meeds-io/MIPs#212
+- fix: Mustache syntax
+- fix: plan view is ko in language different from EN & FR - EXO-72317 -Meeds-io/meeds#2140
+- fix: Providing an alternative text for Task Assignees and Coworkers avatars - MEED-8930 - Meeds-io/meeds#3259
+- fix: Remove the possibility to delete the project on a task - Meeds-io/meeds#8436
+- fix: search task across multiple spaces returns all results - MEED-9461 - Meeds-io/MIPs#211
+- fix: show more button missing when grouping tasks by project in tasks tab EXO-72589  Meeds-io/meeds#2441
+- fix: Task board filtered to labels is not filtered anymore when refreshed - MEED-9027 - Meeds-io/meeds#1216
+- fix: Task comments are not displayed when opening task with the task gadget on My Workplace homepage - EXO-75152
+- fix: Task- Providing an explicit label for project managers - MEED-8968 - Meeds-io/meeds#3275
+- fix: Task status labels are not translated on the project details - EXO-73978
+- fix: Unify my tasks portlet's placeholder with ui guidelines - MEED-8647 - Meeds-io/meeds#3145
+- fix: Unify tasks app header - MEED-8675 - Meeds-io/meeds#3173
+- fix: Upgrade Hibernate to version 6.6 - Meeds-io/meeds#3365
 
-eXo Kudos 2.1.x
-**************
+Improvements:
+- feat: Adapt Space Service to remove usage of Apps Management - MEED-7638 - Meeds-io/MIPs#138
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Task Content Link Extension of type Drawer - MEED-9066 - Meeds-io/MIPs#192
+- feat: Add Task Form Drawer as default App Center application - MEED-8612 - Meeds-io/MIPs#185
+- feat: Add Task Project Drawer Quick Action - Meeds-io/MIPs#185
+- feat: Add Tasks List in Stream Page - MEED-7399 - Meeds-io/MIPs#156
+- feat: Add the ability to open task search results in a new tab - MEED-9241 - Meeds-io/MIPs#193
+- feat: Adjust task title and assignee display in the task search result card MEED-9197 - Meeds-io/MIPs#193
+- feat: Allow to translate App Description in AppCenter - MEED-8878 - Meeds-io/MIPs#185
+- feat: Avoid loading Task Style in all pages - MEED-7237 - Meeds-io/MIPs#134
+- feat: Cleanup Portal API from Deprecated items - MEED-7669 - Meeds-io/MIPs#165
+- feat: content link not well displayed in task search result - MEED-9305 - Meeds-io/MIPs#193
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default Flag from App Center page - MEED-8764 - Meeds-io/MIPs#185
+- feat: Delete Space.getSpaceByDisplayName API - Meeds-io/MIPs#150 This change will delete the usage of getSpaceByDisplayName API since it's not unique anymore
+- feat: Delete Stream Widget Dynamic Container - MEED-7414 - Meeds-io/MIPs#156
+- feat: Enable sorting by last update in tasks search - MEED-9502 - Meeds-io/MIPs#212
+- feat: Implement Permanent Link API - Meeds-io/MIPs#134
+- feat: Implement Task Editor Content Link Extensions - MEED-8937 - Meeds-io/MIPs#192
+- feat: Lazily Load RichEditor JS Module - EXO-77006
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Remove deprecated languages files
+- feat: Remove title and summary tooltips from the Tasks search result - MEED-9217 - Meeds-io/MIPs#193
+- feat: Rename Add Task Quick Action - MEED-8723 - Meeds-io/MIPs#185
+- feat: Rename social.core to social package - Meeds-io/MIPs#165
+- feat: Replace StringUtils package name - Meeds-io/MIPs#150
+- feat: Retrieve Resource Bundle from extension context instead of Monolith - MEED-7237 - Meeds-io/MIPs#134
+- feat: Review Default App properties - MEED-8872 - Meeds-io/MIPs#185
+- feat: Review Portlet Instances Default Permissions - MEED-7668 - Meeds-io/meeds#2528
+- feat: Review tasks result display - MEED-8983 - meeds-io/MIPs#193
+- feat: Review the task title and description display in search results- MEED-9403 - Meeds-io/MIPs#200
+- feat: Review title style in task search results - MEED-9491 - Meeds-io/MIPs#211
+- feat: Search Task in multiple spaces - MEED-9461 - Meeds-io/MIPs#211
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+- feat: Update Space URL computing - Meeds-io/MIPs#150
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
 
-eXo Task 3.1.x
-************** 
+eXo Commons 7.1.0
+*************************
+fix:
+- fix: can't add content after media embed - MEED-9397 - meeds-io/meeds#3454.
+- fix: Change the placeholder color for the CKEditor - MEED-9204
+- fix: Delete configuration of missing I18N files - MEED-7340 - Meeds-io/meeds#2317
+- fix: Enhance Rich Editor Border Style - Meeds-io/MIPs#192
+- fix: fix deactivate all notification channels from personal settings - MEED-9799 - Meeds-io/meeds#3522
+- fix: fix Gif Illustration generation - MEED-7435 - Meeds-io/meeds#2369
+- fix: fix License Header of Moved File - Meeds-io/MIPs#181
+- fix: fix Logging Notification Building Errors - Meeds-io/MIPs#134
+- fix: fix preserving Image EXIF Orientation Metadata after scaling - MEED-2471 - Meeds-io/meeds#1126
+- fix: Image Resize not working for some specific images - EXO-74160
+- fix: No cell spacing or padding is applied to the inserted table - MEED-8751 - Meeds-io/meeds#3126
+- fix: No image displayed when ImageResizeService throw an error - EXO-74337
+- fix: remove uneeded labels
+- fix: The status of links in article/note should be recognized as visited and unvisited - MEED-9100 - Meeds-io/meeds#3312
+- fix: Upgrade Hibernate, cometd and owasp-java-html-sanitizer - Meeds-io/meeds#3365
 
-** Bug
+Improvements:
+- feat: Add extensions for portlet login form - meeds-io/MIPs#203 - MEED-9363
+- feat: Add portlet Login Form - meeds-io/MIPs#203 - MEED-9360
+- feat: Add Variable to access current portlet storage Identifier - Meeds-io/MIPs#155
+- feat: Allow Content Link Html Tag - MEED-8934 - Meeds-io/MIPs#192 This change will allow to preserve Content Link specific Tag in HTML contents while using sanitizer.
+- feat: Allow figcaption in HTML sanitizer display preloaded height and width in the image properties dialog - EXO-75213 - Meeds-io/MIPs#145
+- feat: Allow phone links in HTML sanitizer - EXO-73882 - Meeds-io/MIPs#129
+- feat: Allow to define default choice for a notification channel - MEED-9304
+- feat: Allow to manage notification channel status on runtime - MEED-7276 - Meeds-io/MIPs#134
+- feat: Allow to scale image to exact specified sizes - MEED-7252 - Meeds-io/MIPs#134 This change will allow to resize a Thumbnail image using an exact an fixed match size.
+- feat: Allow to send elastricsearch count query - MEED-7590 - Meeds-io/meeds#2476
+- feat: Allow To use ngram_tokenizer when indexing a Field - MEED-7667 - Meeds-io/meeds#2523
+- feat: Avoid WS broadcasting user status to all connected users - MEED-9692 - Meeds-io/MIPs#188
+- feat: Broadcast websocket message on user state update - MEED-9413 - Meeds-io/MIPs#188
+- feat: Centralize Cache configuration in Meeds package - MEED-7742 - Meeds-io/meeds#2537
+- feat: Cleanup Portal API from Deprecated items - MEED-7669 - Meeds-io/MIPs#165
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Deprecated Usage of JS Tag Manager Definition in GenericDispatchedViewPortlet - Meeds-io/MIPs#175
+- feat: Delete useless ECMS CKEditor Plugins - Meeds-io/MIPs#181
+- feat: Delete useless WebUI component - Meeds-io/MIPs#181
+- feat: Extract Mail Template Content Processing into a Service - MEED-9059 - Meeds-io/MIPs#192
+- feat: fix alignment of figcaption and image in extended rich content - EXO-75213 - Meeds-io/MIPs#145
+- feat: fix image resizing issue - EXO-74758 - Meeds-io/MIPs#145
+- feat: fix increase/decrease indentation not working correctly in CKEditor - EXO-73292 - Meeds-io/meeds#2423
+- feat: fix the copied format not being applied to the selected text in some CKEditor instances - EXO-73291 - Meeds-io/MIPs#129
+- feat: Implement new upgrade plugin exception - MEED-9550 - Meeds-io/MIPs#213
+- feat: Move Image Resize Service API to portal - MEED-7252 - Meeds-io/MIPs#134
+- feat: Move Utils Component from Portal - Meeds-io/MIPs#181
+- feat: Refactor Resource Bundle REST to use Service Caching strategy  - MEED-7237 - Meeds-io/MIPs#134
+- feat: Remove deprecated languages files
+- feat: Replace Jcabi Plugin by AspectJ Maven Plugin - Meeds-io/meeds#2417
+- feat: Send Badge update each time a Web Notification is updated - MEED-7279 - Meeds-io/MIPs#134
+- feat: Trigger events when Web notifications changes - Meeds-io/MIPs#134
+- feat: Unify figure tag display between view and edit modes in CKEdito- EXO-75623 - Meeds-io/MIPs#145
+- feat: Update calls to UserACL to avoid implicit usage of ConversationState in Service Layer - MEED-7555 - Meeds-io/MIPs#151
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
 
-** Improvemnts
-    
-    
-eXo Wallet 2.1.x
-******************
+eXo Gatein-Portal 7.1.0
+*************************
+fix:
+- fix: add default timeout for jndi ldap connexion - MEED-9299
+- fix: Allow direct access to allowed sub-pages - MEED-8472 - Meeds-io/meeds#2999
+- fix: Allow to add emoji in space name when creating token - MEED-9253 - Meeds-io/MIPs#187
+- fix: Allow to have empty Site Layout - MEED-8266 - Meeds-io/MIPs#175
+- fix: Avoid flushing IDM Hibernate session on read operations - MEED-8013 - Meeds-io/meeds#2662
+- fix: Clean up code after feature completion - MEED-9753 - meeds-io/MIPs#203
+- fix: Correct feedbacks for merge - meeds-io/MIPs#203 - MEED-9791
+- fix: Default language has become ar instead of en - MEED-8471
+- fix: Display Portal using Browser locale after a first login - MEED-9309 - Meeds-io/meeds#3422
+- fix: Display problems with languages with a dialect like PT-BR - MEED-8467
+- fix: Exclude Draft Pages from Default Site Pages - MEED-8044 - Meeds-io/meeds#2721
+- fix: fix ACL check for Page Access in WebUI - MEED-7989 - Meeds-io/meeds#2698
+- fix: fix Banner and Sidebar Sections CSS Computing from XML - MEED-8340 - Meeds-io/MIPs#175
+- fix: fix gatein errors when postgres server startup - MEED-8510 - Meeds-io/meeds#3055
+- fix: fix Missing Quote in Deprecated gtmpl files - EXO-76079
+- fix: fix NPE when Cloning Navigation - MEED-8886 - Meeds-io/meeds#3239
+- fix: fix NPE when requesting WebUI the first time - MEED-7941 - Meeds-io/meeds#2673
+- fix: fix regex replacement in Mails sent by Password Recovery - MEED-9290 - Meeds-io/meeds#3410
+- fix: fix Retrieving current instance of PortalRequestContext - MEED-8372 - Meeds-io/meeds#2924
+- fix: fix Retrieving Leaderboard App - MEED-8355 - Meeds-io/MIPs#175
+- fix: fix Shared Layout Topbar Elevation on Scroll Style - MEED-8266 - Meeds-io/MIPs#175
+- fix: fix Site Cache Layout Efficiency - MEED-8351 - Meeds-io/meeds#2883
+- fix: fix Site Descriptions Cache Efficiency - MEED-8352 - Meeds-io/meeds#2886
+- fix: fix the title of an old space in a page - MEED-9532 - Meeds-io/meeds#3371
+- fix: Group name starting with number not found in suggester - MEED-9552 - meeds-io/meeds#3562
+- fix: Harmonize property to validate email - MEED-9303
+- fix: Have relevant and unique page title - MEED-9029 - Meeds-io/meeds#2914.
+- fix: Impossible to require forgot password - MEED-9855
+- fix: Include Body-End-Container Portlet Static Resources in Portal - Meeds-io/MIPs#175
+- fix: just after creation, external user is seen as internal user - MEED-8716
+- fix: Prevent NPE by checking for null Page ID before parsing in PageKey - MEED-8821 - Meeds-io/MIPs#180
+- fix: Providing an alternative text for the image near the form - MEED-9008 - Meeds-io/meeds#3279
+- fix: setting default platform language to pt-br generates problems in interface - MEED-8665
+- fix: UI Is not rtl-ized when Arabic  language choose - MEED-8708
+- fix: unable to apply negative margin in ModelStyle - MEED-9838 -  meeds-io/meeds#3779
+- fix: Unable to reload page configuration when addons add another page in the portal - MEED-9696
+- fix: Update commons-fileupload2-jakarta:2.0.0-M1 to commons-fileupload2-jakarta-servlet6:2.0.0-M4 - MEED-9913 - meeds-io/meeds#3809
+- fix: Update the content of guest invitation notification - MEED-9283 - Meeds-io/meeds#3403
+- fix: Upgrade Hibernate to version 6.6 and delete useless Dependent class - Meeds-io/meeds#3365
+- fix: user can logs using wildcard - MEED-8649
 
-eXo Gamification 2.1.x
-**************
+Improvements:
+- feat: Add API to access Nav Root Node - MEED-7848 - Meeds-io/meeds#2644
+- feat: Add custom app to meta site shared layout - MEED-8155 - Meeds-io/MIPs#167
+- feat: Add Digest Login Module - EXIP-17
+- feat: Add DRAFT Portal Site Type - MEED-8194 - Meeds-io/MIPs#175
+- feat: Add Portal Handler to allow access to Draft Site - MEED-8239 - Meeds-io/MIPs#175
+- feat: Add portlet Login Form - meeds-io/MIPs#203 - MEED-9360
+- feat: Add properties on PageBody Container - MEED-8250 - Meeds-io/MIPs#175
+- feat: Add Site ACL Plugin - MEED-9633 - Meeds-io/MIPs#218
+- feat: Add Site icon property methods - MEED-8165 - Meeds-io/MIPs#173
+- feat: Add the space creation handler - MEED-8810 - Meeds-io/MIPs#187
+- feat: Add Topbar Image Url attribute - MEED-8815 - Meeds-io/MIPs#185
+- feat: Allow Delegated Admins to access User Memberships - MEED-9680 - Meeds-io/MIPs#220
+- feat: Allow to access pages without full path - MEED-9026 - Meeds-io/meeds#3286
+- feat: Allow to define Horizontal and Vertical Align of Banner Cell by XML - MEED-8266 - Meeds-io/MIPs#175
+- feat: Allow to force displaying Shared Layout for a Single Page - MEED-8178 - Meeds-io/meeds#2772
+- feat: Allow to log Hibernate Queries Statistics per Transaction lifecycle - MEED-8014 - Meeds-io/meeds#2709
+- feat: Allow to manage Site Templates of type Portal - MEED-8079 - Meeds-io/MIPs#173
+- feat: Allow to redirect to space as User Home - MEED-9286 - Meeds-io/meeds#3405
+- feat: Allow to Restore Default Sites Layout and Pages - MEED-8268 - Meeds-io/MIPs#175
+- feat: Allow to retrieve current Portal Label from Request Context - MEED-8168 - Meeds-io/MIPs#173
+- feat: Allow to set a site as non removable - MEED-8089 - Meeds-io/MIPs#173
+- feat: Allow to use portal.xml file name for all Site Types - MEED-8094 - Meeds-io/MIPs#173
+- feat: Apply layout-top-bar class to Topbar container - MEED-8205 - Meeds-io/MIPs#174
+- feat: Apply product default configuration for languages - MEED-8461
+- feat: Build WebUI Components Tree Statically - MEED-8302 - Meeds-io/MIPs#175
+- feat: Centralize ACL Checks in UserACL Service using plugins - MEED-8962 - Meeds-io/MIPs#192
+- feat: Change default path computing algorithm - MEED-8176 - Meeds-io/MIPs#173
+- feat: Clear UIPortal on Site Save through UI - Meeds-io/MIPs#175
+- feat: Create page login in global site - MEED-9372 - meeds-io/MIPs#203
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete HSTS HTTP Header from Spring REST calls - Meeds-io/meeds#3502
+- feat: Delete useless WebUI component - Meeds-io/MIPs#181
+- feat: Deprecate Static Site Template Definition - MEED-8085 - Meeds-io/MIPs#173
+- feat: Enable WebUI Stateless Mode by default - Meeds-io/MIPs#181
+- feat: Enhance User Membership Caching and Registration - MEED-9572 - Meeds-io/meeds#3580
+- feat: eXIP10_US02.01: Doc file thumbnail - EXO-78390
+- feat: fix ACL Check on WebUI components and Shared layout display - MEED-8266 - Meeds-io/MIPs#175
+- feat: Implement A Simple API Key Framework - exoplatform/exip#21
+- feat: Implement Cache for Portal Token API - MEED-8347 - Meeds-io/meeds#2881
+- feat: Implement drawer styling option in site branding management - MEED-8069 - Meeds-io/MIPs#174
+- feat: Implement drawer styling option in site branding management - MEED-8072 - Meeds-io/MIPs#174
+- feat: Implement New Site Layout Structure - MEED-8265 - Meeds-io/MIPs#175
+- feat: Implement page styling drawer in site branding management - MEED-8065 - Meeds-io/MIPs#174
+- feat: Implement sidebar styling option in site branding management - MEED-8068 - Meeds-io/MIPs#174
+- feat: Implement Topbar styling option in site branding management - MEED-8066 - meeds-io/MIPs#174
+- feat: Improve Based Spring Integration Test Root Class - Meeds-io/meeds#3313
+- feat: Improve JS Preloading when using HTTP/2 protocol - MEED-8372 - Meeds-io/meeds#2924
+- feat: Make External Onboarding page modifiable in layout - MEED-9700 - meeds-io/MIPs#203
+- feat: Make Forgot password page modifiable in layout - MEED-9362 - Meeds-io/MIPs#203
+- feat: Make Internal Onboarding page modifiable in layout - MEED-9711 - Meeds-io/MIPs#203
+- feat: Make Register page modifiable in layout - MEED-9361 - Meeds-io/MIPs#203
+- feat: Move Navigation Configuration API from Social and Improve Default Path computing - MEED-8319 - Meeds-io/meeds#2830
+- feat: Move System Addon Containers as UIPortalApplication extensions - MEED-8281 - Meeds-io/MIPs#175
+- feat: Optimize Maximized Application Rendering - MEED-8266 - Meeds-io/MIPs#175
+- feat: Optimize Single Application Rendering - Meeds-io/MIPs#175
+- feat: Remove the option to add custom CSS from branding page - MEED-8149 - Meeds-io/MIPs#167
+- feat: Retrieve user first menu path API  - MEED-8828 - Meeds-io/MIPs#185
+- feat: Set back custom CSS feature from branding page - MEED-8427 - Meeds-io/meeds#2939
+- feat: Simplify Page and Node permissions mapping in REST - MEED-8093 - Meeds-io/MIPs#173
+
+eXo Process 7.1.0
+*************************
+fix:
+- fix: fix XMLValidator error with gatein-resources.xml at server startup - EXO-81271
+- fix: prevent NPE and correct process manager group condition - EXO-82244
+- fix: when adding a pdf during process edition, the content is never saved - EXO-81221
+
+Improvements:
+- feat: Cleanup global site analyticsProcesses navigation & page - EXO-78646
+- feat: eXIP12_US01.01: Hide System Folders by default - EXO-79179
+- feat: Remove "Processes" application from application center - EXO-78691
+- feat: Use new viewer on process app - EXO-78192
+
+eXo OnlyOffice 7.1.0
+*************************
+fix:
+- fix: Attached pdf documents can't be downloaded not located - EXO-79491
+- fix: eXIP10_US02.02: View openoffice documents in onlyoffice - EXO-78232
+- fix: Improve OnlyofficeService startup time when nodetype configuration not change - EXO-79740
+
+Improvements:
+- feat: eXIP10_US02.01: Doc file thumbnail - EXO-77966
+- feat: Limit the doc size of versions
+
+eXo Jitsi 7.1.0
+*************************
+fix:
+- fix: fix binary resource streaming in JitsiGateway to prevent 0 KB assets EXO-72351
+
+Improvements:
+
+eXo Kudos 7.1.0
+*************************
+fix:
+- fix: Activity Reactions display issue on certain screen resolutions - MEED-7823 - Meeds-io/meeds#2593
+- fix: Adjust the missing period in kudos snackbar - MEED-9554 - Meeds-io/meeds#3565
+- fix: Ensure Kudos sending notification happens after Activity Generation - MEED-7293 - Meeds-io/MIPs#134
+- fix: fix Autofill Space in Kudos Drawer - MEED-7630 - Meeds-io/meeds#2481
+- fix: fix Display of Kudos List from Oveview Widget - MEED-7741 - Meeds-io/meeds#2559 - Meeds-io/meeds#1768
+- fix: fix Sending Kudos for Space and in Space Context - Meeds-io/MIPs#158
+- fix: fix the order of the gamification processor for cancel kudos even - MEED-7416
+- fix: fix Unit Test due to changed Space.Id to Long - Meeds-io/MIPs#160
+- fix: fix Widgets Placeholder and height - MEED-7396 - Meeds-io/MIPs#155
+- fix: Implement default programs to discover the platform community options - MEED-7343 - MEED-2836 - Meeds-io/meeds#2322 - Meeds-io/meeds#2321
+- fix: Incorrect aria-label rendering - MEED-9866 - meeds-io/meeds#3759
+- fix: It's possible to set message visibility to 'Your network' when exo.feature.PostToNetwork.enabled is set to false - EXO-75422 - Meeds-io/meeds#2606
+- fix: Prevent the audience suggester from appearing when sending kudos in an activity - MEED-8698 - Meeds-io/meeds#3177
+- fix: Stream & News-details- User reactions Information are given only by color - MEED-8932 - Meeds-io/meeds#2985
+
+Improvements:
+- feat: Adapt Mocked SpaceService API in Test context - MEED-7590 - Meeds-io/meeds#2476
+- feat: Adapt Space Service - MEED-7638 - Meeds-io/MIPs#150
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Kudos Composer Drawer as default App Center application - MEED-8612 - Meeds-io/MIPs#185
+- feat: Add Kudos Content Link Extension and CKEditor Plugin - MEED-8938 - Meeds-io/MIPs#192
+- feat: Add Kudos List Quick Action - MEED-8737 - Meeds-io/MIPs#185
+- feat: Adjust Kudos Overview Header Height - MEED-7353 - Meeds-io/MIPs#155
+- feat: Allow to send a Kudos to a Space - MEED-7568 - Meeds-io/MIPs158
+- feat: Allow to translate App Description in AppCenter - MEED-8878 - Meeds-io/MIPs#185
+- feat: Avoid loading Kudos Style in all pages - MEED-7237 - Meeds-io/MIPs#134
+- feat: Avoid Retrieving Kudos Settings systematically in each page rendering - MEED-8363 - Meeds-io/meeds#2906
+- feat: Change Kudos Clustering Mechanism with Cache - MEED-7742 - Meeds-io/meeds#2537
+- feat: Compute Kudos properties instead of relying on given parameters in HTTP call - MEED-7636 - Meeds-io/meeds#2485
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Deprecated Usage of JS Tag Manager Definition in GenericDispatchedViewPortlet - Meeds-io/MIPs#175
+- feat: Delete Primary Color for Kudos Button in Space Popover - MEED-7617 - Meeds-io/meeds#2473
+- feat: Delete Space.getSpaceByDisplayName API - Meeds-io/MIPs#150
+- feat: Delete SpaceService.getSpaceByUrl API - Meeds-io/MIPs#150
+- feat: Delete useless trigger while extensionRegistry trigger its own event - MEED-7475 - Meeds-io/MIPs#151
+- feat: Move Kudos Overview Portlet Instance to Contributions Category - MEED-7019 - Meeds-io/MIPs#155
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Remove deprecated languages files
+- feat: Rename Kudos Quick Action - MEED-8723 - Meeds-io/MIPs#185
+- feat: Rename System Addon Container Extension to use it as UIPortalApplication extension - MEED-8281 - Meeds-io/MIPs#175
+- feat: Replace StringUtils package name - Meeds-io/MIPs#150
+- feat: Retrieve Resource Bundle from extension context instead of Monolith - MEED-7237 - Meeds-io/MIPs#134
+- feat: Review Default App properties - MEED-8872 - Meeds-io/MIPs#185
+- feat: Rework Kudos Overview Widget UX - MEED-7404 - Meeds-io/MIPs#155
+- feat: Suggest Kudos Receiver by default instead of Sender -MEED-7619 - Meeds-io/meeds#1479
+- feat: Update calls to UserACL to avoid implicit usage of Conversation State in Service Layer - MEED-7555 - Meeds-io/MIPs#151
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update Space URL computing - Meeds-io/MIPs#150
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
+- feat: use new centralized space API with ACL management - MEED-7488 - Meeds-io/MIPs#147
+
+eXo App-Center 7.1.0
+*************************
+fix:
+- fix: Activity Reactions display issue on certain screen resolutions - MEED-7823 - Meeds-io/meeds#2593
+- fix: Adjust the missing period in kudos snackbar - MEED-9554 - Meeds-io/meeds#3565
+- fix: Ensure Kudos sending notification happens after Activity Generation - MEED-7293 - Meeds-io/MIPs#134
+- fix: fix Autofill Space in Kudos Drawer - MEED-7630 - Meeds-io/meeds#2481
+- fix: fix Display of Kudos List from Oveview Widget - MEED-7741 - Meeds-io/meeds#2559 - Meeds-io/meeds#1768
+- fix: fix Sending Kudos for Space and in Space Context - Meeds-io/MIPs#158
+- fix: fix the order of the gamification processor for cancel kudos even - MEED-7416
+- fix: fix Unit Test due to changed Space.Id to Long - Meeds-io/MIPs#160
+- fix: fix Widgets Placeholder and height - MEED-7396 - Meeds-io/MIPs#155
+- fix: Implement default programs to discover the platform community options - MEED-7343 - MEED-2836 - Meeds-io/meeds#2322 - Meeds-io/meeds#2321
+- fix: Incorrect aria-label rendering - MEED-9866 - meeds-io/meeds#3759
+- fix: It's possible to set message visibility to 'Your network' when exo.feature.PostToNetwork.enabled is set to false - EXO-75422 - Meeds-io/meeds#2606
+- fix: Prevent the audience suggester from appearing when sending kudos in an activity - MEED-8698 - Meeds-io/meeds#3177
+- fix: Stream & News-details- User reactions Information are given only by color - MEED-8932 - Meeds-io/meeds#2985
+
+Improvements:
+- feat: Adapt Mocked SpaceService API in Test context - MEED-7590 - Meeds-io/meeds#2476
+- feat: Adapt Space Service - MEED-7638 - Meeds-io/MIPs#150
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Kudos Composer Drawer as default App Center application - MEED-8612 - Meeds-io/MIPs#185
+- feat: Add Kudos Content Link Extension and CKEditor Plugin - MEED-8938 - Meeds-io/MIPs#192
+- feat: Add Kudos List Quick Action - MEED-8737 - Meeds-io/MIPs#185
+- feat: Adjust Kudos Overview Header Height - MEED-7353 - Meeds-io/MIPs#155
+- feat: Allow to send a Kudos to a Space - MEED-7568 - Meeds-io/MIPs158
+- feat: Allow to translate App Description in AppCenter - MEED-8878 - Meeds-io/MIPs#185
+- feat: Avoid loading Kudos Style in all pages - MEED-7237 - Meeds-io/MIPs#134
+- feat: Avoid Retrieving Kudos Settings systematically in each page rendering - MEED-8363 - Meeds-io/meeds#2906
+- feat: Change Kudos Clustering Mechanism with Cache - MEED-7742 - Meeds-io/meeds#2537
+- feat: Compute Kudos properties instead of relying on given parameters in HTTP call - MEED-7636 - Meeds-io/meeds#2485
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Deprecated Usage of JS Tag Manager Definition in GenericDispatchedViewPortlet - Meeds-io/MIPs#175
+- feat: Delete Primary Color for Kudos Button in Space Popover - MEED-7617 - Meeds-io/meeds#2473
+- feat: Delete Space.getSpaceByDisplayName API - Meeds-io/MIPs#150
+- feat: Delete SpaceService.getSpaceByUrl API - Meeds-io/MIPs#150
+- feat: Delete useless trigger while extensionRegistry trigger its own event - MEED-7475 - Meeds-io/MIPs#151
+- feat: Move Kudos Overview Portlet Instance to Contributions Category - MEED-7019 - Meeds-io/MIPs#155
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Remove deprecated languages files
+- feat: Rename Kudos Quick Action - MEED-8723 - Meeds-io/MIPs#185
+- feat: Rename System Addon Container Extension to use it as UIPortalApplication extension - MEED-8281 - Meeds-io/MIPs#175
+- feat: Replace StringUtils package name - Meeds-io/MIPs#150
+- feat: Retrieve Resource Bundle from extension context instead of Monolith - MEED-7237 - Meeds-io/MIPs#134
+- feat: Review Default App properties - MEED-8872 - Meeds-io/MIPs#185
+- feat: Rework Kudos Overview Widget UX - MEED-7404 - Meeds-io/MIPs#155
+- feat: Suggest Kudos Receiver by default instead of Sender -MEED-7619 - Meeds-io/meeds#1479
+- feat: Update calls to UserACL to avoid implicit usage of Conversation State in Service Layer - MEED-7555 - Meeds-io/MIPs#151
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update Space URL computing - Meeds-io/MIPs#150
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
+- feat: use new centralized space API with ACL management - MEED-7488 - Meeds-io/MIPs#147
+
+eXo meeds 7.1.0
+*************************
+fix:
+- fix: Add missing 'ide.widget' cache configuration - Meeds-io/meeds#3601
+- fix: Add "news-editor" and remove "news/news-editor" navigation nodes of global site - MEED-8425
+- fix: Add "news-editor" and remove "news/news-editor" navigation nodes of global site - MEED-8425 - Meeds-io/meeds#2944
+- fix: Add some adjustment to the admin dashboard - MEED-8375 - Meeds-io/MIPs#177
+- fix: Avoid changing Manifest Location - MEED-8638 - Meeds-io/MIPs#185
+- fix: Change Pages Access permissions expression - MEED-8472 - Meeds-io/meeds#2999
+- fix: Correct feedbacks for merge - Meeds-io/MIPs#203 - MEED-9791
+- fix: Delete useless Quick Actions Page - MEED-8894 - Meeds-io/meeds#3243
+- fix: fix Access to Portlet Viewer by simple users - MEED-9165 - Meeds-io/meeds#3339
+- fix: fix Wallet.transaction cache name - MEED-9615 - Meeds-io/meeds#3598
+- fix: make insermode=conserve for sites meeds, mycraft, and space_templates - MEED-9953 - meeds-io/meeds#3803
+- fix: org chart & My Team pages should not be available for externals - Meeds-io/meeds#112 - EXO-71284
+- fix: Refactor README.md
+- fix: Update login pages margin and size - MEED-9838 - meeds-io/meeds#3779
+- fix: Update manage news targets page permissions - MEED-8651 - #3150
+- fix: Update manage news targets page permissions - MEED-8651 - Meeds-io/meeds#3150
+- fix: Update Notes Editor Layout Definition - MEED-9310 - Meeds-io/meeds#3423
+
+Improvements:
+- feat:  Access to the platform settings page - MEED-8228 - Meeds-io/MIPs#177
+- feat: Add a new portlet for listing admins - MEED-8235 - Meeds-io/MIPs#177
+- feat: Add App Center Shortcuts Listing in User Settings - MEED-8637 - Meeds-io/MIPs#185
+- feat: Add avatar/banner display preferences in profile-header of profile page - MEED-8548 - Meeds-io/MIPs#184
+- feat: Add Contribute page to meeds site navigation - MEED-9024 - Meeds-io/MIPs#194
+- feat: Add Contributions list in Contribute page of Community space template - MEED-9041 - Meeds-io/MIPs#194
+- feat: Add Contributions list in contribute page template - MEED-9039 - Meeds-io/MIPs#194
+- feat: Add Default Cache Settings for Identity and Conversation registries - MEED-9593 - Meeds-io/meeds#3472
+- feat: Add default page template for Space Programs - MEED-8967 - Meeds-io/MIPs#194
+- feat: Add Digest Login Module - EXIP-17
+- feat: Add PWA Manifest URL in standalone pages - MEED-8395 - Meeds-io/meeds#2598
+- feat: Add simple storage administration page - MEED-8221 - Meeds-io/MIPs#176
+- feat: Add the admin dashboard layout - MEED-8230 - Meeds-io/MIPs#177
+- feat: Add the space creation handler - MEED-8810 - Meeds-io/MIPs#187
+- feat: Adjust links in admin dashboard page - MEED-8231 - Meeds-io/MIPs#177
+- feat: Apply product default configuration for languages - MEED-8461 This fix add missing language code co and he
+- feat: Change the root node icon of platform settings - MEED-8275 - Meeds-io/MIPs#177
+- feat: Cleanup global site analytics navigation & page - MEED-8924 - #3254
+- feat: Cleanup useless ECMS default properties - Meeds-io/MIPs#181
+- feat: Create page login in global site - MEED-9372 - meeds-io/MIPs#203
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete App Center Portlet and Page - MEED-8816 - Meeds-io/MIPs#185
+- feat: Drop digest Web Archive - exoplatform/exip#21
+- feat: Enable WebUI Stateless Mode by default - Meeds-io/MIPs#181
+- feat: Enhance Topbar Menu Spacing - MEED-8883 - Meeds-io/MIPs#185
+- feat: Improve the message "we could not find the requested activity" - MEED-9388
+- feat: Limit the doc size of versions - EXO-81797 - Meeds-io/meeds#3755
+- feat: Make External Onboarding page modifiable in layout - MEED-9700 - meeds-io/MIPs#203
+- feat: Make Forgot password page modifiable in layout - MEED-9362 - Meeds-io/MIPs#203
+- feat: Make Internal Onboarding page modifiable in layout - MEED-9711 - Meeds-io/MIPs#203
+- feat: Make Register page modifiable in layout - MEED-9361 - Meeds-io/MIPs#203
+- feat: Make the Contribute site removable - MEED-9180 - Meeds-io/MIPs#194
+- feat: Move access admin page - MEED-8236 - Meeds-io/MIPs#177
+- feat: Move Links and Image Portlets From Social - Meeds-io/meeds#3313
+- feat: Move "myCraft" site from  plf-sites-extension to plf-meeds-extension - EXO-77649 - #3124
+- feat: Move "myCraft" site from  plf-sites-extension to plf-meeds-extension - EXO-77649 - #3124
+- feat: Move "myteam" navigation and page from mycraft site to global site - EXO-77604 - #3096
+- feat: Move Security Portlet to the end of Settings Page - MEED-9562 - Meeds-io/MIPs#214
+- feat: Remove Contribute Site - MEED-9025 - Meeds-io/MIPs#194
+- feat: Remove deprecated languages files
+- feat: Review the admin dashboard page layout - MEED-8301 - Meeds-io/MIPs#177
+- feat: Update activity/users/space/percentage analytics reports - MEED-8105,MEED-8108,MEED-8107,MEED-8106 - Meeds-io/MIPs#162
+- feat: Update analytics report pages - MEED-8103 - Meeds-io/MIPs#162
+- feat: Update contribute site links - MEED-9176 - Meeds-io/MIPs#194
+
+eXo Platform-UI 7.1.0
+*************************
+fix:
+- fix: Add screen-reader-only helper class - MEED-9862
+- fix: apply a visible focus display on buttons - MEED-9911 - meeds-io/meeds#3805
+- fix: Avoid applying Vuetify Reset Classes on non-Vuetify applications - MEED-7764 - Meeds-io/meeds#2573
+- fix: Change the placeholder color for the CKEditor - MEED-9204
+- fix: Contrast background and surrounding text problems of some items - MEED-9011 - Meeds-io/meeds#2975
+- fix: Contrast problem between text and background of tooltips - MEED-9090 - Meeds-io/meeds#2873
+- fix: Correct feedbacks for merge - Meeds-io/MIPs#203 - MEED-9791
+- fix: delete repeated class declaration imported from mixin file - MEED-7237 - Meeds-io/MIPs#134
+- fix: Drop-down list for Group selection isn't displayed in site administration - EXO-73925 - Meeds-io/meeds#2388.
+- fix: fix applications margin in dynamic Container Section when mobile - Meeds-io/MIPs#155
+- fix: fix Bottom Bar Color - MEED-8293 - Meeds-io/meeds#2940
+- fix: fix display topbar options with small devices - MEED-9712 - Meeds-io/meeds#3635
+- fix: fix Layout CSS priority - MEED-7399 - Meeds-io/MIPs#156
+- fix: fix Sections Margin Computing Style - MEED-8340 - Meeds-io/MIPs#175
+- fix: fix Simple Buttons Border display - MEED-7567 - Meeds-io/MIPs#158
+- fix: fix Space Avatar Style - MEED-7490 - Meeds-io/MIPs#147
+- fix: fix Suggester Menu Display - Meeds-io/MIPs#185
+- fix: fix Text Input style when no type attribute - MEED-7469 - Meeds-io/MIPs#147
+- fix: fix Topbar Label Size - MEED-7543 - Meeds-io/meeds#273
+- fix: fix Vuetify List Dense Style - MEED-7511 - Meeds-io/meeds#2406
+- fix: Missing background for links preview - MEED-8368 - Meeds-io/meeds#2942
+- fix: Review radius of attached activity thumbnail - MEED-7322 - Meeds-io/meeds#2306
+- fix: update input text border color to improve constrast - MEED-9784 - meeds-io/MIPs#203
+- fix: Use css helper to set background-color for login buttons - MEED-9765 - meeds-io/MIPs#203
+- fix: when sticky is active on section, the left column have a top padding - MEED-9764 - meeds-io/MIPs#203
+
+Improvements:
+- feat: Add 2px Margin Helpers - Meeds-io/MIPs#159
+- feat: Add Ability to Stick sidebar - Meeds-io/MIPs#175
+- feat: Add Banner Section Margin Style - MEED-8195 - Meeds-io/MIPs#175
+- feat: Add border-radius-8 helper class - MEED-9079 - Meeds-io/MIPs#164
+- feat: Add css helper class `border-color-primary-grey` - MEED-9413 - Meeds-io/MIPs#188
+- feat: Add CSS Helper Classes for inner inputs - MEED-8085 - Meeds-io/MIPs#173
+- feat: Add css helper class for primary grey background color - MEED-8687 - Meeds-io/MIPs#183
+- feat: Add CSS Helper for Flex Display without important directive - Meeds-io/MIPs#175
+- feat: Add CSS helper for table-layout:auto property - MEED-7448 - Meeds-io/MIPs#147
+- feat: Add CSS helpers for Opacity - MEED-8255 - Meeds-io/MIPs#175
+- feat: Add CSS Helpers for Relative Line Height units - Meeds-io/MIPs#158
+- feat: Add CSS Helpers to delete border radius - Meeds-io/MIPs#158
+- feat: Add display contents CSS Helpers Class - MEED-8085 - Meeds-io/MIPs#173
+- feat: Add empty transparent default space banner image - Meeds-io/MIPs#158
+- feat: Add Flex Gap CSS Helpers - Meeds-io/MIPs#185
+- feat: Add grey-lighten background with opacity class heleprs - MEED-9674 - Meeds-io/MIPs#225
+- feat: Add Header Height Class Helper - MEED-7353 - Meeds-io/MIPs#155
+- feat: Add Helpers for 45 and 315 deg rotations - MEED-8194 - Meeds-io/MIPs#175
+- feat: Add `justify-self-center`  class helpers - MEED-9162 - Meeds-io/MIPs#164
+- feat: Add layout-drawer class to global layout styles - MEED-8207 - Meeds-io/MIPs#174
+- feat: Add layout-side-bar class to global layout styles - MEED-8206 - Meeds-io/MIPs#174
+- feat: Add layout-top-bar class to global layout styles - MEED-8205 - Meeds-io/MIPs#174
+- feat: Add `left-auto` helper class - MEED-9316 - Meeds-io/MIPs#164
+- feat: Add line height CSS helpers - MEED-7443 - Meeds-io/MIPs#147
+- feat: Add List Border Active Style - Meeds-io/MIPs#159
+- feat: Add Max Height 100% CSS Class Helper - MEED-8815 - Meeds-io/MIPs#185
+- feat: Add `mb-n2px` and `mt-n2px` css class helpers - MEED-9730 - Meeds-io/meeds#3703
+- feat: Add `mb-n6px` css helper class - MEED-7704 - Meeds-io/MIPs#169
+- feat: Add `no-select` helper class - MEED-9386 - Meeds-io/MIPs#164
+- feat: Add Placeholder CSS Helper and adjust color - MEED-7502 - Meeds-io/MIPs#147
+- feat: Add `position-fixed` css helper class - MEED-9473 - Meeds-io/MIPs#198
+- feat: Add Scroll Background to Stickied Banner and Sidebar sections - MEED-8246 - Meeds-io/MIPs#175
+- feat: Add Spacing to Topbar Menu - MEED-8883 - Meeds-io/MIPs#185
+- feat: Add specific-scrollbar CSS Helper and review Sidebar Style - Meeds-io/MIPs#159
+- feat: Add Sticky Style Behavior for Top Banner Site Sections - MEED-8196 - Meeds-io/MIPs#175
+- feat: Add Style For Site Top Banner When sticky - MEED-8195 - Meeds-io/MIPs#175
+- feat: Add text-link CSS Helper for link style - MEED-7934 - Meeds-io/MIPs#170
+- feat: Add Z-index in Site Top Banner Section - Meeds-io/MIPs#175
+- feat: Allow to Align Application in Banner Section - MEED-8244 - Meeds-io/MIPs#175
+- feat: Allow to hide treeview disabled checkbox - MEED-7927 - Meeds-io/MIPs#170
+- feat: Allow to override Drawer ZIndex - Meeds-io/MIPs#192
+- feat: Allow to use reduced scroll height when horizontal scroll - MEED-8026 - Meeds-io/MIPs#170
+- feat: Applay layout-drawer class to the snackbar compoenet - MEED-8261 - Meeds-io/MIPs#174
+- feat: Applied custom top bar styles as defined by branding management - MEED-8205 - Meeds-io/MIPs#174
+- feat: Create page login in global site - MEED-9372 - Meeds-io/MIPs#203
+- feat: Define a generic module for Image Cropper CSS file - MEED-7237 - Meeds-io/MIPs#134
+- feat: Delete margins in Topbar on Mobile - MEED-8426 - Meeds-io/meeds#2945
+- feat: Delete Old Site Template CSS - MEED-8266 - Meeds-io/MIPs#175
+- feat: Delete useless Topbar Loading Styling - MEED-8266 - Meeds-io/MIPs#175
+- feat: Delete useless Topbar Style and Classes - Meeds-io/MIPs#159
+- feat: delete v-card focus background color - MEED-7373 - Meeds-io/MIPs#155
+- feat: Enhance Suggester Style - MEED-8616 - Meeds-io/MIPs#185
+- feat: Hide section in Mobile when empty - MEED-7442 - Meeds-io/MIPs#147
+- feat: Implement drawer styling option in site branding management - MEED-8069 - Meeds-io/MIPs#174
+- feat: Implement sidebar styling option in site branding management - MEED-8068 - Meeds-io/MIPs#174
+- feat: Implement Topbar styling option in site branding management - MEED-8066 - meeds-io/MIPs#174
+- feat: Move Topbar Logo container style from layout addon - MEED-8085 - Meeds-io/MIPs#173
+- feat: Reduce Mobile Pages Margin - MEED-7054 - Meeds-io/meeds#2144
+- feat: Remove Topbar Logo Separator - MEED-7781 - Meeds-io/MIPs#159
+- feat: Review the style when select template - MEED-7243 - Meeds-io/MIPs#137
+- feat: Update Shared Layout Topbar Style with new id - MEED-8266 - Meeds-io/MIPs#175
+- feat: Update Site Layout Styles - MEED-8266 - Meeds-io/MIPs#175
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
+- feat: Variabilize Page Background - MEED-8308 - Meeds-io/MIPs#175
+- feat: Variabilize Page Margins - MEED-8287 - Meeds-io/MIPs#175
+
+eXo external-visio-connector 7.1.0
+*******************************************
+fix:
+
+Improvements:
+
+eXo Wallet 7.1.0
+*************************
+fix:
+- fix : Automatic contributions cannot be reviewed if the reward has not yet been sent - MEED-8713 - Meeds-io/meeds#3202
+- fix: Drop dependency to com.google.common and upgrade Hibernate and bcprov - Meeds-io/meeds#3365
+- fix: Update icon color for reward card “waiting” status - MEED-7961 - Meeds-io/meeds#2678
+- fix: Update Realization filter to support multiple statuses - MEED-7745 - Meeds-io/meeds#2562
+
+Improvements:
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Wallet History Drawer Quick Action - MEED-8737 - Meeds-io/MIPs#185
+- feat: Cleanup global site analytics bundles - MEED-8924 - Meeds-io/meeds#3254
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default App Center app - MEED-8872 - Meeds-io/MIPs#185
+- feat: Delete Explicit Reference to WebUI - Meeds-io/MIPs#181
+- feat: Delete useless portlet init param - MEED-8372 - Meeds-io/meeds#2924
+- feat: Improve Wallet Welcome Message UX - MEED-9143 - Meeds-io/meeds#3335
+- feat: Move "myCraft" site from plf-sites-extension to plf-meeds-extension - EXO-77649 - Meeds-io/meeds#3124
+- feat: Remove deprecated languages files
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+
+eXo Jitsi-call 7.1.0
+*************************
+fix:
+
+Improvements:
+
+eXo Mail Integration 7.1.0
+*************************
+fix:
+
+Improvements:
+
+eXo Agenda Connectors 7.1.0
+****************************
+fix:
+
+Improvements:
+
+eXo Multi-factor-Authentication 7.1.0
+*************************************
+fix:
+
+Improvements:
+
+eXo JCR 7.1.0
+*************************
+fix:
+- fix: fix reading File Binary Meta Data - exoplatform/exip#21
+- fix: Update commons-fileupload2-jakarta:2.0.0-M1 to commons-fileupload2-jakarta-servlet6:2.0.0-M4 - MEED-9913 - Meeds-io/meeds#3809 Update this dependency to fix CVE-2025-48976
+- fix: Versions cleanup when max of versions reached - EXO-81970
+
+Improvements:
+
+eXo Analytics 7.1.0
+*************************
+fix:
+- fix: Add invisible indexed in analytics profile setting properties to user statistics - MEED-8755 - Meeds-io/meeds#3208
+- fix: Add invisible indexed in analytics profile setting properties touser statistics - MEED-8755 - Meeds-io/meeds#3208
+- fix: Allow to have Statistic Collection JS in all pages - MEED-9310 - Meeds-io/meeds#3423
+- fix: [bug] [ANALYTICS] space host have access to action menu of analytics page - EXO-75352 - Meeds-io/meeds#2585
+- fix: Drop dependencies to com.google.common and commons-httpclient - Meeds-io/meeds#3365
+- fix: Duration in Samples Display as Milliseconds instead of Seconds - MEED-9968 - Meeds-io/meeds#3856
+- fix: Ensure to display version_conflict ES error message as warn - EXO-74730
+- fix: Fix displayed "null" value for chartOptions tooltip in Analytics Portlet with single chart - MEED-8963 - Meeds-io/meeds#3276
+- fix: Ensure latest mapping is used by sorting indices by creation date during field mapping generation - MEED-8848 - Meeds-io/meeds#3226
+- fix: Fix update mapping of dynamic nested properties - MEED-8433 - Meeds-io/meeds#2948
+- fix: Improve Analytics Fields Mapping Dynamic Creation - MEED-9542 - Meeds-io/meeds#3494
+- fix: Space host have access to action menu of analytics page - EXO-75352 - Meeds-io/meeds#2585
+- fix: When the user is not a member of any space, AnalyticsQueryPortlet generates an error - MEED-8706
+
+Improvements:
+- feat: Adapt SpaceService API - MEED-7638 - Meeds-io/MIPs#150
+- feat: Add analytics statistics for search sorting by date - MEED-9506- Meeds-io/MIPs#212
+- feat: Add analytics statistics for search within space - MEED-9476 - Meeds-io/MIPs#211
+- feat: Add Category Analytics Fields - MEED-8054 - Meeds-io/meeds#2727
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Placeholder In Spaces List Widget - MEED-8879 - Meeds-io/MIPs#185
+- feat: Add Spaces Administration column Extension for Space Last Activity - MEED-7761 - Meeds-io/MIPs#160
+- feat: Add Spaces List Quick Action - MEED-8727 - Meeds-io/MIPs#185
+- feat: Add Space Template Id Attribute Sample Display UI - MEED-7760 - Meeds-io/meeds#2563
+- feat: Add translation labels for devices reports - MEED-8929 -  Meeds-io/meeds#3258
+- feat: Add translation labels for devices reports - MEED-8929 - Meeds-io/meeds#3258
+- feat: Allow to edit JSON Settings Using UI - MEED-7571 - Meeds-io/meeds#2447
+- feat: Allow to translate App Description in AppCenter - MEED-8878 - Meeds-io/MIPs#185
+- feat: Centralize Cache configuration in Meeds package - MEED-7742 - Meeds-io/meeds#2537
+- feat: Cleanup global site analytics bundles - MEED-8924 - Meeds-io/meeds#3254
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default Flag from Analytics App Center - Meeds-io/MIPs#185
+- feat: Delete Explicit Reference to WebUI - Meeds-io/MIPs#181
+- feat: Enhance "pageDisplay" analytics operation and remove unneeded "pageUIDisplay" and "applicationUIDisplay" operations - MEED-8889 - Meeds-io/meeds#3087_Meeds-io/meeds#3287
+- feat: Enhance Spring Bean API Definition - MEED-7576 - Meeds-io/meeds#2469
+- feat: Enhance UI title information for analytics charts portlet - MEED-8923 - Meeds-io/meeds#3253
+- feat: Ensure ECharts updates correctly when fetching labels asynchronously - MEED-8096 - Meeds-io/MIPs#162
+- feat: Improve ProfilePropertySetting API and Caching - MEED-8362 - Meeds-io/meeds#2904
+- feat: Include All visible spaces when filtering spaces - MEED-7771 - Meeds-io/MIPs#160
+- feat: Include user profile properties in user action statistics - MEED-8002,MEED-8003 - Meeds-io/MIPs#171
+- feat: Remove Access permission for categories - MEED-9507 - Meeds-io/MIPs#213
+- feat: Remove "Analytics" application from application center - MEED-8924 - Meeds-io/meeds#3254
+- feat: Remove deprecated languages files
+- feat: Replace StringUtils package name - Meeds-io/MIPs#150
+- feat: Retrieve List of Space Ids in backend rather than frontend for Spaces List Widget - MEED-7673 - Meeds-io/meeds#2524
+- feat: Review Default App properties - MEED-8872 - Meeds-io/MIPs#185
+- feat: Review Portlet Instances Default Permissions - MEED-7668 - Meeds-io/meeds#2528
+- feat: Samples drawer information aren't correctly updated when refresh drawer - MEED-8505 - Meeds-io/MIPs#162
+- feat: Update calls to UserACL to avoid implicit usage of Conversation State in Service Layer - MEED-7555 - Meeds-io/MIPs#151
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+- feat: Update Space URL computing - Meeds-io/MIPs#150
+
+eXo Gamification 7.1.0
+*************************
+fix:
+- fix: Action completed must not be listed if set to list actions to dofirst - MEED-9259 - Meeds-io/meeds#3388
+- fix: Actions list: Enable to set 0 available actions to list - MEED-9258 - Meeds-io/meeds#3387
+- fix: Actions to do first are not listed if no available actions limit- MEED-9266 - Meeds-io/meeds#9266
+- fix: Add contribution link to the achievements exported file - MEED-7835 - Meeds-io/meeds#2601
+- fix: Avoid display rejected contribution in contribution lists - MEED-8825 - Meeds-io/meeds#3156
+- fix: Avoid NPE when retrieving locked rules - MEED-9611 - Meeds-io/meeds#3595
+- fix: Disable the access of the quest creation form for regular users- MEED-9496 - Meeds-io/meeds#3515
+- fix: Do not suggest the 4th step in action creation form when the campaign is disabled - MEED-9296 - Meeds-io/Meeds#3412
+- fix: Exclude redundant dependency to commons-lang3 from packaging - Meeds-io/meeds#3365
+- fix: Fix actions display in program detail -MEED-9216 - Meeds-io/MIPs#194
+- fix: Fix CTA of notification setup automatic action - MEED-9256 - Meeds-io/meeds#3385
+- fix: Fix display of new created program - MEED-9224 - Meeds-io/MIPs#194
+- fix: Fix display of program overview widget, when accessing as Anonymous User - MEED-9243 - Meeds-io/MIPs#194
+- fix: Fix gamification connectors labels in user settings page - MEED-7986 - Meeds-io/meeds#2692
+- fix: Fix gamification errors when postgres server startup - MEED-8510 - Meeds-io/meeds#3055
+- fix: Fix Infinite loading when charging engagement center resources - MEED-9194 - Meeds-io/MIPs#194
+- fix: Fix Quests Drawer UI display - MEED-9379 - Meeds-io/meeds#3452
+- fix: Fix rule prerequisite missing issue when editing rule - MEED-7973 - Meeds-io/meeds#2687
+- fix: Fix the display of encoded special characters in titles - MEED-9880 - Meeds-io/meeds#3745
+- fix: Fix the display of video youtube in a quest - MEED-9480 - Meeds-io/meeds#3501
+- fix: Gamification Liquibase Error - MEED-9613 - Meeds-io/meeds#3596
+- fix: handle unsupported sort fields by returning default sorting query - MEED-9574 - Meeds-io/MIPs#212
+- fix: Improve retrieving Quests to do first performances - MEED-9358 - Meeds-io/meeds#3449
+- fix: Improve retrieving Quests Widget performances - MEED-9358 - Meeds-io/meeds#3449
+- fix: Improve space description display in profile spaces list - MEED-8569 - Meeds-io/meeds#2849
+- fix: Improve space description display in profile spaces list - MEED-9747 - Meeds-io/meeds#2849
+- fix: Providing an alternative text for Badges images - MEED-8928 - Meeds-io/meeds#3257.
+- fix: Remove text-transformation from 'Top Contributors' Header - MEED-8666 - Meeds-io/meeds#2725
+- fix: Remove the access to go back in program detail page - MEED-9582 - meeds-io/meeds#3419
+- fix: Remove the vertical scrollbar in leaderboard when it is empty - MEED-9580 - Meeds-io/meeds#3415
+- fix: Restrict associated connector username retreival to administrators
+
+Improvements:
+- feat: Access to Program contributions from Contributions Widget - MEED-8915 - Meeds-io/meeds#2241
+- feat: Add Action Content Link Extension and CKEditor Plugin - MEED-8938 - Meeds-io/MIPs#192
+- feat: Add actions from program detail drawer - MEED-9019 - Meeds-io/MIPs#194
+- feat: Add Actions List Quick Action - MEED-8735 - Meeds-io/MIPs#185
+- feat: Add actions once the program is created - MEED-9021 - Meeds-io/MIPs#194
+- feat: Add Evm connector plugin - MEED-3205 - Meeds-io/MIPs#118
+- feat: Add Favorite Extension Label and Icon - MEED-9430 - Meeds-io/MIPs#209
+- feat: Add I18N QuickAction File - Meeds-io/MIPs#185
+- feat: Add Leaderboard Quick Action - MEED-8737 - Meeds-io/MIPs#185
+- feat: Add program from the programs list drawer - MEED-9006 - Meeds-io/MIPs#194
+- feat: Add Programs List Quick Action - MEED-8734 - Meeds-io/MIPs#185
+- feat: Add Rule Content Link Extension of type Drawer - MEED-9066 - Meeds-io/MIPs#192
+- feat: Add the ability to open rule search results in a new tab - MEED-9241 - Meeds-io/MIPs#193
+- feat: Add the instance Programs List to contribution category - MEED-8965 - Meeds-io/MIPs#194
+- feat: Add User Achievements Quick Action - MEED-8738 - Meeds-io/MIPs#185
+- feat: add username retrieval from connector user identifier REST API method
+- feat: align action icons in search results - MEED-8993 - Meeds-io/MIPs#193
+- feat: Allow creating programs from empty program widget - MEED-9169 - Meeds-io/MIPs#194
+- feat: Allow the space administrator to create programs - MEED-8970 - Meeds-io/MIPs#194
+- feat: Allow to duplicate Action - MEED-8916 - Meeds-io/meeds#2833
+- feat: Allow to order User Favorites by last accessed - MEED-9428 - Meeds-io/MIPs#209
+- feat: Allow to translate App Description in AppCenter - MEED-8878 - Meeds-io/MIPs#185
+- feat: Allow to use Content Link In Program Description - MEED-9055 - Meeds-io/MIPs#192
+- feat: content link not well displayed in rule search result - MEED-9305 - Meeds-io/MIPs#193
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: Define icon for RuleSearchConnector - MEED-8978 - Meeds-io/MIPs#193
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default Flag from App Center page - MEED-8764 - Meeds-io/MIPs#185
+- feat: Delete Deprecated Usage of JS Tag Manager Definition in GenericDispatchedViewPortlet - Meeds-io/MIPs#175
+- feat: Display of expanded view of program detail page - MEED-9096 - Meeds-io/MIPs#194
+- feat: Display of programs page in a space context - MEED-8966 - Meeds-io/MIPs#194
+- feat: Edit program from program detail drawer - MEED-9018 - Meeds-io/MIPs#194
+- feat: Enable sorting by last update in questes search - MEED-9503 - Meeds-io/MIPs#212
+- feat: Expand actions list drawer - MEED-9016 - Meeds-io/MIPs#194
+- feat: Expand program detail from drawer - MEED-9020 - Meeds-io/MIPs#194
+- feat: Expand programs list drawer - MEED-9015 - Meeds-io/MIPs#194
+- feat: Filter contributions list to programs listed in the context - MEED-9042 - Meeds-io/MIPs#194
+- feat: fix access admin options in expanded view of program - MEED-9128 - Meeds-io/MIPs#194
+- feat: Fix Alignment of items in program summary drawer - MEED-9183 - Meeds-io/MIPs#194
+- feat: Hide Removed Favorite Items - MEED-9612 - Meeds-io/meeds#3575
+- feat: hide TopBar loading after Engagement Center Actions initialization - MEED-9139 - Meeds-io/MIPs#193
+- feat: Implement a new common component to display information about hiding the public widget - MEED-8441 - Meeds-io/MIPs#178
+- feat: Improve action description search result dispaly - MEED-9246 - Meeds-io/MIPs#193
+- feat: Improve Favorite Quest Display when drawer expanded - MEED-9435 - Meeds-io/MIPs#209
+- feat: Improve TranslationService API with Object Id of Type String - MEED-9632 - Meeds-io/meeds#3608
+- feat: Link to program from action - MEED-9127 - Meeds-io/MIPs#194
+- feat: Load Confeti JS and CSS lazily - MEED-8483 - Meeds-io/meeds#3014
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Prefill Space in Program Form - MEED-9581 - Meeds-io/meeds#3420
+- feat: Remove audience & owners from program summary drawer - MEED-9173 - Meeds-io/MIPs#194
+- feat: Remove bold text from rule search result title - MEED-9212 - Meeds-io/MIPs#193
+- feat: Remove deprecated languages files
+- feat: remove HTML tags from action summary in search results - MEED-9088 - Meeds-io/MIPs#193
+- feat: Remove title and summary tooltips from the rules search result - MEED-9217 - Meeds-io/MIPs#193
+- feat: Review actions search result display - MEED-8986 - Meeds-io/MIPs#193
+- feat: Review Default App properties - MEED-8872 - Meeds-io/MIPs#185
+- feat: Review display add program button in program list drawer - MEED-9144 - Meeds-io/MIPs#194
+- feat: Review Link to open program and action - MEED-9176 - Meeds-io/MIPs#194
+- feat: Review the quests title and description display in search results - MEED-9403 - Meeds-io/MIPs#200
+- feat: Review title style in quests search results - MEED-9491 - Meeds-io/MIPs#211
+- feat: Search Quests of one space - MEED-9335 - Meeds-io/MIPs#200
+- feat: Update IdentityRegistry Mock Constructor - MEED-9593 - Meeds-io/meeds#3472
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+
+eXo Web-Conferencing 7.1.0
+*************************
+fix:
+- fix: Error displayed when a visio record notification is created - EXO-81980
+- fix: People directory do not load if jisti addon is uninstalled - EXO-79467
+- fix: Visio Admin Application does not display - EXO-77622
+- fix: webconferencing can be deactivated by a space member - EXO-77553
+
+Improvements:
+- feat: add call buttons to the Matrix chat - MEED-8532 - Meeds-io/MIPs#163
+- feat: Cleanup global site webconferencing-analytics navigation & page - EXO-78646
+
+eXo Perk-Store 7.1.0
+*************************
+fix:
+- fix: Delete Jcabi Maven Plugin - Meeds-io/meeds#2417
+- fix: Fix Settings App Style - MEED-7164 - Meeds-io/MIPs#144
+
+Improvements:
+- feat: Adapt Mocked SpaceService API in Test context - MEED-7590 - Meeds-io/meeds#2476
+- feat: Adapt Space API with changes - MEED-7488 - Meeds-io/MIPs#147
+- feat: Adapt Space Service - MEED-7638 - Meeds-io/MIPs#150
+- feat: Avoid loading Perk Store Style in all pages - MEED-7237 - Meeds-io/MIPs#134
+- feat: Centralize Cache configuration in Meeds package - MEED-7742 - Meeds-io/meeds#2537
+- feat: Change default font sizes - MEED-7147 - Meeds-io/MIPs#144
+- feat: Cleanup Portal API from Deprecated items - MEED-7669 - Meeds-io/MIPs#165
+- feat: Define default Apps Shortcuts - MEED-8831 - Meeds-io/MIPs#185
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Delete Default App Center app - MEED-8872 - Meeds-io/MIPs#185
+- feat: Delete Perks from My rewards Widget - MEED-7354 - Meeds-io/MIPs#155
+- feat: Delete Space.getSpaceByDisplayName API - Meeds-io/MIPs#150
+- feat: Delete SpaceService.getSpaceByUrl API - Meeds-io/MIPs#150
+- feat: Implement Permanent Link API - Meeds-io/MIPs#134
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Redefine Parent applications Classes to fit layout style properties - MEED-7094 - Meeds-io/MIPs#144
+- feat: Remove deprecated languages files
+- feat: Remove perks filter and results from unified search - MEED-8988- meeds-io/MIPs#193
+- feat: Rename Social Web Archive to social - Meeds-io/MIPs#150
+- feat: Replace StringUtils package name - Meeds-io/MIPs#150
+- feat: Retrieve Resource Bundle from extension context instead of Monolith - MEED-7237 - Meeds-io/MIPs#134
+- feat: Update predefined AppCenter application properties - MEED-8611 - Meeds-io/MIPs#185
+- feat: Upgrade resources XSD - MEED-7237 - Meeds-io/MIPs#134
+
+eXo Push-Notifications 7.1.0
+*************************
+fix:
+- fix: Delete Jcabi Maven Plugin - Meeds-io/meeds#2417
+
+Improvements:
+- feat: define languages attributes for crowdin workflow - EXO-76094
+- feat: Move Utils Component from Portal to Commons - Meeds-io/MIPs#181
+- feat: Remove deprecated languages files
+- feat: Retrieve Resource Bundle from extension context instead of Monolith - MEED-7237 - Meeds-io/MIPs#134
+- feat: Update Java and XML License Header - Meeds-io/meeds#3324
+
+eXo kernel 7.1.0
+*************************
+fix:
+- fix: Improve Cache Miss Count Warning Relevancy - MEED-9615 - Meeds-io/meeds#3598
+
+Improvements:
+- feat: Add Trace when Log Cache Max Size Reached and Excessive Miss Count - MEED-9595 - Meeds-io/meeds#3587
+- feat: Allow to restart transaction statically - Meeds-io/meeds#3365
+- feat: Cleanup ISPN and Transaction Service - Meeds-io/meeds#2537
+
+eXo core 7.1.0
+*************************
+fix:
+- fix: Apostrophe in username causes glitches in the display of a space's member list - MEED-9854 - meeds-io/meeds#3737.
+- fix: Avoid NPE when updating user Memberships - EXO-81217
+- fix: Not allowing user synchro from ldap/ad if username contains white space - MEED-9484 - Meeds-io/meeds#3360
+
+Improvements:
+- feat: Add Caches to IdentityRegistry and ConversationRegistry - MEED-9593 - Meeds-io/meeds#3472
+- feat: Drop useless Database Artifact - Meeds-io/meeds#2537
