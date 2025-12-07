@@ -25,7 +25,6 @@ jobs:
       - name: Download eXo Community binary from Nexus
         run: |
             wget ${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip
-            sha256sum ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip > SHA256SUMS
             unzip -j ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip ${DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX}-${RELEASE_VERSION}/CHANGE_LOG.txt
             echo "## What's Changed" >> WHATSCHANGED.TXT
             cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "Features:"  >> WHATSCHANGED.TXT
@@ -61,15 +60,6 @@ jobs:
           asset_path: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_name: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
           asset_content_type: application/zip
-      - name: upload eXo Community SHA256SUMS
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: SHA256SUMS
-          asset_name: SHA256SUMS
-          asset_content_type: text/plain
       - name: Upload to SF 
         run: |
           mv ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip eXo-Platform-${{ env.RELEASE_VERSION }}.zip
