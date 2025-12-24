@@ -108,6 +108,18 @@
       <type>zip</type>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.exoplatform.processes</groupId>
+      <artifactId>processes-packaging</artifactId>
+      <scope>provided</scope>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.addons.external-visio-connector</groupId>
+      <artifactId>external-visio-connector-packaging</artifactId>
+      <type>zip</type>
+      <scope>provided</scope>
+    </dependency>
 
     <dependency>
       <groupId>org.exoplatform.addons.exo-jdbc-driver-mysql</groupId>
@@ -302,6 +314,12 @@
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.meeds.push-notifications.id}:${addon.meeds.push-notifications.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                </exec>
+                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
+                  <arg line="install ${addon.exo.processes.id}:${addon.exo.processes.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
+                </exec>
+                <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
+                  <arg line="install ${addon.exo.external-visio-connector.id}:${addon.exo.external-visio-connector.version} --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
                 </exec>
                 <exec dir="${project.basedir}" executable="${project.build.directory}/${project.build.finalName}/${project.build.finalName}/addon${addon.manager.extension}" failonerror="true">
                   <arg line="install ${addon.jdbc.mysql.id}:${addon.jdbc.mysql.version}  --catalog=file://${project.build.directory}/local-catalog/exo-distrib-catalog.json" />
