@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.platform.distributions</groupId>
     <artifactId>plf-public-distributions</artifactId>
-    <version>7.1.x-SNAPSHOT</version>
+    <version>7.1.2-RC01</version>
   </parent>
   <name>eXo PLF:: Platform Public Distributions - Webapps</name>
   <artifactId>plf-community-webapps</artifactId>
