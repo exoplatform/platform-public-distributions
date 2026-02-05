@@ -1,236 +1,286 @@
 =========================
-Changelog Platform 7.1.1
+Changelog Platform 7.1.2
 =========================
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo Social 7.1.1
+eXo Social 7.1.2
 *************************
 fix:
-- fix: Active the category filter by tabbing - MEED-9951 - Meeds-io/meeds#3841
-- fix: Change SameSite for cookie OPENID_ACCESS_TOKEN - MEED-10018 - meeds-io/meeds#3901
-- fix: Display the see all buttons when focusing - MEED-9939 - Meeds-io/meeds#3831
-- fix: Fix LDAP/AD sync profile prop with name not containing "." - MEED-9995 - Meeds-io/meeds#3877
-- fix: Make initialUrl working when using externalProviders - MEED-10016 - meeds-io/meeds#3896
-- fix: Organizational chart not displayed when username is in email format - MEED-9817 - Meeds-io/meeds#3724
-- fix: Profile banner and profile avatar must be ignored - MEED-9966 - Meeds-io/meeds#9966
-- fix: Unify close button click handling in ExoDrawer - MEED-10002 - Meeds-io/meeds#3884
+- fix: Activated users still displayed while filtering to deactivated ones - MEED-10050 - meeds-io/meeds#3926
+- fix: Chat and videoconference settings disabled on roles - MEED-9978 - meeds-io/meeds#3840
+- fix: Create a default organizational chart portlet instance - MEED-10071 - Meeds-io/meeds#3919
+- Fix: Delegated admins cannot filter users - MEED-9986 - meeds-io/meeds#3870
+- fix: fix carousel slide button z-index property - MEED-10048 - Meeds-io/meeds#3921
+- fix: fix contrast issue of text in warning message when sharing a post - MEED-10111 - Meeds-io/meeds#3972
+- fix: Fix my network filter - MEED-10037 - Meeds-io/meeds#3911
+- fix: Fix non editable fields after importing users for non-root administrators - MEED-9977 - Meeds-io/meeds#3863
+- fix: Fix "See more" display after content resize - MEED-10053 - Meeds-io/meeds#3891
+- fix: Image from sidebar login portlet cannot be removed MEED-10075 - meeds-io/meeds#3946
+- fix: Keep parent menu open when hovering nested submenus - MEED-10138 - Meeds-io/meeds#3990
+- fix: Metamask button is not display when there is an initialURI - MEED-10049 - meeds-io/meeds#3923
+- Fix: no results displayed when filtering users using two types & search item - MEED-10030 - meeds-io/meeds#3892
+- fix: prevent URL truncation when containing apostrophe during sanitization - MEED-9617 - Meeds-io/meeds#3542
+- fix: resolve numeric usernames correctly in suggester endpoint - MEED-10129 - Meeds-io/meeds#3981
+- fix: Restrict activity stream category filter visibility to space members and their connections - MEED-9964 - Meeds-io/meeds#3753
+- fix: set correct profile page title for accessibility - MEED-10108 - Meeds-io/meeds#3967
+- fix: Unable to update non modifiable property by an admin using REST service - MEED-10110 - meeds-io/meeds#3971
+- fix: User contact information can't be updated if dropdown attribute is not editable - MEED-10022 - meeds-io/meeds#3886
+- fix: workaround for selecting text from comment on Safari - MEED-10056
+
+Improvements:
+- feat: Allow to external users to access to Space Access Page - MEED-10155 - Meeds-io/meeds#4004
+
+eXo MATRIX 7.1.2
+*************************
+fix:
+- fix: fix message action menu width on mobile - MEED-10055 - Meeds-io/meeds#3876
+- fix: Fix saving last opened room when open from external extensions - MEED-10021 - Meeds-io/meeds#3883
+- fix: notifications failed to be sent when usernames are in email format - MEED-10148
+- fix: Prevent duplicate messages when loading more - MEED-10057 - Meeds-io/meeds#3929
+
+Improvements:
+- feat allow configuring multiple groups that can access chat - MEED-10032
+
+eXo Content 7.1.2
+*************************
+fix:
+- fix: Author is displayed as publisher when article not published - MEED-10066 - Meeds-io/meeds#3938
+- fix: avoid losing news content when refreshing - MEED-10023
+- fix: blur news card hover on Escape - MEED-10115 - Meeds-io/meeds#3977
+- fix: Content slider target details vertical alignment not centered - MEED-10107 - Meeds-io/meeds#3964
+- fix: Display problem on additional content - MEED-10137 - Meeds-io/meeds#3989
+- fix: fix display of author name and space name in news list if long label - MEED-10052 - Meeds-io/meeds#3622
+- fix: fix filtering articles by spaces when using a text search query - MEED-10068 - Meeds-io/meeds#3939
+- fix: Fix the reaction bar of articles cards when hovering on the sidebar - MEED-9955 - Meeds-io/meeds#3845
+- fix: Lose focus on additional content - MEED-10140 - Meeds-io/meeds#3992
 
 Improvements:
 
-eXo MATRIX 7.1.1
+eXo Notes 7.1.2
 *************************
 fix:
-- fix: Empty profile displayed as message reader - MEED-9973 - Meeds-io/meeds#3860
+- fix: Cleanup duplicated wiki entries - MEED-10114 - Meeds-io/meeds#3924
+- Fix: Files no longer attached must no longer be listed - EXO-83535 - meeds-io/meeds#3961
+- fix: Fix race condition causing CKEditor to load with empty content on first initialization - MEED-10019 - Meeds-io/meeds#3899
+- fix: fix selecting words in cke using keyboard shortcuts - MEED-10039 - Meeds-io/meeds#3915
+- fix: Fix updating notes home page - MEED-10031 - Meeds-io/meeds#3907
+- fix: Images added in SNV Quick edit are not saved - MEED-10139 - Meeds-io/meeds#3991
+- fix: Notes attachments are not saved in space drive folder - EXO-83542 - Meeds-io/meeds#3963
+- fix: Restore the title, summary and illustration note when reverting to a previous version- MEED-10085 - meeds-io/meeds#3943
 
 Improvements:
 
-eXo Layout 7.1.1
+eXo Documents 7.1.2
 *************************
 fix:
-- fix: Schedule visibility date picker not showing in Add Node drawer - MEED-9983 - Meeds-io/meeds#3867
+- fix: Attachments to a note are not listed when editing the note - EXO-83533
+- fix: change of path for documents in shortcut folder - EXO-83178
+- fix: Fix copied links truncation by URL-encoding folder paths - EXO-83734
+- fix: Fix trash restore path when parent folder is renamed - EXO-83976
 
 Improvements:
 
-eXo Content 7.1.1
+eXo Portal 7.1.2
 *************************
 fix:
+- fix: adjust condition to redirect correctly to subpages - MEED-9940
+- fix: Adjust the title page- MEED-10059 - meeds-io/meeds#3930
+- fix: Allow to update a disabled user - MEED-10113 - meeds-io/meeds#3974
+- fix: Redirect to login page when requesting anonymously a restricted global page - MEED-9940
 
 Improvements:
 
-eXo Notes 7.1.1
+eXo ECMS 7.1.2
 *************************
 fix:
-- fix: Add missing title attribute to single note view actions button -MEED-9946 - Meeds-io/meeds#3832
-- fix: Can't access button by tabbing - MEED-9937 - meeds-io/meeds#3833.
-- fix: Set parent page identifier in draft pages - MEED-9965
+- fix: Exclude trashed nodes from retrieved attachments - EXO-83534
+- fix: open favorites documents depending on user permissions - EXO-83352
 
 Improvements:
 
-eXo Agenda 7.1.1
+eXo Task 7.1.2
 *************************
 fix:
+- fix: Empty email content when comments include user mentions - MEED-10145 - Meeds-io/meeds#3995
+- fix: Fix authorization bypass when creating tasks under projects - MEED-10135 - Meeds-io/meeds#3985
 
 Improvements:
 
-eXo Documents 7.1.1
+eXo Commons 7.1.2
 *************************
 fix:
-- fix: OnlyOffice document link shows blank page when session expires - EXO-82725
-
-Improvements:
-- feat: Add the ability to define if fillable documents should be opened in fill or edit mode - EXO-81254
-
-eXo Portal 7.1.1
-*************************
-fix:
-- fix: Forgot-password url have twice /portal in url - MEED-9980 - meeds-io/meeds#3864
+- fix: Allow apostrophes in URLs for href attributes - MEED-9617 - Meeds-io/meeds#3542
+- fix: delete old notifications successfully - MEED-9976
 
 Improvements:
 
-eXo ECMS 7.1.1
+eXo Gatein-Portal 7.1.2
 *************************
 fix:
-- fix: Shared document not marked as viewed when the collaborator has view-only permission - EXO-82372
+- fix: adjust condition to redirect correctly to subpages - MEED-9940
+- fix: Adjust the title page- MEED-10059 - meeds-io/meeds#3930
+- fix: Allow to update a disabled user - MEED-10113 - meeds-io/meeds#3974
+- fix: Redirect to login page when requesting anonymously a restricted global page - MEED-9940
 
 Improvements:
 
-eXo Task 7.1.1
+eXo Process 7.1.2
 *************************
 fix:
+- fix: Selected group in who can make a request isn't maintained after save - EXO-83200
 
 Improvements:
 
-eXo Commons 7.1.1
+eXo App-Center 7.1.2
 *************************
 fix:
+- fix: Add some accessibility requirements to the applications - MEED-10185 - Meeds-io/meeds#4021
+- fix: Fix interactive buttons nested inside app card link - MEED-10141 - Meeds-io/meeds#3993
+- fix: Fix the application url containing a backslash - MEED-10028 - Meeds-io/meeds#3905
+- fix: Help page opening opens app link also - MEED-10136 - Meeds-io/meeds#3988
+- fix: Prevent creating multiple apps when Save is clicked repeatedly - MEED-10038 - Meeds-io/meeds#3913
+- fix: Prevent encoded characters from appearing in application description - MEED-10020 - Meeds-io/meeds#3890
 
 Improvements:
 
-eXo Gatein-Portal 7.1.1
-*************************
-fix:
-- fix: Forgot-password url have twice /portal in url - MEED-9980 - meeds-io/meeds#3864
-
-Improvements:
-
-eXo Process 7.1.1
-*************************
-fix:
-- fix: Edit Process: open pdf in edit mode not possible - EXO-81254
-Improvements:
-
-eXo OnlyOffice 7.1.1
-*************************
-fix:
-
-Improvements:
-
-eXo Jitsi 7.1.1
-*************************
-fix:
-
-Improvements:
-
-eXo Kudos 7.1.1
+eXo Automatic-translation 7.1.2
 *************************
 fix:
 
 Improvements:
+- feat : Add LanguageWeaver connector - EXO-80987
 
-eXo App-Center 7.1.1
+eXo Automatic-translation 7.1.2
 *************************
 fix:
-- fix: Add titles for some buttons in myApplications portlet - MEED-9936 - Meeds-io/meeds#3832
-- fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821.
-- Fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821.
-- fix: Applications don't receive focus on Myapplication portlet - MEED-9974 - meeds-io/meeds#3861.
-- fix: Application shortcuts don't appear by tabbing - MEED-9928 - Meeds-io/meeds#3823
-- fix: Display the see all buttons when focusing - MEED-9939 - Meeds-io/meeds#3831
-- fix: Ensure to correctly load the application image - MEED-9987 - meeds-io/meeds#3874
-- fix: Fix applications images to be decorative - MEED-9933 - meeds-io/meeds#3834
-- fix: Information loss after a zoom in of 200% - MEED-9925 - meeds-io/meeds#3820.
-- fix: Modify the declaration of application cards - MEED-9917 - meeds-io/meeds#3811.
-- Fix: Modify the declaration of application cards - MEED-9917 - meeds-io/meeds#3811.
-- fix: Pinned applications are distinguished only by their shape - MEED-9927 - meeds-io/meeds#3822.
-- fix: Some information disappear when disabling the style - MEED-9924 - meeds-io/meeds#3819.
-- fix: Use p tag for application's description - MEED-9921 - Meeds-io/meeds#3815
+- fix: convert event dates to UTC to prevent timezone offsets - EXO-83664
 
 Improvements:
 
-eXo meeds 7.1.1
+eXo WS 7.1.2
+*************************
+fix:
+- fix : Prevent WADL documentation to be exposed publicly - MEED-10096 - meeds-io/meeds#3959
+
+Improvements:
+
+eXo Jitsi 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Platform-UI 7.1.1
+eXo Kudos 7.1.2
 *************************
 fix:
-- fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821
-- fix: Information loss after a zoom in of 200% - MEED-9925 - meeds-io/meeds#3820
 
 Improvements:
 
-eXo external-visio-connector 7.1.1
+eXo meeds 7.1.2
+*************************
+fix:
+
+Improvements:
+
+eXo Platform-UI 7.1.2
+*************************
+fix:
+
+Improvements:
+
+eXo external-visio-connector 7.1.2
 *******************************************
 fix:
 
 Improvements:
 
-eXo Wallet 7.1.1
+eXo Wallet 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Jitsi-call 7.1.1
+eXo Jitsi-call 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Mail Integration 7.1.1
+eXo Mail Integration 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Agenda Connectors 7.1.1
+eXo Agenda Connectors 7.1.2
 ****************************
 fix:
 
 Improvements:
 
-eXo Multi-factor-Authentication 7.1.1
+eXo Multi-factor-Authentication 7.1.2
 *************************************
 fix:
 
 Improvements:
 
-eXo JCR 7.1.1
+eXo JCR 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Analytics 7.1.1
+eXo Analytics 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Gamification 7.1.1
+eXo Gamification 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Web-Conferencing 7.1.1
+eXo Web-Conferencing 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Perk-Store 7.1.1
+eXo Perk-Store 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo Push-Notifications 7.1.1
+eXo Push-Notifications 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo kernel 7.1.1
+eXo kernel 7.1.2
 *************************
 fix:
 
 Improvements:
 
-eXo core 7.1.1
+eXo core 7.1.2
+*************************
+fix:
+
+Improvements:
+
+eXo Layout 7.1.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Agenda 7.1.2
 *************************
 fix:
 
