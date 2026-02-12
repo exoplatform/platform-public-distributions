@@ -74,6 +74,7 @@ Improvements:
 eXo Documents 7.1.2
 *************************
 fix:
+- fix: Change the permissions of the root node based on space permissions - EXO-84115
 - fix: Attachments to a note are not listed when editing the note - EXO-83533
 - fix: change of path for documents in shortcut folder - EXO-83178
 - fix: Fix copied links truncation by URL-encoding folder paths - EXO-83734
@@ -162,6 +163,15 @@ eXo WS 7.1.2
 *************************
 fix:
 - fix : Prevent WADL documentation to be exposed publicly - MEED-10096 - meeds-io/meeds#3959
+
+Improvements:
+
+eXo PWA 7.1.2
+*************************
+fix:
+- fix: Add a version in the icon url as pathParam - MEED-10069 - meeds-io/meeds#3940
+- fix: PWA notification icons are no more displayed - MEED-10084 - meeds-io/meeds#3947
+- fix: Update pwa manifest to be able to use pwabuilder - MEED-10069 - meeds-io/meeds#3940
 
 Improvements:
 
