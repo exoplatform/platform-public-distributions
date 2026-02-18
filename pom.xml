@@ -22,7 +22,7 @@
   <parent>
     <artifactId>maven-exo-parent-pom</artifactId>
     <groupId>org.exoplatform</groupId>
-    <version>28-RC01</version>
+    <version>29-M02</version>
     <relativePath />
   </parent>
   <groupId>org.exoplatform.platform.distributions</groupId>
@@ -76,6 +76,11 @@
     <addon.exo.documents.version>7.2.x-SNAPSHOT</addon.exo.documents.version>
     <addon.meeds.push-notifications.id>meeds-push-notifications</addon.meeds.push-notifications.id>
     <addon.meeds.push-notifications.version>7.2.x-exo-SNAPSHOT</addon.meeds.push-notifications.version>
+    <addon.exo.processes.id>exo-processes</addon.exo.processes.id>
+    <addon.exo.processes.version>7.2.x-SNAPSHOT</addon.exo.processes.version>
+    <addon.exo.external-visio-connector.id>exo-external-visio-connector</addon.exo.external-visio-connector.id>
+    <addon.exo.external-visio-connector.version>7.2.x-SNAPSHOT</addon.exo.external-visio-connector.version>
+
     <!-- Add-on manager extension to use (empty for Unix, .bat for Windows) -->
 
     <addon.jdbc.mysql.id>exo-jdbc-driver-mysql</addon.jdbc.mysql.id>
@@ -157,7 +162,20 @@
         <type>zip</type>
         <scope>provided</scope>
       </dependency>
-
+      <dependency>
+        <groupId>org.exoplatform.processes</groupId>
+        <artifactId>processes-packaging</artifactId>
+        <version>${addon.exo.processes.version}</version>
+        <scope>provided</scope>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.external-visio-connector</groupId>
+        <artifactId>external-visio-connector-packaging</artifactId>
+        <version>${addon.exo.external-visio-connector.version}</version>
+        <scope>provided</scope>
+        <type>zip</type>
+      </dependency>
       <!-- jdbc drivers -->
       <dependency>
         <groupId>org.exoplatform.addons.exo-jdbc-driver-mysql</groupId>
