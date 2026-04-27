@@ -283,6 +283,7 @@ Improvements:
 eXo Layout 7.1.3
 *************************
 fix:
+- fix : Removes fields filterByPermissions in siteService.getSites - EXO-86349 - meeds-io/si#16
 - fix: Edit home menu disappear after scrolling an element down - MEED-10340 - Meeds-io/meeds#4124
 - fix: Prevent error during navigation item update - MEED-10280 - Meeds-io/meeds#4081
 
