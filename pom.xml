@@ -86,7 +86,7 @@
     <addon.jdbc.mysql.id>exo-jdbc-driver-mysql</addon.jdbc.mysql.id>
     <addon.jdbc.mysql.version>2.2.0</addon.jdbc.mysql.version>
     <addon.jdbc.postgresql.id>exo-jdbc-driver-postgresql</addon.jdbc.postgresql.id>
-    <addon.jdbc.postgresql.version>2.5.2</addon.jdbc.postgresql.version>
+    <addon.jdbc.postgresql.version>2.5.3</addon.jdbc.postgresql.version>
 
     <addon.manager.extension />
   </properties>
