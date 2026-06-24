@@ -1558,6 +1558,87 @@ Improvements:
 - feat: Add new gamification event for sharing invitation link - MEED-10228 - Meeds-io/MIPs#244
 - feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
 
+eXo Gamification-github 7.2.0
+*************************
+fix:
+
+Improvements:
+
+eXo Gamification-twitter 7.2.0
+*************************
+fix:
+
+Improvements:
+
+eXo Gamification-EVM 7.2.0
+*************************
+fix:
+
+Improvements:
+
+eXo Gamification-crowdin 7.2.0
+*************************
+fix:
+
+Improvements:
+
+eXo mcp-server 7.2.0
+*************************
+fix:
+- fix: Add Missing WWW-authenticate as allowed HTTP Header in Cors
+- fix: Delete AI Autoconfigure Jar from Shared Lib
+- fix: Delete Tomcat Embedding Jar from Addon packaging
+- fix: Improve Redirection Rules of OAuth URLs
+
+Improvements:
+- feat: Add ContentType Definition in Search Connector - EXO-86376
+- feat: Add Integration and Unit Tests
+- feat: Improve OAuth Token Introspection and Validation
+- feat: Initialize Project Skeleton
+- feat: Move MCP Server to a dedicated Addon - EXO-86389
+- feat: Rely on codeckey.txt of portal Test resources - EXO-86572 - Meeds-io/ai#196
+- feat: Remove Useless ThreadLocalAccessor Context - EXO-86572 - Meeds-io/ai#196
+
+eXo auth-server 7.2.0
+*************************
+fix:
+- fix: Allow Public Client Refresh Token Handling
+- fix: Disable OAuth Clients Display Pagination - EXO-86297 - Meeds-io/ai#159
+- fix: Fix CIMD ID usage when deleting Tokens
+- fix: Fix CIMD with Token Endpoint Authentication Signing Algorithm Metadata
+- fix: Redirect To OAuth Client Redirect URL when consent denied
+
+Improvements:
+- feat: Add Github PR workflow & Crowdin workflow
+- feat: Add a centralized Password Encoder
+- feat: Add Integration Tests for Mistral DCR Use Case - EXO-86389
+- feat: Add OAUTH Custom Metadata for CIMD Support
+- feat: Add offline_access scope in OIDC config
+- feat: Add Unit Tests
+- feat: Add Warning when allowing all DCR, CIMD or Origin URLs - EXO-86163 - Meeds-io/ai#159
+- feat: Allow Empty Scopes when requesting OAuth Authorization
+- feat: Allow to automatically assign scopes to DCR and CIMD Clients
+- feat: Allow to not have scopes when registering client with DCR
+- feat: Centralize and Enrich OAuth Token Introspection and Validation
+- feat: Cleanup Expired OAuth Tokens Automatically
+- feat: Encrypt OAuth Tokens in DB for better Security
+- feat: Improve OAuth Public Client Registration Flow
+- feat: Initialize Project Skeleton
+- feat: Move Hibernate String Encryption Value Converter into Commons Project
+- feat: Move OAuth Pages to Meeds package - EXO-86156 - Meeds-io/ai#159
+- feat: Move OAuth Server From AI Addon
+- feat: Remove Spring Starter Jars from packaging
+- feat: Rename DCR Admin Section Labels - Meeds-io/ai#159
+- feat: Rework OAuth CIMD URLs Admin Section UX - EXO-86178 - Meeds-io/ai#159
+- feat: Rework OAuth Client Admin Card UI / UX - EXO-86165 - Meeds-io/ai#159
+- feat: Rework OAuth Client Form Drawer UX - EXO-86164 - Meeds-io/ai#159
+- feat: Rework OAuth Cors Origin URLs Admin Section UX - EXO-86177 - Meeds-io/ai#159
+- feat: Rework OAuth DCR Redirect URLs Admin Section UX - EXO-86157 - Meeds-io/ai#159
+- feat: Rework UI & UX of OAuth Consent Page - EXO-86173 - Meeds-io/ai#159
+- feat: Rework User Settings OAuth User Settings UI/UX - EXO-86172 - Meeds-io/ai#159
+- feat: Rework UX of Oauth Client Drawer in USer Setting UI - EXO-86174 - Meeds-io/ai#159
+- feat: Support OAuth Confidential Clients
+
 eXo Web-Conferencing 7.2.0
 *************************
 fix:
