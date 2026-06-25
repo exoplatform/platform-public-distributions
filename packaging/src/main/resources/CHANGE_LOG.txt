@@ -590,6 +590,8 @@ Improvements:
 
 eXo Notes 7.2.0
 *************************
+- fix: Fix loading save button when creating or editing notes with content links - EXO-87310
+- fix: Fix duplicated note blank page - EXO-87922
 - fix: Accessibility -  The image of Hide/display treeview has no label - EXO-87382
 - fix: Add missing parent v-app in Portlet - EXO-87831
 - fix: refactor access control for unlisted spaces - EXO-87778
@@ -676,6 +678,8 @@ Improvements:
 eXo Documents 7.2.0
 *************************
 fix:
+- fix: Display/hide treeview button displayed on move drawer - EXO-85258
+- fix: Renaming folder/document is KO with Firefox - EXO-75976
 - fix: Use correct drive URL in share notification for personal documents - EXO-86459
 - fix: Accessibility - The image of Hide/display treeview has no label - EXO-87382
 - fix: Add public access link management with password and expiration to visibility drawer - EXO-86788
@@ -1106,6 +1110,7 @@ Improvements:
 eXo Layout 7.2.0
 *************************
 fix:
+- fix: Fix background images (section and app) being lost when exporting/importing a page template and creating a page from it - EXO-87505
 - fix: edit home menu disappear after scrolling an element down - MEED-10340 - Meeds-io/meeds#4124
 - fix: Fix page template form weird behavior when a space is filled while typing description field - EXO-87174
 - fix: Fix section template import redirection - EXO-87340
@@ -1126,6 +1131,7 @@ Improvements:
 eXo Agenda 7.2.0
 *************************
 fix:
+- fix: Visio URL auto-creation doesn't work when Pexip is disabled - EXO-87840
 - fix: Agenda timeline default settings for existing spaces - EXO-87774
 - fix: Avoid Updating TimeZone of Anonymous Users - EXO-87799
 - fix: Remove background of X more event label in month view with small screen - EXO-87766
@@ -1269,6 +1275,7 @@ Improvements
 eXo Automatic-translation 7.2.0
 *************************
 fix:
+- fix: improve error handling in autoTranslate of note editor extension with precise message and value restoration - EXO-87087
 - fix: unescape HTML entities in automatic translation API responses - EXO-87506
 
 Improvements:
@@ -1672,5 +1679,21 @@ fix:
 - fix: flaky LockManager deadlock detection
 - fix: Clean Input Stream When using getRequestDispatcher
 - fix: resolve random build hang and test timeout in LockManager and container tests
+
+Improvements:
+
+eXo Gatein-sso 7.2.0
+*************************
+fix:
+- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
+
+Improvements:
+- feat: Activate by default assertion signature verification and assertion signature - EXO-87864
+- feat: Retrieve Inherited Memberships in SAML Roles - MEED-10149 - Meeds-io/MIPs#240
+
+eXo Saml2 7.2.0
+*************************
+fix:
+- fix: Activate by default assertion signature verification and assertion signature - EXO-87864
 
 Improvements:
