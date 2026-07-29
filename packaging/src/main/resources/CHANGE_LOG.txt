@@ -1,1699 +1,361 @@
 =========================
-Changelog Platform 7.2.0
+Changelog Platform 7.2.1
 =========================
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo AI 7.2.0
+eXo AI 7.2.1
 *************************
 fix:
-- fix: Hide Profile Button from Menu - EXO-87783
-- fix: Add allowed Variables for Comment UX Bindings - EXO-82838
-- fix: Add Default configuration of Search AI Assistant - EXO-84835
-- fix: Adding Conversation from Concierge Drawer
-- fix: Adding Glossary Storage - EXO-83724
-- fix: Add Text truncate for AI Agent Name in AI Chat - EXO-86779 - Meeds-io/ai#209
-- fix: Add variable to check AI Agent Status - EXO-83572
-- fix: Agent Cache Eviction
-- fix: AI Model Permissions Input
-- fix: Align Center Icons in Sources Drawer - EXO-86694 - Meeds-io/ai#196
-- fix: Allow to acces AI Agent by Direct URL twice - EXO-86868
-- fix: Allow to click on AI Button from Profile Card - EXO-84014
-- fix: Allow to delete Search and Summarize Agents - EXO-83333
-- fix: Allow to have empty Agent type when using remote Agent
-- fix: Allow to retrieve Full Agent Configuration when Setting associated LLM Model Configuration
-- fix: Allow to select a content by its id in RAG Content suggester - EXO-86775 - Meeds-io/ai#209
-- fix: Allow to use Agent Image in Prompt List - EXO-86845
-- fix: Allow Using Json Jackson to serialize and deserialize UserPrincipal
-- fix: Audio Transcription prevents CKEditor Initialization - EXO-83403
-- fix: Avoid changing Html using markdown transformer when not needed - Meeds-io/ai#109
-- fix: Avoid displaying Placeholder when switching between conversations
-- fix: Avoid having a space between words when summarizing conversations
-- fix: Avoid loosing MCP Context when Buffer Limit Exceeds - EXO-84536
-- fix: Avoid StackOverflow when the Note references itself as Parent
-- fix: Change WebFlux Stream HTTP Response Content Type
-- fix: Click to see more from the prompt list portlet - EXO-85653 - Meeds-io/ai#135
-- fix: Deny Provider Update When Connection Fails - EXO-86441
-- fix: Dictated text in search - Search cannot be launched - EXO-84874
-- fix: Display Anebaled Agents only for admin in Chat DRawer
-- fix: Display Dictation Button in Concierge when using Mobile
-- fix: Enhance UI Model Selection Truncation - EXO-83174
-- fix: Enhance UI of Local Agent Form
-- fix: Ensure Hugging Face compatibility with streaming
-- fix: Fix accessing UX Bindings of Activity comments
-- fix: Fix access to all agents
-- fix: Fix Access To UX Binding Menu When Mobile - EXO-83024
-- fix: Fix Agent Chip color in composer
-- fix: Fix Agent Icon display in Prompts List
-- fix: Fix AI Model Form Drawer Auto Selection
-- fix: Fix Ai Models Admin Table in Mobile View
-- fix: Fix ai prompts column sizes for AGENT_NAME_ID - EXO-87101
-- fix: Fix Autofocus on AI Composer when Mobile
-- fix: Fix Default Page Size of Conversations to load
-- fix: Fix display image of a prompt - EXO-86478 - Meeds-io/ai#135
-- fix: Fix display of Plus button when Drawer not expanded
-- fix: Fix display of prompt card color - EXO-86570 - Meeds-io/ai#135
-- fix: Fix display of prompt list settings - EXO-86480 - Meeds-io/ai#135
-- fix: Fix display of See More on Agents
-- fix: Fix Display prompt list when editing page layout - EXO-86477 - Meeds-io/ai#135
-- fix: Fix Editing agent instructions - Meeds-io/ai#51
-- fix: Fix Mobile Composer Send Button Position - EXO-86719 - Meeds-io/ai#196
-- fix: Fix OAuth Protected Resource URL to use /mcp suffix
-- fix: fix opening ai agent chat drawer from prompt list - EXO-86551 - Meeds-io/ai#135
-- fix: Fix Prompt Editing
-- fix: Fix Prompt Suggester Display - MEED-83949
-- fix: Fix Prompt Template Update - Meeds-io/MIPs#88
-- fix: Fix RAG Sources Limit reached box - EXO-86781 - Meeds-io/ai#209
-- fix: Fix Retrieving Space Home Note Page - Meeds-io/ai#109
-- fix: Fix row display of prompts list - EXO-86479 - Meeds-io/ai#135
-- fix: Fix Search CTA Display
-- fix: Fix Tables Display in Mobile View
-- fix: Fix UX Binding Conversation Agent Selection - EXO-83621
-- fix: Fix UX Binding Name from confirm Deletion dialog
-- fix: Force Refresh of News based Activity when added via AI Tool - EXO-84759
-- fix: force Refresh of UX Binding Vue Component when switching between categories - EXO-83475
-- fix: human-in-the-loop is sometimes blocked - EXO-84811
-- fix: Improve Document Content Display in Concierge
-- fix: Make RAG Indexing Transactional
-- fix: Open prompt when clicking to it - EXO-86397 - Meeds-io/ai#135
-- fix: Remove usage of Profile Phone Attributes - MEED-10210 - Meeds-io/MIPs#231
-- fix: Replace AllArgsConstructor usage for FileAttachment classes
-- fix: Replace Not Found Documents with a Tag in UX Binding Prompt - EXO-83052
-- fix: Sort Agents InChat Drawer
-- fix: update prompt retrieval logic - EXO-86551 - Meeds-io/ai#135
-
-Improvements:
-- feat: Migrate statistic fields to typed collection API - EXO-87596
-- feat: Access to prompt list Portlet configuration - EXO-85641 - Meeds-io/ai#135
-- feat: Add Activity and Comment AI UX Bindings
-- feat: Add Activity Composer UX Binding - EXO-83421
-- feat: Add Activity Feed UX Binding - MEED-84396 - Meeds-io/ai#88
-- feat: Add Activity Summarizing Default UX Binding - EXO-84388 - Meeds-io/ai#88
-- feat: Add a Default UX Binding to rephrase a task description - EXO-84077 - Meeds-io/ai#65
-- feat: Add Agent Name Selection UX
-- feat: Add Agent Placeholder MArgin Top only when Drawer Expanded
-- feat: Add Agent Preview In Admin Form - EXO-83483
-- feat: Add Agents Version to reimport Prompts and Templates - Meeds-io/ai#209
-- feat: Add Agent to left side when used in a new conversation
-- feat: Add AI agents Insert Content Drawer - EXO-83430
-- feat: Add AI Model Selection UI
-- feat: Add AI Note Page Toolbar buttons extension - EXO-82782
-- feat: Add AI Providers and Models Administration page - EXO-83030
-- feat: Add AI Tasks Tool - EXO-82922
-- feat: Add Ai UX Binding Rich Editor Balloon Button - EXO-83549
-- feat: Add Anthropic AI Provider Plugins - EXO-83117
-- feat: Add API to access UX Bindings from other addons - EXO-85095 - Meeds-io/ai#113
-- feat: Add a Quick Action Drawer by Agent - EXO-86886
-- feat: Add Assistant Message Regeneration Features - EXO-83467
-- feat: Add Audio Transcription Feature - EXO-83198 - EXO-83194
-- feat: Add Category Linking Tools and Activity Category Default Binding - EXO-84389 - Meeds-io/ai#88
-- feat: Add Comment Editor RichEditor Extensions - EXO-83422
-- feat: Add concierge Transcription UX Binding - EXO-83479
-- feat: Add Content Detail Toolbar AI Extension - EXO-82803
-- feat: Add Cors Origins Filtering and Admin UI
-- feat: Add default AI actions
-- feat: Add default AI binding for users - EXO-86475 - EXO-86476
-- feat: Add default AI Bindings for content Editor - MEED-85293 - Meeds-io/ai#128
-- feat: Add default AI Bindings for spaces - EXO-85917 - EXO-85919 - EXO-85920 - Meeds-io/ai#153
-- feat: Add Default Binding for Activities Moderation - EXO-84431 - Meeds-io/ai#88
-- feat: Add Default Binding for Creating newsletter of a Stream - EXO-84430 - Meeds-io/ai#88
-- feat: Add Default Binding for Feed Summarizing - EXO-84397 - Meeds-io/ai#88
-- feat: Add Default Binding For Identifying Tasks from a Post - EXO-84537 - Meeds-io/ai#88
-- feat: Add Default Binding for Task Summarizing - EXO-84073 - Meeds-io/MIPs#65
-- feat: Add Default Binding to generate an activity tags - EXO-84392 - Meeds-ai#88
-- feat: Add Default Binding to rephrase an activity - EXO-84393 - Meeds-ai#88
-- feat: Add Default Binding to transfer an activity content to a note - EXO-84390 - Meeds-ai#88
-- feat: Add Default configuration of Concierge AI Assistant - EXO-84836
-- feat: Add Default suggested prompt for EVA - EXO-85632 - Meeds-io/ai#135
-- feat: Add Default UX Binding for Task Project Progression Report - EXO-84072 - Meeds-io/ai#65
-- feat: Add Default UX Binding for Tasks Risk Signals Detection - EXO-84142 - Meeds-io/ai#65
-- feat: Add Defaut Images for AI Providers
-- feat: Add duration in Tool Execution Detail
-- feat: Add Filter Text for Conversation
-- feat: Add Google Genai Provider - EXO-83118
-- feat: Add Google Imagen Image Provider
-- feat: Add hover effect in agent suggested prompts
-- feat: Add Hover on Agent Card
-- feat: Add Huggingface Provider - EXO-83120
-- feat: Add MCP Server OAuth Audience Declaration
-- feat: Add MCP Server Section in User Settings - EXO-86171 - Meeds-io/ai#159
-- feat: Add Menu to Conversations List
-- feat: Add Mistral AI Image Model Implementation
-- feat: Add Mobile Note Rich Editor Toolbar buttons by extensions
-- feat: Add more URL Matchers for OAuth Protected Resource Metadata Rest URL
-- feat: Add more width to display Model Width
-- feat: Add Multi Agent UI in Chat Drawer
-- feat: Add OAuth Administration UI
-- feat: Add OAuth Audience Check and Move MCP-Internal Client Definition in MCP-Server
-- feat: Add OAuth Consent Page
-- feat: Add OAuth User Settings UI
-- feat: Add 'params' to the UX Binding Variables - EXO-85542 - Meeds-io/ai#120
-- feat: Add Placeholder in AI Provider inputs
-- feat: Add prompts to list - EXO-85641 - Meeds-io/ai#135
-- feat: Add Remote Agent - Meeds-io/ai#13
-- feat: Add REST API Swagger Doc
-- feat: Add Search Transcription UX Binding - EXO-83417
-- feat: Add Sources Selection Button in AI Agent Drawer - EXO-86572 - Meeds-io/ai#196
-- feat: Add Sources Selection Drawer in AI Agent Drawer - EXO-86572 - Meeds-io/ai#196
-- feat: Add Space Extension Points to include AI UX Bindings - EXO-82903
-- feat: Add Special Loading whe generating an image
-- feat: Add Stop Button when AI is sending response
-- feat: Add Task Description and Comment Rich Editor Extensions - EXO-83439 - EXO-83440
-- feat: Add Tasks Prioritization Default UX Binding - EXO-84285 - Meeds-io/ai#65
-- feat: Add Task Tool to manage labels - EXO-84381 - Meeds-ai#65
-- feat: Add Token Usage Metrics Advisor
-- feat: Add Tool Title in Annotations Metadata
-- feat: Add User Content Filter in Agents - EXO-86698 - Meeds-io/ai#209
-- feat: Add UX Binding Backend
-- feat: Add UX Binding Extended UIs
-- feat: Add UX Binding Form
-- feat: Add UX Bindings Page
-- feat: Add Variables information in Prompt Templates Input
-- feat: Add Voice Transcription Agents in Notes Editor - EXO-83418
-- feat: Add XAI Plugins - EXO-83119
-- feat: Adjust width of Chat Content
-- feat: Align suggested prompts to the left when RTL
-- feat: Align suggested prompts to the right
-- feat: Allow displaying Tooltip when input disabled
-- feat: Allow offline_access scope on MCP endpoint
-- feat: Allow RAG Filtering switch space, tag and content types - EXO-86376
-- feat: Allow to access Ai Agent Services from Kernel Services - EXO-85013 - Meeds-io/ai#113
-- feat: Allow to Add and Edit AI Providers - EXO-83031
-- feat: Allow to add Image Agents into Concierge
-- feat: Allow to add Image Agents into UX Bindings
-- feat: Allow to add prompt examples for each Agent
-- feat: Allow to add prompt examples for Remote Agents
-- feat: Allow to add UX Binding Prompt Template Translations
-- feat: Allow to attach images when discussing with AI Agents
-- feat: Allow to choose an agent for search assistance
-- feat: Allow to Choose Tools for Agents
-- feat: Allow to configure AI Provider per Agent
-- feat: Allow to Configure an Open AI compatible LLM
-- feat: Allow to configure Ollama default Base URL - EXO-85152
-- feat: Allow to copy Assistant Message and Image into Clipboard - EXO-83465
-- feat: Allow to copy the direct link to agents - EXO-86751 - Meeds-io/ai#209
-- feat: Allow to disable Default Concierge Completion Agent - EXO-83543
-- feat: Allow to disable Variable insertion in UX Binding Prompt when not supported
-- feat: Allow to display Agent even when hidden
-- feat: Allow to Display Sources
-- feat: Allow to display UX Bindings in Task Apps - EXO-82889
-- feat: Allow to enable/disable AI Model and AI Provider - EXO-83967 - Meeds-io/ai#66
-- feat: Allow to Extend UX Bindings
-- feat: Allow to extend UX Bindings in Apps - EXO-82778
-- feat: Allow to generate conversation even when no custom Agent Selected
-- feat: Allow to generate Images using the AI Agent Proxy - EXO-83614
-- feat: Allow to have a dictaphone for RichEditors - EXO-83329
-- feat: Allow to have a direct link to agents in Chat drawer - EXO-86751 - Meeds-io/ai#209
-- feat: Allow to import Default UX Bindings - Meeds-io/ai#65
-- feat: Allow to inject Content Id in UX Binding Content Id - EXO-84776
-- feat: Allow to insert Generated Images into Rich Editor - EXO-83463
-- feat: Allow to insert Text from Concierge into RichEditor - EXO-83464
-- feat: Allow to list all agents
-- feat: Allow to override Agent Settings from UI
-- feat: Allow to place System Message at first place
-- feat: Allow to restore Builtin UX Binding to default settings - EXO-84636
-- feat: Allow to reuse a manually added client in DCR flow
-- feat: Allow to reuse Bindings from existing conversation - EXO-84678
-- feat: Allow to select Agents from Left Bar
-- feat: Allow to select an Agent from Reduced Drawer
-- feat: Allow to select a prompt example from composer
-- feat: Allow to show used User Content Sources in Assistant Message
-- feat: Allow to sort models by consumed tokens count
-- feat: Allow to specify UX Binding appId different from id - EXO-82996
-- feat: Allow to start a new conversation while another one is in progress - EXO-84671
-- feat: Allow to stop auto scroll when AI send message text continuously
-- feat: Allow to test Agents in Admin forms
-- feat: Allow to update existing UX Binding - EXO-84795 - Meeds-io/ai#113
-- feat: Allow to Update Task Status using a Tool - EXO-84382 - Meeds-io/ai#65
-- feat: Allow to use AI Agents as proxy
-- feat: Allow To use Draft Agent Even when disabled
-- feat: Allow to use UX Bindings on User Profile - EXO-82843
-- feat: Apply Providers and Models to Agents
-- feat: Apply Space Sovereign Filter on User Live Data
-- feat: Avoid including Tools Call in History when Large Payload - EXO-84695 - Meeds-io/ai#109
-- feat: Avoid Updating Agents from Sources when upgrade is needed - EXO-86897
-- feat: Centralize Elasticsearch Configuration in Portal Module
-- feat: Centralize Spring AI Dependencies in Maven Depmgmt Pom This change will centralize Spring AI Dependency in order to use it in multiple projects when needed.
-- feat: Change Conversation and Agent Page Size to 10
-- feat: Change UX Bindings from Menu to Drawer - EXO-83619
-- feat: Clone Default Agent Tools Settings when Advanced Settings Enabled - EXO-86867
-- feat: Compute HTTP Local Address Automatically - EXO-83862
-- feat: Configure Oauth Opaque Tokens for MCP Server public clients
-- feat: Delete Permissions from AI Model - EXO-83971 - Meeds-io/ai#66
-- feat: Disable Save button when Agent translation field inputs are empty - EXO-86776 - Meeds-io/ai#209
-- feat: Display Agent Placeholder whe initiating a new conversation
-- feat: Display Agent Scope existence in UX Binding Form - EXO-86702 - Meeds-io/ai#209
-- feat: Display Agent Sources disabled when restricted - EXO-86701 - Meeds-io/ai#209
-- feat: Display Default Agent as other agents with prompt samples
-- feat: Display Default Main Component as List of Agents when not specified
-- feat: Display Global Enablement Warning when no Embedding configured - MEED-84007 - Meeds-io/ai#66
-- feat: Display of prompt list - EXO-85644 - Meeds-io/ai#135
-- feat: Display of prompts depending on agents permission - EXO-85643 - Meeds-io/ai#135
-- feat: Display only used Agents
-- feat: Display Prompt Examples in AI Agent Chat Drawer
-- feat: Display provided RAG Sources instead of LLM used Sources in Search Agent - EXO-86811 - Meeds-io/ai#209
-- feat: Display Token Usage in Models List - EXO-83092
-- feat: Display User Menu on Hover and Last Assistant Message Menu only
-- feat: Display UX Bindings in Concierge when displayed from Rich Editor Binding - EXO-83457
-- feat: Drop Support of Hugging Face Models - EXO-83120
-- feat: Enable Image Creation Agent - EXO-83480
-- feat: Enable MistralAI Model as default model for default agents - EXO-84798
-- feat: Enable Rich Editor Transcription even when RichEditor ExtraPlugins not enabled - EXO-83433
-- feat: Enahnce API to allow check enablement of Agent - EXO-85095 - Meeds-io/ai#113
-- feat: Enahnce Display of AI Models in Admin UI
-- feat: Enhance First RAG Indexing Performance - EXO-87163
-- feat: Enhance labels
-- feat: Enhance Provider Enablement Display - EXO-84016 - Meeds-io/ai#66
-- feat: Enhance Services Dependencies and Test Coverage - EXO-83663
-- feat: Extend Rich Editor Config to add Transcription UX Bindings - EXO-83418
-- feat: Factorize Sending Message to LLM Code
-- feat: Filter Tools switch chosen scope and disable Approval when Write Scope authorized
-- feat: Focus the CKEditor to end when selecting a prompt
-- feat: Force Notes Content Reindexation to include parentIds - EXO-86700 - Meeds-io/ai#209
-- feat: Format dates with the user's timezone  - EXO-85606 - Meeds-io/ai#120
-- feat: Handle User Content Filter Selection - EXO-86750 - Meeds-io/ai#209
-- feat: Hide AI Provider Key from Admins once saved - EXO-86402
-- feat: Hide Tools Update Button in Settings - EXO-84337 - Meeds-io/ai#65
-- feat: Implement CIMD Client Self Register Protocol
-- feat: Implement createPersonalTask tool in order to create a user personal task without related project - EXO-84898 - Meeds-io/ai#111
-- feat: Implement Multi Agent Feature
-- feat: Implement Oauth Server with DCR for external MCP integration
-- feat: Implement prompts list portlet configuration - EXO-85641 - Meeds-io/ai#135
-- feat: Implement prompts list portlet - MEED-85638 - Meeds-io/ai#135
-- feat: Import Default AI Models - EXO-83969 - Meeds-io/ai#66
-- feat: Import Default AI Providers - EXO-83968 - Meeds-io/ai#66
-- feat: Improve Ai Content RAG indexing performances - EXO-87163
-- feat: Improve AI Models Proxy API to allow different request format - EXO-85723
-- feat: Improve Chat Drawer Opening UX - EXO-83457
-- feat: Improve Left Side of AI Chat UI
-- feat: Improve Tools Defintions
-- feat: Improve Top-5 UX Binding using Mistral AI - EXO-84692 - Meeds-io/ai#109
-- feat: Improve UI of Tool Output for better AI understanding
-- feat: Increase Similarity Threshold of Default Agent - EXO-86617 - Meeds-io/ai#196
-- feat: List default agents at first place in Admin UI - EXO-83472
-- feat: Log exceptions when errors thrown on init
-- feat: Make Glossary retrieved from ES instead of Notes
-- feat: Manage RAG Content Indexation with persistent queue - EXO-86812 - Meeds-io/ai#209
-- feat: Move Default Embedding configuration to Sources Page - EXO-83966 - Meeds-io/ai#66
-- feat: Move MCP Server to a dedicated Addon - EXO-86389
-- feat: Move OAuth Artifacts to a dedicated Addon
-- feat: Move OAuth Page definition to Oauth Extension
-- feat: Move Prompts Cards into a dedicated Vue Components - EXO-83457
-- feat: Open Tool Execution Detail when approval needed
-- feat: Prepare Moving MCP Server To a dedicated Addon
-- feat: Prepare Moving OAuth2  Server to a dedicated Addon
-- feat: Protect OAuth System Clients
-- feat: Refactor Agents to introduce Transcription and Image Type - EXO-83332
-- feat: Refactor Service Layer to improve API Maintainability - EXO-86572 - Meeds-io/ai#196
-- feat: Refine Feed Summary and Newsletter Bindings expected output - EXO-84622 - EXO-84621 - Meeds-io/ai#88
-- feat: Remove Quest UX Binding - EXO-82997
-- feat: Remove Spring Boot Starters and Context Support Jars from packaging
-- feat: Rename Ai Model Plugin
-- feat: Rename UX Binding Variables to use content_* instead of document_* - EXO-84072 - Meeds-io/ai#65
-- feat: Re-organize AI Administration Pages - EXO-83964 - Meeds-io/ai#66
-- feat: Review Default Agents Configuration
-- feat: Review preconfigured mistralAI models - EXO-84740 - Meeds-io/ai#109
-- feat: Rework AI Agents Administration Table Column Width - EXO-83469
-- feat: Rework auto scroll on AI Chat
-- feat: Rework MCP & Tools Page and allow disable MCP Server - EXO-86169 - EXO-86170 - Meeds-io/ai#159
-- feat: Rework Top-5 Tasks UX Binding to include last modification - EXO-84633
-- feat: Save Tool Execution in Memory History - EXO-83467
-- feat: Split Notes Editor Extension from RichEditor Extension - EXO-83457
-- feat: Summarize conversation when created usin LLM
-- feat: Transform all Markdown URLs to be opened in a new Tab - EXO-84624 - Meeds-io/ai#88
-- feat: Update AI Tool for Retrieving Tasks switch Last Activity Date - EXO-84071 - Meeds-io/ai#65
-- feat: Upgrade Spring AI to version 1.1.7 - EXO-87627
-- feat: Upgrade to Spring AI 1.1.0-RC01
-- feat: Use AI Actions Tooltip instead of static tooltip
-- feat: Use an existing prompt to create on new prompt to list - EXO-85642 - Meeds-io/ai#135
-- feat: Use Default User Path in AI Agent Direct Link - EXO-86843 - Meeds-io/ai#209
-- feat: Use Max 4 words when summarizing a conversation
-- feat: Use Max Tokens Parameter from Selected Embedding Model
-- feat: Use Primary color for Prompt name
-- feat: Use same view of Left Chat Sidebar in Conversations Drawer
-
-eXo Social 7.2.0
-*************************
-fix:
-- fix: add sanitization to portlets' JSP files to prevent XSS attacks - EXO-87658
-- fix: Disallow editing a post comment without any changes - EXO-87782
-- fix: error when requesting access to a hidden space via a referral link - EXO-87778
-- fix: fix: sanitize rich editor content on initialization to prevent XSS attacks - EXO-87658
-- fix: Use ExtendedDomPurify to sanitize embedded activity html - EXO-87806
-- fix: Activated users still displayed while filtering to deactivated ones - MEED-10050 - meeds-io/meeds#3926
-- fix: Active the category filter by tabbing - MEED-9951 - Meeds-io/meeds#3841
-- fix: Add an adjustment to the unified search tags -MEED-9914
-- fix: Add outlined style for the space creation button - MEED-10158 - Meeds-io/meeds#4009
-- fix: address review feedback - MEED-10097 - Meeds-io/MIPs#233
-- fix: address review feedback - MEED-9989 - Meeds-io/MIPs#227
-- fix: Add some accessibility requirements for link field - MEED-10042 - Meeds-io/MIPs#232
-- fix: Add some accessibility requirements for switch option - MEED-10041 - Meeds-io/MIPs#232
-- fix: Add the ability to add a link to image portlet - MEED-9990 - Meeds-io/MIPs#232
-- fix: Adjust the display of the feed app like it is in mobile - MEED-10243 - meeds-io/meeds#4048
-- fix: admins should be able to view hidden & non-editable properties - MEED-10253
-- fix: allow creating a subspace from a parent space without requiring parent template permissions - MEED-10029 - Meeds-io/MIPs#227
-- fix: Allow publisher without redactor role to add content
-- fix: Allow space super manager to create subspaces - MEED-10026 - Meeds-io/MIPs#227
-- fix: Allow to access Space Templates for Anonymous User - MEED-10156 - Meeds-io/meeds#4006
-- fix: Allow to refresh Image Attachments when ObjectId changes - EXO-83467
-- fix: Allow to use includeExtensions in parallel - EXO-83457
-- fix: Answer with HTTP 404 when searching for not managed content link types - EXO-87639
-- fix: Avoid ConcurrentModificationException on Category Plugins
-- fix: Avoid Missing Method in Navigation Tree UI
-- fix: Avoid NPE when accessing a deleted Space URL - EXO-87201
-- fix: Avoid NPE when Group doesn't exist anymore - EXO-87637
-- fix: Avoid returning null Identity from List Access - EXO-87650
-- fix: Avoid swallowing Exception on Space Template Group creation - Meeds-io/MIPs#240
-- fix: Avoid using Promise.try which is too recent for Safari - EXO-87679
-- fix: Cannot invite users from a parent space - MEED-10027 - Meeds-io/MIPs#227
-- fix: Category drawer preferences aren't applied - MEED-10335 - Meeds-io/meeds#4142
-- fix: Change SameSite for cookie OPENID_ACCESS_TOKEN - MEED-10018 - meeds-io/meeds#3901
-- fix: Chat and videoconference settings disabled on roles - MEED-9978 - meeds-io/meeds#3840
-- fix: Clicking on See More hides activity content - EXO-87724
-- fix: comment menu action display for long action names - EXO-87370
-- fix: Content Link Tags Parsing - EXO-87630
-- fix: correctly synchronize properties from LDAP - MEED-9852
-- fix: Correct superior/subordinate relationships in organizational chart - MEED-10424 - Meeds-io/meeds#4231
-- fix: Count viewers of a post even if no unread notification - MEED-10363 - Meeds-io/meeds#4166
-- fix: Create a default organizational chart portlet instance - MEED-10071 - Meeds-io/meeds#3919
-- fix: CSV user import issue if attribute isn't the exact value - MEED-10196 - Meeds-io/meeds#4002
-- fix: Delegated admins cannot filter users - MEED-9986 - meeds-io/meeds#3870
-- fix: Display Profile Extended Button in Compact Mode in Mobile View - EXO-83666
-- fix: Display space description as plain text in the muted spaces list  - EXO-97380
-- fix: Display space template description as plain text in the space form drawer - EXO-87549
-- fix: Display the see all buttons when focusing - MEED-9939 - Meeds-io/meeds#3831
-- fix: Dropdown value attributes not displaying for Quick search - MEED-10434 - Meeds-io/meeds#4245
-- fix: Dynamically filter notification groups based on the user s settings - MEED-10440 - Meeds-io/meeds#3648
-- fix: Enable space setting update button for long descriptions and support larger HTML content - MEED-10229 - Meeds-io/meeds#3976
-- fix: Enhance post content see more button display - MEED-10267 - Meeds-io/meeds#4063
-- fix: Ensure to display Unread Badge in Unread Activities - EXO-87143
-- fix: externalTag is not displayed in user popover - MEED-10232 - meeds-io/meeds#4043
-- fix: Fix access to unlisted spaces for invited users - MEED-10295 - Meeds-io/meeds#4104
-- fix: Fix advanced profile filter to support partial single-word matching - MEED-10273 - Meeds-io/meeds#3970
-- fix: fix carousel slide button z-index property - MEED-10048 - Meeds-io/meeds#3921
-- fix: Fix confirmation popup message XSS vulnerability - EXO-86231
-- fix: fix contrast issue of text in warning message when sharing a post - MEED-10111 - Meeds-io/meeds#3972
-- fix: Fix group synchronization and deletion when special characters involved - MEED-10428 - Meeds-io/meeds#4208
-- fix: Fix height related problems display on small screens for expanded drawer - MEED-10441 - Meeds-io/meeds#3906
-- fix: fix incorrect state update for phone/email settings - MEED-10210 - Meeds-io/MIPs#231
-- fix: fix join by invitation link notification CTA button background - MEED-10308 - Meeds-io/meeds#4126
-- fix: Fix LDAP/AD sync profile prop with name not containing "." - MEED-9995 - Meeds-io/meeds#3877
-- fix: Fix Link Balloon CKEDitor Extension NPE - EXO-83467
-- fix: fix link of phone property profile extension - MEED-10210 - Meeds-io/MIPs#231
-- fix: Fix Loading CKEditor - EXO-83567 - Meeds-io/meeds#3958
-- fix: Fix management roles for binded users - MEED-10427 - Meeds-io/meeds#4206
-- fix: Fix my network filter - MEED-10037 - Meeds-io/meeds#3911
-- fix: Fix non editable fields after importing users for non-root administrators - MEED-9977 - Meeds-io/meeds#3863
-- fix: Fix public space redirect for non-authenticated users in SpacePermanentLinkHandler - MEED-10312 - Meeds-io/meeds#4113
-- fix: Fix reset people card list after resetting advanced search filter - MEED-10285 - Meeds-io/meeds#4097
-- fix: Fix "See more" display after content resize - MEED-10053 - Meeds-io/meeds#3891
-- fix: fix sidebar filter spaces by category - MEED-9959 - Meeds-io/meeds#3847
-- fix: Fix subordinates display when the username is email - EXO-87148 - Meeds-io/meeds#4248
-- fix: Fix the count of the manager's subordinates - EXO-87491
-- fix: Fix the search of content writers in space settings drawer - MEED-9961 - Meeds-io/meeds#3816
-- fix: Fix the value search is ko when field id has points - MEED-10429 - Meeds-io/meeds#4225
-- fix:Handle space group decoration when no template is applied - MEED-10314 - Meeds-io/meeds#4131
-- fix:if parent and child menu item type is link, sub-items list can't be displayed - MEED-10370 - Meeds-io/meeds#4178
-- fix: Image from sidebar login portlet cannot be removed MEED-10075 - meeds-io/meeds#3946
-- fix: improve fetching of parent and subspace template IDs and clean up code - MEED-10097 - Meeds-io/MIPs#233
-- fix: improve space creation menu display - MEED-10046 - Meeds-io/MIPs#233
-- fix: improve space display within the parent space listing portlet - MEED-10005 - Meeds-io/MIPs#233
-- fix: Improve the display of the feed application when used in a small container - MEED-10202 - Meeds-io/meeds#4031
-- fix: incorrect styling of the create space CTA in the Space List - MEED-10367 - Meeds-io/meeds#4174
-- fix: inherit the member role following the assignment of any other role - MEED-10304 - Meeds-io/meeds#4083
-- fix: Keep parent menu open when hovering nested submenus - MEED-10138 - Meeds-io/meeds#3990
-- fix: Label not translated in Self Registration page - EXO-87170
-- fix: Link with illustration in short message keep displaying address  path - MEED-10274 - Meeds-io/meeds#3986
-- fix: list accessible templates and prevent unauthorized subspace creation - MEED-10029 - Meeds-io/MIPs#227
-- fix: Login portlet settings missing when editing login page with oauth registration - MEED-9969 - meeds-io/meeds#3852
-- fix: make initialUrl working when using externalProviders - MEED-10016 - meeds-io/meeds#3896
-- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
-- fix: Make the link field optional - MEED-10072 - Meeds-io/MIPs#232
-- fix: Metamsk button is not display when there is an initialURI - MEED-10049 - meeds-io/meeds#3923
-- fix: muted space list displays empty when it includes an inaccessible space - EXO-87584
-- fix: new DB changelogs are blocked due to emojies in space desciptions - MEED-10415 - Meeds-io/meeds#4222
-- fix: no results displayed when filtering users using two types & search item - MEED-10030 - meeds-io/meeds#3892
-- fix: Not possible to disable manager attribute - MEED-10413 - Meeds-io/meeds#4221
-- fix: Open the link added to image - MEED-9993 - Meeds-io/MIPs#232
-- fix: organizational chart not displayed when username is in email format - MEED-9817 - Meeds-io/meeds#3724
-- fix: parent space selection display when managing space relationships- MEED-10089 - Meeds-io/MIPs#233
-- fix: Parent space selection step is missing when creating a subspace from the sidebar - MEED-10256 - Meeds-io/meeds#4054
-- fix: prevent category autocomplete search issues after selection - EXO-87144 - Meeds-io/meeds#3563
-- fix: prevent suggesting the current space when managing space relationships - MEED-10013 - Meeds-io/MIPs#227
-- fix: prevent URL truncation when containing apostrophe during sanitization - MEED-9617 - Meeds-io/meeds#3542
-- fix: Profile banner and profile avatar must be ignored - MEED-9966 - Meeds-io/meeds#9966
-- fix: Reaction drawer doesn't list all activity likes - MEED-10254 - Meeds-io/meeds#4039
-- fix: Redirect to space-access page if unlisted page is not closed - MEED-10337 - Meeds-io/meeds#4143
-- fix: Redirect unrecognized user to login page with error message - EXO-87059
-- fix: Refactor cropper drawer alt attributes - MEED-10058 - Meeds-io/MIPs#232
-- fix: Removes unecessary filterByPermissions in SiteRest.getSites - EXO-86349 - meeds-io/si#16
-- fix: remove the caption class from the activity liker subtitle - EXO-87167
-- fix: Remove usage of sessionId in javascript - EXO-84888 - meeds-io/si#10
-- fix: resolve numeric usernames correctly in suggester endpoint - MEED-10129 - Meeds-io/meeds#3981
-- fix: responsive design issue on the Profile page - MEED-9962 - Meeds-io/meeds#3830
-- fix: Restrict activity stream category filter visibility to space members and their connections - MEED-9964 - Meeds-io/meeds#3753
-- fix: Review size of deactivated user icon - EXO-87168 - Meeds-io/meeds#4257
-- fix: Safari not considering click when using v-hover on iOS - EXO-87666 - EXO-87667
-- fix: Search by email doesn't display any results - MEED-10284 - Meeds-io/meeds#4096
-- fix: set correct profile page title for accessibility - MEED-10108 - Meeds-io/meeds#3967
-- fix: Set Space Template Group Random Name when name is null - Meeds-io/MIPs#240
-- fix: sidebar leave space confirmation dialog not opened - MEED-10097 - Meeds-io/MIPs#233
-- fix: space is no longer a subspace after being edited - MEED-10088 - Meeds-io/MIPs#233
-- fix: space URL in space email notification redirects to page not found - EXO-87376
-- fix:subitems can't be displayed on hover - MEED-10278 - Meeds-io/meeds#4079
-- fix: suggest only accessible parent spaces when creating a subspace - MEED-10011 - Meeds-io/MIPs#227
-- fix: Suggest subspace creation when space list widget is in a parent space - MEED-10368 - Meeds-io/meeds#4175
-- fix: Suggest users to add a space from the spaces list drawer - MEED-10162 - Meeds-io/meeds#3998
-- fix: support emoji characters in SOC_SPACES.DESCRIPTION column for MySQL - Meeds-io/meeds#3976
-- fix: Synchronize mapped LDAP attributes with social profile, including absent attributes - MEED-10199 - Meeds-io/meeds#3736
-- fix: Tooltip displayed on feed after scroll - EXO-87368
-- fix: Topbar navigation menu items inaccessible when exceeding screen height - EXO-87513
-- fix: Unable to update non modifiable property by an admin using REST service - MEED-10110 - meeds-io/meeds#3971
-- fix: unify close button click handling in ExoDrawer - MEED-10002 - Meeds-io/meeds#3884
-- fix: Update display of space public page navigation - MEED-10313 - Meeds-io/meeds#4115
-- fix: update the number of unread notifications when it is under 0 - MEED-9878
-- fix: Update the suggestor UI for subspaces templates - MEED-9902 - Meeds-io/MIPs#227
-- fix: Use a customized background to 'see more' in posts - MEED-10163 - Meeds-io/meeds#4016
-- fix: User contact information can't be updated if dropdown attribute is not editable - MEED-10022 - meeds-io/meeds#3886
--  fix: Users card options alignment issue - EXO-80968
-- fix: user synchronization is incomplete after a space binding - MEED-10275 - Meeds-io/meeds#4059
-- fix: when login with openid, with a user is deactivated in eXo, the error message is not correct - MEED-10341 - meeds-io/meeds#4151
-- fix: when session expires and user want to join a url of a hidden space, a page not found is displayed - MEED-10292 - meeds-io/meeds#4111
-- fix: workaround for selecting text from comment on Safari - MEED-10056
-- fix: XSS when posting content activity or comment - EXO-87659
-
-Improvements:
-- feat: Allow to hide/display Profile Button Extension from Menu - EXO-87783
-- feat: Access space invitation link when user is not logged in - MEED-10224 - Meeds-io/MIPs#244
-- feat: Access space invitation link when user is not signed up - MEED-10225 - Meeds-io/MIPs#244
-- feat: adapt unit tests to User ACL membership retrieval -MEED-10149 - Meeds-io/MIPs#240
-- feat: add accessibility requirement - MEED-10077 - Meeds-io/MIPS#233
-- feat: add accessibility requirement - MEED-10083 - Meeds-io/MIPs#233
-- feat: add access permission check for ImageThumbnailPlugin - EXO-83521 - exoplatform/eXIP#33
-- feat: Add an option to identify a parent space and subspace templates- MEED-9839 - Meeds-io/MIPs#227
-- feat: Add an UP to remove phones and ims property settings - MEED-10194 - Meeds-io/MIPs#231
-- feat: Add a subspace from parent space settings - MEED-9848 - Meeds-io/MIPs#227
-- feat: Add Call attribute type to profile settings list types - MEED-10166 - Meeds-io/MIPs#231
-- feat: Add categories to multiple objects - EXO-85759
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add email attribute type to profile settings list types - MEED-10187 - Meeds-io/MIPs#231
-- feat: Add Messaging attribute type to profile settings list types - MEED-10186 - Meeds-io/MIPs#231
-- feat: Add option to create spaces and subspaces from space directory and sidebar - MEED-10045 - Meeds-io/MIPs#233
-- feat: add parent space listing portlet - MEED-10005 - Meeds-io/MIPs#233
-- feat: Add Reactive Stream As General Dependency
-- feat: Add Space Extension Points to include Buttons in UI - EXO-82903
-- feat: add unit tests for SpaceGroupCacheListener - MEED-10144 - Meeds-io/MIPs#240
-- feat: Add User ACL Plugin EXO-82845
-- feat: Add user status badge in user popover - MEED-9537 - Meeds-io/MIPs#229
-- feat: Agenda timeline settings action and source option - EXO-84367 -exoplatform/eXIP#37
-- feat: Allow creating subspaces based on template configuration - MEED-9843 - Meeds-io/MIPs#227
-- feat: Allow edit profile property types - MEED-10184 - Meeds-io/MIPs#231
-- feat: Allow setting application toolbar content height - MEED-10104 - Meeds-io/MIPs#235
-- feat: Allow setting auto cols in the application header when no center content and not in compact mode  - EXO-82846  - Meeds-io/meeds#3937
-- feat: Allow space members to share invitation link - MEED-10222 - Meeds-io/MIPs#244
-- feat: Allow to add a hidden content link plugin - EXO-86750 - Meeds-io/ai#209
-- feat: Allow to Add Specific Translation field in Translation Reusable UI Component
-- feat: Allow to add Stream Toolbar Action - EXO-84430 - Meeds-io/ai#88
-- feat: allow to associate space members to a group - MEED - Meeds-io/MIPs#240
-- feat: Allow to asynchronously initialize RichEditor Extensions - EXO-83422
-- feat: Allow to choose space sovereignty setting
-- feat: Allow to define Activity and Comment Menu icon as Image - EXO-82837
-- feat: Allow to disable RichEditor reusable component
-- feat: Allow to Display Menu Group In Activity Stream - EXO-82837
-- feat: Allow to extend Rich Editor Balloon Buttons - EXO-83549 This change will allow to extend the rich Editor Balloon buttons using extensionRegistry.
-- feat: Allow to extend Rich Editor options from Extension Registry plugins - EXO-83421
-- feat: Allow to extend User Profile Button using a Vue Component - EXO-82843
-- feat: Allow to external users to access to Space Access Page - MEED-10155 - Meeds-io/meeds#4004
-- feat: Allow to force enable RichEditor Extensions - EXO-83433
-- feat: Allow to hide Drawer content slot when not added
-- feat: Allow to init RichEditor Extensions when displaying it - EXO-83329 This change will allow to inject Rich Editor Extensions before initializing it.
-- feat: Allow to place the Focus on RichEditor at the end of text
-- feat: Allow to Reset Composer Message with attached images - EXO-83329
-- feat: Allow to select only included items in Identity suggester - EXO-84374  - exoplatform/eXIP#37
-- feat: Allow to use the email attribute as a quick profile action - MEED-10189 - Meeds-io/MIPs#231
-- feat: Allow to use the phone attribute as a quick profile action - MEED-10173 - Meeds-io/MIPs#231
-- feat: Apply transparent background on v-card of categories filter component - EXO-85719 - Meeds-io/ai#139
-- feat: Avoid NPE when focusing on RichEditor while not present yet
-- feat: Compute the number of views for activities - MEED-10146 - Meeds-io/MIPs#239
-- feat: Delete a space from space settings - MEED-10003 - Meeds-io/MIPs#233
-- feat: Delete a supported subspace template - MEED-9876 - Meeds-io/MIPs#227
-- feat: Display number of attachments in news activity - EXO-83426 - exoplatform/eXIP#33
-- feat: Display of actions for a profile page - MEED-10177 - Meeds-io/MIPs#231
-- feat: Display of phone & email actions in profile card - MEED-10174 - Meeds-io/MIPs#231
-- feat: Display of phone & email actions in profile popover - MEED-10175 - Meeds-io/MIPs#231
-- feat: Display the number of views of a post - MEED-10147 - Meeds-io/MIPs#239
-- feat: Display the number of views when using mobile - MEED-10354 - Meeds-io/MIPs#239
-- feat: Do not allow to use a subspace template as a parent one - MEED-10257 - Meeds-io/meeds#4058
-- feat: enable editing of the parent space portlet header title - MEED-10009 - Meeds-io/MIPs#233
-- feat: enable leaving a space from the space detail panel - MEED-10004 - Meeds-io/MIPs#233
-- feat: enable suggesting only parent spaces - MEED-10014 - Meeds-io/MIPs#227
-- feat: Enhance Nested Group API - Meeds-io/MIPs#240
-- feat: Enhance placeholder message and button label in case of space access to subspace - MEED-10281 - Meeds-io/MIPs#244
-- feat: Enhance Space invitation link generation API - MEED-10221 - Meeds-io/MIPs#244
-- feat: Enhance ux in displaying email or phone actions in people card settings - MEED-10203 - Meeds-io/MIPs#231
-- feat: Hide Emoji CKeditor Plugin when Toolbar hidden - EXO-83467
-- feat: identify parent and subspace templates in space template management - MEED-10073 - Meeds-io/MIPs#233
-- feat: Identify the status update source - MEED-10241 - Meeds-io/MIPs#242
-- feat: Implement access a space using an invitation link - MEED-10223 - Meeds-io/MIPs#244
-- feat: Implement space invitation Link generation - MEED-10221 - Meeds-io/MIPs#244
-- feat: improve test coverage - MEED-10244 - Meeds-io/MIPs#240
-- feat: Invitation of users to a subspace - MEED-9846 - Meeds-io/MIPs#227
-- feat: List subspaces in parent space settings - MEED-9847 - Meeds-io/MIPs#227
-- feat: Make Content Link Insert RichEditor Plugin at last position in Toolbar - EXO-83442
-- feat: make email, call and messaging properties linkable - MEED-10167, MEED-10168,MEED-10188 - Meeds-io/MIPs#231
-- feat: Make UserSettingSecurity JS Module as Group to allow extensibility
-- feat: Manage relations between spaces as platform admin - MEED-9850 - Meeds-io/MIPs#227
-- feat: Move generic JS Variable for User Default Path to Portal Scope - EXO-86843 - Meeds-io/ai#209
-- feat: Move Hashtag into Hidden RichEditor Toolbar - EXO-83471
-- feat: notify space members when a user joins via invitation link - MEED-10252 - Meeds-io/MIPs#244
-- feat: redirect to the home page after space deletion - MEED-10070 - Meeds-io/MIPs#233
-- feat: Reduce RichEditor counter size for comment reply - EXO-83471
-- feat: Refactor Space Members Drawer to be reusable via event-based mounting - MEED-9457 - Meeds-io/MIPs#230
-- feat: Remove Ims profile property - MEED-10170 - Meeds-io/MIPs#231
-- feat: Remove phones profile property - MEED-10169 - Meeds-io/MIPs#231
-- feat: Remove subspace from parent space settings - MEED-9849 - Meeds-io/MIPs#227
-- feat: Remove unneded custom valdiation on email input - MEED-10209 - Meeds-io/MIPs#231
-- feat: Rename RichEditor Plugins Extension Mechanism - EXO-83422
-- feat: Restrict subspace creation when limit is reached - MEED-9945 - Meeds-io/MIPs#227
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-- feat: Return Image Attachments Report After saving - EXO-83329
-- feat: Review activity link display - EXO-86842
-- feat: Review news activity display on mobile - EXO-87585
-- feat: Review the operation Create User - MEED-10151 - Meeds-io/MIPs#242
-- feat: Review UX for connection request in profile header - MEED-10208 - Meeds-io/MIPs#231
-- feat: Suggest to create a subspace only if member of a parent space - MEED-9956 - Meeds-io/MIPs#227
-- feat: Undecorate Space and Space Template Group Entities before persisting - EXO-87220
-- feat: Update profile property setting type update restriction - MEED-10201 - Meeds-io/MIPs#231
-- feat: Update space group membership based on space membership changes - MEED-10144 - Meeds-io/MIPs#240
-- feat: Upgrade Spring Boot version - EXO-87627
-- feat: Upgrade to Spring 3.5.14 - EXO-86212
-
-eXo Notes 7.2.0
-*************************
-- fix: Fix loading save button when creating or editing notes with content links - EXO-87310
-- fix: Fix duplicated note blank page - EXO-87922
-- fix: Accessibility -  The image of Hide/display treeview has no label - EXO-87382
-- fix: Add missing parent v-app in Portlet - EXO-87831
-- fix: refactor access control for unlisted spaces - EXO-87778
-- fix: Accented notes aren't well sorted in tree view - MEED-10328 - Meeds-io/meeds#4136
-- fix: adding fifth icon in notes leads to overlap in breadcrumb - MEED-10329 - Meeds-io/meeds#4130
-- fix: Add missing title attribute to single note view actions button -MEED-9946 - Meeds-io/meeds#3832
-- fix: Avoid processing Uploaded resources until Upload is finished - EXO-83467
-- fix: Breadcrumb displayed title not updated when restore a version - MEED-10215 - Meeds-io/meeds#4029
-- fix: Can't access button by tabbing - MEED-9937 - meeds-io/meeds#3833.
-- fix: Cleanup duplicated wiki entries - MEED-10114 - Meeds-io/meeds#3924
-- fix: close publication drawer after note is published - MEED-10213 - Meeds-io/meeds#4020
-- fix: Display Extra Plugins before Insert Content Button - EXO-83418
-- fix: Display restricted area placeholder instead of notes editor or news editor when the current user can not redact on the space - EXO-87648
-- fix: Files no longer attached must no longer be listed - EXO-83535 - meeds-io/meeds#3961
-- fix: Fix breadcrumb not updated when note moved by drag and drop - MEED-10248 - Meeds-io/meeds#4055
-- fix: Fix cancelling the unpublishing of an article makes it a draft and creates empty activity - EXO-87191
-- fix: Fix display featured image and summary for note page - MEED-10270 - Meeds-io/meeds#4068
-- fix: Fix display title of My notes - MEED-10250 - Meeds-io/meeds#4057
-- fix: fix generated content link in content event description - EXO-86139 - exoplatform/eXIP#41
-- fix: Fix note breadcrumb display - MEED-10234 - Meeds-io/MIPs#235
-- fix: Fix note display when increasing the treeview size - MEED-10235 - Meeds-io/MIPs#235
-- fix: Fix Notes editor application display issue in edit layout mode - EXO-87312
-- fix: Fix note treeview not updated when note moved - MEED-10249 - Meeds-io/meeds#4056
-- fix: Fix padding between treeview notes levels - MEED-10433 - Meeds-io/meeds#4241
-- fix: Fix page access from the Navigation tool in a note page - MEED-10309 - Meeds-io/meeds#4127
-- fix: Fix position of notes in the treeview - MEED-10183 - Meeds-io/MIPs#235
-- fix: Fix publication when editing the scheduling option from between to until - EXO-87309
-- fix: Fix race condition causing CKEditor to load with empty content on first initialization - MEED-10019 - Meeds-io/meeds#3899
-- fix: fix selecting words in cke using keyboard shortcuts - MEED-10039 - Meeds-io/meeds#3915
-- fix: Fix the display of the treeview after expanding sidebar - MEED-10247 - Meeds-io/MIPs#235
-- fix: Fix Treeview position with a wide featured image - MEED-10180 - Meeds-io/MIPs#235
-- fix: Fix UI and UX issues in the Notes treeview - MEED-10431 - Meeds-io/meeds#4239
-- fix: Fix updating notes home page - MEED-10031 - Meeds-io/meeds#3907
-- fix: Images added in SNV Quick edit are not saved - MEED-10139 - Meeds-io/meeds#3991
-- fix: Keep notes order during export/import - MEED-10334 - Meeds-io/meeds#4141
-- fix: Load Notes Rich Editor when Extensions initialized - EXO-83418
-- fix: Notes attachments are not saved in space drive folder - EXO-83542 - Meeds-io/meeds#3963
-- fix: Open treeview to the current position when refresh - MEED-10239 - Meeds-io/MIPs#235
-- fix: prevent XSS vulnerability in note search result - EXO-86230
-- fix: print to pdf freezes the 3 dots menu - MEED-10290 - Meeds-io/meeds#4074
-- fix: Refactor cropper drawer alt attributes - MEED-10058 - Meeds-io/MIPs#232
-- fix: Remove Treeview label on the treeview header - MEED-10291 - Mees-io/meeds#4065
-- fix: Replace placeholder image with clipboard icon when the space has no children - EXO-87235_EXO-87317
-- fix: Restore the title, summary and illustration note when reverting to a previous version- MEED-10085 - meeds-io/meeds#3943
-- fix: set parent page identifier in draft pages - MEED-9965
-- fix: sort children naturally with accent support if not manually sorted - MEED-10342 - Meeds-io/meeds#4154
-- fix: Terms & Conditions can be lost if original language is deleted - MEED-10357 - Meeds-io/meeds#4163
-- fix: Toc displayed title not updated when restore a version - MEED-10246 - Meeds-io/meeds#4029
-- fix: Treeview hidden with large table content - MEED-10276 - Meeds-io/meeds#4072
-- fix: Update UX when clicking on the avatar in "My Notes" to open the note instead of the user profile - MEED-10181 - Meeds-io/MIPs#235
-- fix: Updating NoteTreeViewSideBar to listen for treeview update - MEED-10259 - Meeds-io/meeds#4234
-
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Access to Personal note page - MEED-10060 - Meeds-io/MIPs#234
-- feat: Adapt move option for personal note - MEED-10062 - Meeds-io/MIPs#234
-- feat: Adapt personal note option - MEED-10061 - Meeds-io/MIPs#234
-- feat: Add a category to a news when posting it to the feed - MEED-10315 - Meeds-io/meeds#4132
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add Insert Content Link Extension as last Buttin in Rich Editor - EXO-83433
-- feat: Allow adding custom editor settings via extensions - EXO-85706 - exoplatform/eXIP#41
-- feat: Allow to add Mobile Note Rich Editor Toolbar item by extensions - EXO-83467
-- feat: Allow to add Note Toolbar extended buttons - EXO-82782
-- feat: Allow to Extend Rich Editor From Extension Registry Plugins - EXO-83418
-- feat: Allow to init RichEditor Extensions when displaying Notes Editor - EXO-83329
-- feat: Display content event reminder in note details - EXO-85705 - exoplatform/eXIP#41
-- feat: Filter by name and note type - MEED-10104 - Meeds-io/MIPs#235
-- feat: Fix note treeview display - MEED-10179 - Meeds-io/MIPs#235
-- feat: Hide/display side navigation treeview - MEED-10101 - Meeds-io/MIPs#235
-- feat: Implement execution mechanism for publish extensions - EXO-85703 - exoplatform/eXIP#41
-- feat: List attachments at the bottom of the notes - EXO-83428 - exoplatform/eXIP#33
-- feat: load publish extensions into publication drawer - EXO-85702 - exoplatform/eXIP#41
-- feat: Move MCP Tools from AI Addon - EXO-86389
-- feat: Move/sort manually notes from side treeview - MEED-10103 - Meeds-io/MIPs#235
-- feat: Remove the drawer listing attachments - EXO-83430 - exoplatform/eXIP#33
-- feat: Remove unused import - MEED-10244 - Meeds-io/MIPs#240
-- feat: Resize side navigation treeview - MEED-10102 - Meeds-io/MIPs#235
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-- feat:Side navigation treeview in note application - MEED-10100 - Meeds-io/MIPs#235
-- feat: Trigger page update event on page moving - EXO-86812 - Meeds-io/ai#209
-- feat: Update display for no results found for note - MEED-10191 - Meeds-io/MIPs#235
-
-eXo Documents 7.2.0
-*************************
-fix:
-- fix: Display/hide treeview button displayed on move drawer - EXO-85258
-- fix: Renaming folder/document is KO with Firefox - EXO-75976
-- fix: Use correct drive URL in share notification for personal documents - EXO-86459
-- fix: Accessibility - The image of Hide/display treeview has no label - EXO-87382
-- fix: Add public access link management with password and expiration to visibility drawer - EXO-86788
-- fix: Avoid using SessionProviderService in Async Jobs - EXO-87829
-- fix: Close Document Contextual Menu when sub Menu Clicked - EXO-87628
-- fix: Copy link from doc details drawer doesn't include URL protocol - EXO-86887
-- fix: Favorite action should not be displayed in info detail drawer if folder - EXO-84146
-- fix: Add a placeholder for documents list portlet - EXO-84282
-- fix: Add placeholder page when the user accesses another user's personal drive -EXO-82012
-- fix: Add Rank to CKEditor Attachment Plugin - EXO-83458
-- fix: Allow publisher without being redactor to create/edit/delete documents and apply permissions recursively with state check - EXO-85817
-- fix: Allow to access to a drive from the documents list drawer - EXO-84283
-- fix: Apply restrictive content permissions on space creation - EXO-87233
-- fix: Attached documents are considered as images without alt - EXO-85787
-- fix: Attachments to a note are not listed when editing the note - EXO-83533
-- fix: Avoid NPE in Activity Attachment when editing a comment - EXO-83422
-- fix: Avoid StackTrace log when no shared documents yet - EXO-87236
-- fix: Category filters are no more listed in recent view - EXO-84876
-- fix: change of path for documents in shortcut folder - EXO-83178
-- fix: change the permissions of the root node based on space permissions - EXO-84115
-- fix: Close right-click context menu after action completes - EXO-87516
-- fix: Display in Documents App the real Last Modified Date - EXO-86195
-- fix: Documents in Recent document portlet are considered as images without alt - EXO-85772
-- fix: Empty post in stream for a shortcut file - EXO-85240
-- fix: empty post in stream if same shortcut or file posted more than once - EXO-85715
-- fix: File Read Vulnerability in Import Zip - EXO-87158
-- fix: files and folders displayed in lowercase and without accents when zip downloaded - EXO-84288
-- fix: files displayed in lowercase and without accents when opened from webdav - EXO-84286
-- fix: Fix accessing a space drive using webdav - EXO-85437
-- fix: Fix accessing personal drive using WebDav - EXO-86345
-- fix: Fix copied links truncation by URL-encoding folder paths - EXO-83734
-- fix: Fix Document version history - EXO-87203
-- fix: Fix Folder/File management when content restriction is ON - EXO-86607
-- fix: Fix opening document with edit permission from unified search - EXO-85244
-- fix: Fix trash restore path when parent folder is renamed - EXO-83976
-- fix: folder issue when its name has "." using webdav - EXO-85435
-- fix: Hide download button in document info drawer when download is suspended - EXO-86473
-- fix: Infinite loading when downloading many files - EXO-85424
-- fix: Keep view in current folder after duplicate/paste instead of resetting to root - EXO-87574
-- fix: OnlyOffice document link shows blank page when session expires - EXO-82725
-- fix: Open doc location is KO when doc opened from favorite - EXO-81992
-- fix: Open document location shows root content instead of actual folder - EXO-87485
-- fix: Preserve empty defaultFolder for drive root uploads - EXO-86470
-- fix: prevent XSS vulnerability in document description field - EXO-84920
-- fix: Prevent XXE attacks in XML parsing in webdav - EXO-87056
-- fix: remove @ from specialChar to prevent false duplicate detection with _ - EXO-86194
-- fix: Reset category filter when switching document views - EXO-82429
-- fix: Resolve folder content display issue after page refresh - EXO-87570
-- fix: Scope lastView localStorage key per space to prevent view preference conflicts between spaces - EXO-83876
-- fix: Unable to add extension in DocumentsHeaderLeft extension point - EXO-85544
-- fix: Update notes editor attachment extension to manage local stored attachments - EXO-46162
-- fix: validate uploaded SVG files before exposing them - EXO-86346
-- fix: Webdav displays folders/files names unlike on eXo Platform - EXO-85020
-- fix: WebDav ES Cache Path parsing - EXO-86195
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add categories to multiple documents - EXO-85759
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add Hidden Content Plugin for folders - EXO-86750 - Meeds-io/ai#209
-- feat: Add Info Drawer Header buttons extension - EXO-82799
-- feat: add the ability to define if fillable documents should be opened in fill or edit mode - EXO-81254
-- feat: Allow reusing credentials through OpenIn Feature and WebDav - EXO-87545
-- feat: Allow to add Drive extended buttons - EXO-82799
-- feat: Allow to provide extra props in Documents Menu item - EXO-82999
-- feat: Allow to search in Audio Transcription Metadata of Media Files - EXO-85069
-- feat: Allow to store and retrieve Transcription of an Audio File - EXO-85013
-- feat: Allow to transcript Audio File using System Session instead of User Session - EXO-85095
-- feat: Centralize Elasticsearch Configuration in Portal Module
-- feat: Display number of attachments in news activity - EXO-83426 - exoplatform/eXIP#33
-- feat: Include Documents Extensions when Attachment JS Module is loaded - EXO-83601
-- feat: List attachment at the bottom of the news detail - EXO-83427 - exoplatform/eXIP#33
-- feat: List attachments at the bottom of the notes - EXO-83428 - exoplatform/eXIP#33
-- feat: Make WebDav handles Files and Folder Titles instead of JCR Names - EXO-87587 - EXO-87588
-- feat: move document access control to service layer - EXO-83521 - exoplatform/eXIP#33
-- feat: Remove the drawer listing attachments - EXO-83430 - exoplatform/eXIP#33
-- feat: Rename RichEditor Plugins Extension Mechanism - EXO-83422
-
-eXo Portal 7.2.0
-*************************
-fix:
-- fix: Add possibility to configure user as group member in ldap using user attribute - MEED-10412 - meeds-io/meeds#4219
-- fix: adjust condition to redirect correctly to subpages - MEED-9940
-- fix: Adjust the title page- MEED-10059 - meeds-io/meeds#3930
-- fix: Allow to authenticate a null Spring Authentication Object
-- fix: allow to not delete memberships during synchro if the information is not present in LDAP - EXO-87414
-- fix: Allow to update a disabled user - MEED-10113 - meeds-io/meeds#3974
-- fix: Allow using Autowired annotated Component dependencies in Service beans - Meeds-io/meeds#2469
-- fix: Avoid Exception when retrieving non existing Page - EXO-87649
-- fix: Fix space template creation with long description - MEED-10447 - meeds-io/meeds#4251
-- fix: forgot-password url have twice /portal in url - MEED-9980 - meeds-io/meeds#3864
-- fix: Handle mapped LDAP attributes missing for users - MEED-10199 - Meeds-io/meeds#3736
-- fix: Make NoSuchPortletException more helpful for diagnosis - EXO-87638
-- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
-- fix: MySQL IDM NAME Columns Collation - EXO-87644
-- fix: NPE when the ldap attribute is not null but when the value is null - MEED-10404 - meeds-io/meeds#4215
-- fix: Optimize User Search by Last Login Time for MySQL - MEED-10150 - Meeds-io/MIPs#242
-- fix: prevent open redirects from login initialURI - EXO-86232
-- fix: property exo.ldap.groups.attributes.custom.names have not effect - MEED-10405 - meeds-io/meeds#4216
-- fix: Redirect to login page when requesting anonymously a restricted global page - MEED-9940
-- fix: Sanitize siteLabel before injecting into JavaScript - MEED-10098 - Meeds-io/MIPs#234
-- fix: validate uploaded SVG files before exposing them - EXO-86346
-
-Improvements:
-- feat: Add a sample codeckey.txt in Test resources - EXO-86572 - Meeds-io/ai#196
-- feat: add default access permissions to ImageThumbnailPlugin  - EXO-83521 - exoplatform/eXIP#33
-- feat: Add Global JS variable for site label - MEED-10093 - Meeds-io/MIPs#234
-- feat: Add JS Variable for User Default Path - EXO-86843 - Meeds-io/ai#209
-- feat: Allow to add nested memberships in groups - MEED-10149 - Meeds-io/MIPs#240
-- feat: Allow to decorate Organization Entities when fetched from Store - MEED-10149 - Meeds-io/MIPs#240
-- feat: Allow to store image icon in navigation
-- feat: Avoid throwing Exception in Tests with Mocked Group Handler - EXO-86389
-- feat: Centralize Elasticsearch Configuration
-- feat: Centralize Spring Common Dependencies in Meeds Package
-- feat: Enhance Nested Group API - Meeds-io/MIPs#240
-- feat: Enhance Organization API to allow undecorate a decorated IDM Entity bfore persisting - EXO-87220
-- feat: Format dates with the user's timezone  - EXO-85606 - Meeds-io/ai#120
-- feat: Identify the status update source - MEED-10241 - Meeds-io/MIPs#242
-- feat: Implement Automatic Deactivation Job and API - MEED-10150 - Meeds-io/MIPs#242
-- feat: implement cache clearing for group in CacheableGroupHandler - MEED-10128 - Meeds-io/MIPs#240
-- feat: Implement groups association - MEED-10149 - Meeds-io/MIPs#240
-- feat: Improve Identity ACL Retrieval Performances - Meeds-io/MIPs#240
-- feat: Include inherited memberships in identity registry membership updates - MEED-10144 - Meeds-io/MIPs#240
-- feat: Make Logout URL Idempotent - Meeds-io/meeds#4061
-- feat: move OrganizationDecoratorPlugin to core - MEED-10128 - Meeds-io/MIPs#240
-- feat: Optimize Search Users By Last Login Time SQL Query - MEED-10150 - Meeds-io/MIPs#242
-- feat: Review the operation Create User - MEED-10151 - Meeds-io/MIPs#242
-- feat: support initialUri parameter in external registration email - MEED-10225 - Meeds-io/MIPs#244
-- feat: Unify Quartz Scheduler Service in Kernel as Infrastructure Layer Service
-- feat: update identity registry on group association - MEED-10149 - Meeds-io/MIPs#240
-
-eXo ECMS 7.2.0
-*************************
-fix:
-- fix: Attempt to retrieve User JCR Session using ConversationState - EXO-84782
-- fix: Document content anonymously accessible by jcr id - EXO-86312
-- fix: drag & drop document/folder on space root folder should apply space's access properties - EXO-85034
-- fix: ecms error management when clouddrive connector plugin is not present - EXO-83316
-- fix: Exclude trashed nodes from retrieved attachments - EXO-83534
-- fix: Fix task creator can no longer see or add attachments - EXO-85191
-- fix: open favorites documents depending on user permissions - EXO-83352
-- fix: prevent creation of default personal drive folders during user creation - EXO-87032
-- fix: Prevent filename collision from special character normalization - EXO-87618
-- fix: shared document not marked as viewed when the collaborator has view-only permission - EXO-82372
-- fix: update WCMMembershipUpdateListener constructor after parent change - MEED-10144 - Meeds-io/MIPs#240
-- fix: validate uploaded SVG files before exposing them - EXO-86346
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Include Transcription Metadata in indexed and searched file fields - EXO-85069
-- feat: Legacy WebDav allows anonymous access if node has Everyone Permission - EXO-87033
-- feat: restrict legacy WebDAV access with feature flags - EXO-87025
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-
-eXo Task 7.2.0
-*************************
-fix:
-- fix: Increase "CMT" column size in TASK_COMMENTS table - EXO-87818
-- fix: Add some adjustments to the tasks portlet when it is empty - MEED-10165 - Meeds-io/meeds#4018
-- fix: Adjust the toolbar of the tasks list portlet - MEED-10206 - Meeds-io/meeds#4037
-- fix: Align vertically project cards to the CTA - MEED-10161 - Meeds-io/meeds#4015
-- fix: Allow to a space manager user to clone a Task - EXO-87676
-- fix: Avoid Error Log when NoResultException is thrown - EXO-87643
-- fix: Avoid NPE when collecting Gamification Points - EXO-87636
-- fix: Empty description for a task which contains a file link from doc app - EXO-87504
-- fix: Empty email content when comments include user mentions - MEED-10145 - Meeds-io/meeds#3995
-- fix: Fix add/edit task project event XSS vulnerability - EXO-86231
-- fix: Fix adding and viewing task comments/sub comments by the task creator - EXO-85179
-- fix: Fix authorization bypass when creating tasks under projects - MEED-10135 - Meeds-io/meeds#3985
-- fix: Fix task creator can no longer see or add attachments - EXO-85191
-- fix: Fix the storage of sanitized project name - EXO-86231
-- fix: Fix wrong redirection to "restricted-project" while not connected - MEED-10286 - Meeds-io/meeds#4102
-- fix: prevent sending full user object in participants search query - MEED-10198 - Meeds-io/meeds#4023
-- fix: Redirect to "restricted-project" page of metaSite instead of "dw" - MEED-10287 - Meeds-io/meeds#4103
-- fix: Remove automatic creation of project when creating a space - MEED-10306 - Meeeds-io/meed#4125
-- fix: restricted page need to be displayed if not allowed to display task - MEED-10264 - Meeds-io/meeds#4060
-- fix: Review the UI of tasks list placeholder - MEED-10159 - Meeds-io/meeds#4010
-- fix: Review the UI of the portlet of managing tasks list - MEED-10164 - Meeds-io/meeds#4017
-- fix: Task creator displays his tasks even if not allowed - MEED-10197 - Meeds-io/meeds#3979
-- fix: Task description lost when typing a title - EXO-87301
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: adapt unit tests to User ACL membership retrieval -MEED-10149 - Meeds-io/MIPs#240
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add Task Cotnent Link Plugin - EXO-82922
-- feat: Add Task Project Permanent Link and ACL Plugin - EXO-82922
-- feat: Allow to count overall comments of a Task including sub tasks - EXO-82922
-- feat: Allow to extend Task and Project Menus - EXO-82889
-- feat: Allow to Retrieve Tasks Ordered by Last Activity - EXO-84071 - Meeds-io/ai#65
-- feat: Move MCP Tools from AI Addon - EXO-86389
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-
-eXo Commons 7.2.0
-*************************
-fix:
-- fix: Allow apostrophes in URLs for href attributes - MEED-9617 - Meeds-io/meeds#3542
-- fix: delete old notifications successfully - MEED-9976
-- fix: improve NaturalComparator with accent support and Locale customization - MEED-10342 - Meeds-io/meeds#4154
-- fix: Optimize Memory Consumption when generating Thumnails
-- fix: prevent selection from being blocked by content link icon - EXO-87169
-- fix: Tag suggestor does not open automatically with the tag icon - EXO-87164
-
-Improvements:
-- feat: Add Hibernate AttributeConverter for Encrypted String Value
-- feat: Allow to convert String JPA Value to Map
-- feat: Allow to updating an existing Web Notification parameters without marking it as read - EXO-87664
-- feat: Inform about Supported ES Minor Version - EXO-87116
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-
-eXo Gatein-Portal 7.2.0
-*************************
-fix:
-- fix: Add possibility to configure user as group member in ldap using user attribute - MEED-10412 - meeds-io/meeds#4219
-- fix: adjust condition to redirect correctly to subpages - MEED-9940
-- fix: Adjust the title page- MEED-10059 - meeds-io/meeds#3930
-- fix: Allow to authenticate a null Spring Authentication Object
-- fix: allow to not delete memberships during synchro if the information is not present in LDAP - EXO-87414
-- fix: Allow to update a disabled user - MEED-10113 - meeds-io/meeds#3974
-- fix: Allow using Autowired annotated Component dependencies in Service beans - Meeds-io/meeds#2469
-- fix: Avoid Exception when retrieving non existing Page - EXO-87649
-- fix: Fix space template creation with long description - MEED-10447 - meeds-io/meeds#4251
-- fix: forgot-password url have twice /portal in url - MEED-9980 - meeds-io/meeds#3864
-- fix: Handle mapped LDAP attributes missing for users - MEED-10199 - Meeds-io/meeds#3736
-- fix: Make NoSuchPortletException more helpful for diagnosis - EXO-87638
-- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
-- fix: MySQL IDM NAME Columns Collation - EXO-87644
-- fix: NPE when the ldap attribute is not null but when the value is null - MEED-10404 - meeds-io/meeds#4215
-- fix: Optimize User Search by Last Login Time for MySQL - MEED-10150 - Meeds-io/MIPs#242
-- fix: prevent open redirects from login initialURI - EXO-86232
-- fix: property exo.ldap.groups.attributes.custom.names have not effect - MEED-10405 - meeds-io/meeds#4216
-- fix: Redirect to login page when requesting anonymously a restricted global page - MEED-9940
-- fix: Sanitize siteLabel before injecting into JavaScript - MEED-10098 - Meeds-io/MIPs#234
-- fix: validate uploaded SVG files before exposing them - EXO-86346
-
-Improvements:
-- feat: Add a sample codeckey.txt in Test resources - EXO-86572 - Meeds-io/ai#196
-- feat: add default access permissions to ImageThumbnailPlugin  - EXO-83521 - exoplatform/eXIP#33
-- feat: Add Global JS variable for site label - MEED-10093 - Meeds-io/MIPs#234
-- feat: Add JS Variable for User Default Path - EXO-86843 - Meeds-io/ai#209
-- feat: Allow to add nested memberships in groups - MEED-10149 - Meeds-io/MIPs#240
-- feat: Allow to decorate Organization Entities when fetched from Store - MEED-10149 - Meeds-io/MIPs#240
-- feat: Allow to store image icon in navigation
-- feat: Avoid throwing Exception in Tests with Mocked Group Handler - EXO-86389
-- feat: Centralize Elasticsearch Configuration
-- feat: Centralize Spring Common Dependencies in Meeds Package
-- feat: Enhance Nested Group API - Meeds-io/MIPs#240
-- feat: Enhance Organization API to allow undecorate a decorated IDM Entity bfore persisting - EXO-87220
-- feat: Format dates with the user's timezone  - EXO-85606 - Meeds-io/ai#120
-- feat: Identify the status update source - MEED-10241 - Meeds-io/MIPs#242
-- feat: Implement Automatic Deactivation Job and API - MEED-10150 - Meeds-io/MIPs#242
-- feat: implement cache clearing for group in CacheableGroupHandler - MEED-10128 - Meeds-io/MIPs#240
-- feat: Implement groups association - MEED-10149 - Meeds-io/MIPs#240
-- feat: Improve Identity ACL Retrieval Performances - Meeds-io/MIPs#240
-- feat: Include inherited memberships in identity registry membership updates - MEED-10144 - Meeds-io/MIPs#240
-- feat: Make Logout URL Idempotent - Meeds-io/meeds#4061
-- feat: move OrganizationDecoratorPlugin to core - MEED-10128 - Meeds-io/MIPs#240
-- feat: Optimize Search Users By Last Login Time SQL Query - MEED-10150 - Meeds-io/MIPs#242
-- feat: Review the operation Create User - MEED-10151 - Meeds-io/MIPs#242
-- feat: support initialUri parameter in external registration email - MEED-10225 - Meeds-io/MIPs#244
-- feat: Unify Quartz Scheduler Service in Kernel as Infrastructure Layer Service
-- feat: update identity registry on group association - MEED-10149 - Meeds-io/MIPs#240
-
-eXo MATRIX 7.2.0
-*************************
-fix:
-- fix: add missing property to Template - EXO-86224
-- fix: Avoid PWA initialization twice - EXO-87249
-- fix: build failure on Unit tests - MEED-10382
-- fix: Cannot create a chatroom when no parent space template - EXO-87529
-- fix: Empty profile displayed as message reader - MEED-9973 - Meeds-io/meeds#3860
-- fix: error creating room with Postgresql - EXO-86224
-- fix: fix chat 1:1 mention userId retrieve - MEED-9960 - Meeds-io/meeds#3850
-- fix: fix message action menu width on mobile - MEED-10055 - Meeds-io/meeds#3876
-- fix: Fix saving last opened room when open from external extensions - MEED-10021 - Meeds-io/meeds#3883
-- fix: improve displaying rooms on first page display - MEED-9326
-- fix: Make sure to use latest message eventId when marking room as fully read - MEED-9932 - Meeds-io/meeds#3824
-- fix: notifications failed to be sent when usernames are in email format - MEED-10148
-- fix: Prevent duplicate messages when loading more - MEED-10057 - Meeds-io/meeds#3929
-- fix: sanitize generated room item HTML id to remove unsupported characters
-- fix: suggest selecting a parent space when creating a circle subspace chat room - MEED-10369 - Meeds-io/meeds#4176
-
-Improvements:
-- feat: Add support for malware detection inside synapse files - EXO-82805 - exoplatfom/eXIP#29
-- feat allow configuring multiple groups that can access chat - MEED-10032
-- feat: display space room members via room action menu - MEED-9457 - Meeds-io/MIPs#230
-- feat: Enhance sent file download/availabilty detection - MEED-82805 - exoplatform/eXIP#29
-- feat: Upgrade Spring Boot to 3.5.14
-
-eXo Content 7.2.0
-*************************
-fix:
-- fix: Add missing dependency to news details activity stream extension  - EXO-87658
-- fix: Avoid NPE when Opening Personal Note - EXO-87803
-- fix: Number of articles to list is not saved when target source is selected - EXO-87577
-- fix: Resolve report fields against available mappings - EXO-87755
-- fix: Add expand param to allow getting activity reactions for newsList items - EXO-87147
-- fix: Add mcp-server Spring Profile on MCP Plugin
-- fix: Address review feedback - MEED-10366 - Meeds-io/MIPs#247
-- fix: Add some accessibility requirements for images when there is a link - MEED-10043 - Meeds-io/MIPs#232
-- fix: Add the ability to add a link to image portlet - MEED-9990 - Meeds-io/MIPs#232
-- fix: adjust header margin in news settings drawer - MEED-10366 - Meeds-io/MIPs#247
-- fix: Adjust newslist portlet/header padding - EXO-87416
-- fix: Adjust seeAll button styles in news list portlet header - EXO-86644
-- fix: Adjust the display of the news list source option settings - MEED-10318 - meeds-io/MIPs#247
-- fix: Allow open news list slider settings without trigger slider link - EXO-87479
-- fix: Attachments to a note are not listed when editing the note - MEED-10140 - Meeds-io/meeds#3992
-- fix: Author is displayed as publisher when article not published - MEED-10066 - Meeds-io/meeds#3938
-- fix: Avoid Class Cast Exception when collecting stats about news - EXO-87651
-- fix: Avoid flickering effect when hover on newsList while showing the settings button - EXO-86645
-- fix: avoid losing news content when refreshing - MEED-10023
-- fix: blur news card hover on Escape - MEED-10115 - Meeds-io/meeds#3977
-- fix: blur news card hover on Escape - MEED-10115 - Meeds-io/meeds#3977
-- fix: Content slider target details vertical alignment not centered - MEED-10107 - Meeds-io/meeds#3964
-- fix: disable the text search when filtering by drafts - MEED-10296 - Meeds-io/meeds#3917
-- fix: Display problem on additionnal content - MEED-10137 - Meeds-io/meeds#3989
-- fix: Display restricted area placeholder instead of notes editor or news editor when the current user can not redact on the space - EXO-87648
-- fix: Enhance Accessibility for news newsList cards - EXO-86639
-- fix: Enhance new list labels - EXO-87160 - Meeds-io/meeds#4177
-- fix: Enhance the news service and add unit test for the target creation - MEED-10366 - Meeds-io/MIPs#247
-- fix: Error while reindexing News after updating - EXO-87642
-- fix: External-link-alt icon displayed in links must inheritate text-body style - MEED-10294 - Meeds-io/meeds#4084
-- fix: Fix categories lost when publishing and edit publishing an article or a note - MEED-10444 - Meeds-io/meeds#4249
-- fix: fix display of author name and space name in newslist if long label - MEED-10052 - Meeds-io/meeds#3622
-- fix: Fix editing for the first time the latest draft of an article issued from a published note - EXO-87311
-- fix: fix error when initializing the news details activity stream extension - EXO-87165
-- fix: fix filtering articles by spaces when using a text search query - MEED-10068 - Meeds-io/meeds#3939
-- fix: fix generated content link in content event description - EXO-86139 - exoplatform/eXIP#41
-- fix: fix hideReaction in newslist when its activated in publication settings - EXO-87336
-- fix: Fix lost publishing and scheduling informations when editing article publishing - EXO-87554_EXO-87555
-- fix: fix newslist reactions alignment when author setting set to hide - EXO-87254
-- fix: Fix Notes editor application display issue in edit layout mode -  EXO-87312
-- fix: Fix publication when editing the scheduling option from between to until - EXO-87309
-- fix: Fix scheduling article without linked categories - MEED-10364 - Meeds-io/meeds#4167
-- fix: Fix the reaction bar of articles cards when hovering on the sidebar - MEED-9955 - Meeds-io/meeds#3845
-- fix: handle null selectedArticleIds to avoid first-load error - MEED-10366 - Meeds-io/MIPs#247
-- fix: Having an accessible name for additional content of articles displayed in cards template - MEED-9952 - Meeds-io/meeds#3844
-- fix: hide publisher in news deatils when hide author publish setting is enabled -EXO-87551
-- fix: improve CTA news extension display latency in the space activity stream - EXO-87165
-- fix: improve target selection in news list configuration - MEED-10277 - Meeds-io/meeds#4076
-- fix: improve target selection in news list configuration - MEED-10277 - Meeds-io/meeds#4076
-- fix: Open the link added to image - MEED-9993 - Meeds-io/MIPs#232
-- fix: prevent eye icon and views count from splitting across lines - EXO-87315
-- fix: prevent News List header from being shared across template instances - EXO-87173
-- fix: Restrict news metadata parameters updates to dedicated endpoint only - EXO-86412 - exoplatform/eXIP#41
-- fix: Update news activity composer extension to manage composer attached files - EXO-46162
-- fix: Use short month date format for publication date in newsList card - EXO-87028
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Stick event reminder to the top of article content - EXO-87718
-- feat: Adapt personal note option - MEED-10061 - Meeds-io/MIPs#234
-- feat: Add a category to a news when posting it to the feed - MEED-10315 - Meeds-io/meeds#4132
-- feat: add accessibility requirements - 10352 - Meeds-io/MIPs#247
-- feat: add accessibility requirements - 10359 - Meeds-io/MIPs#247
-- feat: Add AI Content Detail Toolbar buttons extension - EXO-82781
-- feat: add analytics statistics for the article source selection operation - MEED-10324 - Meeds-io/MIPs#247
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: add CTA to create an article for empty news list view - MEED-10362 - Meeds-io/MIPs247
-- feat: Add pre-delete interceptor chain for news details extensions - EXO-85710 - exoplatform/eXIP#41
-- feat: add selected article list source for news list view portlet - MEED-10318 - Meeds-io/MIPs#247
-- feat: Allow apply some layout application styles to news list cards - EXO-86638
-- feat: allow space admins and publishers to create a news publish target - MEED-10322 - Meeds-io/MIPs#247
-- feat: Display content event reminder in note details - EXO-85705 - exoplatform/eXIP#41
-- feat: Hide the viewers count for news - MEED-10147 - Meeds-io/MIPs#239
-- feat: Implement event association to a published article via publish extensions - EXO-85703 - exoplatform/eXIP#41
-- feat: Improve target selection UX - MEED-10326 - Meeds-io/MIPs#247
-- feat: List attachment at the bottom of the news detail - EXO-83427 - exoplatform/eXIP#33
-- feat: Load content event reminder extension in news detail - EXO-85704 - exoplatform/eXIP#41
-- feat: Make the the newslist slider items clickable - EXO-87300
-- feat: Move MCP Tools from AI Addon - EXO-86389
-- feat: Remove automatic creation of target when creating a space - MEED-10323 - Meeds-io/MIPs#247
-- feat: Remove the drawer listing attachments - EXO-83430 - exoplatform/eXIP#33
-- feat: Remove unused import - MEED-10244 - Meeds-io/MIPs#240
-- feat: Replace Old Preview of News List - EXO-87753
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-- feat: Review Alert news list template - EXO-87597
-- feat: Review news list cards items template - EXO-86492
-- feat: Review newsList Headline template - EXO-86752
-- feat: Review newsList List template ui/ux - EXO-86640
-- feat: Review newslist Mosaic view template - EXO-86837
-- feat: Review newslist slilder template - EXO-86864
-- feat: Review NewsList stories template - EXO-87619
-- feat: Review the News List settings UX and add the posted source option - MEED-10317 - Meeds-io/MIPs#247
-- feat: Review UX of advanced settings options for the news list - MEED-10327 - Meeds-io/MIPs#247
-- feat: Show content publication date in card item - EXO-86851
-- feat: Stick event reminder to the top of article content - EXO-87718
-- feat: Update content activity extension - EXO-86842
-- feat: Update default article image in newslist - EXO-87338
-- feat: Update news activity default banner - EXO-87337
-
-eXo Process 7.2.0
-*************************
-fix:
-- fix: Avoid Adding JPQL Parameter when not present in Query - EXO-87635
-- fix: edit Process : open pdf in edit mode not possible - EXO-81254
-- fix: Fix any user request creation on any process using its url - EXO-85598
-- fix: Fix the search in my requests while using the completed filter - EXO-86977
-- fix: handle all process paths when opening create request via URL - EXO-85656
-- fix: Selected group in who can make a request isn't maintained after save - EXO-83200
-- fix: SQL injection in WorkFlowDAO by using parameterized Criteria API - EXO-87040
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-
-eXo core 7.2.0
-*************************
-fix:
-- fix: allow to not delete memberships during synchro if the information is not present in LDAP - EXO-87414
-- fix: IDM Process queue job do not use correct cron expression - MEED-10233 - meeds-io/meeds#4044
-- fix: Space created by non admin results to not found page - MEED-10255 - Meeds-io/meeds#4053
-
-Improvements:
-- feat: add ability to fetch cached identities - MEED-10149 - Meeds-io/MIPs#240
-- feat: add default clearGroupCache method to GroupHandler - MEED-10128 - Meeds-io/MIPs#240
-- feat: Enhance Nested Group API - Meeds-io/MIPs#240
-- feat: Enhance Organization API to allow undecorate a decorated IDM Entity bfore persisting - EXO-87220
-- feat: enhance Organization API to support nested groups - MEED-10149 - Meeds-io/MIPs#240
-- feat: Enhance User DTO properties - MEED-10150 - Meeds-io/MIPs#242
-- feat: Identify the status update source - MEED-10241 - Meeds-io/MIPs#242
-- feat: Implement groups association - MEED-10149 - Meeds-io/MIPs#240
--  feat: move OrganizationDecoratorPlugin to core - MEED-10128 - Meeds-io/MIPs#240
-- feat: Refresh Conversation and Identity registeries when User Membership updated - MEED-10144 - Meeds-io/MIPs#240
-- feat: Review the operation Create User - MEED-10151 - Meeds-io/MIPs#242
-- feat: update organization service mock to handle test failures - MEED-10128 - Meeds-io/MIPs#240
-
-eXo Layout 7.2.0
-*************************
-fix:
-- fix: Fix background images (section and app) being lost when exporting/importing a page template and creating a page from it - EXO-87505
-- fix: edit home menu disappear after scrolling an element down - MEED-10340 - Meeds-io/meeds#4124
-- fix: Fix page template form weird behavior when a space is filled while typing description field - EXO-87174
-- fix: Fix section template import redirection - EXO-87340
-- fix: Improve mobile section column access up to md breakpoint - EXO-87567
-- fix: Move applications in addon container outside of it, to be able to edit and configure them - EXO-84376 - exoplatform/eXIP#37
-- fix: move the parent space listing portlet instance to space tools category - MEED-10097 - Meeds-io/MIPs#233
-- fix: prevent error during navigation item update - MEED-10280 - Meeds-io/meeds#4081
-- fix: prevent error during navigation item update - MEED-10280 - Meeds-io/meeds#4081
-- fix: Removes fields filterByPermissions in siteService.getSites - EXO-86349 - meeds-io/si#16
-- fix: schedule visibility date picker not showing in Add Node drawer - MEED-9983 - Meeds-io/meeds#3867
-- fix: schedule visibility date picker not showing in Add Node drawer -MEED-9983 - Meeds-io/meeds#3867
-- fix: update page template without losing content - MEED-9942
-- fix: When exporting a page template containing SpaceList portlet, there is an error in server logs - MEED-10036 - meeds-io/meeds#3910
-
-Improvements:
-- feat: List parenst space listing portlet in instances list - MEED-10005 - Meeds-io/MIPs#233
-
-eXo Agenda 7.2.0
-*************************
-fix:
-- fix: Visio URL auto-creation doesn't work when Pexip is disabled - EXO-87840
-- fix: Agenda timeline default settings for existing spaces - EXO-87774
-- fix: Avoid Updating TimeZone of Anonymous Users - EXO-87799
-- fix: Remove background of X more event label in month view with small screen - EXO-87766
-- fix: Add missing crowdin entry for ContentEditorExtension.properties - EXO-87106
-- fix: Add missing crowdin entry for StreamExtension.properties - EXO-87106
-- fix: Agenda timeline - Behavior when no event displayed - EXO-87083
-- fix: Agenda timeline - Margin improvements - EXO-87081
-- fix: Agenda timeline see more option must open in the same tab - EXO-8727
-- fix: Agenda timeline - Title ellipsis - EXO-87084
-- fix: Agenda timeline - Title ellipsis - EXO-87084
-- fix: Avoid fetching event when no eventId available in event content extensions - EXO-87209
-- fix: Avoid NPE when reading Agenda Event Metadata - EXO-87634
-- fix: Avoid NPE when User Profile is Null
-- fix: Cannot change view on expand mode of agenda app - EXO-84552
-- fix: Cannot change view on expand mode of agenda app - EXO-84552 - exoplatform/eXIP#31
-- fix: Cannot select several day in month view - EXO-84598
-- fix: Can't accept an invitation - EXO-85798
-- fix: Date selector does not change the calendar in SM mode for Agenda app - EXO-87142
-- fix: Default value for see more in agenda timeline - EXO-87079
-- fix: Display event of other month for few millisecond - EXO-86447
-- fix: display event poll make the page looks like frozen - EXO-84936
-- fix: display remote single and repetitive events in date polls - EXO-86362
-- fix: Events displayed above date picker in agenda app - EXO-87486
-- fix: Filter all event not working - EXO-84609
-- fix: Fix add/edit agenda event XSS vulnerability - EXO-84910
-- fix: Fix inconsistency in the week number between the display by month and the display by week - EXO-85200
-- fix: Global Agenda timeline: not all events displayed - EXO-87515
-- fix: handle delete news event in ContentUpdateListener - EXO-86412 - exoplatform/eXIP#41
-- fix: Hide remote event synchronized with platform event - EXO-84683 - exoplatform/eXIP#31
-- fix: I can create an event even if I'm not member of a space sources - EXO-86734
-- fix: No event duration during quick creation by drag and drop if sync event displayed - EXO-85288
-- fix: Plug icon displayed during loading - EXO-84552 - exoplatform/eXIP#31
-- fix: Remote event detail - EXO-84682 - exoplatform/eXIP#31
-- fix: Remove text transformation from event reminder 'join meeting' button - EXO-86422
-- fix: Remove useless drawer event listeners
-- fix: Roll back on the width display of event - EXO-84792
-- fix: Support emoji in agenda event summary on MySQL - EXO-87687
-- fix: UI Issue on agenda app header at first load - EXO-8553
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add an option to show/hide event location map in content eventReminder - EXO-86364 - exoplatform/eXIP#41
-- feat: Add aria-label to directions button of event reminder - EXO-86121 - exoplatform/eXIP#41
-- feat: Add aria-label to meeting button of event reminder - EXO-86120 - exoplatform/eXIP#41
-- feat: Add content event creation composer option - EXO-85706 - exoplatform/eXIP#41
-- feat: Add content event detail extension component - EXO-85704 - exoplatform/eXIP#41
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add event publish extension - EXO-85702 - exoplatform/eXIP#41
-- feat: Add Event Rich Editor CKEditor Type - EXO-83433
-- feat: Add extension component for content activity event date - EXO-86842
-- feat: Add title option - EXO-84368 - exoplatform/eXIP#37
-- feat: Add title option - EXO-84368 - exoplatform/eXIP#37 This commit adds the translated title option to the Agenda timeline setting.
-- feat: Agenda color settings - EXO-84711 - exoplatform/eXIP#38
-- feat: Agenda personal settings UI review - EXO-82857 - exoplatform/eXIP#30
-- feat: Agenda timeline settings action and source option - EXO-84367 - exoplatform/eXIP#37
-- feat: Agenda timeline UI breakpoint review - EXO-84366 - exoplatform/eXIP#37
-- feat: Allow to inject Actions in Agenda event and App UIs - EXO-82905
-- feat: Connect remote agenda in Agenda app - EXO-84036 - exoplatform/eXIP#31
-- feat: Connect remote agenda in Agenda timeline porlet - EXO-84035 - exoplatform/eXIP#31
-- feat: Connect remote agenda in an event display - EXO-84037 - exoplatform/eXIP#31
-- feat: Create a component extension to display event date on content list cards - EXO-86492
-- feat: Date picker not working on mobile - EXO-84083 - exoplatform/eXIP#30
-- feat: Day and week view agenda review - EXO-82856 - exoplatform/eXIP#30
-- feat: Deactivate display whole week for day and month view - EXO-83795 - exoplatform/eXIP#30
-- feat: Display add event - EXO-84374 - exoplatform/eXIP#37
-- feat: Display/hide event not working on timeline app with O365 - EXO-84603 - exoplatform/eXIP#31
-- feat: Display/hide remote agenda event in agenda app - EXO-84039 - exoplatform/eXIP#31
-- feat: Display/hide remote agenda event in agenda timeline portlet - EXO-84038 - exoplatform/eXIP#31
-- feat: Display pending event - EXO-84372 - exoplatform/eXIP#37
-- feat: Display see more option - EXO-84371 - exoplatform/eXIP#37
-- feat: Display the view selected - EXO-83399 - exoplatform/eXIP#30
-- feat: Display week-end filter - EXO-83314 - exoplatform/eXIP#30
-- feat: Display whole week label not clickable - EXO-84062 - exoplatform/eXIP#30
-- feat: Enhance ContentEventDisplayReminder extension component for notes details - EXO-85705 - exoplatform/eXIP#41
-- feat: eXIP30_US01: Add event button review - EXO-82846
-- feat: eXIP30_US02: Waiting invitation button review- EXO-82848
-- feat: eXIP30_US03: Today button review- EXO-82849
-- feat: eXIP30_US04: Period selector review- EXO-82850
-- feat: eXIP30_US05: Display mode selector- EXO-82874
-- feat: eXIP30_US07: Filter agenda review- EXO-82852
-- feat: eXIP30_US09: Agenda personal settings UI review- EXO-82857
-- feat: Filter agenda options - EXO-84377 - exoplatform/eXIP#37
-- feat: handle linked event deletion on content delete - EXO-85710 - exoplatform/eXIP#41
-- feat: Hide display whole week on mobile - EXO-84081 - exoplatform/eXIP#30
-- feat: Implement content association to an event via publish extension - EXO-85703 - exoplatform/eXIP#41
-- feat: Implement Deletion flow of an event associated to a content - EXO-85709 - exoplatform/eXIP#41
-- feat: Implement event deletion confirmation from publication drawer - EXO-85714 - exoplatform/eXIP#41
-- feat: Implement event embed map providers settings - EXO-86430
-- feat: Implement Identify schedule conflict use case - EXO-85308 - Meeds-io/ai#120
-- feat: Improve content event reminder display - EXO-86861
-- feat: improve webconferencing integration
-- feat: Make ContentCardEventDateChip extension customizable via props - EXO-86640
-- feat: Month view agenda review - EXO-82854 - exoplatform/eXIP#30
-- feat: Move IA button - EXO-83963 - exoplatform/eXIP#30
-- feat: replace Google Maps embed with OpenStreetMap - EXO-86365 - exoplatform/eXIP#41
-- feat: scroll bar issue when navigating from month view to week view - EXO-84030 - exoplatform/eXIP#30
-- feat: The agenda portlet is not responsive when added to an app - EXO-83963 - exoplatform/eXIP#30
-- feat: timeline option - EXO-84376 - exoplatform/eXIP#37
-- feat: Waiting event button hover effect displayed - EXO-83936 - exoplatform/eXIP#30
-- feat: Waiting event UI review - EXO-83398 - exoplatform/eXIP#30
-- feat: Week display options - EXO-82858 - exoplatform/eXIP#30
-
-eXo App-Center 7.2.0
-*************************
-fix:
-- fix: Add an attribute for favorite button - MEED-9916 - Meeds-io/meeds#3810
-- fix: Add some accessibility requirements to the applications - MEED-10185 - Meeds-io/meeds#4021
-- fix: Add titles for some buttons in myApplications portlet - MEED-9936 - Meeds-io/meeds#3832
-- fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821.
-- fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821.
-- fix: Applications don't receive focus on Myapplication portlet - MEED-9974 - meeds-io/meeds#3861.
-- fix: Application shortcuts don't appear by tabbing - MEED-9928 - Meeds-io/meeds#3823
-- fix: Display the see all buttons when focusing - MEED-9939 - Meeds-io/meeds#3831
-- fix: Ensure to correctly load the application image - MEED-9987 - meeds-io/meeds#3874
-- fix: Fix applications images to be decorative - MEED-9933 - meeds-io/meeds#3834
-- fix: Fix favorites endpoint to support unpaged results with size=0 - MEED-10293 - Meeds-io/meeds#4112
-- fix: Fix interactive buttons nested inside app card link - MEED-10141 - Meeds-io/meeds#3993
-- fix: Fix the activation/deactivation button for applications - EXO-87172 - Meeds-io/meeds#3659
-- fix: Fix the application url containing a backslash - MEED-10028 - Meeds-io/meeds#3905
-- fix: Fix the background color of pinned applications - EXO-87367
-- fix: Help page opening opens app link also - MEED-10136 - Meeds-io/meeds#3988
-- fix: Information loss after a zoom in of 200% - MEED-9925 - meeds-io/meeds#3820.
-- fix: Link application are not displayed in the TopBar Application - EXO-87296
-- fix: Modify the declaration of application cards - MEED-9917 - meeds-io/meeds#3811.
-- fix: Modify the declaration of application cards - MEED-9917 - meeds-io/meeds#3811.
-- fix: Pinned applications are distinguished only by their shape - MEED-9927 - meeds-io/meeds#3822.
-- fix: Prevent creating multiple apps when Save is clicked repeatedly - MEED-10038 - Meeds-io/meeds#3913
-- fix: Prevent encoded characters from appearing in application description - MEED-10020 - Meeds-io/meeds#3890
-- fix: Remove sorting from pageable in favorite applications list -  MEED-10293 - Meeds-io/meeds#4112
-- fix: Set mimetype for application image - MEED-10449 - meeds-io/meeds#4254
-- fix: show newly added favorite first in the application drawer - MEED-10283 - Meeds-io/meeds#4090
-- fix: Some informations disappear when disabling the style - MEED-9924 - meeds-io/meeds#3819.
-- fix: support SVG icons for applications - MEED-10330 - Meeds-io/meeds#4045
-- fix: Use p tag for application's description - MEED-9921 - Meeds-io/meeds#3815
-
-Improvements
-- feat: Add Profile to PWA Plugin Component
-- feat: Allow to disabled App By Quick Action Extension
-- feat: Handle Quick Action Drawers to be dynamic - EXO-86886
-
-eXo Automatic-translation 7.2.0
-*************************
-fix:
-- fix: improve error handling in autoTranslate of note editor extension with precise message and value restoration - EXO-87087
-- fix: unescape HTML entities in automatic translation API responses - EXO-87506
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add LanguageWeaver connector - EXO-80987
-
-eXo WS 7.2.0
-*************************
-fix:
-- fix: make MediaTypeMap thread-safe - EXO-76304
-- fix: Prevent WADL documentation to be exposed publicly - MEED-10096 - meeds-io/meeds#3959
+- fix: Prevent infinite re-save loop in RAG indexing queue when entries are not yet idle
+- fix: Retrieving User Content Link in UX Binding - EXO-88542
+- fix: Route reactor-netty WebClient through system proxy - EXO-88291
 
 Improvements:
 
-eXo PWA 7.2.0
+eXo Social 7.2.1
 *************************
 fix:
-- fix: add a version in the icon url as pathParam - MEED-10069 - meeds-io/meeds#3940
-- fix: Android notification icon is a white square - EXO-85413 - meeds-io/meeds#4134
-- fix: Give Access to PWA Help Drawer all time - EXO-87679
-- fix: PWA notification icons are no more displayed - MEED-10084 - meeds-io/meeds#3947
-- fix: update pwa manifest to be able to use pwabuilder
-- fix: update pwa manifest to be able to use pwabuilder - MEED-10069 - meeds-io/meeds#3940
-- fix: Update the existing Web Notification parameters without marking it as read - EXO-87664
+- fix: Avoid creation of Metadata if already exists - EXO-88224
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Centralizing the SelectPeriod component - EXO-50871
+- fix: Disable link option in crop drawer when opened from activity composer - EXO-88016
+- fix: Fix endless spinner when uploading featured image in crop drawer - EXO-88239
+- fix: Fix the captured image after editing - EXO-87793
+- fix: Fix the link containing mailto in the event description - EXO-88030
+- fix: Improve space fetching in space administration when sorting by last activity - EXO-87899
+- fix: Inconsistent display of a user's profile avatar across the profile page, comments, and unified search- EXO-87924
+- fix: Race Condition when creating same Metadata - EXO-88178
+- fix: Race Condition when creating the same Metadata - EXO-88237
+- fix: Search result displays searched term + null - EXO-87954
+- fix: When a text content is domPurify, mailto is incorrectly displayed as 2 links - EXO-88030
 
 Improvements:
-- feat: Avoid loading Desktop Notif URL in non-portal tab - EXO-87813
-- feat: compute app badge from pluggable unread counters - EXO-87789
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add Help Drawer for iOS browsers - EXO-87241
-- feat: Add Help Drawer for Unsupported PWA feature browsers - EXO-87238
-- feat: Allow to access Web Notification when session is timedout - EXO-87327
-- feat: Avoid Marking as read Web Notif when Closing Desktop Notif - EXO-87243
-- feat: Detect when Push Notification Delivery is delayed - EXO-87242
-- feat: Improve PWA Score - EXO-87249
-- feat: Increase Push Notification Delay Detection Alert time - EXO-87655
-- feat: Use PWA default Orientation rather than any - EXO-87665
+- feat: Add a new space update event for changes on extended permissions - Meeds-io/Mips#249 - MEED-10486
+- feat: Add an extension point in space templates form - Meeds-io/Mips#249 - MEED-10420
+- feat: Add extended permissions to space by extension - Meeds-io/Mips#249 - MEED-10480
+- feat: Rename space property from extendedPermissions to extendedProperties - Meeds-io/Mips#249 - MEED-10487
 
-eXo Jitsi 7.2.0
+eXo Notes 7.2.1
 *************************
 fix:
-- fix: Correct display for jitsi button - EXO-85837
-- fix: when hovering call button in profile, there is a squared shadow AND a circle one - EXO-85699
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Redirection to page not found when opening note from snack bar -  EXO-88375
+- fix: Reindex inserted note links reliably on notebook import - EXO-88788
 
 Improvements:
 
-eXo Kudos 7.2.0
+eXo Documents 7.2.1
 *************************
 fix:
-- fix: Display of kudos icon in stream composer input - MEED-10268 - Meeds-io/meeds#4064
-- fix: Fix Extension Registry Rank definition instead of Order - EXO-82845
-- fix: Improve the display of the feed application when used in a small container - MEED-10202 - Meeds-io/meeds#4031
-- fix: Kudos activity not retrieved in unified search - EXO-87145
-- fix: Tooltip displayed on feed after scroll - EXO-87368
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-
-eXo meeds 7.2.0
-*************************
-fix:
-- fix: Change indonesian language code to the correct one - MEED-10336 - meeds-io/meeds#4144
-- fix: Fix Notes editor application display issue in edit layout mode - EXO-87312
-- fix: Fix wrong "portal.global.restricted-projec" wrong label key - MEED-10286 - Meeds-io/meeds#4102
-- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
-- fix: restricted page need to be displayed if not allowed to display task - MEED-10264 - Meeds-io/meeds#4060
-
-Improvements:
-- feat: Add Mycraft personal note - MEED-10060 - Meeds-io/MIPs#234
-- feat: Move OAuth Pages to Meeds package - MEED-86156 - Meeds-io/ai#159
-- feat: Pre-bundle Auth Server Add-on in Meeds Server
-- feat: Pre-bundle Auth Server Add-on in Meeds Server - EXO-86389
-- feat: Remove Spring Boot Starters Jar from packaging
-
-eXo Platform-UI 7.2.0
-*************************
-fix:
-- fix: Add a css helper class to use a customized background - MEED-10163 - Meeds-io/meeds#4016
-- fix: Application doesn't receive focus - MEED-9926 - meeds-io/meeds#3821.
-- fix: Fix top bar disappearing during drag applications - MEED-10311 - Meeds-io/meeds#4124
-- fix: Fix top bar icons position issue when scrolling down - MEED-10339 - Meeds-io/meeds#4149
-- fix: Information loss after a zoom in of 200% - MEED-9925 - meeds-io/meeds#3820.
-- fix: Use default background color when the app background is not defined - MEED-10242 - Meeds-io/meeds#4047
-
-Improvements:
-- feat: Add `t-1` for top position helper class - EXO-87718
-- feat: Add Class Helpers for contain and overflow - EXO-82843
-- feat: Add `linear-gradient-black-overlay-background` style helper class - EXO-87619
-- feat: Add pointer-events-revert CSS Helper
-- feat: Add `primary-background-opacity-8` and `height-fit-content` helpers class - EXO-86864
-- feat: Add `t-1` for top position helper class - EXO-87718
-- feat: Add "textarea-no-border" css class helper in order to remove border from v-textarea component - EXO-84693 - exoplatform/eXIP#34
-- feat: Add 'text-overflow: ellipsis' CSS Class Helper
-- feat: Add white-space: pre CSS Class Helper
-- feat: Allow to delete Background selection - EXO-83471
-- feat: Month view agenda review - EXO-82854 - exoplatform/eXIP#30
-- feat: Move Hashtag into Hidden RichEditor Toolbar - EXO-83471
-
-eXo external-visio-connector 7.2.0
-*******************************************
-fix:
-- fix: Correct display for external connectors button - EXO-85837
+- fix: [WEBDAV] File name containing + can't be imported - EXO-88320
+- fix: Allow folder creator to be saved as collaborator - EXO-87517
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Doc attachment missing when posting via right-click context menu - EXO-87923
+- fix: Download document - Infinite loading if selected files include symlink file - EXO-85989
+- fix: Fix public link visibility drawer save button state - EXO-87893
+- fix: Fix the icon color when change dark background - EXO-87647
+- fix: Folder treeview can't be opened if closed - EXO-88171
+- fix: Include symlink target paths in ES search queries - EXO-67331
+- fix: Preserve "+" in document names on display and download - EXO-88319
+- fix: Show attached documents in activity update drawer - EXO-87965
+- fix: Use local timezone for period date calculations in file management report - EXO-50871
 
 Improvements:
 
-eXo Wallet 7.2.0
-*************************
-fix:
-- fix: Add an empty alt to the avatar of wallet - MEED-9967 - meeds-io/meeds#3854
-- fix: Enhance Analytics Field Data Types - MEEDS-10142 - Meeds-io/meeds#3994
-- fix: Prevent SQL injection attacks when retrieving wallet transactions - EXO-87042
-- fix: Wallet Rewarding Page doesn't display Rewarding Periods - MEED-10047 - Meeds-io/meeds#3920
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Move reactive-streams to Meeds packaging
-
-eXo Jitsi-call 7.2.0
+eXo Portal 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Mail Integration 7.2.0
+eXo ECMS 7.2.1
+*************************
+fix:
+- fix: prevent duplicate view count increment for same viewer - EXO-84993
+
+Improvements:
+
+eXo Task 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Email Connector 7.2.0
+eXo Commons 7.2.1
 *************************
 fix:
-- fix: Add aria-label for mail box drawer list item - EXO-83366
-- fix: Display empty body placeholder in email list and email detail when the email body is empty - EXO-82794 - exoplatform/eXIP#28
-- fix: Fix accessibility issues for email box list drawer - EXO-86757_EXO-86830
-- fix: Fix applying selection background with multiselect mode - EXO-86451
-- fix: Fix delete bluemind mail from exo mail drawer - EXO-86532
-- fix: Fix delete infomaniak email from exo mail drawer - EXO-85351
-- fix: Fix display selection background for full page mode - EXO-86452_EXO-86453
-- fix: Fix encoding display issue of from field - EXO-86543
-- fix: Fix error when synchronizing email with long receiver, cc or bcc fields - EXO-83930
-- fix: Fix flickering effect on email list when hovering over an email without subject - EXO-85174
-- fix: Fix insert option display in sent email - EXO-84747 - exoplatform/eXIP#34
-- fix: Fix long sender not truncated in email list - EXO-84706
-- fix: Fix loss of "to", "cc", and "bcc" fields after synchronization - EXO-86140
-- fix: Fix missing titles for buttons on email app - EXO-83361
-- fix: Fix opening the email detail with one click on mobile - EXO-83113 - exoplatform/eXIP#28
-- fix: Fix pushing down the other emails when swiping an email - EXO-83929 - exoplatform/eXIP#32
-- fix: Fix "reply all" cc addresses must exclude connected email address instead of user account email - EXO-86449
-- fix: Fix selecting all the drawer when doing a long press on an email from email list for mobile - EXO-84079 - exoplatform/eXIP#32
-- fix: Fix selecting or deselecting email with selection mode when clicking on an email in email list - EXO-84150 - exoplatform/eXIP#32
-- fix: Fix server startup failed on hsql with email-connector addon - EXO-83641
-- fix: Fix subject and excerpt texts truncated in email list and email detail - EXO-83367
-- fix: Fix three-dots menu action not staying attached to activator when scrolling email list item or email detail - EXO-86917
-- fix: Fix UI and accessibility of show/hide button on email connector drawer - EXO-83360
-- fix: Fix unselect email while exiting it in fullpage - EXO-86450
-- fix: Hide email user setting when user notification settings are displayed - EXO-82333 - exoplatform/eXIP#27
-- fix: Remove email content link plugin - EXO-86448
-- fix: Remove not working actions from rich ckeditor when writing an email - EXO-85476
 
 Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add email editor ai ux bindings and actions - EXO-84895 - Meeds-io/ai#124
-- feat: Add email list ai ux action - EXO-85718 - Meeds-io/ai#139
-- feat: Apply hover and select background effects in expanded mode of the email list elements - EXO-85284 - exoplatform/eXIP#40
-- feat: Display attachments in the email detail -  EXO-82497 - exoplatform/eXIP#28
-- feat: Display attachments in the email list - EXO-82501 - exoplatform/eXIP#28
-- feat: Display attachments list drawer - EXO-82498 - exoplatform/eXIP#28
-- feat: Display multiselect email section when multi select emails from expanded mode of email box and email detail drawers - EXO-85344 - exoplatform/eXIP#40
-- feat: Display select email placeHolder at first expand of email box drawer - EXO-85381 - exoplatform/eXIP#40
-- feat: Display select email placeHolder when archive or delete from expanded mode of email box and email detail drawers - EXO-85292 - exoplatform/eXIP#40
-- feat: Display select email placeHolder when mark as read or mark as unread from expanded mode of email box and email detail drawers - EXO-85289 - exoplatform/eXIP#40
-- feat: Display success/error snackbar when deleteing an email - EXO-83794 - exoplatform/eXIP#32
-- feat: Download attachment from email detail and email attachments list drawer - EXO-82502 - exoplatform/eXIP#28
-- feat: Enhance download attachment in desktop and mobile and improve perf when opening email box drawer- EXO-83053 - exoplatform/eXIP#28
-- feat: Enhance of delete and archive email actions UX - EXO-83872 - exoplatform/eXIP#32
-- feat: Enhance opening mail performance by strong email body and recipients in db - EXO-83054 - exoplatform/eXIP#28
-- feat: Implement add category to new emails with AI tools - EXO-85729_EXO-85866 - Meeds-io/ai#139
-- feat: Implement archive action for multiple emails - EXO-83656 - exoplatform/eXIP#32
-- feat: Implement archive email action from email detail - EXO-83652 - exoplatform/eXIP#32
-- feat: Implement archive email action from email detail - EXO-83653 - exoplatform/eXIP#32
-- feat: Implement delete action for multiple emails - EXO-83655 - exoplatform/eXIP#32
-- feat: Implement delete and archive email actions from email list by swiping on mobile - EXO-83659_EXO-83660 - exoplatform/eXIP#32
-- feat: Implement delete email action from email detail - EXO-83650 - exoplatform/eXIP#32
-- feat: Implement delete email action from email list - EXO-83651 - exoplatform/eXIP#32
-- feat: Implement email channel for new emails notification - EXO-82415 - exoplatform/eXIP#27
-- feat: Implement email detail forward action - EXO-86117 - exoplatform/eXIP#43
-- feat: Implement email detail reply to all action - EXO-86118 - exoplatform/eXIP#43
-- feat: Implement expanded view of email box drawer - EXO-85224_EXO-85282_EXO-85283 - exoplatform/eXIP#40
-- feat: Implement expanded view of email detail drawer - EXO-85239 - exoplatform/eXIP#40
-- feat: Implement filter emails by categories - EXO-85719_EXO-85907 - Meeds-io/ai#139
-- feat: Implement mark as read action for multiple emails - EXO-83657 - exoplatform/eXIP#32
-- feat: Implement mark as unread action for multiple emails - EXO-83658 - exoplatform/eXIP#32
-- feat: Implement multiselection in email list - EXO-83654 - exoplatform/eXIP#32
-- feat: Implement new emails notification - EXO-82171_EXO-82160 - exoplatform/eXIP#27
-- feat: Implement open webmail analytics - EXO-86659 - exoplatform/eXIP#44
-- feat: Implement open webmail link url action - EXO-86556 - exoplatform/eXIP#44
-- feat: Implement reply email action - EXO-84307 - exoplatform/eXIP#34
-- feat: Implement send email analytics - EXO-84312 - exoplatform/eXIP#34
-- feat: Implement send mail action - EXO-84306 - exoplatform/eXIP#34
-- feat: Implement summarize email AI use case - EXO-84896 - Meeds-io/ai#111
-- feat: Introduce some extension registry points for email detail ai actions - EXO-84893 - Meeds-io/ai#111
-- feat: Make "subject" field a textarea field editable on several lines - EXO-84693 - exoplatform/eXIP#34
-- feat: Mark as read and mark as unread email actions from email list - EXO-82161_EXO-82162 - exoplatform/eXIP#27
-- feat: Mark as read/unread from email list on mobile - EXO-82428 - exoplatform/eXIP#27
-- feat: Mark as unread email from email detail - EXO-82163 - exoplatform/eXIP#27
-- feat: Send email without subject - EXO-84528 - exoplatform/eXIP#34
-- feat: Send to replyTo email field with reply or reply to all actions - EXO-86119 - exoplatform/eXIP#43
-- feat: Store smtp settings for email connector - EXO-84301 - exoplatform/eXIP#34
-- feat: Store webmail link url for email connector - EXO-86555 - exoplatform/eXIP#44
 
-eXo Agenda Connectors 7.2.0
-****************************
+eXo Gatein-Portal 7.2.1
+*************************
 fix:
 
 Improvements:
 
-eXo Multi-factor-Authentication 7.2.0
+eXo MATRIX 7.2.1
+*************************
+fix:
+- fix: Disable chat feature when both room types are disabled - Meeds-io/Mips#249 - MEED-10481
+- fix: Eliminate two test-order-dependent flakes in the matrix test suite
+- fix: Escape HTML entities in plain text chat messages - EXO-87198
+- fix: Improve UI/UX on chat settings - Meeds-io/Mips#249 - MEED-10483
+- fix: Retry Matrix connection at startup until Synapse is operational - EXO-88741
+- fix: Room cleanup permanently breaks once two rooms share a MATRIX_ROOM_ID
+- fix: Room list is incomplete when a space is not found - MEED-10491
+- fix: Update of space template setting - Meeds-io/Mips#249 - MEED-10485
+
+Improvements:
+- feat: Allow disabling space rooms from chat administration - Meeds-io/Mips#249 - MEED-10418
+- feat: Center text when chat is deactivated - Meeds-io/Mips#249 - Meed-10477
+- feat: Conditions for adding space/private rooms from Chat - Meeds-io/Mips#249 - MEED-10487
+- feat: Disable chat and set it as readonly - Meeds-io/Mips#249 - MEED-10484
+- feat: Enable deactivating private rooms from administration - MEED-10417
+- feat: Enable setting default status for authorized space chats - Meeds-io/Mips#249 - MEED-10419
+- feat: Enable/disable chat from administration - Meeds-io/Mips#249 - MEED-10416
+- feat: Manage space chat room in space template form - Meeds-io/Mips#249 - MEED-10420
+- feat: Rename space property from extendedPermissions to extendedProperties - Meeds-io/Mips#249 - MEED-10487
+- feat: Set room to read only when disabled from spaces administration - Meeds-io/Mips#249 - MEED-10486
+- feat: Support updating multiple spaces in  spaces administration - Meeds-io/Mips#249 - MEED-10480
+
+eXo Content 7.2.1
+*************************
+fix:
+- fix: Avoid WAF ban by returning 200 with status flag for missing/deleted content - EXO-88159
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Exclude unposted articles/notes from the 'List any articles published' news target -EXO-88323
+- fix: Fix news draft after adding/ deleting images - EXO-87150
+- fix: News drafts listing issue - EXO-88464
+
+Improvements:
+- feat: Allow selecting fewer articles for Mosaic and Headlines displays - EXO-88297
+- feat: Improve single-article display for Mosaic and Headlines news blocks - EXO-88486
+
+eXo Process 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo core 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Layout 7.2.1
+*************************
+fix:
+- fix: Avoid NPE when page not found - EXO-88179
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+
+Improvements:
+
+eXo Agenda 7.2.1
+*************************
+fix:
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Can't edit the time of an all day recuring event - EXO-51336
+- fix: No synchronization with personal google calendar when transforming a date poll to an event - EXO-45672
+- fix: Recurrent event with end date not synchronized in google calendar - EXO-72273
+- fix: Space name is incorrect in push notification in windows  - EXO-86030
+- fix: Startup latency on   timezone update from tzurl.org without Internet access - EXO-88258
+- fix: Unable to create an event poll when using webconf connector which needs event startDate and endDate - EXO-88321
+- fix: Waiting event number truncated - EXO-87875
+
+Improvements:
+
+eXo App-Center 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Automatic-translation 7.2.1
+*******************************
+fix:
+
+Improvements:
+
+eXo WS 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo PWA 7.2.1
+*************************
+fix:
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Return Original Image when can't convert to PNG - EXO-88180
+
+Improvements:
+
+eXo Jitsi 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Kudos 7.2.1
+*************************
+fix:
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+
+Improvements:
+
+eXo meeds 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Platform-UI 7.2.1
+*************************
+fix:
+- fix: Fix the icon color when having dark background - EXO-87647
+
+Improvements:
+
+eXo external-visio-connector 7.2.1
+**********************************
+fix:
+
+Improvements:
+
+eXo Wallet 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Jitsi-call 7.2.1
+*************************
+fix:
+
+Improvements:
+
+eXo Mail Integration 7.2.1
+**************************
+fix:
+
+Improvements:
+
+eXo Email Connector 7.2.1
+*************************
+fix:
+- fix: Display email issue after deleting one - EXO-88523
+- fix: Fix display sent emails into sent elements of server email account - EXO-87838
+
+Improvements:
+
+eXo Agenda Connectors 7.2.1
+***************************
+fix:
+
+Improvements:
+
+eXo Multi-factor-Authentication 7.2.1
 *************************************
 fix:
 
 Improvements:
 
-eXo Analytics 7.2.0
+eXo Analytics 7.2.1
 *************************
 fix:
-- fix: add sanitization to spaces list widget portlet jsp to prevent XSS attacks -EXO-87658
-- fix: Fix the space list ordered by last activity in administration -EXO-87772
-- fix: prevent automatic alt mapping on typed field mismatch - EXO-87596
-- fix: resolve report fields against available mappings - EXO-87755
-- fix: Add a new generic I18N file for analytics module - MEED-10365 - Meeds-io/meeds#4168
-- fix: Add auth-server Spring Profile on OAuth Listeners
-- fix: Analytics Field Data Types Detection - MEEDS-10142 - Meeds-io/meeds#3994
-- Fix auth-server property name
-- fix: Avoid NPE when computing Activity Viewers - EXO-87629
-- fix: Avoid Processing Activity Viewers Metadata on Comments - Meeds-io/meeds#4233
-- fix: Count viewers of a post even if no unread notification - MEED-10……363 - Meeds-io/meeds#4166
-- fix: Count viewers of a post even if no unread notification - MEED-10363 - Meeds-io/meeds#4166
-- fix: date difference calculated wrongly - MEED-10214
-- fix: Display the header of the space list portlet even when there are no spaces - MEED-10165 - Meeds-io/meeds#4018
-- fix: Duration in Samples Display as Milliseconds instead of Seconds - MEED-9968 - Meeds-io/meeds#3856
-- fix: Fix spaces list by last activity in administration - EXO-87373
-- fix: Fix the display of the most active spaces for non member users -MEED-10426 - Meeds-io/meeds#4203
-- fix: Fix the last activity label in spaces administration page - EXO-87291
-- fix: incorrect styling of the create space CTA in the Space List - MEED-10367 - Meeds-io/meeds#4174
-- fix: reduce prefix redundancy by centralizing valueDomId usage in space list widget - MEED-10091 - Meeds-io/MIPs#233
-- fix: Rename OAuth Sub Modules - Meeds-io/ai#159
-- fix: Review the spaces list widget - MEED-10158 - Meeds-io/meeds#4009
-- fix: Review tooltips for views number - MEED-10373 - Meeds-io/meeds#4169
-- fix: Suggest subspace creation when space list widget is in a parent space - MEED-10368 - Meeds-io/meeds#4175
-- fix: Suggest users to add a space from the spaces list drawer - MEED-10162 - Meeds-io/meeds#3998
-- fix: unify Space List widget header title - MEED-10008 - Meeds-io/MIPs#233
-- fix: Update the space list widget to use the alternative field - MEED-10279 - Meeds-io
-
-Improvements:
-- feat: Add a title to views number - MEED-10356 - Meeds-io/MIPs#239
-- feat: Add OAuth Consent And Token Usage Analytics Collection Listeners - EXO-86165 - Meeds-io/ai#159
-- feat: Add space setting sovereignty statistic Collection
-- feat: Collect OAuth Client Registration Statistics
-- feat: Compute the number of views for activities - MEED-10146 - Meeds-io/MIPs#239
-- feat: Display Spaces List Placeholder even when empty - MEED-10157 - Meeds-io/meeds#4007
-- feat: Display the number of views of a post - MEED-10147 - Meeds-io/MIPs#239
-- feat: enable editing of the space list widget header title - MEED-10008 - Meeds-io/MIPs#233
-- feat: enable main and subspace creation from the Space List widget - MEED-10091 - Meeds-io/MIPs#233
-- feat: Enable to list only sub spaces in space list widget - MEED-10007- Meeds-io/MIPs#233
-- feat: Identify the status update source - MEED-10241 - Meeds-io/MIPs#242
-- feat: Improve the display of the translation text field in the space list widget settings drawer - MEED-10008 - Meeds-io/MIPs#233
-- feat: Lower a Technical Log Level
-- feat: Review the operation Create User - MEED-10151 - Meeds-io/MIPs#242
-- feat: Track when a user is joined space by invitation link - MEED-10226 - Meeds-io/MIPs#244
-
-eXo JCR 7.2.0
-*************************
-fix:
-- fix: Error Parsing XLS doesn't update File Metadata - EXO-87632
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Improve space fetching in space administration when sorting by last activity - EXO-87899
+- fix: Pass row context to cell value extensions in analytics table - EXO-88159
+- fix: Resolve keyword aggregation suffix from the alternative field mapping - EXO-88413
+- fix: Use local timezone for period date calculations in file management report - EXO-50871
 
 Improvements:
 
-eXo Gamification 7.2.0
-*************************
-fix:
-- fix: Refactor cropper drawer alt attributes - MEED-10058 - Meeds-io/MIPs#232
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add new gamification event for sharing invitation link - MEED-10228 - Meeds-io/MIPs#244
-- feat: Retrieve Memberships from User ACL instead of OrganizationService - MEED-10149 - Meeds-io/MIPs#240
-
-eXo Gamification-github 7.2.0
+eXo JCR 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Gamification-twitter 7.2.0
+eXo Gamification 7.2.1
+*************************
+fix:
+- fix: Backport missing keys in stable/7.2.x - EXO-88872
+- fix: Use local timezone for period date calculations in file management report - EXO-50871
+
+Improvements:
+
+eXo Gamification-github 7.2.1
+*****************************
+fix:
+
+Improvements:
+
+eXo Gamification-twitter 7.2.1
+******************************
+fix:
+
+Improvements:
+
+eXo Gamification-EVM 7.2.1
+**************************
+fix:
+
+Improvements:
+
+eXo Gamification-crowdin 7.2.1
+******************************
+fix:
+
+Improvements:
+
+eXo mcp-server 7.2.1
+*************************
+fix:
+- fix: NumberFormatException when replying to a reply comment - EXO-88688
+
+Improvements:
+
+eXo auth-server 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Gamification-EVM 7.2.0
+eXo Web-Conferencing 7.2.1
+**************************
+fix:
+
+Improvements:
+
+eXo Perk-Store 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Gamification-crowdin 7.2.0
+eXo Push-Notifications 7.2.1
+****************************
+fix:
+
+Improvements:
+
+eXo kernel 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo mcp-server 7.2.0
-*************************
-fix:
-- fix: Add Missing WWW-authenticate as allowed HTTP Header in Cors
-- fix: Delete AI Autoconfigure Jar from Shared Lib
-- fix: Delete Tomcat Embedding Jar from Addon packaging
-- fix: Improve Redirection Rules of OAuth URLs
-
-Improvements:
-- feat: Add ContentType Definition in Search Connector - EXO-86376
-- feat: Add Integration and Unit Tests
-- feat: Improve OAuth Token Introspection and Validation
-- feat: Initialize Project Skeleton
-- feat: Move MCP Server to a dedicated Addon - EXO-86389
-- feat: Rely on codeckey.txt of portal Test resources - EXO-86572 - Meeds-io/ai#196
-- feat: Remove Useless ThreadLocalAccessor Context - EXO-86572 - Meeds-io/ai#196
-
-eXo auth-server 7.2.0
-*************************
-fix:
-- fix: Allow Public Client Refresh Token Handling
-- fix: Disable OAuth Clients Display Pagination - EXO-86297 - Meeds-io/ai#159
-- fix: Fix CIMD ID usage when deleting Tokens
-- fix: Fix CIMD with Token Endpoint Authentication Signing Algorithm Metadata
-- fix: Redirect To OAuth Client Redirect URL when consent denied
-
-Improvements:
-- feat: Add Github PR workflow & Crowdin workflow
-- feat: Add a centralized Password Encoder
-- feat: Add Integration Tests for Mistral DCR Use Case - EXO-86389
-- feat: Add OAUTH Custom Metadata for CIMD Support
-- feat: Add offline_access scope in OIDC config
-- feat: Add Unit Tests
-- feat: Add Warning when allowing all DCR, CIMD or Origin URLs - EXO-86163 - Meeds-io/ai#159
-- feat: Allow Empty Scopes when requesting OAuth Authorization
-- feat: Allow to automatically assign scopes to DCR and CIMD Clients
-- feat: Allow to not have scopes when registering client with DCR
-- feat: Centralize and Enrich OAuth Token Introspection and Validation
-- feat: Cleanup Expired OAuth Tokens Automatically
-- feat: Encrypt OAuth Tokens in DB for better Security
-- feat: Improve OAuth Public Client Registration Flow
-- feat: Initialize Project Skeleton
-- feat: Move Hibernate String Encryption Value Converter into Commons Project
-- feat: Move OAuth Pages to Meeds package - EXO-86156 - Meeds-io/ai#159
-- feat: Move OAuth Server From AI Addon
-- feat: Remove Spring Starter Jars from packaging
-- feat: Rename DCR Admin Section Labels - Meeds-io/ai#159
-- feat: Rework OAuth CIMD URLs Admin Section UX - EXO-86178 - Meeds-io/ai#159
-- feat: Rework OAuth Client Admin Card UI / UX - EXO-86165 - Meeds-io/ai#159
-- feat: Rework OAuth Client Form Drawer UX - EXO-86164 - Meeds-io/ai#159
-- feat: Rework OAuth Cors Origin URLs Admin Section UX - EXO-86177 - Meeds-io/ai#159
-- feat: Rework OAuth DCR Redirect URLs Admin Section UX - EXO-86157 - Meeds-io/ai#159
-- feat: Rework UI & UX of OAuth Consent Page - EXO-86173 - Meeds-io/ai#159
-- feat: Rework User Settings OAuth User Settings UI/UX - EXO-86172 - Meeds-io/ai#159
-- feat: Rework UX of Oauth Client Drawer in USer Setting UI - EXO-86174 - Meeds-io/ai#159
-- feat: Support OAuth Confidential Clients
-
-eXo Web-Conferencing 7.2.0
-*************************
-fix:
-- fix: Icons alignment in chat - EXO-86926
-- fix: video conference url not accepted in space settings - EXO-87828
-- fix: Add margin for call buttons - EXO-85837
-- fix: Fix build failure after Meeds-io/MIPs#231 merge - EXO-84691
-- fix: prevent space settings extension registration when no active providers - EXO-83712
-- fix: Users card options alignment issue - EXO-80968
-
-Improvements:
-- feat: migrate statistic fields to typed collection API - EXO-87596
-- feat: improve webconferencing framework
-
-eXo Perk-Store 7.2.0
+eXo Gatein-sso 7.2.1
 *************************
 fix:
 
 Improvements:
 
-eXo Push-Notifications 7.2.0
+eXo Saml2 7.2.1
 *************************
 fix:
-- fix: Remove unecessary filter which expose session cookie - EXO-86337 - meeds-io/si#14
-
-Improvements:
-
-eXo kernel 7.2.0
-*************************
-fix:
-- fix: flaky LockManager deadlock detection
-- fix: Clean Input Stream When using getRequestDispatcher
-- fix: resolve random build hang and test timeout in LockManager and container tests
-
-Improvements:
-
-eXo Gatein-sso 7.2.0
-*************************
-fix:
-- fix: Make OIDC logout working when end_session_endpoint is present in configuration - MEED-10192 - meeds-io/meeds#4024
-
-Improvements:
-- feat: Activate by default assertion signature verification and assertion signature - EXO-87864
-- feat: Retrieve Inherited Memberships in SAML Roles - MEED-10149 - Meeds-io/MIPs#240
-
-eXo Saml2 7.2.0
-*************************
-fix:
-- fix: Activate by default assertion signature verification and assertion signature - EXO-87864
 
 Improvements:
