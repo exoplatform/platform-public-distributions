@@ -14,6 +14,8 @@ jobs:
   publish:
     name: build_release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: checkout
         uses: actions/checkout@v7
@@ -24,42 +26,50 @@ jobs:
            echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Download eXo Community binary from Nexus
         run: |
-            wget ${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip
-            unzip -j ${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip ${DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX}-${RELEASE_VERSION}/CHANGE_LOG.txt
-            echo "## What's Changed" >> WHATSCHANGED.TXT
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "Features:"  >> WHATSCHANGED.TXT
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "" >> WHATSCHANGED.TXT
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "Bug fixes:"  >> WHATSCHANGED.TXT
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E 's/^-/*/g' >> WHATSCHANGED.TXT
-            echo "<h2>What's Changed</h2>" > README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "<h3>Features:</h3>" >> README.md && echo "<ul>" >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i feature | sed -E -e 's/[<>]//g' -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi feature && echo "</ul>" >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "<h3>Bug fixes:</h3>" >> README.md && echo "<ul>" >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -i fix | sed -E -e 's/[<>]//g' -e 's|^-|<li>|g' -e 's|$|</li>|g' >> README.md
-            cat CHANGE_LOG.txt | grep -P ^- | grep -qi fix && echo "</ul>" >> README.md
+            set -euo pipefail
+            curl -fsSL "${DOWNLOAD_URL}/${RELEASE_VERSION}/${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip" -o "${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip"
+            unzip -j "${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip" "${DOWNLOAD_BINARY_ZIP_FOLDER_PREFIX}-${RELEASE_VERSION}/CHANGE_LOG.txt"
+
+            grep -qiP '^-\s*feat:' CHANGE_LOG.txt && HAS_FEATURE=true || HAS_FEATURE=false
+            grep -qiP '^-\s*fix:'  CHANGE_LOG.txt && HAS_FIX=true     || HAS_FIX=false
+
+            {
+              echo "## What's Changed"
+              if $HAS_FEATURE; then
+                echo "Features:"
+                grep -iP '^-\s*feat:' CHANGE_LOG.txt | sed -E 's/^-/*/'
+                echo ""
+              fi
+              if $HAS_FIX; then
+                echo "Bug fixes:"
+                grep -iP '^-\s*fix:' CHANGE_LOG.txt | sed -E 's/^-/*/'
+              fi
+            } > WHATSCHANGED.TXT
+
+            {
+              echo '<h2>What'"'"'s Changed</h2>'
+              if $HAS_FEATURE; then
+                echo '<h3>Features:</h3><ul>'
+                grep -iP '^-\s*feat:' CHANGE_LOG.txt | sed -E -e 's/[<>]//g' -e 's|^-|<li>|' -e 's|$|</li>|'
+                echo '</ul>'
+              fi
+              if $HAS_FIX; then
+                echo '<h3>Bug fixes:</h3><ul>'
+                grep -iP '^-\s*fix:' CHANGE_LOG.txt | sed -E -e 's/[<>]//g' -e 's|^-|<li>|' -e 's|$|</li>|'
+                echo '</ul>'
+              fi
+            } > README.md
+
             rm -v CHANGE_LOG.txt
-      - name: release
-        uses: actions/create-release@v1
-        id: create_release
-        with:
-          draft: false
-          prerelease: false
-          release_name: ${{ env.RELEASE_VERSION }}
-          tag_name: ${{ github.ref }}
-          body_path: WHATSCHANGED.TXT
+      - name: Create immutable release and upload binary
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-      - name: upload eXo Community binary
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
-          asset_name: ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip
-          asset_content_type: application/zip
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${RELEASE_VERSION}" \
+            --title "${RELEASE_VERSION}" \
+            --notes-file WHATSCHANGED.TXT \
+            --verify-tag \
+            "${DOWNLOAD_BINARY_PREFFIX}-${RELEASE_VERSION}.zip"
       - name: Upload to SF 
         run: |
           mv ${{ env.DOWNLOAD_BINARY_PREFFIX }}-${{ env.RELEASE_VERSION }}.zip eXo-Platform-${{ env.RELEASE_VERSION }}.zip
