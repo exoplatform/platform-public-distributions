@@ -1,360 +1,408 @@
 =========================
-Changelog Platform 7.2.1
+Changelog Platform 7.2.2
 =========================
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo AI 7.2.1
+eXo AI 7.2.2
 *************************
 fix:
-- fix: Prevent infinite re-save loop in RAG indexing queue when entries are not yet idle
-- fix: Retrieving User Content Link in UX Binding - EXO-88542
-- fix: Route reactor-netty WebClient through system proxy - EXO-88291
+- fix: stop infinite retry loop and silent document drops in RAG indexing
+- fix: AI assistant becomes unusable while content is being indexed - EXO-90111
+- fix: Drop, back off and cap the RAG indexing queue's poison entries EXO-90246
 
 Improvements:
 
-eXo Social 7.2.1
+
+eXo Social 7.2.2
 *************************
 fix:
-- fix: Avoid creation of Metadata if already exists - EXO-88224
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Centralizing the SelectPeriod component - EXO-50871
-- fix: Disable link option in crop drawer when opened from activity composer - EXO-88016
-- fix: Fix endless spinner when uploading featured image in crop drawer - EXO-88239
-- fix: Fix the captured image after editing - EXO-87793
-- fix: Fix the link containing mailto in the event description - EXO-88030
-- fix: Improve space fetching in space administration when sorting by last activity - EXO-87899
-- fix: Inconsistent display of a user's profile avatar across the profile page, comments, and unified search- EXO-87924
-- fix: Race Condition when creating same Metadata - EXO-88178
-- fix: Race Condition when creating the same Metadata - EXO-88237
-- fix: Search result displays searched term + null - EXO-87954
-- fix: When a text content is domPurify, mailto is incorrectly displayed as 2 links - EXO-88030
+- fix: Feed actions align to left instead of aligned to right - EXO-88876
+- fix: Uncontrollable Additional Content Generated During Space Creation - EXO-88253
+- fix: Load external extensions to document preview - EXO-88985
+- fix: Search and tag filter fields haven't labels - EXO-88602
+- fix: URL redirection not ok - EXO-88286
+- fix: Space directory filter field hasn't a label - EXO-88604
+- fix: the home page isn't displayed - EXO-88361
+- fix: User directory filter field hasn't a label - EXO-88603
+- fix: Broken date picker in the period selection - EXO-60936
+- fix: Overlap action icons on people cards - EXO-89025
+- fix: Can't access profile link through tabulating - EXO-81463
+- fix: Add missing labels to buttons on the stream page - EXO-89535
+- fix: Add accessible name to emojis - EXO-87562
+- fix: Article content not displayed on details page - EXO-89489
+- fix: Improve Sidebar Status Menu Accessibility - EXO-89452
+- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
+- fix: Display the rich editor floating formatting toolbar on text selection - EXO-89596
+- fix: Invite members drawer isn't displayed for invite-only spaces - EXO-89865
+- fix: Fix categories display with several link permissions - EXO-90031
+- fix: Left arrow for link-type applications is ko in recent app in app center - EXO-89509
 
 Improvements:
-- feat: Add a new space update event for changes on extended permissions - Meeds-io/Mips#249 - MEED-10486
-- feat: Add an extension point in space templates form - Meeds-io/Mips#249 - MEED-10420
-- feat: Add extended permissions to space by extension - Meeds-io/Mips#249 - MEED-10480
-- feat: Rename space property from extendedPermissions to extendedProperties - Meeds-io/Mips#249 - MEED-10487
+- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Notes 7.2.1
+
+eXo Notes 7.2.2
 *************************
 fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Redirection to page not found when opening note from snack bar -  EXO-88375
-- fix: Reindex inserted note links reliably on notebook import - EXO-88788
+- fix: Note filter field hasn't a label - EXO-88599
+- fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
+- fix: Errors in server log related to notes in migration context - EXO-88223
+- fix: Notes app on a space page named wiki displays personal notes - EXO-89534
+- fix: Fix search home page after renaming it - EXO-89419
+- fix: Add accessible name to emojis - EXO-87562
+- fix: Replace JS window.open with links with external links - EXO-89155
 
 Improvements:
+- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Documents 7.2.1
+
+eXo Portal 7.2.2
 *************************
 fix:
-- fix: [WEBDAV] File name containing + can't be imported - EXO-88320
-- fix: Allow folder creator to be saved as collaborator - EXO-87517
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Doc attachment missing when posting via right-click context menu - EXO-87923
-- fix: Download document - Infinite loading if selected files include symlink file - EXO-85989
-- fix: Fix public link visibility drawer save button state - EXO-87893
-- fix: Fix the icon color when change dark background - EXO-87647
-- fix: Folder treeview can't be opened if closed - EXO-88171
-- fix: Include symlink target paths in ES search queries - EXO-67331
-- fix: Preserve "+" in document names on display and download - EXO-88319
-- fix: Show attached documents in activity update drawer - EXO-87965
-- fix: Use local timezone for period date calculations in file management report - EXO-50871
+- fix: Deactivate inactive users beyond the first page of results - EXO-88715
 
 Improvements:
+- feat: Add LDAP/AD failover, DNS SRV load balancing and SNI-safe multi-homed LDAPS support - EXO-89219
 
-eXo Portal 7.2.1
-*************************
-fix:
 
-Improvements:
-
-eXo ECMS 7.2.1
-*************************
-fix:
-- fix: prevent duplicate view count increment for same viewer - EXO-84993
-
-Improvements:
-
-eXo Task 7.2.1
+eXo Task 7.2.2
 *************************
 fix:
 
 Improvements:
+- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Commons 7.2.1
+
+eXo Commons 7.2.2
+*************************
+fix:
+- fix: Increase/decrease indent broken on a mixed list/paragraph selection - EXO-89135
+- fix: ES index upgrade never completes when several connectors share an alias - EXO-88232
+- fix: Link redirection not ok - EXO-89915
+
+Improvements:
+
+
+eXo Gatein-Portal 7.2.2
+*************************
+fix:
+- fix: Deactivate inactive users beyond the first page of results - EXO-88715
+
+Improvements:
+- feat: Add LDAP/AD failover, DNS SRV load balancing and SNI-safe multi-homed LDAPS support - EXO-89219
+
+
+eXo MATRIX 7.2.2
+*************************
+fix:
+- fix: Make Matrix connection asynchronous - EXO-89038
+- fix: Preserve aspect ratio for large square images in full-page chat - EXO-87196
+
+Improvements:
+
+
+eXo Content 7.2.2
+*************************
+fix:
+- fix: SVG image not displayed on Links portlet - EXO-88864
+- fix: Letters with descendants transcribed in news list portlet - EXO-88975
+- fix: Space name not displayed in news block templates - EXO-89571
+- fix: Reactions not right-aligned in Mosaic news block when author is hidden EXO-89634
+- fix: Cards news block looks empty when author and space are hidden EXO-89688
+- fix: Mosaic template space and author not aligned with reactions - EXO-89633
+- fix: Mosaic news block banners replaced by Stories-like overlay display EXO-89689
+- fix: iframe code rendered in news preview - EXO-89154
+- fix: Delete useless Upgrade Plugin - EXO-88232
+- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
+- fix: Add gap of 2px to mosaic news-list template for better view - EXO-90113
+- fix: Display the single article mosaic tile in full container width - EXO-90119
+- fix: Embedded media in news details sized by the text above it - EXO-90112
+
+Improvements:
+- feat: Upgrade ES indexes to version 8 - EXO-88232
+- feat: Collect the kudos sent on a content as a reaction on it - EXO-60518
+
+
+eXo Documents 7.2.2
+*************************
+fix:
+- fix: Document filter field hasn't a label - EXO-88605
+- fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
+- fix: Display issue in folder filtering - EXO-88871
+- fix: NPE and incorrect status on WebDAV HEAD for folders EXO-89265
+- fix: No accessible names for buttons in Import folders and documents drawer - EXO-67781
+- fix: [Accessibility] Missing labels for form elements in manage access drawer - EXO-67829
+- fix: Aria issue in Public filter options drawer - EXO-68009
+- fix: Parent folder name truncated in document info drawer breadcrumb - EXO-89542
+- fix: No accessibility name for buttons in manage access drawer - EXO-67830
+- fix: Recent view displays category filters without results in space - EXO-89857
+- fix: Allow removing under conditions files owned by other users from personal drives - EXO-89504
+- fix: Mount and browse space drives whose display name contains a slash - EXO-89613
+- fix: Replace JS window.open with links - EXO-89155
+- fix: Serve each user their own WebDAV cache row, and answer 403 on a refused write - EXO-90128
+
+Improvements:
+
+
+eXo ECMS 7.2.2
 *************************
 fix:
 
 Improvements:
+- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Gatein-Portal 7.2.1
+
+eXo Process 7.2.2
 *************************
 fix:
+- fix: Process page permissions reset after server restart - EXO-87863
 
 Improvements:
 
-eXo MATRIX 7.2.1
+
+eXo Agenda 7.2.2
 *************************
 fix:
-- fix: Disable chat feature when both room types are disabled - Meeds-io/Mips#249 - MEED-10481
-- fix: Eliminate two test-order-dependent flakes in the matrix test suite
-- fix: Escape HTML entities in plain text chat messages - EXO-87198
-- fix: Improve UI/UX on chat settings - Meeds-io/Mips#249 - MEED-10483
-- fix: Retry Matrix connection at startup until Synapse is operational - EXO-88741
-- fix: Room cleanup permanently breaks once two rooms share a MATRIX_ROOM_ID
-- fix: Room list is incomplete when a space is not found - MEED-10491
-- fix: Update of space template setting - Meeds-io/Mips#249 - MEED-10485
+- fix: Fix agenda timeline config issue - EXO-88649
+- fix: Apostrophe in header char break agenda timeline - EXO-88374
+- fix: Attendee invitation response can be set on behalf of other users - EXO-87952
+- fix: Remove notification to the creator when creating a date poll - EXO-89975
 
 Improvements:
-- feat: Allow disabling space rooms from chat administration - Meeds-io/Mips#249 - MEED-10418
-- feat: Center text when chat is deactivated - Meeds-io/Mips#249 - Meed-10477
-- feat: Conditions for adding space/private rooms from Chat - Meeds-io/Mips#249 - MEED-10487
-- feat: Disable chat and set it as readonly - Meeds-io/Mips#249 - MEED-10484
-- feat: Enable deactivating private rooms from administration - MEED-10417
-- feat: Enable setting default status for authorized space chats - Meeds-io/Mips#249 - MEED-10419
-- feat: Enable/disable chat from administration - Meeds-io/Mips#249 - MEED-10416
-- feat: Manage space chat room in space template form - Meeds-io/Mips#249 - MEED-10420
-- feat: Rename space property from extendedPermissions to extendedProperties - Meeds-io/Mips#249 - MEED-10487
-- feat: Set room to read only when disabled from spaces administration - Meeds-io/Mips#249 - MEED-10486
-- feat: Support updating multiple spaces in  spaces administration - Meeds-io/Mips#249 - MEED-10480
+- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Content 7.2.1
-*************************
-fix:
-- fix: Avoid WAF ban by returning 200 with status flag for missing/deleted content - EXO-88159
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Exclude unposted articles/notes from the 'List any articles published' news target -EXO-88323
-- fix: Fix news draft after adding/ deleting images - EXO-87150
-- fix: News drafts listing issue - EXO-88464
 
-Improvements:
-- feat: Allow selecting fewer articles for Mosaic and Headlines displays - EXO-88297
-- feat: Improve single-article display for Mosaic and Headlines news blocks - EXO-88486
-
-eXo Process 7.2.1
-*************************
-fix:
-
-Improvements:
-
-eXo core 7.2.1
-*************************
-fix:
-
-Improvements:
-
-eXo Layout 7.2.1
-*************************
-fix:
-- fix: Avoid NPE when page not found - EXO-88179
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-
-Improvements:
-
-eXo Agenda 7.2.1
-*************************
-fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Can't edit the time of an all day recuring event - EXO-51336
-- fix: No synchronization with personal google calendar when transforming a date poll to an event - EXO-45672
-- fix: Recurrent event with end date not synchronized in google calendar - EXO-72273
-- fix: Space name is incorrect in push notification in windows  - EXO-86030
-- fix: Startup latency on   timezone update from tzurl.org without Internet access - EXO-88258
-- fix: Unable to create an event poll when using webconf connector which needs event startDate and endDate - EXO-88321
-- fix: Waiting event number truncated - EXO-87875
-
-Improvements:
-
-eXo App-Center 7.2.1
-*************************
-fix:
-
-Improvements:
-
-eXo Automatic-translation 7.2.1
-*******************************
-fix:
-
-Improvements:
-
-eXo WS 7.2.1
+eXo Automatic-translation 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo PWA 7.2.1
-*************************
-fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Return Original Image when can't convert to PNG - EXO-88180
 
-Improvements:
-
-eXo Jitsi 7.2.1
+eXo Jitsi 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Kudos 7.2.1
-*************************
-fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
 
-Improvements:
-
-eXo meeds 7.2.1
+eXo external-visio-connector 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Platform-UI 7.2.1
+
+eXo Jitsi-call 7.2.2
 *************************
 fix:
-- fix: Fix the icon color when having dark background - EXO-87647
+- fix: Re-display the copy invitation link icon in the call EXO-65800
+- fix: Single copy link button and visible copy confirmation EXO-65800
 
 Improvements:
 
-eXo external-visio-connector 7.2.1
-**********************************
-fix:
 
-Improvements:
-
-eXo Wallet 7.2.1
+eXo Mail Integration 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Jitsi-call 7.2.1
+
+eXo Email Connector 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Mail Integration 7.2.1
-**************************
-fix:
 
-Improvements:
-
-eXo Email Connector 7.2.1
+eXo Agenda Connectors 7.2.2
 *************************
 fix:
-- fix: Display email issue after deleting one - EXO-88523
-- fix: Fix display sent emails into sent elements of server email account - EXO-87838
+- fix: Display exchange recurring events occurrences EXO-84231
 
 Improvements:
 
-eXo Agenda Connectors 7.2.1
-***************************
-fix:
 
-Improvements:
-
-eXo Multi-factor-Authentication 7.2.1
-*************************************
-fix:
-
-Improvements:
-
-eXo Analytics 7.2.1
-*************************
-fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Improve space fetching in space administration when sorting by last activity - EXO-87899
-- fix: Pass row context to cell value extensions in analytics table - EXO-88159
-- fix: Resolve keyword aggregation suffix from the alternative field mapping - EXO-88413
-- fix: Use local timezone for period date calculations in file management report - EXO-50871
-
-Improvements:
-
-eXo JCR 7.2.1
+eXo Multi-factor-Authentication 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Gamification 7.2.1
-*************************
-fix:
-- fix: Backport missing keys in stable/7.2.x - EXO-88872
-- fix: Use local timezone for period date calculations in file management report - EXO-50871
 
-Improvements:
-
-eXo Gamification-github 7.2.1
-*****************************
-fix:
-
-Improvements:
-
-eXo Gamification-twitter 7.2.1
-******************************
-fix:
-
-Improvements:
-
-eXo Gamification-EVM 7.2.1
-**************************
-fix:
-
-Improvements:
-
-eXo Gamification-crowdin 7.2.1
-******************************
-fix:
-
-Improvements:
-
-eXo mcp-server 7.2.1
-*************************
-fix:
-- fix: NumberFormatException when replying to a reply comment - EXO-88688
-
-Improvements:
-
-eXo auth-server 7.2.1
+eXo JCR 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Web-Conferencing 7.2.1
-**************************
-fix:
 
-Improvements:
-
-eXo Perk-Store 7.2.1
+eXo Web-Conferencing 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Push-Notifications 7.2.1
-****************************
-fix:
 
-Improvements:
-
-eXo kernel 7.2.1
+eXo Saml2 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Gatein-sso 7.2.1
+
+
+eXo core 7.2.2
 *************************
 fix:
 
 Improvements:
 
-eXo Saml2 7.2.1
+
+eXo Layout 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo App-Center 7.2.2
+*************************
+fix:
+- fix: Fully disable the shortcut option for default applications - EXO-88393
+
+Improvements:
+
+
+eXo WS 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo PWA 7.2.2
+*************************
+fix:
+- fix: Overlay of eXo top bar and PWA on Windows - EXO-89080
+
+Improvements:
+
+
+eXo Kudos 7.2.2
+*************************
+fix:
+- fix: Add missing labels to buttons on the stream page - EXO-89535
+
+Improvements:
+
+
+eXo meeds 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Platform-UI 7.2.2
+*************************
+fix:
+- fix: Fully display menus attached inside sticky applications - EXO-88407
+
+Improvements:
+
+
+eXo Wallet 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Analytics 7.2.2
+*************************
+fix:
+- fix: Space analytics shows -100% on all fields for a custom period - EXO-60936
+- fix: Compare a period in progress with the same elapsed days - EXO-60936
+
+Improvements:
+
+
+eXo Gamification 7.2.2
+*************************
+fix:
+- fix: No alternative text for Quest's avatar in unified search - EXO-87764
+
+Improvements:
+- feat: Upgrade ES indexes to version 8 - EXO-88232
+
+
+eXo Gamification-github 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Gamification-twitter 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Gamification-EVM 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Gamification-crowdin 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo mcp-server 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo auth-server 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Perk-Store 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Push-Notifications 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo kernel 7.2.2
+*************************
+fix:
+
+Improvements:
+
+
+eXo Gatein-sso 7.2.2
 *************************
 fix:
 
