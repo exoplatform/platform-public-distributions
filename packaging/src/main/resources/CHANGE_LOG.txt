@@ -7,6 +7,7 @@ Changelogs of previous releases are available at https://community.exoplatform.c
 eXo AI 7.2.2
 *************************
 fix:
+- fix: Purge the RAG indexing queue only when it has stalled, never when it is merely slow - EXO-90483
 - fix: stop infinite retry loop and silent document drops in RAG indexing
 - fix: AI assistant becomes unusable while content is being indexed - EXO-90111
 - fix: Drop, back off and cap the RAG indexing queue's poison entries EXO-90246
@@ -17,6 +18,10 @@ Improvements:
 eXo Social 7.2.2
 *************************
 fix:
+- fix: Refuse a space template as a subspace template of itself - EXO-89317
+- fix: Keep the parent space relation when updating a subspace - EXO-90471
+- fix: Degraded image quality for the Image portlet banner EXO-88453
+- fix: Action menu item click ignored when the click is held - EXO-89888
 - fix: Feed actions align to left instead of aligned to right - EXO-88876
 - fix: Uncontrollable Additional Content Generated During Space Creation - EXO-88253
 - fix: Load external extensions to document preview - EXO-88985
@@ -41,10 +46,12 @@ fix:
 Improvements:
 - feat: Upgrade ES indexes to version 8 - EXO-88232
 
-
 eXo Notes 7.2.2
 *************************
 fix:
+- fix: Embedded media in note details sized by the text above it - EXO-90411
+- fix: store and render note covers at HiDPI resolution - EXO-89019
+- fix: Action menu item click ignored when the click is held - EXO-89888
 - fix: Note filter field hasn't a label - EXO-88599
 - fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
 - fix: Errors in server log related to notes in migration context - EXO-88223
@@ -77,6 +84,7 @@ Improvements:
 eXo Commons 7.2.2
 *************************
 fix:
+- fix: Keep the fullscreen capability of embedded media EXO-90272 - #797
 - fix: Increase/decrease indent broken on a mixed list/paragraph selection - EXO-89135
 - fix: ES index upgrade never completes when several connectors share an alias - EXO-88232
 - fix: Link redirection not ok - EXO-89915
@@ -105,19 +113,23 @@ Improvements:
 eXo Content 7.2.2
 *************************
 fix:
-- fix: SVG image not displayed on Links portlet - EXO-88864
-- fix: Letters with descendants transcribed in news list portlet - EXO-88975
-- fix: Space name not displayed in news block templates - EXO-89571
-- fix: Reactions not right-aligned in Mosaic news block when author is hidden EXO-89634
-- fix: Cards news block looks empty when author and space are hidden EXO-89688
-- fix: Mosaic template space and author not aligned with reactions - EXO-89633
-- fix: Mosaic news block banners replaced by Stories-like overlay display EXO-89689
-- fix: iframe code rendered in news preview - EXO-89154
-- fix: Delete useless Upgrade Plugin - EXO-88232
-- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
+- fix: Action menu item click ignored when the click is held - EXO-89888
 - fix: Add gap of 2px to mosaic news-list template for better view - EXO-90113
+- fix: Cards news block looks empty when author and space are hidden EXO-89688
+- fix: Degraded image quality for the Image portlet banner EXO-88453
+- fix: Delete useless Upgrade Plugin - EXO-88232
 - fix: Display the single article mosaic tile in full container width - EXO-90119
 - fix: Embedded media in news details sized by the text above it - EXO-90112
+- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
+- fix: iframe code rendered in news preview - EXO-89154
+- fix: Keep an embedded video in fullscreen when the article width changes - EXO-90272
+- fix: letters with descendants transcribed in news list portlet - EXO-88975
+- fix: Mosaic news block banners replaced by Stories-like overlay display EXO-89689
+- fix: Mosaic template space and author not aligned with reactions - EXO-89633
+- fix: reactions not right-aligned in Mosaic news block when author is hidden EXO-89634
+- fix: request the article illustration at HiDPI resolution - EXO-89019
+- fix: space name not displayed in news block templates - EXO-89571
+- fix: SVG image not displayed on Links portlet - EXO-88864
 
 Improvements:
 - feat: Upgrade ES indexes to version 8 - EXO-88232
@@ -127,6 +139,7 @@ Improvements:
 eXo Documents 7.2.2
 *************************
 fix:
+- fix: serve each user their own WebDAV cache row, and answer 403 on a refused write - EXO-90128
 - fix: Document filter field hasn't a label - EXO-88605
 - fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
 - fix: Display issue in folder filtering - EXO-88871
@@ -324,6 +337,7 @@ Improvements:
 eXo Analytics 7.2.2
 *************************
 fix:
+- fix: Technical labels displayed instead of profile attribute values in analytics EXO-87781
 - fix: Space analytics shows -100% on all fields for a custom period - EXO-60936
 - fix: Compare a period in progress with the same elapsed days - EXO-60936
 
