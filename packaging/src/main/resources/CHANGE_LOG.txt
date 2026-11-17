@@ -32,6 +32,7 @@ fix:
 - fix: Display a draft under its note and keep it on page refresh EXO-91357
 - fix: Allow removing the formatting of text pasted from Google Docs EXO-92047
 - fix: Publish a note from an MCP client as a news article EXO-90637
+- fix: Keep the scheduled publication start and end dates aligned in a narrow drawer - EXO-93834
 
 Improvements:
 
@@ -42,21 +43,32 @@ fix:
 - fix: Copy link and attachments of a shortcut document open in the shortcut's drive - EXO-91994
 - fix: Importing a zip created on macOS also imports its __MACOSX folder EXO-92605
 - fix: Let an anonymous visitor open a document's editor page, with no document location in its URL EXO-92883
+- fix: Never list a document's creator as a read-only collaborator after its access is saved - EXO-93308
 
 Improvements:
 
 eXo Portal 7.2.3
 *************************
 fix:
-- fix: Do not automatically deactivate users managed by an external store
+- fix: Do not automatically deactivate users managed by an external store - EXO-91484
 - fix: Count inactivity from the reactivation for reactivated users EXO-92824
+- fix: FutureCache Concurrency - EXO-88554
+- fix: Count every one-time code attempt and end the sessions of a disabled or deleted user - EXO-94227 EXO-91498
+- fix: registration settings seen by every cluster node - EXO-93010
+- fix: Delete the remember-me cookie at its own path on logout - EXO-90712
+- fix: Let a verification code be consumed once it was used - EXO-90902
+- fix: Accept a verification code once for the WebDAV password - EXO-94503
 
 Improvements:
 - feat: Keep the portal caches consistent on every node of a cluster - EXO-93010
+- feat: Improve Cache Loading Concurrency - EXO-88554
 
 eXo ECMS 7.2.3
 *************************
 fix:
+- fix: document editor activation and permissions seen by every cluster node - EXO-93010
+- fix: keep document locks of running cluster nodes when a node starts - EXO-92853
+- fix: Stop the schedulers and command threads of the documents and cloud drives with the server - EXO-93312
 
 Improvements:
 - feat: Keep the ECMS caches consistent on every node of a cluster - EXO-93010
@@ -74,13 +86,16 @@ fix:
 - fix: Narrow the iframe capability set of embedded media EXO-90272
 - fix: Allow removing the formatting of text pasted from Google Docs EXO-92047
 - fix: Restrict iframe sources to allowed embed hosts - EXO-90558
+- fix: Avoid activating WebSocket sending when not initialized yet - EXO-89177
+- fix: Check the callers and the users of the live connection, and trust only the cluster's own nodes - EXO-94282 EXO-94286 EXO-91498
+- fix: notification default settings follow a change made on another node - EXO-93010
 
 Improvements:
 
 eXo Gatein-Portal 7.2.3
 *************************
 fix:
-- fix: Do not automatically deactivate users managed by an external store
+- fix: Do not automatically deactivate users managed by an external store - EXO-91484
 - fix: Count inactivity from the reactivation for reactivated users EXO-92824
 
 Improvements:
@@ -191,6 +206,8 @@ eXo Wallet 7.2.3
 *************************
 fix:
 - fix: Keep the wallet consistent across the nodes of a cluster - EXO-93010
+- fix: Report the admin wallet state of all cluster nodes - EXO-93010
+- fix: Stop the refresh of the blockchain transactions with the server - EXO-93010 EXO-93312
 
 Improvements:
 
@@ -237,6 +254,9 @@ eXo JCR 7.2.3
 *************************
 fix:
 - fix: Run the JCR indexing queue methods in their transactions - EXO-93010
+- fix: Schedule the JCR indexing queue tasks at every start - EXO-93010
+- fix: Set the queue consumer's running flag only once its request has begun - EXO-93010
+- fix: End a read-only JDBC connection's transaction before it returns to the pool - EXO-93010
 
 Improvements:
 
@@ -310,12 +330,14 @@ eXo kernel 7.2.3
 *************************
 fix:
 - fix: Keep the invalidated caches consistent on every node of a cluster - EXO-93010
+- fix: Let the mail sending threads end with the server - EXO-93010 EXO-93312
 
 Improvements:
 
 eXo Gatein-sso 7.2.3
 *************************
 fix:
+- fix: Restore the saved request of a SAML sign-in with Tomcat 10.1.61 - EXO-93010
 
 Improvements:
 
@@ -329,12 +351,39 @@ eXo Commons-exo 7.2.3
 *************************
 fix:
 - fix: Read, create and invalidate the eXo distribution's caches in cluster mode for 7.2.3 - EXO-93010
+- fix: Declare the conversation users and one-time code caches for a cluster, and transfer the replicated caches to a joining node - EXO-91498 EXO-92851
 
 Improvements:
 
 eXo OnlyOffice 7.2.3
 *************************
 fix:
+- fix: Stop thumbnail conversions from splitting OnlyOffice co-editing sessions - EXO-91026
+- fix: Open an office attachment in view mode for an anonymous visitor of a public site - EXO-92883
+- fix: Stop the editor commands of OnlyOffice with the server - EXO-93010 EXO-93312
 
 Improvements:
 - feat: Invalidate the editor configuration cache in cluster mode - EXO-93010
+
+eXo CalDAV Integration 7.2.3
+*************************
+fix:
+- fix: correct ICS generation defects in the CalDAV connector - EXO-89383
+- fix: match a description's line breaks in linear time - EXO-91487
+
+Improvements:
+
+eXo Dependency Upgrades 7.2.3
+*************************
+fix:
+- fix: Upgrade Tomcat, jsoup, the OWASP HTML sanitizer, org.json and Bouncy Castle for 7.2.3 - EXO-93010
+- fix: Upgrade Infinispan to 8.2.12.Final for 7.2.3 - EXO-93010
+
+Improvements:
+
+eXo Platform Distributions 7.2.3
+*************************
+fix:
+- fix: Document how to install and upgrade a 7.2.x cluster, and align the sample's cache modes with it - EXO-93010
+
+Improvements:
