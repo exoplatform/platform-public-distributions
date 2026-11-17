@@ -19,6 +19,9 @@ eXo Social 7.2.3
 *************************
 fix:
 - fix: Keep the social caches consistent on every node of a cluster - EXO-93010
+- fix: Keep the enabled unified-search types after a restart and across nodes - EXO-92987
+- fix: Keep sessions, one-time codes, sign-ins and space notifications right on every node - EXO-91498 EXO-92851 EXO-93968 EXO-94283
+- fix: Consume the verification code of an email change once the change is written - EXO-90902
 - fix: Allow updating a profile property that has no type EXO-91464
 - fix: Display the user popover on mentions in activities, comments and news EXO-90121
 - fix: Apply the iframe host allowlist in the client-side sanitizer - EXO-90558
@@ -179,6 +182,9 @@ eXo meeds 7.2.3
 *************************
 fix:
 - fix: Keep the template cache local and declare the caches of the cluster fixes - EXO-93010
+- fix: Keep a user's conversation while the session lasts - EXO-91498
+- fix: Keep a one-time code for its whole lifetime - EXO-92851
+- fix: Keep the live connection's logs at INFO by default - EXO-94282 EXO-94286
 
 Improvements:
 
