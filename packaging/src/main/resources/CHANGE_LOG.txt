@@ -1,423 +1,340 @@
 =========================
-Changelog Platform 7.2.2
+Changelog eXo Platform 7.2.3
 =========================
 
 Changelogs of previous releases are available at https://community.exoplatform.com/portal/g/:spaces:platform_4/exo_platform/notes/436 .
 
-eXo AI 7.2.2
+eXo AI 7.2.3
 *************************
 fix:
-- fix: Purge the RAG indexing queue only when it has stalled, never when it is merely slow - EXO-90483
-- fix: stop infinite retry loop and silent document drops in RAG indexing
-- fix: AI assistant becomes unusable while content is being indexed - EXO-90111
-- fix: Drop, back off and cap the RAG indexing queue's poison entries EXO-90246
+- fix: Keep the AI settings and the RAG indexing queue consistent across the nodes of a cluster for 7.2.3 - EXO-93010
+- fix: Switch the default embedding model without a restart, synchronizing the RAG index both ways - EXO-90731
+- fix: Keep a change that lands during a RAG queue row's last attempt, and attempt a folded change without its back-off - EXO-90688
+- fix: Bound an AI provider's connection test, and let its listeners read a saved provider or model - EXO-90688
+
+Improvements:
+- feat: Let an administrator schedule, pause and follow the RAG indexing, and set the embedding model's runner options - EXO-90688
+
+eXo Social 7.2.3
+*************************
+fix:
+- fix: Keep the social caches consistent on every node of a cluster - EXO-93010
+- fix: Allow updating a profile property that has no type EXO-91464
+- fix: Display the user popover on mentions in activities, comments and news EXO-90121
+- fix: Apply the iframe host allowlist in the client-side sanitizer - EXO-90558
+- fix: Fill the email and phone quick actions of the organizational chart user card EXO-92693
 
 Improvements:
 
-
-eXo Social 7.2.2
+eXo Notes 7.2.3
 *************************
 fix:
-- fix: Refuse a space template as a subspace template of itself - EXO-89317
-- fix: Keep the parent space relation when updating a subspace - EXO-90471
-- fix: Degraded image quality for the Image portlet banner EXO-88453
-- fix: Action menu item click ignored when the click is held - EXO-89888
-- fix: Feed actions align to left instead of aligned to right - EXO-88876
-- fix: Uncontrollable Additional Content Generated During Space Creation - EXO-88253
-- fix: Load external extensions to document preview - EXO-88985
-- fix: Search and tag filter fields haven't labels - EXO-88602
-- fix: URL redirection not ok - EXO-88286
-- fix: Space directory filter field hasn't a label - EXO-88604
-- fix: the home page isn't displayed - EXO-88361
-- fix: User directory filter field hasn't a label - EXO-88603
-- fix: Broken date picker in the period selection - EXO-60936
-- fix: Overlap action icons on people cards - EXO-89025
-- fix: Can't access profile link through tabulating - EXO-81463
-- fix: Add missing labels to buttons on the stream page - EXO-89535
-- fix: Add accessible name to emojis - EXO-87562
-- fix: Article content not displayed on details page - EXO-89489
-- fix: Improve Sidebar Status Menu Accessibility - EXO-89452
-- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
-- fix: Display the rich editor floating formatting toolbar on text selection - EXO-89596
-- fix: Invite members drawer isn't displayed for invite-only spaces - EXO-89865
-- fix: Fix categories display with several link permissions - EXO-90031
-- fix: Left arrow for link-type applications is ko in recent app in app center - EXO-89509
+- fix: Display a draft under its note and keep it on page refresh EXO-91357
+- fix: Allow removing the formatting of text pasted from Google Docs EXO-92047
+- fix: Publish a note from an MCP client as a news article EXO-90637
 
 Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-eXo Notes 7.2.2
+eXo Documents 7.2.3
 *************************
 fix:
-- fix: Embedded media in note details sized by the text above it - EXO-90411
-- fix: store and render note covers at HiDPI resolution - EXO-89019
-- fix: Action menu item click ignored when the click is held - EXO-89888
-- fix: Note filter field hasn't a label - EXO-88599
-- fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
-- fix: Errors in server log related to notes in migration context - EXO-88223
-- fix: Notes app on a space page named wiki displays personal notes - EXO-89534
-- fix: Fix search home page after renaming it - EXO-89419
-- fix: Add accessible name to emojis - EXO-87562
-- fix: Replace JS window.open with links with external links - EXO-89155
+- fix: Keep a delayed document deletion through an undo race and a stop - EXO-93010
+- fix: Copy link and attachments of a shortcut document open in the shortcut's drive - EXO-91994
+- fix: Importing a zip created on macOS also imports its __MACOSX folder EXO-92605
+- fix: Let an anonymous visitor open a document's editor page, with no document location in its URL EXO-92883
 
 Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
 
-
-eXo Portal 7.2.2
+eXo Portal 7.2.3
 *************************
 fix:
-- fix: Deactivate inactive users beyond the first page of results - EXO-88715
+- fix: Do not automatically deactivate users managed by an external store
+- fix: Count inactivity from the reactivation for reactivated users EXO-92824
 
 Improvements:
-- feat: Add LDAP/AD failover, DNS SRV load balancing and SNI-safe multi-homed LDAPS support - EXO-89219
+- feat: Keep the portal caches consistent on every node of a cluster - EXO-93010
 
-
-eXo Task 7.2.2
+eXo ECMS 7.2.3
 *************************
 fix:
 
 Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
+- feat: Keep the ECMS caches consistent on every node of a cluster - EXO-93010
 
-
-eXo Commons 7.2.2
-*************************
-fix:
-- fix: Keep the fullscreen capability of embedded media EXO-90272 - #797
-- fix: Increase/decrease indent broken on a mixed list/paragraph selection - EXO-89135
-- fix: ES index upgrade never completes when several connectors share an alias - EXO-88232
-- fix: Link redirection not ok - EXO-89915
-
-Improvements:
-
-
-eXo Gatein-Portal 7.2.2
-*************************
-fix:
-- fix: Deactivate inactive users beyond the first page of results - EXO-88715
-
-Improvements:
-- feat: Add LDAP/AD failover, DNS SRV load balancing and SNI-safe multi-homed LDAPS support - EXO-89219
-
-
-eXo MATRIX 7.2.2
-*************************
-fix:
-- fix: Make Matrix connection asynchronous - EXO-89038
-- fix: Preserve aspect ratio for large square images in full-page chat - EXO-87196
-
-Improvements:
-
-
-eXo Content 7.2.2
-*************************
-fix:
-- fix: Action menu item click ignored when the click is held - EXO-89888
-- fix: Add gap of 2px to mosaic news-list template for better view - EXO-90113
-- fix: Cards news block looks empty when author and space are hidden EXO-89688
-- fix: Degraded image quality for the Image portlet banner EXO-88453
-- fix: Delete useless Upgrade Plugin - EXO-88232
-- fix: Display the single article mosaic tile in full container width - EXO-90119
-- fix: Embedded media in news details sized by the text above it - EXO-90112
-- fix: Favorite activity of a posted news isn't displayed in favorite activities filter - EXO-87180
-- fix: iframe code rendered in news preview - EXO-89154
-- fix: Keep an embedded video in fullscreen when the article width changes - EXO-90272
-- fix: letters with descendants transcribed in news list portlet - EXO-88975
-- fix: Mosaic news block banners replaced by Stories-like overlay display EXO-89689
-- fix: Mosaic template space and author not aligned with reactions - EXO-89633
-- fix: reactions not right-aligned in Mosaic news block when author is hidden EXO-89634
-- fix: request the article illustration at HiDPI resolution - EXO-89019
-- fix: space name not displayed in news block templates - EXO-89571
-- fix: SVG image not displayed on Links portlet - EXO-88864
-
-Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
-- feat: Collect the kudos sent on a content as a reaction on it - EXO-60518
-
-
-eXo Documents 7.2.2
-*************************
-fix:
-- fix: serve each user their own WebDAV cache row, and answer 403 on a refused write - EXO-90128
-- fix: Document filter field hasn't a label - EXO-88605
-- fix: [Accessibility] Add label to hide/display treeview button - EXO-88811
-- fix: Display issue in folder filtering - EXO-88871
-- fix: NPE and incorrect status on WebDAV HEAD for folders EXO-89265
-- fix: No accessible names for buttons in Import folders and documents drawer - EXO-67781
-- fix: [Accessibility] Missing labels for form elements in manage access drawer - EXO-67829
-- fix: Aria issue in Public filter options drawer - EXO-68009
-- fix: Parent folder name truncated in document info drawer breadcrumb - EXO-89542
-- fix: No accessibility name for buttons in manage access drawer - EXO-67830
-- fix: Recent view displays category filters without results in space - EXO-89857
-- fix: Allow removing under conditions files owned by other users from personal drives - EXO-89504
-- fix: Mount and browse space drives whose display name contains a slash - EXO-89613
-- fix: Replace JS window.open with links - EXO-89155
-- fix: Serve each user their own WebDAV cache row, and answer 403 on a refused write - EXO-90128
-
-Improvements:
-
-
-eXo ECMS 7.2.2
-*************************
-fix:
-
-Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
-
-
-eXo Process 7.2.2
-*************************
-fix:
-- fix: Process page permissions reset after server restart - EXO-87863
-
-Improvements:
-
-
-eXo Agenda 7.2.2
-*************************
-fix:
-- fix: Fix agenda timeline config issue - EXO-88649
-- fix: Apostrophe in header char break agenda timeline - EXO-88374
-- fix: Attendee invitation response can be set on behalf of other users - EXO-87952
-- fix: Remove notification to the creator when creating a date poll - EXO-89975
-
-Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
-
-
-eXo Automatic-translation 7.2.2
+eXo Task 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Commons 7.2.3
+*************************
+fix:
+- fix: Remove the web notifications of a user from every node of a cluster - EXO-93010
+- fix: Narrow the iframe capability set of embedded media EXO-90272
+- fix: Allow removing the formatting of text pasted from Google Docs EXO-92047
+- fix: Restrict iframe sources to allowed embed hosts - EXO-90558
 
-eXo Jitsi 7.2.2
+Improvements:
+
+eXo Gatein-Portal 7.2.3
+*************************
+fix:
+- fix: Do not automatically deactivate users managed by an external store
+- fix: Count inactivity from the reactivation for reactivated users EXO-92824
+
+Improvements:
+
+eXo MATRIX 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Content 7.2.3
+*************************
+fix:
+- fix: Run the scheduled articles once per cluster and keep a delayed news deletion - EXO-93010
+- fix: news list header not left-aligned EXO-89639
+- fix: Pass the news space to its attachments so they open in that space's drive - EXO-91994
+- fix: Publish a note from an MCP client as a news article EXO-90637
 
-eXo external-visio-connector 7.2.2
+Improvements:
+
+eXo Process 7.2.3
+*************************
+fix:
+- fix: Enforce ACL on processes work, draft and workflow writes EXO-90726
+- fix: Apply the processes permission matrix to administrators and managing space managers EXO-79156
+
+Improvements:
+
+eXo core 7.2.3
+*************************
+fix:
+- fix: Keep the identities a node registers on that node, and rebuild a user's conversations on every node - EXO-93010
+- fix: Keep directory users whose eXo username differs in letter case in their group memberships EXO-92516
+
+Improvements:
+
+eXo Layout 7.2.3
+*************************
+fix:
+- fix: Keep a delayed navigation node deletion through an undo race and a stop - EXO-93010
+
+Improvements:
+
+eXo Agenda 7.2.3
+*************************
+fix:
+- fix: Invalidate the agenda caches in cluster mode - EXO-93010
+
+Improvements:
+
+eXo App-Center 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Jitsi-call 7.2.2
+eXo Automatic-translation 7.2.3
 *************************
 fix:
-- fix: Re-display the copy invitation link icon in the call EXO-65800
-- fix: Single copy link button and visible copy confirmation EXO-65800
+- fix: Translate with the DeepL API key saved last - EXO-93010
 
 Improvements:
 
-
-eXo Mail Integration 7.2.2
+eXo WS 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Email Connector 7.2.2
+eXo PWA 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Agenda Connectors 7.2.2
-*************************
-fix:
-- fix: Display exchange recurring events occurrences EXO-84231
-
-Improvements:
-
-
-eXo Multi-factor-Authentication 7.2.2
+eXo Jitsi 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo JCR 7.2.2
+eXo Kudos 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo meeds 7.2.3
+*************************
+fix:
+- fix: Keep the template cache local and declare the caches of the cluster fixes - EXO-93010
 
-eXo Web-Conferencing 7.2.2
+Improvements:
+
+eXo Platform-UI 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Saml2 7.2.2
+eXo external-visio-connector 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Wallet 7.2.3
+*************************
+fix:
+- fix: Keep the wallet consistent across the nodes of a cluster - EXO-93010
 
+Improvements:
 
-eXo core 7.2.2
+eXo Jitsi-call 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Layout 7.2.2
+eXo Mail Integration 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo App-Center 7.2.2
+eXo Email Connector 7.2.3
 *************************
 fix:
-- fix: Fully disable the shortcut option for default applications - EXO-88393
+- fix: a received mail body is purified and shown in a frame that runs no script - EXO-92921
+- fix: links of a received mail open in a new tab, never in the frame or the portal page - EXO-92921
 
 Improvements:
 
-
-eXo WS 7.2.2
-*************************
-fix:
-
-Improvements:
-
-
-eXo PWA 7.2.2
-*************************
-fix:
-- fix: Overlay of eXo top bar and PWA on Windows - EXO-89080
-
-Improvements:
-
-
-eXo Kudos 7.2.2
-*************************
-fix:
-- fix: Add missing labels to buttons on the stream page - EXO-89535
-
-Improvements:
-
-
-eXo meeds 7.2.2
+eXo Agenda Connectors 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Platform-UI 7.2.2
-*************************
-fix:
-- fix: Fully display menus attached inside sticky applications - EXO-88407
-
-Improvements:
-
-
-eXo Wallet 7.2.2
+eXo Multi-factor-Authentication 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Analytics 7.2.2
+eXo Analytics 7.2.3
 *************************
 fix:
-- fix: Technical labels displayed instead of profile attribute values in analytics EXO-87781
-- fix: Space analytics shows -100% on all fields for a custom period - EXO-60936
-- fix: Compare a period in progress with the same elapsed days - EXO-60936
+- fix: Count the users and the spaces once per cluster - EXO-93010
 
 Improvements:
 
-
-eXo Gamification 7.2.2
+eXo JCR 7.2.3
 *************************
 fix:
-- fix: No alternative text for Quest's avatar in unified search - EXO-87764
-
-Improvements:
-- feat: Upgrade ES indexes to version 8 - EXO-88232
-
-
-eXo Gamification-github 7.2.2
-*************************
-fix:
+- fix: Run the JCR indexing queue methods in their transactions - EXO-93010
 
 Improvements:
 
+eXo Gamification 7.2.3
+*************************
+fix:
+- fix: Let a change of the rewarding administrators reach every node - EXO-93010
 
-eXo Gamification-twitter 7.2.2
+Improvements:
+
+eXo Gamification-github 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Gamification-twitter 7.2.3
+*************************
+fix:
+- fix: Update the Twitter accounts once per cluster - EXO-93010
 
-eXo Gamification-EVM 7.2.2
+Improvements:
+
+eXo Gamification-EVM 7.2.3
+*************************
+fix:
+- fix: Scan and save the contract transactions once per cluster - EXO-93010
+
+Improvements:
+
+eXo Gamification-crowdin 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo mcp-server 7.2.3
+*************************
+fix:
+- fix: only who may edit a comment can change it through update_comment EXO-91313
 
-eXo Gamification-crowdin 7.2.2
+Improvements:
+
+eXo auth-server 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Web-Conferencing 7.2.3
+*************************
+fix:
+- fix: Stop the call commands of the web conferencing with the server - EXO-93010
 
-eXo mcp-server 7.2.2
+Improvements:
+
+eXo Perk-Store 7.2.3
+*************************
+fix:
+- fix: Keep the perk store consistent across the nodes of a cluster - EXO-93010
+
+Improvements:
+
+eXo Push-Notifications 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo kernel 7.2.3
+*************************
+fix:
+- fix: Keep the invalidated caches consistent on every node of a cluster - EXO-93010
 
-eXo auth-server 7.2.2
+Improvements:
+
+eXo Gatein-sso 7.2.3
 *************************
 fix:
 
 Improvements:
 
-
-eXo Perk-Store 7.2.2
+eXo Saml2 7.2.3
 *************************
 fix:
 
 Improvements:
 
+eXo Commons-exo 7.2.3
+*************************
+fix:
+- fix: Read, create and invalidate the eXo distribution's caches in cluster mode for 7.2.3 - EXO-93010
 
-eXo Push-Notifications 7.2.2
+Improvements:
+
+eXo OnlyOffice 7.2.3
 *************************
 fix:
 
 Improvements:
-
-
-eXo kernel 7.2.2
-*************************
-fix:
-
-Improvements:
-
-
-eXo Gatein-sso 7.2.2
-*************************
-fix:
-
-Improvements:
+- feat: Invalidate the editor configuration cache in cluster mode - EXO-93010
