@@ -92,14 +92,6 @@ fix:
 
 Improvements:
 
-eXo Gatein-Portal 7.2.3
-*************************
-fix:
-- fix: Do not automatically deactivate users managed by an external store - EXO-91484
-- fix: Count inactivity from the reactivation for reactivated users EXO-92824
-
-Improvements:
-
 eXo MATRIX 7.2.3
 *************************
 fix:
