@@ -251,6 +251,7 @@ Improvements:
 eXo JCR 7.2.3
 *************************
 fix:
+- fix: Keep each cluster node's search index complete when it stops or copies another node's index - EXO-93010
 - fix: Run the JCR indexing queue methods in their transactions - EXO-93010
 - fix: Schedule the JCR indexing queue tasks at every start - EXO-93010
 - fix: Set the queue consumer's running flag only once its request has begun - EXO-93010
