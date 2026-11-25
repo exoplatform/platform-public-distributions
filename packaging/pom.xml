@@ -29,6 +29,10 @@
   <name>eXo PLF:: Platform Public Distributions - Packaging Community Tomcat Standalone</name>
   <artifactId>plf-community-tomcat-standalone</artifactId>
   <packaging>pom</packaging>
+  <properties>
+    <!-- Generate and publish the CycloneDX SBOM of the deliverable zip -->
+    <sbom.skip>false</sbom.skip>
+  </properties>
   <dependencies>
     <!-- Our modules -->
     <dependency>
